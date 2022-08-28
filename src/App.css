@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+
+body{
+    background-color: #000000;
+    font-family: 'Boogaloo', cursive;
+}
+
+
+.homeBg{
+    background-color: #000000;
+    font-family: 'Boogaloo', cursive;
+    color: #ffffff;
+}
+

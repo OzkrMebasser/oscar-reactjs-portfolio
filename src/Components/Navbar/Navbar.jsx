@@ -1,123 +1,134 @@
-import React , {useEffect} from 'react'
-import './Navbar.css';
-import { NavLink } from 'react-router-dom';
-import $ from 'jquery';
+import React, { useState } from "react";
+import { useTranslation } from 'react-i18next';
+
+import NavDropdown from "react-bootstrap/NavDropdown";
+
+import "./Navbar.css";
+
+import { NavLink } from "react-router-dom";
+import { FaStream } from "react-icons/fa";
+import { FaReply } from "react-icons/fa";
 
 const logo = "OSCAR";
 const logoLN = "MORENO";
 
-const Navbar = () => {
+const Navbar = ({ isScrolling }) => {
+  const [t, i18n] = useTranslation("navbar");
 
-  function animation(){
-    var tabsNewAnim = $('#navbarSupportedContent');
-    var activeItemNewAnim = tabsNewAnim.find('.active');
-    var activeWidthNewAnimHeight = activeItemNewAnim.innerHeight();
-    var activeWidthNewAnimWidth = activeItemNewAnim.innerWidth();
-    var itemPosNewAnimTop = activeItemNewAnim.position();
-    var itemPosNewAnimLeft = activeItemNewAnim.position();
-    $(".hori-selector").css({
-      "top":itemPosNewAnimTop.top + "px", 
-      "left":itemPosNewAnimLeft.left + "px",
-      "height": activeWidthNewAnimHeight + "px",
-      "width": activeWidthNewAnimWidth + "px"
-    });
-    $("#navbarSupportedContent").on("click","li",function(e){
-      $('#navbarSupportedContent ul li').removeClass("active");
-      $(this).addClass('active');
-      var activeWidthNewAnimHeight = $(this).innerHeight();
-      var activeWidthNewAnimWidth = $(this).innerWidth();
-      var itemPosNewAnimTop = $(this).position();
-      var itemPosNewAnimLeft = $(this).position();
-      $(".hori-selector").css({
-        "top":itemPosNewAnimTop.top + "px", 
-        "left":itemPosNewAnimLeft.left + "px",
-        "height": activeWidthNewAnimHeight + "px",
-        "width": activeWidthNewAnimWidth + "px"
-      });
-    });
-  }
 
-  useEffect(() => {
-    
-    animation();
-    $(window).on('resize', function(){
-      setTimeout(function(){ animation(); }, 500);
-    });
-    
-  }, []);
+  const toTheTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    console.log(toTheTop());
+  };
+
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+  const Close = () => setClick(false);
 
   return (
-  <nav className="navbar navbar-expand-lg navbar-mainbg ">
-    
-    
-      <NavLink className="navbar-brand navbar-logo logoAnim" to="/" exact>
-        OSCAR
-      </NavLink>
-    
-    
-      <button 
-        className="navbar-toggler"
-        onClick={ function(){
-          setTimeout(function(){ animation(); });
-        }}
-        type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i className="fas fa-bars text-white"></i>
-      </button>
- 
-      <div 
-        className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav ml-auto">
-            
-            <div className="hori-selector">
-              <div className="left"></div>
-              <div className="right"></div>
+    <nav
+      className={`navbar ${isScrolling > 120 ? "scrolling" : null}`}
+      onClick={(e) => e.stopPropagation()}
+    >
+      <div className={click ? "main-container" : ""} onClick={() => Close()} />
+
+      <div className="nav-container navbar-expand-lg">
+        <NavLink  to="/" activeclassname="active" className="nav-logo ">
+          <div className="flip-box  ">
+            <div className="flip-box-inner ">
+              <div className="flip-box-front logoAnim">{logo}</div>
+              <div className="flip-box-back logoAnim">{logoLN}</div>
             </div>
-            
-            <li className="nav-item active">
-              <NavLink className="nav-link" to="/" exact>
-                {/* <i 
-                className="fas fa-tachometer-alt">
-                </i> */}
-                Home
-              </NavLink>
-            </li>
+          </div>
+        </NavLink>
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <li className="nav-item ">
+            <NavLink
+              
+              to="/"
+              activeclassname="active "
+              className="nav-links"
+              onClick={click ? handleClick : null}
+            >
+             {t("navbar.home")}
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              
+              to="/about"
+              activeclassname="active"
+              className="nav-links"
+              onClick={click ? handleClick : null}
+            >
+              {t("navbar.about")}
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              
+              to="/skills"
+              activeclassname="active"
+              className="nav-links"
+              onClick={click ? handleClick : null}
+            >
+              {t("navbar.skills")}
+            </NavLink>
+          </li>
 
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/about" exact>
-                {/* <i 
-                className="far fa-address-book">
-                </i> */}
-                About
-              </NavLink> 
-            </li>
+          <li className="nav-item">
+            <NavLink
+              
+              to="/projects"
+              activeclassname="active"
+              className="nav-links"
+              onClick={click ? handleClick : null}
+            >
+               {t("navbar.projects")}
+            </NavLink>
+          </li>
 
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/service" exact>
-                {/* <i 
-                className="far fa-clone">
-                </i> */}
-                Services
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/testimonial" exact>
-                {/* <i 
-                className="far fa-chart-bar">
-                </i> */}
-                Testimonial
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/contact" exact>
-                {/* <i 
-                className="far fa-copy">
-                </i> */}
-                Contact Us
-              </NavLink>
-            </li>
+          <li className="nav-item">
+            <NavLink
+              
+              to="/contact"
+              activeclassname="active"
+              className="nav-links"
+              onClick={click ? handleClick : null}
+            >
+              {t("navbar.contact")}
+            </NavLink>
+          </li>
+
+          <li className=" nav-item-prueba " >
+          <NavLink
+              to="/contact"
+              activeclassname="active"
+              className="nav-links">
+            <NavDropdown className="" title= {t("navbar.language")}>
+              <NavDropdown.Item onClick={()=> i18n.changeLanguage("en")}>
+               ENGLISH <span className="fi fi-ca"></span> <span className="fi fi-us"></span> <span className="fi fi-uk"></span>
+              </NavDropdown.Item>
+              <NavDropdown.Item onClick={()=> i18n.changeLanguage("es")}>
+               ESPAÑOL <span className="fi fi-mx"></span> <span className="fi fi-es"></span>
+              </NavDropdown.Item>
+            </NavDropdown>
+            </NavLink>
+          </li>
+
         </ul>
+        <div className="nav-icon" onClick={handleClick}>
+          {click ? <FaReply /> : <FaStream />}
+
+
+          {/* <i className={click ? "fa fa-times" : "fa fa-bars"}></i> */}
+        </div>
+       
       </div>
-  </nav>
-  )
-}
+      
+    </nav>
+    
+  );
+};
 export default Navbar;

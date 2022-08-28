@@ -1,14 +1,20 @@
-import React from 'react'
+import React from 'react';
+import Particle from "../../Components/particulesBG/Particle"
+
+import '../Home/Home.css';
+
+
 const Home = () => {
   return (
-    <div className="container">
-    
-    <h1 className="text-center" style={{paddingTop: "20%"}}>
-
-      Home
-    </h1>
+<div className="container">
+    <Particle/>
+    <div className="globe">
+          <div></div>
+        </div>
+     
     
   </div>
   )
+  
 }
 export default Home;

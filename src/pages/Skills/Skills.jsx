@@ -1,14 +1,14 @@
 import React from 'react'
-const Services = () => {
+const Skills = () => {
   return (
     <div className="container">
     
     <h1 className="text-center" style={{paddingTop: "20%"}}>
 
-          Services
+          Skills
         </h1>
         
     </div>
   )
 }
-export default Services;
+export default Skills;

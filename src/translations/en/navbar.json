@@ -1,0 +1,10 @@
+{
+    "navbar": {
+        "home": "HOME",
+        "about": "ABOUT ME",
+        "skills": "SKILLS",
+        "projects": "PROJECTS",
+        "contact": "CONTACT",
+        "language": "LANGUAGE"
+    }
+}

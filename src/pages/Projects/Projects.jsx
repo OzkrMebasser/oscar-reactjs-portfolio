@@ -1,14 +1,14 @@
 import React from 'react'
-const Testimonial = () => {
+const Projects = () => {
   return (
   <div className="container">
     
     <h1 className="text-center" style={{paddingTop: "20%"}}>
 
-      Testimonial
+      Projects
     </h1>
     
   </div>
   )
 }
-export default Testimonial;
+export default Projects;
