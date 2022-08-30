@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Cover.css";
+import "./Home.css";
 
 const words = [" Oscar Moreno", " a web Developer", " a Programmer",
 " Oscar Moreno", " a web Developer", " a Programmer"," Oscar Moreno", " a web Developer", " a Programmer"," Oscar Moreno", " a web Developer", " a Programmer."];
