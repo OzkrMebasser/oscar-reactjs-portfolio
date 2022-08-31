@@ -1,0 +1,27 @@
+
+
+{
+    "navbar": {
+        "home": "INICIO",
+        "about": "ACERCA DE MI",
+        "skills": "HABILIDADES",
+        "projects": "PROYECTOS",
+        "contact": "CONTACTO",
+        "language": "IDIOMA"
+    },
+    "cover": {
+           "hello-world": "¡HOLA MUNDO!",
+           "hello-world-2": "¡DISFRUTA LA VIDA!"
+       
+        },
+    "typing": {
+            "auto-text": 
+            ["OSCAR MORENO","UN DESARROLLADOR WEB" , "UN PROGRAMADOR",
+            "OSCAR MORENO","UN DESARROLLADOR WEB" , "UN PROGRAMADOR",
+            "OSCAR MORENO","UN DESARROLLADOR WEB" , "UN PROGRAMADOR",
+            "OSCAR MORENO","UN DESARROLLADOR WEB" , "UN PROGRAMADOR."]
+            },
+    "myself": {
+        "myself": "SOY "
+    }  
+        }

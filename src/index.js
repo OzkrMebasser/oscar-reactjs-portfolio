@@ -9,18 +9,18 @@ import App from './App';
 
 
 //translations
-import navbar_es from './translations/es/navbar.json';
-import navbar_en from './translations/en/navbar.json';
+import navbar_es from './translations/es/global.json';
+import navbar_en from './translations/en/global.json';
 
 i18next.init({
   interpolation: {escapeValues: false},
   lng: "en",
   resources: {
     es: {
-      navbar: navbar_es,
+      global: navbar_es,
     },
     en: {
-      navbar: navbar_en,
+      global: navbar_en,
     },
   },
 });

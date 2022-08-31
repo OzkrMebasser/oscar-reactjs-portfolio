@@ -1,14 +1,22 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 import "./Home.css";
 
-const words = [" Oscar Moreno", " a web Developer", " a Programmer",
-" Oscar Moreno", " a web Developer", " a Programmer"," Oscar Moreno", " a web Developer", " a Programmer"," Oscar Moreno", " a web Developer", " a Programmer."];
+// const words = [" Oscar Moreno", " a web Developer", " a Programmer",
+// " Oscar Moreno", " a web Developer", " a Programmer"," Oscar Moreno", " a web Developer", " a Programmer"," Oscar Moreno", " a web Developer", " a Programmer."];
+
+
 
 export default function Typing() {
+
+  const [t, i18n] = useTranslation("global");
+  
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
   const [blink, setBlink] = useState(true);
   const [reverse, setReverse] = useState(false);
+  
+  const words = t("typing.auto-text", { returnObjects: true });
 
   // typeWriter
   useEffect(() => {
@@ -49,7 +57,7 @@ export default function Typing() {
   return (
     <>
       <h1 id="gold">
-        <span id="white">I'm</span>
+        <span id="white">{t("myself.myself")}</span>
         {`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}
       </h1>
     </>

@@ -13,7 +13,8 @@ const logo = "OSCAR";
 const logoLN = "MORENO";
 
 const Navbar = ({ isScrolling }) => {
-  const [t, i18n] = useTranslation("navbar");
+
+  const [t, i18n] = useTranslation("global");
 
 
   const toTheTop = () => {

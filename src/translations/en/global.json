@@ -1,0 +1,26 @@
+{
+    "navbar": {
+        "home": "HOME",
+        "about": "ABOUT ME",
+        "skills": "SKILLS",
+        "projects": "PROJECTS",
+        "contact": "CONTACT",
+        "language": "LANGUAGE"
+    },
+     "cover": {
+            "hello-world": "HELLO WORLD!",
+            "hello-world-2": "ENJOY LIFE!"
+        
+        },
+        "typing": {
+                "auto-text": 
+                ["OSCAR MORENO","A WEB DEVELOPER" , "A PROGRAMMER",
+                "OSCAR MORENO","A WEB DEVELOPER" , "A PROGRAMMER",
+                "OSCAR MORENO","A WEB DEVELOPER" , "A PROGRAMMER",
+                "OSCAR MORENO","A WEB DEVELOPER" , "A PROGRAMMER."]
+                },
+        "myself": {
+            "myself": "I'AM "
+        }  
+            }
+    
