@@ -55,6 +55,62 @@
     
   }
 
+    /*Home Container media queries */
+/* Smartphones (portrait and landscape) ---------- */
+  @media screen and (min-width: 320px) and (max-width: 480px){
+    #white{
+      color: #fff;
+      font-weight: 500;
+      font-size: 2.2rem;
+      /* margin-bottom: 15rem; */
+    }
+    #gold{
+      color: #d4af37;
+      margin-bottom: 20rem;
+      /* background-color: opacity transparent#ffff; */
+      font-weight: 500;
+      font-size: 2.2rem;
+      /* background:#111; */
+      /* color:#fff; */
+      text-shadow:1px 1px 10px rgb(0, 0, 0), 1px 1px 10px rgb(0, 0, 0);
+      /* font-size:48px; */
+    }
+    
+    .cover-container {
+      /* height: 100vh; */
+      width: 100%;
+      margin-bottom: 2.2rem;
+      /* object-fit: contain; */
+      /* box-shadow: inset 0 0 0 1000px 	rgb(0, 0, 0); */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-sizing: content-box;
+      margin:auto ;
+      /* background-color: rgb(89, 218, 39); */
+      font-family: 'Boogaloo', cursive;
+     
+    }
+    
+    
+    .cover-container > h1,h2,h3,h4,h5,h6 {
+      color: white;
+      font-size: 2.2rem;
+      z-index: 99999999;
+      font-family: 'Boogaloo', cursive;
+  
+      /* margin-top: 2rem; */
+    }
+    
+    .cover-container > p {
+      
+      color: white;
+      font-size: 2.2rem;
+      z-index: 99999999;
+      
+    }
+  }
 
   /* Globe */
 .globe {
@@ -172,7 +228,7 @@
   #label:after{ 
     content:'Hello World!';
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-shadow:1px 1px 10px rgb(0, 0, 0), 1px 1px 10px rgb(0, 0, 0);
     
   }
@@ -180,7 +236,7 @@
     content:'Enjoy life!'; 
     text-shadow:1px 1px 10px rgb(0, 0, 0), 1px 1px 10px rgb(0, 0, 0);
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 2.2rem;
     color:#d4af37;
    
   }
