@@ -384,10 +384,10 @@
     border-radius: 5px;
  
 }
-ul li:hover a span::before {
+.ul .li:hover a span::before {
     transform: rotateX(90deg) translateY(-50%);
 }
-ul li a span::after {
+.ul .li a span::after {
     font-family: fontAwesome;
     font-size: 1.2rem ;
     text-align: center;
@@ -404,68 +404,68 @@ ul li a span::after {
     transition: transform 0.5s;
     transform: rotateX(90deg) translateY(50%);
 }
-ul li:hover a span::after {
+.ul .li:hover a span::after {
     transform: rotateX(0deg) translateY(0);
 }
-ul li:nth-child(1) a span::before,
-ul li:nth-child(1) a span::after {
+.ul .li:nth-child(1) a span::before,
+.ul .li:nth-child(1) a span::after {
     content: '\f0e1'; /*Linkedin*/
     
 }
-ul li:nth-child(2) a span::before,
-ul li:nth-child(2) a span::after {
+.ul .li:nth-child(2) a span::before,
+.ul .li:nth-child(2) a span::after {
    content: '\f09b'; /*Github*/
     
 }
-ul li:nth-child(3) a span::before,
-ul li:nth-child(3) a span::after {
+.ul .li:nth-child(3) a span::before,
+.ul .li:nth-child(3) a span::after {
     content: '\f099'; /*Twitter*/
     content: '\f2c6'; /*Telegram*/
 }
-ul li:nth-child(4) a span::before,
-ul li:nth-child(4) a span::after {
+.ul .li:nth-child(4) a span::before,
+.ul .li:nth-child(4) a span::after {
     content: '\f232';  /*Whatsapp*/
     /* content: '\f09a'; */
 }
-ul li:nth-child(5) a span::before,
-ul li:nth-child(5) a span::after {
+.ul .li:nth-child(5) a span::before,
+.ul .li:nth-child(5) a span::after {
     content: '\f0e0'; /* email */
     /* content: '\f09a'; */
 }
-ul li:nth-child(6) a span::before,
-ul li:nth-child(6) a span::after {
+.ul .li:nth-child(6) a span::before,
+.ul .li:nth-child(6) a span::after {
     /* content: '\f0e1'; */
     content: '\f09a';
 }
 
-ul li:nth-child(1) a span::after {
+.ul .li:nth-child(1) a span::after {
     background: #0e76a8;
     color: #fff;
     /* border: .5px solid #fff; */
     
 }
-ul li:nth-child(2) a span::after {
+.ul .li:nth-child(2) a span::after {
     background: #333;
     color:  #fff;
 }
-ul li:nth-child(3) a span::after {
+.ul .li:nth-child(3) a span::after {
     background: #0088cc;
     color: #fff;
 }
-ul li:nth-child(4) a span::after {
+.ul .li:nth-child(4) a span::after {
     /* background: #0077b5; */
     background: #25D366;
     color: #fff;
 }
 
-ul li:nth-child(5) a span::after {
+.ul .li:nth-child(5) a span::after {
   /* background: #DB4437; */
   background:linear-gradient(10deg, #ea4335, #fbbc05);
  
   color: rgb(255, 255, 255);
   
 }
-ul li:nth-child(6) a span::after {
+.ul .li:nth-child(6) a span::after {
   /* background: #0077b5; */
   background: #3b5999;
   color: #fff;
