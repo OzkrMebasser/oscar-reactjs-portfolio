@@ -237,7 +237,8 @@
     display: block;
     position:absolute;
     top: 0;
-    right: 1.5rem;
+    right: 0;
+    /* right: 1.5rem; */
     /* margin-bottom: 8rem; */
     
     transform: translate(-50%, 60%);
@@ -371,6 +372,18 @@
   --_t: var(--h);
   --_p: 100%;
   --_s: .3s
+}
+
+.nav-logo {
+  /* height: 100%; */
+  align-items: center;
+  /* margin-left: 1rem; */
+  left: 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.7rem;
+  /* flex-grow: 1; */
+  
 }
 
 }  /*MEDIA QUERIES NAV*/
