@@ -21,9 +21,9 @@
   }
   
   .cover-container {
-    /* height: 100vh; */
+    height: 87vh;
     width: 100%;
-    margin-bottom: 5rem;
+    /* margin-bottom: 5rem; */
     /* object-fit: contain; */
     /* box-shadow: inset 0 0 0 1000px 	rgb(0, 0, 0); */
     display: flex;
@@ -32,6 +32,7 @@
     align-items: center;
     box-sizing: content-box;
     margin:auto ;
+    background-color: transparent;
     /* background-color: rgb(89, 218, 39); */
     font-family: 'Boogaloo', cursive;
    
@@ -370,18 +371,19 @@
 .ul .li a span::before {
     font-family: fontAwesome;
     text-align: center;
-    font-size: 1.2rem ;
+    font-size: 1.5rem ;
     line-height: 40px;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #fff;
-    color: #000000;
+    background: transparent;
+    color: #d4af37;
     transform-origin: top;
     transition: transform 0.5s;
     border-radius: 5px;
+    border: solid 1px #d4af37;
  
 }
 .ul .li:hover a span::before {
@@ -389,7 +391,7 @@
 }
 .ul .li a span::after {
     font-family: fontAwesome;
-    font-size: 1.2rem ;
+    font-size: 1.5rem ;
     text-align: center;
     line-height: 40px;
     position: absolute;

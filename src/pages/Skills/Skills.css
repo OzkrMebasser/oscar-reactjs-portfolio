@@ -1,0 +1,38 @@
+
+.myskills{
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+
+.containerGrid{
+    padding: 50px 100px 0 100px;
+    display: grid;
+    grid-gap: 35px;
+    grid-template-columns: repeat(6, 5fr);
+    grid-template-rows: repeat(6, 200px);
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    /* text-justify:unset; */
+   
+}
+
+.cardGrid {
+  background-color: blue;
+  justify-self: stretch;
+  align-self: stretch;
+  align-items: middle;
+  color: aliceblue;
+  
+}
+
+/*Icons*/
+
+.icon-html5{
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 94, 0);
+    font-size: 7rem;
+
+}

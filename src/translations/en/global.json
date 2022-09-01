@@ -11,16 +11,22 @@
             "hello-world": "HELLO WORLD!",
             "hello-world-2": "ENJOY LIFE!"
         
-        },
-        "typing": {
+    },
+    "typing": {
                 "auto-text": 
                 ["OSCAR MORENO","A WEB DEVELOPER" , "A PROGRAMMER",
                 "OSCAR MORENO","A WEB DEVELOPER" , "A PROGRAMMER",
                 "OSCAR MORENO","A WEB DEVELOPER" , "A PROGRAMMER",
                 "OSCAR MORENO","A WEB DEVELOPER" , "A PROGRAMMER."]
                 },
-        "myself": {
+    "myself": {
             "myself": "I'AM "
-        }  
-            }
+    },
+    "about": {
+        "aboutH1": "Let me tell you something about me",
+        "aboutP": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis provident inventore quod voluptates sequi. Quis, necessitatibus omnis iusto perferendis dolores voluptate et dolorum inventore autem nemo, quos eveniet magni nesciunt.",
+        "greeting": "Hi!, thanks for reviewing my portfolio, I hope we can work together & make amazing projects, Have an awesome day!" 
+    }
+      
+}
     

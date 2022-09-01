@@ -28,13 +28,16 @@ const Navbar = ({ isScrolling }) => {
   const Close = () => setClick(false);
 
   return (
-    <nav
-      className={`navbar ${isScrolling > 120 ? "scrolling" : null}`}
-      onClick={(e) => e.stopPropagation()}
-    >
-      <div className={click ? "main-container" : ""} onClick={() => Close()} />
+    <nav className="navbar"
+      // className={`navbar ${isScrolling > 120 ? "scrolling" : null}`}
+      // onClick={(e) => e.stopPropagation()}
+    >     
+<div className="nav-icon" onClick={handleClick}>
+    {click ? <FaReply /> : <FaStream />}
+  </div>
+      {/* <div className={click ? "main-container" : ""} onClick={() => Close()} /> */}
 
-      <div className="nav-container navbar-expand-lg">
+      <div className="nav-container">
         <NavLink  to="/" activeclassname="active" className="nav-logo ">
           <div className="flip-box  ">
             <div className="flip-box-inner ">
@@ -119,12 +122,7 @@ const Navbar = ({ isScrolling }) => {
           </li>
 
         </ul>
-        <div className="nav-icon" onClick={handleClick}>
-          {click ? <FaReply /> : <FaStream />}
-
-
-          {/* <i className={click ? "fa fa-times" : "fa fa-bars"}></i> */}
-        </div>
+   
        
       </div>
       

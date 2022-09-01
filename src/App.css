@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
 
+*{
+    margin: 0;
+}
 body{
     background-color: #000000;
     font-family: 'Boogaloo', cursive;
     text-align:center;
+    text-transform: uppercase;
+    
 }
 
 
