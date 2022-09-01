@@ -78,7 +78,8 @@
     }
     
     .cover-container {
-      /* height: 100vh; */
+     
+      height: 87vh;
       width: 100%;
       /* margin-bottom: 2.2rem; */
       /* object-fit: contain; */
