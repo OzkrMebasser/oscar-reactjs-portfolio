@@ -67,7 +67,7 @@
     }
     #gold{
       color: #d4af37;
-      margin-bottom: 10rem;
+      margin-bottom: 5rem;
       /* background-color: opacity transparent#ffff; */
       font-weight: 500;
       font-size: 2.2rem;
@@ -80,7 +80,7 @@
     .cover-container {
       /* height: 100vh; */
       width: 100%;
-      margin-bottom: 2.2rem;
+      /* margin-bottom: 2.2rem; */
       /* object-fit: contain; */
       /* box-shadow: inset 0 0 0 1000px 	rgb(0, 0, 0); */
       display: flex;
