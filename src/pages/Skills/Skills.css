@@ -1,8 +1,16 @@
 
-.myskills{
-    width: 100%;
+.texts{
+    
     text-align: center;
     color: black;
+    vertical-align: middle;
+}
+
+.textM{
+    text-align: center;
+    color: black;
+    vertical-align: middle;
+    height: 5rem;
 }
 
 .containerGrid{
@@ -19,11 +27,11 @@
 }
 
 .cardGrid {
-  background-color: blue;
+  /* background-color: blue; */
   justify-self: stretch;
   align-self: stretch;
   align-items: middle;
-  color: aliceblue;
+  height: 320px;
   
 }
 
@@ -33,6 +41,38 @@
     width: 100%;
     text-align: center;
     color: rgb(255, 94, 0);
-    font-size: 7rem;
+    font-size: 3rem;
+    vertical-align: middle;
+    background-color: rgb(255, 255, 255);
+    border: black solid 1px;
+}
+.icon-Css{
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 81, 255);
+    font-size: 3rem;
+    background-color: rgb(255, 255, 255);
+    border: black solid 1px;
+}
+.icon-Js{
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 238, 0);
+    font-size: 3rem;
+    vertical-align: middle;
+    background-color: black;
 
 }
+
+.icon-NodeJs{
+    width: 100%;
+    text-align: center;
+    color: rgb(28, 192, 42);
+    font-size: 3rem;
+    background-color: black;
+
+}
+.react-icons {
+    
+    background-color: black;
+  }

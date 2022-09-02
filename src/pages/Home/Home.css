@@ -67,7 +67,7 @@
     }
     #gold{
       color: #d4af37;
-      margin-bottom: 5rem;
+      /* margin-bottom: 5rem; */
       /* background-color: opacity transparent#ffff; */
       font-weight: 500;
       font-size: 2.2rem;
@@ -79,7 +79,7 @@
     
     .cover-container {
      
-      height: 87vh;
+      height: 80%;
       width: 100%;
       /* margin-bottom: 2.2rem; */
       /* object-fit: contain; */
@@ -198,14 +198,14 @@
 
   
  /* Icons media*/
- #social-icons {
-  margin-bottom: 5rem;
-  padding: 0;
+ /* #social-icons { */
+  /* margin-bottom: 5rem; */
+  /* padding: 0; */
   /* margin-top: 30vh; */
-  background: transparent;
-  z-index: 999999999;
+  /* background: transparent; */
+  /* z-index: 999999999; */
    /* Icons media*/
-} 
+/* }  */
 
 }/*Globe media queries */
 
