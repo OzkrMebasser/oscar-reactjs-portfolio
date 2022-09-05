@@ -13,6 +13,7 @@ import Home from "../../pages/Home/Home";
 import Skills from "../../pages/Skills/Skills";
 import Projects from "../../pages/Projects/Projects";
 
+
 import { AnimatePresence } from 'framer-motion';
 
 const AnimatedRoutes = () => {

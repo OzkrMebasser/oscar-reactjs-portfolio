@@ -1,6 +1,7 @@
 import React, { useState, Fragment } from "react";
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import Accordion from 'react-bootstrap/Accordion';
+import { motion } from 'framer-motion';
 
 
 import Card from "react-bootstrap/Card";
@@ -13,13 +14,36 @@ import { skills } from "../../Api/hardSkillsData";
 const Skills = () => {
 
   return (
-    <Fragment className="cardGrid containerGrid">
+    <Fragment className="containerGrid">
+      <h1 className="texts">Here are some of my hard skills</h1>
+    <motion.div  className="cardGrid" 
+         initial={{y: 600 }}
+         animate={{ y: 0}}
+         transition={{delay: 0.3, type: 'fade' }}>
      <Accordion>
       <Accordion.Item eventKey="0">
         <Accordion.Header className="texts">MY HARD SKILLS</Accordion.Header>
         
         <Accordion.Body>
-      <h1 className="texts">Here are some of my hard skills</h1>
+      
+      <Row xs={2} md={4} className="g-4 texts ">
+        {skills.map((skill, id) => (
+          <Col >
+            <Card className="cardGrid align-middle" >
+              {/* <span className={skill.class} ><span className="bgBlack">{skill.icon}</span></span> */}
+              <img className={skill.class} src={skill.icon} alt={skill.alt} />
+              <Card.Body>
+                <Card.Title>{skill.title}</Card.Title>
+                <Card.Text>{skill.category}</Card.Text>
+                <Card.Text className="textM">{skill.description}</Card.Text>
+                <strong><p className="texts">Aproximate knowledge</p></strong>
+                <ProgressBar className="texts" animated now={skill.progress} label={`${skill.progress}%`} variant={skill.variant} style={{height:"20px", color:"dark"}}/>
+              </Card.Body>
+              
+            </Card>
+          </Col>
+        ))}
+      </Row>
       <Row xs={2} md={4} className="g-4 texts ">
         {skills.map((skill, id) => (
           <Col >
@@ -35,7 +59,7 @@ const Skills = () => {
               
             </Card>
           </Col>
-        ))};
+        ))}
       </Row>
       </Accordion.Body>
       </Accordion.Item>
@@ -52,6 +76,7 @@ const Skills = () => {
         </Accordion.Body>
       </Accordion.Item>
       </Accordion>
+    </motion.div>
     </Fragment>
   );
 };

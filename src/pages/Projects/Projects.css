@@ -1,0 +1,21 @@
+.center{
+    background-color: rgb(248, 0, 0);
+    width: 650px;
+    height: 400px;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+}
+
+.centerCar{
+    background-color: rgb(248, 0, 0);
+    width: 600px;
+    height: 380px;
+    align-items: center;
+    margin: auto;
+    
+}
+
+.btnfixeda{
+
+}

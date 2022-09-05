@@ -1,50 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+
 
 .texts{
     
     text-align: center;
     color: black;
     vertical-align: middle;
+    font-family: 'Boogaloo', cursive;
+    text-shadow: 1px 1px 1px #9c9c9a9a;
 }
 
 .textM{
     text-align: center;
-    color: black;
-    vertical-align: middle;
-    height: 5rem;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    height: 8rem;
+    font-size: 1.1rem;
+    font-family: 'Boogaloo', cursive;
+    text-shadow: 1px 1px 1px #9c9c9a9a;
+   
+    
 }
 
-.containerGrid{
-    padding: 50px 100px 0 100px;
-    display: grid;
-    grid-gap: 35px;
-    grid-template-columns: repeat(6, 5fr);
-    grid-template-rows: repeat(6, 200px);
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    /* text-justify:unset; */
-   
-}
 
 .cardGrid {
   /* background-color: blue; */
-  justify-self: stretch;
-  align-self: stretch;
-  align-items: middle;
-  height: 320px;
+  
+  height: 25rem;
   
 }
 
 /*Icons*/
 
+.icons{
+    width: 7em;
+    margin: auto;
+}
 .icon-html5{
-    width: 100%;
-    text-align: center;
-    color: rgb(255, 94, 0);
-    font-size: 3rem;
-    vertical-align: middle;
-    background-color: rgb(255, 255, 255);
-    border: black solid 1px;
+    width: 7em;
+    margin: auto;
+      
+
+   
 }
 .icon-Css{
     width: 100%;
@@ -60,7 +57,7 @@
     color: rgb(255, 238, 0);
     font-size: 3rem;
     vertical-align: middle;
-    background-color: black;
+    
 
 }
 
