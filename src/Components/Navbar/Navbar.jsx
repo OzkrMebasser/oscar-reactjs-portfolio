@@ -104,6 +104,7 @@ const Navbar = ({ isScrolling }) => {
               {t("navbar.contact")}
             </NavLink>
           </li>
+          
 
           <li className=" nav-item-prueba " >
           <NavLink

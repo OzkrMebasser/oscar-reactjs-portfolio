@@ -1,55 +1,111 @@
-import React, { Fragment } from "react";
-import { BiAdjust } from "react-icons/bi";
+import React, { useState, useEffect, useRef } from "react";
+import ItemsCarousel from "react-items-carousel";
+import { projects } from "../../Api/projects";
+import { ImUndo2,ImRedo2 } from "react-icons/im";
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  ButtonBack,
-  ButtonNext,
-} from "pure-react-carousel";
-import "pure-react-carousel/dist/react-carousel.es.css";
+import { FaReply } from "react-icons/fa";
 
-import "./Projects.css";
+import './Projects.css';
 
-const Projects = () => {
+
+ const Projects = ()=> {
+
+  const [modalShow, setModalShow] = React.useState(false);
+  function MyVerticallyCenteredModal(props) {
+    return (
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+            Modal heading
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <h4>Centered Modal</h4>
+          <p>
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+            consectetur ac, vestibulum at eros.
+            <FaReply/>
+          </p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
+  
+  const myRefname = useRef(null);
+  const [activeItemIndex, setActiveItemIndex] = useState(0);
+  const chevronWidth = 150;
+  const [timeLeft, setTimeLeft] = useState(1);
+  useEffect(() => {
+    if (!timeLeft) return;
+
+    const intervalId = setInterval(() => {
+      myRefname.current.click();
+      setTimeLeft(timeLeft + 1);
+    }, 4000);
+
+    return () => clearInterval(intervalId);
+  }, [timeLeft]);
   return (
-    <Fragment className="container center">
-      <h1 className="text-center" style={{ paddingTop: "10px" }}>
-        Projects
+    
+    <div className="bodyContainer">
+      <h1 className="text-center projectsH1">
+        My Projects
       </h1>
-      <CarouselProvider
-        naturalSlideWidth={100}
-        naturalSlideHeight={125}
-        totalSlides={3}
-      ><ButtonBack className="btnfixeda">Back</ButtonBack>
-      <ButtonNext className="btnfixeda">Next</ButtonNext>
-        <Slider className="centerCar">
-          <Slide index={0}>
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/Captura%20de%20pantalla%202022-09-04%20203230.png?alt=media&token=17e6eb5e-6821-4620-99d7-b825a3fec6f7"
-              alt="MDN"
-            />
-          </Slide>
-          <Slide index={1}>
-            {" "}
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/Captura%20de%20pantalla%202022-09-04%20203230.png?alt=media&token=17e6eb5e-6821-4620-99d7-b825a3fec6f7"
-              alt="MDN"
-            /><BiAdjust/>
-          </Slide>
-          <Slide index={2}>
-            {" "}
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/Captura%20de%20pantalla%202022-09-04%20203230.png?alt=media&token=17e6eb5e-6821-4620-99d7-b825a3fec6f7"
-              alt="MDN"
-            /> 
-          </Slide><BiAdjust/>
-        
-        </Slider>
-        
-      </CarouselProvider>
-    </Fragment>
+    <div className="carouselContainer" style={{ padding: `0 ${chevronWidth}px` }}>
+      
+      <ItemsCarousel
+        infiniteLoop={true}
+        requestToChangeActive={setActiveItemIndex}
+        activeItemIndex={activeItemIndex}
+        numberOfCards={3}
+        gutter={8}
+        leftChevron={<span className="arrowIcon"><ImUndo2/></span>}
+        rightChevron={<span className="arrowIcon"><ImRedo2/></span>}
+        outsideChevron
+        chevronWidth={chevronWidth}
+        showSlither={true}
+      >
+
+          {projects.map((project, id) => (
+            
+              <div className="image-wrapper">
+               
+              <a href={project.href} rel="noreferrer" target="_blank">
+            
+                <img
+                className="inner-img"
+                src={project.src}
+                alt={project.alt}
+              />
+           
+              </a>
+              <Button variant="primary" onClick={() => setModalShow(true)}>
+        View Tech Stack used
+      </Button>
+
+      <MyVerticallyCenteredModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
+            </div>
+            
+          ))}
+
+
+      </ItemsCarousel>
+    </div>
+    </div>
   );
-};
+}
 export default Projects;
