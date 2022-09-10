@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from "react";
+import React, { Fragment } from "react";
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import Accordion from 'react-bootstrap/Accordion';
 import { motion } from 'framer-motion';

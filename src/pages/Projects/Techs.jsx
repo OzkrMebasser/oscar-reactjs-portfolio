@@ -1,87 +1,18 @@
-import React, { useState} from "react";
+import React from 'react'
+import { projects} from "../../Api/projects";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
-import Accordion from 'react-bootstrap/Accordion';
-import { useAccordionButton } from 'react-bootstrap/AccordionButton';
-import Card from 'react-bootstrap/Card';
 
-import ItemsCarousel from "react-items-carousel";
-import { projects } from "../../Api/projects";
-import { ImUndo2, ImRedo2 } from "react-icons/im";
+ 
 
-
-
-
-
-import "./Projects.css";
-
-const Projects = () => {
-  function CustomToggle({ children, eventKey }) {
-    const decoratedOnClick = useAccordionButton(eventKey, () =>
-      console.log('totally custom!'),
-    );
-  
-    return (
-      <button
-        type="button"
-        style={{ backgroundColor: 'pink' }}
-        onClick={decoratedOnClick}
-      >
-        {children}
-      </button>
-    );
-  }
-
-
-  const [activeItemIndex, setActiveItemIndex] = useState(0);
-
-  const chevronWidth = 100;
-
+const Techs = () => {
   return (
-    <div className="bodyContainer">
-      
-      <div
-        className="carouselContainer"
-        style={{ padding: `0 ${chevronWidth}px` }}
-      >
-        <ItemsCarousel
-          infiniteLoop={true}
-          requestToChangeActive={setActiveItemIndex}
-          activeItemIndex={activeItemIndex}
-          numberOfCards={1}
-          gutter={8}
-          leftChevron={
-            <span className="arrowIcon">
-              <ImUndo2 />
-            </span>
-          }
-          rightChevron={
-            <span className="arrowIcon">
-              <ImRedo2 />
-            </span>
-          }
-          outsideChevron
-          chevronWidth={chevronWidth}
-          showSlither={false}
-        >
-          {projects.map((project, id) => (
-            <div className="image-wrapper text-center ">
-              <p className="projectName">{project.name}</p>
-              <a href={project.href} rel="noreferrer" target="_blank">
-                <img
-                  className="inner-img"
-                  src={project.src}
-                  alt={project.alt}
-                />
-              </a>
-             
-              <Accordion className="text-center" defaultActiveKey="0">
-      <Accordion.Item eventKey="0">
-        <Accordion.Header></Accordion.Header>
-        <Accordion.Body> 
-          <span>
+    <div >
+      {projects.map((project,index) => ( 
+        <>
+            <span>
               <OverlayTrigger
-               key={id}
+               key={index}
                  // First Icon
                 placement="right"
                 overlay={
@@ -108,7 +39,7 @@ const Projects = () => {
             </span>
             <span>
               <OverlayTrigger
-               key={id}
+               key={index}
                  // Second Icon
                 placement="right"
                 overlay={
@@ -135,7 +66,7 @@ const Projects = () => {
             </span>
             <span>
               <OverlayTrigger
-               key={id}
+               key={index}
                  // Third Icon
                 placement="right"
                 overlay={
@@ -162,7 +93,7 @@ const Projects = () => {
             </span>
             <span>
               <OverlayTrigger
-               key={id}
+               key={index}
                  // Third Icon
                 placement="right"
                 overlay={
@@ -187,17 +118,14 @@ const Projects = () => {
                 </a>
               </OverlayTrigger> 
             </span>
-            </Accordion.Body>
- </Accordion.Item>
-    </Accordion>
-              
-                        </div>
-              
+
             
+           
+            </>
           ))}
-        </ItemsCarousel>
-      </div>
+
     </div>
-  );
-};
-export default Projects;
+  )
+}
+
+export default Techs;

@@ -21,7 +21,7 @@ const AnimatedRoutes = () => {
     const location = useLocation();
 
   return (
-    <AnimatePresence exitBeforeEnter transition>
+    <AnimatePresence mode='wait' transition>
     <Routes location={location} key={location.pathname}>
     <Route path="/" element={<Navbar />} />
     <Route index element={<Home />} />
