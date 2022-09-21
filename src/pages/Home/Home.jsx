@@ -6,7 +6,7 @@ import Particle from "../../Components/particulesBG/Particle";
 import Typing from "./Typing";
 
 import "../Home/Home.css";
-import "../Cover/Cover.css"
+import "../Cover/Cover.css";
 
 import { motion } from 'framer-motion';
 
