@@ -26,7 +26,7 @@ const Skills = () => {
         
         <Accordion.Body>
       
-      <Row xs={2} md={4}  className="g-4 texts ">
+      <Row xs={1} md={4} fluid className="g-4 texts ">
         {skills.map((skill, id) => (
           <Col >
             <Card className="cardGrid align-middle" >
