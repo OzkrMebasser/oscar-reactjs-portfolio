@@ -23,7 +23,7 @@ const Projects = ({ props }) => {
           infiniteLoop={true}
           requestToChangeActive={setActiveItemIndex}
           activeItemIndex={activeItemIndex}
-          numberOfCards={2}
+          numberOfCards={1}
           gutter={8}
           leftChevron={
             <span className="arrowIcon">

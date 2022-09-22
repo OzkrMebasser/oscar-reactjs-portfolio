@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
 
+.containerGrid{
+    width: 90vw;
+}
 
+.accordion-item{
+    width: 95vw;
+    margin: auto;
+}
 .texts{
     
     text-align: center;
@@ -9,7 +16,46 @@
     font-family: 'Boogaloo', cursive;
     text-shadow: 1px 1px 1px #9c9c9a9a;
 }
+.textTitle{
+    text-align: center;
+    color: #d4af37;
+    font-size: 2rem;
+    font-family: "Boogaloo", cursive;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px 2px #000000;
+}
+.arrowsColor{
+    color: #ffffff;
+  }
 
+
+.accordion-button{
+    font-size: 1.5rem;
+    color: #d4af37;
+    background-color:transparent;
+    text-shadow: 2px 2px 1px #000000;
+
+}
+
+
+
+.accordion-button:not(.collapsed) {
+    color: #d4af37;
+    background-color: #000;
+    /* box-shadow: inset 0 calc(var(--bs-accordion-border-width) * -1) 0 var(--bs-accordion-border-color); */
+}
+
+
+.accordion-button::after{
+    font-size: 1.5rem;
+    color: #d4af37;
+}
+
+.accordion-header{
+    font-size: 1.5rem;
+    color: #d4af37;
+}
 .textM{
     text-align: center;
     color: rgb(0, 0, 0);

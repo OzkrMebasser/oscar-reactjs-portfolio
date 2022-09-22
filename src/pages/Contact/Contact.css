@@ -43,7 +43,7 @@
     /* border: 1px solid #fff; */
     border-radius: 8px;
     height: auto;
-    background-color: rgba(146, 151, 138, 0.253);
+    background-color: transparent;
   }
   
   .contact-links{
@@ -63,7 +63,7 @@
     text-align: center;
     height: 400px;
     /* background-color: transparent; */
-    background-color: rgb(22, 54, 196);
+    background-color: transparent;
     
     border-radius: 10px 0 0 10px;
     
@@ -77,14 +77,35 @@
   
   /*google Map*/
 .map{
-  background-color: rgb(102, 51, 153);
+  background-color: rgb(0, 0, 0);
   /* margin: auto;
+  
   margin-top: 7.5rem;
   margin-right: 5rem; */
   width: 100%;
   height: 100%;
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
+  position:relative;
+  margin: auto;
+  align-items: center;
+  
+}
+
+.located{
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  width: 70%;
+  height: 21%;
+  margin: auto;
+  text-align: center;
+  border-radius: 6px;
+  left: 0;
+  right: 0;
+  bottom: 1.4rem;
+  margin: 0 auto;
+  z-index: 9999999;
+  
   
 }
 
@@ -258,10 +279,11 @@
 /*Social media */
 .ulContact {
     position: absolute;
-    top: 30vh;
-    left: 17vw ;
+    top: 2rem;
+    margin: auto;
     display: flex;
-    /* z-index: 99999999999; */
+    left: 2.4rem;
+    z-index: 99999999999;
     
 }
 .ulContact .liContact {
@@ -270,7 +292,7 @@
     margin: 0 2px;
     
 }
-.ulContact .liContact::before {
+.ulContact .liContact::after {
     content: '';
     position: relative;
     left: 0;
@@ -284,7 +306,7 @@
     filter: blur(2px);
     transform: scale(0.8);
 }
-.ulContact .liContact:hover::before {
+.ulContact .liContact:hover::after {
     transition-delay: 0.2s;
     opacity: 0.2;
     transform: scale(1);
@@ -303,7 +325,7 @@
     height: 100%;
     border-radius: 20px;
 }
-.ulContact .liContact a span::before {
+.ulContact .liContact a span::after {
     font-family: fontAwesome;
     text-align: center;
     font-size: 1.5rem ;
@@ -314,17 +336,17 @@
     width: 100%;
     height: 100%;
     background: transparent;
-    color: #d4af37;
+    /* color: #d4af37; */
     transform-origin: top;
     transition: transform 0.5s;
     border-radius: 5px;
-    border: solid 1px #d4af37;
+    /* border: solid 1px #d4af37; */
  
 }
-.ulContact .liContact:hover a span::before {
+.ulContact .liContact:hover a span::after {
     transform: rotateX(90deg) translateY(-50%);
 }
-.ulContact .liContact a span::after {
+.ulContact .liContact a span::before {
     font-family: fontAwesome;
     font-size: 1.5rem ;
     text-align: center;
@@ -339,73 +361,96 @@
     border-radius: 5px;
     transform-origin: bottom;
     transition: transform 0.5s;
-    transform: rotateX(90deg) translateY(50%);
-}
-.ulContact .liContact:hover a span::after {
     transform: rotateX(0deg) translateY(0);
+
 }
-.ulContact .liContact:nth-child(1) a span::before,
-.ulContact .liContact:nth-child(1) a span::after {
+.ulContact .liContact:hover a span::before {
+    transform: rotateX(360deg) translateY(10%);
+}
+.ulContact .liContact:nth-child(1) a span::after,
+.ulContact .liContact:nth-child(1) a span::before {
+  background: #0e76a8;
+  color: #fff;
     content: '\f0e1'; /*Linkedin*/
     
 }
-.ulContact .liContact:nth-child(2) a span::before,
-.ulContact .liContact:nth-child(2) a span::after {
+.ulContact .liContact:nth-child(2) a span::after,
+.ulContact .liContact:nth-child(2) a span::before {
    content: '\f09b'; /*Github*/
+   background: #333;
+   color:  #fff;
     
 }
-.ulContact .liContact:nth-child(3) a span::before,
-.ulContact .liContact:nth-child(3) a span::after {
+.ulContact .liContact:nth-child(3) a span::after,
+.ulContact .liContact:nth-child(3) a span::before {
     content: '\f099'; /*Twitter*/
     content: '\f2c6'; /*Telegram*/
-}
-.ulContact .liContact:nth-child(4) a span::before,
-.ulContact .liContact:nth-child(4) a span::after {
-    content: '\f232';  /*Whatsapp*/
-    /* content: '\f09a'; */
-}
-.ulContact .liContact:nth-child(5) a span::before,
-.ulContact .liContact:nth-child(5) a span::after {
-    content: '\f0e0'; /* email */
-    /* content: '\f09a'; */
-}
-.ulContact .liContact:nth-child(6) a span::before,
-.ulContact .liContact:nth-child(6) a span::after {
-    /* content: '\f0e1'; */
-    content: '\f09a';
-}
-
-.ulContact .liContact:nth-child(1) a span::after {
-    background: #0e76a8;
-    color: #fff;
-    /* border: .5px solid #fff; */
-    
-}
-.ulContact .liContact:nth-child(2) a span::after {
-    background: #333;
-    color:  #fff;
-}
-.ulContact .liContact:nth-child(3) a span::after {
     background: #0088cc;
     color: #fff;
 }
-.ulContact .liContact:nth-child(4) a span::after {
-    /* background: #0077b5; */
+.ulContact .liContact:nth-child(4) a span::after,
+.ulContact .liContact:nth-child(4) a span::before {
+    content: '\f232';  /*Whatsapp*/
+    /* content: '\f09a'; */
     background: #25D366;
     color: #fff;
 }
-
-.ulContact .liContact:nth-child(5) a span::after {
-  /* background: #DB4437; */
-  background:linear-gradient(10deg, #ea4335, #fbbc05);
+.ulContact .liContact:nth-child(5) a span::after,
+.ulContact .liContact:nth-child(5) a span::before {
+    content: '\f0e0'; /* email */
+    /* content: '\f09a'; */
+    background:linear-gradient(10deg, #ea4335, #fbbc05);
  
-  color: rgb(255, 255, 255);
-  
+    color: rgb(255, 255, 255);
 }
-.ulContact .liContact:nth-child(6) a span::after {
+.ulContact .liContact:nth-child(6) a span::after,
+.ulContact .liContact:nth-child(6) a span::before {
+    /* content: '\f0e1'; */
+    content: '\f09a';
+    background: #3b5999;
+    color: #ffffff;
+}
+
+.ulContact .liContact:nth-child(1) a span::before {
+    background: #ffffff;
+    color: #0e76a8;
+    border: .5px solid #0e76a8;
+    
+}
+.ulContact .liContact:nth-child(2) a span::before {
+    background: #ffffff;
+    color:  #333;
+    border: .5px solid #333;
+
+}
+.ulContact .liContact:nth-child(3) a span::before {
+    background: #ffffff;
+    color: #0088cc;
+    border: .5px solid #0088cc;
+
+}
+.ulContact .liContact:nth-child(4) a span::before {
+    /* background: #0077b5; */
+    background: #ffffff;
+    color: #25D366;
+    border: .5px solid #25D366;
+
+}
+
+.ulContact .liContact:nth-child(5) a span::before {
+  /* background: #DB4437; */
+  background: #ffffff;
+ 
+  color:  #fa8806;
+  border: .5px solid #fa8806;
+
+}
+.ulContact .liContact:nth-child(6) a span::before {
   /* background: #0077b5; */
-  background: #3b5999;
-  color: #fff;
+  background: #ffffff;
+  color: #3b5999;
+  border: .5px solid #3b5999;
+
 }
 /*Social media end*/
 

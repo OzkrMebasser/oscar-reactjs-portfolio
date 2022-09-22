@@ -12,9 +12,10 @@ function ModalItem({props, ...project}) {
   const handleShow = () => setShow(true);
   return (
     <>
-    <Button variant="primary" onClick={handleShow}>
-      Launch demo modal
+    <Button className='stackBtn' onClick={handleShow}>
+      VER TECH STACK
     </Button>
+    
 <br />
     <Modal className='moreDown' show={show} onHide={handleClose} animation={false}>
       <Modal.Header className="mt-4" >

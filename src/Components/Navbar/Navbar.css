@@ -134,7 +134,7 @@
 
   .navbar {
     font-family: 'Boogaloo', cursive;
-    background-color: transparent;
+    background-color:rgb(0, 0, 0);
     height: 90px;
     display: flex;
     justify-content: center;

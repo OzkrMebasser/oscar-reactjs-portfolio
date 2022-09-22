@@ -16,7 +16,7 @@ const About = () => {
         transition={{ delay: 0.3, type: "fade" }}
       >
         <div className="about-desc ">
-          <h3>{t("about.aboutH1")}</h3>
+          <h3 className="titleAbout">{t("about.aboutH1")}</h3>
           <p >{t("about.aboutP")}</p>
         </div>
         <div className="flip-card">

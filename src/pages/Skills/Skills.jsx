@@ -4,6 +4,7 @@ import Accordion from 'react-bootstrap/Accordion';
 import { motion } from 'framer-motion';
 
 
+
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -14,8 +15,8 @@ import { skills } from "../../Api/hardSkillsData";
 const Skills = () => {
 
   return (
-    <Fragment className="containerGrid">
-      <h1 className="texts">Here are some of my hard skills</h1>
+    <Fragment className="containerGrid" >
+      <h1 className="textTitle">HERE SOME OF MY SKILLS</h1>
     <motion.div  className="cardGrid" 
          initial={{y: 600 }}
          animate={{ y: 0}}
@@ -26,7 +27,7 @@ const Skills = () => {
         
         <Accordion.Body>
       
-      <Row xs={1} md={4} fluid className="g-4 texts ">
+      <Row xs={1} md={3} fluid className="g-4 texts">
         {skills.map((skill, id) => (
           <Col >
             <Card className="cardGrid align-middle" >
@@ -64,7 +65,7 @@ const Skills = () => {
       </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
-        <Accordion.Header>Accordion Item #2</Accordion.Header>
+        <Accordion.Header>MY SOFT SKILLS</Accordion.Header>
         <Accordion.Body>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

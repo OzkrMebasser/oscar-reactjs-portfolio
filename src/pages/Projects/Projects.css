@@ -28,7 +28,7 @@
   color: rgb(255, 255, 255);
   vertical-align: middle;
   position: relative;
-  margin-bottom: 1.2rem;
+  
   font-family: "Boogaloo", cursive;
   text-shadow: 1px 1px 3px #cccc5abd;
 }
@@ -69,8 +69,8 @@
 }
 .inner-img {
   transition: 0.3s;
-  width: 420px;
-  height: 300px;
+  width: 600px;
+  height: 400px;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -90,7 +90,7 @@
   .inner-img {
     transition: 0.3s;
     width: auto;
-    height: 300px;
+    height: 450px;
     border-radius: 10px;
     cursor: pointer;
   }
@@ -193,25 +193,36 @@
 }
 
 .stackBtn {
-  margin-top: 1rem;
+ 
+ width: 30%;
+
+ 
   background-color: #d4af37;
   color: #000;
   font-weight: 500;
   border: currentColor;
   font-family: "Boogaloo", cursive;
   text-decoration-style: dotted;
+
 }
 .stackBtn:hover {
-  margin-top: 1rem;
+
   background-color: #000;
   color: #ffffff;
   font-weight: 500;
   border: 1px solid #d4af37;
   transform: scale(0.95);
   transition: 200ms;
+ 
 }
 
-
+.btn-check:focus+.btn, .btn:focus{
+  color: #ffffff;
+  background-color: #000;
+  border: 1px solid #d4af37;
+  outline: 0;
+  box-shadow: none;
+}
 /*Modal stacks*/
 .stackBtn-git {
   height: 3rem;
@@ -246,3 +257,8 @@
 
 }
 /*Modal stacks*/
+
+.btnStacks{
+  background-color: #d4af37;
+  color: #000;
+}

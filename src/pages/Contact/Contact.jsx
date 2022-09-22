@@ -15,7 +15,32 @@ const Contact = () => {
       <section id="contact">
       <h4 className="contactTitle">LET´S GET IN TOUCH!</h4>
         <div class="contact-box">
-        <div id="social-icons">
+        
+          <div class="contact-form-wrapper">
+            <form>
+              <div class="form-item">
+                <input type="text" name="sender" required />
+                <label>Name:</label>
+              </div>
+              <div class="form-item">
+                <input type="text" name="email" required />
+                <label>Email:</label>
+              </div>
+              <div class="form-item">
+                <textarea class="" name="message" required></textarea>
+                <label>Message:</label>
+              </div>
+              <button class="submit-btn">SEND <GrSend className="sizer"/></button>
+            </form>
+          </div>
+
+          <div class="contact-links">
+           
+          
+            <div className="map">
+            <div className="located">
+              <strong><p>I´m currently located at</p></strong>
+              <div id="social-icons">
               <ul className="ulContact">
                 <li className="liContact">
                   <a
@@ -74,29 +99,10 @@ const Contact = () => {
                 </li>
               </ul>
             </div>
-          <div class="contact-links">
-           
-            
-            <div className="map">
-            {/* <MyMap/> */}
             </div>
-          </div>
-          <div class="contact-form-wrapper">
-            <form>
-              <div class="form-item">
-                <input type="text" name="sender" required />
-                <label>Name:</label>
-              </div>
-              <div class="form-item">
-                <input type="text" name="email" required />
-                <label>Email:</label>
-              </div>
-              <div class="form-item">
-                <textarea class="" name="message" required></textarea>
-                <label>Message:</label>
-              </div>
-              <button class="submit-btn">SEND <GrSend className="sizer"/></button>
-            </form>
+            <MyMap/>
+            
+            </div>
           </div>
         </div>
       </section>
