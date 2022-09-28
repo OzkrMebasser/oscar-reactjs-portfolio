@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 
-import {GrSend} from "react-icons/gr";
 import MyMap from "./MyMap";
 //https://mailtrap.io/blog/react-contact-form/#Create-the-contact-form TO SEE EXAMPLE
 //https://mdbootstrap.com/docs/b4/jquery/forms/contact/
@@ -9,6 +8,7 @@ import MyMap from "./MyMap";
 import "../Contact/Contact.css";
 
 const Contact = () => {
+ 
   return (
     <Fragment>
       
@@ -16,7 +16,7 @@ const Contact = () => {
       <h4 className="contactTitle">LET´S GET IN TOUCH!</h4>
         <div class="contact-box">
         
-          <div class="contact-form-wrapper">
+          <div class="contact-form-wrapper yellow">
             <form>
               <div class="form-item">
                 <input type="text" name="sender" required />
@@ -30,11 +30,11 @@ const Contact = () => {
                 <textarea class="" name="message" required></textarea>
                 <label>Message:</label>
               </div>
-              <button class="submit-btn">SEND <GrSend className="sizer"/></button>
+              <button class="submit-btn" ><span className="iconColor"><i class="fas fa-paper-plane"></i></span></button>
             </form>
           </div>
 
-          <div class="contact-links">
+          <div class="contact-links yellow">
            
           
             <div className="map">

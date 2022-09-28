@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
 
-.sizer{
+#sizer{
  font-size: 1rem;
+ color: #fff;
 }
+
+
 #contact {
     background-color: #000000;
     display: flex;
@@ -36,27 +39,29 @@
     text-shadow: 1px 1px 3px #cccc5abd;
   }
   .contact-box {
-    width: 84%;
+    width: 90%;
     /* margin: 80px 50px; */
     display: flex;
     flex-wrap: wrap;
     /* border: 1px solid #fff; */
     border-radius: 8px;
     height: auto;
+    /* margin-bottom: 5rem; */
     background-color: transparent;
   }
   
   .contact-links{
     width: 50%;
+    margin: auto;
     /* padding-top: 3%; */
     text-align: center;
-    
+    border-radius: 10px;
     
     
   }
   .contact-form-wrapper {
     width: 50%;
-    padding-top: 5%;
+    margin: auto;
   }
   
   .contact-links {
@@ -89,8 +94,9 @@
   position:relative;
   margin: auto;
   align-items: center;
-  
+  border-radius: 8px;
 }
+
 
 .located{
   background-color: rgb(255, 255, 255);
@@ -99,7 +105,7 @@
   height: 21%;
   margin: auto;
   text-align: center;
-  border-radius: 6px;
+  border-radius: 8px;
   left: 0;
   right: 0;
   bottom: 1.4rem;
@@ -110,53 +116,16 @@
 }
 
 .MYmap{
-  width: 100%;
-  height: 100%; 
-}
-/*google Map end*/
-  @media only screen and (max-width: 800px) {
-    #contact {
-      background-color: #000000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #000000;
-      background:
-        /* radial-gradient(
-          circle at 55% 92%, #d4af37 0 12%, transparent 12.2%
-        ), 
-        radial-gradient(
-          circle at 94% 72%, #d4af37 0 10%, transparent 10.2%
-        ), 
-        radial-gradient(
-          circle at 20% max(78%, 350px), #000000 0 7%, transparent 7.2%
-        ),  */
-        /* radial-gradient(
-          circle at 0% 0%, #d4af37 0 30%, transparent 80.2%
-        ),  */
-        #000000;
-    }
-
-    .contact-links, .contact-form-wrapper {
-      width: 100%;
-    }
-    
-    .contact-links {
-      border-radius: 10px 10px 0 0;
-    }
-    
-    .contact-form-wrapper {
-      border-radius: 0 0 10px 10px;
-    }
-  }
+  width: 90%;
+  height: 100%;
+  border-radius: 8px; 
+  margin: auto;
+  /* box-shadow: 0px 0px 6px 6px #fffffe; ; */
   
-  @media only screen and (max-width: 400px) {
-    .contact-box {
-      width: 95%;
-      margin: 8% 5%;
-    }
-  }
+}
+
+/*google Map end*/
+
   
   h2 {
     font-family: 'Arimo', sans-serif;
@@ -175,7 +144,7 @@
   }
   
   .link {
-    margin: 10px;
+    margin: 30px;
     cursor: pointer;
   }
   
@@ -192,26 +161,55 @@
   label {
     position: absolute;
     top: 10px;
-    left: 2%;
-    color: #999;
+    left: 7%;
+    color: #fff;
     font-size: 1.2rem;
     pointer-events: none;
     user-select: none;
     font-family: 'Boogaloo', cursive;
-    margin-left: 3.6rem;
+    
   }
   
-  input, textarea {
-    width: 80%;
+  input {
+    width: 90%;
     outline: 0;
-    border: 1px solid #ccc;
+    border: solid 1px #d4af37;
     border-radius: 8px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     height: 4rem;
-    margin-left: 3.6rem;
+    margin: 0 0 30px 30px ;
+    /* margin-left: 3.6rem; */
     font-size: 1.8rem;
     font-family: 'Boogaloo', cursive;
-    
+    background-color: transparent;
+    color:#fff;
+  }
+
+  input[type=text]:focus{
+    outline: 2px solid #d4af37;  
+    color: #fff;
+    box-shadow: 0 0 30px #d4af3769;
+  }
+
+   textarea {
+    width: 90%;
+    outline: 0;
+    border: solid 1px #d4af37;
+    border-radius: 8px;
+    /* margin-bottom: 30px; */
+    height: 5rem;
+    margin: 0 0 30px 30px ;
+    /* margin-left: 3.6rem; */
+    font-size: 1.8rem;
+    font-family: 'Boogaloo', cursive;
+    background-color: transparent;
+    color:#fff;
+  }
+
+  textarea:focus{
+    outline: 2px solid #d4af37;   
+    color: #000;
+    box-shadow: 20px 20px 60px 10px #d4af37de inset;
 
   }
   
@@ -220,7 +218,7 @@
   textarea:focus+label, 
   textarea:valid+label {
     font-size: 1.2rem;
-    margin-left: 3.6rem;
+    /* margin-left: 3.6rem; */
     font-family: 'Boogaloo', cursive;
     
     color: #d4af37;
@@ -230,51 +228,44 @@
   
   .submit-btn {
     background-color: transparent;
-    filter: drop-shadow(2px 2px 3px #0003);
-    color: #fff;
+    /* filter: drop-shadow(2px 2px 3px #0003); */
+    
     font-family: 'Boogaloo', cursive;
-    font-size:1rem;
+    font-size:2rem;
     display: block;
-    padding: 12px 20px;
-    margin: 0 auto;
-    width: 80%;
-    border: solid 1px #ffff;
-    border-radius: 4px;
+    /* padding: 12px 20px; */
+    
+    margin: auto;
+    width: 90%;
+    border: solid 1px #d4af37;
+    border-radius: 8px;
     cursor: pointer;
-    user-select: none;
+    /* user-select: none; */
     transition: 0.2s;
+    color: #d4af37;
+    
   }
   
   .submit-btn:hover {
     transform: scale(1.01);
     background-color: #d4af37;
+    color: black;    
   }
-  
-  .submit-btn:active {
+  /* .iconColor{
+    color: #d4af37;
+    height: 2.5rem;
+    margin: auto;
+  }
+  .iconColor:hover{
+    color: #000000;
+    height: 2.5rem;
+    margin: auto;
+  } */
+  /* .submit-btn:active {
     transform: scale(1.01);
     
-  }
-  
-  @media only screen and (max-width: 800px) {
-    h2 {
-      font-size: clamp(40px, 10vw, 60px);
-    }
-  }
-  
-  @media only screen and (max-width: 400px) {
-    h2 {
-      font-size: clamp(30px, 12vw, 60px);
-    }
-    
-    .links {
-      padding-top: 30px;
-    }
-    
-    img {
-      width: 38px;
-      height: 38px;
-    }
-  }
+  } */
+
   
 /*Social media */
 .ulContact {
@@ -454,3 +445,66 @@
 }
 /*Social media end*/
 
+@media only screen and (max-width: 400px) {
+  .contact-box {
+    width: 95%;
+    margin: 8% 5%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  h2 {
+    font-size: clamp(40px, 10vw, 60px);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h2 {
+    font-size: clamp(30px, 12vw, 60px);
+  }
+  
+  .links {
+    padding-top: 30px;
+  }
+  
+  img {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #contact {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    background:
+      /* radial-gradient(
+        circle at 55% 92%, #d4af37 0 12%, transparent 12.2%
+      ), 
+      radial-gradient(
+        circle at 94% 72%, #d4af37 0 10%, transparent 10.2%
+      ), 
+      radial-gradient(
+        circle at 20% max(78%, 350px), #000000 0 7%, transparent 7.2%
+      ),  */
+      /* radial-gradient(
+        circle at 0% 0%, #d4af37 0 30%, transparent 80.2%
+      ),  */
+      #000000;
+  }
+
+  .contact-links, .contact-form-wrapper {
+    width: 100%;
+  }
+  
+  .contact-links {
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .contact-form-wrapper {
+    border-radius: 0 0 10px 10px;
+  }
+}
