@@ -11,22 +11,31 @@
     },
     "cover": {
            "hello-world": "¡HOLA MUNDO!",
-           "hello-world-2": "¡DISFRUTA LA VIDA!"
-       
+           "hello-world-2": "¡DISFRUTA LA VIDA!",
+           "welcome-title": "¡HOLA! ¡GRACIAS POR TOMARTE EL TIEMPO DE REVISAR MI PORTAFOLIO, ESPERO QUE PODAMOS TRABAJAR JUNTOS Y HACER PROYECTOS INCREÍBLES!",
+            "welcome-p":  "POR FAVOR, SIÉNTETE LIBRE DE HACER CLICK, PASAR EL CURSOR SOBRE LAS IMÁGENES, BOTONES, ETC, O EN CUALQUIER OTRO ELEMENTO PARA QUE PUEDAS VER ALGUNAS FUNCIONALIDADES QUE HE UTILIZADO",
+            "seePortfolio": "IR A MI PORTAFOLIO"
         },
     "typing": {
             "auto-text": 
-            ["OSCAR MORENO","UN DESARROLLADOR WEB" , "UN PROGRAMADOR",
-            "OSCAR MORENO","UN DESARROLLADOR WEB" , "UN PROGRAMADOR",
-            "OSCAR MORENO","UN DESARROLLADOR WEB" , "UN PROGRAMADOR",
-            "OSCAR MORENO","UN DESARROLLADOR WEB" , "UN PROGRAMADOR."]
+            ["OSCAR MORENO","UN DESARROLLADOR WEB" , "UN PROGRAMADOR", "UN ENTUSIASTA", "AUTODIDACTA", "CREATIVO", "AUTOMOTIVADO", "DETERMINADO","UN PROGRAMADOR",
+            "OSCAR MORENO","UN DESARROLLADOR WEB" , "UN PROGRAMADOR", "UN ENTUSIASTA", "AUTODIDACTA", "CREATIVO","AUTOMOTIVADO", "DETERMINADO","UN PROGRAMADOR",
+            "OSCAR MORENO","UN DESARROLLADOR WEB" , "UN PROGRAMADOR", "UN ENTUSIASTA", "AUTODIDACTA", "CREATIVO","AUTOMOTIVADO", "DETERMINADO","UN PROGRAMADOR",
+            "OSCAR MORENO","UN DESARROLLADOR WEB" , "UN PROGRAMADOR", "UN ENTUSIASTA", "AUTODIDACTA", "CREATIVO","AUTOMOTIVADO", "DETERMINADO","UN PROGRAMADOR."]
             },
     "myself": {
         "myself": "SOY "
     },
     "about": {
-        "aboutH1": "Déjame decirte algo sobre mí",
-        "aboutP": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis provident inventore quod voluptates sequi. Quis, necessitatibus omnis iusto perferendis dolores voluptate et dolorum inventore autem nemo, quos eveniet magni nesciunt.",
-        "greeting": "¡Hola!, gracias por revisar mi portafolio, espero que podamos trabajar juntos y hacer proyectos increíbles, ¡que tengas un excelente día!" 
-    }  
+        "aboutH1": "DÉJAME CONTARTE ALGO SOBRE MÍ",
+        "aboutP": "SOY UNA PERSONA ADAPTABLE, DECIDIDA A LOGRAR MIS METAS, ME GUSTAN LOS RETOS Y TRABAJAR POR OBJETIVOS; SOY UNA PERSONA AUTODIDACTA, COMPROMETIDA, AUTOMOTIVADA, DISFRUTO TANTO EL TRABAJAR EN EQUIPO COMO INDIVIDUAL, SOY UN ENTUSIASTA Y APASIONADO EN LA PROGRAMACIÓN Y LA TECNOLOGÍA.",
+        "greeting": "¡HOLA!, GRACIAS POR REVISAR MI PORTAFOLIO, ESPERO QUE PODAMOS TRABAJAR JUNTOS Y HACER PROYECTOS INCREÍBLES, ¡QUE TENGAS UN EXCELENTE DÍA!",
+        "resume": "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/Desarrollador%20Front%20End.pdf?alt=media&token=7807605f-1d2a-481d-9b4d-03c2c953a7a0",
+        "downloadResume": "DESCARGAR MI C.V."
+    },
+    "skills": {
+        "title": "EN ESTA SECCIÓN ENCONTRARÁS ALGUNAS DE MIS HABILIDADES",
+        "hardSkills": "AQUÍ ESTÁN ALGUNAS DE MIS HABILIDADES TÉCNICAS",
+        "softSkills": "AQUÍ ESTÁN ALGUNAS DE MIS HABILIDADES BLANDAS+"
+    }
 }

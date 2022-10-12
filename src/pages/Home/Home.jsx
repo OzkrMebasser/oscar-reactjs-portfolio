@@ -1,23 +1,35 @@
 /* eslint-disable no-script-url */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { Fragment } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import { useTranslation } from 'react-i18next';
 import Particle from "../../Components/particulesBG/Particle";
+import WelcomePopUp from "./WelcomePopUp";
 import Typing from "./Typing";
+
 
 import "../Home/Home.css";
 import "../Cover/Cover.css";
 
 import { motion } from 'framer-motion';
+import { faLinesLeaning } from "@fortawesome/free-solid-svg-icons";
 
 
 const Home = () => {
 
   const [t, i18n] = useTranslation("global");
+  const [buttonPopup, setButtonPopup] = useState(false);
+  const [timePopup, setTimePopup] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setButtonPopup(true);
+    }, 2000);
+  }, []);
+  
 
   return (
     <Fragment >
-      
+            
       <motion.div className="cover-container"
                   initial={{y: 600 }}
                   animate={{ y: 0}}
@@ -53,10 +65,18 @@ const Home = () => {
         
         <div className="globe">
           <div></div>
+          
         </div>
-      
-      
+        {/* <button onClick={() => setButtonPopup(true)}>Open Wlcome</button> */}
 
+      <WelcomePopUp trigger={buttonPopup} setTrigger={setButtonPopup}> 
+        <h6 className="welcomeTitle"> {t("cover.welcome-title")}</h6>
+        <p className="welcomeP">{t("cover.welcome-p")}</p>
+        </WelcomePopUp>
+
+        <WelcomePopUp trigger={timePopup} setTrigger={setTimePopup}> 
+        
+        </WelcomePopUp>
       </motion.div>
     </Fragment>
   );

@@ -9,23 +9,33 @@
     },
      "cover": {
             "hello-world": "HELLO WORLD!",
-            "hello-world-2": "ENJOY LIFE!"
+            "hello-world-2": "ENJOY LIFE!",
+            "welcome-title": "HI! THANKS FOR TAKING THE TIME TO REVIEW MY PORTFOLIO, I HOPE WE CAN WORK TOGETHER AND MAKE AWESOME PROJECTS!",
+            "welcome-p": "PLEASE, FEEL FREE TO CLICK, HOVER ON IMAGES, BUTTONS ETC, AND IN ANY OTHER ELEMENT TO SEE SOME FUNCTIONALITIES THAT I USED",
+            "seePortfolio": "GO TO MY PORTFOLIO"
         
     },
     "typing": {
                 "auto-text": 
-                ["OSCAR MORENO","A WEB DEVELOPER" , "A PROGRAMMER",
-                "OSCAR MORENO","A WEB DEVELOPER" , "A PROGRAMMER",
-                "OSCAR MORENO","A WEB DEVELOPER" , "A PROGRAMMER",
-                "OSCAR MORENO","A WEB DEVELOPER" , "A PROGRAMMER."]
+                ["OSCAR MORENO", "A WEB DEVELOPER", "A PROGRAMMER", "AN ENTHUSIAST", "SELF-TAUGHT", "CREATIVE", "DETERMINED","SELF-MOTIVATED", "A PROGRAMMER",
+                "OSCAR MORENO", "A WEB DEVELOPER", "A PROGRAMMER", "AN ENTHUSIAST", "SELF-TAUGHT", "CREATIVE", "DETERMINED","SELF-MOTIVATED", "A PROGRAMMER",
+                "OSCAR MORENO", "A WEB DEVELOPER", "A PROGRAMMER", "AN ENTHUSIAST", "SELF-TAUGHT", "CREATIVE", "DETERMINED","SELF-MOTIVATED", "A PROGRAMMER",
+                "OSCAR MORENO", "A WEB DEVELOPER", "A PROGRAMMER", "AN ENTHUSIAST", "SELF-TAUGHT", "CREATIVE", "DETERMINED","SELF-MOTIVATED", "A PROGRAMMER."]
                 },
     "myself": {
-            "myself": "I'AM "
+            "myself": "I'M "
     },
     "about": {
         "aboutH1": "Let me tell you something about me",
-        "aboutP": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis provident inventore quod voluptates sequi. Quis, necessitatibus omnis iusto perferendis dolores voluptate et dolorum inventore autem nemo, quos eveniet magni nesciunt.",
-        "greeting": "Hi!, thanks for reviewing my portfolio, I hope we can work together & make amazing projects, Have an awesome day!" 
+        "aboutP": "I AM AN ADAPTABLE PERSON, DETERMINED TO ACHIEVE MY GOALS, I LIKE CHALLENGES AND WORKING BY OBJECTIVES; I AM A SELF-TAUGHT, COMMITTED, SELF-MOTIVATED PERSON, I ENJOY BOTH TEAM AND INDIVIDUAL WORK, I AM ENTHUSIASTIC AND PASSIONATE ABOUT PROGRAMMING AND TECHNOLOGY.",
+        "greeting": "HELLO, THANK YOU FOR REVIEWING MY PORTFOLIO, I HOPE WE CAN WORK TOGETHER AND DO AMAZING PROJECTS, HAVE A GREAT DAY!",
+        "resume": "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/scrum-foundations-professional-certificate-sfpc-examen.pdf?alt=media&token=494cfd56-38fb-4b63-9620-8cb0a12014c8",
+        "downloadResume": "DOWNLOAD MY RESUME"
+    },
+    "skills": {
+        "title": "IN THIS SECTION YOU WILL FIND SOME OF MY SKILLS",
+        "hardSkills": "HERE ARE SOME OF MY HARD SKILLS",
+        "softSkills": "HERE ARE SOME OF MY SOFT SKILLS"
     }
       
 }

@@ -42,7 +42,7 @@ function ModalItem({props, ...project}) {
       </span>
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="danger" onClick={handleClose}>
+        <Button className='stackBtn' onClick={handleClose}>
          Go back
         </Button>
         

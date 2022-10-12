@@ -38,7 +38,7 @@
   color: #d4af37;
   font-size: 2rem;
   font-family: "Boogaloo", cursive;
- 
+ text-transform: uppercase;
   text-shadow: 1px 1px 1px #9c9c9a9a;
 }
 
@@ -69,8 +69,8 @@
 }
 .inner-img {
   transition: 0.3s;
-  width: 600px;
-  height: 400px;
+  width: 580px;
+  height: 380px;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -199,7 +199,7 @@
  
   background-color: #d4af37;
   color: #000;
-  font-weight: 500;
+  font-size: 1.2rem;
   border: currentColor;
   font-family: "Boogaloo", cursive;
   text-decoration-style: dotted;
@@ -209,7 +209,7 @@
 
   background-color: #000;
   color: #ffffff;
-  font-weight: 500;
+  font-size: 1.2rem;
   border: 1px solid #d4af37;
   transform: scale(0.95);
   transition: 200ms;

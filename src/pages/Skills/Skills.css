@@ -60,7 +60,7 @@
     text-align: center;
     color: rgb(0, 0, 0);
     margin: auto;
-    height: 8rem;
+    height: 10rem;
     font-size: 1.1rem;
     font-family: 'Boogaloo', cursive;
     text-shadow: 1px 1px 1px #9c9c9a9a;
@@ -72,8 +72,22 @@
 .cardGrid {
   /* background-color: blue; */
   
-  height: 25rem;
+  height: 28rem;
   
+}
+
+.icons{
+    width: 7em;
+    margin: auto;
+}
+
+
+.iconWP{
+    width: 7em;
+    margin: auto;
+    filter: invert(47%) sepia(8%) saturate(3903%) hue-rotate(154deg) brightness(82%) contrast(93%);
+
+
 }
 @media only screen and (max-width: 960px) {
    

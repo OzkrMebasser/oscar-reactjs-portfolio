@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import {GoDesktopDownload} from "react-icons/go"
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
@@ -6,6 +7,8 @@ import "./About.css";
 
 const About = () => {
   const [t] = useTranslation("global");
+
+
 
   return (
     <Fragment>
@@ -18,6 +21,7 @@ const About = () => {
         <div className="about-desc ">
           <h3 className="titleAbout">{t("about.aboutH1")}</h3>
           <p >{t("about.aboutP")}</p>
+         <button className="downloadBtn"> <a  className="dwl" href={t("about.resume")} target="_blank" rel="noopener noreferrer">{t("about.downloadResume")} <div><GoDesktopDownload className="dwlIcon"/></div> </a></button>
         </div>
         <div className="flip-card">
           <div className="flip-card-inner">

@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import Accordion from 'react-bootstrap/Accordion';
 import { motion } from 'framer-motion';
+import { useTranslation } from "react-i18next";
 
 
 
@@ -13,17 +14,20 @@ import "./Skills.css";
 import { skills } from "../../Api/hardSkillsData";
 
 const Skills = () => {
+  const [t] = useTranslation("global");
+
+
 
   return (
     <Fragment className="containerGrid" >
-      <h1 className="textTitle">HERE SOME OF MY SKILLS</h1>
+      <h2 className="textTitle">{t("skills.title")}</h2>
     <motion.div  className="cardGrid" 
          initial={{y: 600 }}
          animate={{ y: 0}}
          transition={{delay: 0.3, type: 'fade' }}>
      <Accordion>
       <Accordion.Item eventKey="0">
-        <Accordion.Header className="texts">MY HARD SKILLS</Accordion.Header>
+        <Accordion.Header className="texts">{t("skills.hardSkills")}</Accordion.Header>
         
         <Accordion.Body>
       
@@ -65,7 +69,7 @@ const Skills = () => {
       </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
-        <Accordion.Header>MY SOFT SKILLS</Accordion.Header>
+        <Accordion.Header>{t("skills.softSkills")}</Accordion.Header>
         <Accordion.Body>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
