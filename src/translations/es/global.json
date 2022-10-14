@@ -13,7 +13,7 @@
            "hello-world": "¡HOLA MUNDO!",
            "hello-world-2": "¡DISFRUTA LA VIDA!",
            "welcome-title": "¡HOLA! ¡GRACIAS POR TOMARTE EL TIEMPO DE REVISAR MI PORTAFOLIO, ESPERO QUE PODAMOS TRABAJAR JUNTOS Y HACER PROYECTOS INCREÍBLES!",
-            "welcome-p":  "POR FAVOR, SIÉNTETE LIBRE DE HACER CLICK, PASAR EL CURSOR SOBRE LAS IMÁGENES, BOTONES, ETC, O EN CUALQUIER OTRO ELEMENTO PARA QUE PUEDAS VER ALGUNAS FUNCIONALIDADES QUE HE UTILIZADO",
+            "welcome-p":  "POR FAVOR, SIÉNTETE LIBRE DE HACER CLICK, PASAR EL CURSOR SOBRE LAS IMÁGENES, TEXTOS, BOTONES, ETC, O EN CUALQUIER OTRO ELEMENTO PARA QUE PUEDAS VER ALGUNAS FUNCIONALIDADES QUE HE UTILIZADO",
             "seePortfolio": "IR A MI PORTAFOLIO"
         },
     "typing": {
@@ -34,8 +34,14 @@
         "downloadResume": "DESCARGAR MI C.V."
     },
     "skills": {
-        "title": "EN ESTA SECCIÓN ENCONTRARÁS ALGUNAS DE MIS HABILIDADES",
-        "hardSkills": "AQUÍ ESTÁN ALGUNAS DE MIS HABILIDADES TÉCNICAS",
-        "softSkills": "AQUÍ ESTÁN ALGUNAS DE MIS HABILIDADES BLANDAS+"
+        "title": "EN ESTA SECCIÓN ENCONTRARÁS ALGUNAS DE MIS HABILIDADES Y CERTIFICACIONES",
+        "hardSkills": "ALGUNAS DE MIS HABILIDADES TÉCNICAS",
+        "softSkills": "ALGUNAS DE MIS HABILIDADES BLANDAS",
+        "certificates":"CERTIFICACIONES"
+    },
+    "contact":{
+        "alert": "Hola, tu correo ha sido enviado con éxito, me pondré en contacto contigo lo antes posible, ¡que tengas un buen día!",
+        "title": "¡PONGÁMONOS EN CONTACTO!"
+    
     }
 }

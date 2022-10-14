@@ -1,4 +1,7 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useRef } from "react";
+import { useTranslation } from "react-i18next";
+
+import emailjs from '@emailjs/browser';
 
 import MyMap from "./MyMap";
 //https://mailtrap.io/blog/react-contact-form/#Create-the-contact-form TO SEE EXAMPLE
@@ -8,13 +11,33 @@ import MyMap from "./MyMap";
 import "../Contact/Contact.css";
 
 const Contact = () => {
+  const [t, i18n] = useTranslation("global");
+  const form = useRef();
+
+  function enviarEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_msdbc3w','template_2o2kozw',form.current,'cDPMTs1UJt4da-K4_')
+    .then((response) => {
+      alert(t("contact.alert"))
+      console.log('SUCCESS!', response.status, response.text);
+   }, (error) => {
+      console.log('FAILED...', error);
+   });
+  };
+
+
+
+
+  
+
   return (
     <Fragment>
       <section id="contact">
-        <h4 className="contactTitle">LET´S GET IN TOUCH!</h4>
+        <h4 className="contactTitle">{t("contact.title")}</h4>
         <div class="contact-box">
           <div class="contact-form-wrapper yellow">
-            <form>
+            <form ref={form}  onSubmit={enviarEmail}>
               <div class="form-item">
                 <input type="text" name="sender" required />
                 <label>Name:</label>

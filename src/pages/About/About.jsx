@@ -21,7 +21,7 @@ const About = () => {
         <div className="about-desc ">
           <h3 className="titleAbout">{t("about.aboutH1")}</h3>
           <p >{t("about.aboutP")}</p>
-         <button className="downloadBtn"> <a  className="dwl" href={t("about.resume")} target="_blank" rel="noopener noreferrer">{t("about.downloadResume")} <div><GoDesktopDownload className="dwlIcon"/></div> </a></button>
+         <button className="downloadBtn"> <a  className="dwl" href={t("about.resume")} download target="_blank" rel="noopener noreferrer">{t("about.downloadResume")} <div><GoDesktopDownload className="dwlIcon"/></div> </a></button>
         </div>
         <div className="flip-card">
           <div className="flip-card-inner">
@@ -30,6 +30,7 @@ const About = () => {
                 className="img"
                 src="https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/oscarExec.png?alt=media&token=872472a1-5f48-4a7a-a3c4-c79c9812495d"
                 alt="about"
+                
               />
             </div>
             <div className="flip-card-back">

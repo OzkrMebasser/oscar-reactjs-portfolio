@@ -11,7 +11,7 @@ export const skills = [
       title: "HTML-5",
       alt: "HTML-5 logo",
       progress: 75,
-      description: "HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of elements. HTML elements tell the browser how to display the content. HTML5 was developed to solve compatibility problems that affect the current standard, HTML4.",
+      description: "HTML (HyperText Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables.",
       class: "icons",
       variant: "success",
       category:"Front End",
@@ -62,6 +62,16 @@ export const skills = [
       },
       {
         id: 6,
+        icon: "https://4thpointer.com/wp-content/uploads/2020/12/ExpressJS.png",
+        title: "EXPRESS JS",
+        progress: 50,
+        description: "Disfruta de un dia espectacular ",
+        class: "icons2",
+        variant: "warning",
+        category:"Back End",
+      },
+      {
+        id: 7,
         icon: "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/python-svgrepo-com.svg?alt=media&token=e9f46773-c5eb-453c-be42-23f8326ae705",
         title: "PYHTON",
         progress: 50,
@@ -71,7 +81,17 @@ export const skills = [
         category:"Back End",
       },
       {
-        id: 7,
+        id: 8,
+        icon: "https://firebasestorage.googleapis.com/v0/b/ecommerce-proyecto-b850b.appspot.com/o/django-logo-negative.svg?alt=media&token=4f93d2c3-3cef-4dc2-805b-282cb9ac6b9d",
+        title: "DJANGO",
+        progress: 75,
+        description: "JavaScript is a dynamic programming language that's used for web development, in web applications, for game development, and lots more.",
+        class: "icons",
+        variant: "success",
+        category:"Back End",
+      },
+      {
+        id: 9,
         icon: "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/git-svgrepo-com.svg?alt=media&token=b637e647-5b49-4fb2-887d-664ee0404b8b",
         title: "Git hub",
         progress: 75,
@@ -81,7 +101,7 @@ export const skills = [
         category:"Back End",
       },
       {
-        id: 8,
+        id: 10,
         icon: "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/firebase-svgrepo-com.svg?alt=media&token=f9fd526c-0f88-42d9-ad80-6e56835b9d42",
         title: "Firebase",
         progress: 75,
@@ -91,7 +111,17 @@ export const skills = [
         category:"Back End",
       },
       {
-        id: 9,
+        id: 11,
+        icon: "https://firebasestorage.googleapis.com/v0/b/ecommerce-proyecto-b850b.appspot.com/o/postgresql-svgrepo-com.svg?alt=media&token=2140f950-f755-4727-bf2f-a5ca6b049d03",
+        title: "POSTGRESQL",
+        progress: 80,
+        description: "",
+        class: "icons",
+        variant: "success",
+        category:"Full Stack"
+      },
+      {
+        id: 12,
         icon: "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/Wordpress-Logo.svg?alt=media&token=7e23a390-ba4b-4e10-adbb-ef013ac01c84",
         title: "WordPress",
         progress: 80,
@@ -102,3 +132,4 @@ export const skills = [
       }
   ];
   
+

@@ -5,13 +5,13 @@
         "skills": "SKILLS",
         "projects": "PROJECTS",
         "contact": "CONTACT",
-        "language": "LANGUAGE"
+        "language": "LANGUAGE "
     },
      "cover": {
             "hello-world": "HELLO WORLD!",
             "hello-world-2": "ENJOY LIFE!",
             "welcome-title": "HI! THANKS FOR TAKING THE TIME TO REVIEW MY PORTFOLIO, I HOPE WE CAN WORK TOGETHER AND MAKE AWESOME PROJECTS!",
-            "welcome-p": "PLEASE, FEEL FREE TO CLICK, HOVER ON IMAGES, BUTTONS ETC, AND IN ANY OTHER ELEMENT TO SEE SOME FUNCTIONALITIES THAT I USED",
+            "welcome-p": "PLEASE, FEEL FREE TO CLICK, HOVER ON IMAGES, TEXTS, BUTTONS ETC, AND IN ANY OTHER ELEMENT TO SEE SOME FUNCTIONALITIES THAT I USED",
             "seePortfolio": "GO TO MY PORTFOLIO"
         
     },
@@ -33,9 +33,14 @@
         "downloadResume": "DOWNLOAD MY RESUME"
     },
     "skills": {
-        "title": "IN THIS SECTION YOU WILL FIND SOME OF MY SKILLS",
-        "hardSkills": "HERE ARE SOME OF MY HARD SKILLS",
-        "softSkills": "HERE ARE SOME OF MY SOFT SKILLS"
+        "title": "IN THIS SECTION YOU WILL FIND SOME OF MY SKILLS AND CERTIFICATIONS",
+        "hardSkills": "SOME OF MY HARD SKILLS",
+        "softSkills": "SOME OF MY SOFT SKILLS",
+        "certificates":"CERTIFICATIONS"
+    },
+    "contact":{
+        "alert": "Hi, your email has been sent with success, I'll be in touch with you asap, have a great day!",
+        "title": "LET´S GET IN TOUCH!"
     }
       
 }

@@ -60,7 +60,7 @@
     text-align: center;
     color: rgb(0, 0, 0);
     margin: auto;
-    height: 10rem;
+    height: 5rem;
     font-size: 1.1rem;
     font-family: 'Boogaloo', cursive;
     text-shadow: 1px 1px 1px #9c9c9a9a;
@@ -72,32 +72,59 @@
 .cardGrid {
   /* background-color: blue; */
   
-  height: 28rem;
+  height: 9rem;
   
 }
 
 .icons{
-    width: 7em;
+    width: 1rem;
     margin: auto;
 }
 
-
+.icons2{
+    width: 4rem;
+    margin: auto;
+}
 .iconWP{
-    width: 7em;
+    width: 4rem;
     margin: auto;
     filter: invert(47%) sepia(8%) saturate(3903%) hue-rotate(154deg) brightness(82%) contrast(93%);
 
 
 }
+
+.iconEx{
+    margin-top: 1rem;
+    width: 9em;
+    /* margin: auto; */
+    /* padding: 10px; */
+    filter:  sepia(47%) saturate(135%) hue-rotate(359deg) brightness(103%) contrast(91%);
+}
+
+.iconDJ{
+    width: 15em;
+    margin: auto;
+ 
+}
+
+.iconNodeJs{
+    width: 7em;
+    margin: auto;
+}
+
+
+
 @media only screen and (max-width: 960px) {
    
 }
 /*Icons*/
 
 .icons{
-    width: 7em;
+    width: 4rem;
     margin: auto;
 }
+
+
 .icon-html5{
     width: 7em;
     margin: auto;

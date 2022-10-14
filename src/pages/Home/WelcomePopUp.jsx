@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import NavDropdown from "react-bootstrap/NavDropdown";
+
 import { motion } from 'framer-motion';
 
 // import { NavLink } from "react-router-dom";
@@ -24,10 +25,10 @@ function WelcomePopUp(props) {
           {/*  */}
           {/* </NavLink> */}
          
-          <button className="goBtn" onClick={() => props.setTrigger(false)}>
+          <button className="goBtn " onClick={() => props.setTrigger(false)}>
             {t("cover.seePortfolio")}
           </button>
-          <button className="goBtnB" >
+          <button className="goBtnB goBtnBIcon" >
           <NavDropdown className="noLink" title={t("navbar.language")}> 
           
 
