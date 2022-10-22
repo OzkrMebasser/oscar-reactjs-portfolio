@@ -86,6 +86,10 @@
   .carouselContainer {
     margin-left: 0;
     margin-right: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
   }
   .inner-img {
     transition: 0.3s;
