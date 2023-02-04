@@ -737,7 +737,7 @@ Switch phrases */
   .popupInner{
     position: relative;
     padding: 32px;
-    width: 100%;
+    width: 100vw;
     height: 350px;
     /* max-width: 640px; */
     background-color: #000000;
