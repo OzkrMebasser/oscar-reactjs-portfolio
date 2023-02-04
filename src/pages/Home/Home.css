@@ -724,14 +724,15 @@ Switch phrases */
   .popup{
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    /* left: 0; */
+    width: 100vw;
     height: 100vh;
     background-color: #d4af37;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 999999999999999999;
+    margin: auto;
   }
   
   .popupInner{
