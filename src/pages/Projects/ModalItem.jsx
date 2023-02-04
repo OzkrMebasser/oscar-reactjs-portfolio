@@ -28,6 +28,7 @@ function ModalItem({props, ...project}) {
   
       <span>
         <img className="iconSize" src={project.tech_1_icon} alt={project.tech_1_name} />
+        <p>{project.tech_1_name}</p>
       </span>
       <span>
         <img className="iconSize" src={project.tech_2_icon} alt={project.tech_2_name} />

@@ -719,7 +719,116 @@ Switch phrases */
   
  }
  
+ @media only screen and (max-width: 600px) {
 
+  .popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #d4af37;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999999999999999;
+  }
+  
+  .popupInner{
+    position: relative;
+    padding: 32px;
+    width: 100%;
+    height: 350px;
+    /* max-width: 640px; */
+    background-color: #000000;
+    z-index: 999999999999999999;
+    border-radius: 8px;
+    box-shadow: rgb(6, 7, 8) 0px 20px 30px -10px;
+  }
+  
+  .popupInner .close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+  
+  .welcomeTitle {
+    position: relative;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 1.5rem 1rem;
+    font-size: 1rem;
+    text-align: center;
+    
+  }
+  .welcomeP {
+    position: relative;
+    /* margin: auto; */
+    /* padding: 1rem; */
+    font-size: 1rem;
+    text-align: center;
+    color: #d4af37;
+    padding: 0 1rem;
+  }
+  .noLink:hover:after {
+    width: 100%;
+    background: none;
+  }
+  
+  .goBtn {
+    position: absolute;
+    width: 30%;
+   right: 0;
+     background-color: #d4af37;
+     color: #000;
+     /* height: 3rem; */
+     font-size: .7rem;
+     border: currentColor;
+     font-family: "Boogaloo", cursive;
+     text-decoration-style: dotted;
+     top: .5rem;
+     right: .5rem;
+     border-radius: 6px;
+     height: 2.5rem;
+   
+   }
+   .goBtn:hover {
+   
+     background-color: #000;
+     color: #ffffff;
+     font-size: .7rem;
+     border: 1px solid #d4af37;
+     transform: scale(0.95);
+     transition: 200ms;
+    
+   }
+   .goBtnB {
+     width: 30%;
+     right: 0;
+     background-color: #d4af37;
+     color: #000;
+     height: 2.5rem;
+     font-size: .7rem;
+     border: currentColor;
+     font-family: "Boogaloo", cursive;
+     text-decoration-style: dotted;
+     position: absolute;
+     bottom: .5rem;
+     right: .5rem;
+     border-radius: 6px;
+   }
+   .goBtnB:hover {
+   
+     background-color: #000;
+     color: #ffffff;
+     font-size: .7rem;
+     border: 1px solid #d4af37;
+     transform: scale(0.95);
+     transition: 200ms;
+    
+   }
+
+ }
  /* .btn-check:focus+.btn, .btn:focus{
    color: #ffffff;
    background-color: #000;
