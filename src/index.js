@@ -4,6 +4,7 @@ import { I18nextProvider } from 'react-i18next';
 import i18next from 'i18next';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "/node_modules/flag-icons/css/flag-icons.min.css";
+import 'react-tooltip/dist/react-tooltip.css'
 
 import App from './App';
 

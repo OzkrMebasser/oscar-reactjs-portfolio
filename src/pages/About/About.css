@@ -245,10 +245,12 @@
 
 .greetings {  
   position: absolute;
-  margin-left: 1.8rem;
-  margin-right: 1.8rem;
-  margin-top: 7rem;
-  font-size: 1.8rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 7.5rem;
+  font-size: 1.5rem;
+  text-align: justify;
+
   /* text-shadow: 5px 3px 10px rgb(255, 255, 255); */
 
   /* text-transform: uppercase; */

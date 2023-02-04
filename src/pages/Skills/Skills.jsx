@@ -28,7 +28,7 @@ const Skills = () => {
         
         <Accordion.Body>
       
-      <Row xs={1} md={6} fluid className="g-4 texts">
+      <Row xs={1} md={4} fluid className="g-4 texts">
         {skills.map((skill, id) => (
           <Col >
             <Card className="cardGrid align-middle" >
@@ -36,10 +36,10 @@ const Skills = () => {
               <img className={skill.class} src={skill.icon} alt={skill.alt} />
               <Card.Body>
                 <Card.Title>{skill.title}</Card.Title>
-                {/* <Card.Text>{skill.category}</Card.Text> */}
-                {/* <Card.Text className="textM">{skill.description}</Card.Text> */}
+                <Card.Text>{skill.category}</Card.Text>
+                <Card.Text className="textM">{skill.description}</Card.Text>
                 {/* <strong><p className="texts">Aproximate knowledge</p></strong> */}
-                <ProgressBar className="texts" animated now={skill.progress} label={`${skill.progress}%`} variant={skill.variant} style={{height:"20px", color:"dark"}}/>
+                <ProgressBar className="texts" animated now={skill.progress} label={`${t("skills.learning")}${skill.progress}%`} variant={skill.variant} style={{height:"25px", color:"black"}}/>
                 
               </Card.Body>
               

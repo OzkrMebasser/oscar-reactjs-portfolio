@@ -1,4 +1,5 @@
 import React,{ useState} from 'react'
+import { Tooltip as ReactTooltip } from 'react-tooltip'
 
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
@@ -40,12 +41,31 @@ function ModalItem({props, ...project}) {
       <span>
         <img className="iconSize" src={project.tech_5_icon} alt={project.tech_5_name} />
       </span>
+      {/*Git hub repo*/ " "}
+
+      <span style={{marginLeft: "56px"}} id="repo" data-tooltip-content="Ver codigo en gitHub"> 
+          <a href={project.git_url} rel="nofollow noopener noreferrer" target="_blank">
+          <img className="iconSize" src={project.git_icon} alt={project.git_alt} />  
+          </a>    
+      </span> 
+        {/*Web */ " "}<span id="www" data-tooltip-content="Ir al sitio web..."> 
+        <a href={project.www_site} rel="nofollow noopener noreferrer" target="_blank">
+
+        <img className="iconSize" src={project.www_icon} alt="" />
+        </a>    
+      </span> 
+      {/*Tooltips config*/}
+      <ReactTooltip anchorId="www" />
+      <ReactTooltip anchorId="repo" />
+
+
       </Modal.Body>
       <Modal.Footer>
-        <Button className='stackBtn' onClick={handleClose}>
+
+
+      <Button className='stackBtn' onClick={handleClose}>
          Go back
         </Button>
-        
       </Modal.Footer>
     </Modal>
   </>

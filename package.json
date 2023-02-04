@@ -27,6 +27,7 @@
     "react-items-carousel": "^2.8.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "react-tooltip": "^5.7.4",
     "react-tsparticles": "^2.2.3",
     "styled-components": "^5.3.5",
     "swiper": "^8.3.2",

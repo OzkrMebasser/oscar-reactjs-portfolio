@@ -11,7 +11,7 @@
             "hello-world": "HELLO WORLD!",
             "hello-world-2": "ENJOY LIFE!",
             "welcome-title": "HI! THANKS FOR TAKING THE TIME TO REVIEW MY PORTFOLIO, I HOPE WE CAN WORK TOGETHER AND MAKE AWESOME PROJECTS!",
-            "welcome-p": "PLEASE, FEEL FREE TO CLICK, HOVER ON IMAGES, TEXTS, BUTTONS ETC, AND IN ANY OTHER ELEMENT TO SEE SOME FUNCTIONALITIES THAT I USED",
+            "welcome-p": "PLEASE FEEL FREE TO CLICK, HOVER OVER IMAGES, TEXTS, ICONS, BUTTONS, ETC, OR ON ANY OTHER ELEMENT SO YOU CAN SEE SOME FUNCTIONALITIES I HAVE IMPLEMENTED",
             "seePortfolio": "GO TO MY PORTFOLIO"
         
     },
@@ -36,7 +36,8 @@
         "title": "IN THIS SECTION YOU WILL FIND SOME OF MY SKILLS AND CERTIFICATIONS",
         "hardSkills": "SOME OF MY HARD SKILLS",
         "softSkills": "SOME OF MY SOFT SKILLS",
-        "certificates":"CERTIFICATIONS"
+        "certificates":"CERTIFICATIONS",
+        "learning": "PROGRESS..."
     },
     "contact":{
         "alert": "Hi, your email has been sent with success, I'll be in touch with you asap, have a great day!",

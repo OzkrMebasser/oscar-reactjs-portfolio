@@ -66,7 +66,7 @@ export const skills = [
         title: "EXPRESS JS",
         progress: 50,
         description: "Disfruta de un dia espectacular ",
-        class: "icons2",
+        class: "iconEx",
         variant: "warning",
         category:"Back End",
       },
