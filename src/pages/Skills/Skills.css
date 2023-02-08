@@ -94,11 +94,14 @@
 }
 
 .iconEx{
-    margin-top: 1rem;
-    width: 9em;
+    width: 1rem;
     margin: auto;
+    /* margin-top: 1rem;
+    width: 9em;
+    margin: auto; */
     /* padding: 10px; */
-    filter:  sepia(47%) saturate(135%) hue-rotate(359deg) brightness(103%) contrast(91%);
+    /* filter:  sepia(47%) saturate(135%) hue-rotate(359deg) brightness(103%) contrast(91%); */
+    /* filter: brightness(103%) contrast(91%); */
 }
 
 .iconDJ{

@@ -145,7 +145,7 @@
     width: 200%;
     height: 100%;
     animation: spin 30s linear alternate infinite;
-    background: url("https://elements-video-cover-images-0.imgix.net/files/222998006/Global+Map+590x332.jpg?auto=compress%2Cformat&fit=min&h=394&w=700&s=77e2d628ec32100e8b566751976d828f");
+    background: url("https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FHome%2FGloboAzul.png?alt=media&token=2af65a2e-a9da-4b5f-8a3f-47ba7f75ec38");
     z-index: -99;
   }
   @keyframes spin {

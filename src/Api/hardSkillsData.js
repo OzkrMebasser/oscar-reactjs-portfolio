@@ -7,7 +7,7 @@ import '../../src/pages/Skills/Skills.css'
 export const skills = [
     {
       id: 1,
-      icon: "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/html-svgrepo-com.svg?alt=media&token=e8fcd17b-c890-4418-b058-e274e446bfd9",
+      icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fhtml-svgrepo-com.svg?alt=media&token=bf007597-213f-410e-b369-8035584a3ad7",
       title: "HTML-5",
       alt: "HTML-5 logo",
       progress: 75,
@@ -20,7 +20,7 @@ export const skills = [
     },
     {
         id: 2,
-        icon: "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/css-svgrepo-com.svg?alt=media&token=e63246ef-edc0-4dcf-b14e-870cd77306ac",
+        icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fcss-svgrepo-com.svg?alt=media&token=05933c42-aa37-4123-a959-dd7ace7fb4b8",
         title: "CCS-3",
         progress: 75,
         description: "CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages all at once.",
@@ -31,7 +31,7 @@ export const skills = [
       },
       {
         id: 3,
-        icon: "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/js-svgrepo-com.svg?alt=media&token=99e34ecb-2bb2-4ac9-9fc3-2dadc31204ce",
+        icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fjs-svgrepo-com.svg?alt=media&token=c6b39548-7d54-4dfc-8720-5a500786edda",
         title: "JAVASCRIPT",
         progress: 70,
         description: "JavaScript is a dynamic programming language that's used for web development, in web applications, for game development, and lots more.",
@@ -42,7 +42,7 @@ export const skills = [
       },
       {
         id: 4,
-        icon: "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/react-1-logo-svgrepo-com.svg?alt=media&token=03abbb98-1f47-415a-9368-07a8ed762131",
+        icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-1-logo-svgrepo-com.svg?alt=media&token=f690f37d-9457-4a0b-8378-16a7d426114f",
         title: "REACT-JS",
         progress: 65,
         description: "The React. js framework is an open-source JavaScript framework and library developed by Facebook. It's used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript. ",
@@ -52,7 +52,7 @@ export const skills = [
       },
       {
         id: 5,
-        icon: "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/nodejs-1-logo-svgrepo-com.svg?alt=media&token=84b180f7-4405-48e7-b099-3dc4584f33ef",
+        icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fnodejs-1-logo-svgrepo-com.svg?alt=media&token=afa3c35d-425a-44d7-95bc-ca797548ba45",
         title: "NODE-JS",
         progress: 55,
         description: "Node. js (Node) is an open source development platform for executing JavaScript code server-side. Node is useful for developing applications that require a persistent connection from the browser to the server and is often used for real-time applications such as chat, news feeds and web push notifications.",
@@ -62,15 +62,16 @@ export const skills = [
       },
       {
         id: 6,
-        icon: "https://4thpointer.com/wp-content/uploads/2020/12/ExpressJS.png",
+        icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fexpress-svgrepo-com.svg?alt=media&token=0ac98956-4734-4662-92b6-15c83e71408e",
         title: "EXPRESS JS",
         progress: 50,
         description: "Disfruta de un dia espectacular ",
-        class: "iconEx",
+        class: "icons",
         variant: "warning",
         category:"Back End",
       },
       {
+        /* Cambiar imagenes a la carpeta de Oscar en firebase*/
         id: 7,
         icon: "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/python-svgrepo-com.svg?alt=media&token=e9f46773-c5eb-453c-be42-23f8326ae705",
         title: "PYHTON",

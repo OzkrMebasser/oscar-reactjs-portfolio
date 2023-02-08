@@ -63,12 +63,15 @@ const Skills = () => {
           culpa qui officia deserunt mollit anim id est laborum.
         </Accordion.Body>
       </Accordion.Item>
+
+      {/*BackEnd */}
       <Accordion.Item eventKey="2">
-        <Accordion.Header className="texts">{t("skills.hardSkills")}</Accordion.Header>
+        <Accordion.Header className="texts">{t("skills.hardSkills")}<h1>"Front-End" skills</h1></Accordion.Header>
         
         <Accordion.Body>
       
       <Row xs={1} md={3} fluid className="g-4 texts">
+        
         {skills.map((skill, id) => (
           <Col >
             <Card className="cardGrid align-middle" >
