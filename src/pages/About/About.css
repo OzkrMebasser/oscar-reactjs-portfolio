@@ -109,15 +109,15 @@
 
   .flip-card {
     background-color:#fff;
-    width: 300px;
+    width: 250px;
     margin: auto;
-    height: 300px;
+    height: 250px;
     position:relative;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   /* 
     padding: 25px 0 0 0; */
       
-    bottom: 3.8rem;
+    margin-top: 2rem;
     
   }
   
@@ -128,7 +128,8 @@
     text-align: center;
     transition: transform .5s;
     padding: 30px 30px 0 0;
-    margin-right: 11rem;
+    /* margin-right: 11rem; */
+    margin: auto;
     transform-style: preserve-3d;
   
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
