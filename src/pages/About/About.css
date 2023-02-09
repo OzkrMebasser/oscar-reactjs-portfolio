@@ -106,8 +106,62 @@
 
     
   } */
-}
 
+  .flip-card {
+    background-color:#fff;
+    width: 100vw;
+    margin: auto;
+    height: 380px;
+    position:relative;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  /* 
+    padding: 25px 0 0 0; */
+      
+    bottom: 3.8rem;
+    
+  }
+  
+  .flip-card-inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform .5s;
+    padding: 30px 30px 0 0;
+    margin-right: 11rem;
+    transform-style: preserve-3d;
+  
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: rgb(255, 255, 255);
+    
+  
+  }
+  
+  .flip-card:hover .flip-card-inner  {
+    transform: rotateY(180deg);
+  
+    
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+    
+  }
+  
+  .flip-card-front {
+    background-color: #d4af37;
+    color: black;
+    
+  
+  }
+  
+}
+/*Medias up*/
 .container {
   position: relative;
   width: 30%;
@@ -178,19 +232,19 @@
 
 
 
-.hex {
+/* .hex {
   display: flex;
   position: relative;
   width: 470px;
   
   height: 430px;
   margin-right: 6rem;
-  bottom: 3.3rem;
+  bottom: 3.3rem; */
   /* transform: scale(0); */
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255);
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-}
+} */
 
 
 .flip-card {
