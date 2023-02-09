@@ -109,9 +109,9 @@
 
   .flip-card {
     background-color:#fff;
-    width: 100vw;
+    width: 300px;
     margin: auto;
-    height: 380px;
+    height: 300px;
     position:relative;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   /* 
