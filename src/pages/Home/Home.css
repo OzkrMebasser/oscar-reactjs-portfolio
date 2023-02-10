@@ -725,8 +725,8 @@ Switch phrases */
     position: fixed;
     top: 0;
     /* left: 0; */
-    width: 90vw;
-    height: 87vh;
+    width: 100vw;
+    height: 100vh;
     background-color: #d4af37;
     display: flex;
     justify-content: center;
