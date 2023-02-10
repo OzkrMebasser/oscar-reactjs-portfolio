@@ -19,10 +19,10 @@
     text-shadow:1px 1px 10px rgb(0, 0, 0), 1px 1px 10px rgb(0, 0, 0);
     /* font-size:48px; */
   }
-  
+
   .cover-container {
     
-    background-color: #ea4335;
+    
     height: 87vh;
     /* margin-bottom: 5rem; */
     /* object-fit: contain; */
@@ -33,17 +33,13 @@
     align-items: center;
     box-sizing: content-box;
     margin:auto ;
-    /* background-color: transparent; */
+    background-color: transparent;
     /* background-color: rgb(89, 218, 39); */
     font-family: 'Boogaloo', cursive;
    
   }
 
-  .particles-cover{
-    height: 87vh;
-    margin: auto;
-  }
-  
+
   
   .cover-container > h1,h2,h3,h4,h5,h6 {
     color: white;
@@ -62,6 +58,19 @@
     
   }
 
+  element.style {
+    width: 100% !important;
+    height: 100% !important;
+    pointer-events: none;
+    position: fixed !important;
+    z-index: -5 !important;
+    top: 0px !important;
+    left: 0px !important;
+    background-color: rgb(60, 255, 0);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
     /*Home Container media queries */
 /* Smartphones (portrait and landscape) ---------- */
   @media screen and (min-width: 320px) and (max-width: 480px){
@@ -221,14 +230,14 @@
 /* comets animations */
 
 #comets{
-  position:fixed;
+  position:absolute;
   top:0;
   width:90vw;
   text-align: left; 
   height: 90vh; 
   /* min-height: 100vh; */
   overflow:hidden;
-  background-color: #25D366;
+  /* background-color: #25D366; */
 }
 
 #comets i {
@@ -496,13 +505,14 @@
 
 .flip-box-cover {
   background-color: transparent;
-  width: 35rem;
+  width: 100vw;
   padding-top: 8rem;
   padding-bottom: 5rem;
   font-size: 2.8rem;
   z-index: 9999;
   /* position: absolute; */
   cursor: pointer;
+  background-color: #ea4335;
   
 
 }

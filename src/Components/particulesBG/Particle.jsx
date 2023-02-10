@@ -25,12 +25,14 @@ function Particle() {
         {
           background: {
             color: {
-              value: "#000"
+              value: "#002FFF"
             },
+            
             position: "50% 50%",
             repeat: "no-repeat",
             size: "cover"
           },
+          width: "50%",
           fullScreen: {
             zIndex: -5
           },
