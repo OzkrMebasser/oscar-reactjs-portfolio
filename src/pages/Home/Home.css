@@ -38,6 +38,11 @@
     font-family: 'Boogaloo', cursive;
    
   }
+
+  .particles-cover{
+    height: 87vh;
+    margin: auto;
+  }
   
   
   .cover-container > h1,h2,h3,h4,h5,h6 {
@@ -218,9 +223,9 @@
 #comets{
   position:fixed;
   top:0;
-  width:80vw;
+  width:90vw;
   text-align: left; 
-  height: 80vh; 
+  height: 90vh; 
   /* min-height: 100vh; */
   overflow:hidden;
   background-color: #25D366;
@@ -229,7 +234,7 @@
 #comets i {
   display: inline-block;
   width: 250px;
-  ;position:absolute;
+  position:absolute;
   border-radius: 5% 40% 70%;
   box-shadow: inset 0px 0px 1px #294b67;
   border: 1px solid #333;

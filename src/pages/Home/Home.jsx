@@ -53,7 +53,7 @@ const Home = () => {
               <div className="flip-box-back-cover"> {t("cover.hello-world-2")}</div>
             </div>
           </div>
-        <Particle />
+        <Particle className="particles-cover" />
           <Typing />
          
       
