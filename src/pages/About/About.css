@@ -191,6 +191,13 @@
   margin-bottom: 2rem;
  }
 
+
+
+
+
+
+
+
 /*Media Queries*/
  @media only screen and (max-width: 600px) {
   .about-container {
@@ -210,12 +217,7 @@
     text-align: center;
   }
 
-  /* .about-img {
-    width: 100vw;
-    background-color: rgb(23, 20, 220);
-    margin-bottom: 200px;
-    z-index: 99999999999999;
-  } */
+ 
   .about-desc > p {
     line-height: 1.4;
     font-size: 1rem;
@@ -228,16 +230,16 @@
 
   .flip-card {
     background-color:#fff;
-    width: 380px ;
+    width: 350px ;
     /* margin-top: 50rem; */
     margin: auto;
-    height: 380px;
+    height: 350px;
     position:relative;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   /* 
     padding: 25px 0 0 0; */
       
-    margin-top: 2rem;
+    margin-top: 4rem;
     
   }
   
@@ -454,5 +456,10 @@
   /* padding: 0 20px 0 100px; */
 /* ;
 } */
-
+ /* .about-img {
+    width: 100vw;
+    background-color: rgb(23, 20, 220);
+    margin-bottom: 200px;
+    z-index: 99999999999999;
+  } */
 /* Not using ....*****/
