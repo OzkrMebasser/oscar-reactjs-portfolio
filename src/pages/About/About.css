@@ -222,11 +222,7 @@
     line-height: 1.4;
     font-size: 1rem;
   }
-  /* .about-img > img {
-    width: 100%;
 
-    
-  } */
 
   .flip-card {
     background-color:#fff;
@@ -239,7 +235,7 @@
   /* 
     padding: 25px 0 0 0; */
       
-    margin-top: 4rem;
+    margin-top: 2.5rem;
     
   }
   
@@ -296,8 +292,8 @@
 .downloadBtn {
   margin: auto;
   align-items: center;
-  width: 60%;
-  height: 3rem;
+  width: 50%;
+  height: 3.1rem;
   margin: auto;   
   text-decoration: none;
    background-color: #d4af37;
@@ -339,8 +335,8 @@
   
  .greetings {  
   position: absolute;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  padding-right: 1.4rem;
+  padding-left: 1.4rem;
   margin-top: 7.5rem;
   font-size: 1rem;
   text-align: justify;
@@ -461,5 +457,11 @@
     background-color: rgb(23, 20, 220);
     margin-bottom: 200px;
     z-index: 99999999999999;
+  } */
+
+    /* .about-img > img {
+    width: 100%;
+
+    
   } */
 /* Not using ....*****/
