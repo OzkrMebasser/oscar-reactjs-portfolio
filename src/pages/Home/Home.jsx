@@ -11,7 +11,7 @@ import "../Home/Home.css";
 import "../Cover/Cover.css";
 
 import { motion } from 'framer-motion';
-import { faLinesLeaning } from "@fortawesome/free-solid-svg-icons";
+// import { faLinesLeaning } from "@fortawesome/free-solid-svg-icons";
 
 
 const Home = () => {

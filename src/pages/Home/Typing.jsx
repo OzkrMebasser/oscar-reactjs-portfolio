@@ -44,7 +44,7 @@ export default function Typing() {
     }, Math.max(reverse ? 75 : subIndex === words[index].length ? 1000 : 150, parseInt(Math.random() * 350)));
 
     return () => clearTimeout(timeout);
-  }, [subIndex, index, reverse]);
+  }, [subIndex, index, reverse, words]);
 
   // blinker
   useEffect(() => {
@@ -56,8 +56,8 @@ export default function Typing() {
 
   return (
     <>
-      <h1 id="gold">
-        <span id="white">{t("myself.myself")}</span>
+      <h1 id="goldTyping">
+        <span id="whiteTyping">{t("myself.myself")}</span>
         {`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}
       </h1>
     </>
