@@ -111,7 +111,7 @@ const Navbar = ({ isScrolling }) => {
               to="/contact"
               activeclassname="active"
               className="nav-links">
-            <NavDropdown className=""  title= {t("navbar.language")}>
+            <NavDropdown className="centerDropDown"  title= {t("navbar.language")}>
               <NavDropdown.Item onClick={()=> i18n.changeLanguage("en")}>
                ENGLISH <span className="fi fi-ca"></span> <span className="fi fi-us"></span> <span className="fi fi-uk"></span>
               </NavDropdown.Item>
