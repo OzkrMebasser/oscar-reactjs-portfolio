@@ -44,7 +44,7 @@ export default function Typing() {
     }, Math.max(reverse ? 75 : subIndex === words[index].length ? 1000 : 150, parseInt(Math.random() * 350)));
 
     return () => clearTimeout(timeout);
-  }, [subIndex, index, reverse, words]);
+  }, [subIndex, index, reverse ]);
 
   // blinker
   useEffect(() => {
