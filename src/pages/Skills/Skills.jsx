@@ -18,13 +18,17 @@ const Skills = () => {
   return (
     <Fragment className="containerGrid" >
       <h2 className="textTitle">{t("skills.title")}</h2>
+
+      
     <motion.div  className="cardGrid" 
          initial={{y: 600 }}
          animate={{ y: 0}}
          transition={{delay: 0.3, type: 'fade' }}>
      <Accordion>
       <Accordion.Item eventKey="0">
-        <Accordion.Header className="texts">{t("skills.hardSkills")}</Accordion.Header>
+        {/*FrontEnd*/}
+        <Accordion.Header className="texts">{t("skills.hardSkills")} <img className="frontEndimg" src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2Ffrontend.png?alt=media&token=6ce6c9c4-97e2-4e9f-b883-45a9dd5ed0fa" alt="FrontEnd" />
+</Accordion.Header>
         
         <Accordion.Body>
       
@@ -51,8 +55,9 @@ const Skills = () => {
 
       </Accordion.Body>
       </Accordion.Item>
+          {/*Back End*/}
       <Accordion.Item eventKey="1">
-        <Accordion.Header>{t("skills.softSkills")}</Accordion.Header>
+        <Accordion.Header>{t("skills.softSkills")}<img className="backEndimg" src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2Fbackend.png?alt=media&token=733cc56b-1d7e-447d-b904-a4b88f2bc7d7" alt="FrontEnd" /></Accordion.Header>
         <Accordion.Body>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
