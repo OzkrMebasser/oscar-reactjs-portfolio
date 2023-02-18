@@ -26,12 +26,12 @@ const Projects = ({ props }) => {
           numberOfCards={1}
           gutter={8}
           leftChevron={
-            <span className="arrowIcon">
+            <span className="arrowIconLeft">
               <ImUndo2 />
             </span>
           }
           rightChevron={
-            <span className="arrowIcon">
+            <span className="arrowIconRight">
               <ImRedo2 />
             </span>
           }

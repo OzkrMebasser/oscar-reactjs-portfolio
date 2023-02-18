@@ -55,6 +55,7 @@
 .carouselContainer {
   margin-left: 10%;
   margin-right: 10%;
+  background-color: aqua;
 }
 /* .carouselDiv {
   margin-bottom: 2rem;
@@ -82,77 +83,10 @@
   filter: blur(1px);
 }
 
-@media only screen and (max-width: 960px) {
-  .carouselContainer {
-    margin-left: 0;
-    margin-right: 0;
-    position: absolute;
-    top: 5%;
-    left: 0;
-    right: 0;
-  }
-  .inner-img {
-    transition: 0.3s;
-    width: 100%;
-    height: 300px;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-  
-  .inner-img:hover {
-    transform: scale(0.9);
-    border-radius: 10px;
-    opacity: calc(0.9);
-    filter: blur(1px);
-  }
 
-  .arrowIcon {
-    margin-bottom: 5rem;
-    font-size: 36px;
-    display: inline-block;
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    line-height: 42px;
-    border-radius: 50%;
-    text-align: center;
-    position: absolute;
-    color: #fff;
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: all 800ms ease-in-out;
-  }
-  .arrowIcon:after {
-    pointer-events: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    content: "";
-    box-sizing: content-box;
-    box-shadow: 0 0 0 3px rgb(255, 255, 255);
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: 300ms;
-  }
-  
-  .arrowIcon:hover {
-    background-color: #d4af37;
-    color: #000000;
-    transform: scale(1);
-    box-shadow: 0px 0px 30px #ffffff;
-    -ms-transform: rotate(360deg); /* IE 9 */
-    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
-    transform: rotate(360deg);
-  }
-  
-  .arrowIcon-fx:hover:after {
-    opacity: 1;
-  }
-}
 /* Arrows*/
 
-.arrowIcon {
+.arrowIconLeft {
   margin-bottom: 5rem;
   font-size: 36px;
   display: inline-block;
@@ -167,7 +101,7 @@
   background-color: rgba(255, 255, 255, 0.1);
   transition: all 800ms ease-in-out;
 }
-.arrowIcon:after {
+.arrowIconLeft:after {
   pointer-events: none;
   position: absolute;
   width: 100%;
@@ -182,7 +116,53 @@
   transition: 300ms;
 }
 
-.arrowIcon:hover {
+.arrowIconLeft:hover {
+  background-color: #d4af37;
+  color: #000000;
+  transform: scale(1);
+  box-shadow: 0px 0px 30px #ffffff;
+  -ms-transform: rotate(-360deg); /* IE 9 */
+  -webkit-transform: rotate(-360deg); /* Chrome, Safari, Opera */
+  transform: rotate(-360deg);
+}
+
+
+
+.arrowIcon-fx:hover:after {
+  opacity: 1;
+}
+
+.arrowIconRight {
+  margin-bottom: 5rem;
+  font-size: 36px;
+  display: inline-block;
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  line-height: 42px;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 800ms ease-in-out;
+}
+.arrowIconRight:after {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: "";
+  box-sizing: content-box;
+  box-shadow: 0 0 0 3px rgb(255, 255, 255);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 300ms;
+}
+
+.arrowIconRight:hover {
   background-color: #d4af37;
   color: #000000;
   transform: scale(1);
@@ -192,9 +172,6 @@
   transform: rotate(360deg);
 }
 
-.arrowIcon-fx:hover:after {
-  opacity: 1;
-}
 
 .stackBtn {
  
@@ -266,3 +243,79 @@
   background-color: #d4af37;
   color: #000;
 }
+
+ /*Medias queries
+ 
+▒█▀▀█ ▒█▀▀▀ ▒█▀▀▀█ ▒█▀▀█ ▒█▀▀▀█ ▒█▄░▒█ ▒█▀▀▀█ ▀█▀ ▒█░░▒█ ▒█▀▀▀ 
+▒█▄▄▀ ▒█▀▀▀ ░▀▀▀▄▄ ▒█▄▄█ ▒█░░▒█ ▒█▒█▒█ ░▀▀▀▄▄ ▒█░ ░▒█▒█░ ▒█▀▀▀ 
+▒█░▒█ ▒█▄▄▄ ▒█▄▄▄█ ▒█░░░ ▒█▄▄▄█ ▒█░░▀█ ▒█▄▄▄█ ▄█▄ ░░▀▄▀░ ▒█▄▄▄
+ */
+
+@media only screen and (max-width: 600px) {
+
+  .carouselContainer {
+    margin-left: 0;
+    margin-right: 0;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+  }
+  
+
+  .inner-img {
+    transition: 0.3s;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .inner-img:hover {
+    transform: scale(0.9);
+    border-radius: 10px;
+    opacity: calc(0.9);
+    filter: blur(1px);
+  }
+  
+  .stackBtn {
+ 
+    width: 40%;
+   
+    
+     background-color: #d4af37;
+     color: #000;
+     font-size: 1rem;
+     border: currentColor;
+     font-family: "Boogaloo", cursive;
+     text-decoration-style: dotted;
+   
+   }
+   .stackBtn:hover {
+   
+     background-color: #000;
+     color: #ffffff;
+     font-size: 1rem;
+     border: 1px solid #d4af37;
+     transform: scale(0.95);
+     transition: 200ms;
+    
+   }
+   
+   .btn-check:focus+.btn, .btn:focus{
+     color: #ffffff;
+     background-color: #000;
+     border: 1px solid #d4af37;
+     outline: 0;
+     box-shadow: none;
+   }
+ 
+
+}
+/* @media only screen and (max-width: 960px) {
+ 
+ 
+  .arrowIcon-fx:hover:after {
+    opacity: 1;
+  }
+} */
