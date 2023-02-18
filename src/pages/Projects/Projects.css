@@ -256,13 +256,22 @@
 
 @media only screen and (max-width: 600px) {
 
-  .carouselContainer {
+  /* .carouselContainer {
     margin-left: 0;
     margin-right: 0;
     position: absolute;
     top: 20%;
     left: 0;
     right: 0;
+    background-color: transparent;
+    
+  } */
+
+  .carouselContainer {
+    margin-left: 1%;
+    margin-right: 1%;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
   }
   
 
