@@ -24,7 +24,7 @@ function ModalItem({props, ...project}) {
       </Modal.Header>
       <Modal.Body>
         
-        <p>{project.desc}</p>
+        {/* <p>{project.desc}</p> */}
   
       <span>
         <img className="iconSize" src={project.tech_1_icon} alt={project.tech_1_name} />

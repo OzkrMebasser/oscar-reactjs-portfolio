@@ -41,7 +41,7 @@ const Projects = ({ props }) => {
         >
           {projects.map((project, index) => (
             
-            <div className="image-wrapper text-center " key={index}>
+            <div className=" text-center " key={index}>
               {/* <strong>
                   <p>{index + 1}</p>
                 </strong> */}

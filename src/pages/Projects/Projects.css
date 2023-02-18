@@ -53,9 +53,10 @@
   height: 87vh;
 }
 .carouselContainer {
-  margin-left: 10%;
-  margin-right: 10%;
-  background-color: aqua;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: rgb(224, 57, 57);
+  margin: auto;
 }
 /* .carouselDiv {
   margin-bottom: 2rem;
@@ -67,13 +68,15 @@
 .image-wrapper {
   overflow: hidden;
   top: 0;
+  /* padding: 10px 50px; */
 }
 .inner-img {
   transition: 0.3s;
-  width: 580px;
+  width: 60vw;
   height: 380px;
   border-radius: 10px;
   cursor: pointer;
+  margin: auto;
 }
 
 .inner-img:hover {
@@ -280,7 +283,7 @@
   
   .stackBtn {
  
-    width: 40%;
+    width: 100%;
    
     
      background-color: #d4af37;
@@ -310,6 +313,26 @@
      box-shadow: none;
    }
  
+   .projectsH1 {
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    vertical-align: middle;
+    position: relative;
+    
+    font-family: "Boogaloo", cursive;
+    text-shadow: 1px 1px 3px #cccc5abd;
+  }
+  
+  .projectName {
+    text-align: center;
+    color: #d4af37;
+    font-size: 1rem;
+    font-family: "Boogaloo", cursive;
+   text-transform: uppercase;
+    text-shadow: 1px 1px 1px #9c9c9a9a;
+  }
+  
 
 }
 /* @media only screen and (max-width: 960px) {
