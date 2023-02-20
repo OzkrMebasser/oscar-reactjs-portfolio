@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 import ModalItem from "./ModalItem";
 
 import ItemsCarousel from "react-items-carousel";
@@ -11,14 +11,15 @@ import "./Projects.css";
 const Projects = ({ props }) => {
   const [activeItemIndex, setActiveItemIndex] = useState(0);
 
-  const chevronWidth = 100;
+  const chevronWidth = 200;
 
   return (
     <div className="bodyContainer">
       <div
-        className="carouselContainer"
-        style={{ padding: `0 ${chevronWidth}px` }}
+        className="carouselContainer chevronWidth"
+        // style={{ padding: `0 ${chevronWidth}px` }}
       >
+
         <ItemsCarousel
           infiniteLoop={true}
           requestToChangeActive={setActiveItemIndex}
