@@ -18,6 +18,7 @@ const Skills = () => {
   return (
     <Fragment className="containerGrid" >
       <h2 className="textTitle">{t("skills.title")}</h2>
+      <h4 className="textTitle">Hard Skills</h4>
 
       
     <motion.div  className="cardGrid" 
@@ -31,8 +32,9 @@ const Skills = () => {
 </Accordion.Header>
         
         <Accordion.Body>
+        
+      <Row xs={1} md={5} fluid className="g-4 texts">
       
-      <Row xs={1} md={4} fluid className="g-4 texts">
         {skills.map((skill, id) => (
           <Col >
             <Card className="cardGrid align-middle" >
@@ -42,8 +44,9 @@ const Skills = () => {
                 <Card.Title>{skill.title}</Card.Title>
                 <Card.Text>{skill.category}</Card.Text>
                 <Card.Text className="textM">{skill.description}</Card.Text>
+                {/* <button>Read Docs.</button> */}
                 {/* <strong><p className="texts">Aproximate knowledge</p></strong> */}
-                <ProgressBar className="texts" animated now={skill.progress} label={`${t("skills.learning")}${skill.progress}%`} variant={skill.variant} style={{height:"25px", color:"black"}}/>
+                {/* <ProgressBar className="texts" animated now={skill.progress} label={`${t("skills.learning")}${skill.progress}%`} variant={skill.variant} style={{height:"25px", color:"black"}}/> */}
                 
               </Card.Body>
               
@@ -54,8 +57,12 @@ const Skills = () => {
       </Row>
 
       </Accordion.Body>
+      
       </Accordion.Item>
+
+      
           {/*Back End*/}
+        
       <Accordion.Item eventKey="1">
         <Accordion.Header>{t("skills.softSkills")}<img className="backEndimg" src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2Fbackend.png?alt=media&token=733cc56b-1d7e-447d-b904-a4b88f2bc7d7" alt="FrontEnd" /></Accordion.Header>
         <Accordion.Body>
@@ -70,6 +77,8 @@ const Skills = () => {
       </Accordion.Item>
 
       {/*BackEnd */}
+
+      <h4 className="textTitle">Soft Skills</h4>
       <Accordion.Item eventKey="2">
         <Accordion.Header className="texts">{t("skills.hardSkills")}<h1>"Front-End" skills</h1></Accordion.Header>
         
