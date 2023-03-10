@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 // import { NavLink } from "react-router-dom";
 import "./Home.css";
@@ -11,47 +11,46 @@ import "./Home.css";
 function WelcomePopUp(props) {
   const [t, i18n] = useTranslation("global");
   return props.trigger ? (
-
-    
-    <motion.div className="popup"
-    initial={{y: "100vh" }}
-    animate={{ y: 0}}
-    transition={{delay: 0.3, type: 'fade' }}>
+    <motion.div
+      className="popup"
+      initial={{ y: "100vh" }}
+      animate={{ y: 0 }}
+      transition={{ delay: 0.3, type: "fade" }}
+    >
       <div className="popupInner">
-  
-          {/* <NavLink to="/home" activeclassname="" className=""> */}
-          {/* */}
+        {/* <NavLink to="/home" activeclassname="" className=""> */}
+        {/* */}
 
-          {/*  */}
-          {/* </NavLink> */}
-         
-          <button className="goBtn " onClick={() => props.setTrigger(false)}>
-            {t("cover.seePortfolio")}
-          </button>
-          <button className="goBtnB goBtnBIcon" >
-          <NavDropdown className="noLink" title={t("navbar.language")}> 
-          
-
-        <NavDropdown.Item onClick={() => i18n.changeLanguage("es")}>
-          ESPAÑOL <span className="fi fi-mx"></span>{" "}
-          <span className="fi fi-es"></span>
-        </NavDropdown.Item>
- 
-        <NavDropdown.Item onClick={() => i18n.changeLanguage("en")}>
-          ENGLISH <span className="fi fi-ca"></span>{" "}
-          <span className="fi fi-us"></span>{" "}
-          <span className="fi fi-uk"></span>
-        </NavDropdown.Item>
-   
-      </NavDropdown>
-      </button>
-          {props.children}
-          
-     
-        
+        {/*  */}
+        {/* </NavLink> */}
+        <div className="icon-container">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FAbout%2FoscarExec.png?alt=media&token=b68c2ccb-f9fe-44cf-ae19-ee26c5d1eb4d"
+            alt="My profile"
+            className="icon"
+          />
         </div>
-        
-        </motion.div>
+
+        <button className="goBtn " onClick={() => props.setTrigger(false)}>
+          {t("cover.seePortfolio")}
+        </button>
+        <button className="goBtnB goBtnBIcon">
+          <NavDropdown className="noLink" title={t("navbar.language")}>
+            <NavDropdown.Item onClick={() => i18n.changeLanguage("es")}>
+              ESPAÑOL <span className="fi fi-mx"></span>{" "}
+              <span className="fi fi-es"></span>
+            </NavDropdown.Item>
+
+            <NavDropdown.Item onClick={() => i18n.changeLanguage("en")}>
+              ENGLISH <span className="fi fi-ca"></span>{" "}
+              <span className="fi fi-us"></span>{" "}
+              <span className="fi fi-uk"></span>
+            </NavDropdown.Item>
+          </NavDropdown>
+        </button>
+        {props.children}
+      </div>
+    </motion.div>
   ) : (
     ""
   );

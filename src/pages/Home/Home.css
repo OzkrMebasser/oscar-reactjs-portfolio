@@ -442,7 +442,8 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #d4af37;
+  /* background-color: #d4af37; */
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/polygon-scatter-haikei.svg?alt=media&token=30c3c9a1-85bd-4acd-959a-e9284286cd6f");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -451,26 +452,26 @@
 
 .popupInner{
   position: relative;
-  padding: 32px;
+  padding: 20px;
   width: 100%;
-  height: 350px;
-  max-width: 640px;
+  height: 390px;
+  max-width: 600px;
   background-color: #000000;
   z-index: 999999999999999999;
-  border-radius: 8px;
+  border-radius: 20px;
   box-shadow: rgb(6, 7, 8) 0px 20px 30px -10px;
 }
 
-.popupInner .close-btn {
+/* .popupInner .close-btn {
   position: absolute;
-  top: 16px;
+  top: 50px;
   right: 16px;
-}
+} */
 
 .welcomeTitle {
   position: relative;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 0rem;
  padding: 1.5rem 1rem;
   font-size: 1.2rem;
   text-align: center;
@@ -493,7 +494,8 @@
 .goBtn {
   position: absolute;
   width: 30%;
- right: 0;
+  left: 20px;
+  bottom: 20px;
    background-color: #d4af37;
    color: #000;
    /* height: 3rem; */
@@ -501,8 +503,7 @@
    border: currentColor;
    font-family: "Boogaloo", cursive;
    text-decoration-style: dotted;
-   top: .5rem;
-   right: .5rem;
+   
    border-radius: 6px;
    height: 2.5rem;
  
@@ -518,8 +519,10 @@
   
  }
  .goBtnB {
+  position: absolute;
    width: 30%;
-   right: 0;
+   right: 20px;
+   bottom: 20px;
    background-color: #d4af37;
    color: #000;
    height: 2.5rem;
@@ -527,9 +530,7 @@
    border: currentColor;
    font-family: "Boogaloo", cursive;
    text-decoration-style: dotted;
-   position: absolute;
-   bottom: .5rem;
-   right: .5rem;
+   
    border-radius: 6px;
  }
  .goBtnB:hover {
@@ -543,6 +544,24 @@
   
  }
  
+ .icon-container {
+  position: relative;
+  top: 0px;
+  
+ margin:auto;
+ 
+ 
+  width: 130px; /* set the width and height to the desired size of your icon */
+  height: 130px;
+  border-radius: 50%; /* set the border-radius to 50% to create a circular shape */
+  overflow: hidden; /* hide any overflow from the image */
+}
+
+.icon {
+  width: 100%; /* set the width and height to 100% to fill the container */
+  height: 100%;
+  object-fit: cover; /* maintain the aspect ratio of the image while filling the container */
+}
  /*Medias RESPONSIVE
  
 ▒█▀▀█ ▒█▀▀▀ ▒█▀▀▀█ ▒█▀▀█ ▒█▀▀▀█ ▒█▄░▒█ ▒█▀▀▀█ ▀█▀ ▒█░░▒█ ▒█▀▀▀ 

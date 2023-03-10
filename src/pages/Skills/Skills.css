@@ -57,23 +57,95 @@
     color: #d4af37;
 }
 .textM{
-    text-align: center;
+    text-align: justify;
+    padding: 9px;
     color: rgb(0, 0, 0);
     margin: auto;
-    height: 5rem;
+    height: 10rem;
     font-size: .8rem;
     font-family: 'Boogaloo', cursive;
-    /* text-shadow: 1px 1px 1px #9c9c9a9a; */
+    overflow: auto;
+    text-overflow: ellipsis;
+    border-radius: 6px;
+    /* background-color: rgba(226, 224, 224, 0.521); */
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        /* text-shadow: 1px 1px 1px #9c9c9a9a; */
    
     
 }
 
+.dropBtn {
+    background-color: #d4af37;
+    color: #000;
+    
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 15px;
 
+     font-size: 1rem;
+     border: currentColor;
+     font-family: "Boogaloo", cursive;
+     text-decoration-style: dotted;
+     border-radius: 6px;
+    
+   
+   }
+   .dropBtn:hover {
+    background-color: #000;
+    color: #ffffff;
+    
+     font-size: 1rem;
+     border: 1px solid #d4af37;
+     transform: scale(0.95);
+     transition: 200ms;
+    
+   }
+
+.docsBtn {
+    background-color: #000;
+    color: #ffffff;
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 20px;
+     font-size: 1rem;
+     border: currentColor;
+     font-family: "Boogaloo", cursive;
+     text-decoration-style: dotted;
+     border-radius: 6px;
+     
+    
+   
+   }
+   .docsBtn:hover {
+    background-color: #d4af37;
+    color: #000;
+    
+     font-size: 1rem;
+     border: 1px solid #d4af37;
+     transform: scale(0.95);
+     transition: 200ms;
+    
+   }
+
+   
+   .cardGridShadow {
+
+  
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+  }
+  
 .cardGrid {
   /* background-color: blue; */
   
-  height: 18rem;
+  height: 15rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   
+}
+
+.cardGridOpen{
+    height: 22rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .icons{
@@ -129,6 +201,13 @@
 }
 
 
+
+ /*Medias queries
+ 
+▒█▀▀█ ▒█▀▀▀ ▒█▀▀▀█ ▒█▀▀█ ▒█▀▀▀█ ▒█▄░▒█ ▒█▀▀▀█ ▀█▀ ▒█░░▒█ ▒█▀▀▀ 
+▒█▄▄▀ ▒█▀▀▀ ░▀▀▀▄▄ ▒█▄▄█ ▒█░░▒█ ▒█▒█▒█ ░▀▀▀▄▄ ▒█░ ░▒█▒█░ ▒█▀▀▀ 
+▒█░▒█ ▒█▄▄▄ ▒█▄▄▄█ ▒█░░░ ▒█▄▄▄█ ▒█░░▀█ ▒█▄▄▄█ ▄█▄ ░░▀▄▀░ ▒█▄▄▄
+ */
 @media only screen and (max-width: 960px) {
    
 }

@@ -72,6 +72,7 @@ const Home = () => {
       <WelcomePopUp trigger={buttonPopup} setTrigger={setButtonPopup}> 
         <h6 className="welcomeTitle"> {t("cover.welcome-title")}</h6>
         <p className="welcomeP">{t("cover.welcome-p")}</p>
+        
         </WelcomePopUp>
 
         <WelcomePopUp trigger={timePopup} setTrigger={setTimePopup}> 
