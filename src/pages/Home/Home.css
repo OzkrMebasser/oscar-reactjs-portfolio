@@ -442,8 +442,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  /* background-color: #d4af37; */
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/polygon-scatter-haikei.svg?alt=media&token=30c3c9a1-85bd-4acd-959a-e9284286cd6f");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/World%20Map.svg?alt=media&token=c2c2806e-632e-49a5-abbd-edc2a4c81334");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -454,7 +453,7 @@
   position: relative;
   padding: 20px;
   width: 100%;
-  height: 390px;
+  height: 420px;
   max-width: 600px;
   background-color: #000000;
   z-index: 999999999999999999;
@@ -472,19 +471,19 @@
   position: relative;
   margin: auto;
   margin-top: 0rem;
- padding: 1.5rem 1rem;
-  font-size: 1.2rem;
-  text-align: center;
+ padding: 1.2rem 1rem;
+  font-size: 1.1rem;
+  text-align: justify;
   
 }
 .welcomeP {
   position: relative;
   /* margin: auto; */
   /* padding: 1rem; */
-  font-size: 1rem;
-  text-align: center;
+  font-size: 1.1rem;
+  text-align: justify;
   color: #d4af37;
-  padding: 0 1rem;
+  padding: 0rem 1rem;
 }
 .noLink:hover:after {
   width: 100%;
@@ -494,8 +493,8 @@
 .goBtn {
   position: absolute;
   width: 30%;
-  left: 20px;
-  bottom: 20px;
+  left: 35px;
+  bottom: 25px;
    background-color: #d4af37;
    color: #000;
    /* height: 3rem; */
@@ -521,8 +520,8 @@
  .goBtnB {
   position: absolute;
    width: 30%;
-   right: 20px;
-   bottom: 20px;
+   right: 35px;
+   bottom: 25px;
    background-color: #d4af37;
    color: #000;
    height: 2.5rem;
@@ -530,7 +529,8 @@
    border: currentColor;
    font-family: "Boogaloo", cursive;
    text-decoration-style: dotted;
-   
+   padding: 5px;
+   padding-right: 20px;
    border-radius: 6px;
  }
  .goBtnB:hover {
@@ -542,8 +542,10 @@
    transform: scale(0.95);
    transition: 200ms;
   
+  
  }
  
+ /*Profile picture in Popup*/
  .icon-container {
   position: relative;
   top: 0px;
@@ -554,7 +556,7 @@
   width: 130px; /* set the width and height to the desired size of your icon */
   height: 130px;
   border-radius: 50%; /* set the border-radius to 50% to create a circular shape */
-  overflow: hidden; /* hide any overflow from the image */
+  overflow: hidden; 
 }
 
 .icon {
@@ -562,6 +564,97 @@
   height: 100%;
   object-fit: cover; /* maintain the aspect ratio of the image while filling the container */
 }
+
+
+/*---------------*/
+/***** Oscar *****/
+/*---------------*/
+
+figure.effect-oscar {
+  margin:auto;
+ 
+ 
+  width: 130px; 
+  height: 130px;
+	background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+	background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
+  border-radius: 50%;
+}
+
+figure.effect-oscar img {
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+  border-radius: 50%;
+  width: 130px; 
+  height: 130px;
+}
+
+figure.effect-oscar figcaption {
+	/* padding: 3em; */
+	background-color: rgba(58,52,42,0.7);
+	-webkit-transition: background-color 0.35s;
+	transition: background-color 0.35s;
+  border-radius: 50%;
+  width: 130px; 
+  height: 130px;
+}
+
+figure.effect-oscar figcaption::before {
+	position: absolute;
+  border-radius: 50%;
+	top: 2px;
+	right: 2px;
+	bottom: 2px;
+	left: 2px;
+	border: 1px solid #fff;
+	content: ' ';
+
+
+
+}
+
+figure.effect-oscar h2 {
+	margin: 5% 0 10px 0;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+  height: 130px;
+  width: 130px;
+
+}
+
+figure.effect-oscar figcaption::before,
+figure.effect-oscar p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+figure.effect-oscar:hover h2 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-oscar:hover figcaption::before,
+figure.effect-oscar:hover p {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+ 
+}
+
+figure.effect-oscar:hover figcaption {
+	background-color: rgba(58,52,42,0);
+}
+
+figure.effect-oscar:hover img {
+	opacity: 0.4;
+}
+
  /*Medias RESPONSIVE
  
 ▒█▀▀█ ▒█▀▀▀ ▒█▀▀▀█ ▒█▀▀█ ▒█▀▀▀█ ▒█▄░▒█ ▒█▀▀▀█ ▀█▀ ▒█░░▒█ ▒█▀▀▀ 
@@ -575,7 +668,7 @@
   #whiteTyping{
     color: #fff;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.7rem;
     /* margin-bottom: 15rem; */
   }
   #goldTyping{
@@ -583,7 +676,7 @@
     /* margin-bottom: 5rem; */
     /* background-color: opacity transparent#ffff; */
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.7rem;
     /* background:#111; */
     /* color:#fff; */
     text-shadow:1px 1px 10px rgb(0, 0, 0), 1px 1px 10px rgb(0, 0, 0);
@@ -611,7 +704,7 @@
   
   .cover-container > h1,h2,h3,h4,h5,h6 {
     color: white;
-    font-size: 2.2rem;
+    font-size: 2rem;
     z-index: 99999999;
     font-family: 'Boogaloo', cursive;
 
@@ -621,7 +714,7 @@
   .cover-container > p {
     
     color: white;
-    font-size: 2.2rem;
+    font-size: 2rem;
     z-index: 99999999;
     
   }
@@ -636,7 +729,7 @@
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   
 
@@ -646,7 +739,8 @@
     /* left: 0; */
     width: 100vw;
     height: 100vh;
-    background-color: #d4af37;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/World%20Map.svg?alt=media&token=c2c2806e-632e-49a5-abbd-edc2a4c81334");
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -656,9 +750,10 @@
   
   .popupInner{
     position: relative;
-    padding: 32px;
-    width: 100vw;
-    height: 400px;
+    padding: 20px;
+    width: 90vw;
+    height: 500px;
+
     /* max-width: 640px; */
     background-color: #000000;
     z-index: 999999999999999999;
@@ -666,17 +761,17 @@
     box-shadow: rgb(6, 7, 8) 0px 20px 30px -10px;
   }
   
-  .popupInner .close-btn {
+  /* .popupInner .close-btn {
     position: absolute;
     top: 16px;
     right: 16px;
-  }
+  } */
   
   .welcomeTitle {
     position: relative;
     margin: auto;
-    margin-top: 2rem;
-    padding: 1.5rem 1rem;
+    margin-top: 1rem;
+    padding: 1.2rem 1rem;
     font-size: 1rem;
     text-align: justify ;
     
@@ -695,13 +790,13 @@
     background: none;
   }
   
-  .goBtn {
+  /* .goBtn {
     position: absolute;
     width: 30%;
     right: 0;
      background-color: #d4af37;
      color: #000;
-     /* height: 3rem; */
+   
      font-size: .8rem;
      border: currentColor;
      font-family: "Boogaloo", cursive;
@@ -721,20 +816,50 @@
      transform: scale(0.95);
      transition: 200ms;
     
-   }
-   .goBtnB {
-     width: 30%;
-     right: 0;
+   } */
+
+   .goBtn {
+    position: absolute;
+    width: 38%;
+    left: 33px;
+    bottom: 18px;
      background-color: #d4af37;
      color: #000;
-     height: 2.5rem;
-     font-size: .8rem;
+     /* height: 3rem; */
+     font-size: .9rem;
      border: currentColor;
      font-family: "Boogaloo", cursive;
      text-decoration-style: dotted;
-     position: absolute;
-     bottom: .5rem;
-     right: .5rem;
+     
+     border-radius: 6px;
+     height: 2.5rem;
+   
+   }
+   .goBtn:hover {
+   
+     background-color: #000;
+     color: #ffffff;
+     font-size: .9rem;
+     border: 1px solid #d4af37;
+     transform: scale(0.95);
+     transition: 200ms;
+    
+   }
+  
+   .goBtnB {
+    /* margin: auto; */
+     width: 33%;
+     right: 33px;
+     bottom: 18px;
+     background-color: #d4af37;
+     color: #000;
+     height: 2.5rem;
+     font-size: .9rem;
+     border: currentColor;
+     font-family: "Boogaloo", cursive;
+     text-decoration-style: dotted;
+     padding-right: 15px;
+     padding-top: 8px ;
      border-radius: 6px;
    }
    .goBtnB:hover {

@@ -24,17 +24,23 @@ function WelcomePopUp(props) {
         {/*  */}
         {/* </NavLink> */}
         <div className="icon-container">
-          <img
+          {/* <img
             src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FAbout%2FoscarExec.png?alt=media&token=b68c2ccb-f9fe-44cf-ae19-ee26c5d1eb4d"
             alt="My profile"
             className="icon"
-          />
+          /> */}
+          <figure class="effect-oscar">
+						<img src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FAbout%2FoscarExec.png?alt=media&token=b68c2ccb-f9fe-44cf-ae19-ee26c5d1eb4d" alt="img09"/>
+						<figcaption>
+							{/* <p>Oscar</p> */}
+						</figcaption>			
+					</figure>
         </div>
 
         <button className="goBtn " onClick={() => props.setTrigger(false)}>
           {t("cover.seePortfolio")}
         </button>
-        <button className="goBtnB goBtnBIcon">
+        <button className="goBtnB ">
           <NavDropdown className="noLink" title={t("navbar.language")}>
             <NavDropdown.Item onClick={() => i18n.changeLanguage("es")}>
               ESPAÑOL <span className="fi fi-mx"></span>{" "}
