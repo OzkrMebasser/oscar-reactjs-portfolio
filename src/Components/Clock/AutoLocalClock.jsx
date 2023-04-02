@@ -5,7 +5,7 @@ const AutoLocalClock = (props) => {
 
 
     let options = {
-        width: "85px",
+        width: "130px",
         border: true,
         borderColor: "#2e2e2e",
         baseColor: "#d4af37",

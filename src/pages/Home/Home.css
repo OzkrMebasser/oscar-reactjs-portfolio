@@ -453,7 +453,7 @@
   position: relative;
   padding: 20px;
   width: 100%;
-  height: 480px;
+  height: 460px;
   max-width: 600px;
   background-color: #000000;
   z-index: 999999999999999999;
@@ -557,10 +557,10 @@
   transition: .2s;
 }
 
-.icon-container:hover{
+/* .icon-container:hover{
   transform: rotate(360deg);
 
-}
+} */
 
 .icon {
   width: 100%; /* set the width and height to 100% to fill the container */
@@ -658,27 +658,30 @@ figure.effect-oscar:hover img {
 
 .analog {
   position: absolute;  
-  top: 22rem;
+  top: 1.3rem;
   align-items: center;
-  left: 16rem;
-  width: 100px;
+  left: 14.7rem;
+  width: 130px;
   margin: auto;
   /* background-color: red; */
   
 }
 
 .dates {
-color: #ffffff;
-font-size: 1rem;
+color: #d4af37;
+font-size: 1.1rem;
+text-transform: uppercase;
+top: 0;
 }
 
 .digitalClock {
   position: relative;
   margin: auto;
   text-align: center;
-  color: #ffffff;
+  color: #d4af37;
   top: 0rem;
-  font-size: 1rem;
+  text-transform: uppercase;
+  font-size: 1.1rem;
  
   }
 

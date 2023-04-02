@@ -1,8 +1,8 @@
+import { useState} from "react"
 import { useTranslation } from "react-i18next";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Dates from "../../Components/Clock/Dates";
 import AutoLocalClock from "../../Components/Clock/AutoLocalClock";
-// import DigitalClock from "../../Components/Clock/DigitalClock";
 import ProfileOscar from "./ProfileOscar";
 
 
@@ -14,14 +14,15 @@ import "./Home.css";
 import DigitalClock from "../../Components/Clock/DigitalClock";
 
 function WelcomePopUp(props) {
-  // const [isHovering, setIsHovering] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+
 
   // const handleMouseOver = () => {
-  //   setIsHovering(true);
+  //   setIsHovered(true);
   // };
 
   // const handleMouseOut = () => {
-  //   setIsHovering(false);
+  //   setIsHovered(false);
   // };
 
   const [t, i18n] = useTranslation("global");
@@ -37,14 +38,22 @@ function WelcomePopUp(props) {
     >
       <div className="popupInner">
         
-        {/* <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}> */}
+        {/* <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
           <ProfileOscar />
-        {/* </div> */}
+        </div>
 
         <div className="parent">
           <AutoLocalClock/>
       
-        </div>
+        </div> */}
+        <div
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <ProfileOscar />
+      {isHovered ? <AutoLocalClock/> : null}
+    </div>
+  );
         
         <button className="goBtn " onClick={() => props.setTrigger(false)}>
           {t("cover.seePortfolio")}
@@ -57,6 +66,9 @@ function WelcomePopUp(props) {
        
        <div><DigitalClock/></div>
      </div>
+
+
+     
 
         
         <button className="goBtnB ">
