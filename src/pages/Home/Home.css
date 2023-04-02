@@ -453,7 +453,7 @@
   position: relative;
   padding: 20px;
   width: 100%;
-  height: 420px;
+  height: 480px;
   max-width: 600px;
   background-color: #000000;
   z-index: 999999999999999999;
@@ -471,7 +471,7 @@
   position: relative;
   margin: auto;
   margin-top: 0rem;
- padding: 1.2rem 1rem;
+  padding: 1rem;
   font-size: 1.1rem;
   text-align: justify;
   
@@ -549,14 +549,17 @@
  .icon-container {
   position: relative;
   top: 0px;
-  
- margin:auto;
- 
- 
-  width: 130px; /* set the width and height to the desired size of your icon */
+  margin:auto;
+  width: 130px;
   height: 130px;
-  border-radius: 50%; /* set the border-radius to 50% to create a circular shape */
+  border-radius: 50%;
   overflow: hidden; 
+  transition: .2s;
+}
+
+.icon-container:hover{
+  transform: rotate(360deg);
+
 }
 
 .icon {
@@ -571,9 +574,7 @@
 /*---------------*/
 
 figure.effect-oscar {
-  margin:auto;
- 
- 
+  margin:auto; 
   width: 130px; 
   height: 130px;
 	background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
@@ -613,7 +614,7 @@ figure.effect-oscar figcaption::before {
 
 
 }
-
+/* 
 figure.effect-oscar h2 {
 	margin: 5% 0 10px 0;
 	-webkit-transition: -webkit-transform 0.35s;
@@ -623,9 +624,9 @@ figure.effect-oscar h2 {
   height: 130px;
   width: 130px;
 
-}
+} */
 
-figure.effect-oscar figcaption::before,
+/* figure.effect-oscar figcaption::before,
 figure.effect-oscar p {
 	opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -645,7 +646,7 @@ figure.effect-oscar:hover p {
 	-webkit-transform: scale(1);
 	transform: scale(1);
  
-}
+} */
 
 figure.effect-oscar:hover figcaption {
 	background-color: rgba(58,52,42,0);
@@ -654,6 +655,32 @@ figure.effect-oscar:hover figcaption {
 figure.effect-oscar:hover img {
 	opacity: 0.4;
 }
+
+.analog {
+  position: absolute;  
+  top: 22rem;
+  align-items: center;
+  left: 16rem;
+  width: 100px;
+  margin: auto;
+  /* background-color: red; */
+  
+}
+
+.dates {
+color: #ffffff;
+font-size: 1rem;
+}
+
+.digitalClock {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  color: #ffffff;
+  top: 0rem;
+  font-size: 1rem;
+ 
+  }
 
  /*Medias RESPONSIVE
  
@@ -752,7 +779,7 @@ figure.effect-oscar:hover img {
     position: relative;
     padding: 20px;
     width: 90vw;
-    height: 500px;
+    height: 550px;
 
     /* max-width: 640px; */
     background-color: #000000;
@@ -872,6 +899,20 @@ figure.effect-oscar:hover img {
      transition: 200ms;
     
    }
+
+   .analog {
+    position: absolute;
+    
+    top: 5rem;
+    background-color: red;
+    left: 2rem;
+    height: 300;
+    width: 500px;
+    margin: auto;
+    /* background-color: red; */
+    
+  }
+  
 
  }
   

@@ -10,12 +10,20 @@ import Row from "react-bootstrap/Row";
 import "./Skills.css";
 import { skills } from "../../Api/hardSkillsData";
 
+
 const Skills = (props) => {
   const [t] = useTranslation("global");
+  const htmlCat = t("categories.html");
+  const cssCat = t("categories.css");
+
+  const categories = [htmlCat, cssCat];
 
   //Dropdown Tech description
-
+ 
   const { isDropOpen } = props;
+
+
+
   const [isOpen, setIsOpen] = useState(false);
   const toggleDropdown = (e)  => setIsOpen(!isOpen);
 
@@ -34,6 +42,7 @@ const Skills = (props) => {
             {/*FrontEnd*/}
             <Accordion.Header className="texts">
               {t("skills.hardSkills")}{" "}
+              
               <img
                 className="frontEndimg"
                 src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2Ffrontend.png?alt=media&token=6ce6c9c4-97e2-4e9f-b883-45a9dd5ed0fa"
@@ -54,12 +63,21 @@ const Skills = (props) => {
                       />
                       <Card.Body>
                         <Card.Title>{skill.title}</Card.Title>
-                        <Card.Text>{skill.category}</Card.Text>
+                        <Card.Text>{skill.category}</Card.Text> 
+                          
+                         <Card.Text  className="subTitle"><p>{t(`${skill.typeofTech}`)}</p></Card.Text>
+                    
+
+
+                          
+                        
+ 
 
                         <div className="dropdown">
                           <button className="dropBtn" onClick={toggleDropdown}>What's {skill.title}?</button>
                           {isOpen && (
                             <div id="dropdown-content">
+                              
                               <Card.Text className="textM">
                                 {skill.description}
                                 <br/>
@@ -101,6 +119,7 @@ const Skills = (props) => {
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
+             
             </Accordion.Body>
           </Accordion.Item>
 

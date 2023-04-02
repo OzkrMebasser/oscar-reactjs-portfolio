@@ -200,7 +200,10 @@
     margin-left: 2rem;
 }
 
-
+.subTitle{
+    font-size: .8rem;
+    color : grey;
+}
 
  /*Medias queries
  

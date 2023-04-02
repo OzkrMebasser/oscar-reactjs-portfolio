@@ -4,6 +4,7 @@ import React, { Fragment, useState, useEffect } from "react";
 import { useTranslation } from 'react-i18next';
 import Particle from "../../Components/particulesBG/Particle";
 import WelcomePopUp from "./WelcomePopUp";
+// import Clock from "../../Components/Clock/Clock";
 import Typing from "./Typing";
 
 
@@ -72,6 +73,7 @@ const Home = () => {
       <WelcomePopUp trigger={buttonPopup} setTrigger={setButtonPopup}> 
         <h6 className="welcomeTitle"> {t("cover.welcome-title")}</h6>
         <p className="welcomeP">{t("cover.welcome-p")}</p>
+
         
         </WelcomePopUp>
 

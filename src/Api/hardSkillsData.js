@@ -1,8 +1,20 @@
+import Skills from '../pages/Skills/Skills';
+import '../../src/pages/Skills/Skills.css';
+// import en from '../translations/en/global.json';
+// import es from '../translations/es/global.json';
 
 
-//https://www.svgrepo.com/
 
-import '../../src/pages/Skills/Skills.css'
+// export function myProps(htmlCat) {
+  
+//   return htmlCat
+  
+// }
+
+const htmlCat = "categories.html";
+const cssCat = "categories.css";
+
+
 
 export const skills = [
     {
@@ -15,6 +27,7 @@ export const skills = [
       class: "icons",
       variant: "success",
       category:"Front End",
+      typeofTech: `${htmlCat}`
 
       
     },
@@ -27,6 +40,9 @@ export const skills = [
         class: "icons",
         variant: "success",
         category:"Front End",
+        typeofTech: `${cssCat}`,
+
+
         
       },
       {
@@ -38,6 +54,7 @@ export const skills = [
         class: "icons",
         variant: "success",
         category:"Front End",
+        typeofTech: "chcu",
         
       },
       {
@@ -133,4 +150,6 @@ export const skills = [
       }
   ];
   
+
+
 

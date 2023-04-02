@@ -23,6 +23,12 @@
             "OSCAR MORENO","UN DESARROLLADOR WEB" , "UN PROGRAMADOR", "UN ENTUSIASTA", "AUTODIDACTA", "CREATIVO","AUTOMOTIVADO", "DETERMINADO","UN PROGRAMADOR",
             "OSCAR MORENO","UN DESARROLLADOR WEB" , "UN PROGRAMADOR", "UN ENTUSIASTA", "AUTODIDACTA", "CREATIVO","AUTOMOTIVADO", "DETERMINADO","UN PROGRAMADOR."]
             },
+     "dates": { 
+        "todayIs": "Hoy es ",
+        "localTimeIs": "La hora local es ",
+     "getDate": "es-mx"
+
+     },
     "myself": {
         "myself": "SOY "
     },
@@ -38,7 +44,11 @@
     "hardSkills": "HABILIDADES TÉCNICAS EN EL \"FRONT-END\" ",
         "softSkills": "ALGUNAS DE MIS HABILIDAD ES BLANDAS",
         "certificates":"CERTIFICACIONES",
-        "learning": "PROGRESO..."
+        "learning": "PROGRESO..."       
+    },
+    "categories":{
+        "html": "DESARROLLADOR WEB",
+        "css" : "SI JALA CSS"
     },
     "contact":{
         "alert": "Hola, tu correo ha sido enviado con éxito, me pondré en contacto contigo lo antes posible, ¡que tengas un buen día!",

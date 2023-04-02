@@ -1,3 +1,5 @@
+
+
 {
     "navbar": {
         "home": "HOME",
@@ -22,6 +24,14 @@
                 "OSCAR MORENO", "A WEB DEVELOPER", "A PROGRAMMER", "AN ENTHUSIAST", "SELF-TAUGHT", "CREATIVE", "DETERMINED","SELF-MOTIVATED", "A PROGRAMMER",
                 "OSCAR MORENO", "A WEB DEVELOPER", "A PROGRAMMER", "AN ENTHUSIAST", "SELF-TAUGHT", "CREATIVE", "DETERMINED","SELF-MOTIVATED", "A PROGRAMMER."]
                 },
+    "dates": { 
+        "todayIs": "Today is ",
+        "localTimeIs": "Local time is ",
+        "getDate": "en-us"
+        
+
+},        
+
     "myself": {
             "myself": "I'M "
     },
@@ -37,7 +47,11 @@
         "hardSkills": "\"FRONT-END\" SKILLS",
         "softSkills": "\"BACK-END\" SKILLS",
         "certificates":"CERTIFICATIONS",
-        "learning": "PROGRESS..."
+        "learning": "PROGRESS..."        
+    },
+    "categories":{
+        "html": "WEB DEVELOPMENT",
+        "css" : "DESING CSS"
     },
     "contact":{
         "alert": "Hi, your email has been sent with success, I'll be in touch with you asap, have a great day!",

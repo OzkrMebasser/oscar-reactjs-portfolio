@@ -1,16 +1,34 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import Dates from "../../Components/Clock/Dates";
+import AutoLocalClock from "../../Components/Clock/AutoLocalClock";
+// import DigitalClock from "../../Components/Clock/DigitalClock";
+import ProfileOscar from "./ProfileOscar";
+
+
 
 import { motion } from "framer-motion";
 
-// import { NavLink } from "react-router-dom";
-import "./Home.css";
 
-// https://www.youtube.com/watch?v=i8fAO_zyFAM
+import "./Home.css";
+import DigitalClock from "../../Components/Clock/DigitalClock";
+
 function WelcomePopUp(props) {
+  // const [isHovering, setIsHovering] = useState(false);
+
+  // const handleMouseOver = () => {
+  //   setIsHovering(true);
+  // };
+
+  // const handleMouseOut = () => {
+  //   setIsHovering(false);
+  // };
+
   const [t, i18n] = useTranslation("global");
+
+
   return props.trigger ? (
+
     <motion.div
       className="popup"
       initial={{ y: "100vh" }}
@@ -18,28 +36,29 @@ function WelcomePopUp(props) {
       transition={{ delay: 0.3, type: "fade" }}
     >
       <div className="popupInner">
-        {/* <NavLink to="/home" activeclassname="" className=""> */}
-        {/* */}
+        
+        {/* <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}> */}
+          <ProfileOscar />
+        {/* </div> */}
 
-        {/*  */}
-        {/* </NavLink> */}
-        <div className="icon-container">
-          {/* <img
-            src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FAbout%2FoscarExec.png?alt=media&token=b68c2ccb-f9fe-44cf-ae19-ee26c5d1eb4d"
-            alt="My profile"
-            className="icon"
-          /> */}
-          <figure class="effect-oscar">
-						<img src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FAbout%2FoscarExec.png?alt=media&token=b68c2ccb-f9fe-44cf-ae19-ee26c5d1eb4d" alt="img09"/>
-						<figcaption>
-							{/* <p>Oscar</p> */}
-						</figcaption>			
-					</figure>
+        <div className="parent">
+          <AutoLocalClock/>
+      
         </div>
-
+        
         <button className="goBtn " onClick={() => props.setTrigger(false)}>
           {t("cover.seePortfolio")}
         </button>
+        <div style={{ textAlign: "center" }}>
+       
+          <div><Dates/></div>
+        </div>
+        <div className="digitalClock">
+       
+       <div><DigitalClock/></div>
+     </div>
+
+        
         <button className="goBtnB ">
           <NavDropdown className="noLink" title={t("navbar.language")}>
             <NavDropdown.Item onClick={() => i18n.changeLanguage("es")}>
