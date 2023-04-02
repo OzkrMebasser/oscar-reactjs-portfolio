@@ -24,6 +24,7 @@ function WelcomePopUp(props) {
   // const handleMouseOut = () => {
   //   setIsHovered(false);
   // };
+  
 
   const [t, i18n] = useTranslation("global");
 
@@ -37,21 +38,13 @@ function WelcomePopUp(props) {
       transition={{ delay: 0.3, type: "fade" }}
     >
       <div className="popupInner">
-        
-        {/* <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-          <ProfileOscar />
-        </div>
 
-        <div className="parent">
-          <AutoLocalClock/>
-      
-        </div> */}
-        <div
+        <div className="analog"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <ProfileOscar />
-      {isHovered ? <ClockAnalog/> : null}
+     
+      {isHovered ? <ClockAnalog/> : <ProfileOscar />}
     </div>
 
     <div className="dates">

@@ -658,10 +658,11 @@ figure.effect-oscar:hover img {
 
 .analog {
   position: relative;
-  margin-top: 1rem;
+ top: 0;
   margin:auto;
-  width: 135px;
-  height: 135px;
+  width: 130px;
+ 
+ 
  
   
   /* background-color: red; */
@@ -783,7 +784,7 @@ text-align: center;
     position: relative;
     padding: 20px;
     width: 90vw;
-    height: 550px;
+    height: 580px;
 
     /* max-width: 640px; */
     background-color: #000000;
@@ -904,7 +905,7 @@ text-align: center;
     
    }
 
-   .analog {
+   /* .analog {
     position: absolute;
     
     top: 1rem;
@@ -912,9 +913,9 @@ text-align: center;
     left: 6.5rem;
  
     margin: auto;
-    /* background-color: red; */
+
     
-  }
+  } */
   
 
  }
