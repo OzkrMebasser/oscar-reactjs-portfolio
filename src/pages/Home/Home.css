@@ -554,7 +554,7 @@
   height: 130px;
   border-radius: 50%;
   overflow: hidden; 
-  transition: .2s;
+  /* transition: .2s; */
 }
 
 /* .icon-container:hover{
@@ -657,12 +657,12 @@ figure.effect-oscar:hover img {
 }
 
 .analog {
-  position: absolute;  
-  top: 1rem;
-  align-items: center;
-  left: 14.7rem;
-  width: 130px;
-  margin: auto;
+  position: relative;
+  margin-top: 1rem;
+  margin:auto;
+  width: 135px;
+  height: 135px;
+ 
   
   /* background-color: red; */
   
