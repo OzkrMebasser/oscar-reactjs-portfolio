@@ -453,7 +453,7 @@
   position: relative;
   padding: 20px;
   width: 100%;
-  height: 460px;
+  height: 480px;
   max-width: 600px;
   background-color: #000000;
   z-index: 999999999999999999;
@@ -658,20 +658,22 @@ figure.effect-oscar:hover img {
 
 .analog {
   position: absolute;  
-  top: 1.3rem;
+  top: 1rem;
   align-items: center;
   left: 14.7rem;
   width: 130px;
   margin: auto;
+  
   /* background-color: red; */
   
 }
 
 .dates {
 color: #d4af37;
+margin-top: 1rem;
 font-size: 1.1rem;
 text-transform: uppercase;
-top: 0;
+text-align: center;
 }
 
 .digitalClock {
@@ -679,7 +681,6 @@ top: 0;
   margin: auto;
   text-align: center;
   color: #d4af37;
-  top: 0rem;
   text-transform: uppercase;
   font-size: 1.1rem;
  
@@ -906,11 +907,10 @@ top: 0;
    .analog {
     position: absolute;
     
-    top: 5rem;
-    background-color: red;
-    left: 2rem;
-    height: 300;
-    width: 500px;
+    top: 1rem;
+    
+    left: 6.5rem;
+ 
     margin: auto;
     /* background-color: red; */
     

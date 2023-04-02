@@ -2,7 +2,7 @@ import { useState} from "react"
 import { useTranslation } from "react-i18next";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Dates from "../../Components/Clock/Dates";
-import AutoLocalClock from "../../Components/Clock/AutoLocalClock";
+import ClockAnalog from "../../Components/Clock/AnalogClock";
 import ProfileOscar from "./ProfileOscar";
 
 
@@ -51,26 +51,23 @@ function WelcomePopUp(props) {
       onMouseLeave={() => setIsHovered(false)}
     >
       <ProfileOscar />
-      {isHovered ? <AutoLocalClock/> : null}
+      {isHovered ? <ClockAnalog/> : null}
     </div>
-  );
-        
+
+    <div className="dates">
+       
+       <div><Dates/></div>
+     </div>
+     <div className="digitalClock">
+    
+    <div><DigitalClock/></div>
+  </div>
+
+
         <button className="goBtn " onClick={() => props.setTrigger(false)}>
           {t("cover.seePortfolio")}
         </button>
-        <div style={{ textAlign: "center" }}>
-       
-          <div><Dates/></div>
-        </div>
-        <div className="digitalClock">
-       
-       <div><DigitalClock/></div>
-     </div>
 
-
-     
-
-        
         <button className="goBtnB ">
           <NavDropdown className="noLink" title={t("navbar.language")}>
             <NavDropdown.Item onClick={() => i18n.changeLanguage("es")}>
