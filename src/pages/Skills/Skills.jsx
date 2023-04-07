@@ -8,24 +8,20 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
 import "./Skills.css";
-import { skills } from "../../Api/hardSkillsData";
-
+import { skillsFE, skillsBE } from "../../Api/hardSkillsData";
 
 const Skills = (props) => {
   const [t] = useTranslation("global");
-  const htmlCat = t("categories.html");
-  const cssCat = t("categories.css");
-
-  const categories = [htmlCat, cssCat];
 
   //Dropdown Tech description
- 
+
   const { isDropOpen } = props;
 
+  const [selectedCardIndex, setSelectedCardIndex] = useState(-1);
 
-
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleDropdown = (e)  => setIsOpen(!isOpen);
+  function handleCardClick(index) {
+    setSelectedCardIndex(selectedCardIndex === index ? -1 : index);
+  }
 
   return (
     <Fragment className="containerGrid">
@@ -42,7 +38,6 @@ const Skills = (props) => {
             {/*FrontEnd*/}
             <Accordion.Header className="texts">
               {t("skills.hardSkills")}{" "}
-              
               <img
                 className="frontEndimg"
                 src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2Ffrontend.png?alt=media&token=6ce6c9c4-97e2-4e9f-b883-45a9dd5ed0fa"
@@ -52,9 +47,16 @@ const Skills = (props) => {
 
             <Accordion.Body>
               <Row xs={1} md={5} fluid className="g-4 texts">
-                {skills.map((skill, id) => (
-                  <Col>
-                    <Card className=" cardGridShadow align-middle" style={{ backgroundColor: isDropOpen ? 'cardGrid' : 'cardGridOpen' }}>
+                {skillsFE.map((skill, index) => (
+                  <Col key={skill.id}>
+                    <Card
+                      className=" cardGridShadow align-middle"
+                      style={{
+                        backgroundColor: isDropOpen
+                          ? "cardGrid"
+                          : "cardGridOpen",
+                      }}
+                    >
                       {/* <span className={skill.class} ><span className="bgBlack">{skill.icon}</span></span> */}
                       <img
                         className={skill.class}
@@ -63,35 +65,54 @@ const Skills = (props) => {
                       />
                       <Card.Body>
                         <Card.Title>{skill.title}</Card.Title>
-                        <Card.Text>{skill.category}</Card.Text> 
-                          
-                         <Card.Text  className="subTitle"><p>{t(`${skill.typeofTech}`)}</p></Card.Text>
-                    
-
-
-                          
-                        
- 
+                        <Card.Text className="subTitle">
+                          {t(`${skill.category}`)}
+                        </Card.Text>
 
                         <div className="dropdown">
-                          <button className="dropBtn" onClick={toggleDropdown}>What's {skill.title}?</button>
-                          {isOpen && (
+                          <button
+                            className="dropBtn"
+                            onClick={() => handleCardClick(index)}
+                          >
+                            <span className="xTtitle">
+                              {t("skills.whatIsIt")}
+                            </span>{" "}
+                            <span className="bgTechTitle">"{skill.title}"</span>{" "}
+                            ?
+                          </button>
+                          {selectedCardIndex === index && (
                             <div id="dropdown-content">
-                              
                               <Card.Text className="textM">
-                                {skill.description}
-                                <br/>
-                                <button className="docsBtn">Read Docs.</button>
+                                <Card.Text className="subTitle">
+                                  <p className="techTitle">
+                                    {t(`${skill.typeOfTech}`)}
+                                  </p>
+                                </Card.Text>
+                                {t(`${skill.description}`)}
+                                <br />
+                                <button className="docsBtn">
+                                  <a
+                                    className="noUnderline"
+                                    href={`${skill.docs}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    Read Docs.
+                                  </a>
+                                </button>
                               </Card.Text>
-                              
                             </div>
-
                           )}
-                        </div>
 
-                       
-                        {/* <strong><p className="texts">Aproximate knowledge</p></strong> */}
-                        {/* <ProgressBar className="texts" animated now={skill.progress} label={`${t("skills.learning")}${skill.progress}%`} variant={skill.variant} style={{height:"25px", color:"black"}}/> */}
+                          <ProgressBar
+                            className="progressBar"
+                            animated
+                            now={skill.progress}
+                            label={`${t("skills.learning")}`}
+                            variant={skill.variant}
+                            style={{ height: "23px", color: "black" }}
+                          />
+                        </div>
                       </Card.Body>
                     </Card>
                   </Col>
@@ -119,7 +140,6 @@ const Skills = (props) => {
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
-             
             </Accordion.Body>
           </Accordion.Item>
 
@@ -134,7 +154,7 @@ const Skills = (props) => {
 
             <Accordion.Body>
               <Row xs={1} md={3} fluid className="g-4 texts">
-                {skills.map((skill, id) => (
+                {skillsBE.map((skill, id) => (
                   <Col>
                     <Card className="cardGrid align-middle">
                       {/* <span className={skill.class} ><span className="bgBlack">{skill.icon}</span></span> */}
@@ -173,14 +193,3 @@ const Skills = (props) => {
   );
 };
 export default Skills;
-
-// {skills.map((skill, id) => (
-//   <div class="card">
-//     <h3>{skill.title}</h3>
-//     <i class={skill.icon} aria-hidden="true"></i>
-//     <p>{skill.category}</p>
-//     <div class="button">
-//       <button>Read More</button>
-//     </div>
-//   </div>
-// ))}

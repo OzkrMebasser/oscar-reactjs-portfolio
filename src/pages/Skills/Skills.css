@@ -8,14 +8,8 @@
     width: 95vw;
     margin: auto;
 }
-.texts{
-    
-    text-align: center;
-    color: black;
-    vertical-align: middle;
-    font-family: 'Boogaloo', cursive;
-    text-shadow: 1px 1px 1px #9c9c9a9a;
-}
+
+
 .textTitle{
     text-align: center;
     color: #d4af37;
@@ -92,7 +86,7 @@
    }
    .dropBtn:hover {
     background-color: #000;
-    color: #ffffff;
+    color: #d4af37;
     
      font-size: 1rem;
      border: 1px solid #d4af37;
@@ -112,7 +106,7 @@
      font-family: "Boogaloo", cursive;
      text-decoration-style: dotted;
      border-radius: 6px;
-     
+       
     
    
    }
@@ -125,6 +119,16 @@
      transform: scale(0.95);
      transition: 200ms;
     
+   }
+
+   .noUnderline{
+    text-decoration: none;
+    color: #ffffff;
+   }
+
+   .noUnderline:hover{
+    text-decoration: none;
+    color: #000;
    }
 
    
@@ -203,6 +207,39 @@
 .subTitle{
     font-size: .8rem;
     color : grey;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.progressBar{
+    font-size: .6rem;
+    margin-top: 1rem;
+}
+
+.texts{
+    text-align: center;
+    color: black;
+    vertical-align: middle;
+    font-family: 'Boogaloo', cursive;
+    text-shadow: 1px 1px 1px #9c9c9a9a;
+    font-size: .9rem;
+}
+
+
+.techTitle{
+    font-size: .6rem;
+    color : rgb(92, 92, 92);
+    text-align: center;;
+}
+
+
+.xTtitle{
+    font-size: .9rem;
+}
+
+.bgTechTitle{
+    background:#ffffff88;
+    height: 1.5rem;
 }
 
  /*Medias queries

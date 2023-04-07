@@ -1,58 +1,144 @@
-
-
 {
-    "navbar": {
-        "home": "INICIO",
-        "about": "ACERCA DE MI",
-        "skills": "HABILIDADES",
-        "projects": "PROYECTOS",
-        "contact": "CONTACTO",
-        "language": "IDIOMA"
-    },
-    "cover": {
-           "hello-world": "¡HOLA MUNDO!",
-           "hello-world-2": "¡DISFRUTA LA VIDA!",
-           "welcome-title": "¡HOLA! ¡GRACIAS POR TOMARTE EL TIEMPO DE REVISAR MI PORTAFOLIO, ESPERO QUE PODAMOS TRABAJAR JUNTOS Y HACER PROYECTOS INCREÍBLES!",
-            "welcome-p":  "POR FAVOR, SIÉNTETE LIBRE DE HACER CLICK, PASAR EL CURSOR SOBRE LAS IMÁGENES, TEXTOS, ICONOS, BOTONES, ETC, O EN CUALQUIER OTRO ELEMENTO PARA QUE PUEDAS VER ALGUNAS FUNCIONALIDADES QUE HE IMPLEMENTADO.",
-            "seePortfolio": "IR A MI PORTAFOLIO"
-        },
-    "typing": {
-            "auto-text": 
-            ["OSCAR MORENO","UN DESARROLLADOR WEB" , "UN PROGRAMADOR", "UN ENTUSIASTA", "AUTODIDACTA", "CREATIVO", "AUTOMOTIVADO", "DETERMINADO","UN PROGRAMADOR",
-            "OSCAR MORENO","UN DESARROLLADOR WEB" , "UN PROGRAMADOR", "UN ENTUSIASTA", "AUTODIDACTA", "CREATIVO","AUTOMOTIVADO", "DETERMINADO","UN PROGRAMADOR",
-            "OSCAR MORENO","UN DESARROLLADOR WEB" , "UN PROGRAMADOR", "UN ENTUSIASTA", "AUTODIDACTA", "CREATIVO","AUTOMOTIVADO", "DETERMINADO","UN PROGRAMADOR",
-            "OSCAR MORENO","UN DESARROLLADOR WEB" , "UN PROGRAMADOR", "UN ENTUSIASTA", "AUTODIDACTA", "CREATIVO","AUTOMOTIVADO", "DETERMINADO","UN PROGRAMADOR."]
-            },
-     "dates": { 
-        "todayIs": "Hoy es ",
-        "localTimeIs": "La hora local es ",
-     "getDate": "es-mx"
-
-     },
-    "myself": {
-        "myself": "SOY "
-    },
-    "about": {
-        "aboutH1": "DÉJAME CONTARTE ALGO SOBRE MÍ",
-        "aboutP": "SOY UNA PERSONA ADAPTABLE, DECIDIDA A LOGRAR MIS METAS, ME GUSTAN LOS RETOS Y TRABAJAR POR OBJETIVOS; SOY UNA PERSONA AUTODIDACTA, COMPROMETIDA, AUTOMOTIVADA, DISFRUTO TANTO EL TRABAJAR EN EQUIPO COMO INDIVIDUAL, SOY UN ENTUSIASTA Y APASIONADO EN LA PROGRAMACIÓN Y LA TECNOLOGÍA.",
-        "greeting": "¡HOLA!, GRACIAS POR REVISAR MI PORTAFOLIO, ESPERO QUE PODAMOS TRABAJAR JUNTOS Y HACER PROYECTOS INCREÍBLES, ¡QUE TENGAS UN EXCELENTE DÍA!",
-        "resume": "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/Desarrollador%20Front%20End.pdf?alt=media&token=7807605f-1d2a-481d-9b4d-03c2c953a7a0",
-        "downloadResume": "DESCARGAR MI C.V."
-    },
-    "skills": {
-        "title": "HABILIDADES Y CERTIFICACIONES",
+  "navbar": {
+    "home": "INICIO",
+    "about": "ACERCA DE MI",
+    "skills": "HABILIDADES",
+    "projects": "PROYECTOS",
+    "contact": "CONTACTO",
+    "language": "IDIOMA"
+  },
+  "cover": {
+    "hello-world": "¡HOLA MUNDO!",
+    "hello-world-2": "¡DISFRUTA LA VIDA!",
+    "welcome-title": "¡HOLA! ¡GRACIAS POR TOMARTE EL TIEMPO DE REVISAR MI PORTAFOLIO, ESPERO QUE PODAMOS TRABAJAR JUNTOS Y HACER PROYECTOS INCREÍBLES!",
+    "welcome-p": "POR FAVOR, SIÉNTETE LIBRE DE HACER CLICK, PASAR EL CURSOR SOBRE LAS IMÁGENES, TEXTOS, ICONOS, BOTONES, ETC, O EN CUALQUIER OTRO ELEMENTO PARA QUE PUEDAS VER ALGUNAS FUNCIONALIDADES QUE HE IMPLEMENTADO.",
+    "seePortfolio": "IR A MI PORTAFOLIO"
+  },
+  "typing": {
+    "auto-text": [
+      "OSCAR MORENO",
+      "UN DESARROLLADOR WEB",
+      "UN PROGRAMADOR",
+      "UN ENTUSIASTA",
+      "AUTODIDACTA",
+      "CREATIVO",
+      "AUTOMOTIVADO",
+      "DETERMINADO",
+      "UN PROGRAMADOR",
+      "OSCAR MORENO",
+      "UN DESARROLLADOR WEB",
+      "UN PROGRAMADOR",
+      "UN ENTUSIASTA",
+      "AUTODIDACTA",
+      "CREATIVO",
+      "AUTOMOTIVADO",
+      "DETERMINADO",
+      "UN PROGRAMADOR",
+      "OSCAR MORENO",
+      "UN DESARROLLADOR WEB",
+      "UN PROGRAMADOR",
+      "UN ENTUSIASTA",
+      "AUTODIDACTA",
+      "CREATIVO",
+      "AUTOMOTIVADO",
+      "DETERMINADO",
+      "UN PROGRAMADOR",
+      "OSCAR MORENO",
+      "UN DESARROLLADOR WEB",
+      "UN PROGRAMADOR",
+      "UN ENTUSIASTA",
+      "AUTODIDACTA",
+      "CREATIVO",
+      "AUTOMOTIVADO",
+      "DETERMINADO",
+      "UN PROGRAMADOR."
+    ]
+  },
+  "dates": {
+    "todayIs": "Hoy es ",
+    "localTimeIs": "La hora local es ",
+    "getDate": "es-mx"
+  },
+  "myself": {
+    "myself": "SOY "
+  },
+  "about": {
+    "aboutH1": "DÉJAME CONTARTE ALGO SOBRE MÍ",
+    "aboutP": "SOY UNA PERSONA ADAPTABLE, DECIDIDA A LOGRAR MIS METAS, ME GUSTAN LOS RETOS Y TRABAJAR POR OBJETIVOS; SOY UNA PERSONA AUTODIDACTA, COMPROMETIDA, AUTOMOTIVADA, DISFRUTO TANTO EL TRABAJAR EN EQUIPO COMO INDIVIDUAL, SOY UN ENTUSIASTA Y APASIONADO EN LA PROGRAMACIÓN Y LA TECNOLOGÍA.",
+    "greeting": "¡HOLA!, GRACIAS POR REVISAR MI PORTAFOLIO, ESPERO QUE PODAMOS TRABAJAR JUNTOS Y HACER PROYECTOS INCREÍBLES, ¡QUE TENGAS UN EXCELENTE DÍA!",
+    "resume": "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/Desarrollador%20Front%20End.pdf?alt=media&token=7807605f-1d2a-481d-9b4d-03c2c953a7a0",
+    "downloadResume": "DESCARGAR MI C.V."
+  },
+  "skills": {
+    "title": "HABILIDADES Y CERTIFICACIONES",
     "hardSkills": "HABILIDADES TÉCNICAS EN EL \"FRONT-END\" ",
-        "softSkills": "ALGUNAS DE MIS HABILIDAD ES BLANDAS",
-        "certificates":"CERTIFICACIONES",
-        "learning": "PROGRESO..."       
+    "softSkills": "ALGUNAS DE MIS HABILIDAD ES BLANDAS",
+    "certificates": "CERTIFICACIONES",
+    "learning": "MI DOMINIO APROX.",
+    "whatIsIt": "¿ QUE ES "
+  },
+  "categories": {
+    "fe": {
+      "htmlCat": "DESARROLLO WEB",
+      "cssCat": "DESARROLLO WEB",
+      "jsCat": "DESARROLLO WEB",
+      "reactJsCat": "DESARROLLO WEB",
+      "reduxCat": "DESARROLLO WEB",
+      "reactRouterCat": "HERRAMIENTAS FRONT END",
+      "tailwindCat": "HERRAMIENTAS FRONT END",
+      "sassCat": "HERRAMIENTAS FRONT END",
+      "muiCat": "HERRAMIENTAS FRONT END",
+      "bootstrapCat": "HERRAMIENTAS FRONT END",
+      "wordpressCat": "DESARROLLO WEB",
+      "gitCat": "SISTEMA DE CONTROL DE VERSIONES",
+      "gitHubCat": "PLATAFORMAS DE ALOJAMIENTO DE CÓDIGO FUENTE",
+      "npmCat": "HERRAMIENTA DE GESTIÓN DE DEPENDENCIAS"
     },
-    "categories":{
-        "html": "DESARROLLADOR WEB",
-        "css" : "SI JALA CSS"
+    "be": {}
+  },
+  "typeOfTech": {
+    "fe": {
+      "htmlTech": "LENGUAJE DE MARCADO",
+      "cssTech": "LENGUAJE DE DISEÑO",
+      "jsTech": "LENGUAJE DE PROGRAMACIÓN",
+      "reactJsTech": "BIBLIOTECA DE JAVASCRIPT",
+      "reduxTech": "BIBLIOTECA DE GESTION DE ESTADO",
+      "reactRouterTech": "BIBLIOTECA DE ENRUTADO DE JAVASCRIPT",
+      "tailwindTech": "FRAMEWORK CSS DE CLASES UTILITARIAS",
+      "sassTech": "PREPROCESADOR CSS",
+      "muiTech": "LIBRERÍA 'UI' PARA REACT",
+      "bootstrapTech": "FRAMEWORK DE DISEÑO UI/UX",
+      "wordpressTech": "CMS PARA CREAR SITIOS WEB",
+      "gitTech": "SISTEMA DE CONTROL DE VERSIONES",
+      "gitHubTech": "PLATAFORMA WEB PARA ALOJAMIENTO DE CÓDIGO FUENTE",
+      "npmTech": "GESTOR DE PAQUETES PARA NODE.JS"
     },
-    "contact":{
-        "alert": "Hola, tu correo ha sido enviado con éxito, me pondré en contacto contigo lo antes posible, ¡que tengas un buen día!",
-        "title": "¡PONGÁMONOS EN CONTACTO!"
-    
+
+    "be": {}
+  },
+  "techDescription": {
+    "fe": {
+      "htmlDesc": "HTML (Hypertext Markup Language) es el lenguaje de marcado estándar utilizado para crear páginas web y aplicaciones. Consiste en una serie de etiquetas y atributos que definen la estructura y el contenido de una página web. HTML proporciona una manera de estructurar texto, imágenes, multimedia y otros elementos en una página web, y se puede utilizar en conjunto con otras tecnologías como CSS y JavaScript para crear páginas web interactivas y visualmente atractivas. Los archivos HTML se guardan típicamente con la extensión .html y se pueden ver en un navegador web. En general, HTML es una herramienta esencial para el desarrollo web y se utiliza para crear la base de casi todas las páginas web en Internet.",
+      "cssDesc": "CSS (Cascading Style Sheets) es un lenguaje de hojas de estilo utilizado para describir la presentación de documentos HTML y otros tipos de documentos. Se utiliza para definir los estilos, diseños y apariencia visual de las páginas web, incluyendo colores, fuentes, espaciado y otros elementos de diseño. CSS funciona separando el estilo de presentación de un documento de su contenido, lo que permite una mayor flexibilidad y control sobre el diseño y la apariencia de una página web. CSS se puede utilizar en conjunto con HTML y otras tecnologías web para crear diseños atractivos y receptivos. Los archivos CSS se guardan típicamente con la extensión .css y se vinculan a un documento HTML para aplicar los estilos al contenido. En general, CSS es una herramienta esencial para el desarrollo web y desempeña un papel crucial en la creación de páginas web visualmente atractivas y fáciles de usar.",
+      "jsDesc": "JavaScript es un lenguaje de programación que se utiliza principalmente para crear páginas web dinámicas e interactivas. Es un lenguaje de alto nivel que permite a los desarrolladores agregar interactividad y funcionalidad a las páginas web, como validación de formularios, animaciones y mapas interactivos. JavaScript funciona en conjunto con HTML y CSS para crear experiencias de usuario interactivas, y también se puede utilizar para programación en el lado del servidor utilizando Node.js. El código de JavaScript se suele incrustar en archivos HTML o vincular a un archivo HTML como un script externo, y se puede ejecutar en un navegador web o en un entorno de servidor. En general, JavaScript es una herramienta crucial para el desarrollo web y se ha convertido en una parte esencial de las aplicaciones web modernas.",
+      "reactJsDesc": "React es una popular biblioteca de código abierto de JavaScript utilizada para construir interfaces de usuario para aplicaciones web. Fue desarrollada por Facebook y ahora es mantenida por una gran comunidad de desarrolladores. React utiliza un enfoque basado en componentes para construir interfaces de usuario, lo que facilita la gestión y reutilización de código en diferentes partes de una aplicación. React también es conocido por su estilo de programación declarativo, que permite a los desarrolladores describir cómo debe verse y comportarse una interfaz de usuario, sin preocuparse por los detalles de implementación subyacentes. Este enfoque permite un desarrollo más eficiente y simplificado, así como una prueba y depuración más fácil del código. React se puede utilizar con otras bibliotecas y marcos, y a menudo se utiliza en conjunto con otras tecnologías web como Redux, Node.js y GraphQL. En general, React se ha convertido en una opción popular para construir aplicaciones web complejas y de alto rendimiento, y es ampliamente utilizado por los desarrolladores de todo el mundo.",
+      "reduxDesc": "Redux es una biblioteca de JavaScript de código abierto utilizada para administrar el estado de una aplicación web. Fue inspirada por Flux, otra biblioteca de gestión de estado, y se utiliza comúnmente con React, aunque también se puede utilizar con otras bibliotecas de front-end. Redux proporciona una tienda centralizada para mantener el estado de la aplicación, al que se puede acceder y modificar desde diferentes partes de la aplicación. Los cambios en el estado se realizan mediante acciones, que son despachadas por los componentes y son manejadas por los reductores, que actualizan el estado en consecuencia. Este enfoque permite una gestión de estado más predecible, mejor depuración y pruebas, y una depuración de viaje en el tiempo más fácil. Redux también admite middleware, que se puede utilizar para agregar funcionalidad adicional, como registro o solicitudes de red, al proceso de despacho. En general, Redux es una herramienta poderosa para administrar el estado complejo en aplicaciones web y se ha convertido en una opción popular para los desarrolladores que trabajan en proyectos a gran escala.",
+      "reactRouterDesc": "React Router es una popular biblioteca de JavaScript de código abierto utilizada para el enrutamiento del lado del cliente en aplicaciones React. Permite a los desarrolladores crear enrutamiento declarativo para una aplicación de una sola página, lo que significa que la URL se puede actualizar dinámicamente sin recargar la página. React Router proporciona una serie de componentes que se pueden utilizar para definir diferentes rutas en una aplicación, incluyendo rutas anidadas, rutas dinámicas y rutas de redireccionamiento. Estos componentes se pueden utilizar para definir la estructura de la aplicación y para navegar entre diferentes páginas o vistas. React Router también proporciona características como parámetros de URL, parámetros de consulta y gestión del historial del navegador, que pueden ser útiles en la construcción de aplicaciones más complejas. React Router es flexible y personalizable, y se puede utilizar con otras bibliotecas y marcos de React. En general, React Router es una herramienta poderosa para construir aplicaciones de una sola página dinámicas e interactivas en React.",
+      "tailwindDesc": "Tailwind CSS es un popular framework de CSS de utilidades que permite a los desarrolladores construir interfaces de usuario personalizadas de manera rápida sin tener que escribir CSS. Proporciona una colección de clases CSS predefinidas que se pueden utilizar para aplicar estilos a elementos HTML, lo que facilita la creación de diseños consistentes y responsivos. Tailwind ofrece una amplia gama de opciones de estilo, incluyendo tipografía, espaciado, diseño y color. El framework también incluye funciones avanzadas como diseño responsive, que permite a los desarrolladores crear diferentes estilos para diferentes tamaños de pantalla, y soporte para modo oscuro. Tailwind es altamente personalizable, con la capacidad de crear clases personalizadas o modificar las existentes para adaptarse a necesidades de diseño específicas. Además, Tailwind tiene una buena documentación y una comunidad activa, lo que facilita el aprendizaje y la obtención de ayuda con cualquier problema. En general, Tailwind es una herramienta poderosa para el desarrollo de front-end que puede ayudar a los desarrolladores a crear interfaces de usuario hermosas y funcionales de manera rápida y eficiente.",
+      "sassDesc": "Sass (Syntactically Awesome Style Sheets) es un lenguaje de preprocesamiento que se interpreta en Cascading Style Sheets (CSS). Está diseñado para hacer que CSS sea más mantenible, modular y poderoso, agregando características que no están disponibles en CSS básico, como variables, mixins, anidamiento, herencia y funciones. Sass es similar a CSS en sintaxis, pero permite a los desarrolladores escribir hojas de estilo con código más conciso y legible. Con Sass, los desarrolladores pueden organizar sus hojas de estilo en componentes más pequeños y reutilizables, lo que facilita la gestión y actualización del código. Sass también proporciona características como declaraciones condicionales, bucles y operaciones matemáticas, que se pueden utilizar para crear estilos y animaciones complejas. Además, Sass se puede integrar con otras herramientas de front-end como Grunt y Gulp, lo que facilita la automatización de tareas y la optimización del proceso de desarrollo. En general, Sass es una herramienta poderosa para los desarrolladores de front-end que puede ayudarles a crear código CSS más mantenible y eficiente.",
+      "muiDesc": "MUI (Material-UI) es un popular framework de UI (interfaz de usuario) de React de código abierto que proporciona un conjunto de componentes reutilizables y personalizables basados en las directrices de diseño de Material Design de Google. Material-UI está diseñado para ayudar a los desarrolladores a crear interfaces de usuario hermosas y responsivas de manera rápida y sencilla. Proporciona una amplia gama de componentes, que incluyen botones, formularios, barras de navegación, modales y muchos otros. Estos componentes son totalmente personalizables y se pueden estilizar con CSS o JSS (JavaScript Style Sheets). Material-UI también ofrece un sistema de personalización de temas, que permite a los desarrolladores cambiar la apariencia predeterminada de sus componentes mediante la modificación de las variables del tema. Material-UI cuenta con una comunidad amplia y activa, que proporciona muchos recursos y soporte para los desarrolladores. Además, Material-UI ofrece una excelente documentación y ejemplos, lo que facilita que los desarrolladores comiencen y aprendan a usar el framework. En general, Material-UI es una herramienta poderosa para construir aplicaciones de React de alta calidad con interfaces de usuario hermosas y responsivas.",
+      "bootstrapDesc": "Bootstrap es un popular framework front-end de código abierto que proporciona una colección de componentes CSS y JavaScript para construir páginas y aplicaciones web responsivas y diseñadas para dispositivos móviles. Bootstrap fue desarrollado originalmente por Twitter y ahora es mantenido por la comunidad. Bootstrap ofrece una variedad de componentes UI pre-construidos, como barras de navegación, botones, formularios y ventanas modales, así como plantillas de diseño y estilos de tipografía. Estos componentes se pueden personalizar fácilmente utilizando CSS para que coincidan con el diseño y la marca de un sitio web o aplicación. Bootstrap también proporciona un sistema de cuadrícula responsivo, que permite a los desarrolladores crear diseños que se adaptan a diferentes tamaños de pantalla, desde escritorios hasta dispositivos móviles. Además, Bootstrap incluye un conjunto de plugins de JavaScript, como modales, carruseles y tooltips, que mejoran la funcionalidad de los componentes UI. Bootstrap cuenta con una comunidad grande y activa, que proporciona muchos recursos, soporte y plugins de terceros para los desarrolladores. En general, Bootstrap es una herramienta poderosa y versátil para construir aplicaciones web modernas y responsivas.",
+      "wordpressDesc": "WordPress es un sistema de gestión de contenidos (CMS) de código abierto y gratuito que permite a los usuarios crear y administrar sitios web, blogs y tiendas en línea. WordPress fue lanzado en 2003 y desde entonces se ha convertido en uno de los CMS más populares del mundo, impulsando alrededor del 40% de todos los sitios web en Internet. WordPress ofrece una interfaz fácil de usar y una amplia gama de temas, plugins y widgets que permiten a los usuarios personalizar el aspecto y la funcionalidad de sus sitios web. WordPress también admite capacidades multiusuario y multisitio, lo que lo hace adecuado para administrar múltiples sitios web desde una sola instalación. Además, WordPress cuenta con una gran comunidad activa que proporciona soporte, recursos y plugins para los usuarios. WordPress está escrito en PHP y utiliza una base de datos MySQL, pero los usuarios no necesitan tener habilidades de programación para usarlo. WordPress es altamente flexible y se puede utilizar para crear una amplia gama de sitios web, desde simples blogs hasta sitios de comercio electrónico complejos.",
+      "gitDesc": "Git es un popular sistema de control de versiones utilizado por los desarrolladores de software para rastrear los cambios en su base de código. Permite a los desarrolladores gestionar su código fuente, colaborar con otros y llevar un registro de las diferentes versiones de su código. Git realiza un seguimiento de los cambios en el código con el tiempo mediante un sistema de confirmaciones, lo que permite a los desarrolladores volver fácilmente a versiones anteriores si es necesario. También admite el branching, lo que permite a los desarrolladores trabajar en diferentes versiones de la base de código simultáneamente sin interferir en el trabajo de los demás. Git se ha convertido en una herramienta esencial para los equipos de desarrollo de software, lo que les permite trabajar de manera colaborativa y eficiente mientras mantienen un historial de los cambios en su código.",
+      "gitHubDesc": "GitHub es una poderosa plataforma web para el control de versiones y la colaboración que permite a los desarrolladores almacenar, administrar y compartir su código. Está construido sobre Git, un sistema de control de versiones distribuido que permite a los desarrolladores realizar un seguimiento de los cambios en su código con el tiempo, revertir a versiones anteriores y colaborar con otros. GitHub proporciona una amplia variedad de características y herramientas para la gestión de repositorios de código, incluyendo seguimiento de problemas, gestión de proyectos, revisión de código e integración y despliegue continuo. Se ha convertido en una herramienta esencial para desarrolladores y equipos que trabajan en proyectos de código abierto, así como para el desarrollo de software comercial. GitHub también ofrece una comunidad vibrante donde los desarrolladores pueden compartir su trabajo, colaborar en proyectos y aprender de otros.",
+      "npmDesc": "NPM (Node Package Manager) es un gestor de paquetes para Node.js que permite a los desarrolladores instalar, actualizar y administrar las dependencias de sus proyectos de manera eficiente. NPM viene incluido con Node.js y ofrece acceso a un repositorio en línea de más de 1 millón de paquetes de código abierto que los desarrolladores pueden utilizar para añadir funcionalidad a sus proyectos. Los paquetes de NPM están escritos en JavaScript y se pueden utilizar en una amplia variedad de aplicaciones, desde aplicaciones de línea de comandos hasta aplicaciones web y móviles. Además, NPM permite a los desarrolladores publicar sus propios paquetes y compartirlos con la comunidad de NPM. Con NPM, los desarrolladores pueden especificar las versiones de sus dependencias y mantener un registro de las mismas, lo que facilita el mantenimiento y la actualización de sus proyectos. En resumen, NPM es una herramienta esencial para el desarrollo de aplicaciones en Node.js y una de las mayores comunidades de código abierto del mundo."
+    },
+    "be": {
+      "nodeDesc": ""
     }
+  },
+  "contact": {
+    "alert": "Hola, tu correo ha sido enviado con éxito, me pondré en contacto contigo lo antes posible, ¡que tengas un buen día!",
+    "title": "¡PONGÁMONOS EN CONTACTO!"
+  }
 }

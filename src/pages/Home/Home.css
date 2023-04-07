@@ -585,7 +585,7 @@ figure.effect-oscar {
 figure.effect-oscar img {
 	opacity: 0.9;
 	-webkit-transition: opacity 0.35s;
-	transition: opacity 0.35s;
+	transition: opacity 0.1s;
   border-radius: 50%;
   width: 130px; 
   height: 130px;
@@ -601,7 +601,7 @@ figure.effect-oscar figcaption {
   height: 130px;
 }
 
-figure.effect-oscar figcaption::before {
+/* figure.effect-oscar figcaption::before {
 	position: absolute;
   border-radius: 50%;
 	top: 2px;
@@ -613,7 +613,7 @@ figure.effect-oscar figcaption::before {
 
 
 
-}
+} */
 /* 
 figure.effect-oscar h2 {
 	margin: 5% 0 10px 0;

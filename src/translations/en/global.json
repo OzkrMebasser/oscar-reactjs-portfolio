@@ -47,11 +47,76 @@
         "hardSkills": "\"FRONT-END\" SKILLS",
         "softSkills": "\"BACK-END\" SKILLS",
         "certificates":"CERTIFICATIONS",
-        "learning": "PROGRESS..."        
+        "learning": "MY APPROX. EXPERTISE",
+        "whatIsIt": "WHAT IS "     
     },
-    "categories":{
-        "html": "WEB DEVELOPMENT",
-        "css" : "DESING CSS"
+    "categories": {
+        "fe":{
+            "htmlCat": "WEB DEVELOPMENT",
+            "cssCat" : "WEB DEVELOPMENT",
+            "jsCat": "WEB DEVELOPMENT",
+            "reactJsCat": "WEB DEVELOPMENT",
+            "reduxCat": "WEB DEVELOPMENT",
+            "reactRouterCat": "FRONT-END TOOLS",
+            "tailwindCat": "FRONT-END TOOLS",
+            "sassCat": "FRONT-END TOOLS",
+            "muiCat": "FRONT-END TOOLS",
+            "bootstrapCat": "FRONT-END TOOLS",
+            "wordpressCat": "WEB DEVELOPMENT",
+             "gitCat": "VERSION CONTROL SYSTEM",
+             "gitHubCat": "SOURCE CODE HOSTING PLATFORMS",
+             "npmCat": "DEPENDENCY MANAGEMENT TOOL"
+    
+        },
+        "be":{
+
+        }
+        
+    },
+    "typeOfTech": {
+        "fe":
+        {
+            "htmlTech": "MARK-UP LANGUAGE",
+            "cssTech" : "STYLING LANGUAGE",
+            "jsTech": "PROGRAMMING LANGUAGE",
+            "reactJsTech": "JAVASCRIPT LIBRARY",
+            "reduxTech": "STATE MANAGEMENT LIBRARY",
+            "reactRouterTech": "ROUTING JAVASCRIPT LIBRARY",
+            "tailwindTech": "UTILITY-FIRST CSS FRAMEWORK",
+            "sassTech": "CSS PREPROCESSOR",
+            "muiTech": "(UI) LIBRARY FOR REACT",
+            "bootstrapTech": "UI/UX DESIGN FRAMEWORK",
+            "wordpressTech": "CMS FOR BUILDING WEBSITES",
+            "gitTech":"VERSION CONTROL SYSTEM",
+            "gitHubTech":"WEB-BASED PLATFORM FOR SOURCE CODE HOSTING",
+            "npmTech":"PACKAGE MANAGER FOR NODE.JS"
+        },
+        "be":{
+            
+        }
+    },
+    "techDescription": {
+        
+        "fe": {
+            "htmlDesc": "HTML (Hypertext Markup Language) is the standard markup language used to create web pages and applications. It consists of a series of tags and attributes that define the structure and content of a web page. HTML provides a way to structure text, images, multimedia, and other elements on a webpage, and it can be used in conjunction with other technologies such as CSS and JavaScript to create interactive and visually appealing web pages. HTML files are typically saved with a .html extension and can be viewed in a web browser. Overall, HTML is an essential tool for web development and is used to create the foundation of nearly every webpage on the internet.",
+            "cssDesc" : "CSS (Cascading Style Sheets) is a style sheet language used to describe the presentation of HTML and other types of documents. It is used to define the styles, layouts, and visual appearance of web pages, including the colors, fonts, spacing, and other design elements. CSS works by separating the presentation style of a document from its content, which allows for greater flexibility and control over the layout and appearance of a webpage. CSS can be used in conjunction with HTML and other web technologies to create responsive and visually appealing designs. CSS files are typically saved with a .css extension and are linked to an HTML document to apply the styles to the content. Overall, CSS is an essential tool for web development and plays a crucial role in creating visually appealing and user-friendly web pages.",
+            "jsDesc": "JavaScript is a scripting language used primarily for creating dynamic and interactive web pages. It is a high-level language that enables developers to add interactivity and functionality to web pages, such as form validation, animations, and interactive maps. JavaScript works in conjunction with HTML and CSS to create interactive user experiences, and it can also be used for server-side programming using Node.js. JavaScript code is typically embedded in HTML files or linked to an HTML file as an external script, and it can be executed in a web browser or server-side environment. Overall, JavaScript is a crucial tool for web development and has become an essential part of modern web applications.",
+            "reactJsDesc": "React is a popular open-source JavaScript library used for building user interfaces for web applications. It was developed by Facebook and is now maintained by a large community of developers. React uses a component-based approach to building UIs, which makes it easier to manage and reuse code across different parts of an application. React is also known for its declarative programming style, which enables developers to describe how a UI should look and behave, without worrying about the underlying implementation details. This approach allows for more efficient and streamlined development, as well as easier testing and debugging of code. React can be used with other libraries and frameworks, and it is often used in conjunction with other web technologies such as Redux, Node.js, and GraphQL. Overall, React has become a popular choice for building complex and high-performance web applications, and it is widely used by developers around the world.",
+            "reduxDesc": "Redux is an open-source JavaScript library used for managing the state of a web application. It was inspired by Flux, another state management library, and is commonly used with React, although it can be used with other front-end libraries as well. Redux provides a centralized store to hold the application's state, which can be accessed and modified by different parts of the application. Changes to the state are made using actions, which are dispatched by components, and are handled by reducers, which update the state accordingly. This approach allows for more predictable state management, better debugging and testing, and easier time-travel debugging. Redux also supports middleware, which can be used to add additional functionality, such as logging or network requests, to the dispatch process. Overall, Redux is a powerful tool for managing complex state in web applications and has become a popular choice for developers working on large-scale projects.",
+            "reactRouterDesc": "React Router is a popular open-source JavaScript library used for client-side routing in React applications. It allows developers to create declarative routing for a single-page application, which means that the URL can be updated dynamically without reloading the page. React Router provides a range of components that can be used to define different routes in an application, including nested routes, dynamic routes, and redirect routes. These components can be used to define the structure of the application and to navigate between different pages or views. React Router also provides features like URL parameters, query parameters, and browser history management, which can be useful in building more complex applications. React Router is flexible and customizable, and it can be used with other React libraries and frameworks. Overall, React Router is a powerful tool for building dynamic and interactive single-page applications in React.",
+            "tailwindDesc": "Tailwind CSS is a popular utility-first CSS framework that enables developers to quickly build custom user interfaces without writing any CSS. It provides a collection of pre-defined CSS classes that can be used to style HTML elements, making it easier to create consistent and responsive designs. Tailwind offers a comprehensive set of styling options, including typography, spacing, layout, and color. The framework also includes advanced features like responsive design, which allows developers to create different styles for different screen sizes, and dark mode support. Tailwind is highly customizable, with the ability to create custom classes or modify the existing ones to match specific design needs. Additionally, Tailwind has good documentation and an active community, making it easy to learn and get help with any issues. Overall, Tailwind is a powerful tool for front-end development that can help developers create beautiful and functional user interfaces quickly and efficiently.",
+            "sassDesc": "Sass (Syntactically Awesome Style Sheets) is a preprocessor scripting language that is interpreted into Cascading Style Sheets (CSS). It is designed to make CSS more maintainable, modular, and powerful, by adding features that are not available in plain CSS, such as variables, mixins, nesting, inheritance, and functions. Sass is similar to CSS in syntax, but allows developers to write stylesheets using more concise and readable code. With Sass, developers can organize their stylesheets into smaller, reusable components, making it easier to manage and update their code. Sass also provides features like conditional statements, loops, and mathematical operations, which can be used to create complex styles and animations. Additionally, Sass can be integrated with other front-end tools like Grunt and Gulp, making it easier to automate tasks and streamline the development process. Overall, Sass is a powerful tool for front-end developers that can help them create more maintainable and efficient CSS code.", 
+            "muiDesc": "MUI (Material-UI) is a popular open-source React UI framework that provides a set of reusable and customizable components based on Google's Material Design guidelines. Material-UI is designed to help developers build beautiful and responsive user interfaces quickly and easily. It provides a wide range of components including buttons, forms, navigation bars, modals, and many others. These components are fully customizable and can be styled using CSS or JSS (JavaScript Style Sheets). Material-UI also offers a theme customization system, which allows developers to change the default look and feel of their components by modifying the theme variables. Material-UI has a large and active community, which provides a lot of resources and support for developers. Additionally, Material-UI provides excellent documentation and examples, making it easy for developers to get started and learn how to use the framework. Overall, Material-UI is a powerful tool for building high-quality React applications with beautiful and responsive UIs.",
+            "bootstrapDesc": "Bootstrap is a popular open-source front-end framework that provides a collection of CSS and JavaScript components for building responsive and mobile-first web pages and applications. Bootstrap was originally developed by Twitter and is now maintained by the community. Bootstrap offers a variety of pre-built UI components, such as navigation bars, buttons, forms, and modal windows, as well as layout templates and typography styles. These components can be easily customized using CSS to match the design and branding of a website or application. Bootstrap also provides a responsive grid system, which allows developers to create layouts that adapt to different screen sizes, from desktops to mobile devices. Additionally, Bootstrap includes a set of JavaScript plugins, such as modals, carousels, and tooltips, which enhance the functionality of the UI components. Bootstrap has a large and active community, which provides a lot of resources, support, and third-party plugins for developers. Overall, Bootstrap is a powerful and versatile tool for building modern and responsive web applications.",
+            "wordpressDesc": "WordPress is a free and open-source content management system (CMS) that allows users to create and manage websites, blogs, and online stores. WordPress was launched in 2003 and has since become one of the most popular CMSs in the world, powering around 40% of all websites on the internet. WordPress offers a user-friendly interface and a wide range of themes, plugins, and widgets that enable users to customize the look and functionality of their websites. WordPress also supports multi-user and multi-site capabilities, making it suitable for managing multiple websites from a single installation. Additionally, WordPress has a large and active community that provides support, resources, and plugins for users. WordPress is written in PHP and uses a MySQL database, but users do not need to have programming skills to use it. WordPress is highly flexible and can be used to create a wide range of websites, from simple blogs to complex e-commerce sites.",
+            "gitDesc": "Git is a popular version control system used by software developers to track changes to their codebase. It allows developers to manage their source code, collaborate with others, and keep track of different versions of their code. Git tracks changes to code over time using a system of commits, allowing developers to easily roll back to previous versions if necessary. It also supports branching, which allows developers to work on different versions of the codebase simultaneously without interfering with each other's work. Git has become an essential tool for software development teams, enabling them to work collaboratively and efficiently while maintaining a history of their code changes.",
+            "gitHubDesc": "GitHub is a powerful web-based platform for version control and collaboration that allows developers to store, manage, and share their code. It is built on top of Git, a distributed version control system that enables developers to track changes to their code over time, revert to previous versions, and collaborate with others. GitHub provides a wide range of features and tools for managing code repositories, including issue tracking, project management, code review, and continuous integration and deployment. It has become an essential tool for developers and teams working on open source projects as well as commercial software development. GitHub also offers a vibrant community where developers can share their work, collaborate on projects, and learn from others.",
+            "npmDesc": "NPM (Node Package Manager) is a package manager for Node.js that allows developers to efficiently install, update, and manage dependencies for their projects. NPM comes included with Node.js and provides access to an online repository of over 1 million open source packages that developers can use to add functionality to their projects. NPM packages are written in JavaScript and can be used in a wide variety of applications, from command-line applications to web and mobile applications. Additionally, NPM allows developers to publish their own packages and share them with the NPM community. With NPM, developers can specify versions of their dependencies and keep track of them, making it easier to maintain and update their projects. In summary, NPM is an essential tool for developing applications in Node.js and one of the largest open source communities in the world."
+        
+        },
+        "be":{
+            "nodeDesc": ""
+        }
     },
     "contact":{
         "alert": "Hi, your email has been sent with success, I'll be in touch with you asap, have a great day!",
