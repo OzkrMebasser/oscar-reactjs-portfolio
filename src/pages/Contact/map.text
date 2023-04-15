@@ -35,3 +35,42 @@ The Popup component is used to display a popup when the user clicks on the marke
 Finally, you can export the Map component and use it in your application like any other React component.
 
 This is just a basic example, but you can customize the map component in many ways by adding additional layers, markers, popups, and other components.
+
+
+*////////***
+
+To create a component in React using OpenStreetMap, you will need to first install the react-leaflet and leaflet packages. Here are the steps to create a simple map component:
+
+Install react-leaflet and leaflet packages using the following command:
+
+rust
+Copy code
+npm install react-leaflet leaflet
+Create a new component and import the necessary packages:
+
+jsx
+Copy code
+import React from 'react';
+import { MapContainer, TileLayer } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
+
+function Map() {
+  return (
+    <MapContainer
+      center={[51.505, -0.09]}
+      zoom={13}
+      style={{ height: '400px' }}
+    >
+      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+    </MapContainer>
+  );
+}
+
+export default Map;
+In the MapContainer component, set the center of the map to your desired location using latitude and longitude coordinates, and set the zoom level to control the level of detail displayed on the map.
+
+Add the TileLayer component to display the map tiles from OpenStreetMap. In the url prop, specify the URL template for the tiles, which includes placeholders for the zoom level, x and y coordinates.
+
+Finally, you can style the map component by setting the style prop to an object with a height property, which will set the height of the map container.
+
+That's it! You can now use this Map component in your React application to display a map using OpenStreetMap.

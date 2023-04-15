@@ -3,6 +3,7 @@ import "../../src/pages/Skills/Skills.css";
 //  FrontEnd Categories**
 const categories = {
   htmlCat: "categories.fe.htmlCat",
+  pugCat: "categories.fe.pugCat",
   cssCat: "categories.fe.cssCat",
   jsCat: "categories.fe.jsCat",
   reactJsCat: "categories.fe.reactJsCat",
@@ -15,12 +16,22 @@ const categories = {
   wordpressCat: "categories.fe.wordpressCat",
   gitCat: "categories.fe.gitCat",
   gitHubCat: "categories.fe.gitHubCat",
-  npmCat: "categories.fe.npmCat"
+  npmCat: "categories.fe.npmCat",
+  vscCat: "categories.fe.vscCat",
+  webstormCat: "categories.fe.webstormCat",
+  codepenCat: "categories.fe.codepenCat",
+  codesandboxCat: "categories.fe.codesandboxCat",
+  vercelCat: "categories.fe.vercelCat",
+  netlifyCat: "categories.fe.netlifyCat",
+  firebaseCat: "categories.fe.firebaseCat",
+  gdtCat: "categories.fe.gdtCat",
+  gscCat: "",
 };
 
 //  FrontEnd tools type of **
 const typeOfTech = {
   htmlTech: "typeOfTech.fe.htmlTech",
+  pugTech: "typeOfTech.fe.pugTech",
   cssTech: "typeOfTech.fe.cssTech",
   jsTech: "typeOfTech.fe.jsTech",
   reactJsTech: "typeOfTech.fe.reactJsTech",
@@ -33,15 +44,24 @@ const typeOfTech = {
   wordpressTech: "typeOfTech.fe.wordpressTech",
   gitTech: "typeOfTech.fe.gitTech",
   gitHubTech: "typeOfTech.fe.gitHubTech",
-  npmTech: "typeOfTech.fe.npmTech"
+  npmTech: "typeOfTech.fe.npmTech",
+  vscTech: "typeOfTech.fe.vscTech",
+  webstormTech: "typeOfTech.fe.webstormTech",
+  codepenTech: "typeOfTech.fe.codepenTech",
+  codesandboxTech: "typeOfTech.fe.codesandboxTech",
+  vercelTech: "typeOfTech.fe.vercelTech",
+  netlifyTech: "typeOfTech.fe.netlifyTech",
+  firebaseTech: "typeOfTech.fe.firebaseTech",
+  gdtTech: "typeOfTech.fe.gdtTech",
+  gscTech: "",
   // BackEnd tools type of
-
 };
 
 // Descripton of Technologies
 const techDescription = {
   // Descriptions frontEnd technologies
   htmlDesc: "techDescription.fe.htmlDesc",
+  pugDesc: "techDescription.fe.pugDesc",
   cssDesc: "techDescription.fe.cssDesc",
   jsDesc: "techDescription.fe.jsDesc",
   reactJsDesc: "techDescription.fe.reactJsDesc",
@@ -55,9 +75,18 @@ const techDescription = {
   gitDesc: "techDescription.fe.gitDesc",
   gitHubDesc: "techDescription.fe.gitHubDesc",
   npmDesc: "techDescription.fe.npmDesc",
+  vscDesc: "techDescription.fe.vscDesc",
+  webstormDesc: "techDescription.fe.webstormDesc",
+  codepenDesc: "techDescription.fe.codepenDesc",
+  codesandboxDesc: "techDescription.fe.codesandboxDesc",
+  vercelDesc: "techDescription.fe.vercelDesc",
+  netlifyDesc: "techDescription.fe.netlifyDesc",
+  firebaseDesc: "techDescription.fe.firebaseDesc",
+  gdtDesc: "techDescription.fe.gdtDesc",
+  gscDesc: "",
 
   // Descriptions BackEnd technologies
-}
+};
 
 export const skillsFE = [
   {
@@ -71,10 +100,23 @@ export const skillsFE = [
     variant: "success",
     category: `${categories.htmlCat}`,
     typeOfTech: `${typeOfTech.htmlTech}`,
-    docs: "https://developer.mozilla.org/en-US/docs/Web/HTML"
+    docs: "https://developer.mozilla.org/en-US/docs/Web/HTML",
   },
   {
     id: 2,
+    icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fpug-svgrepo-com.svg?alt=media&token=4dc4f301-2c8d-4152-b2a5-093c4ea23724",
+    title: "PUG",
+    alt: "pug logo",
+    description: `${techDescription.pugDesc}`,
+    class: "icons",
+    progress: 80,
+    variant: "success",
+    category: `${categories.pugCat}`,
+    typeOfTech: `${typeOfTech.pugTech}`,
+    docs: "https://pugjs.org/api/getting-started.html",
+  },
+  {
+    id: 3,
     icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fcss-svgrepo-com.svg?alt=media&token=05933c42-aa37-4123-a959-dd7ace7fb4b8",
     title: "CSS-3",
     alt: "CSS-3 logo",
@@ -84,10 +126,10 @@ export const skillsFE = [
     variant: "success",
     category: `${categories.cssCat}`,
     typeOfTech: `${typeOfTech.cssTech}`,
-    docs: "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    docs: "https://developer.mozilla.org/en-US/docs/Web/CSS",
   },
   {
-    id: 3,
+    id: 4,
     icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fjs-svgrepo-com.svg?alt=media&token=c6b39548-7d54-4dfc-8720-5a500786edda",
     title: "JAVASCRIPT",
     alt: "Javascript logo",
@@ -97,23 +139,23 @@ export const skillsFE = [
     variant: "success",
     category: `${categories.jsCat}`,
     typeOfTech: `${typeOfTech.jsTech}`,
-    docs: "https://developer.mozilla.org/en-US/docs/Web/JAVASCRIPT"
+    docs: "https://developer.mozilla.org/en-US/docs/Web/JAVASCRIPT",
   },
   {
-    id: 4,
+    id: 5,
     icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-1-logo-svgrepo-com.svg?alt=media&token=f690f37d-9457-4a0b-8378-16a7d426114f",
     title: "REACT JS",
     alt: "React js logo",
     description: `${techDescription.reactJsDesc}`,
     class: "icons",
     progress: 75,
-    variant: "success", 
+    variant: "success",
     category: `${categories.reactJsCat}`,
     typeOfTech: `${typeOfTech.reactJsTech}`,
-    docs: "https://react.dev/"  
+    docs: "https://react.dev/",
   },
   {
-    id: 5,
+    id: 6,
     icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fredux-logo-svgrepo-com.svg?alt=media&token=12531cdc-c737-43e7-9494-bacab532fd09",
     title: "REDUX",
     alt: "Redux logo",
@@ -123,10 +165,10 @@ export const skillsFE = [
     variant: "success",
     category: `${categories.reduxCat}`,
     typeOfTech: `${typeOfTech.reduxTech}`,
-    docs: "https://redux.js.org/"
+    docs: "https://redux.js.org/",
   },
   {
-    id: 6,
+    id: 7,
     icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-router-svgrepo-com.svg?alt=media&token=75893829-0a4a-4df9-a8ed-27e47c6dbb65",
     title: "REACT ROUTER",
     alt: "React Router logo",
@@ -136,11 +178,10 @@ export const skillsFE = [
     variant: "success",
     category: `${categories.reactRouterCat}`,
     typeOfTech: `${typeOfTech.reactRouterTech}`,
-    docs: "https://reactrouter.com/en/main"
+    docs: "https://reactrouter.com/en/main",
   },
   {
-    
-    id: 7,
+    id: 8,
     icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Ftailwind-svgrepo-com.svg?alt=media&token=de41409e-f0e5-4784-96fa-524c7a31c626",
     title: "TAILWIND",
     alt: "Tailwind logo",
@@ -150,10 +191,10 @@ export const skillsFE = [
     variant: "success",
     category: `${categories.tailwindCat}`,
     typeOfTech: `${typeOfTech.tailwindTech}`,
-    docs: "https://tailwindcss.com/"
+    docs: "https://tailwindcss.com/",
   },
   {
-    id: 8,
+    id: 9,
     icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fsass-svgrepo-com.svg?alt=media&token=bd2e56f6-5ad4-4d9e-92c9-4e256a6e7833",
     title: "SASS",
     alt: "Sass logo",
@@ -163,10 +204,10 @@ export const skillsFE = [
     variant: "success",
     category: `${categories.sassCat}`,
     typeOfTech: `${typeOfTech.sassTech}`,
-    docs: "https://sass-lang.com/documentation/"
+    docs: "https://sass-lang.com/documentation/",
   },
   {
-    id: 9,
+    id: 10,
     icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fmaterial-ui-svgrepo-com.svg?alt=media&token=d9f03156-d62b-43b4-8265-026d65cbca23",
     title: "MUI",
     alt: "mui logo",
@@ -176,10 +217,10 @@ export const skillsFE = [
     variant: "success",
     category: `${categories.muiCat}`,
     typeOfTech: `${typeOfTech.muiTech}`,
-    docs: "https://mui.com/material-ui/getting-started/overview/"
+    docs: "https://mui.com/material-ui/getting-started/overview/",
   },
   {
-    id: 10,
+    id: 11,
     icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fbootstrap.svg.svg?alt=media&token=d2cd69d3-f464-4646-8108-5fb9be6c3392",
     title: "BOOTSTRAP",
     alt: "Bootstrap logo",
@@ -189,23 +230,23 @@ export const skillsFE = [
     variant: "success",
     category: `${categories.bootstrapCat}`,
     typeOfTech: `${typeOfTech.bootstrapTech}`,
-    docs: "https://getbootstrap.com/docs/5.3/getting-started/introduction/"
-  },
-  {
-  id: 11,
-  icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fwordpress-svgrepo-com.svg?alt=media&token=b537352d-cda5-4c99-84ae-319fd6a6ffdb",
-  title: "WORDPRESS",
-  alt: "Wordpress logo",
-  description: `${techDescription.wordpressDesc}`,
-  class: "icons",
-  progress: 80,
-  variant: "success",
-  category: `${categories.wordpressCat}`,
-  typeOfTech: `${typeOfTech.wordpressTech}`,
-  docs: "https://wordpress.com/"
+    docs: "https://getbootstrap.com/docs/5.3/getting-started/introduction/",
   },
   {
     id: 12,
+    icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fwordpress-svgrepo-com.svg?alt=media&token=b537352d-cda5-4c99-84ae-319fd6a6ffdb",
+    title: "WORDPRESS",
+    alt: "Wordpress logo",
+    description: `${techDescription.wordpressDesc}`,
+    class: "icons",
+    progress: 80,
+    variant: "success",
+    category: `${categories.wordpressCat}`,
+    typeOfTech: `${typeOfTech.wordpressTech}`,
+    docs: "https://wordpress.com/",
+  },
+  {
+    id: 13,
     icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fgit-svgrepo-com.svg?alt=media&token=3aabc077-af83-4871-ba95-3e4cde1d6ffa",
     title: "GIT",
     alt: "Git logo",
@@ -215,34 +256,141 @@ export const skillsFE = [
     variant: "success",
     category: `${categories.gitCat}`,
     typeOfTech: `${typeOfTech.gitTech}`,
-    docs: "https://git-scm.com/doc"
-    },
-    {
-      id: 13,
-      icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fgithub-svgrepo-com.svg?alt=media&token=626982bd-014c-44a7-a8e2-8ff92d88dbd5",
-      title: "GIT-HUB",
-      alt: "Github logo",
-      description: `${techDescription.gitHubDesc}`,
-      class: "icons",
-      progress: 80,
-      variant: "success",
-      category: `${categories.gitHubCat}`,
-      typeOfTech: `${typeOfTech.gitHubTech}`,
-      docs: "https://docs.github.com/es"
-      },
-      {
-        id: 14,
-        icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fnpm-svgrepo-com.svg?alt=media&token=6b9a7f75-37b3-40dd-9c59-63c9769b9a5b",
-        title: "NPM",
-        alt: "npm logo",
-        description: `${techDescription.npmDesc}`,
-        class: "icons",
-        progress: 80,
-        variant: "success",
-        category: `${categories.npmCat}`,
-        typeOfTech: `${typeOfTech.npmTech}`,
-        docs: "https://docs.npmjs.com/"
-        }
+    docs: "https://git-scm.com/doc",
+  },
+  {
+    id: 14,
+    icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2FGithubBlack.svg?alt=media&token=1b6f7157-6f96-483c-91f8-4a89a4e25f7d",
+    title: "GIT-HUB",
+    alt: "Github logo",
+    description: `${techDescription.gitHubDesc}`,
+    class: "icons",
+    progress: 80,
+    variant: "success",
+    category: `${categories.gitHubCat}`,
+    typeOfTech: `${typeOfTech.gitHubTech}`,
+    docs: "https://docs.github.com/es",
+  },
+  {
+    id: 15,
+    icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fnpm-svgrepo-com.svg?alt=media&token=6b9a7f75-37b3-40dd-9c59-63c9769b9a5b",
+    title: "NPM",
+    alt: "npm logo",
+    description: `${techDescription.npmDesc}`,
+    class: "icons",
+    progress: 80,
+    variant: "success",
+    category: `${categories.npmCat}`,
+    typeOfTech: `${typeOfTech.npmTech}`,
+    docs: "https://docs.npmjs.com/",
+  },
+  {
+    id: 16,
+    icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fvisual-studio-code-svgrepo-com.svg?alt=media&token=d7d44efb-d68d-4e19-8c39-f5f65151d726",
+    title: "VSC",
+    alt: "vsc logo",
+    description: `${techDescription.vscDesc}`,
+    class: "icons",
+    progress: 80,
+    variant: "success",
+    category: `${categories.vscCat}`,
+    typeOfTech: `${typeOfTech.vscTech}`,
+    docs: "https://code.visualstudio.com/docs",
+  },
+  {
+    id: 17,
+    icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fwebstorm-svgrepo-com.svg?alt=media&token=196fce6c-a0ed-4f5a-bee2-77304cc2f649",
+    title: "WEBSTORM",
+    alt: "Webstorm logo",
+    description: `${techDescription.webstormDesc}`,
+    class: "icons",
+    progress: 70,
+    variant: "success",
+    category: `${categories.webstormCat}`,
+    typeOfTech: `${typeOfTech.webstormTech}`,
+    docs: "https://www.jetbrains.com/help/webstorm/getting-started-with-webstorm.html",
+  },
+  {
+    id: 18,
+    icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fcodepen-02-svgrepo-com.svg?alt=media&token=b78579dc-49fd-4db0-8a6e-fd685473d2a2",
+    title: "CODEPEN",
+    alt: "Codepen logo",
+    description: `${techDescription.codepenDesc}`,
+    class: "icons",
+    progress: 70,
+    variant: "success",
+    category: `${categories.codepenCat}`,
+    typeOfTech: `${typeOfTech.codepenTech}`,
+    docs: "https://blog.codepen.io/documentation/",
+  },
+  {
+    id: 19,
+    icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fcodesandbox-svgrepo-com.svg?alt=media&token=c6814bf2-93d5-40e1-a3d4-ea730be029c2",
+    title: "CODESANDBOX",
+    alt: "Codesandbox logo",
+    description: `${techDescription.codesandboxDesc}`,
+    class: "icons",
+    progress: 70,
+    variant: "success",
+    category: `${categories.codesandboxCat}`,
+    typeOfTech: `${typeOfTech.codesandboxTech}`,
+    docs: "https://codesandbox.io/docs/learn/introduction/overview",
+  },
+  {
+    id: 20,
+    icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fvercel-icon-svgrepo-com.svg?alt=media&token=d8d668a2-26f0-4103-a3ae-99e6d3c31103",
+    title: "VERCEL",
+    alt: "Vercel logo",
+    description: `${techDescription.vercelDesc}`,
+    class: "icons",
+    progress: 70,
+    variant: "success",
+    category: `${categories.vercelCat}`,
+    typeOfTech: `${typeOfTech.vercelTech}`,
+    docs: "https://vercel.com/docs",
+  },
+  {
+    id: 21,
+    icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fnetlify-svgrepo-com.svg?alt=media&token=2b403c92-7d50-45d2-b049-20c6f8285a3e",
+    title: "NETLIFY",
+    alt: "Netlify logo",
+    description: `${techDescription.netlifyDesc}`,
+    class: "icons",
+    progress: 70,
+    variant: "success",
+    category: `${categories.netlifyCat}`,
+    typeOfTech: `${typeOfTech.netlifyTech}`,
+    docs: "https://docs.netlify.com/",
+  },
+  {
+    id: 22,
+    icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Ffirebase-svgrepo-com.svg?alt=media&token=ea3cf79a-0fa3-4a32-ae04-89625cdaa904",
+    title: "FIREBASE",
+    alt: "Firebase logo",
+    description: `${techDescription.firebaseDesc}`,
+    class: "icons",
+    progress: 70,
+    variant: "success",
+    category: `${categories.firebaseCat}`,
+    typeOfTech: `${typeOfTech.firebaseTech}`,
+    docs: "https://firebase.google.com/docs",
+  },
+  {
+    id: 23,
+    icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fchrome-devtools-svgrepo-com.svg?alt=media&token=ceeaf800-4c13-42f4-999b-4a707f920c78",
+    title: "CHROME DEV TOOLS",
+    alt: "Chrome DevTools logo",
+    description: `${techDescription.gdtDesc}`,
+    class: "icons",
+    progress: 70,
+    variant: "success",
+    category: `${categories.gdtCat}`,
+    typeOfTech: `${typeOfTech.gdtTech}`,
+    docs: "https://developer.chrome.com/docs/devtools/",
+  },
+
+
+
 ];
 
 export const skillsBE = [
@@ -257,6 +405,6 @@ export const skillsBE = [
     variant: "success",
     category: `${categories}`,
     typeOfTech: `${typeOfTech}`,
-    docs: ""
+    docs: "",
   },
-]
+];

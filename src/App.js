@@ -5,12 +5,6 @@ import Navbar from "./Components/Navbar/Navbar";
 import AnimatedRoutes from "./Components/AnimatedRoutes/AnimatedRoutes";
 
 
-
-
-
-
-
-
 const App = () => {
 
   

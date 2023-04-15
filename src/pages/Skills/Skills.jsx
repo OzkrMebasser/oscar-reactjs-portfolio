@@ -182,12 +182,14 @@ const Skills = (props) => {
                         />
                       </Card.Body>
                     </Card>
+                    
                   </Col>
                 ))}
               </Row>
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
+        
       </motion.div>
     </Fragment>
   );

@@ -238,9 +238,10 @@
 }
 
 .bgTechTitle{
-    background:#ffffff88;
-    height: 1.5rem;
+   
+    text-shadow: -1px 1.5px 0 #ffffff, -1px -1.5px 0 #ffffff;
 }
+
 
  /*Medias queries
  
