@@ -1,299 +1,282 @@
-@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
 
-.containerGrid{
-    width: 90vw;
+.containerGrid {
+  width: 90vw;
 }
 
-.accordion-item{
-    width: 95vw;
-    margin: auto;
+.accordion-item {
+  width: 95vw;
+  margin: auto;
+}
+
+.textTitle {
+  text-align: center;
+  color: #d4af37;
+  font-size: 2rem;
+  font-family: "Boogaloo", cursive;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 3px 3px 2px #000000;
+}
+
+.subTitles{
+  text-align: center;
+  color: #d4af37;
+  font-size: 1.7rem;
+  font-family: "Boogaloo", cursive;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-shadow: 3px 3px 2px #000000;
+}
+.arrowsColor {
+  color: #ffffff;
 }
 
 
-.textTitle{
-    text-align: center;
-    color: #d4af37;
-    font-size: 2rem;
-    font-family: "Boogaloo", cursive;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    text-shadow: 3px 3px 2px #000000;
+.accordion-button {
+  font-size: 1.5rem;
+  color: #d4af37;
+  background-color: transparent;
+  text-shadow: 2px 2px 1px #000000;
 }
-.arrowsColor{
-    color: #ffffff;
-  }
-
-
-.accordion-button{
-    font-size: 1.5rem;
-    color: #d4af37;
-    background-color:transparent;
-    text-shadow: 2px 2px 1px #000000;
-
-}
-
-
 
 .accordion-button:not(.collapsed) {
-    color: #d4af37;
-    background-color: #000;
-    /* box-shadow: inset 0 calc(var(--bs-accordion-border-width) * -1) 0 var(--bs-accordion-border-color); */
+  color: #d4af37;
+  background-color: #000;
+  /* box-shadow: inset 0 calc(var(--bs-accordion-border-width) * -1) 0 var(--bs-accordion-border-color); */
 }
 
-
-.accordion-button::after{
-    font-size: 1.5rem;
-    color: #d4af37;
+.accordion-button::after {
+  font-size: 1.5rem;
+  color: #d4af37;
 }
 
-.accordion-header{
-    font-size: 1.5rem;
-    color: #d4af37;
+.accordion-header {
+  font-size: 1.5rem;
+  color: #d4af37;
 }
-.textM{
-    text-align: justify;
-    padding: 9px;
-    color: rgb(0, 0, 0);
-    margin: auto;
-    height: 10rem;
-    font-size: .8rem;
-    font-family: 'Boogaloo', cursive;
-    overflow: auto;
-    text-overflow: ellipsis;
-    border-radius: 6px;
-    /* background-color: rgba(226, 224, 224, 0.521); */
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-        /* text-shadow: 1px 1px 1px #9c9c9a9a; */
-   
-    
+.textM {
+  text-align: justify;
+  padding: 9px;
+  color: rgb(0, 0, 0);
+  margin: auto;
+  height: 10rem;
+  font-size: 0.8rem;
+  font-family: "Boogaloo", cursive;
+  overflow: auto;
+  text-overflow: ellipsis;
+  border-radius: 6px;
+  /* background-color: rgba(226, 224, 224, 0.521); */
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  /* text-shadow: 1px 1px 1px #9c9c9a9a; */
 }
 
 .dropBtn {
-    background-color: #d4af37;
-    color: #000;
-    
-    width: 100%;
-    height: 2.5rem;
-    margin-top: 15px;
+  background-color: #d4af37;
+  color: #000;
 
-     font-size: 1rem;
-     border: currentColor;
-     font-family: "Boogaloo", cursive;
-     text-decoration-style: dotted;
-     border-radius: 6px;
-    
-   
-   }
-   .dropBtn:hover {
-    background-color: #000;
-    color: #d4af37;
-    
-     font-size: 1rem;
-     border: 1px solid #d4af37;
-     transform: scale(0.95);
-     transition: 200ms;
-    
-   }
+  width: 100%;
+  height: 2.5rem;
+  margin-top: 15px;
+
+  font-size: 1rem;
+  border: currentColor;
+  font-family: "Boogaloo", cursive;
+  text-decoration-style: dotted;
+  border-radius: 6px;
+}
+.dropBtn:hover {
+  background-color: #000;
+  color: #d4af37;
+
+  font-size: 1rem;
+  border: 1px solid #d4af37;
+  transform: scale(0.95);
+  transition: 200ms;
+}
 
 .docsBtn {
-    background-color: #000;
-    color: #ffffff;
-    width: 100%;
-    height: 2.5rem;
-    margin-top: 20px;
-     font-size: 1rem;
-     border: currentColor;
-     font-family: "Boogaloo", cursive;
-     text-decoration-style: dotted;
-     border-radius: 6px;
-       
-    
-   
-   }
-   .docsBtn:hover {
-    background-color: #d4af37;
-    color: #000;
-    
-     font-size: 1rem;
-     border: 1px solid #d4af37;
-     transform: scale(0.95);
-     transition: 200ms;
-    
-   }
+  background-color: #000;
+  color: #ffffff;
+  width: 100%;
+  height: 2.5rem;
+  margin-top: 20px;
+  font-size: 1rem;
+  border: currentColor;
+  font-family: "Boogaloo", cursive;
+  text-decoration-style: dotted;
+  border-radius: 6px;
+}
+.docsBtn:hover {
+  background-color: #d4af37;
+  color: #000;
 
-   .noUnderline{
-    text-decoration: none;
-    color: #ffffff;
-   }
+  font-size: 1rem;
+  border: 1px solid #d4af37;
+  transform: scale(0.95);
+  transition: 200ms;
+}
 
-   .noUnderline:hover{
-    text-decoration: none;
-    color: #000;
-   }
+.noUnderline {
+  text-decoration: none;
+  color: #ffffff;
+}
 
-   
-   .cardGridShadow {
+.noUnderline:hover {
+  text-decoration: none;
+  color: #000;
+}
+.cardHeight{
+  height: 20rem;
+}
+.cardGridShadow {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
-  
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    
-  }
-  
 .cardGrid {
-  /* background-color: blue; */
   
+
   height: 15rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  
 }
 
-.cardGridOpen{
-    height: 22rem;
+.cardGridOpen {
+  height: 22rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.icons{
-    width: 1rem;
-    margin: auto;
+.icons {
+  width: 4rem;
+  height: 4rem;
+  margin: auto;
 }
 
-.icons2{
-    width: 4rem;
-    margin: auto;
-}
-.iconWP{
-    width: 4rem;
-    margin: auto;
-    filter: invert(47%) sepia(8%) saturate(3903%) hue-rotate(154deg) brightness(82%) contrast(93%);
 
-
+.iconWP {
+  width: 4rem;
+  margin: auto;
+  filter: invert(47%) sepia(8%) saturate(3903%) hue-rotate(154deg)
+    brightness(82%) contrast(93%);
 }
 
-.iconEx{
-    width: 1rem;
-    margin: auto;
-    /* margin-top: 1rem;
+.iconEx {
+  width: 1rem;
+  margin: auto;
+  /* margin-top: 1rem;
     width: 9em;
     margin: auto; */
-    /* padding: 10px; */
-    /* filter:  sepia(47%) saturate(135%) hue-rotate(359deg) brightness(103%) contrast(91%); */
-    /* filter: brightness(103%) contrast(91%); */
+  /* padding: 10px; */
+  /* filter:  sepia(47%) saturate(135%) hue-rotate(359deg) brightness(103%) contrast(91%); */
+  /* filter: brightness(103%) contrast(91%); */
 }
 
-.iconDJ{
-    width: 15em;
-    margin: auto;
- 
+.iconDJ {
+  width: 15em;
+  margin: auto;
 }
 
-.iconNodeJs{
-    width: 7em;
-    margin: auto;
+.iconNodeJs {
+  width: 7em;
+  margin: auto;
+}
+
+.frontEndimg {
+  width: 45px;
+  height: 40px;
+  margin-left: 2rem;
+}
+
+.backEndimg {
+  width: 50px;
+  height: 45px;
+  margin-left: 2rem;
+}
+
+.subTitle {
+  font-size: 0.8rem;
+  height: 2rem;
+  color: rgb(88, 88, 88);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.progressBar {
+  font-size: 0.6rem;
+  margin-top: 1rem;
+}
+
+.texts {
+  text-align: center;
+  color: black;
+  vertical-align: middle;
+  font-family: "Boogaloo", cursive;
+  text-shadow: 1px 1px 1px #9c9c9a9a;
+  font-size: 0.9rem;
+}
+
+.techTitle {
+  font-size: 0.6rem;
+  color: rgb(92, 92, 92);
+  text-align: center;
+}
+
+.xTtitle {
+  font-size: 0.8rem;
+}
+
+.bgTechTitle {
+  text-shadow: -1px 1.5px 0 #ffffff, -1px -1.5px 0 #ffffff;
+}
+.skillsImg{
+  height: 3.2rem;
+  width: 3.2rem;
+  margin-left: 1rem;
+  
 }
 
 
-.frontEndimg{
-    width: 45px;
-    height: 40px;
-    margin-left: 2rem;
-}
-
-.backEndimg{
-    width: 50px;
-    height: 45px;
-    margin-left: 2rem;
-}
-
-.subTitle{
-    font-size: .8rem;
-    color : grey;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.progressBar{
-    font-size: .6rem;
-    margin-top: 1rem;
-}
-
-.texts{
-    text-align: center;
-    color: black;
-    vertical-align: middle;
-    font-family: 'Boogaloo', cursive;
-    text-shadow: 1px 1px 1px #9c9c9a9a;
-    font-size: .9rem;
-}
-
-
-.techTitle{
-    font-size: .6rem;
-    color : rgb(92, 92, 92);
-    text-align: center;;
-}
-
-
-.xTtitle{
-    font-size: .9rem;
-}
-
-.bgTechTitle{
-   
-    text-shadow: -1px 1.5px 0 #ffffff, -1px -1.5px 0 #ffffff;
-}
-
-
- /*Medias queries
+/*Medias queries
  
 ▒█▀▀█ ▒█▀▀▀ ▒█▀▀▀█ ▒█▀▀█ ▒█▀▀▀█ ▒█▄░▒█ ▒█▀▀▀█ ▀█▀ ▒█░░▒█ ▒█▀▀▀ 
 ▒█▄▄▀ ▒█▀▀▀ ░▀▀▀▄▄ ▒█▄▄█ ▒█░░▒█ ▒█▒█▒█ ░▀▀▀▄▄ ▒█░ ░▒█▒█░ ▒█▀▀▀ 
 ▒█░▒█ ▒█▄▄▄ ▒█▄▄▄█ ▒█░░░ ▒█▄▄▄█ ▒█░░▀█ ▒█▄▄▄█ ▄█▄ ░░▀▄▀░ ▒█▄▄▄
  */
 @media only screen and (max-width: 960px) {
-   
 }
 /*Icons*/
 
-.icons{
-    width: 4rem;
-    margin: auto;
+.icons {
+  width: 4rem;
+  margin: auto;
 }
 
-
-.icon-html5{
-    width: 7em;
-    margin: auto;
-      
-
-   
+.icon-html5 {
+  width: 7em;
+  margin: auto;
 }
-.icon-Css{
-    width: 100%;
-    text-align: center;
-    color: rgb(0, 81, 255);
-    font-size: 3rem;
-    background-color: rgb(255, 255, 255);
-    border: black solid 1px;
+.icon-Css {
+  width: 100%;
+  text-align: center;
+  color: rgb(0, 81, 255);
+  font-size: 3rem;
+  background-color: rgb(255, 255, 255);
+  border: black solid 1px;
 }
-.icon-Js{
-    width: 100%;
-    text-align: center;
-    color: rgb(255, 238, 0);
-    font-size: 3rem;
-    vertical-align: middle;
-    
-
+.icon-Js {
+  width: 100%;
+  text-align: center;
+  color: rgb(255, 238, 0);
+  font-size: 3rem;
+  vertical-align: middle;
 }
 
-.icon-NodeJs{
-    width: 100%;
-    text-align: center;
-    color: rgb(28, 192, 42);
-    font-size: 3rem;
-    background-color: black;
-
+.icon-NodeJs {
+  width: 100%;
+  text-align: center;
+  color: rgb(28, 192, 42);
+  font-size: 3rem;
+  background-color: black;
 }
 .react-icons {
-    
-    background-color: black;
-  }
+  background-color: black;
+}

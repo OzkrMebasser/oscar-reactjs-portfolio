@@ -26,7 +26,12 @@ const Skills = (props) => {
   return (
     <Fragment className="containerGrid">
       <h2 className="textTitle">{t("skills.title")}</h2>
-      <h4 className="textTitle">Hard Skills</h4>
+    <h6 className="subTitles">
+  
+      {t("skills.hardSkills")}{"    "}
+
+      </h6>
+
 
       <motion.div
         initial={{ y: 600 }}
@@ -34,10 +39,10 @@ const Skills = (props) => {
         transition={{ delay: 0.3, type: "fade" }}
       >
         <Accordion>
+          {/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓  FrontEnd tools  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/}
           <Accordion.Item eventKey="0">
-            {/*FrontEnd*/}
             <Accordion.Header className="texts">
-              {t("skills.hardSkills")}{" "}
+              {t("skills.frontendTools")}{" "}
               <img
                 className="frontEndimg"
                 src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2Ffrontend.png?alt=media&token=6ce6c9c4-97e2-4e9f-b883-45a9dd5ed0fa"
@@ -46,11 +51,11 @@ const Skills = (props) => {
             </Accordion.Header>
 
             <Accordion.Body>
-              <Row xs={1} md={5} fluid className="g-4 texts">
+              <Row xs={1} md={5} fluid className="g-3 texts alto">
                 {skillsFE.map((skill, index) => (
                   <Col key={skill.id}>
                     <Card
-                      className=" cardGridShadow align-middle"
+                      className=" cardGridShadow align-middle "
                       style={{
                         backgroundColor: isDropOpen
                           ? "cardGrid"
@@ -64,10 +69,14 @@ const Skills = (props) => {
                         alt={skill.alt}
                       />
                       <Card.Body>
-                        <Card.Title>{skill.title}</Card.Title>
-                        <Card.Text className="subTitle">
-                          {t(`${skill.category}`)}
-                        </Card.Text>
+                        <Card.Title>{skill.title} </Card.Title>
+
+                        <div className="alto">
+                          <Card.Text className="subTitle">
+                            {t(`${skill.category}`)}
+                            {"    "}
+                          </Card.Text>
+                        </div>
 
                         <div className="dropdown">
                           <button
@@ -77,8 +86,9 @@ const Skills = (props) => {
                             <span className="xTtitle">
                               {t("skills.whatIsIt")}
                             </span>{" "}
-                            <span className="bgTechTitle">"{skill.title}"</span>{" "}
-                            ?
+                            <span className="bgTechTitle xTtitle">
+                              "{skill.title}" ?
+                            </span>{" "}
                           </button>
                           {selectedCardIndex === index && (
                             <div id="dropdown-content">
@@ -90,7 +100,99 @@ const Skills = (props) => {
                                 </Card.Text>
                                 {t(`${skill.description}`)}
                                 <br />
-                                <button className="docsBtn">
+                                <button className="">
+                                  <a
+                                    className="noUnderline"
+                                    href={`${skill.docs}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    Read Docs.
+                                  </a>
+                                </button>
+                              </Card.Text>
+                            </div>
+                          )}
+
+                          <ProgressBar
+                            className="progressBar"
+                            animated
+                            now={skill.progress}
+                            label={`${t("skills.learning")}`}
+                            variant={skill.variant}
+                            style={{ height: "23px", color: "black" }}
+                          />
+                        </div>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                ))}
+              </Row>
+            </Accordion.Body>
+          </Accordion.Item>
+          {/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑  FrontEnd tools  ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/}
+          {/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ BackEnd tools ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/}
+
+          <Accordion.Item eventKey="1">
+            <Accordion.Header>
+              {t("skills.backendTools")}
+              <img
+                className="backEndimg"
+                src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2Fbackend.png?alt=media&token=733cc56b-1d7e-447d-b904-a4b88f2bc7d7"
+                alt="FrontEnd"
+              />
+            </Accordion.Header>
+            <Accordion.Body>
+              <Row xs={1} md={5} fluid className="g-3 texts alto">
+                {skillsBE.map((skill, index) => (
+                  <Col key={skill.id}>
+                    <Card
+                      className=" cardGridShadow align-middle "
+                      style={{
+                        backgroundColor: isDropOpen
+                          ? "cardGrid"
+                          : "cardGridOpen",
+                      }}
+                    >
+                      {/* <span className={skill.class} ><span className="bgBlack">{skill.icon}</span></span> */}
+                      <img
+                        className={skill.class}
+                        src={skill.icon}
+                        alt={skill.alt}
+                      />
+                      <Card.Body>
+                        <Card.Title>{skill.title} </Card.Title>
+
+                        <div className="alto">
+                          <Card.Text className="subTitle">
+                            {t(`${skill.category}`)}
+                            {"    "}
+                          </Card.Text>
+                        </div>
+
+                        <div className="dropdown">
+                          <button
+                            className="dropBtn"
+                            onClick={() => handleCardClick(index)}
+                          >
+                            <span className="xTtitle">
+                              {t("skills.whatIsIt")}
+                            </span>{" "}
+                            <span className="bgTechTitle xTtitle">
+                              "{skill.title}" ?
+                            </span>{" "}
+                          </button>
+                          {selectedCardIndex === index && (
+                            <div id="dropdown-content">
+                              <Card.Text className="textM">
+                                <Card.Text className="subTitle">
+                                  <p className="techTitle">
+                                    {t(`${skill.typeOfTech}`)}
+                                  </p>
+                                </Card.Text>
+                                {t(`${skill.description}`)}
+                                <br />
+                                <button className="">
                                   <a
                                     className="noUnderline"
                                     href={`${skill.docs}`}
@@ -121,35 +223,68 @@ const Skills = (props) => {
             </Accordion.Body>
           </Accordion.Item>
 
-          {/*Back End*/}
-
-          <Accordion.Item eventKey="1">
-            <Accordion.Header>
-              {t("skills.softSkills")}
-              <img
-                className="backEndimg"
-                src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2Fbackend.png?alt=media&token=733cc56b-1d7e-447d-b904-a4b88f2bc7d7"
-                alt="FrontEnd"
-              />
-            </Accordion.Header>
-            <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </Accordion.Body>
-          </Accordion.Item>
-
-          {/*BackEnd */}
-
-          <h4 className="textTitle">Soft Skills</h4>
+          {/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ BackEnd tools ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/}
+          {/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Certifications ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/}
           <Accordion.Item eventKey="2">
             <Accordion.Header className="texts">
-              {t("skills.hardSkills")}
-              <h1>"Front-End" skills</h1>
+              {t("skills.certificates")}
+              <img
+                className="backEndimg"
+                src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2Fcertificate-quality-award-education-medal-svgrepo-com.svg?alt=media&token=a8442f16-d766-40fc-b654-9af54ddc6ae0"
+                alt="my certificates"
+              />
+            </Accordion.Header>
+
+            <Accordion.Body>
+              <Row xs={1} md={1} fluid className="g-4 texts">
+                {skillsBE.map((skill, id) => (
+                  <Col>
+                    <Card className="cardGrid align-middle">
+                      {/* <span className={skill.class} ><span className="bgBlack">{skill.icon}</span></span> */}
+                      <img
+                        className={skill.class}
+                        src={skill.icon}
+                        alt={skill.alt}
+                      />
+                      <Card.Body>
+                        <Card.Title>{skill.title}</Card.Title>
+                        <Card.Text>{skill.category}</Card.Text>
+                        <Card.Text className="textM">
+                          {skill.description}
+                        </Card.Text>
+                        <strong>
+                          <p className="texts">Aproximate knowledge</p>
+                        </strong>
+                        <ProgressBar
+                          className="texts"
+                          animated
+                          now={skill.progress}
+                          label={`${skill.progress}%`}
+                          variant={skill.variant}
+                          style={{ height: "20px", color: "dark" }}
+                        />
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                ))}
+              </Row>
+            </Accordion.Body>
+          </Accordion.Item>
+          {/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑  Certifications  ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/}
+          {/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Soft skills ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/}
+          <h4 className="subTitles">{t("skills.softSkills")}
+        
+          </h4>
+
+
+          <Accordion.Item eventKey="3">
+            <Accordion.Header className="texts">
+              {t("skills.mySoftSkills")}
+              <img
+                className="skillsImg"
+                src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2Fsoftskills.png?alt=media&token=614a1f81-ac9d-4d36-914a-185e7f71bd15"
+                alt="softSkills"
+              />
             </Accordion.Header>
 
             <Accordion.Body>
@@ -182,14 +317,13 @@ const Skills = (props) => {
                         />
                       </Card.Body>
                     </Card>
-                    
                   </Col>
                 ))}
               </Row>
             </Accordion.Body>
           </Accordion.Item>
+          {/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑  Soft skills  ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/}
         </Accordion>
-        
       </motion.div>
     </Fragment>
   );

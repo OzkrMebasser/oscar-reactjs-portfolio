@@ -70,9 +70,12 @@
     "downloadResume": "DESCARGAR MI C.V."
   },
   "skills": {
-    "title": "HABILIDADES Y CERTIFICACIONES",
-    "hardSkills": "HABILIDADES TÉCNICAS EN EL \"FRONT-END\" ",
-    "softSkills": "ALGUNAS DE MIS HABILIDAD ES BLANDAS",
+    "title": "MI CAJA DE HERRAMIENTAS Y CERTIFICACIONES",
+    "hardSkills": "HABILIDADES TECNICAS",
+    "softSkills": "HABILIDADES BLANDAS",
+    "mySoftSkills": "MIS HABILIDADES BLANDAS",
+    "frontendTools": "MIS HERRAMIENTAS DE \"FRONT-END\" ",
+    "backendTools": "MIS HERRAMIENTAS DE \"BACK-END\" ",
     "certificates": "CERTIFICACIONES",
     "learning": "MI DOMINIO APROX.",
     "whatIsIt": "¿ QUE ES "
@@ -102,9 +105,31 @@
       "netlifyCat": "PLATAFORMAS DE DESARROLLO WEB BASADAS EN LA NUBE",
       "firebaseCat": "PLATAFORMAS BACKEND-AS-A-SERVICE (BAAS)",
       "gdtCat": "HERRAMIENTAS DE DESARROLLO WEB",
-      "gscCat": ""
+      "gscCat": "HERRAMIENTAS DE OPTIMIZACIÓN PARA MOTORES DE BÚSQUEDA (SEO)"
     },
-    "be": {}
+    "be":{
+      "nodeCat": "DESARROLLO LADO DEL SERVIDOR", 
+      "expressCat": "DESARROLLO WEB DEL LADO DEL SERVIDOR",
+      "pythonCat": "LENGUAJE DE PROGRAMACIÓN VERSÁTIL",
+      "djangoCat": "DESARROLLO WEB DEL LADO DEL SERVIDOR",
+      "postgresqlCat": "SISTEMAS DE GESTIÓN DE BASES DE DATOS RELACIONALES (RDBMS)",
+      "mongodbCat": "BASES DE DATOS NOSQL",
+      "mysqlCat": "SISTEMAS DE GESTIÓN DE BASES DE DATOS RELACIONALES (RDBMS)",
+      "sqliteCat": "SISTEMAS DE GESTIÓN DE BASES DE DATOS RELACIONALES (RDBMS)",
+      "npmBeCat": "",
+      "nodemailerCat": "BIBLIOTECAS DE ENVÍO DE CORREO ELECTRÓNICO PARA NODE.JS",
+      "mailtrapCat": "",
+      "restCat": "",
+      "httpCat": "",
+      "postmanCat": "",
+      "jwtCat": "",
+      "pycharmCat": "",
+      "herokuCat": "",
+      "firebaseBeCat": "",
+      "railwayCat": "",
+      "cpanelCat": ""
+  }
+
   },
   "typeOfTech": {
     "fe": {
@@ -131,10 +156,31 @@
       "netlifyTech": "PLATAFORMA DE DESARROLLO WEB BASADA EN LA NUBE PARA CONSTRUIR E IMPLEMENTAR SITIOS WEB Y APLICACIONES WEB ESTÁTICAS",
       "firebaseTech": "BACKEND-AS-A-SERVICE (BAAS) BASADA EN LA NUBE PARA DESARROLLAR E IMPLEMENTAR APLICACIONES MÓVILES Y WEB",
       "gdtTech": "CONJUNTO DE HERRAMIENTAS DE DEPURACIÓN Y PERFILADO INTEGRADAS EN EL NAVEGADOR GOOGLE CHROME PARA EL DESARROLLO Y DISEÑO WEB",
-      "gscTech": ""
+      "gscTech": "HERRAMIENTA BASADA EN WEB DE OPTIMIZACIÓN PARA MOTORES DE BÚSQUEDA (SEO) OFRECIDA POR GOOGLE"
     },
 
-    "be": {}
+    "be": {
+      "nodeTech": "ENTORNO DE EJECUCIÓN DE JAVASCRIPT EN EL LADO DEL SERVIDOR",
+      "expressTech": "FRAMEWORK WEB PARA NODE.JS",
+      "pythonTech":"LENGUAJE DE PROGRAMACIÓN DE ALTO NIVEL",
+      "djangoTech": " FRAMEWORK WEB DE ALTO NIVEL PARA PYTHON",
+      "postgresqlTech": "BASE DE DATOS RELACIONAL DE CÓDIGO ABIERTO",
+      "mongodbTech": " BASE DE DATOS NOSQL ORIENTADA A DOCUMENTOS",
+      "mysqlTech": "BASE DE DATOS RELACIONAL DE CÓDIGO ABIERTO",
+      "sqliteTech": "SISTEMA DE GESTIÓN DE BASES DE DATOS RELACIONALES LIGERO",
+      "npmBeTech": "",
+      "nodemailerTech": "BIBLIOTECA DE NODE.JS PARA ENVIAR CORREOS ELECTRÓNICOS",
+      "mailtrapTech": "",
+      "restTech": "",
+      "httpTech": "",
+      "postmanTech": "",
+      "jwtTech": "",
+      "pycharmTech": "",
+      "herokuTech": "",
+      "firebaseBeTech": "",
+      "railwayTech": "",
+      "cpanelTech": ""
+    }
   },
   "techDescription": {
     "fe": {
@@ -161,11 +207,32 @@
       "netlifyDesc": "Netlify es una plataforma de desarrollo web en la nube que ofrece una amplia gama de herramientas y servicios para construir, desplegar y gestionar proyectos web modernos. Proporciona a los desarrolladores una plataforma potente y fácil de usar para construir y desplegar sitios web y aplicaciones web estáticas, así como aplicaciones dinámicas más complejas utilizando funciones y API sin servidor. Con Netlify, los desarrolladores pueden automatizar sus flujos de trabajo, colaborar con miembros del equipo e integrarse con una variedad de servicios de terceros para agilizar su proceso de desarrollo. La plataforma también incluye características avanzadas como la implementación continua, el rollback instantáneo y análisis detallados, convirtiéndose en una opción ideal para proyectos de desarrollo web modernos.",
       "firebaseDesc": "Firebase es una plataforma de desarrollo móvil y web que proporciona una amplia gama de herramientas y servicios para construir, gestionar y escalar aplicaciones. Ofrece características como autenticación, bases de datos en tiempo real, almacenamiento en la nube, alojamiento y análisis, que pueden integrarse fácilmente en aplicaciones móviles y web. Firebase proporciona una infraestructura escalable y una API sencilla, lo que permite a los desarrolladores centrarse en la creación de grandes experiencias de usuario en lugar de preocuparse por la gestión del servidor o el mantenimiento de la infraestructura. También ofrece una variedad de SDK y bibliotecas para diferentes plataformas y lenguajes de programación, convirtiéndose en una opción ideal para construir aplicaciones multiplataforma. En general, Firebase es una plataforma potente y fácil de usar para construir aplicaciones móviles y web modernas y de alto rendimiento.",
       "gdtDesc": "Chrome DevTools es un conjunto de herramientas de desarrollo web integradas en el navegador Google Chrome que permite a los desarrolladores depurar y optimizar páginas web en el lado del cliente. Con DevTools, los desarrolladores pueden inspeccionar y modificar HTML y CSS, analizar el rendimiento de la red, depurar código JavaScript y simular varios dispositivos móviles. Proporciona una vista en tiempo real de la página web renderizada con herramientas para depurar y perfilar interactivamente una página web. Las características de análisis de rendimiento pueden ayudar a los desarrolladores a diagnosticar problemas de rendimiento y proporcionar sugerencias para mejorar los tiempos de carga de la página. Además, Chrome DevTools se puede ampliar con complementos y extensiones personalizadas, lo que lo convierte en una herramienta versátil y potente para los desarrolladores web. Sus características lo convierten en una herramienta indispensable para los desarrolladores web que desean construir y optimizar sitios web y aplicaciones web.",
-      "gscDesc": ""
+      "gscDesc": "Google Search Console es un servicio web gratuito proporcionado por Google que permite a los propietarios de sitios web monitorear y administrar la presencia de su sitio web en los resultados de búsqueda de Google. Con herramientas para analizar el tráfico de búsqueda, ver cómo aparece su sitio web en los resultados de búsqueda, identificar problemas técnicos que puedan estar afectando su clasificación en los resultados de búsqueda y enviar nuevo contenido para que Google lo rastree e indexe, los propietarios de sitios web pueden optimizar el rendimiento de su sitio web en los resultados de búsqueda y mejorar su visibilidad en línea."
     
     },
     "be": {
-      "nodeDesc": ""
+      "nodeDesc": "Node.js es un entorno de tiempo de ejecución de JavaScript gratuito, de código abierto y multiplataforma que permite a los desarrolladores construir aplicaciones de red escalables. Node.js utiliza un modelo de E/S no bloqueante y basado en eventos que lo hace ligero y eficiente, y está construido sobre el motor JavaScript V8 utilizado por Google Chrome. Con Node.js, los desarrolladores pueden utilizar JavaScript tanto en el lado del servidor como del cliente en el desarrollo web, lo que lo convierte en una opción popular para construir aplicaciones web, aplicaciones de chat en tiempo real y servidores de API. Node.js también tiene un vasto ecosistema de módulos y paquetes disponibles a través de su gestor de paquetes, npm, lo que facilita a los desarrolladores agregar funcionalidad a sus aplicaciones sin tener que reinventar la rueda. Además, Node.js tiene una comunidad activa que proporciona soporte y recursos para los desarrolladores.",
+      "expressDesc": "Express.js, también conocido simplemente como Express, es un framework de Node.js que se utiliza para construir aplicaciones web. Express proporciona una serie de características y herramientas para facilitar la creación de aplicaciones web, incluyendo el manejo de rutas, la gestión de solicitudes y respuestas HTTP, el manejo de sesiones y cookies, y la integración de motores de plantillas para generar vistas HTML dinámicas. Express también se integra fácilmente con otros paquetes de Node.js, lo que permite a los desarrolladores agregar fácilmente nuevas características y funcionalidades a sus aplicaciones. Además, Express es extremadamente flexible y escalable, lo que lo hace ideal para la construcción de aplicaciones web de todo tipo y tamaño, desde pequeñas aplicaciones de una sola página hasta aplicaciones empresariales complejas y escalables. En resumen, Express es uno de los frameworks más populares y versátiles para el desarrollo de aplicaciones web en Node.js.",
+      "pythonDesc":"Python es un lenguaje de programación interpretado y de alto nivel conocido por su simplicidad, facilidad de uso y versatilidad. Desarrollado a fines de la década de 1980, Python es un lenguaje de código abierto que ha ganado popularidad debido a su sintaxis clara, legibilidad y soporte para múltiples paradigmas de programación. Python es ampliamente utilizado en una variedad de campos, incluyendo desarrollo web, análisis de datos, cómputo científico, inteligencia artificial, aprendizaje automático y más. La extensa biblioteca estándar y los módulos de terceros de Python hacen que sea fácil para los desarrolladores construir aplicaciones rápidamente y automatizar tareas. ",
+      "djangoDesc": "Django es un framework web de alto nivel de Python que permite a los desarrolladores construir rápidamente aplicaciones web con un código limpio y reutilizable. Proporciona un conjunto de herramientas y características potentes, como un sistema de mapeo objeto-relacional (ORM), autenticación de usuario integrada, interfaz de administración, enrutamiento de URL y motor de plantillas, que ayudan a los desarrolladores a desarrollar aplicaciones web complejas de manera rápida y eficiente. Django sigue el patrón arquitectónico Modelo-Vista-Controlador (MVC) y enfatiza el principio de 'No te repitas', que anima a los desarrolladores a escribir código que sea reutilizable y fácil de mantener. Django se utiliza ampliamente en una variedad de industrias, incluyendo comercio electrónico, redes sociales y sistemas de gestión de contenidos. Además, Django tiene una comunidad grande y activa de desarrolladores que contribuyen a su desarrollo, crean nuevos paquetes y extensiones y brindan soporte a otros desarrolladores. En resumen, Django es un framework web potente y flexible que simplifica el proceso de construir aplicaciones web complejas con un código limpio y reutilizable.",
+      "postgresqlDesc": "PostgreSQL es un sistema de gestión de bases de datos relacionales de código abierto y de alto rendimiento. Es conocido por su confiabilidad, estabilidad y capacidad para manejar grandes cantidades de datos. PostgreSQL utiliza el lenguaje SQL para manejar la interacción con la base de datos, pero también ofrece características avanzadas, como soporte para transacciones ACID (Atomicidad, Consistencia, Aislamiento y Durabilidad), consultas complejas, triggers, procedimientos almacenados, índices de texto completo y muchas otras características que lo hacen una opción popular para aplicaciones empresariales y de misión crítica. PostgreSQL es multiplataforma y está disponible en una amplia variedad de sistemas operativos, incluyendo Linux, macOS y Windows. También cuenta con una gran comunidad de desarrolladores que contribuyen a su desarrollo y brindan soporte y documentación. En resumen, PostgreSQL es una base de datos relacional de código abierto, robusta y altamente escalable, que es adecuada para una amplia variedad de aplicaciones de bases de datos empresariales y de alto rendimiento.",
+      "mongodbDesc": "MongoDB es una base de datos NoSQL orientada a documentos, diseñada para ofrecer flexibilidad y escalabilidad. Almacena los datos en colecciones de documentos en lugar de en filas y columnas tradicionales, lo que permite una gestión más fácil de datos no estructurados y modelos de datos más flexibles. MongoDB es conocida por su capacidad para manejar grandes cantidades de datos y su alto rendimiento tanto para operaciones de lectura como de escritura. Admite una variedad de lenguajes de programación y tiene un modelo de datos flexible que permite cambios y actualizaciones de esquema fáciles. MongoDB también proporciona características como el particionamiento automático, la replicación y la indexación para garantizar una alta disponibilidad y escalabilidad. En resumen, MongoDB es una base de datos NoSQL flexible, escalable y de alto rendimiento ideal para la gestión de datos no estructurados y para soportar modelos de datos complejos.",
+      "mysqlDesc": "MySQL es un popular sistema de gestión de bases de datos relacionales (RDBMS, por sus siglas en inglés) de código abierto que se utiliza ampliamente en aplicaciones web y otros tipos de software. Utiliza un lenguaje de consulta estructurado (SQL) para gestionar bases de datos relacionales, donde los datos se almacenan en tablas compuestas por filas y columnas. MySQL es conocido por su facilidad de uso, confiabilidad y escalabilidad, y a menudo se utiliza como una base de datos de back-end para aplicaciones web. Proporciona una variedad de funciones, como control de acceso multiusuario, procedimientos almacenados, disparadores y vistas, lo que lo convierte en un sistema de gestión de bases de datos flexible y potente. MySQL es compatible con una variedad de lenguajes de programación y plataformas y cuenta con una gran y activa comunidad de código abierto. En resumen, MySQL es un sistema de gestión de bases de datos relacionales popular, confiable y escalable que se utiliza ampliamente en aplicaciones web y otros tipos de software.",
+      "sqliteDesc": "SQLite es un sistema de gestión de bases de datos relacional de código abierto y ligero que se utiliza ampliamente en dispositivos integrados y aplicaciones con niveles de tráfico bajos a medios. Proporciona una huella de memoria pequeña y no requiere configuración ni administración, lo que lo convierte en una opción popular para aplicaciones móviles, software de escritorio, navegadores web y otros productos de software. SQLite admite la sintaxis SQL estándar y ofrece un conjunto de características como soporte para transacciones, cumplimiento ACID y tipificación de datos fuerte. Su naturaleza autocontenido también lo hace fácil de implementar y mantener. SQLite es una opción popular entre los desarrolladores debido a su facilidad de uso, portabilidad y confiabilidad.",
+      "npmBeDesc": "",
+      "nodemailerDesc": "Nodemailer es un popular módulo de código abierto para Node.js que simplifica la tarea de enviar correos electrónicos desde una aplicación Node.js. Proporciona una API simple para enviar correos electrónicos con características como adjuntos, contenido HTML e imágenes en línea. Nodemailer admite una variedad de servicios de correo electrónico, incluidos Gmail, Outlook, Yahoo y muchos más. También proporciona opciones de configuración y autenticación personalizadas, lo que lo convierte en una opción versátil para enviar correos electrónicos desde aplicaciones Node.js. Con su extensa documentación y comunidad activa, Nodemailer es una solución confiable y ampliamente utilizada para el manejo de correos electrónicos en aplicaciones Node.js.",
+      "mailtrapDesc": "",
+      "restDesc": "",
+      "httpDesc": "",
+      "postmanDesc": "",
+      "jwtDesc": "",
+      "pycharmDesc": "",
+      "herokuDesc": "",
+      "firebaseBeDesc": "",
+      "railwayDesc": "",
+      "cpanelDesc": ""
+    
+    
     }
   },
   "contact": {

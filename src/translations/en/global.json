@@ -43,9 +43,12 @@
         "downloadResume": "DOWNLOAD MY RESUME"
     },
     "skills": {
-        "title": "SKILLS AND CERTIFICATIONS",
-        "hardSkills": "\"FRONT-END\" SKILLS",
-        "softSkills": "\"BACK-END\" SKILLS",
+        "title": "MY TOOL BOX AND CERTIFICATIONS",
+        "hardSkills": "HARD SKILLS",
+        "softSkills": "SOFT SKILLS",
+        "mySoftSkills": "MY SOFT SKILLS",
+        "frontendTools": "MY \"FRONT-END\" TOOLS ",
+        "backendTools": "MY \"BACK-END\" TOOLS",
         "certificates":"CERTIFICATIONS",
         "learning": "MY APPROX. EXPERTISE",
         "whatIsIt": "WHAT IS "     
@@ -75,11 +78,30 @@
              "netlifyCat": "CLOUD-BASED WEB DEVELOPMENT PLATFORMS",
              "firebaseCat": "BACKEND-AS-A-SERVICE (BAAS) PLATFORMS",
              "gdtCat": "WEB DEVELOPMENT TOOLS",
-             "gscCat": ""
+             "gscCat": "SEARCH ENGINE OPTIMIZATION (SEO) TOOLS"
     
         },
         "be":{
-
+            "nodeCat": "SERVER-SIDE DEVELOPMENT",
+            "expressCat": "BACK-END WEB DEVELOPMENT",
+            "pythonCat": "VERSATILE PROGRAMMING LANGUAGE",
+            "djangoCat": "BACK-END WEB DEVELOPMENT",
+            "postgresqlCat": "RELATIONAL DATABASE MANAGEMENT SYSTEM (RDBMS)",
+            "mongodbCat": "NOSQL DATABASES",
+            "mysqlCat": "RELATIONAL DATABASE MANAGEMENT SYSTEM (RDBMS)",
+            "sqliteCat": "RELATIONAL DATABASE MANAGEMENT SYSTEMS (RDBMS)",
+            "npmBeCat": "",
+            "nodemailerCat": "EMAIL SENDING LIBRARIES FOR NODE.JS",
+            "mailtrapCat": "",
+            "restCat": "",
+            "httpCat": "",
+            "postmanCat": "",
+            "jwtCat": "",
+            "pycharmCat": "",
+            "herokuCat": "",
+            "firebaseBeCat": "",
+            "railwayCat": "",
+            "cpanelCat": ""
         }
         
     },
@@ -109,10 +131,29 @@
             "netlifyTech": "CLOUD-BASED WEB DEVELOPMENT PLATFORM FOR BUILDING AND DEPLOYING STATIC WEBSITES AND WEB APPLICATIONS",
             "firebaseTech": "CLOUD-BASED BACKEND-AS-A-SERVICE (BAAS) PLATFORM FOR DEVELOPING AND DEPLOYING MOBILE AND WEB APPLICATIONS",
             "gdtTech": "SET OF DEBUGGING AND PROFILING TOOLS BUILT INTO THE GOOGLE CHROME BROWSER FOR WEB DEVELOPMENT AND DESIGN.",
-            "gscTech": ""
+            "gscTech": "WEB-BASED SEARCH ENGINE OPTIMIZATION (SEO) TOOL OFFERED BY GOOGLE"
         },
         "be":{
-            
+            "nodeTech": "SERVER-SIDE JAVASCRIPT RUNTIME ENVIRONMENT",
+            "expressTech": "WEB FRAMEWORK FOR NODE.JS",
+            "pythonTech":"HIGH-LEVEL PROGRAMMING LANGUAGE",
+            "djangoTech": "HIGH-LEVEL WEB FRAMEWORK FOR PYTHON",
+            "postgresqlTech": "OPEN-SOURCE RELATIONAL DATABASE",
+            "mongodbTech": "NOSQL DOCUMENT-ORIENTED DATABASE",
+            "mysqlTech": "OPEN-SOURCE RELATIONAL DATABASE",
+            "sqliteTech": "LIGHTWEIGHT RELATIONAL DATABASE MANAGEMENT SYSTEM",
+            "npmBeTech": "",
+            "nodemailerTech": "NODE.JS LIBRARY FOR SENDING EMAILS",
+            "mailtrapTech": "",
+            "restTech": "",
+            "httpTech": "",
+            "postmanTech": "",
+            "jwtTech": "",
+            "pycharmTech": "",
+            "herokuTech": "",
+            "firebaseBeTech": "",
+            "railwayTech": "",
+            "cpanelTech": ""
         }
     },
     "techDescription": {
@@ -141,11 +182,30 @@
             "netlifyDesc": "Netlify is a cloud-based web development platform that offers a wide range of tools and services for building, deploying, and managing modern web projects. It provides developers with a powerful and easy-to-use platform for building and deploying static websites and web applications, as well as more complex dynamic applications using serverless functions and APIs. With Netlify, developers can automate their workflows, collaborate with team members, and integrate with a variety of third-party services to streamline their development process. The platform also includes advanced features such as continuous deployment, instant rollbacks, and detailed analytics, making it an ideal choice for modern web development projects.",
             "firebaseDesc": "Firebase is a mobile and web development platform that provides a wide range of tools and services for building, managing, and scaling applications. It offers features such as authentication, real-time databases, cloud storage, hosting, and analytics, all of which can be easily integrated into mobile and web applications. Firebase provides a scalable infrastructure and a simple API, allowing developers to focus on building great user experiences instead of worrying about server management or infrastructure maintenance. It also provides a range of SDKs and libraries for a variety of platforms and programming languages, making it an ideal choice for building cross-platform applications. Overall, Firebase is a powerful and easy-to-use platform for building modern, high-performance mobile and web applications.",
             "gdtDesc": "Chrome DevTools is a set of web developer tools built directly into the Google Chrome browser. It allows developers to debug and optimize web pages on the client-side of a web application. With DevTools, developers can inspect and modify HTML and CSS, analyze network performance, debug JavaScript code, and simulate various mobile device viewports. It provides a real-time view of the rendered web page with tools to interactively debug and profile a web page. The performance analysis features can help developers diagnose performance problems and provide suggestions for improving page load times. Additionally, Chrome DevTools can be extended with custom plugins and extensions, making it a versatile and powerful tool for web developers. Its features make it an indispensable tool for web developers who want to build and optimize websites and web applications.",
-            "gscDesc": ""
+            "gscDesc": "Google Search Console is a free web service provided by Google that allows website owners to monitor and manage their website's presence in Google search results. With tools to analyze search traffic, view how their website appears in search results, identify technical issues that may be affecting their search rankings, and submit new content for Google to crawl and index, website owners can optimize their website's performance in search results and improve its visibility online."
         
         },
         "be":{
-            "nodeDesc": ""
+            "nodeDesc": "Node.js is a free, open-source, cross-platform JavaScript runtime environment that allows developers to build scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, and it is built on the V8 JavaScript engine used by Google Chrome. With Node.js, developers can use JavaScript on both the server and client sides of web development, which makes it a popular choice for building web applications, real-time chat applications, and API servers. Node.js also has a vast ecosystem of modules and packages available through its package manager, npm, which makes it easy for developers to add functionality to their applications without having to reinvent the wheel. Additionally, Node.js has a thriving community that provides support and resources for developers.",
+            "expressDesc": "Express.js, also known simply as Express, is a Node.js framework used for building web applications. Express provides a range of features and tools to facilitate web application development, including handling routes, managing HTTP requests and responses, managing sessions and cookies, and integrating template engines for generating dynamic HTML views. Express also easily integrates with other Node.js packages, allowing developers to easily add new features and functionalities to their applications. Additionally, Express is extremely flexible and scalable, making it ideal for building web applications of all types and sizes, from small single-page applications to complex, scalable enterprise applications. In summary, Express is one of the most popular and versatile frameworks for web application development in Node.js.",
+            "pythonDesc":"Python is a high-level, interpreted programming language that is known for its simplicity, ease of use, and versatility. Developed in the late 1980s, Python is an open-source language that has gained popularity due to its clear syntax, readability, and support for multiple programming paradigms. Python is widely used in a variety of fields, including web development, data analysis, scientific computing, artificial intelligence, machine learning, and more. Python's extensive standard library and third-party modules make it easy for developers to quickly build applications and automate tasks. Additionally, Python's popularity has resulted in a large and active community that contributes to its development, creates new libraries, and provides support to other developers. In summary, Python is a powerful and flexible programming language that is used in many fields and has a strong and supportive community.",
+            "djangoDesc": "Django is a high-level Python web framework that enables developers to quickly build web applications with clean, reusable code. It provides a set of powerful tools and features such as an Object-Relational Mapping (ORM) system, built-in user authentication, admin interface, URL routing, and template engine, which help developers to develop complex web applications quickly and efficiently. Django follows the Model-View-Controller (MVC) architectural pattern and emphasizes the Don't Repeat Yourself (DRY) principle, which encourages developers to write code that is reusable and easy to maintain. Django is widely used in a variety of industries, including e-commerce, social networking, and content management systems. Additionally, Django has a large and active community of developers who contribute to its development, create new packages and extensions, and provide support to other developers. In summary, Django is a powerful and flexible web framework that simplifies the process of building complex web applications with clean, reusable code.",
+            "postgresqlDesc": "PostgreSQL is an open-source, high-performance relational database management system. It is known for its reliability, stability, and ability to handle large amounts of data. PostgreSQL uses SQL language to handle interaction with the database, but it also offers advanced features such as support for ACID transactions (Atomicity, Consistency, Isolation, and Durability), complex queries, triggers, stored procedures, full-text indexing, and many other features that make it a popular choice for enterprise and mission-critical applications. PostgreSQL is cross-platform and is available on a wide variety of operating systems, including Linux, macOS, and Windows. It also has a large developer community that contributes to its development and provides support and documentation. In summary, PostgreSQL is a robust and highly scalable open-source relational database that is suitable for a wide variety of enterprise and high-performance database applications.",
+            "mongodbDesc": "MongoDB is a NoSQL, document-oriented database that is designed for flexibility and scalability. It stores data in collections of documents, rather than in traditional rows and columns. This allows for easier management of unstructured data and more flexible data models. MongoDB is known for its ability to handle large amounts of data and its high performance for both read and write operations. It supports a range of programming languages and has a flexible data model that allows for easy changes and updates to the schema. MongoDB also provides features such as automatic sharding, replication, and indexing to help ensure high availability and scalability. In summary, MongoDB is a flexible, scalable, and high-performance NoSQL database that is ideal for managing unstructured data and supporting complex data models.",
+            "mysqlDesc": "MySQL is a popular open-source relational database management system (RDBMS) that is widely used for web applications and other software. It uses a structured query language (SQL) to manage relational databases, where data is stored in tables consisting of rows and columns. MySQL is known for its ease of use, reliability, and scalability, and is often used as a back-end database for web applications. It provides a variety of features such as multi-user access control, stored procedures, triggers, and views, making it a flexible and powerful database management system. MySQL is compatible with a range of programming languages and platforms and is supported by a large and active open-source community. In summary, MySQL is a popular, reliable, and scalable relational database management system that is widely used for web applications and other software.",
+            "sqliteDesc": "SQLite is a lightweight, open-source relational database management system that is widely used in embedded devices and applications with low to medium levels of traffic. It provides a small memory footprint and requires no configuration or administration, making it a popular choice for mobile applications, desktop software, web browsers, and other software products. SQLite supports the standard SQL syntax and provides a rich set of features such as transaction support, ACID compliance, and strong data typing. Its self-contained nature also makes it easy to deploy and maintain. SQLite is a popular choice among developers due to its ease of use, portability, and reliability.",
+            "npmBeDesc": "",
+            "nodemailerDesc": "Nodemailer is a popular open-source module for Node.js that simplifies the task of sending emails from a Node.js application. It provides a simple API for sending emails with features such as attachments, HTML content, and inline images. Nodemailer supports a variety of email services, including Gmail, Outlook, Yahoo, and many more. It also provides options for custom configuration and authentication, making it a versatile choice for sending emails from Node.js applications. With its extensive documentation and active community, Nodemailer is a reliable and widely used solution for email handling in Node.js applications.",
+            "mailtrapDesc": "",
+            "restDesc": "",
+            "httpDesc": "",
+            "postmanDesc": "",
+            "jwtDesc": "",
+            "pycharmDesc": "",
+            "herokuDesc": "",
+            "firebaseBeDesc": "",
+            "railwayDesc": "",
+            "cpanelDesc": ""
         }
     },
     "contact":{
