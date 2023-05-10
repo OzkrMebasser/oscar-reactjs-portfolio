@@ -100,14 +100,15 @@ const Skills = (props) => {
                                 </Card.Text>
                                 {t(`${skill.description}`)}
                                 <br />
-                                <button className="">
+                                <button className="docsBtn">
                                   <a
                                     className="noUnderline"
                                     href={`${skill.docs}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                   >
-                                    Read Docs.
+                                    Read Docs. 
+                                    <img className="docsLink" src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fbooks-svgrepo-com%20(1).svg?alt=media&token=03a80306-1366-4ba7-ad3a-e7368d1ff0c9" alt="docs" />
                                   </a>
                                 </button>
                               </Card.Text>
@@ -192,14 +193,15 @@ const Skills = (props) => {
                                 </Card.Text>
                                 {t(`${skill.description}`)}
                                 <br />
-                                <button className="">
+                                <button className="docsBtn">
                                   <a
                                     className="noUnderline"
                                     href={`${skill.docs}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                   >
-                                    Read Docs.
+                                    Read Docs. 
+                                    <img className="docsLink" src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fbooks-svgrepo-com%20(1).svg?alt=media&token=03a80306-1366-4ba7-ad3a-e7368d1ff0c9" alt="docs" />
                                   </a>
                                 </button>
                               </Card.Text>

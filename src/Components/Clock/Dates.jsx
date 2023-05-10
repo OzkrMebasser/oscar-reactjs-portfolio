@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import "../../pages/Home/Home.css";
 
 function Dates() {
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
   const dates = t("dates.getDate");
 
   const currDate = new Date().toLocaleDateString(`${dates}`, {

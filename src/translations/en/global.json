@@ -92,16 +92,16 @@
             "sqliteCat": "RELATIONAL DATABASE MANAGEMENT SYSTEMS (RDBMS)",
             "npmBeCat": "",
             "nodemailerCat": "EMAIL SENDING LIBRARIES FOR NODE.JS",
-            "mailtrapCat": "",
-            "restCat": "",
-            "httpCat": "",
-            "postmanCat": "",
-            "jwtCat": "",
-            "pycharmCat": "",
-            "herokuCat": "",
+            "mailtrapCat": "EMAIL TESTING AND DEBUGGING TOOLS",
+            "restCat": "WEB ARCHITECTURE STYLE",
+            "httpCat": "APPLICATION LAYER PROTOCOLS IN THE OSI MODEL",
+            "postmanCat": " API DEVELOPMENT AND TESTING TOOLS",
+            "jwtCat": "AUTHENTICATION AND AUTHORIZATION TECHNOLOGIES",
+            "pycharmCat": "INTEGRATED DEVELOPMENT ENVIRONMENT (IDE) SOFTWARE",
+            "herokuCat": "PLATFORM AS A SERVICE (PAAS)",
             "firebaseBeCat": "",
-            "railwayCat": "",
-            "cpanelCat": ""
+            "railwayCat": "PLATFORM-AS-A-SERVICE (PAAS)",
+            "cpanelCat": "WEB HOSTING CONTROL PANELS"
         }
         
     },
@@ -144,16 +144,16 @@
             "sqliteTech": "LIGHTWEIGHT RELATIONAL DATABASE MANAGEMENT SYSTEM",
             "npmBeTech": "",
             "nodemailerTech": "NODE.JS LIBRARY FOR SENDING EMAILS",
-            "mailtrapTech": "",
-            "restTech": "",
-            "httpTech": "",
-            "postmanTech": "",
-            "jwtTech": "",
-            "pycharmTech": "",
-            "herokuTech": "",
+            "mailtrapTech": "CLOUD-BASED EMAIL TESTING AND DEBUGGING TOOL",
+            "restTech": "WEB ARCHITECTURAL STYLE FOR CREATING WEB SERVICES",
+            "httpTech": "PROTOCOL FOR COMMUNICATION BETWEEN WEB SERVERS AND CLIENTS",
+            "postmanTech": "API DEVELOPMENT AND TESTING TOOL",
+            "jwtTech": "TOKEN-BASED AUTHENTICATION TECHNOLOGY",
+            "pycharmTech": "CODE EDITOR AND INTEGRATED DEVELOPMENT ENVIRONMENT (IDE) SOFTWARE FOR PYTHON",
+            "herokuTech": "CLOUD-BASED PLATFORM THAT ALLOWS DEVELOPERS TO BUILD, DEPLOY, AND MANAGE APPLICATIONS EASILY",
             "firebaseBeTech": "",
-            "railwayTech": "",
-            "cpanelTech": ""
+            "railwayTech": "CLOUD-BASED APPLICATION DEVELOPMENT AND DEPLOYMENT PLATFORM.",
+            "cpanelTech": "WEB HOSTING CONTROL PANEL SOFTWARE"
         }
     },
     "techDescription": {
@@ -196,16 +196,16 @@
             "sqliteDesc": "SQLite is a lightweight, open-source relational database management system that is widely used in embedded devices and applications with low to medium levels of traffic. It provides a small memory footprint and requires no configuration or administration, making it a popular choice for mobile applications, desktop software, web browsers, and other software products. SQLite supports the standard SQL syntax and provides a rich set of features such as transaction support, ACID compliance, and strong data typing. Its self-contained nature also makes it easy to deploy and maintain. SQLite is a popular choice among developers due to its ease of use, portability, and reliability.",
             "npmBeDesc": "",
             "nodemailerDesc": "Nodemailer is a popular open-source module for Node.js that simplifies the task of sending emails from a Node.js application. It provides a simple API for sending emails with features such as attachments, HTML content, and inline images. Nodemailer supports a variety of email services, including Gmail, Outlook, Yahoo, and many more. It also provides options for custom configuration and authentication, making it a versatile choice for sending emails from Node.js applications. With its extensive documentation and active community, Nodemailer is a reliable and widely used solution for email handling in Node.js applications.",
-            "mailtrapDesc": "",
-            "restDesc": "",
-            "httpDesc": "",
-            "postmanDesc": "",
-            "jwtDesc": "",
-            "pycharmDesc": "",
-            "herokuDesc": "",
+            "mailtrapDesc": "Mailtrap is a cloud-based email testing tool that allows developers and testers to test their email sending capabilities without the risk of sending actual emails to real recipients. It provides a simulated SMTP server that intercepts and stores test emails, allowing users to preview them before sending them to production. Mailtrap also offers features such as email tracking, team collaboration, and integration with popular email service providers. With its user-friendly interface and robust features, Mailtrap is a popular choice for email testing in development and quality assurance environments.",
+            "restDesc": "REST (Representational State Transfer) is a web architecture style that defines a set of principles for creating web services. REST is designed to allow clients to communicate with servers in a stateless manner, meaning that each request from the client contains all of the information necessary to complete the request, and the server does not maintain any state between requests. RESTful web services are built using HTTP methods (GET, POST, PUT, DELETE) to perform operations on resources identified by URIs (Uniform Resource Identifiers). The goal of REST is to provide a simple, lightweight, and scalable architecture for building web services that can be easily integrated with other systems. ",
+            "httpDesc": "HTTP, or Hypertext Transfer Protocol, is a widely-used protocol that enables communication between web browsers and web servers. It is the foundation of the World Wide Web and allows for the exchange of various types of data, such as HTML documents, images, videos, and other multimedia content. When a user requests a webpage through their web browser, the browser sends an HTTP request to the server, and the server responds with an HTTP response that includes the requested content. HTTP is a stateless protocol, meaning that each request and response is independent of any previous requests and responses. However, it also supports mechanisms for maintaining state, such as cookies and session management. HTTP has undergone several versions, with HTTP/1.1 being the most widely used. HTTP/2, which is a major revision of the protocol, provides faster and more efficient communication between clients and servers, and is becoming increasingly popular.",
+            "postmanDesc": "POSTMAN is a popular software tool used for testing and developing web-based APIs (Application Programming Interfaces). It provides an intuitive user interface for making HTTP requests to a server, allowing developers to easily test and debug their APIs. POSTMAN supports a wide range of HTTP methods like GET, POST, PUT, DELETE, and more, and allows users to easily inspect and manipulate the response data. It also offers features like automated testing, scripting, and documentation generation, making it a comprehensive tool for API development. POSTMAN is widely used by developers, testers, and other stakeholders in the API development process to ensure high-quality APIs that meet the needs of end-users.",
+            "jwtDesc": "JWT (JSON Web Token) is a standard for securely transmitting information between parties as a JSON object. It is commonly used for authentication and authorization purposes in web-based applications. A JWT consists of three parts: a header, a payload, and a signature. The header contains information about the type of token and the algorithm used to sign it, while the payload contains claims or statements about the user or client making the request. The signature is used to verify the authenticity of the token and prevent tampering. JWT is widely used due to its flexibility, statelessness, and ease of use, and is supported by many programming languages and frameworks.",
+            "pycharmDesc": "PyCharm is a popular integrated development environment (IDE) used for programming in Python. Developed by JetBrains, PyCharm provides a wide range of features that enable developers to create high-quality code efficiently. These features include code completion, debugging, syntax highlighting, refactoring, and integration with version control systems like Git. PyCharm also supports various Python frameworks and libraries, such as Django, Flask, and NumPy, among others. It comes in both free and paid versions, with the latter offering more advanced features like remote development and database tools. PyCharm is widely used by both beginners and experienced developers and has become a go-to tool for Python development.",
+            "herokuDesc": "Heroku is a cloud-based platform that allows developers to deploy, manage, and scale applications quickly and easily. It supports a wide range of programming languages and frameworks, including Ruby, Node.js, Python, and Java, among others. With Heroku, developers can deploy their applications to a scalable and reliable infrastructure, with automatic scaling and load balancing capabilities built in. The platform also provides a range of add-ons and tools for application monitoring, logging, and error reporting, making it easier to manage and troubleshoot applications. Heroku also supports a range of deployment options, including Git-based deployment, continuous integration and delivery, and Docker containerization, making it an ideal choice for a wide range of application development workflows. Overall, Heroku is a powerful and flexible platform for modern application development and deployment.",
             "firebaseBeDesc": "",
-            "railwayDesc": "",
-            "cpanelDesc": ""
+            "railwayDesc": "RAILWAY.APP is an online platform that enables developers to quickly and easily create and deploy cloud-based applications. By leveraging container technologies, infrastructure automation, and integration with popular cloud providers, Railway.app offers a convenient way to build, scale, and manage applications in a unified online environment. With an intuitive user interface and a powerful set of tools, Railway.app is an attractive option for those seeking an efficient and agile solution for application development and deployment. Whether it's deploying a new app, setting up a testing environment, or integrating with popular development frameworks, Railway.app provides a streamlined platform for developers to focus on building great software without worrying about the underlying infrastructure.",
+            "cpanelDesc": "CPanel is a web-based control panel that provides a graphical interface and automation tools to simplify the process of hosting and managing websites. It allows website owners and administrators to easily manage their web hosting account, including creating and managing email accounts, setting up and managing databases, and managing files and directories. cPanel also provides a range of tools for website management, including site backups, security features, and one-click software installation, making it easy to manage and update websites. Additionally, cPanel provides a range of analytics and metrics to help website owners understand and optimize their website's performance. Overall, cPanel is a powerful and user-friendly tool for managing web hosting and website management tasks."
         }
     },
     "contact":{

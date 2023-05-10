@@ -118,16 +118,16 @@
       "sqliteCat": "SISTEMAS DE GESTIÓN DE BASES DE DATOS RELACIONALES (RDBMS)",
       "npmBeCat": "",
       "nodemailerCat": "BIBLIOTECAS DE ENVÍO DE CORREO ELECTRÓNICO PARA NODE.JS",
-      "mailtrapCat": "",
-      "restCat": "",
-      "httpCat": "",
-      "postmanCat": "",
-      "jwtCat": "",
-      "pycharmCat": "",
-      "herokuCat": "",
+      "mailtrapCat": "HERRAMIENTAS DE PRUEBAS Y DEPURACIÓN DE CORREO ELECTRÓNICO",
+      "restCat": "ESTILO DE ARQUITECTURA WEB",
+      "httpCat": "PROTOCOLOS DE CAPA DE APLICACIÓN EN EL MODELO OSI",
+      "postmanCat": "HERRAMIENTAS DE DESARROLLO Y PRUEBAS DE APIS",
+      "jwtCat": "TECNOLOGÍAS DE AUTENTICACIÓN Y AUTORIZACIÓN",
+      "pycharmCat": "SOFTWARE DE ENTORNO DE DESARROLLO INTEGRADO (IDE)",
+      "herokuCat": "PLATAFORMA COMO SERVICIO (PAAS)",
       "firebaseBeCat": "",
-      "railwayCat": "",
-      "cpanelCat": ""
+      "railwayCat": " PLATAFORMA COMO SERVICIO (PAAS)",
+      "cpanelCat": "PANELES DE CONTROL DE ALOJAMIENTO WEB"
   }
 
   },
@@ -170,16 +170,16 @@
       "sqliteTech": "SISTEMA DE GESTIÓN DE BASES DE DATOS RELACIONALES LIGERO",
       "npmBeTech": "",
       "nodemailerTech": "BIBLIOTECA DE NODE.JS PARA ENVIAR CORREOS ELECTRÓNICOS",
-      "mailtrapTech": "",
-      "restTech": "",
-      "httpTech": "",
-      "postmanTech": "",
-      "jwtTech": "",
-      "pycharmTech": "",
-      "herokuTech": "",
+      "mailtrapTech": "HERRAMIENTA DE PRUEBAS Y DEPURACIÓN DE CORREO ELECTRÓNICO BASADA EN LA NUBE",
+      "restTech": "ESTILO DE ARQUITECTURA WEB PARA CREAR SERVICIOS WEB",
+      "httpTech": "PROTOCOLO PARA LA COMUNICACIÓN ENTRE SERVIDORES WEB Y CLIENTES",
+      "postmanTech": "HERRAMIENTA DE DESARROLLO Y PRUEBAS DE APIS",
+      "jwtTech": "TECNOLOGÍA DE AUTENTICACIÓN BASADA EN TOKENS",
+      "pycharmTech": "SOFTWARE DE EDITOR DE CÓDIGO Y ENTORNO DE DESARROLLO INTEGRADO (IDE) PARA PYTHON",
+      "herokuTech": "PLATAFORMA EN LA NUBE QUE PERMITE A LOS DESARROLLADORES CONSTRUIR, DESPLEGAR Y GESTIONAR APLICACIONES FÁCILMENTE",
       "firebaseBeTech": "",
-      "railwayTech": "",
-      "cpanelTech": ""
+      "railwayTech": "PLATAFORMA DE DESARROLLO Y DESPLIEGUE DE APLICACIONES EN LA NUBE",
+      "cpanelTech": "SOFTWARE DE PANEL DE CONTROL DE ALOJAMIENTO WEB"
     }
   },
   "techDescription": {
@@ -221,16 +221,16 @@
       "sqliteDesc": "SQLite es un sistema de gestión de bases de datos relacional de código abierto y ligero que se utiliza ampliamente en dispositivos integrados y aplicaciones con niveles de tráfico bajos a medios. Proporciona una huella de memoria pequeña y no requiere configuración ni administración, lo que lo convierte en una opción popular para aplicaciones móviles, software de escritorio, navegadores web y otros productos de software. SQLite admite la sintaxis SQL estándar y ofrece un conjunto de características como soporte para transacciones, cumplimiento ACID y tipificación de datos fuerte. Su naturaleza autocontenido también lo hace fácil de implementar y mantener. SQLite es una opción popular entre los desarrolladores debido a su facilidad de uso, portabilidad y confiabilidad.",
       "npmBeDesc": "",
       "nodemailerDesc": "Nodemailer es un popular módulo de código abierto para Node.js que simplifica la tarea de enviar correos electrónicos desde una aplicación Node.js. Proporciona una API simple para enviar correos electrónicos con características como adjuntos, contenido HTML e imágenes en línea. Nodemailer admite una variedad de servicios de correo electrónico, incluidos Gmail, Outlook, Yahoo y muchos más. También proporciona opciones de configuración y autenticación personalizadas, lo que lo convierte en una opción versátil para enviar correos electrónicos desde aplicaciones Node.js. Con su extensa documentación y comunidad activa, Nodemailer es una solución confiable y ampliamente utilizada para el manejo de correos electrónicos en aplicaciones Node.js.",
-      "mailtrapDesc": "",
-      "restDesc": "",
-      "httpDesc": "",
-      "postmanDesc": "",
-      "jwtDesc": "",
-      "pycharmDesc": "",
-      "herokuDesc": "",
+      "mailtrapDesc": "Mailtrap es una herramienta de prueba de correo electrónico basada en la nube que permite a desarrolladores y probadores probar sus capacidades de envío de correo electrónico sin el riesgo de enviar correos electrónicos reales a destinatarios reales. Proporciona un servidor SMTP simulado que intercepta y almacena correos electrónicos de prueba, permitiendo a los usuarios previsualizarlos antes de enviarlos a producción. Mailtrap también ofrece características como seguimiento de correo electrónico, colaboración en equipo e integración con proveedores de servicios de correo electrónico populares. Con su interfaz fácil de usar y sus características robustas, Mailtrap es una opción popular para pruebas de correo electrónico en entornos de desarrollo y aseguramiento de calidad.",
+      "restDesc": "REST (Representational State Transfer) es un estilo de arquitectura web que define un conjunto de principios para crear servicios web. REST está diseñado para permitir que los clientes se comuniquen con los servidores de una manera sin estado, lo que significa que cada solicitud del cliente contiene toda la información necesaria para completar la solicitud y el servidor no mantiene ningún estado entre solicitudes. Los servicios web RESTful se construyen utilizando métodos HTTP (GET, POST, PUT, DELETE) para realizar operaciones en recursos identificados por URI (Identificadores Uniformes de Recursos). El objetivo de REST es proporcionar una arquitectura simple, ligera y escalable para construir servicios web que puedan integrarse fácilmente con otros sistemas.",
+      "httpDesc": "HTTP, o Protocolo de Transferencia de Hipertexto, es un protocolo ampliamente utilizado que permite la comunicación entre navegadores web y servidores web. Es la base de la World Wide Web y permite el intercambio de varios tipos de datos, como documentos HTML, imágenes, videos y otro contenido multimedia. Cuando un usuario solicita una página web a través de su navegador web, el navegador envía una solicitud HTTP al servidor, y el servidor responde con una respuesta HTTP que incluye el contenido solicitado. HTTP es un protocolo sin estado, lo que significa que cada solicitud y respuesta es independiente de cualquier solicitud y respuesta anterior. Sin embargo, también admite mecanismos para mantener el estado, como cookies y la gestión de sesiones. HTTP ha pasado por varias versiones, siendo HTTP/1.1 la más utilizada. HTTP/2, que es una revisión importante del protocolo, proporciona una comunicación más rápida y eficiente entre clientes y servidores, y se está volviendo cada vez más popular",
+      "postmanDesc": "POSTMAN es una popular herramienta de software utilizada para probar y desarrollar APIs (Interfaces de Programación de Aplicaciones) basadas en la web. Proporciona una interfaz de usuario intuitiva para realizar solicitudes HTTP a un servidor, lo que permite a los desarrolladores probar y depurar fácilmente sus APIs. POSTMAN admite una amplia gama de métodos HTTP como GET, POST, PUT, DELETE y más, y permite a los usuarios inspeccionar y manipular fácilmente los datos de respuesta. También ofrece funciones como pruebas automatizadas, scripting y generación de documentación, lo que la convierte en una herramienta completa para el desarrollo de APIs. POSTMAN es ampliamente utilizado por desarrolladores, probadores y otras partes interesadas en el proceso de desarrollo de APIs para garantizar APIs de alta calidad que satisfagan las necesidades de los usuarios finales.",
+      "jwtDesc": "JWT (JSON Web Token) es un estándar para transmitir información de forma segura entre partes como un objeto JSON. Se utiliza comúnmente para fines de autenticación y autorización en aplicaciones basadas en la web. Un JWT consta de tres partes: un encabezado, una carga útil y una firma. El encabezado contiene información sobre el tipo de token y el algoritmo utilizado para firmarlo, mientras que la carga útil contiene afirmaciones o declaraciones sobre el usuario o el cliente que realiza la solicitud. La firma se utiliza para verificar la autenticidad del token y evitar manipulaciones. JWT es ampliamente utilizado debido a su flexibilidad, estado de no conexión y facilidad de uso, y es compatible con muchos lenguajes y marcos de programación.",
+      "pycharmDesc": "PyCharm es un popular entorno de desarrollo integrado (IDE) utilizado para programar en Python. Desarrollado por JetBrains, PyCharm proporciona una amplia gama de funciones que permiten a los desarrolladores crear código de alta calidad de manera eficiente. Estas funciones incluyen completado de código, depuración, resaltado de sintaxis, refactorización e integración con sistemas de control de versiones como Git. PyCharm también admite varios marcos y bibliotecas de Python, como Django, Flask y NumPy, entre otros. Viene en versiones gratuitas y de pago, siendo esta última la que ofrece características más avanzadas como el desarrollo remoto y herramientas de base de datos. PyCharm es ampliamente utilizado tanto por principiantes como por desarrolladores experimentados y se ha convertido en una herramienta imprescindible para el desarrollo de Python.",
+      "herokuDesc": "Heroku es una plataforma en la nube que permite a los desarrolladores implementar, gestionar y escalar aplicaciones de forma rápida y sencilla. Soporta una amplia gama de lenguajes y frameworks de programación, incluyendo Ruby, Node.js, Python y Java, entre otros. Con Heroku, los desarrolladores pueden implementar sus aplicaciones en una infraestructura escalable y confiable, con capacidades de escalado automático y balanceo de carga incorporadas. La plataforma también proporciona una variedad de complementos y herramientas para monitoreo de aplicaciones, registro de eventos y reporte de errores, lo que facilita la gestión y resolución de problemas en las aplicaciones. Heroku también soporta una amplia gama de opciones de implementación, incluyendo implementación basada en Git, integración y entrega continua, y contenerización de Docker, lo que la convierte en una opción ideal para una amplia gama de flujos de trabajo de desarrollo de aplicaciones. En general, Heroku es una plataforma poderosa y flexible para el desarrollo y la implementación de aplicaciones modernas.",
       "firebaseBeDesc": "",
-      "railwayDesc": "",
-      "cpanelDesc": ""
+      "railwayDesc": "RAILWAY.APP es una plataforma en línea que permite a los desarrolladores crear y desplegar aplicaciones en la nube de forma rápida y sencilla. Utilizando tecnologías de contenedores, automatización de infraestructura y la integración con proveedores de nube populares, Railway.app ofrece una manera conveniente de construir, escalar y administrar aplicaciones en un entorno en línea unificado. Con una interfaz de usuario intuitiva y un conjunto de herramientas poderosas, Railway.app es una opción atractiva para aquellos que buscan una solución eficiente y ágil para el desarrollo y despliegue de aplicaciones.",
+      "cpanelDesc": "CPanel es un panel de control basado en web que proporciona una interfaz gráfica y herramientas de automatización para simplificar el proceso de alojamiento y gestión de sitios web. Permite a los propietarios y administradores de sitios web gestionar fácilmente su cuenta de alojamiento web, incluyendo la creación y gestión de cuentas de correo electrónico, la configuración y gestión de bases de datos y la gestión de archivos y directorios. cPanel también proporciona una amplia gama de herramientas para la gestión de sitios web, incluyendo copias de seguridad, funciones de seguridad y la instalación de software con un solo clic, lo que facilita la gestión y actualización de los sitios web. Además, cPanel proporciona una amplia gama de estadísticas y métricas para ayudar a los propietarios de sitios web a comprender y optimizar el rendimiento de su sitio web. En general, cPanel es una herramienta potente y fácil de usar para la gestión de alojamiento web y tareas de gestión de sitios web."
     
     
     }
