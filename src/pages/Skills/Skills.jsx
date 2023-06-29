@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from "react";
-import CertificationsPdf from "../Skills/CertificationsPdf/CertificationsPdf"
+import CertificationsPdf from "../Skills/CertificationsPdf/CertificationsPdf";
+import ScrollToTop from "../../Components/GoUpButton/ScrollToTop";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Accordion from "react-bootstrap/Accordion";
 import { motion } from "framer-motion";
@@ -42,6 +43,7 @@ const Skills = (props) => {
         <Accordion>
           {/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓  FrontEnd tools  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/}
           <Accordion.Item eventKey="0">
+          <ScrollToTop />
             <Accordion.Header className="texts " >
               {t("skills.frontendTools")}{" "}
               <img
