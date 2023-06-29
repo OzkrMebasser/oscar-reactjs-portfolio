@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from "react-dom/client";
 import { I18nextProvider } from 'react-i18next';
+
+import { Worker } from '@react-pdf-viewer/core';
 import i18next from 'i18next';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "/node_modules/flag-icons/css/flag-icons.min.css";
@@ -31,7 +33,8 @@ root.render(
 
   <React.StrictMode>
     <I18nextProvider i18n={i18next}>  
-    <App />
+    <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js"> <App /></Worker>;
+   
     </I18nextProvider>
   </React.StrictMode>
 );

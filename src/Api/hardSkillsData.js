@@ -26,6 +26,7 @@ const categories = {
   firebaseCat: "categories.fe.firebaseCat",
   gdtCat: "categories.fe.gdtCat",
   gscCat: "categories.fe.gscCat",
+  nextJsCat: "categories.fe.nextJsCat",
 
   //  BackEnd Categories  ↓↓↓↓**
   nodeCat: "categories.be.nodeCat",
@@ -76,6 +77,7 @@ const typeOfTech = {
   firebaseTech: "typeOfTech.fe.firebaseTech",
   gdtTech: "typeOfTech.fe.gdtTech",
   gscTech: "typeOfTech.fe.gscTech",
+  nextJsTech: "typeOfTech.fe.nextJsTech",
 
   // BackEnd tools type of
   nodeTech: "typeOfTech.be.nodeTech",
@@ -126,6 +128,7 @@ const techDescription = {
   firebaseDesc: "techDescription.fe.firebaseDesc",
   gdtDesc: "techDescription.fe.gdtDesc",
   gscDesc: "techDescription.fe.gscDesc",
+  nextJsDesc: "techDescription.fe.nextJsDesc",
 
   // Descriptions BackEnd technologies
   nodeDesc: "techDescription.be.nodeDesc",
@@ -411,7 +414,22 @@ export const skillsFE = [
     docs: "https://vercel.com/docs",
   },
   {
+   
     id: 21,
+    icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fnext-js-svgrepo-com.svg?alt=media&token=ac7b37d1-13b5-4c9e-8986-6f6eb1123f31&_gl=1*zbm2m5*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY4NTc2ODcyOS4xMC4xLjE2ODU3Njg3ODkuMC4wLjA.",
+    title: "NEXT JS",
+    alt: "logo",
+    description: `${techDescription.nextJsDesc}`,
+    class: "icons",
+    progress: 70,
+    variant: "success",
+    category: `${categories.nextJsCat}`,
+    typeOfTech: `${typeOfTech.nextJsTech}`,
+    docs: "",
+  },
+
+  {
+    id: 22,
     icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fnetlify-svgrepo-com.svg?alt=media&token=2b403c92-7d50-45d2-b049-20c6f8285a3e",
     title: "NETLIFY",
     alt: "Netlify logo",
@@ -423,8 +441,10 @@ export const skillsFE = [
     typeOfTech: `${typeOfTech.netlifyTech}`,
     docs: "https://docs.netlify.com/",
   },
+  
+
   {
-    id: 22,
+    id: 23,
     icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Ffirebase-svgrepo-com.svg?alt=media&token=ea3cf79a-0fa3-4a32-ae04-89625cdaa904",
     title: "FIREBASE",
     alt: "Firebase logo",
@@ -437,7 +457,7 @@ export const skillsFE = [
     docs: "https://firebase.google.com/docs",
   },
   {
-    id: 23,
+    id: 24,
     icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fchrome-devtools-svgrepo-com.svg?alt=media&token=ceeaf800-4c13-42f4-999b-4a707f920c78",
     title: "CHROME DEV TOOLS",
     alt: "Chrome DevTools logo",
@@ -450,7 +470,7 @@ export const skillsFE = [
     docs: "https://developer.chrome.com/docs/devtools/",
   },
   {
-    id: 24,
+    id: 25,
     icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fgoogle-search-console%20(2).svg?alt=media&token=51a92400-ccab-4c86-8a28-12f818454075",
     title: "GOOGLE SEARCH CONSOLE",
     alt: "Google Search Console logo",
@@ -462,20 +482,7 @@ export const skillsFE = [
     typeOfTech: `${typeOfTech.gscTech}`,
     docs: "https://developers.google.com/search/docs/monitor-debug/search-console-start",
   },
-  {
-    //Esta hay que cambiar
-    id: 25,
-    icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Frest-api-2.svg?alt=media&token=2329c405-f160-4d14-8e71-82b3bb786afe",
-    title: "MOCKINKG",
-    alt: "logo",
-    description: `${techDescription.gscDesc}`,
-    class: "icons",
-    progress: 70,
-    variant: "success",
-    category: `${categories.gscCat}`,
-    typeOfTech: `${typeOfTech.gscTech}`,
-    docs: "",
-  },
+
 ];
 
 export const skillsBE = [

@@ -257,6 +257,7 @@
     transition-delay: 0.2s;
     opacity: 0.2;
     transform: scale(1);
+  
 }
 .ul .li a {
     width: 40px;

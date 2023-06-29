@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from "react";
+import CertificationsPdf from "../Skills/CertificationsPdf/CertificationsPdf"
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Accordion from "react-bootstrap/Accordion";
 import { motion } from "framer-motion";
@@ -41,10 +42,11 @@ const Skills = (props) => {
         <Accordion>
           {/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓  FrontEnd tools  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/}
           <Accordion.Item eventKey="0">
-            <Accordion.Header className="texts">
+            <Accordion.Header className="texts " >
               {t("skills.frontendTools")}{" "}
               <img
-                className="frontEndimg"
+                className="frontEndimg "
+                id="spaceBtwn"
                 src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2Ffrontend.png?alt=media&token=6ce6c9c4-97e2-4e9f-b883-45a9dd5ed0fa"
                 alt="FrontEnd"
               />
@@ -231,45 +233,14 @@ const Skills = (props) => {
             <Accordion.Header className="texts">
               {t("skills.certificates")}
               <img
-                className="backEndimg"
-                src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2Fcertificate-quality-award-education-medal-svgrepo-com.svg?alt=media&token=a8442f16-d766-40fc-b654-9af54ddc6ae0"
-                alt="my certificates"
+                className="certsImg"
+                src="https://www.svgrepo.com/show/263184/graduation-mortarboard.svg"
+                alt="Certifications"
               />
             </Accordion.Header>
 
             <Accordion.Body>
-              <Row xs={1} md={1} fluid className="g-4 texts">
-                {skillsBE.map((skill, id) => (
-                  <Col>
-                    <Card className="cardGrid align-middle">
-                      {/* <span className={skill.class} ><span className="bgBlack">{skill.icon}</span></span> */}
-                      <img
-                        className={skill.class}
-                        src={skill.icon}
-                        alt={skill.alt}
-                      />
-                      <Card.Body>
-                        <Card.Title>{skill.title}</Card.Title>
-                        <Card.Text>{skill.category}</Card.Text>
-                        <Card.Text className="textM">
-                          {skill.description}
-                        </Card.Text>
-                        <strong>
-                          <p className="texts">Aproximate knowledge</p>
-                        </strong>
-                        <ProgressBar
-                          className="texts"
-                          animated
-                          now={skill.progress}
-                          label={`${skill.progress}%`}
-                          variant={skill.variant}
-                          style={{ height: "20px", color: "dark" }}
-                        />
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                ))}
-              </Row>
+            <CertificationsPdf />
             </Accordion.Body>
           </Accordion.Item>
           {/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑  Certifications  ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/}

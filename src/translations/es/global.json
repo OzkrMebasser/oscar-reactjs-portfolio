@@ -105,7 +105,8 @@
       "netlifyCat": "PLATAFORMAS DE DESARROLLO WEB BASADAS EN LA NUBE",
       "firebaseCat": "PLATAFORMAS BACKEND-AS-A-SERVICE (BAAS)",
       "gdtCat": "HERRAMIENTAS DE DESARROLLO WEB",
-      "gscCat": "HERRAMIENTAS DE OPTIMIZACIÓN PARA MOTORES DE BÚSQUEDA (SEO)"
+      "gscCat": "HERRAMIENTAS DE OPTIMIZACIÓN PARA MOTORES DE BÚSQUEDA (SEO)",
+      "nextJsCat": "MARCOS DE DESARROLO WEB"
     },
     "be":{
       "nodeCat": "DESARROLLO LADO DEL SERVIDOR", 
@@ -128,6 +129,7 @@
       "firebaseBeCat": "",
       "railwayCat": " PLATAFORMA COMO SERVICIO (PAAS)",
       "cpanelCat": "PANELES DE CONTROL DE ALOJAMIENTO WEB"
+      
   }
 
   },
@@ -156,7 +158,8 @@
       "netlifyTech": "PLATAFORMA DE DESARROLLO WEB BASADA EN LA NUBE PARA CONSTRUIR E IMPLEMENTAR SITIOS WEB Y APLICACIONES WEB ESTÁTICAS",
       "firebaseTech": "BACKEND-AS-A-SERVICE (BAAS) BASADA EN LA NUBE PARA DESARROLLAR E IMPLEMENTAR APLICACIONES MÓVILES Y WEB",
       "gdtTech": "CONJUNTO DE HERRAMIENTAS DE DEPURACIÓN Y PERFILADO INTEGRADAS EN EL NAVEGADOR GOOGLE CHROME PARA EL DESARROLLO Y DISEÑO WEB",
-      "gscTech": "HERRAMIENTA BASADA EN WEB DE OPTIMIZACIÓN PARA MOTORES DE BÚSQUEDA (SEO) OFRECIDA POR GOOGLE"
+      "gscTech": "HERRAMIENTA BASADA EN WEB DE OPTIMIZACIÓN PARA MOTORES DE BÚSQUEDA (SEO) OFRECIDA POR GOOGLE",
+      "nextJsTech": "TECNOLOGÍA DE DESARROLLO WEB BASADA EN REACT Y NODE.JS"
     },
 
     "be": {
@@ -207,8 +210,9 @@
       "netlifyDesc": "Netlify es una plataforma de desarrollo web en la nube que ofrece una amplia gama de herramientas y servicios para construir, desplegar y gestionar proyectos web modernos. Proporciona a los desarrolladores una plataforma potente y fácil de usar para construir y desplegar sitios web y aplicaciones web estáticas, así como aplicaciones dinámicas más complejas utilizando funciones y API sin servidor. Con Netlify, los desarrolladores pueden automatizar sus flujos de trabajo, colaborar con miembros del equipo e integrarse con una variedad de servicios de terceros para agilizar su proceso de desarrollo. La plataforma también incluye características avanzadas como la implementación continua, el rollback instantáneo y análisis detallados, convirtiéndose en una opción ideal para proyectos de desarrollo web modernos.",
       "firebaseDesc": "Firebase es una plataforma de desarrollo móvil y web que proporciona una amplia gama de herramientas y servicios para construir, gestionar y escalar aplicaciones. Ofrece características como autenticación, bases de datos en tiempo real, almacenamiento en la nube, alojamiento y análisis, que pueden integrarse fácilmente en aplicaciones móviles y web. Firebase proporciona una infraestructura escalable y una API sencilla, lo que permite a los desarrolladores centrarse en la creación de grandes experiencias de usuario en lugar de preocuparse por la gestión del servidor o el mantenimiento de la infraestructura. También ofrece una variedad de SDK y bibliotecas para diferentes plataformas y lenguajes de programación, convirtiéndose en una opción ideal para construir aplicaciones multiplataforma. En general, Firebase es una plataforma potente y fácil de usar para construir aplicaciones móviles y web modernas y de alto rendimiento.",
       "gdtDesc": "Chrome DevTools es un conjunto de herramientas de desarrollo web integradas en el navegador Google Chrome que permite a los desarrolladores depurar y optimizar páginas web en el lado del cliente. Con DevTools, los desarrolladores pueden inspeccionar y modificar HTML y CSS, analizar el rendimiento de la red, depurar código JavaScript y simular varios dispositivos móviles. Proporciona una vista en tiempo real de la página web renderizada con herramientas para depurar y perfilar interactivamente una página web. Las características de análisis de rendimiento pueden ayudar a los desarrolladores a diagnosticar problemas de rendimiento y proporcionar sugerencias para mejorar los tiempos de carga de la página. Además, Chrome DevTools se puede ampliar con complementos y extensiones personalizadas, lo que lo convierte en una herramienta versátil y potente para los desarrolladores web. Sus características lo convierten en una herramienta indispensable para los desarrolladores web que desean construir y optimizar sitios web y aplicaciones web.",
-      "gscDesc": "Google Search Console es un servicio web gratuito proporcionado por Google que permite a los propietarios de sitios web monitorear y administrar la presencia de su sitio web en los resultados de búsqueda de Google. Con herramientas para analizar el tráfico de búsqueda, ver cómo aparece su sitio web en los resultados de búsqueda, identificar problemas técnicos que puedan estar afectando su clasificación en los resultados de búsqueda y enviar nuevo contenido para que Google lo rastree e indexe, los propietarios de sitios web pueden optimizar el rendimiento de su sitio web en los resultados de búsqueda y mejorar su visibilidad en línea."
-    
+      "gscDesc": "Google Search Console es un servicio web gratuito proporcionado por Google que permite a los propietarios de sitios web monitorear y administrar la presencia de su sitio web en los resultados de búsqueda de Google. Con herramientas para analizar el tráfico de búsqueda, ver cómo aparece su sitio web en los resultados de búsqueda, identificar problemas técnicos que puedan estar afectando su clasificación en los resultados de búsqueda y enviar nuevo contenido para que Google lo rastree e indexe, los propietarios de sitios web pueden optimizar el rendimiento de su sitio web en los resultados de búsqueda y mejorar su visibilidad en línea.",
+      "nextJsDesc": "Next.js es un marco de trabajo de código abierto construido sobre React y Node.js, diseñado para simplificar el desarrollo de aplicaciones React renderizadas en el servidor (SSR) y generadas estáticamente (SSG). Ofrece características como renderizado en el lado del servidor, generación de sitios estáticos, división automática de código, enrutamiento, rutas de API, soporte de CSS en JS, reemplazo de módulos en caliente e integración con TypeScript. Con Next.js, los desarrolladores pueden crear páginas web dinámicas que se cargan rápidamente, mejoran el rendimiento y se optimizan para los motores de búsqueda, lo que lo convierte en una opción popular para construir aplicaciones web complejas y escalables."
+
     },
     "be": {
       "nodeDesc": "Node.js es un entorno de tiempo de ejecución de JavaScript gratuito, de código abierto y multiplataforma que permite a los desarrolladores construir aplicaciones de red escalables. Node.js utiliza un modelo de E/S no bloqueante y basado en eventos que lo hace ligero y eficiente, y está construido sobre el motor JavaScript V8 utilizado por Google Chrome. Con Node.js, los desarrolladores pueden utilizar JavaScript tanto en el lado del servidor como del cliente en el desarrollo web, lo que lo convierte en una opción popular para construir aplicaciones web, aplicaciones de chat en tiempo real y servidores de API. Node.js también tiene un vasto ecosistema de módulos y paquetes disponibles a través de su gestor de paquetes, npm, lo que facilita a los desarrolladores agregar funcionalidad a sus aplicaciones sin tener que reinventar la rueda. Además, Node.js tiene una comunidad activa que proporciona soporte y recursos para los desarrolladores.",

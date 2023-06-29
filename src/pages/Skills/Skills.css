@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
 
+*{
+  font-family: "Boogaloo", cursive;
+
+}
 .containerGrid {
   width: 90vw;
 }
@@ -13,13 +17,12 @@
   text-align: center;
   color: #d4af37;
   font-size: 2rem;
-  font-family: "Boogaloo", cursive;
   margin-top: 2rem;
   margin-bottom: 1rem;
   text-shadow: 3px 3px 2px #000000;
 }
 
-.subTitles{
+.subTitles {
   text-align: center;
   color: #d4af37;
   font-size: 1.7rem;
@@ -30,6 +33,142 @@
 }
 .arrowsColor {
   color: #ffffff;
+}
+
+.skillsEarned{
+  margin-top: 0;
+  /* margin-bottom: 130px; */
+  /* margin-bottom: 50px; */
+ 
+}
+
+.certTitles {
+  color:  #000000;
+  font-size: 1.4rem;
+}
+
+.certsStrongTitles {
+  display: block;
+  color: #d4af37;
+  font-size: 1.4rem;
+  text-shadow: 1px 1px 0.3px #000000;
+  text-decoration: none;
+}
+
+.mtSkills{
+  margin-top: 20px;
+}
+
+.websitesLinks{
+  color: #000;
+  text-decoration-color:#d4af37 ;
+  font-size: 1.4rem;
+}
+
+.websitesLinks:hover{
+  color: #d4af37;
+  font-size: 1.4rem;
+}
+
+.certsStrongTitlesa {
+  color: #d4af37;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.certsStrongTitlesa :hover{
+  color: #000;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+
+
+.importantNote {
+  color: rgb(255, 45, 8);
+  font-size: 1.2rem;
+  font-family: "Boogaloo", cursive;
+  text-shadow: 1px 1px 0.3px #000000;
+
+}
+
+.linkExternal {
+  height: 22px;
+  width: 22px;
+  margin-left: 5px;
+}
+
+.skillEarned{
+  /* height: 2rem; */
+  background-color: #000000;
+  color: #000000;
+  border-radius: 12px;
+  border: transparent;
+  padding: 8px;
+  /* padding: 8px 0 8px 0; */
+  margin-left: 8px;
+   /* display: inline; */
+  
+}
+
+.skillEarnedTags {
+  list-style: none;
+  margin: 0;
+  overflow: hidden; 
+  padding: 0;
+}
+
+.skillEarnedTagsLi {
+  float: left; 
+}
+
+
+.tag {
+  background: #d4af37;
+  border-radius: 3px 0 0 3px;
+  color: black;
+  font-family: "Boogaloo", cursive;
+  /* text-shadow: 1px 1px 0.3px #000000; */
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+}
+
+.tag::before {
+  background: #eee;
+  border-radius: 10px;
+  /* box-shadow: inset 0 1px rgba(0, 0, 0, 0.25); */
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 10px;
+}
+
+.tag::after {
+  background: #eee;
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid #d4af37;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.tag:hover {
+  background-color: black;
+  color: #d4af37;
+}
+
+.tag:hover::after {
+   border-left-color: black; 
 }
 
 
@@ -95,6 +234,33 @@
   transition: 200ms;
 }
 
+.certsBtn {
+  background-color: #d4af37;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 2.5rem;
+  margin-top: 15px;
+  margin: auto;
+
+  font-size: 1rem;
+  border: currentColor;
+  font-family: "Boogaloo", cursive;
+  text-decoration-style: dotted;
+  border-radius: 6px;
+}
+.certsBtn:hover {
+  background-color: #000;
+  color: #d4af37;
+
+  font-size: 1rem;
+  border: 1px solid #d4af37;
+  transform: scale(0.95);
+  transition: 200ms;
+}
+
 .docsBtn {
   background-color: #000;
   color: #ffffff;
@@ -103,7 +269,6 @@
   margin-top: 20px;
   font-size: 1rem;
   border: currentColor;
-  font-family: "Boogaloo", cursive;
   text-decoration-style: dotted;
   border-radius: 6px;
   /* justify-content: space-around;; */
@@ -111,7 +276,6 @@
 .docsBtn:hover {
   background-color: #d4af37;
   color: #000;
-
   font-size: 1rem;
   border: 1px solid #d4af37;
   transform: scale(0.95);
@@ -127,7 +291,7 @@
   text-decoration: none;
   color: #000;
 }
-.cardHeight{
+.cardHeight {
   height: 20rem;
 }
 .cardGridShadow {
@@ -135,8 +299,6 @@
 }
 
 .cardGrid {
-  
-
   height: 15rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -151,7 +313,6 @@
   height: 4rem;
   margin: auto;
 }
-
 
 .iconWP {
   width: 4rem;
@@ -193,6 +354,19 @@
   margin-left: 2rem;
 }
 
+.certsImg {
+  width: 50px;
+  height: 48px;
+  margin-left: 2rem;
+  align-items: center;
+}
+
+.certification {
+  margin: auto;
+  width: 100%;
+  height: 150px;
+}
+
 .subTitle {
   font-size: 0.8rem;
   height: 2rem;
@@ -228,27 +402,85 @@
 .bgTechTitle {
   text-shadow: -1px 1.5px 0 #ffffff, -1px -1.5px 0 #ffffff;
 }
-.skillsImg{
+.skillsImg {
   height: 3.2rem;
   width: 3.2rem;
   margin-left: 1rem;
-  
 }
 
-.docsLink{
+
+
+.docsLink {
   margin-left: 20px;
   width: 1.5rem;
   height: 1.5rem;
   /* margin: auto; */
 }
 
-.pdfView{
-display: flex; 
-background-color: #F3F4F6; 
-justify-content: center; 
-align-items: center; 
-width: 100%; 
-height: 100vh; 
+.pdf-container {
+  width: 100%;
+  height: 800px;
+  background-color: #e4e4e4;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.accordion-padding {
+  padding: 0 30px 0 30px;
+}
+
+
+.cardsCerts {
+  margin-bottom: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.logosCerts {
+  width: auto;
+  height: auto;
+}
+.imgCert {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30px;
+  border-radius: 6px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  /* font-size: 30px; */
+  /* justify-content: left; */
+
+  padding: 10px 30px 10px 30px;
+}
+
+.flex-item-left {
+  /* background-color: #b40d0d; */
+  padding: 10px;
+  flex: 60%;
+  margin-top: 20px;
+}
+
+.flex-item-right {
+  /* background-color: dodgerblue; */
+  padding: 10px;
+  flex: 40%;
+
+
+}
+
+.error-msg {
+  width: 100%;
+  color: red;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /*Medias queries
@@ -258,6 +490,36 @@ height: 100vh;
 ▒█░▒█ ▒█▄▄▄ ▒█▄▄▄█ ▒█░░░ ▒█▄▄▄█ ▒█░░▀█ ▒█▄▄▄█ ▄█▄ ░░▀▄▀░ ▒█▄▄▄
  */
 @media only screen and (max-width: 960px) {
+  .certsBtn {
+    width: 100%;
+  }
+
+  .accordion-padding {
+    padding: 0;
+  }
+
+  .skillsEarned{
+    margin-top: 0;
+    /* margin-bottom: 30px; */
+    /* margin-bottom: 50px; */
+   
+  }
+  .imgCert {
+  
+    margin-bottom: 10px;
+    
+  }
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    /* font-size: 30px; */
+  }
 }
 /*Icons*/
 
