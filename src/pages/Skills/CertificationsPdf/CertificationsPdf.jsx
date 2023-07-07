@@ -9,6 +9,9 @@ import "@react-pdf-viewer/core/lib/styles/index.css";
 //Pdf files
 import FullStackCert from "./AcademloCerts/Full_Stack_Web_Development_and_Computer_Science.pdf";
 import ReactCert from "./AcademloCerts/Front_end_Development_with_React.pdf";
+import NodeJsCert from "./AcademloCerts/Back_end_Development_with_NodeJs.pdf";
+import PythonCert from "./AcademloCerts/Back_end_Development_with_Python_y_Django.pdf";
+import AlgorithmsCert from "./AcademloCerts/Algorithms_and_Data_Structures.pdf"
 
 import "../../Skills/Skills.css";
 //Component Cert. Individual
@@ -64,9 +67,57 @@ const CertificationsPdf = () => {
         />
 
         {/* {"Cert #3"} */}
+        <CertPdf
+          certName="Back-End Development with Node.js"
+          eventKey="3"
+          institution="ACADEMLO "
+          aliasInstitution="School of Technology and Computer Science"
+          logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2Flogo_academlo2.png?alt=media&token=c4b55a3f-78b2-4a29-9601-7a9179305b6a"
+          fileUrl={NodeJsCert}
+          website={"https://www.academlo.com"}
+          issuedCertificate={
+            "https://certificates.academlo.com/en/verify/65762544626703"
+          }
+          skillsEarned_1={<SkillsEarned skillsEarned={"Node.js"} />}
+          skillsEarned_2={<SkillsEarned skillsEarned={"JavaScript (Programming Language)"}/>}
+          skillsEarned_3={<SkillsEarned skillsEarned={"Back End (Software Engineering)"} />}
 
+        />
         {/* {"Cert #4"} */}
+
+        <CertPdf
+          certName="Back-End Development with Python & Django"
+          eventKey="4"
+          institution="ACADEMLO "
+          aliasInstitution="School of Technology and Computer Science"
+          logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2Flogo_academlo2.png?alt=media&token=c4b55a3f-78b2-4a29-9601-7a9179305b6a"
+          skillsEarned_1={<SkillsEarned skillsEarned={"Server-Side"} />}
+          skillsEarned_2={<SkillsEarned skillsEarned={"RESTful API"} />}
+          skillsEarned_3={<SkillsEarned skillsEarned={"Python (Programming Language)"} />}
+          skillsEarned_4={<SkillsEarned skillsEarned={"Django (Web Framework)"} />}
+          skillsEarned_5={<SkillsEarned skillsEarned={"Back End (Software Engineering)"} />}
+          fileUrl={PythonCert}
+          website={"https://www.academlo.com"}
+          issuedCertificate={
+            "https://certificates.academlo.com/en/verify/21632663952010"
+          }
+        />
         {/* {"Cert #5"} */}
+        <CertPdf
+          certName="Algorithms and Data Structures"
+          eventKey="5"
+          institution="ACADEMLO "
+          aliasInstitution="School of Technology and Computer Science"
+          logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2Flogo_academlo2.png?alt=media&token=c4b55a3f-78b2-4a29-9601-7a9179305b6a"
+          skillsEarned_1={<SkillsEarned skillsEarned={"Problem Solving"} />}
+          skillsEarned_2={<SkillsEarned skillsEarned={"Data Structures"} />}
+          skillsEarned_3={<SkillsEarned skillsEarned={"Algorithms"} />}
+          fileUrl={AlgorithmsCert}
+          website={"https://www.academlo.com"}
+          issuedCertificate={
+            "https://certificates.academlo.com/en/verify/20275035180098"
+          }
+        />
         {/* {"Cert #6"} */}
         {/* {"Cert #7"} */}
       </Accordion>
