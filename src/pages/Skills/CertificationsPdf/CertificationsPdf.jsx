@@ -11,7 +11,8 @@ import FullStackCert from "./AcademloCerts/Full_Stack_Web_Development_and_Comput
 import ReactCert from "./AcademloCerts/Front_end_Development_with_React.pdf";
 import NodeJsCert from "./AcademloCerts/Back_end_Development_with_NodeJs.pdf";
 import PythonCert from "./AcademloCerts/Back_end_Development_with_Python_y_Django.pdf";
-import AlgorithmsCert from "./AcademloCerts/Algorithms_and_Data_Structures.pdf"
+import AlgorithmsCert from "./AcademloCerts/Algorithms_and_Data_Structures.pdf";
+import Foundations from "./AcademloCerts/Foundations_in_HTML_CSS_and_Javascript.pdf";
 
 import "../../Skills/Skills.css";
 //Component Cert. Individual
@@ -25,7 +26,13 @@ const CertificationsPdf = () => {
       <Accordion defaultActiveKey="0" className="accordion-padding">
       <ScrollToTop/>
     
-        {/* {"Cert #1"} */}
+      <Accordion.Item eventKey="0" className='accordion-certs-padding'>
+         <Accordion.Header className="texts " >
+             ACADEMLO
+       
+            </Accordion.Header>
+            <Accordion.Body>
+                {/* {"Cert #1"} */}
         <CertPdf
           certName="Full Stack Web Development and Computer Science"
           eventKey="1"
@@ -119,8 +126,29 @@ const CertificationsPdf = () => {
           }
         />
         {/* {"Cert #6"} */}
+        <CertPdf 
+        certName="Foundations in HTML,CSS, and Javascript"
+        eventKey="6"
+        institution="ACADEMLO "
+        aliasInstitution="School of Technology and Computer Science"
+        logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2Flogo_academlo2.png?alt=media&token=c4b55a3f-78b2-4a29-9601-7a9179305b6a"
+        skillsEarned_1={<SkillsEarned skillsEarned={"Web Development"} />}
+        skillsEarned_2={<SkillsEarned skillsEarned={"Web Design"} />}
+        skillsEarned_3={<SkillsEarned skillsEarned={"JavaScript (Programming Language)"} />}
+        skillsEarned_4={<SkillsEarned skillsEarned={"HyperText Markup Language (HTML)"}/>}
+        skillsEarned_5={<SkillsEarned skillsEarned={"Cascading Style Sheets (CSS)"}/>}
+        fileUrl={Foundations}
+        website={"https://www.academlo.com"}
+        issuedCertificate={
+          "https://certificates.academlo.com/en/verify/36359798103867"
+        }
+        />
         {/* {"Cert #7"} */}
-      </Accordion>
+
+            </Accordion.Body>
+        
+          </Accordion.Item>
+              </Accordion>
     </>
   );
 };
