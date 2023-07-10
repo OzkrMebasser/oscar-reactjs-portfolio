@@ -433,7 +433,9 @@
 }
 
 .accordion-certs-padding {
-  padding: 0 50px 0 0;
+  padding:10px;
+  margin: auto;
+  width: 87vw;
 }
 
 .cardsCerts {

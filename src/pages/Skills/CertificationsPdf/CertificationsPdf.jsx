@@ -26,14 +26,10 @@ const CertificationsPdf = () => {
       <Accordion defaultActiveKey="0" className="accordion-padding">
       <ScrollToTop/>
     
-      <Accordion.Item eventKey="0" className='accordion-certs-padding'>
-         <Accordion.Header className="texts " >
-             ACADEMLO
-       
-            </Accordion.Header>
-            <Accordion.Body>
+
                 {/* {"Cert #1"} */}
-        <CertPdf
+      
+                  <CertPdf
           certName="Full Stack Web Development and Computer Science"
           eventKey="1"
           institution="ACADEMLO "
@@ -145,9 +141,7 @@ const CertificationsPdf = () => {
         />
         {/* {"Cert #7"} */}
 
-            </Accordion.Body>
-        
-          </Accordion.Item>
+
               </Accordion>
     </>
   );
