@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from "react";
 import CertificationsPdf from "../Skills/CertificationsPdf/CertificationsPdf";
+
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Accordion from "react-bootstrap/Accordion";
 import { motion } from "framer-motion";
@@ -242,6 +243,7 @@ const Skills = (props) => {
 
             <Accordion.Body>
             <CertificationsPdf />
+            {/* <CertsList/> */}
             </Accordion.Body>
           </Accordion.Item>
           {/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑  Certifications  ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/}

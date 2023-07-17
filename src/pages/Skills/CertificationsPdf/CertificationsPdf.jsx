@@ -17,20 +17,30 @@ import Foundations from "./AcademloCerts/Foundations_in_HTML_CSS_and_Javascript.
 
 //Aprende Certificates
 import FronEndAprende from "./AprendeCert/Desarrollador_Front_end_Aprende.pdf";
+import CuradorDatos from "./AprendeCert/Curador_de_datos.pdf";
+
+
+//FreeCodeCamp
+import responsiveWebDFCC from "./FreeCodeCamp/responsiveWebFreeCodeCamp.pdf"
 
 import "../../Skills/Skills.css";
 //Component Cert. Individual
 import CertPdf from "./CertPdf";
 
 const CertificationsPdf = () => {
+
+
+  
   return (
     <>
       <Accordion defaultActiveKey="0" className="accordion-padding">
+        
         <ScrollToTop />
 
         {/* {"Cert #1 Academlo"} */}
-          <h2 className="subTitles">ACADEMLO
-School of Technology and Computer Science</h2>
+        <h2 className="subTitles">
+          ACADEMLO School of Technology and Computer Science
+        </h2>
         <CertPdf
           certName="Full Stack Web Development and Computer Science"
           eventKey="1"
@@ -175,9 +185,9 @@ School of Technology and Computer Science</h2>
         <h2 className="subTitles">Aprende</h2>
 
         {/* {"Cert #7 Capacítate..."} */}
-       <CertPdf
+        <CertPdf
           certName="Desarrollador Front-end"
-          eventKey="6"
+          eventKey="7"
           institution="Capacítate para el empleo"
           aliasInstitution="Fundación Carlos Slim"
           logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2Fcapacitate.png?alt=media&token=fe50d261-469c-4120-8ce0-be3ab99f8924"
@@ -197,7 +207,55 @@ School of Technology and Computer Science</h2>
           issuedCertificate={
             "https://capacitateparaelempleo.org/verifica/4369b30e-5526-467e-ab50-091305c22f20/d071dd79-724b-4817-a212-8f78560fadfa"
           }
-          />
+        />
+
+        {/* {"Cert #8 Capacítate..."} */}
+        <CertPdf
+          certName="Curador de Datos"
+          eventKey="8"
+          institution="Capacítate para el empleo"
+          aliasInstitution="Fundación Carlos Slim"
+          logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2Fcapacitate.png?alt=media&token=fe50d261-469c-4120-8ce0-be3ab99f8924"
+          skillsEarned_1={<SkillsEarned skillsEarned={"SQL Database creation"} />}
+          skillsEarned_2={<SkillsEarned skillsEarned={"Data Management"} />}
+          skillsEarned_3={
+            <SkillsEarned skillsEarned={"Maintain Databases"} />
+          }
+          skillsEarned_4={
+            <SkillsEarned skillsEarned={"Ensure Integrity of Data"} />
+          }
+          skillsEarned_5={
+            <SkillsEarned skillsEarned={"Implement data management policies and procedures"} />
+          }
+          fileUrl={CuradorDatos}
+          website={"https://capacitateparaelempleo.org/"}
+          issuedCertificate={
+            "https://capacitateparaelempleo.org/verifica/4369b30e-5526-467e-ab50-091305c22f20/24e65981-a75f-4ffa-81d5-45b91044ce3a"
+          }
+        />
+        <h2 className="subTitles">FreeCodeCamp</h2>
+        {/* {"Cert #9 FreeCodeCamp..."} */}
+        <CertPdf
+          certName="Responsive Web Design"
+          eventKey="9"
+          institution="freeCodeCamp.org"
+          aliasInstitution="Non-profit organization for learning Software Development "
+          logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FFreeCodeCamp_logo.png?alt=media&token=d9b83ebe-8cb2-42f4-801f-cccc64202662"
+          skillsEarned_1={<SkillsEarned skillsEarned={"HyperText Markup Language (HTML)"} />}
+          skillsEarned_2={<SkillsEarned skillsEarned={"Cascading Style Sheets (CSS)"} />}
+          skillsEarned_3={
+            <SkillsEarned skillsEarned={"Web Development"} />
+          }
+          skillsEarned_4={
+            <SkillsEarned skillsEarned={"Web Design"} />
+          }
+    
+          fileUrl={responsiveWebDFCC}
+          website={"https://www.freecodecamp.org/"}
+          issuedCertificate={
+            "https://www.freecodecamp.org/certification/oscarmebasser/responsive-web-design"
+          }
+        />
       </Accordion>
     </>
   );
