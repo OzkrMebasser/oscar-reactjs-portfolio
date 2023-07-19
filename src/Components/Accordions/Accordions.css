@@ -1,0 +1,92 @@
+.accordions{
+  
+  border-radius: 8px;
+ 
+
+}
+
+.logoSchool{
+  height: 90px;
+  width: auto;
+}
+
+.flexs-container {
+  padding: 0;
+  align-items: center;
+  display: flex;
+  height: 120px;
+  margin: 25px 20px 25px 20px;
+  
+}
+
+.space-between { 
+  justify-content: space-between; 
+}  
+
+
+
+
+.flexs-item- {
+  width: 60px;
+  font-weight: bold;
+}
+
+.dropBtnCerts {
+  background-color: #d4af37;
+  color: #000;
+  margin-right: 10px;
+  width: 100%;
+  height: 2.5rem;
+  font-size: 1rem;
+  border: currentColor;
+  font-family: "Boogaloo", cursive;
+  text-decoration-style: dotted;
+  border-radius: 6px;
+}
+.dropBtnCerts:hover {
+  background-color: #000;
+  color: #d4af37;
+
+  font-size: 1rem;
+  border: 1px solid #d4af37;
+  transform: scale(0.95);
+  transition: 200ms;
+}
+
+.schoolTitles {
+  color: #d4af37;
+  font-size: 1.4rem;
+  text-shadow: 1px 1px 0.3px #000000;
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .flexs-container {
+    padding: 0;
+    align-items: center;
+    display: flex;
+    height: 110px;
+    margin: 25px 10px 25px 10px;
+    
+  }
+  .schoolTitles {
+    color: #d4af37;
+    font-size: 1rem;
+    text-shadow: 1px 1px 0.3px #000000;
+    text-decoration: none;
+  }
+  .dropBtnCerts {
+    background-color: #d4af37;
+    color: #000;
+   
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1rem;
+    border: currentColor;
+    font-family: "Boogaloo", cursive;
+    text-decoration-style: dotted;
+    border-radius: 6px;
+  }
+  
+}
