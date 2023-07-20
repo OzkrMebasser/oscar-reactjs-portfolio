@@ -23,6 +23,10 @@ import CuradorDatos from "./AprendeCert/Curador_de_datos.pdf";
 //FreeCodeCamp
 import responsiveWebDFCC from "./FreeCodeCamp/responsiveWebFreeCodeCamp.pdf";
 
+//Udemy
+import JavaScriptModerno from "./Udemy/Javascript_Guia_Udemy.pdf";
+import MktDigital from "./Udemy/Marketing_Digital_Udemy.pdf";
+
 import "../../Skills/Skills.css";
 //Component Cert. Individual
 import CertPdf from "./CertPdf";
@@ -34,6 +38,7 @@ const CertificationsPdf = () => {
         <ScrollToTop />
 
         <Accordions
+            //Academlo....
           logoSchool="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2Flogo_academlo2.png?alt=media&token=c4b55a3f-78b2-4a29-9601-7a9179305b6a"
           content={
             <div>
@@ -219,6 +224,7 @@ const CertificationsPdf = () => {
         />
 
         <Accordions
+         //Capacítate para el empleo ....
           logoSchool="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2Fcapacitate.png?alt=media&token=fe50d261-469c-4120-8ce0-be3ab99f8924"
           content={
             <div>
@@ -289,6 +295,7 @@ const CertificationsPdf = () => {
           }
         />
         <Accordions
+        //FreeCodeCamp ....
           logoSchool="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FFreeCodeCamp_logo.png?alt=media&token=d9b83ebe-8cb2-42f4-801f-cccc64202662"
           content={
             <div>
@@ -322,32 +329,79 @@ const CertificationsPdf = () => {
         />
 
         <Accordions
+        //Udemy ....
           logoSchool="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FUdemy_logo2.png?alt=media&token=51d33619-c738-4fea-b699-a33a6c63320d"
           content={
             <div>
               <CertPdf
                 //Cert #10 Udemy
-                certName="Responsive Web Design"
+                certName="JavaScript Moderno Guía Definitiva"
                 eventKey="10"
                 institution="Udemy"
-                aliasInstitution="Non-profit organization for learning Software Development "
+                aliasInstitution="Plataforma de aprendizaje en línea"
                 logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FUdemy_logo2.png?alt=media&token=51d33619-c738-4fea-b699-a33a6c63320d"
                 skillsEarned_1={
-                  <SkillsEarned
-                    skillsEarned={"HyperText Markup Language (HTML)"}
-                  />
+                  <SkillsEarned skillsEarned={"Software Engineering"} />
                 }
                 skillsEarned_2={
-                  <SkillsEarned skillsEarned={"Cascading Style Sheets (CSS)"} />
+                  <SkillsEarned skillsEarned={"Software Development"} />
                 }
                 skillsEarned_3={
-                  <SkillsEarned skillsEarned={"Web Development"} />
+                  <SkillsEarned
+                    skillsEarned={"Object-Oriented Programming (OOP)"}
+                  />
                 }
-                skillsEarned_4={<SkillsEarned skillsEarned={"Web Design"} />}
-                fileUrl={responsiveWebDFCC}
-                website={"https://www.freecodecamp.org/"}
+                skillsEarned_4={<SkillsEarned skillsEarned={"Node.js"} />}
+                skillsEarned_5={
+                  <SkillsEarned skillsEarned={"JavaScript Frameworks"} />
+                }
+                skillsEarned_6={
+                  <SkillsEarned
+                    skillsEarned={"Full Stack Software Engineering"}
+                  />
+                }
+                fileUrl={JavaScriptModerno}
+                website={"https://www.udemy.com/"}
                 issuedCertificate={
-                  "https://www.freecodecamp.org/certification/oscarmebasser/responsive-web-design"
+                  "https://www.udemy.com/certificate/UC-723a5325-b7b3-4728-8f85-4ebfe0b9054c/"
+                }
+              />
+              <CertPdf
+                //Cert #11 Udemy
+                certName="Marketing Digital, Curso Completo"
+                eventKey="11"
+                institution="Udemy"
+                aliasInstitution="Plataforma de aprendizaje en línea"
+                logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FUdemy_logo2.png?alt=media&token=51d33619-c738-4fea-b699-a33a6c63320d"
+               
+                skillsEarned_1={
+                  <SkillsEarned skillsEarned={"Social Media Marketing"} />
+                }
+                skillsEarned_2={
+                  <SkillsEarned skillsEarned={"Email Marketing"} />
+                }
+                skillsEarned_3={
+                  <SkillsEarned
+                    skillsEarned={"Content Marketing"}
+                  />
+                }
+                skillsEarned_4={<SkillsEarned skillsEarned={"Facebook Ads"} />}
+                skillsEarned_5={
+                  <SkillsEarned skillsEarned={"Google Ads, and Analitycs"} />
+                }
+                skillsEarned_6={
+                  <SkillsEarned
+                    skillsEarned={"SEO"}
+                  />
+                  
+                }
+                skillsEarned_7={
+                  <SkillsEarned skillsEarned={"Branding"} />
+                }
+                fileUrl={MktDigital}
+                website={"https://www.udemy.com/"}
+                issuedCertificate={
+                  "https://www.udemy.com/certificate/UC-f05dc718-f04a-41f1-8e04-78a9ba542db0/"
                 }
               />
             </div>
