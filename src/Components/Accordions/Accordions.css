@@ -6,8 +6,9 @@
 }
 
 .logoSchool{
-  height: 90px;
-  width: auto;
+  height: 100px;
+  width: 200px;
+  border-radius: 8px;
 }
 
 .flexs-container {
@@ -87,6 +88,11 @@
     font-family: "Boogaloo", cursive;
     text-decoration-style: dotted;
     border-radius: 6px;
+  }
+  .logoSchool{
+    height: 90px;
+    width: 170px;
+    border-radius: 8px;
   }
   
 }

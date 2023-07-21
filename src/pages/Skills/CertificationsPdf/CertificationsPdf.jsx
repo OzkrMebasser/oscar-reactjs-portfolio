@@ -27,6 +27,15 @@ import responsiveWebDFCC from "./FreeCodeCamp/responsiveWebFreeCodeCamp.pdf";
 import JavaScriptModerno from "./Udemy/Javascript_Guia_Udemy.pdf";
 import MktDigital from "./Udemy/Marketing_Digital_Udemy.pdf";
 
+//LinkedIn
+import wevDevDesignLinkedIn from "./LinkedIn/Intro_to_Web_Design_and_Development_Linkedin.pdf";
+
+//Grasshopper
+import FundamentalsOne from "./Grasshopper/GrasshopperCodingFundamentalsCertificate.pdf";
+import FundamentalsTwo from "./Grasshopper/GrasshopperCodingFundamentalsIICertificate.pdf";
+import IntroWebPagesGH from "./Grasshopper/GrasshopperIntrotoWebpagesCertificate.pdf";
+import CodeEditorGH from "./Grasshopper/GrasshopperUsingaCodeEditorCertificate.pdf";
+
 import "../../Skills/Skills.css";
 //Component Cert. Individual
 import CertPdf from "./CertPdf";
@@ -38,7 +47,7 @@ const CertificationsPdf = () => {
         <ScrollToTop />
 
         <Accordions
-            //Academlo....
+          //Academlo....
           logoSchool="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2Flogo_academlo2.png?alt=media&token=c4b55a3f-78b2-4a29-9601-7a9179305b6a"
           content={
             <div>
@@ -224,7 +233,7 @@ const CertificationsPdf = () => {
         />
 
         <Accordions
-         //Capacítate para el empleo ....
+          //Capacítate para el empleo ....
           logoSchool="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2Fcapacitate.png?alt=media&token=fe50d261-469c-4120-8ce0-be3ab99f8924"
           content={
             <div>
@@ -295,7 +304,7 @@ const CertificationsPdf = () => {
           }
         />
         <Accordions
-        //FreeCodeCamp ....
+          //FreeCodeCamp ....
           logoSchool="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FFreeCodeCamp_logo.png?alt=media&token=d9b83ebe-8cb2-42f4-801f-cccc64202662"
           content={
             <div>
@@ -329,7 +338,7 @@ const CertificationsPdf = () => {
         />
 
         <Accordions
-        //Udemy ....
+          //Udemy ....
           logoSchool="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FUdemy_logo2.png?alt=media&token=51d33619-c738-4fea-b699-a33a6c63320d"
           content={
             <div>
@@ -373,7 +382,6 @@ const CertificationsPdf = () => {
                 institution="Udemy"
                 aliasInstitution="Plataforma de aprendizaje en línea"
                 logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FUdemy_logo2.png?alt=media&token=51d33619-c738-4fea-b699-a33a6c63320d"
-               
                 skillsEarned_1={
                   <SkillsEarned skillsEarned={"Social Media Marketing"} />
                 }
@@ -381,28 +389,191 @@ const CertificationsPdf = () => {
                   <SkillsEarned skillsEarned={"Email Marketing"} />
                 }
                 skillsEarned_3={
-                  <SkillsEarned
-                    skillsEarned={"Content Marketing"}
-                  />
+                  <SkillsEarned skillsEarned={"Content Marketing"} />
                 }
                 skillsEarned_4={<SkillsEarned skillsEarned={"Facebook Ads"} />}
                 skillsEarned_5={
                   <SkillsEarned skillsEarned={"Google Ads, and Analitycs"} />
                 }
-                skillsEarned_6={
-                  <SkillsEarned
-                    skillsEarned={"SEO"}
-                  />
-                  
-                }
-                skillsEarned_7={
-                  <SkillsEarned skillsEarned={"Branding"} />
-                }
+                skillsEarned_6={<SkillsEarned skillsEarned={"SEO"} />}
+                skillsEarned_7={<SkillsEarned skillsEarned={"Branding"} />}
                 fileUrl={MktDigital}
                 website={"https://www.udemy.com/"}
                 issuedCertificate={
                   "https://www.udemy.com/certificate/UC-f05dc718-f04a-41f1-8e04-78a9ba542db0/"
                 }
+              />
+            </div>
+          }
+        />
+        <Accordions
+          //LinkedIn ....
+          logoSchool="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FlinkedInLearnign3.png?alt=media&token=dfafb3a7-e31b-429a-8e92-c21d96b0b5c8"
+          content={
+            <div>
+              <CertPdf
+                //Cert #12 LinkedIn
+                certName="Introduction to Web Design and Development"
+                eventKey="12"
+                institution="LinkedIn LEARNING"
+                aliasInstitution="Plataforma de aprendizaje en línea"
+                logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FlinkedInLearnign3.png?alt=media&token=dfafb3a7-e31b-429a-8e92-c21d96b0b5c8"
+                skillsEarned_1={
+                  <SkillsEarned skillsEarned={"Web Development"} />
+                }
+                skillsEarned_2={<SkillsEarned skillsEarned={"Web Design"} />}
+                skillsEarned_3={
+                  <SkillsEarned
+                    skillsEarned={"JavaScript (Programming Language)"}
+                  />
+                }
+                skillsEarned_4={
+                  <SkillsEarned
+                    skillsEarned={"HyperText Markup Language (HTML)"}
+                  />
+                }
+                skillsEarned_5={
+                  <SkillsEarned skillsEarned={"Cascading Style Sheets (CSS)"} />
+                }
+                fileUrl={wevDevDesignLinkedIn}
+                website={"https://www.linkedin.com/learning/"}
+                issuedCertificate={
+                  "https://www.linkedin.com/learning-login/share?account=74417548&forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fcollections%2F7028871335065882624%3Ftrk%3Dshare_collection_url%26shareId%3DDdX90sRgTzCdDzx5esR3%252Fw%253D%253D"
+                }
+              />
+            </div>
+          }
+        />
+
+        <Accordions
+          //Grasshopper ....
+          logoSchool="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FgrassHopper.jpg?alt=media&token=ad4f2959-4b10-4b04-8c23-d03bc03d8482"
+          content={
+            <div>
+              <CertPdf
+                //Cert #13 Grasshopper
+                certName="Coding Fundamentals I"
+                eventKey="13"
+                institution="Grasshopper"
+                aliasInstitution="App developed by Google to learn to code with JavaScript."
+                logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FgrassHopper.jpg?alt=media&token=ad4f2959-4b10-4b04-8c23-d03bc03d8482"
+                skillsEarned_1={
+                  <SkillsEarned skillsEarned={"Variable declaration"} />
+                }
+                skillsEarned_2={
+                  <SkillsEarned skillsEarned={"Control structures"} />
+                }
+                skillsEarned_3={
+                  <SkillsEarned skillsEarned={"Data structures"} />
+                }
+                fileUrl={FundamentalsOne}
+                website={
+                  "https://play.google.com/store/apps/details?id=com.area120.grasshopper&hl=en_CA&gl=CN"
+                }
+                // issuedCertificate={
+                //   ""
+                // }
+                importantNote="App was shut down on June 15, 2023"
+                importantNoteUrl="https://en.wikipedia.org/wiki/Grasshopper_(mobile_app)"
+              />
+              <CertPdf
+                //Cert #14 Grasshopper
+                certName="Coding Fundamentals II"
+                eventKey="14"
+                institution="Grasshopper"
+                aliasInstitution="App developed by Google to learn to code with JavaScript."
+                logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FgrassHopper.jpg?alt=media&token=ad4f2959-4b10-4b04-8c23-d03bc03d8482"
+                skillsEarned_1={
+                  <SkillsEarned skillsEarned={"Variable declaration"} />
+                }
+                skillsEarned_2={
+                  <SkillsEarned skillsEarned={"Control structures"} />
+                }
+                skillsEarned_3={
+                  <SkillsEarned skillsEarned={"Data structures"} />
+                }
+                fileUrl={FundamentalsTwo}
+                website={
+                  "https://play.google.com/store/apps/details?id=com.area120.grasshopper&hl=en_CA&gl=CN"
+                }
+                // issuedCertificate={
+                //   ""
+                // }
+                importantNote="App was shut down on June 15, 2023"
+                importantNoteUrl="https://en.wikipedia.org/wiki/Grasshopper_(mobile_app)"
+              />
+
+              <CertPdf
+                //Cert #15 Grasshopper
+                certName="Intro to Webpages"
+                eventKey="15"
+                institution="Grasshopper"
+                aliasInstitution="App developed by Google to learn to code with JavaScript."
+                logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FgrassHopper.jpg?alt=media&token=ad4f2959-4b10-4b04-8c23-d03bc03d8482"
+                skillsEarned_1={
+                  <SkillsEarned
+                    skillsEarned={"HyperText Markup Language (HTML)"}
+                  />
+                }
+                skillsEarned_2={
+                  <SkillsEarned skillsEarned={"Cascading Style Sheets (CSS)"} />
+                }
+                skillsEarned_3={
+                  <SkillsEarned
+                    skillsEarned={"JavaScript (Programming Language)"}
+                  />
+                }
+                skillsEarned_4={
+                  <SkillsEarned
+                    skillsEarned={"Web Browsers"}
+                  />
+                }
+                skillsEarned_5={
+                  <SkillsEarned
+                    skillsEarned={"Web Servers"}
+                  />
+                }
+                fileUrl={IntroWebPagesGH}
+                website={
+                  "https://play.google.com/store/apps/details?id=com.area120.grasshopper&hl=en_CA&gl=CN"
+                }
+                // issuedCertificate={
+                //   ""
+                // }
+                importantNote="App was shut down on June 15, 2023"
+                importantNoteUrl="https://en.wikipedia.org/wiki/Grasshopper_(mobile_app)"
+              />
+
+<CertPdf
+                //Cert #16 Grasshopper
+                certName="Using Code Editor"
+                eventKey="16"
+                institution="Grasshopper"
+                aliasInstitution="App developed by Google to learn to code with JavaScript."
+                logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FgrassHopper.jpg?alt=media&token=ad4f2959-4b10-4b04-8c23-d03bc03d8482"
+                skillsEarned_1={
+                  <SkillsEarned
+                  skillsEarned={"JavaScript (Programming Language)"}
+                  />
+                }
+                skillsEarned_2={
+                  <SkillsEarned skillsEarned={"Variable declaration"} />
+                }
+                skillsEarned_3={
+                  <SkillsEarned skillsEarned={"Control structures"} />
+                }
+                skillsEarned_4={
+                  <SkillsEarned skillsEarned={"Data structures"} />
+                }
+                fileUrl={CodeEditorGH}
+                website={
+                  "https://play.google.com/store/apps/details?id=com.area120.grasshopper&hl=en_CA&gl=CN"
+                }
+                // issuedCertificate={
+                //   ""
+                // }
+                importantNote="App was shut down on June 15, 2023"
+                importantNoteUrl="https://en.wikipedia.org/wiki/Grasshopper_(mobile_app)"
               />
             </div>
           }

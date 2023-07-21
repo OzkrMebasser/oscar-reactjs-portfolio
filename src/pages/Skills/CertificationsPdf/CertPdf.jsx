@@ -78,7 +78,12 @@ const CertPdf = (props) => {
                 </a>
               </div>
               <div>
-                <a className="importantNote " href={props.importantNoteUrl}>
+                <a
+                  className="importantNote "
+                  href={props.importantNoteUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {props.importantNote}
                   {/* <img
                       src="https://www.svgrepo.com/show/378648/link-out.svg"
@@ -117,7 +122,11 @@ const CertPdf = (props) => {
             </div>
             <div class="flex-item-right">
               <div className="logosCerts">
-                <img src={props.logoInstitution} className="imgCert" alt="logo institution"/>
+                <img
+                  src={props.logoInstitution}
+                  className="imgCert"
+                  alt="logo institution"
+                />
               </div>
               <ContextAwareToggle eventKey={props.eventKey}>
                 Ver certificado
@@ -133,15 +142,6 @@ const CertPdf = (props) => {
           </Card.Body>
         </Accordion.Collapse>
       </Card>
-      {/* {"Cert #2"} */}
-
-      {/* {"Cert #3"} */}
-
-      {/* {"Cert #4"} */}
-
-      {/* {"Cert #5"} */}
-
-      {/* {"Cert #6"} */}
     </>
   );
 };
