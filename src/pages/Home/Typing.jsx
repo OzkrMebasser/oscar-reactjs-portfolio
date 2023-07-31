@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import { useTranslation } from 'react-i18next';
 import "./Home.css";
 
@@ -55,11 +55,11 @@ export default function Typing() {
   }, [blink]);
 
   return (
-    <>
-      <h1 id="goldTyping">
+    <Fragment >
+      <h1 id="goldTyping" className="animatedHello rollIn">
         <span id="whiteTyping">{t("myself.myself")}</span>
         {`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}
       </h1>
-    </>
+    </Fragment>
   );
 }

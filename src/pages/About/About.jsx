@@ -18,12 +18,12 @@ const About = () => {
         animate={{ y: 0 }}
         transition={{ delay: 0.3, type: "fade" }}
       >
-        <div className="about-desc ">
+        <div className="about-desc animatedLeft bounceInLeft ">
           <h3 className="titleAbout">{t("about.aboutH1")}</h3>
           <p >{t("about.aboutP")}</p>
          <button className="downloadBtn"> <a  className="dwl" href={t("about.resume")} download target="_blank" rel="noopener noreferrer">{t("about.downloadResume")} <div><GoDesktopDownload className="dwlIcon"/></div> </a></button>
         </div>
-        <div className="flip-card">
+        <div className="flip-card animatedRight bounceInRight">
           <div className="flip-card-inner">
             <div className="flip-card-front">
               <img

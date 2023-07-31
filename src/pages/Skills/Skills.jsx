@@ -26,25 +26,25 @@ const Skills = (props) => {
   }
 
   return (
-    <Fragment className="containerGrid">
-      <h2 className="textTitle">{t("skills.title")}</h2>
-    <h6 className="subTitles">
-  
-      {t("skills.hardSkills")}{"    "}
-
-      </h6>
-
-
+    <>
       <motion.div
+        className="skills-container"
         initial={{ y: 600 }}
         animate={{ y: 0 }}
         transition={{ delay: 0.3, type: "fade" }}
       >
+        <section className="">
+          <h2 className="textTitle">{t("skills.title")}</h2>
+          <h6 className="subTitles">
+            {t("skills.hardSkills")}
+            {"    "}
+          </h6>
+        </section>
         <Accordion>
           {/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓  FrontEnd tools  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/}
           <Accordion.Item eventKey="0">
-          {/* <ScrollToTop /> */}
-            <Accordion.Header className="texts " >
+            {/* <ScrollToTop /> */}
+            <Accordion.Header className="texts ">
               {t("skills.frontendTools")}{" "}
               <img
                 className="frontEndimg "
@@ -111,8 +111,12 @@ const Skills = (props) => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                   >
-                                    Read Docs. 
-                                    <img className="docsLink" src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fbooks-svgrepo-com%20(1).svg?alt=media&token=03a80306-1366-4ba7-ad3a-e7368d1ff0c9" alt="docs" />
+                                    Read Docs.
+                                    <img
+                                      className="docsLink"
+                                      src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fbooks-svgrepo-com%20(1).svg?alt=media&token=03a80306-1366-4ba7-ad3a-e7368d1ff0c9"
+                                      alt="docs"
+                                    />
                                   </a>
                                 </button>
                               </Card.Text>
@@ -204,8 +208,12 @@ const Skills = (props) => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                   >
-                                    Read Docs. 
-                                    <img className="docsLink" src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fbooks-svgrepo-com%20(1).svg?alt=media&token=03a80306-1366-4ba7-ad3a-e7368d1ff0c9" alt="docs" />
+                                    Read Docs.
+                                    <img
+                                      className="docsLink"
+                                      src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fbooks-svgrepo-com%20(1).svg?alt=media&token=03a80306-1366-4ba7-ad3a-e7368d1ff0c9"
+                                      alt="docs"
+                                    />
                                   </a>
                                 </button>
                               </Card.Text>
@@ -242,16 +250,13 @@ const Skills = (props) => {
             </Accordion.Header>
 
             <Accordion.Body>
-            <CertificationsPdf />
-            {/* <CertsList/> */}
+              <CertificationsPdf />
+              {/* <CertsList/> */}
             </Accordion.Body>
           </Accordion.Item>
           {/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑  Certifications  ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/}
           {/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Soft skills ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/}
-          <h4 className="subTitles">{t("skills.softSkills")}
-        
-          </h4>
-
+          <h4 className="subTitles">{t("skills.softSkills")}</h4>
 
           <Accordion.Item eventKey="3">
             <Accordion.Header className="texts">
@@ -301,7 +306,7 @@ const Skills = (props) => {
           {/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑  Soft skills  ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/}
         </Accordion>
       </motion.div>
-    </Fragment>
+    </>
   );
 };
 export default Skills;

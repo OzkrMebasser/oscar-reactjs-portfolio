@@ -36,6 +36,12 @@ import FundamentalsTwo from "./Grasshopper/GrasshopperCodingFundamentalsIICertif
 import IntroWebPagesGH from "./Grasshopper/GrasshopperIntrotoWebpagesCertificate.pdf";
 import CodeEditorGH from "./Grasshopper/GrasshopperUsingaCodeEditorCertificate.pdf";
 
+//EF Set
+import EFSETCertificateOM from "./EfSet/EFSETCertificateOM.pdf";
+
+// UV Exaver
+import EXAVER from "./UV/EXAVER.pdf";
+
 import "../../Skills/Skills.css";
 //Component Cert. Individual
 import CertPdf from "./CertPdf";
@@ -523,16 +529,8 @@ const CertificationsPdf = () => {
                     skillsEarned={"JavaScript (Programming Language)"}
                   />
                 }
-                skillsEarned_4={
-                  <SkillsEarned
-                    skillsEarned={"Web Browsers"}
-                  />
-                }
-                skillsEarned_5={
-                  <SkillsEarned
-                    skillsEarned={"Web Servers"}
-                  />
-                }
+                skillsEarned_4={<SkillsEarned skillsEarned={"Web Browsers"} />}
+                skillsEarned_5={<SkillsEarned skillsEarned={"Web Servers"} />}
                 fileUrl={IntroWebPagesGH}
                 website={
                   "https://play.google.com/store/apps/details?id=com.area120.grasshopper&hl=en_CA&gl=CN"
@@ -544,7 +542,7 @@ const CertificationsPdf = () => {
                 importantNoteUrl="https://en.wikipedia.org/wiki/Grasshopper_(mobile_app)"
               />
 
-<CertPdf
+              <CertPdf
                 //Cert #16 Grasshopper
                 certName="Using Code Editor"
                 eventKey="16"
@@ -553,7 +551,7 @@ const CertificationsPdf = () => {
                 logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FgrassHopper.jpg?alt=media&token=ad4f2959-4b10-4b04-8c23-d03bc03d8482"
                 skillsEarned_1={
                   <SkillsEarned
-                  skillsEarned={"JavaScript (Programming Language)"}
+                    skillsEarned={"JavaScript (Programming Language)"}
                   />
                 }
                 skillsEarned_2={
@@ -576,6 +574,47 @@ const CertificationsPdf = () => {
                 importantNoteUrl="https://en.wikipedia.org/wiki/Grasshopper_(mobile_app)"
               />
             </div>
+          }
+        />
+        <Accordions
+          //EF SET  ....
+          logoSchool="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2Fefset-logo.png?alt=media&token=26d9cb2c-dc79-4e66-81c5-feb0bdb4de7f"
+          content={
+            <CertPdf
+              //Cert #17 Grasshopper
+              certName="EF Set English Test"
+              eventKey="17"
+              institution="EF SET"
+              aliasInstitution="Online standardized English test for learners of all levels"
+              logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2Fefset-logo.png?alt=media&token=26d9cb2c-dc79-4e66-81c5-feb0bdb4de7f"
+              skillsEarned_1={
+                <SkillsEarned skillsEarned={"English level: C1 Advanced"} />
+              }
+              fileUrl={EFSETCertificateOM}
+              website={"https://www.efset.org"}
+              issuedCertificate={"https://www.efset.org/cert/cLp27r"}
+            />
+          }
+        />
+
+        <Accordions
+          //Universidad Veracruz  ....
+          logoSchool="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FlogouvUV.JPG?alt=media&token=ed36f0c7-f0ac-4c0a-8f7a-71ffc1918080"
+          content={
+            <CertPdf
+              //Cert #18 Universidad Veracruz
+              certName="Examen de Certificación de Lengua Inglesa"
+              eventKey="18"
+              institution="Universidad Veracruzana"
+              aliasInstitution="EXAVER es un examen de la Universidad Veracruzana desarrollado con el apoyo del Consejo Británico y la Universidad de Cambridge, Inglaterra."
+              logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FlogouvUV.JPG?alt=media&token=ed36f0c7-f0ac-4c0a-8f7a-71ffc1918080"
+              fileUrl={EXAVER}
+              website={"https://www.uv.mx/idiomas/certificaciones/exaver/"}
+              issuedCertificate={"https://www.exaver.com/verify/319A-50107328"}
+              skillsEarned_1={
+                <SkillsEarned skillsEarned={"English level: C "} />
+              }
+            />
           }
         />
       </Accordion>

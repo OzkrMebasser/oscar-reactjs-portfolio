@@ -48,14 +48,14 @@ const Home = () => {
 
 </div>
         
-        <div className="flip-box-cover ">
-            <div className="flip-box-inner-cover ">
+        <div className="flip-box-cover animatedHello rollIn ">
+            <div className="flip-box-inner-cover  ">
               <div className="flip-box-front-cover">{t("cover.hello-world")} </div>
               <div className="flip-box-back-cover"> {t("cover.hello-world-2")}</div>
             </div>
           </div>
         <Particle className="particles-cover" />
-          <Typing />
+          <Typing  />
          
       
         <div id="comets">
@@ -71,8 +71,8 @@ const Home = () => {
         {/* <button onClick={() => setButtonPopup(true)}>Open Wlcome</button> */}
 
       <WelcomePopUp trigger={buttonPopup} setTrigger={setButtonPopup}> 
-        <h6 className="welcomeTitle"> {t("cover.welcome-title")}</h6>
-        <p className="welcomeP">{t("cover.welcome-p")}</p>
+        <h6 className="welcomeTitle animatedLeft bounceInLeft"> {t("cover.welcome-title")}</h6>
+        <p className="welcomeP animatedRight bounceInRight">{t("cover.welcome-p")}</p>
 
         
         </WelcomePopUp>
