@@ -1,8 +1,12 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import "./Accordions.css";
 
 const Accordions = ({ logoSchool, content }) => {
+
+  const [t] = useTranslation("global");
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleAccordion = () => {
@@ -18,8 +22,9 @@ const Accordions = ({ logoSchool, content }) => {
         </div>
         <div class="flexs-item">
           {" "}
+          <button className="dropBtnCerts ">5</button>
           <button className="dropBtnCerts  " onClick={toggleAccordion}>
-            <div className="">{isOpen ? "Cerrar" : "Ver Certificados"}</div>
+            <div className="">{isOpen ? `${t("certificatesInfo.closeCertificates")}` : `${t("certificatesInfo.seeCertificates")}`}</div>
           </button>
         </div>
       </div>

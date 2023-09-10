@@ -108,8 +108,8 @@
       "gscCat": "HERRAMIENTAS DE OPTIMIZACIÓN PARA MOTORES DE BÚSQUEDA (SEO)",
       "nextJsCat": "MARCOS DE DESARROLO WEB"
     },
-    "be":{
-      "nodeCat": "DESARROLLO LADO DEL SERVIDOR", 
+    "be": {
+      "nodeCat": "DESARROLLO LADO DEL SERVIDOR",
       "expressCat": "DESARROLLO WEB DEL LADO DEL SERVIDOR",
       "pythonCat": "LENGUAJE DE PROGRAMACIÓN VERSÁTIL",
       "djangoCat": "DESARROLLO WEB DEL LADO DEL SERVIDOR",
@@ -129,9 +129,7 @@
       "firebaseBeCat": "",
       "railwayCat": " PLATAFORMA COMO SERVICIO (PAAS)",
       "cpanelCat": "PANELES DE CONTROL DE ALOJAMIENTO WEB"
-      
-  }
-
+    }
   },
   "typeOfTech": {
     "fe": {
@@ -165,7 +163,7 @@
     "be": {
       "nodeTech": "ENTORNO DE EJECUCIÓN DE JAVASCRIPT EN EL LADO DEL SERVIDOR",
       "expressTech": "FRAMEWORK WEB PARA NODE.JS",
-      "pythonTech":"LENGUAJE DE PROGRAMACIÓN DE ALTO NIVEL",
+      "pythonTech": "LENGUAJE DE PROGRAMACIÓN DE ALTO NIVEL",
       "djangoTech": " FRAMEWORK WEB DE ALTO NIVEL PARA PYTHON",
       "postgresqlTech": "BASE DE DATOS RELACIONAL DE CÓDIGO ABIERTO",
       "mongodbTech": " BASE DE DATOS NOSQL ORIENTADA A DOCUMENTOS",
@@ -212,12 +210,11 @@
       "gdtDesc": "Chrome DevTools es un conjunto de herramientas de desarrollo web integradas en el navegador Google Chrome que permite a los desarrolladores depurar y optimizar páginas web en el lado del cliente. Con DevTools, los desarrolladores pueden inspeccionar y modificar HTML y CSS, analizar el rendimiento de la red, depurar código JavaScript y simular varios dispositivos móviles. Proporciona una vista en tiempo real de la página web renderizada con herramientas para depurar y perfilar interactivamente una página web. Las características de análisis de rendimiento pueden ayudar a los desarrolladores a diagnosticar problemas de rendimiento y proporcionar sugerencias para mejorar los tiempos de carga de la página. Además, Chrome DevTools se puede ampliar con complementos y extensiones personalizadas, lo que lo convierte en una herramienta versátil y potente para los desarrolladores web. Sus características lo convierten en una herramienta indispensable para los desarrolladores web que desean construir y optimizar sitios web y aplicaciones web.",
       "gscDesc": "Google Search Console es un servicio web gratuito proporcionado por Google que permite a los propietarios de sitios web monitorear y administrar la presencia de su sitio web en los resultados de búsqueda de Google. Con herramientas para analizar el tráfico de búsqueda, ver cómo aparece su sitio web en los resultados de búsqueda, identificar problemas técnicos que puedan estar afectando su clasificación en los resultados de búsqueda y enviar nuevo contenido para que Google lo rastree e indexe, los propietarios de sitios web pueden optimizar el rendimiento de su sitio web en los resultados de búsqueda y mejorar su visibilidad en línea.",
       "nextJsDesc": "Next.js es un marco de trabajo de código abierto construido sobre React y Node.js, diseñado para simplificar el desarrollo de aplicaciones React renderizadas en el servidor (SSR) y generadas estáticamente (SSG). Ofrece características como renderizado en el lado del servidor, generación de sitios estáticos, división automática de código, enrutamiento, rutas de API, soporte de CSS en JS, reemplazo de módulos en caliente e integración con TypeScript. Con Next.js, los desarrolladores pueden crear páginas web dinámicas que se cargan rápidamente, mejoran el rendimiento y se optimizan para los motores de búsqueda, lo que lo convierte en una opción popular para construir aplicaciones web complejas y escalables."
-
     },
     "be": {
       "nodeDesc": "Node.js es un entorno de tiempo de ejecución de JavaScript gratuito, de código abierto y multiplataforma que permite a los desarrolladores construir aplicaciones de red escalables. Node.js utiliza un modelo de E/S no bloqueante y basado en eventos que lo hace ligero y eficiente, y está construido sobre el motor JavaScript V8 utilizado por Google Chrome. Con Node.js, los desarrolladores pueden utilizar JavaScript tanto en el lado del servidor como del cliente en el desarrollo web, lo que lo convierte en una opción popular para construir aplicaciones web, aplicaciones de chat en tiempo real y servidores de API. Node.js también tiene un vasto ecosistema de módulos y paquetes disponibles a través de su gestor de paquetes, npm, lo que facilita a los desarrolladores agregar funcionalidad a sus aplicaciones sin tener que reinventar la rueda. Además, Node.js tiene una comunidad activa que proporciona soporte y recursos para los desarrolladores.",
       "expressDesc": "Express.js, también conocido simplemente como Express, es un framework de Node.js que se utiliza para construir aplicaciones web. Express proporciona una serie de características y herramientas para facilitar la creación de aplicaciones web, incluyendo el manejo de rutas, la gestión de solicitudes y respuestas HTTP, el manejo de sesiones y cookies, y la integración de motores de plantillas para generar vistas HTML dinámicas. Express también se integra fácilmente con otros paquetes de Node.js, lo que permite a los desarrolladores agregar fácilmente nuevas características y funcionalidades a sus aplicaciones. Además, Express es extremadamente flexible y escalable, lo que lo hace ideal para la construcción de aplicaciones web de todo tipo y tamaño, desde pequeñas aplicaciones de una sola página hasta aplicaciones empresariales complejas y escalables. En resumen, Express es uno de los frameworks más populares y versátiles para el desarrollo de aplicaciones web en Node.js.",
-      "pythonDesc":"Python es un lenguaje de programación interpretado y de alto nivel conocido por su simplicidad, facilidad de uso y versatilidad. Desarrollado a fines de la década de 1980, Python es un lenguaje de código abierto que ha ganado popularidad debido a su sintaxis clara, legibilidad y soporte para múltiples paradigmas de programación. Python es ampliamente utilizado en una variedad de campos, incluyendo desarrollo web, análisis de datos, cómputo científico, inteligencia artificial, aprendizaje automático y más. La extensa biblioteca estándar y los módulos de terceros de Python hacen que sea fácil para los desarrolladores construir aplicaciones rápidamente y automatizar tareas. ",
+      "pythonDesc": "Python es un lenguaje de programación interpretado y de alto nivel conocido por su simplicidad, facilidad de uso y versatilidad. Desarrollado a fines de la década de 1980, Python es un lenguaje de código abierto que ha ganado popularidad debido a su sintaxis clara, legibilidad y soporte para múltiples paradigmas de programación. Python es ampliamente utilizado en una variedad de campos, incluyendo desarrollo web, análisis de datos, cómputo científico, inteligencia artificial, aprendizaje automático y más. La extensa biblioteca estándar y los módulos de terceros de Python hacen que sea fácil para los desarrolladores construir aplicaciones rápidamente y automatizar tareas. ",
       "djangoDesc": "Django es un framework web de alto nivel de Python que permite a los desarrolladores construir rápidamente aplicaciones web con un código limpio y reutilizable. Proporciona un conjunto de herramientas y características potentes, como un sistema de mapeo objeto-relacional (ORM), autenticación de usuario integrada, interfaz de administración, enrutamiento de URL y motor de plantillas, que ayudan a los desarrolladores a desarrollar aplicaciones web complejas de manera rápida y eficiente. Django sigue el patrón arquitectónico Modelo-Vista-Controlador (MVC) y enfatiza el principio de 'No te repitas', que anima a los desarrolladores a escribir código que sea reutilizable y fácil de mantener. Django se utiliza ampliamente en una variedad de industrias, incluyendo comercio electrónico, redes sociales y sistemas de gestión de contenidos. Además, Django tiene una comunidad grande y activa de desarrolladores que contribuyen a su desarrollo, crean nuevos paquetes y extensiones y brindan soporte a otros desarrolladores. En resumen, Django es un framework web potente y flexible que simplifica el proceso de construir aplicaciones web complejas con un código limpio y reutilizable.",
       "postgresqlDesc": "PostgreSQL es un sistema de gestión de bases de datos relacionales de código abierto y de alto rendimiento. Es conocido por su confiabilidad, estabilidad y capacidad para manejar grandes cantidades de datos. PostgreSQL utiliza el lenguaje SQL para manejar la interacción con la base de datos, pero también ofrece características avanzadas, como soporte para transacciones ACID (Atomicidad, Consistencia, Aislamiento y Durabilidad), consultas complejas, triggers, procedimientos almacenados, índices de texto completo y muchas otras características que lo hacen una opción popular para aplicaciones empresariales y de misión crítica. PostgreSQL es multiplataforma y está disponible en una amplia variedad de sistemas operativos, incluyendo Linux, macOS y Windows. También cuenta con una gran comunidad de desarrolladores que contribuyen a su desarrollo y brindan soporte y documentación. En resumen, PostgreSQL es una base de datos relacional de código abierto, robusta y altamente escalable, que es adecuada para una amplia variedad de aplicaciones de bases de datos empresariales y de alto rendimiento.",
       "mongodbDesc": "MongoDB es una base de datos NoSQL orientada a documentos, diseñada para ofrecer flexibilidad y escalabilidad. Almacena los datos en colecciones de documentos en lugar de en filas y columnas tradicionales, lo que permite una gestión más fácil de datos no estructurados y modelos de datos más flexibles. MongoDB es conocida por su capacidad para manejar grandes cantidades de datos y su alto rendimiento tanto para operaciones de lectura como de escritura. Admite una variedad de lenguajes de programación y tiene un modelo de datos flexible que permite cambios y actualizaciones de esquema fáciles. MongoDB también proporciona características como el particionamiento automático, la replicación y la indexación para garantizar una alta disponibilidad y escalabilidad. En resumen, MongoDB es una base de datos NoSQL flexible, escalable y de alto rendimiento ideal para la gestión de datos no estructurados y para soportar modelos de datos complejos.",
@@ -235,8 +232,36 @@
       "firebaseBeDesc": "",
       "railwayDesc": "RAILWAY.APP es una plataforma en línea que permite a los desarrolladores crear y desplegar aplicaciones en la nube de forma rápida y sencilla. Utilizando tecnologías de contenedores, automatización de infraestructura y la integración con proveedores de nube populares, Railway.app ofrece una manera conveniente de construir, escalar y administrar aplicaciones en un entorno en línea unificado. Con una interfaz de usuario intuitiva y un conjunto de herramientas poderosas, Railway.app es una opción atractiva para aquellos que buscan una solución eficiente y ágil para el desarrollo y despliegue de aplicaciones.",
       "cpanelDesc": "CPanel es un panel de control basado en web que proporciona una interfaz gráfica y herramientas de automatización para simplificar el proceso de alojamiento y gestión de sitios web. Permite a los propietarios y administradores de sitios web gestionar fácilmente su cuenta de alojamiento web, incluyendo la creación y gestión de cuentas de correo electrónico, la configuración y gestión de bases de datos y la gestión de archivos y directorios. cPanel también proporciona una amplia gama de herramientas para la gestión de sitios web, incluyendo copias de seguridad, funciones de seguridad y la instalación de software con un solo clic, lo que facilita la gestión y actualización de los sitios web. Además, cPanel proporciona una amplia gama de estadísticas y métricas para ayudar a los propietarios de sitios web a comprender y optimizar el rendimiento de su sitio web. En general, cPanel es una herramienta potente y fácil de usar para la gestión de alojamiento web y tareas de gestión de sitios web."
-    
-    
+    }
+  },
+  "certificatesInfo": {
+    "certification": "Certificación",
+    "institution": "Institución",
+    "website": "Sitio web",
+    "issuedCertificate": "Certificado emitido",
+    "skills": "Habilidades",
+    "seeCertificate": "Ver Certificado",
+    "seeCertificates": "Ver Certificados",
+    "closeCertificates": "Cerrar",
+
+    "cert_1": {
+      "certName": "Desarrollo Web Full Stack y Ciencias de la Computación",
+      "aliasInstitution": "Escuela de Tecnología y Ciencias de la Computación",
+      "skillsEarned_1": "Ingeniería de Software",
+      "skillsEarned_2": "Desarrollo de Software",
+      "skillsEarned_3": "Programación Orientada a Objetos (POO)",
+      "skillsEarned_5": "Frameworks de JavaScript",
+      "skillsEarned_6": "Ingeniería de Software Full Stack",
+      "skillsEarned_7": "Ciencias de la Computación"
+    },
+    "cert_2": {
+      "certName": "Front-end Development with React",
+      "aliasInstitution": "Escuela de Tecnología y Ciencias de la Computación",
+      "skillsEarned_3": "JavaScript Orientado a Objetos",
+      "skillsEarned_4": "Frameworks de JavaScript",
+      "skillsEarned_5": "JavaScript (Lenguaje de Programación)",
+      "skillsEarned_6": "Ingeniería de Software Full Stack",
+      "skillsEarned_7": "Diseño Front End"
     }
   },
   "contact": {

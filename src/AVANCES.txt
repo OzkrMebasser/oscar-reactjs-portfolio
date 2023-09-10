@@ -1,7 +1,9 @@
---> Completar traducciones en certificados
---> falta agregar los certificados de uv y effeset
+--> Completar traducciones en certificados NUMERO 3
+
 --> hacer la logica de mis soft skills
 --> completar y corregir en mobile mis proyectos
+
+--> formatear todo el codigo antes del deploy
 
 
 

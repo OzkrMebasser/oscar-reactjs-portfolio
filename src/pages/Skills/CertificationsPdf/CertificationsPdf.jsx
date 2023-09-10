@@ -1,7 +1,9 @@
-import React, { useState, useRef } from "react";
-import Accordion from "react-bootstrap/Accordion";
+// import React, { useState, useRef } from "react";
+
 import ScrollToTop from "../../../Components/GoUpButton/ScrollToTop";
 import Accordions from "../../../Components/Accordions/Accordions";
+import Accordion from "react-bootstrap/Accordion";
+import { useTranslation } from "react-i18next";
 import SkillsEarned from "./SkillsEarned";
 
 // Import the styles
@@ -43,10 +45,14 @@ import EFSETCertificateOM from "./EfSet/EFSETCertificateOM.pdf";
 import EXAVER from "./UV/EXAVER.pdf";
 
 import "../../Skills/Skills.css";
+
 //Component Cert. Individual
 import CertPdf from "./CertPdf";
 
 const CertificationsPdf = () => {
+
+  const [t] = useTranslation("global");
+
   return (
     <>
       <Accordion defaultActiveKey="0" className="accordion-padding">
@@ -59,33 +65,34 @@ const CertificationsPdf = () => {
             <div>
               <CertPdf
                 //Cert #1 Academlo
-                certName="Full Stack Web Development and Computer Science"
+                certName={t("certificatesInfo.cert_1.certName")}
                 eventKey="1"
                 institution="ACADEMLO "
-                aliasInstitution="School of Technology and Computer Science"
+                
+                aliasInstitution={t("certificatesInfo.cert_1.aliasInstitution")}
                 logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2Flogo_academlo2.png?alt=media&token=c4b55a3f-78b2-4a29-9601-7a9179305b6a"
                 skillsEarned_1={
-                  <SkillsEarned skillsEarned={"Software Engineering"} />
+                  <SkillsEarned skillsEarned={t("certificatesInfo.cert_1.skillsEarned_1")} />
                 }
                 skillsEarned_2={
-                  <SkillsEarned skillsEarned={"Software Development"} />
+                  <SkillsEarned skillsEarned={t("certificatesInfo.cert_1.skillsEarned_2")} />
                 }
                 skillsEarned_3={
                   <SkillsEarned
-                    skillsEarned={"Object-Oriented Programming (OOP)"}
+                    skillsEarned={t("certificatesInfo.cert_1.skillsEarned_3")}
                   />
                 }
                 skillsEarned_4={<SkillsEarned skillsEarned={"Node.js"} />}
                 skillsEarned_5={
-                  <SkillsEarned skillsEarned={"JavaScript Frameworks"} />
+                  <SkillsEarned skillsEarned={t("certificatesInfo.cert_1.skillsEarned_5")} />
                 }
                 skillsEarned_6={
                   <SkillsEarned
-                    skillsEarned={"Full Stack Software Engineering"}
+                    skillsEarned={t("certificatesInfo.cert_1.skillsEarned_6")}
                   />
                 }
                 skillsEarned_7={
-                  <SkillsEarned skillsEarned={"Computer Science"} />
+                  <SkillsEarned skillsEarned={t("certificatesInfo.cert_1.skillsEarned_7")} />
                 }
                 fileUrl={FullStackCert}
                 website={"https://www.academlo.com"}
@@ -96,36 +103,49 @@ const CertificationsPdf = () => {
 
               <CertPdf
                 //Cert #2 Academlo
-                certName="Front-end Development with React"
+                certName={t("certificatesInfo.cert_2.certName")}
                 eventKey="2"
                 institution="ACADEMLO "
-                aliasInstitution="School of Technology and Computer Science"
+                aliasInstitution={t("certificatesInfo.cert_2.aliasInstitution")}
                 logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2Flogo_academlo2.png?alt=media&token=c4b55a3f-78b2-4a29-9601-7a9179305b6a"
                 fileUrl={ReactCert}
                 website={"https://www.academlo.com"}
                 issuedCertificate={
                   "https://certificates.academlo.com/en/verify/85081735827091"
                 }
+                              //   "cert_2": {
+              //     "certName":"Front-end Development with React",
+              //     "aliasInstitution": "School of Technology and Computer Science",
+              //     "skillsEarned_3": "Object-Oriented JavaScript",
+              //     "skillsEarned_4": "JavaScript Frameworks",
+              //     "skillsEarned_5":"JavaScript (Programming Language)",
+              //     "skillsEarned_6": "Full Stack Software Engineering",
+              //     "skillsEarned_7":"Front End Design"
+
+              
+                                  
+              // }
+
                 skillsEarned_1={<SkillsEarned skillsEarned={"React.js"} />}
                 skillsEarned_2={<SkillsEarned skillsEarned={"React Jsx"} />}
                 skillsEarned_3={
-                  <SkillsEarned skillsEarned={"Object-Oriented JavaScript"} />
+                  <SkillsEarned skillsEarned={t("certificatesInfo.cert_2.skillsEarned_3")} />
                 }
                 skillsEarned_4={
-                  <SkillsEarned skillsEarned={"JavaScript Frameworks"} />
+                  <SkillsEarned skillsEarned={t("certificatesInfo.cert_2.skillsEarned_4")} />
                 }
                 skillsEarned_5={
                   <SkillsEarned
-                    skillsEarned={"JavaScript (Programming Language)"}
+                    skillsEarned={t("certificatesInfo.cert_2.skillsEarned_5")}
                   />
                 }
                 skillsEarned_6={
                   <SkillsEarned
-                    skillsEarned={"Full Stack Software Engineering"}
+                    skillsEarned={t("certificatesInfo.cert_2.skillsEarned_6")}
                   />
                 }
                 skillsEarned_7={
-                  <SkillsEarned skillsEarned={"Front End Design"} />
+                  <SkillsEarned skillsEarned={t("certificatesInfo.cert_2.skillsEarned_7")} />
                 }
               />
 

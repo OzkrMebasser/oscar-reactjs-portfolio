@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { useTranslation } from "react-i18next";
 import Accordion from "react-bootstrap/Accordion";
 import AccordionContext from "react-bootstrap/AccordionContext";
 import { useAccordionButton } from "react-bootstrap/AccordionButton";
@@ -28,7 +29,10 @@ function ContextAwareToggle({ children, eventKey, callback }) {
 }
 
 const CertPdf = (props) => {
-  console.log(props);
+  
+  const [t] = useTranslation("global");
+
+  // console.log(props);
   return (
     <>
       {/* {"Cert #1"} */}
@@ -37,12 +41,12 @@ const CertPdf = (props) => {
           <div class="flex-container">
             <div class="flex-item-left">
               <p className="certTitles">
-                Certication:
+                {t("certificatesInfo.certification")}:
                 <span className="certsStrongTitles">{props.certName} </span>
               </p>
 
               <p className="certTitles ">
-                Institution:
+              {t("certificatesInfo.institution")}:
                 <span className="certsStrongTitles ">{props.institution}</span>
                 <span className="certsStrongTitles ">
                   {props.aliasInstitution}
@@ -54,7 +58,7 @@ const CertPdf = (props) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Website{" "}
+                 {t("certificatesInfo.website")}:{" "}
                 <img
                   src="https://www.svgrepo.com/show/378648/link-out.svg"
                   className="linkExternal"
@@ -69,7 +73,7 @@ const CertPdf = (props) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Issued Certificate{" "}
+                  {t("certificatesInfo.issuedCertificate")}:{" "}
                   <img
                     src="https://www.svgrepo.com/show/378648/link-out.svg"
                     className="linkExternal"
@@ -92,7 +96,7 @@ const CertPdf = (props) => {
                     /> */}
                 </a>
                 <p className="certTitles mtSkills">
-                  Skills: <br />
+                {t("certificatesInfo.skills")}: <br />
                 </p>
 
                 <div className="skillsEarned ">
@@ -129,7 +133,8 @@ const CertPdf = (props) => {
                 />
               </div>
               <ContextAwareToggle eventKey={props.eventKey}>
-                Ver certificado
+               
+                {t("certificatesInfo.seeCertificate")}
                 {/* <img className="docsLink" src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fbooks-svgrepo-com%20(1).svg?alt=media&token=03a80306-1366-4ba7-ad3a-e7368d1ff0c9" alt="docs" /> */}
               </ContextAwareToggle>
             </div>
