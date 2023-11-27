@@ -1,4 +1,8 @@
---> Completar traducciones en certificados NUMERO 3
+--> Completar traducciones en certificados Back-End Development with Node.js de ACADEMLO
+ estpy en el 4to de acamdemlo 
+ ↓↓
+ Back-End Development with Python & Django
+
 
 --> hacer la logica de mis soft skills
 --> completar y corregir en mobile mis proyectos

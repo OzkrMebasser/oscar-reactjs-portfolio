@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 import emailjs from '@emailjs/browser';
 
-import MyMap from "./MyMap";
+import MyLocation from "./MyLocation";
 //https://mailtrap.io/blog/react-contact-form/#Create-the-contact-form TO SEE EXAMPLE
 //https://mdbootstrap.com/docs/b4/jquery/forms/contact/
 //https://w3collective.com/react-contact-form/
@@ -18,7 +18,7 @@ const Contact = () => {
   function enviarEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('service_msdbc3w','template_2o2kozw',form.current,'cDPMTs1UJt4da-K4_')
+    emailjs.sendForm(`${process.env.REACT_APP_SERVICE_ID}`,`${process.env.REACT_APP_TEMPLATE_NUMBER}`,form.current,`${process.env.REACT_APP_PUBLIC_KEY_EMAILJS}`)
     .then((response) => {
       alert(t("contact.alert"))
       console.log('SUCCESS!', response.status, response.text);
@@ -36,36 +36,37 @@ const Contact = () => {
     <Fragment>
       <section id="contact">
         <h4 className="contactTitle">{t("contact.title")}</h4>
-        <div class="contact-box">
-          <div class="contact-form-wrapper yellow">
+        <div className="contact-box">
+          <div className="contact-form-wrapper yellow">
             <form ref={form}  onSubmit={enviarEmail}>
-              <div class="form-item">
+              <div className="form-item">
                 <input type="text" name="sender" required />
                 <label>Name:</label>
               </div>
-              <div class="form-item">
+              <div className="form-item">
                 <input type="text" name="email" required />
                 <label>Email:</label>
               </div>
-              <div class="form-item">
-                <textarea class="" name="message" required></textarea>
+              <div className="form-item">
+                <textarea className="" name="message" required></textarea>
                 <label>Message:</label>
               </div>
 
-              <button class="submit-btn ">
+              <button className="submit-btn ">
                 {/* <span className="iconColor " title="Send Message">
                   <i class="fas fa-paper-plane"></i>
                 </span> */}
-                <div class="btn">
+                <div className="btn">
                   <span>Click to send message!</span>
 
-                 <i class="ico"></i>
+                 <i className="ico"></i>
                 </div>
               </button>
             </form>
           </div>
 
-          <div class="contact-links yellow">
+
+          <div className="contact-links yellow">
             <div className="map">
               <div className="located">
                 <strong>
@@ -132,7 +133,7 @@ const Contact = () => {
                   </ul>
                 </div>
               </div>
-              <MyMap />
+              <MyLocation />
             </div>
           </div>
         </div>

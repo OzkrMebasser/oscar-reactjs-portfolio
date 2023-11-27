@@ -60,39 +60,40 @@ const CertificationsPdf = () => {
 
         <Accordions
           //Academlo....
+          totalCerts="6"
           logoSchool="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2Flogo_academlo2.png?alt=media&token=c4b55a3f-78b2-4a29-9601-7a9179305b6a"
           content={
             <div>
               <CertPdf
                 //Cert #1 Academlo
-                certName={t("certificatesInfo.cert_1.certName")}
+                certName={t("academloCerts.cert_1.certName")}
                 eventKey="1"
                 institution="ACADEMLO "
                 
-                aliasInstitution={t("certificatesInfo.cert_1.aliasInstitution")}
+                aliasInstitution={t("academloCerts.aliasInstitution")}
                 logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2Flogo_academlo2.png?alt=media&token=c4b55a3f-78b2-4a29-9601-7a9179305b6a"
                 skillsEarned_1={
-                  <SkillsEarned skillsEarned={t("certificatesInfo.cert_1.skillsEarned_1")} />
+                  <SkillsEarned skillsEarned={t("academloCerts.cert_1.skillsEarned_1")} />
                 }
                 skillsEarned_2={
-                  <SkillsEarned skillsEarned={t("certificatesInfo.cert_1.skillsEarned_2")} />
+                  <SkillsEarned skillsEarned={t("academloCerts.cert_1.skillsEarned_2")} />
                 }
                 skillsEarned_3={
                   <SkillsEarned
-                    skillsEarned={t("certificatesInfo.cert_1.skillsEarned_3")}
+                    skillsEarned={t("academloCerts.cert_1.skillsEarned_3")}
                   />
                 }
-                skillsEarned_4={<SkillsEarned skillsEarned={"Node.js"} />}
+                skillsEarned_4={<SkillsEarned skillsEarned={t("academloCerts.cert_1.skillsEarned_4")} />}
                 skillsEarned_5={
-                  <SkillsEarned skillsEarned={t("certificatesInfo.cert_1.skillsEarned_5")} />
+                  <SkillsEarned skillsEarned={t("academloCerts.cert_1.skillsEarned_5")} />
                 }
                 skillsEarned_6={
                   <SkillsEarned
-                    skillsEarned={t("certificatesInfo.cert_1.skillsEarned_6")}
+                    skillsEarned={t("academloCerts.cert_1.skillsEarned_6")}
                   />
                 }
                 skillsEarned_7={
-                  <SkillsEarned skillsEarned={t("certificatesInfo.cert_1.skillsEarned_7")} />
+                  <SkillsEarned skillsEarned={t("academloCerts.cert_1.skillsEarned_7")} />
                 }
                 fileUrl={FullStackCert}
                 website={"https://www.academlo.com"}
@@ -103,73 +104,72 @@ const CertificationsPdf = () => {
 
               <CertPdf
                 //Cert #2 Academlo
-                certName={t("certificatesInfo.cert_2.certName")}
+                certName={t("academloCerts.cert_2.certName")}
                 eventKey="2"
                 institution="ACADEMLO "
-                aliasInstitution={t("certificatesInfo.cert_2.aliasInstitution")}
+                aliasInstitution={t("academloCerts.aliasInstitution")}
                 logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2Flogo_academlo2.png?alt=media&token=c4b55a3f-78b2-4a29-9601-7a9179305b6a"
                 fileUrl={ReactCert}
                 website={"https://www.academlo.com"}
                 issuedCertificate={
                   "https://certificates.academlo.com/en/verify/85081735827091"
                 }
-                              //   "cert_2": {
-              //     "certName":"Front-end Development with React",
-              //     "aliasInstitution": "School of Technology and Computer Science",
-              //     "skillsEarned_3": "Object-Oriented JavaScript",
-              //     "skillsEarned_4": "JavaScript Frameworks",
-              //     "skillsEarned_5":"JavaScript (Programming Language)",
-              //     "skillsEarned_6": "Full Stack Software Engineering",
-              //     "skillsEarned_7":"Front End Design"
-
-              
-                                  
-              // }
+                             
 
                 skillsEarned_1={<SkillsEarned skillsEarned={"React.js"} />}
                 skillsEarned_2={<SkillsEarned skillsEarned={"React Jsx"} />}
                 skillsEarned_3={
-                  <SkillsEarned skillsEarned={t("certificatesInfo.cert_2.skillsEarned_3")} />
+                  <SkillsEarned skillsEarned={t("academloCerts.cert_2.skillsEarned_3")} />
                 }
                 skillsEarned_4={
-                  <SkillsEarned skillsEarned={t("certificatesInfo.cert_2.skillsEarned_4")} />
+                  <SkillsEarned skillsEarned={t("academloCerts.cert_2.skillsEarned_4")} />
                 }
                 skillsEarned_5={
                   <SkillsEarned
-                    skillsEarned={t("certificatesInfo.cert_2.skillsEarned_5")}
+                    skillsEarned={t("academloCerts.cert_2.skillsEarned_5")}
                   />
                 }
                 skillsEarned_6={
                   <SkillsEarned
-                    skillsEarned={t("certificatesInfo.cert_2.skillsEarned_6")}
+                    skillsEarned={t("academloCerts.cert_2.skillsEarned_6")}
                   />
                 }
                 skillsEarned_7={
-                  <SkillsEarned skillsEarned={t("certificatesInfo.cert_2.skillsEarned_7")} />
+                  <SkillsEarned skillsEarned={t("academloCerts.cert_2.skillsEarned_7")} />
                 }
+             
               />
 
               <CertPdf
                 //Cert #3 Academlo
-                certName="Back-End Development with Node.js"
+                certName={t("academloCerts.cert_3.certName")}
                 eventKey="3"
                 institution="ACADEMLO "
-                aliasInstitution="School of Technology and Computer Science"
+                aliasInstitution={t("academloCerts.aliasInstitution")}
                 logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2Flogo_academlo2.png?alt=media&token=c4b55a3f-78b2-4a29-9601-7a9179305b6a"
                 fileUrl={NodeJsCert}
                 website={"https://www.academlo.com"}
                 issuedCertificate={
                   "https://certificates.academlo.com/en/verify/65762544626703"
                 }
-                skillsEarned_1={<SkillsEarned skillsEarned={"Node.js"} />}
+                skillsEarned_1={
+                  <SkillsEarned skillsEarned={t("academloCerts.cert_3.skillsEarned_1")} />
+                }
                 skillsEarned_2={
-                  <SkillsEarned
-                    skillsEarned={"JavaScript (Programming Language)"}
-                  />
+                  <SkillsEarned skillsEarned={t("academloCerts.cert_3.skillsEarned_2")} />
                 }
                 skillsEarned_3={
                   <SkillsEarned
-                    skillsEarned={"Back End (Software Engineering)"}
+                    skillsEarned={t("academloCerts.cert_3.skillsEarned_3")}
+                  />
+                }
+                skillsEarned_4={<SkillsEarned skillsEarned={t("academloCerts.cert_3.skillsEarned_4")} />}
+                skillsEarned_5={
+                  <SkillsEarned skillsEarned={t("academloCerts.cert_3.skillsEarned_5")} />
+                }
+                skillsEarned_6={
+                  <SkillsEarned
+                    skillsEarned={t("academloCerts.cert_3.skillsEarned_6")}
                   />
                 }
               />
@@ -260,6 +260,7 @@ const CertificationsPdf = () => {
 
         <Accordions
           //Capacítate para el empleo ....
+          totalCerts="2"
           logoSchool="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2Fcapacitate.png?alt=media&token=fe50d261-469c-4120-8ce0-be3ab99f8924"
           content={
             <div>
@@ -331,6 +332,7 @@ const CertificationsPdf = () => {
         />
         <Accordions
           //FreeCodeCamp ....
+          totalCerts="1"
           logoSchool="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FFreeCodeCamp_logo.png?alt=media&token=d9b83ebe-8cb2-42f4-801f-cccc64202662"
           content={
             <div>
@@ -365,6 +367,7 @@ const CertificationsPdf = () => {
 
         <Accordions
           //Udemy ....
+          totalCerts="2"
           logoSchool="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FUdemy_logo2.png?alt=media&token=51d33619-c738-4fea-b699-a33a6c63320d"
           content={
             <div>
@@ -434,6 +437,7 @@ const CertificationsPdf = () => {
         />
         <Accordions
           //LinkedIn ....
+          totalCerts="1"
           logoSchool="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FlinkedInLearnign3.png?alt=media&token=dfafb3a7-e31b-429a-8e92-c21d96b0b5c8"
           content={
             <div>
@@ -473,6 +477,7 @@ const CertificationsPdf = () => {
 
         <Accordions
           //Grasshopper ....
+          totalCerts="4"
           logoSchool="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FgrassHopper.jpg?alt=media&token=ad4f2959-4b10-4b04-8c23-d03bc03d8482"
           content={
             <div>
@@ -598,6 +603,7 @@ const CertificationsPdf = () => {
         />
         <Accordions
           //EF SET  ....
+          totalCerts="1"
           logoSchool="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2Fefset-logo.png?alt=media&token=26d9cb2c-dc79-4e66-81c5-feb0bdb4de7f"
           content={
             <CertPdf
@@ -619,6 +625,7 @@ const CertificationsPdf = () => {
 
         <Accordions
           //Universidad Veracruz  ....
+          totalCerts="1"
           logoSchool="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FlogouvUV.JPG?alt=media&token=ed36f0c7-f0ac-4c0a-8f7a-71ffc1918080"
           content={
             <CertPdf

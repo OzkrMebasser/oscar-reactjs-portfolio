@@ -241,31 +241,60 @@
     "skills": "Skills",
     "seeCertificate": "See Certificate",
     "seeCertificates" : "See Certificates",
-    "closeCertificates" : "Close",
+    "closeCertificates" : "Close"
 
+  },
+  
+  "academloCerts":{
+    "aliasInstitution": "School of Technology and Computer Science",
     "cert_1": {
       "certName": "Full Stack Web Development and Computer Science",
-      "aliasInstitution": "School of Technology and Computer Science",
+     
       "skillsEarned_1": "Software Engineering",
       "skillsEarned_2": "Software Development",
       "skillsEarned_3": "Object-Oriented Programming (OOP)",
+      "skillsEarned_4": "Node Js",
       "skillsEarned_5": "JavaScript Frameworks",
       "skillsEarned_6": "Full Stack Software Engineering",
       "skillsEarned_7": "Computer Science"
+
     },
     "cert_2": {
         "certName":"Front-end Development with React",
-        "aliasInstitution": "School of Technology and Computer Science",
+        "skillsEarned_1": "React.js",
+        "skillsEarned_2": "React Jsx", 
+       
         "skillsEarned_3": "Object-Oriented JavaScript",
         "skillsEarned_4": "JavaScript Frameworks",
         "skillsEarned_5":"JavaScript (Programming Language)",
         "skillsEarned_6": "Full Stack Software Engineering",
         "skillsEarned_7":"Front End Design"
                         
-    }
+    },
+    "cert_3":{
+      "certName":"Back-End Development with Node.js",
+     
+      "skillsEarned_1": "NodeJS",
+      "skillsEarned_2": "JavaScript (Programming Language)",
+      "skillsEarned_3": "Back End (Software Engineering)",
+      "skillsEarned_4": "SQL, NoSQL, Databases",
+      "skillsEarned_5": "API Development",
+      "skillsEarned_6": "Database Management"
+      },
+      "cert_4":{
+        "certName":"",
+       
+        "skillsEarned_1": "",
+        "skillsEarned_2": "",
+        "skillsEarned_3": "",
+        "skillsEarned_4": "",
+        "skillsEarned_5": "",
+        "skillsEarned_6": ""
+        }
+
+    },
 
 
-  },
   "contact": {
     "alert": "Hi, your email has been sent with success, I'll be in touch with you asap, have a great day!",
     "title": "LET´S GET IN TOUCH!"
