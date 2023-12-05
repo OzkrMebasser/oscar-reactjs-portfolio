@@ -168,7 +168,7 @@ const CertificationsPdf = () => {
                   <SkillsEarned skillsEarned={t("academloCerts.cert_3.skillsEarned_5")} />
                 }
                 skillsEarned_6={
-                  <SkillsEarned
+                                 <SkillsEarned
                     skillsEarned={t("academloCerts.cert_3.skillsEarned_6")}
                   />
                 }

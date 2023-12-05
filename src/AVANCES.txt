@@ -3,6 +3,8 @@
  ↓↓
  Back-End Development with Python & Django
 
+ corregir responsive la parte donde se ve cuantos certificados son y reducir el tamaño de la fuente de las tags
+
 
 --> hacer la logica de mis soft skills
 --> completar y corregir en mobile mis proyectos

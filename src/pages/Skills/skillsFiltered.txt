@@ -18,28 +18,41 @@ const Skills = (props) => {
   //Dropdown Tech description
 
   const { isDropOpen } = props;
+
   const [selectedCardIndex, setSelectedCardIndex] = useState(-1);
-  const [category, setCategory] = useState("");
-  const [filteredFECategories, setFilteredFECategories] = useState(skillsFE);
 
   function handleCardClick(index) {
     setSelectedCardIndex(selectedCardIndex === index ? -1 : index);
   }
 
+  // PRUEBAS
+
+  const [filteredFECategories, setfilteredFECategories] = useState(skillsFE);
+  
+  const [category, setCategory] = useState("");
+
   // Using set to filter unique values
-  const categories = Array.from(new Set(skillsFE.map((cat) => cat.category)));
-  // console.log("Set de categories: ", categories)
+  const categories = Array.from(
+    new Set(skillsFE.map((FEcategory) => FEcategory.category))
+  );
+
+  // console.log(categories);
 
   useEffect(() => {
-    // console.log("Selected category:", category);
-    setFilteredFECategories(
-      skillsFE.filter((cat) => !category || category === t(cat.category))
+    setfilteredFECategories(
+      skillsFE.filter((FEcategory) => {
+        return !category || category === FEcategory.category;
+      
+      })
     );
-  }, [category, skillsFE, t]);
+  }, [category,skillsFE]);
 
   const clearFilters = () => {
     setCategory("");
   };
+
+  console.log(filteredFECategories)
+  // PRUEBA
 
   return (
     <>
@@ -58,7 +71,12 @@ const Skills = (props) => {
         </section>
         <Accordion>
           {/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓  FrontEnd tools  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/}
+
+      
+
           <Accordion.Item eventKey="0">
+
+    
             {/* <ScrollToTop /> */}
             <Accordion.Header className="texts ">
               {t("skills.frontendTools")}{" "}
@@ -69,11 +87,10 @@ const Skills = (props) => {
                 alt="FrontEnd"
               />
             </Accordion.Header>
-
             <Accordion.Body>
-              <div className="select-cats">
+              <div className="text-center mt-6">
                 <select
-                  className="select-input"
+                  className="mt-1 block w-[300px] mx-auto py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                   onChange={(e) => setCategory(e.target.value)}
                   value={category}
                 >
@@ -85,102 +102,93 @@ const Skills = (props) => {
                     <option key={cat}>{t(`${cat}`)}</option>
                   ))}
                 </select>
-
-                <button
-                  className="select-btn"
-                  onClick={() => setCategory("")}
-                >
-                  Ver todas las Categorias
-                </button>
               </div>
-
+              <button
+                className="mx-auto mt-4 px-4 py-2 text-sm text-blue-100 bg-blue-500 rounded shadow"
+                onClick={() => setCategory("")}
+              >
+                Ver todas las ubicaciones
+              </button>
               <Row xs={1} md={5} fluid className="g-3 texts alto">
                 {filteredFECategories.map((skill, index) => (
-                  <Col key={skill.id}>
-                    <Card
-                      key={skill.id}
-                      className=" cardGridShadow align-middle "
-                      style={{
-                        backgroundColor: isDropOpen
-                          ? "cardGrid"
-                          : "cardGridOpen",
-                      }}
-                    >
-                      {/* <span className={skill.class} ><span className="bgBlack">{skill.icon}</span></span> */}
-                      <img
-                        className={skill.class}
-                        src={skill.icon}
-                        alt={skill.alt}
-                      />
-                      <Card.Body>
-                        <Card.Title>{skill.title} </Card.Title>
-
-                        <div className="alto">
-                          <Card.Text className="subTitle">
-                            {t(`${skill.category}`)}
-                            {"    "}
-                          </Card.Text>
-                        </div>
-
-                        <div className="dropdown">
-                          {/* {"Button DROP DOWN"} */}
-                          <button
-                            className="dropBtn"
-                            onClick={() => handleCardClick(index)}
-                          >
-                            <span className="xTtitle">
-                              {t("skills.whatIsIt")}
-                            </span>{" "}
-                            <span className="bgTechTitle xTtitle">
-                              "{skill.title}" ?
-                            </span>{" "}
-                          </button>
-                          {selectedCardIndex === index && (
-                            <div id="dropdown-content">
-                              <Card.Text className="textM">
-                                <Card.Text className="subTitle">
-                                  <p className="techTitle">
-                                    {t(`${skill.typeOfTech}`)}
-                                  </p>
+                    <Col key={skill.id}>
+                      <Card
+                        className=" cardGridShadow align-middle "
+                        style={{
+                          backgroundColor: isDropOpen
+                            ? "cardGrid"
+                            : "cardGridOpen",
+                        }}
+                      >
+                        <img
+                          className={skill.class}
+                          src={skill.icon}
+                          alt={skill.alt}
+                        />
+                        <Card.Body>
+                          <Card.Title>{skill.title} </Card.Title>
+                          <div className="alto">
+                            <Card.Text className="subTitle">
+                              {t(`${skill.category}`)}
+                              {"    "}
+                            </Card.Text>
+                          </div>
+                          <div className="dropdown">
+                            <button
+                              className="dropBtn"
+                              onClick={() => setSelectedCardIndex(index)}
+                            >
+                              <span className="xTtitle">
+                                {t("skills.whatIsIt")}
+                              </span>{" "}
+                              <span className="bgTechTitle xTtitle">
+                                "{skill.title}" ?
+                              </span>{" "}
+                            </button>
+                            {selectedCardIndex === index && (
+                              <div id="dropdown-content">
+                                <Card.Text className="textM">
+                                  <Card.Text className="subTitle">
+                                    <p className="techTitle">
+                                      {t(`${skill.typeOfTech}`)}
+                                    </p>
+                                  </Card.Text>
+                                  {t(`${skill.description}`)}
+                                  <br />
+                                  <button className="docsBtn">
+                                    <a
+                                      className="noUnderline"
+                                      href={`${skill.docs}`}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
+                                      Read Docs.
+                                      <img
+                                        className="docsLink"
+                                        src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fbooks-svgrepo-com%20(1).svg?alt=media&token=03a80306-1366-4ba7-ad3a-e7368d1ff0c9"
+                                        alt="docs"
+                                      />
+                                    </a>
+                                  </button>
                                 </Card.Text>
-                                {t(`${skill.description}`)}
-                                <br />
-                                <button className="docsBtn">
-                                  <a
-                                    className="noUnderline"
-                                    href={`${skill.docs}`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                  >
-                                    Read Docs.
-                                    <img
-                                      className="docsLink"
-                                      src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fbooks-svgrepo-com%20(1).svg?alt=media&token=03a80306-1366-4ba7-ad3a-e7368d1ff0c9"
-                                      alt="docs"
-                                    />
-                                  </a>
-                                </button>
-                              </Card.Text>
-                            </div>
-                          )}
-
-                          <ProgressBar
-                            className="progressBar"
-                            animated
-                            now={skill.progress}
-                            label={`${t("skills.learning")}`}
-                            variant={skill.variant}
-                            style={{ height: "23px", color: "black" }}
-                          />
-                        </div>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                ))}
+                              </div>
+                            )}
+                            <ProgressBar
+                              className="progressBar"
+                              animated
+                              now={skill.progress}
+                              label={`${t("skills.learning")}`}
+                              variant={skill.variant}
+                              style={{ height: "23px", color: "black" }}
+                            />
+                          </div>
+                        </Card.Body>
+                      </Card>
+                    </Col>
+                  ))}
               </Row>
             </Accordion.Body>
           </Accordion.Item>
-
           {/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑  FrontEnd tools  ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/}
           {/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ BackEnd tools ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/}
 

@@ -82,6 +82,22 @@
   },
   "categories": {
     "fe": {
+
+      "webDev": "DESARROLLO WEB",
+      "feTools": "HERRAMIENTAS FRONT END",
+      "versionControlSoftware": "SISTEMA DE CONTROL DE VERSIONES",
+      "sourceCodeHosting": "PLATAFORMAS DE ALOJAMIENTO DE CÓDIGO FUENTE",
+      "dependenciasManagment": "HERRAMIENTA DE GESTIÓN DE DEPENDENCIAS",
+      "ides": "ENTORNO DE DESARROLLO INTEGRADO (IDE) PARA EL DESARROLLO WEB.",
+      "webDevTools": "HERRAMIENTAS Y PLATAFORMAS DE DESARROLLO WEB",
+      "cloudWebDevPlatforms": "PLATAFORMAS DE DESARROLLO WEB BASADAS EN LA NUBE",
+      "baasPlatforms": "PLATAFORMAS BACKEND-AS-A-SERVICE (BAAS)",
+      "seoTools": "HERRAMIENTAS DE OPTIMIZACIÓN PARA MOTORES DE BÚSQUEDA (SEO)",
+      "webDevFrameworks": "MARCOS DE DESARROLLO WEB",
+      
+
+
+
       "htmlCat": "DESARROLLO WEB",
       "pugCat": "DESARROLLO WEB",
       "cssCat": "DESARROLLO WEB",
