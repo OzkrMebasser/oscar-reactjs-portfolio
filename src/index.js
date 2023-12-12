@@ -35,7 +35,7 @@ root.render(
   <MouseContextProvider>
     <I18nextProvider i18n={i18next}>  
     {/* <CursorStars /> */}
-    <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js"> <App /></Worker>;
+    <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js"> <App /></Worker>
     
     </I18nextProvider>
     </MouseContextProvider>

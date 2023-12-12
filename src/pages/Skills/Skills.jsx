@@ -19,27 +19,33 @@ const Skills = (props) => {
 
   const { isDropOpen } = props;
   const [selectedCardIndex, setSelectedCardIndex] = useState(-1);
-  const [category, setCategory] = useState("");
+  const [categoryFE, setCategoryFE] = useState("");
+  const [categoryBE, setCategoryBE] = useState("");
   const [filteredFECategories, setFilteredFECategories] = useState(skillsFE);
+  const [filteredBECategories, setFilteredBECategories] = useState(skillsBE);
 
+  // Using set to filter unique values from FRONT END SKILLS
+  const categoriesFE = Array.from(new Set(skillsFE.map((cat) => cat.category)));
+  useEffect(() => {
+    setFilteredFECategories(
+      skillsFE.filter((cat) => !categoryFE || categoryFE === t(cat.category))
+    );
+  }, [categoryFE, skillsFE, t]);
+
+  // Using set to filter unique values from BACK END SKILLS
+  const categoriesBE = Array.from(new Set(skillsBE.map((cat) => cat.category)));
+  useEffect(() => {
+    setFilteredBECategories(
+      skillsBE.filter((cat) => !categoryBE || categoryBE === t(cat.category))
+    );
+  }, [categoryBE, skillsBE, t]);
+  
+  const clearFilters = () => {
+    setCategoryFE("");
+  };
   function handleCardClick(index) {
     setSelectedCardIndex(selectedCardIndex === index ? -1 : index);
   }
-
-  // Using set to filter unique values
-  const categories = Array.from(new Set(skillsFE.map((cat) => cat.category)));
-  // console.log("Set de categories: ", categories)
-
-  useEffect(() => {
-    // console.log("Selected category:", category);
-    setFilteredFECategories(
-      skillsFE.filter((cat) => !category || category === t(cat.category))
-    );
-  }, [category, skillsFE, t]);
-
-  const clearFilters = () => {
-    setCategory("");
-  };
 
   return (
     <>
@@ -74,21 +80,21 @@ const Skills = (props) => {
               <div className="select-cats">
                 <select
                   className="select-input"
-                  onChange={(e) => setCategory(e.target.value)}
-                  value={category}
+                  onChange={(e) => setCategoryFE(e.target.value)}
+                  value={categoryFE}
                 >
                   <option value="" disabled>
                     Selecciona un Categoria
                   </option>
 
-                  {categories.map((cat) => (
+                  {categoriesFE.map((cat) => (
                     <option key={cat}>{t(`${cat}`)}</option>
                   ))}
                 </select>
 
                 <button
                   className="select-btn"
-                  onClick={() => setCategory("")}
+                  onClick={() => setCategoryFE("")}
                 >
                   Ver todas las Categorias
                 </button>
@@ -194,8 +200,30 @@ const Skills = (props) => {
               />
             </Accordion.Header>
             <Accordion.Body>
+            <div className="select-cats">
+                <select
+                  className="select-input"
+                  onChange={(e) => setCategoryBE(e.target.value)}
+                  value={categoryBE}
+                >
+                  <option value="" disabled>
+                    Selecciona un Categoria
+                  </option>
+
+                  {categoriesBE.map((cat) => (
+                    <option key={cat}>{t(`${cat}`)}</option>
+                  ))}
+                </select>
+
+                <button
+                  className="select-btn"
+                  onClick={() => setCategoryBE("")}
+                >
+                  Ver todas las Categorias
+                </button>
+              </div>
               <Row xs={1} md={5} fluid className="g-3 texts alto">
-                {skillsBE.map((skill, index) => (
+                {filteredBECategories.map((skill, index) => (
                   <Col key={skill.id}>
                     <Card
                       className=" cardGridShadow align-middle "
