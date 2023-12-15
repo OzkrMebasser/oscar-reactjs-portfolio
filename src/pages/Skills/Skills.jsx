@@ -39,7 +39,7 @@ const Skills = (props) => {
       skillsBE.filter((cat) => !categoryBE || categoryBE === t(cat.category))
     );
   }, [categoryBE, skillsBE, t]);
-  
+
   const clearFilters = () => {
     setCategoryFE("");
   };
@@ -200,7 +200,7 @@ const Skills = (props) => {
               />
             </Accordion.Header>
             <Accordion.Body>
-            <div className="select-cats">
+              <div className="select-cats">
                 <select
                   className="select-input"
                   onChange={(e) => setCategoryBE(e.target.value)}

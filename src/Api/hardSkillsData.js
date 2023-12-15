@@ -2,7 +2,6 @@ import "../../src/pages/Skills/Skills.css";
 
 //  FrontEnd Categories ↓↓↓↓**
 const categories = {
-
   webDev: "categories.fe.webDev",
   feTools: "categories.fe.feTools",
   versionControlSoftware: "categories.fe.versionControlSoftware",
@@ -15,11 +14,6 @@ const categories = {
   baasPlatforms: "categories.fe.baasPlatforms",
   seoTools: "categories.fe.seoTools",
   webDevFrameworks: "categories.fe.webDevFrameworks",
-
-
-
-
-
 
   htmlCat: "categories.fe.htmlCat",
   pugCat: "categories.fe.pugCat",
@@ -453,7 +447,6 @@ export const skillsFE = [
     docs: "https://vercel.com/docs",
   },
   {
-   
     id: 21,
     icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fnext-js-svgrepo-com.svg?alt=media&token=ac7b37d1-13b5-4c9e-8986-6f6eb1123f31&_gl=1*zbm2m5*_ga*MTkyOTMxODgzNC4xNjgyMDkxNDc2*_ga_CW55HF8NVT*MTY4NTc2ODcyOS4xMC4xLjE2ODU3Njg3ODkuMC4wLjA.",
     title: "NEXT JS",
@@ -482,7 +475,6 @@ export const skillsFE = [
     typeOfTech: `${typeOfTech.netlifyTech}`,
     docs: "https://docs.netlify.com/",
   },
-  
 
   {
     id: 23,
@@ -526,7 +518,6 @@ export const skillsFE = [
     typeOfTech: `${typeOfTech.gscTech}`,
     docs: "https://developers.google.com/search/docs/monitor-debug/search-console-start",
   },
-
 ];
 
 export const skillsBE = [
