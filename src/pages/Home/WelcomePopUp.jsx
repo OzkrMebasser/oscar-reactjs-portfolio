@@ -1,21 +1,17 @@
-import { useState} from "react"
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Dates from "../../Components/Clock/Dates";
 import ClockAnalog from "../../Components/Clock/AnalogClock";
 import ProfileOscar from "./ProfileOscar";
 
-
-
 import { motion } from "framer-motion";
-
 
 import "./Home.css";
 import DigitalClock from "../../Components/Clock/DigitalClock";
 
 function WelcomePopUp(props) {
   const [isHovered, setIsHovered] = useState(false);
-
 
   // const handleMouseOver = () => {
   //   setIsHovered(true);
@@ -24,13 +20,10 @@ function WelcomePopUp(props) {
   // const handleMouseOut = () => {
   //   setIsHovered(false);
   // };
-  
 
   const [t, i18n] = useTranslation("global");
 
-
   return props.trigger ? (
-
     <motion.div
       className="popup"
       initial={{ y: "100vh" }}
@@ -38,24 +31,24 @@ function WelcomePopUp(props) {
       transition={{ delay: 0.3, type: "fade" }}
     >
       <div className="popupInner">
+        <div
+          className="analog"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          {isHovered ? <ClockAnalog /> : <ProfileOscar />}
+        </div>
 
-        <div className="analog"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-     
-      {isHovered ? <ClockAnalog/> : <ProfileOscar />}
-    </div>
-
-    <div className="dates">
-       
-       <div><Dates/></div>
-     </div>
-     <div className="digitalClock">
-    
-    <div><DigitalClock/></div>
-  </div>
-
+        <div className="dates">
+          <div>
+            <Dates />
+          </div>
+        </div>
+        <div className="digitalClock">
+          <div>
+            <DigitalClock />
+          </div>
+        </div>
 
         <button className="goBtn " onClick={() => props.setTrigger(false)}>
           {t("cover.seePortfolio")}

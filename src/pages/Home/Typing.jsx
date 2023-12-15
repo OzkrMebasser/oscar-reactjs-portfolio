@@ -1,65 +1,113 @@
 import React, { useState, useEffect, Fragment } from "react";
+
 import { useTranslation } from 'react-i18next';
+
 import "./Home.css";
 
-// const words = [" Oscar Moreno", " a web Developer", " a Programmer",
-// " Oscar Moreno", " a web Developer", " a Programmer"," Oscar Moreno", " a web Developer", " a Programmer"," Oscar Moreno", " a web Developer", " a Programmer."];
+/**
+ *  texto con Efecto de  una máquina de escribir
+ * @param {string[]} words - arreglo de palabras a mostrar 
+ * @param {number} speed - velocidad de la animación en ms
+*/
 
+function useTypeWriter(words) {
+
+  const [index, setIndex] = useState(0);  
+  const [subIndex, setSubIndex] = useState(0);
+  const [reverse, setReverse] = useState(false); 
+
+   // typeWriter
+  useEffect(() => {
+
+    const handleType = () => {
+      
+      if (!reverse && subIndex === words[index].length) {
+  
+        setReverse(true)
+        return
+      
+      }
+      
+      if (reverse && subIndex === 0) {
+
+        setReverse(false);
+        
+        setIndex(prev => 
+          prev === words.length - 1 ? 0 : prev + 1  
+        );
+        
+        return
+        
+      }
+
+      const timeout = setTimeout(() => {
+        setSubIndex(prev => prev + (reverse ? -1 : 1));
+      }, Math.max(reverse ? 75 : 350, Math.random() * 350 ));
+
+      
+
+
+      return () => clearTimeout(timeout);
+    }
+
+    handleType();
+
+  }, [subIndex, index, reverse]);
+
+  return { index, subIndex, reverse };
+
+}
+
+/**
+ * cursor parpadeante 
+ * @param {string} text - texto a mostrar
+*/
+
+function Blinker({ blink }) {
+
+  const [isBlinking, setIsBlinking] = useState(true); 
+
+  useEffect(() => {
+
+    const timeout = setTimeout(() => {
+      setIsBlinking(prev => !prev);  
+    }, 500);
+
+    return () => clearTimeout(timeout);
+
+  }, [isBlinking]);
+
+  return (
+    <>
+      {`${blink}${isBlinking ? "|" : " "}`}   
+    </>
+  )
+
+}
 
 
 export default function Typing() {
 
-  const [t, i18n] = useTranslation("global");
-  
-  const [index, setIndex] = useState(0);
-  const [subIndex, setSubIndex] = useState(0);
-  const [blink, setBlink] = useState(true);
-  const [reverse, setReverse] = useState(false);
+  const [t, i18n] = useTranslation("global"); 
   
   const words = t("typing.auto-text", { returnObjects: true });
 
-  // typeWriter
-  useEffect(() => {
-    if (index === words.length - 1 && subIndex === words[index].length) {
-      return;
-    }
-
-    if (
-      subIndex === words[index].length + 1 &&
-      index !== words.length - 1 &&
-      !reverse
-    ) {
-      setReverse(true);
-      return;
-    }
-
-    if (subIndex === 0 && reverse) {
-      setReverse(false);
-      setIndex((prev) => prev + 1);
-      return;
-    }
-
-    const timeout = setTimeout(() => {
-      setSubIndex((prev) => prev + (reverse ? -1 : 1));
-    }, Math.max(reverse ? 75 : subIndex === words[index].length ? 1000 : 150, parseInt(Math.random() * 350)));
-
-    return () => clearTimeout(timeout);
-  }, [subIndex, index, reverse ]);
-
-  // blinker
-  useEffect(() => {
-    const timeout2 = setTimeout(() => {
-      setBlink((prev) => !prev);
-    }, 500);
-    return () => clearTimeout(timeout2);
-  }, [blink]);
+  const { index, subIndex } = useTypeWriter(words);
 
   return (
-    <Fragment >
+     
+    <Fragment>
+
       <h1 id="goldTyping" className="animatedHello rollIn">
-        <span id="whiteTyping">{t("myself.myself")}</span>
-        {`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}
+
+        <span id="whiteTyping">{t("myself.myself")}</span> 
+
+        <Blinker blink={words[index].substring(0, subIndex)}/>
+
       </h1>
+
     </Fragment>
+
   );
+
 }
