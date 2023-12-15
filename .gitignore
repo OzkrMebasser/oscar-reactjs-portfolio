@@ -24,4 +24,5 @@ yarn-debug.log*
 yarn-error.log*
 
 #text de avances
-.txt
+# txt
+*.txt
