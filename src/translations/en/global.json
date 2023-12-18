@@ -26,8 +26,6 @@
       "SELF-MOTIVATED ",
       "PROBLEM SOLVER",
       "COMMITTED"
-
-      
     ]
   },
   "dates": {
@@ -54,25 +52,23 @@
     "backendTools": "MY \"BACK-END\" TOOLS",
     "certificates": "CERTIFICATES",
     "learning": "MY APPROX. EXPERTISE",
-    "whatIsIt": "WHAT IS "
+    "whatIsIt": "WHAT IS ",
+    "selectCat": "SELECT A CATEGORY",
+    "viewAllCats": "VIEW ALL CATEGORIES"
   },
   "categories": {
     "fe": {
-
       "webDev": "WEB DEVELOPMENT",
       "feTools": "FRONT-END TOOLS",
       "versionControlSoftware": "VERSION CONTROL SYSTEM",
       "sourceCodeHosting": "SOURCE CODE HOSTING PLATFORMS",
-      "dependenciasManagment": "DEPENDENCY MANAGEMENT TOOL",     
+      "dependenciasManagment": "DEPENDENCY MANAGEMENT TOOL",
       "ides": "WEB DEVELOPMENT INTEGRATED DEVELOPMENT ENVIRONMENT (IDE).",
       "webDevTools": "WEB DEVELOPMENT TOOLS AND PLATFORMS",
       "cloudWebDevPlatforms": "CLOUD-BASED WEB DEVELOPMENT PLATFORMS",
       "baasPlatforms": "BACKEND-AS-A-SERVICE (BAAS) PLATFORMS",
       "seoTools": "SEARCH ENGINE OPTIMIZATION (SEO) TOOLS",
       "webDevFrameworks": "WEB DEVELOPMENT FRAMEWORKS",
-      
-
-
 
       "htmlCat": "WEB DEVELOPMENT*",
       "pugCat": "WEB DEVELOPMENT*",
@@ -226,22 +222,21 @@
     }
   },
   "certificatesInfo": {
-    "certification" : "Certification",
+    "certification": "Certification",
     "institution": "Institution",
     "website": "Website",
     "issuedCertificate": "Issued Certificate",
     "skills": "Skills",
     "seeCertificate": "See Certificate",
-    "seeCertificates" : "See Certificates",
-    "closeCertificates" : "Close"
-
+    "seeCertificates": "See Certificates",
+    "closeCertificates": "Close"
   },
-  
-  "academloCerts":{
+
+  "academloCerts": {
     "aliasInstitution": "School of Technology and Computer Science",
     "cert_1": {
       "certName": "Full Stack Web Development and Computer Science",
-     
+
       "skillsEarned_1": "Software Engineering",
       "skillsEarned_2": "Software Development",
       "skillsEarned_3": "Object-Oriented Programming (OOP)",
@@ -249,43 +244,50 @@
       "skillsEarned_5": "JavaScript Frameworks",
       "skillsEarned_6": "Full Stack Software Engineering",
       "skillsEarned_7": "Computer Science"
-
     },
     "cert_2": {
-        "certName":"Front-end Development with React",
-        "skillsEarned_1": "React.js",
-        "skillsEarned_2": "React Jsx", 
-       
-        "skillsEarned_3": "Object-Oriented JavaScript",
-        "skillsEarned_4": "JavaScript Frameworks",
-        "skillsEarned_5":"JavaScript (Programming Language)",
-        "skillsEarned_6": "Full Stack Software Engineering",
-        "skillsEarned_7":"Front End Design"
-                        
+      "certName": "Front-end Development with React",
+      "skillsEarned_1": "React.js",
+      "skillsEarned_2": "React Jsx",
+      "skillsEarned_3": "Object-Oriented JavaScript",
+      "skillsEarned_4": "JavaScript Frameworks",
+      "skillsEarned_5": "JavaScript (Programming Language)",
+      "skillsEarned_6": "Full Stack Software Engineering",
+      "skillsEarned_7": "Front End Design"
     },
-    "cert_3":{
-      "certName":"Back-End Development with Node.js",
-     
+    "cert_3": {
+      "certName": "Back-End Development with Node.js",
+
       "skillsEarned_1": "NodeJS",
       "skillsEarned_2": "JavaScript (Programming Language)",
       "skillsEarned_3": "Back End (Software Engineering)",
       "skillsEarned_4": "SQL, NoSQL, Databases",
       "skillsEarned_5": "API Development",
       "skillsEarned_6": "Database Management"
-      },
-      "cert_4":{
-        "certName":"",
-       
-        "skillsEarned_1": "",
-        "skillsEarned_2": "",
-        "skillsEarned_3": "",
-        "skillsEarned_4": "",
-        "skillsEarned_5": "",
-        "skillsEarned_6": ""
-        }
-
     },
-
+    "cert_4": {
+      "certName": "Back-End Development with Python & Django",
+      "skillsEarned_1": "Server-Side",
+      "skillsEarned_2": "RESTful API",
+      "skillsEarned_3": "Python (Programming Language)",
+      "skillsEarned_4": "Django (Web Framework)",
+      "skillsEarned_5": "Back End (Software Engineering)"
+    },
+    "cert_5": {
+      "certName": "Algorithms and Data Structures",
+      "skillsEarned_1": "Problem Solving",
+      "skillsEarned_2": "Data Structures",
+      "skillsEarned_3": "Algorithms"
+    },
+    "cert_6": {
+      "certName": "Foundations in HTML,CSS, and Javascript",
+      "skillsEarned_1": "Web Development",
+      "skillsEarned_2": "Web Design",
+      "skillsEarned_3": "JavaScript (Programming Language)",
+      "skillsEarned_4": "HyperText Markup Language (HTML)",
+      "skillsEarned_5": "Cascading Style Sheets (CSS)"
+    }
+  },
 
   "contact": {
     "alert": "Hi, your email has been sent with success, I'll be in touch with you asap, have a great day!",

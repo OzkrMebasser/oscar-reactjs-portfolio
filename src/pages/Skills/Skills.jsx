@@ -1,5 +1,7 @@
 import React, { Fragment, useState, useEffect } from "react";
 import CertificationsPdf from "../Skills/CertificationsPdf/CertificationsPdf";
+import ScrollToTop from "../../Components/GoUpButton/ScrollToTop";
+
 
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Accordion from "react-bootstrap/Accordion";
@@ -50,7 +52,7 @@ const Skills = (props) => {
   return (
     <>
       <motion.div
-        className="skills-container"
+        className="skills-container text-uppercase"
         initial={{ y: 600 }}
         animate={{ y: 0 }}
         transition={{ delay: 0.3, type: "fade" }}
@@ -63,9 +65,10 @@ const Skills = (props) => {
           </h6>
         </section>
         <Accordion>
+        <ScrollToTop />
           {/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓  FrontEnd tools  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/}
           <Accordion.Item eventKey="0">
-            {/* <ScrollToTop /> */}
+           {/* <ScrollToTop /> */}
             <Accordion.Header className="texts ">
               {t("skills.frontendTools")}{" "}
               <img
@@ -84,7 +87,8 @@ const Skills = (props) => {
                   value={categoryFE}
                 >
                   <option value="" disabled>
-                    Selecciona un Categoria
+                    
+                    {t("skills.selectCat")}
                   </option>
 
                   {categoriesFE.map((cat) => (
@@ -96,7 +100,7 @@ const Skills = (props) => {
                   className="select-btn"
                   onClick={() => setCategoryFE("")}
                 >
-                  Ver todas las Categorias
+                  {t("skills.viewAllCats")}
                 </button>
               </div>
 
@@ -191,6 +195,7 @@ const Skills = (props) => {
           {/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ BackEnd tools ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/}
 
           <Accordion.Item eventKey="1">
+            {/* <ScrollToTop /> */}
             <Accordion.Header>
               {t("skills.backendTools")}
               <img
@@ -207,7 +212,7 @@ const Skills = (props) => {
                   value={categoryBE}
                 >
                   <option value="" disabled>
-                    Selecciona un Categoria
+                   {t("skills.selectCat")}
                   </option>
 
                   {categoriesBE.map((cat) => (
@@ -219,7 +224,7 @@ const Skills = (props) => {
                   className="select-btn"
                   onClick={() => setCategoryBE("")}
                 >
-                  Ver todas las Categorias
+                  {t("skills.viewAllCats")}
                 </button>
               </div>
               <Row xs={1} md={5} fluid className="g-3 texts alto">
@@ -311,6 +316,7 @@ const Skills = (props) => {
 
           {/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Certifications ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/}
           <Accordion.Item eventKey="2">
+          {/* <ScrollToTop /> */}
             <Accordion.Header className="texts">
               {t("skills.certificates")}
               <img

@@ -1,6 +1,6 @@
 // import React, { useState, useRef } from "react";
 
-import ScrollToTop from "../../../Components/GoUpButton/ScrollToTop";
+// import ScrollToTop from "../../../Components/GoUpButton/ScrollToTop";
 import Accordions from "../../../Components/Accordions/Accordions";
 import Accordion from "react-bootstrap/Accordion";
 import { useTranslation } from "react-i18next";
@@ -56,7 +56,7 @@ const CertificationsPdf = () => {
   return (
     <>
       <Accordion defaultActiveKey="0" className="accordion-padding">
-        <ScrollToTop />
+        {/* <ScrollToTop /> */}
 
         <Accordions
           //Academlo....
@@ -176,24 +176,24 @@ const CertificationsPdf = () => {
 
               <CertPdf
                 //Cert #4 Academlo
-                certName="Back-End Development with Python & Django"
+                certName={t("academloCerts.cert_4.certName")}
                 eventKey="4"
                 institution="ACADEMLO "
-                aliasInstitution="School of Technology and Computer Science"
+                aliasInstitution={t("academloCerts.aliasInstitution")}
                 logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2Flogo_academlo2.png?alt=media&token=c4b55a3f-78b2-4a29-9601-7a9179305b6a"
-                skillsEarned_1={<SkillsEarned skillsEarned={"Server-Side"} />}
-                skillsEarned_2={<SkillsEarned skillsEarned={"RESTful API"} />}
+                skillsEarned_1={<SkillsEarned skillsEarned={t("academloCerts.cert_4.skillsEarned_1")} />}
+                skillsEarned_2={<SkillsEarned skillsEarned={t("academloCerts.cert_4.skillsEarned_2")} />}
                 skillsEarned_3={
                   <SkillsEarned
-                    skillsEarned={"Python (Programming Language)"}
+                    skillsEarned={t("academloCerts.cert_4.skillsEarned_3")}
                   />
                 }
                 skillsEarned_4={
-                  <SkillsEarned skillsEarned={"Django (Web Framework)"} />
+                  <SkillsEarned skillsEarned={t("academloCerts.cert_4.skillsEarned_4")} />
                 }
                 skillsEarned_5={
                   <SkillsEarned
-                    skillsEarned={"Back End (Software Engineering)"}
+                    skillsEarned={t("academloCerts.cert_4.skillsEarned_5")}
                   />
                 }
                 fileUrl={PythonCert}
@@ -205,18 +205,18 @@ const CertificationsPdf = () => {
 
               <CertPdf
                 //Cert #5 Academlo
-                certName="Algorithms and Data Structures"
+                certName={t("academloCerts.cert_5.certName")}
                 eventKey="5"
                 institution="ACADEMLO "
-                aliasInstitution="School of Technology and Computer Science"
+                aliasInstitution={t("academloCerts.aliasInstitution")}
                 logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2Flogo_academlo2.png?alt=media&token=c4b55a3f-78b2-4a29-9601-7a9179305b6a"
                 skillsEarned_1={
-                  <SkillsEarned skillsEarned={"Problem Solving"} />
+                  <SkillsEarned skillsEarned={t("academloCerts.cert_5.skillsEarned_1")} />
                 }
                 skillsEarned_2={
-                  <SkillsEarned skillsEarned={"Data Structures"} />
+                  <SkillsEarned skillsEarned={t("academloCerts.cert_5.skillsEarned_2")} />
                 }
-                skillsEarned_3={<SkillsEarned skillsEarned={"Algorithms"} />}
+                skillsEarned_3={<SkillsEarned skillsEarned={t("academloCerts.cert_5.skillsEarned_3")} />}
                 fileUrl={AlgorithmsCert}
                 website={"https://www.academlo.com"}
                 issuedCertificate={
@@ -226,27 +226,27 @@ const CertificationsPdf = () => {
 
               <CertPdf
                 //Cert #6 Academlo
-                certName="Foundations in HTML,CSS, and Javascript"
+                certName={t("academloCerts.cert_6.certName")}
                 eventKey="6"
                 institution="ACADEMLO "
-                aliasInstitution="School of Technology and Computer Science"
+                aliasInstitution={t("academloCerts.aliasInstitution")}
                 logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2Flogo_academlo2.png?alt=media&token=c4b55a3f-78b2-4a29-9601-7a9179305b6a"
                 skillsEarned_1={
-                  <SkillsEarned skillsEarned={"Web Development"} />
+                  <SkillsEarned skillsEarned={t("academloCerts.cert_6.skillsEarned_1")}  />
                 }
-                skillsEarned_2={<SkillsEarned skillsEarned={"Web Design"} />}
+                skillsEarned_2={<SkillsEarned skillsEarned={t("academloCerts.cert_6.skillsEarned_2")} />}
                 skillsEarned_3={
                   <SkillsEarned
-                    skillsEarned={"JavaScript (Programming Language)"}
+                    skillsEarned={t("academloCerts.cert_6.skillsEarned_3")}
                   />
                 }
                 skillsEarned_4={
                   <SkillsEarned
-                    skillsEarned={"HyperText Markup Language (HTML)"}
+                    skillsEarned={t("academloCerts.cert_6.skillsEarned_4")}
                   />
                 }
                 skillsEarned_5={
-                  <SkillsEarned skillsEarned={"Cascading Style Sheets (CSS)"} />
+                  <SkillsEarned skillsEarned={t("academloCerts.cert_6.skillsEarned_5")} />
                 }
                 fileUrl={Foundations}
                 website={"https://www.academlo.com"}

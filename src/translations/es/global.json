@@ -26,7 +26,6 @@
       "DETERMINADO ",
       "RESOLUTIVO",
       "COMPROMETIDO"
-      
     ]
   },
   "dates": {
@@ -53,11 +52,12 @@
     "backendTools": "MIS HERRAMIENTAS DE \"BACK-END\" ",
     "certificates": "CERTIFICADOS",
     "learning": "MI DOMINIO APROX.",
-    "whatIsIt": "¿ QUE ES "
+    "whatIsIt": "¿ QUE ES ",
+    "selectCat": "SELECCIONA UNA CATEGORÍA",
+    "viewAllCats": "VER TODAS LAS CATEGORÍAS"
   },
   "categories": {
     "fe": {
-
       "webDev": "DESARROLLO WEB",
       "feTools": "HERRAMIENTAS FRONT END",
       "versionControlSoftware": "SISTEMA DE CONTROL DE VERSIONES",
@@ -69,9 +69,6 @@
       "baasPlatforms": "PLATAFORMAS BACKEND-AS-A-SERVICE (BAAS)",
       "seoTools": "HERRAMIENTAS DE OPTIMIZACIÓN PARA MOTORES DE BÚSQUEDA (SEO)",
       "webDevFrameworks": "MARCOS DE DESARROLLO WEB",
-      
-
-
 
       "htmlCat": "DESARROLLO WEB",
       "pugCat": "DESARROLLO WEB",
@@ -234,15 +231,13 @@
     "seeCertificate": "Ver Certificado",
     "seeCertificates": "Ver Certificados",
     "closeCertificates": "Cerrar"
-
- 
   },
 
-  "academloCerts":{
+  "academloCerts": {
     "aliasInstitution": "Escuela de Tecnología y Ciencias de la Computación",
     "cert_1": {
       "certName": "Desarrollo Web Full Stack y Ciencias de la Computación",
-     
+
       "skillsEarned_1": "Ingeniería de Software",
       "skillsEarned_2": "Desarrollo de Software",
       "skillsEarned_3": "Programación Orientada a Objetos (POO)",
@@ -254,7 +249,7 @@
     "cert_2": {
       "certName": "Desarrollo de Aplicaciones Web con React",
       "skillsEarned_1": "React.js",
-      "skillsEarned_2": "React Jsx", 
+      "skillsEarned_2": "React Jsx",
       "skillsEarned_3": "JavaScript Orientado a Objetos",
       "skillsEarned_4": "Frameworks de JavaScript",
       "skillsEarned_5": "JavaScript (Lenguaje de Programación)",
@@ -269,9 +264,30 @@
       "skillsEarned_4": "Base de Datos SQL, NoSQL",
       "skillsEarned_5": "Desarrollo de API",
       "skillsEarned_6": "Gestión de Bases de Datos"
+    },
+    "cert_4": {
+      "certName": "Desarrollo Back-End con Python y Django",
+      "skillsEarned_1": "Lado del servidor",
+      "skillsEarned_2": "API RESTful",
+      "skillsEarned_3": "Python (Lenguaje de programación)",
+      "skillsEarned_4": "Django (Framework web)",
+      "skillsEarned_5": "Back End (Ingeniería de Software)"
+    },
 
+    "cert_5": {
+      "certName": "Algoritmos y Estructuras de Datos",
+      "skillsEarned_1": "Resolución de Problemas",
+      "skillsEarned_2": "Estructuras de Datos",
+      "skillsEarned_3": "Algoritmos"
+    },
+    "cert_6": {
+      "certName": "Fundamentos en HTML, CSS y Javascript",
+      "skillsEarned_1": "Desarrollo web",
+      "skillsEarned_2": "Diseño web",
+      "skillsEarned_3": "JavaScript (Lenguaje de programación)",
+      "skillsEarned_4": "Lenguaje de Marcado de Hipertexto (HTML)",
+      "skillsEarned_5": "Hojas de Estilo en Cascada (CSS)"
     }
-    
   },
   "contact": {
     "alert": "Hola, tu correo ha sido enviado con éxito, me pondré en contacto contigo lo antes posible, ¡que tengas un buen día!",
