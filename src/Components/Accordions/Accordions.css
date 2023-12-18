@@ -4,6 +4,9 @@
  
 
 }
+.text-uppercase{
+  text-transform: uppercase;
+}
 
 .logoSchool{
   height: 100px;

@@ -24,6 +24,7 @@ const App = () => {
     <Router
       onMouseEnter={() => cursorChangeHandler("hovered")}
       onMouseLeave={() => cursorChangeHandler("")}
+      
     >
      
 

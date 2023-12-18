@@ -222,15 +222,16 @@
     }
   },
   "certificatesInfo": {
-    "certification": "Certification",
-    "institution": "Institution",
-    "website": "Website",
-    "issuedCertificate": "Issued Certificate",
-    "skills": "Skills",
-    "seeCertificate": "See Certificate",
-    "seeCertificates": "See Certificates",
-    "closeCertificates": "Close"
-  },
+    "certification": "CERTIFICATION",
+    "institution": "INSTITUTION",
+    "website": "WEBSITE",
+    "issuedCertificate": "ISSUED CERTIFICATE",
+    "skills": "SKILLS",
+    "seeCertificate": "SEE CERTIFICATE",
+    "seeCertificates": "SEE CERTIFICATES",
+    "closeCertificates": "CLOSE"
+  }
+  ,
 
   "academloCerts": {
     "aliasInstitution": "School of Technology and Computer Science",

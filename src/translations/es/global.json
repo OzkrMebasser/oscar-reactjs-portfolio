@@ -223,16 +223,15 @@
     }
   },
   "certificatesInfo": {
-    "certification": "Certificación",
-    "institution": "Institución",
-    "website": "Sitio web",
-    "issuedCertificate": "Certificado emitido",
-    "skills": "Habilidades",
-    "seeCertificate": "Ver Certificado",
-    "seeCertificates": "Ver Certificados",
-    "closeCertificates": "Cerrar"
+    "certification": "CERTIFICACIÓN",
+    "institution": "INSTITUCIÓN",
+    "website": "SITIO WEB",
+    "issuedCertificate": "CERTIFICADO EMITIDO",
+    "skills": "HABILIDADES",
+    "seeCertificate": "VER CERTIFICADO",
+    "seeCertificates": "VER CERTIFICADOS",
+    "closeCertificates": "CERRAR"
   },
-
   "academloCerts": {
     "aliasInstitution": "Escuela de Tecnología y Ciencias de la Computación",
     "cert_1": {

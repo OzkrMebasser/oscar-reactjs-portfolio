@@ -124,7 +124,7 @@ const CertPdf = (props) => {
                 </div>
               </div>
             </div>
-            <div class="flex-item-right">
+            <div className="flex-item-right text-uppercase">
               <div className="logosCerts">
                 <img
                   src={props.logoInstitution}

@@ -41,15 +41,15 @@ const Accordions = ({ logoSchool, content, totalCerts }) => {
   }, []);
 
   return (
-    <div className="cardGridShadow accordions">
+    <div className="cardGridShadow accordions text-uppercase">
       <div className="flexs-container space-between">
         <div className="flexs-item">
           <img className="logoSchool" src={logoSchool} alt="logo School" />
         </div>
 
-        <div className="flexs-item">
+        <div className="flexs-item text-uppercase">
           {isMobile ? (
-            <button className="dropBtnCerts" onClick={toggleAccordion}>
+            <button className="dropBtnCerts text-uppercase" onClick={toggleAccordion}>
               {isOpen
                 ? `${t("certificatesInfo.closeCertificates")}`
                 : `${t("certificatesInfo.seeCertificates")}`}
