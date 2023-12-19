@@ -288,6 +288,44 @@
       "skillsEarned_5": "Hojas de Estilo en Cascada (CSS)"
     }
   },
+  "capacitateCerts": {
+    "institution": "CAPACÍTATE PARA EL EMPLEO",
+    "aliasInstitution": "FUNDACIÓN CARLOS SLIM",
+    "cert_1": {
+      "certName": "DESARROLLADOR FRONT-END",
+
+      "skillsEarned_1": "DESARROLLO WEB",
+      "skillsEarned_2": "DISEÑO WEB",
+      "skillsEarned_3": "JAVASCRIPT (LENGUAJE DE PROGRAMACIÓN)",
+      "skillsEarned_4": "LENGUAJE DE MARCADO DE HIPERTEXTO (HTML)",
+      "skillsEarned_5": "HOJAS DE ESTILO EN CASCADA (CSS)"
+    },
+    "cert_2": {
+      "certName": "CURADOR DE DATOS",
+      
+      "skillsEarned_1": "CREACIÓN DE BASE DE DATOS SQL",
+      "skillsEarned_2": "GESTIÓN DE DATOS",
+      "skillsEarned_3": "MANTENIMIENTO DE BASES DE DATOS",
+      "skillsEarned_4": "GARANTIZAR LA INTEGRIDAD DE LOS DATOS",
+      "skillsEarned_5": "APLICAR POLÍTICAS Y PROCEDIMIENTOS DE GESTIÓN DE DATOS"
+    
+    }
+  },
+  "freeCodeCampCerts":{
+    "institution": "FREECODECAMP.ORG",
+    "aliasInstitution": "ORGANIZACIÓN SIN FINES DE LUCRO PARA APRENDER DESARROLLO DE SOFTWARE",
+
+    "cert_1": {
+      "certName": "DISEÑO WEB RESPONSIVO", 
+      
+      "skillsEarned_1": "LENGUAJE DE MARCADO DE HIPERTEXTO (HTML)",
+      "skillsEarned_2": "HOJAS DE ESTILO EN CASCADA (CSS)",
+      "skillsEarned_3": "DESARROLLO WEB",
+      "skillsEarned_4": "DISEÑO WEB"
+    
+      
+    }
+  },
   "contact": {
     "alert": "Hola, tu correo ha sido enviado con éxito, me pondré en contacto contigo lo antes posible, ¡que tengas un buen día!",
     "title": "¡PONGÁMONOS EN CONTACTO!"

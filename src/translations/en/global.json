@@ -230,8 +230,7 @@
     "seeCertificate": "SEE CERTIFICATE",
     "seeCertificates": "SEE CERTIFICATES",
     "closeCertificates": "CLOSE"
-  }
-  ,
+  },
 
   "academloCerts": {
     "aliasInstitution": "School of Technology and Computer Science",
@@ -287,6 +286,43 @@
       "skillsEarned_3": "JavaScript (Programming Language)",
       "skillsEarned_4": "HyperText Markup Language (HTML)",
       "skillsEarned_5": "Cascading Style Sheets (CSS)"
+    }
+  },
+  "capacitateCerts":{
+    "institution": "TRAIN YOURSELF FOR EMPLOYMENT",
+    "aliasInstitution": "CARLOS SLIM FOUNDATION",
+
+    "cert_1": {
+      "certName": "FRONT-END DEVELOPER",
+    
+      "skillsEarned_1": "WEB DEVELOPMENT",
+      "skillsEarned_2": "WEB DESIGN",
+      "skillsEarned_3": "JAVASCRIPT (PROGRAMMING LANGUAGE)",
+      "skillsEarned_4": "HYPERTEXT MARKUP LANGUAGE (HTML)",
+      "skillsEarned_5": "CASCADING STYLE SHEETS (CSS)"
+    },
+    "cert_2": {
+      "certName": "DATA CURATOR",
+
+      "skillsEarned_1": "SQL DATABASE CREATION",
+      "skillsEarned_2": "DATA MANAGEMENT",
+      "skillsEarned_3": "MAINTAIN DATABASES",
+      "skillsEarned_4": "ENSURE INTEGRITY OF DATA",
+      "skillsEarned_5": "IMPLEMENT DATA MANAGEMENT POLICIES AND PROCEDURES"
+    }
+  },
+  "freeCodeCampCerts":{
+    "institution": "FREECODECAMP.ORG",
+    "aliasInstitution": "NON-PROFIT ORGANIZATION FOR LEARNING SOFTWARE DEVELOPMENT",
+
+    "cert_1": {
+      "certName": "RESPONSIVE WEB DESIGN", 
+      
+      "skillsEarned_1": "HYPERTEXT MARKUP LANGUAGE (HTML)",
+      "skillsEarned_2": "CASCADING STYLE SHEETS (CSS)",
+      "skillsEarned_3": "WEB DEVELOPMENT",
+      "skillsEarned_4": "WEB DESIGN"
+      
     }
   },
 

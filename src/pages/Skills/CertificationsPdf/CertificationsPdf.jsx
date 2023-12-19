@@ -266,27 +266,28 @@ const CertificationsPdf = () => {
             <div>
               <CertPdf
                 //Cert #7 Capacítate
-                certName="Desarrollador Front-end"
+                 // certName="Desarrollador Front-end"
+                certName={t("capacitateCerts.cert_1.certName")}
                 eventKey="7"
-                institution="Capacítate para el empleo"
-                aliasInstitution="Fundación Carlos Slim"
+                institution={t("capacitateCerts.institution")}
+                aliasInstitution={t("capacitateCerts.aliasInstitution")}
                 logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2Fcapacitate.png?alt=media&token=fe50d261-469c-4120-8ce0-be3ab99f8924"
                 skillsEarned_1={
-                  <SkillsEarned skillsEarned={"Web Development"} />
+                  <SkillsEarned skillsEarned={t("capacitateCerts.cert_1.skillsEarned_1")} />
                 }
-                skillsEarned_2={<SkillsEarned skillsEarned={"Web Design"} />}
+                skillsEarned_2={<SkillsEarned skillsEarned={t("capacitateCerts.cert_1.skillsEarned_2")} />}
                 skillsEarned_3={
                   <SkillsEarned
-                    skillsEarned={"JavaScript (Programming Language)"}
+                    skillsEarned={t("capacitateCerts.cert_1.skillsEarned_3")}
                   />
                 }
                 skillsEarned_4={
                   <SkillsEarned
-                    skillsEarned={"HyperText Markup Language (HTML)"}
+                    skillsEarned={t("capacitateCerts.cert_1.skillsEarned_4")}
                   />
                 }
                 skillsEarned_5={
-                  <SkillsEarned skillsEarned={"Cascading Style Sheets (CSS)"} />
+                  <SkillsEarned skillsEarned={t("capacitateCerts.cert_1.skillsEarned_5")} />
                 }
                 fileUrl={FronEndAprende}
                 website={"https://capacitateparaelempleo.org/"}
@@ -297,29 +298,28 @@ const CertificationsPdf = () => {
 
               <CertPdf
                 //Cert #8 Capacítate
-                certName="Curador de Datos"
+                certName={t("capacitateCerts.cert_2.certName")}
+                
                 eventKey="8"
-                institution="Capacítate para el empleo"
-                aliasInstitution="Fundación Carlos Slim"
+                institution={t("capacitateCerts.institution")}
+                aliasInstitution={t("capacitateCerts.aliasInstitution")}
                 logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2Fcapacitate.png?alt=media&token=fe50d261-469c-4120-8ce0-be3ab99f8924"
                 skillsEarned_1={
-                  <SkillsEarned skillsEarned={"SQL Database creation"} />
+                  <SkillsEarned skillsEarned={t("capacitateCerts.cert_2.skillsEarned_1")} />
                 }
-                skillsEarned_2={
-                  <SkillsEarned skillsEarned={"Data Management"} />
-                }
+                skillsEarned_2={<SkillsEarned skillsEarned={t("capacitateCerts.cert_1.skillsEarned_2")} />}
                 skillsEarned_3={
-                  <SkillsEarned skillsEarned={"Maintain Databases"} />
+                  <SkillsEarned
+                    skillsEarned={t("capacitateCerts.cert_2.skillsEarned_3")}
+                  />
                 }
                 skillsEarned_4={
-                  <SkillsEarned skillsEarned={"Ensure Integrity of Data"} />
+                  <SkillsEarned
+                    skillsEarned={t("capacitateCerts.cert_2.skillsEarned_4")}
+                  />
                 }
                 skillsEarned_5={
-                  <SkillsEarned
-                    skillsEarned={
-                      "Implement data management policies and procedures"
-                    }
-                  />
+                  <SkillsEarned skillsEarned={t("capacitateCerts.cert_2.skillsEarned_5")} />
                 }
                 fileUrl={CuradorDatos}
                 website={"https://capacitateparaelempleo.org/"}
@@ -338,23 +338,23 @@ const CertificationsPdf = () => {
             <div>
               <CertPdf
                 //Cert #9 FreeCodeCamp
-                certName="Responsive Web Design"
+                certName={t("freeCodeCampCerts.cert_1.certName")}
                 eventKey="9"
-                institution="freeCodeCamp.org"
-                aliasInstitution="Non-profit organization for learning Software Development "
+                institution={t("freeCodeCampCerts.institution")}
+                aliasInstitution={t("freeCodeCampCerts.aliasInstitution")}
                 logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FFreeCodeCamp_logo.png?alt=media&token=d9b83ebe-8cb2-42f4-801f-cccc64202662"
                 skillsEarned_1={
                   <SkillsEarned
-                    skillsEarned={"HyperText Markup Language (HTML)"}
+                    skillsEarned={t("freeCodeCampCerts.cert_1.skillsEarned_1")}
                   />
                 }
                 skillsEarned_2={
-                  <SkillsEarned skillsEarned={"Cascading Style Sheets (CSS)"} />
+                  <SkillsEarned skillsEarned={t("freeCodeCampCerts.cert_1.skillsEarned_2")} />
                 }
                 skillsEarned_3={
-                  <SkillsEarned skillsEarned={"Web Development"} />
+                  <SkillsEarned skillsEarned={t("freeCodeCampCerts.cert_1.skillsEarned_3")} />
                 }
-                skillsEarned_4={<SkillsEarned skillsEarned={"Web Design"} />}
+                skillsEarned_4={<SkillsEarned skillsEarned={t("freeCodeCampCerts.cert_1.skillsEarned_4")} />}
                 fileUrl={responsiveWebDFCC}
                 website={"https://www.freecodecamp.org/"}
                 issuedCertificate={
