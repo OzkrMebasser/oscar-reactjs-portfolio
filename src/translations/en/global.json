@@ -288,13 +288,13 @@
       "skillsEarned_5": "Cascading Style Sheets (CSS)"
     }
   },
-  "capacitateCerts":{
+  "capacitateCerts": {
     "institution": "TRAIN YOURSELF FOR EMPLOYMENT",
     "aliasInstitution": "CARLOS SLIM FOUNDATION",
 
     "cert_1": {
       "certName": "FRONT-END DEVELOPER",
-    
+
       "skillsEarned_1": "WEB DEVELOPMENT",
       "skillsEarned_2": "WEB DESIGN",
       "skillsEarned_3": "JAVASCRIPT (PROGRAMMING LANGUAGE)",
@@ -311,18 +311,43 @@
       "skillsEarned_5": "IMPLEMENT DATA MANAGEMENT POLICIES AND PROCEDURES"
     }
   },
-  "freeCodeCampCerts":{
+  "freeCodeCampCerts": {
     "institution": "FREECODECAMP.ORG",
     "aliasInstitution": "NON-PROFIT ORGANIZATION FOR LEARNING SOFTWARE DEVELOPMENT",
 
     "cert_1": {
-      "certName": "RESPONSIVE WEB DESIGN", 
-      
+      "certName": "RESPONSIVE WEB DESIGN",
+
       "skillsEarned_1": "HYPERTEXT MARKUP LANGUAGE (HTML)",
       "skillsEarned_2": "CASCADING STYLE SHEETS (CSS)",
       "skillsEarned_3": "WEB DEVELOPMENT",
       "skillsEarned_4": "WEB DESIGN"
+    }
+  },
+  "udemyCerts": {
+    "institution": "UDEMY",
+    "aliasInstitution": "ONLINE LEARNING PLATFORM",
+
+    "cert_1": {
+      "certName": "MODERN JAVASCRIPT: DEFINITIVE GUIDE",
+
+      "skillsEarned_1": "SOFTWARE ENGINEERING",
+      "skillsEarned_2": "SOFTWARE DEVELOPMENT",
+      "skillsEarned_3": "OBJECT-ORIENTED PROGRAMMING (OOP)",
+      "skillsEarned_4": "NODE.JS",
+      "skillsEarned_5": "JAVASCRIPT FRAMEWORKS",
+      "skillsEarned_6": "FULL STACK SOFTWARE ENGINEERING"
+    },
+    "cert_2": {
+      "certName": "DIGITAL MARKETING, COMPLETE COURSE",
       
+      "skillsEarned_1": "SOCIAL MEDIA MARKETING",
+      "skillsEarned_2": "EMAIL MARKETING",
+      "skillsEarned_3": "CONTENT MARKETING",
+      "skillsEarned_4": "FACEBOOK ADS",
+      "skillsEarned_5": "GOOGLE ADS, AND ANALITYCS",
+      "skillsEarned_6": "SEO",
+      "skillsEarned_7": "BRANDING"
     }
   },
 

@@ -302,30 +302,53 @@
     },
     "cert_2": {
       "certName": "CURADOR DE DATOS",
-      
+
       "skillsEarned_1": "CREACIÓN DE BASE DE DATOS SQL",
       "skillsEarned_2": "GESTIÓN DE DATOS",
       "skillsEarned_3": "MANTENIMIENTO DE BASES DE DATOS",
       "skillsEarned_4": "GARANTIZAR LA INTEGRIDAD DE LOS DATOS",
       "skillsEarned_5": "APLICAR POLÍTICAS Y PROCEDIMIENTOS DE GESTIÓN DE DATOS"
-    
     }
   },
-  "freeCodeCampCerts":{
+  "freeCodeCampCerts": {
     "institution": "FREECODECAMP.ORG",
     "aliasInstitution": "ORGANIZACIÓN SIN FINES DE LUCRO PARA APRENDER DESARROLLO DE SOFTWARE",
 
     "cert_1": {
-      "certName": "DISEÑO WEB RESPONSIVO", 
-      
+      "certName": "DISEÑO WEB RESPONSIVO",
+
       "skillsEarned_1": "LENGUAJE DE MARCADO DE HIPERTEXTO (HTML)",
       "skillsEarned_2": "HOJAS DE ESTILO EN CASCADA (CSS)",
       "skillsEarned_3": "DESARROLLO WEB",
       "skillsEarned_4": "DISEÑO WEB"
-    
-      
     }
   },
+
+  "udemyCerts": {
+    "institution": "UDEMY",
+    "aliasInstitution": "PLATAFORMA DE APRENDIZAJE EN LÍNEA",
+    "cert_1": {
+      "certName": "JAVASCRIPT MODERNO: GUÍA DEFINITIVA",
+      "skillsEarned_1": "INGENIERÍA DE SOFTWARE",
+      "skillsEarned_2": "DESARROLLO DE SOFTWARE",
+      "skillsEarned_3": "PROGRAMACIÓN ORIENTADA A OBJETOS (OOP)",
+      "skillsEarned_4": "NODE.JS",
+      "skillsEarned_5": "FRAMEWORKS DE JAVASCRIPT",
+      "skillsEarned_6": "INGENIERÍA DE SOFTWARE DE STACK COMPLETO"
+    },
+    "cert_2": {
+      "certName": "MARKETING DIGITAL, CURSO COMPLETO",
+
+      "skillsEarned_1": "MARKETING EN REDES SOCIALES",
+      "skillsEarned_2": "MARKETING POR CORREO ELECTRÓNICO",
+      "skillsEarned_3": "MARKETING DE CONTENIDOS",
+      "skillsEarned_4": "ANUNCIOS EN FACEBOOK",
+      "skillsEarned_5": "ANUNCIOS Y ANALÍTICAS EN GOOGLE",
+      "skillsEarned_6": "OPTIMIZACIÓN PARA MOTORES DE BÚSQUEDA (SEO)",
+      "skillsEarned_7": "IMAGEN DE MARCA"
+    }
+  },
+
   "contact": {
     "alert": "Hola, tu correo ha sido enviado con éxito, me pondré en contacto contigo lo antes posible, ¡que tengas un buen día!",
     "title": "¡PONGÁMONOS EN CONTACTO!"

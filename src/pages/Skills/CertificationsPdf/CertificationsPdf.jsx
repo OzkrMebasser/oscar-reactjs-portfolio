@@ -373,29 +373,29 @@ const CertificationsPdf = () => {
             <div>
               <CertPdf
                 //Cert #10 Udemy
-                certName="JavaScript Moderno Guía Definitiva"
+                certName={t("udemyCerts.cert_1.certName")}
                 eventKey="10"
-                institution="Udemy"
-                aliasInstitution="Plataforma de aprendizaje en línea"
+                institution={t("udemyCerts.institution")}
+                aliasInstitution={t("udemyCerts.aliasInstitution")}
                 logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FUdemy_logo2.png?alt=media&token=51d33619-c738-4fea-b699-a33a6c63320d"
                 skillsEarned_1={
-                  <SkillsEarned skillsEarned={"Software Engineering"} />
+                  <SkillsEarned skillsEarned={t("udemyCerts.cert_1.skillsEarned_1")} />
                 }
                 skillsEarned_2={
-                  <SkillsEarned skillsEarned={"Software Development"} />
+                  <SkillsEarned skillsEarned={t("udemyCerts.cert_1.skillsEarned_2")} />
                 }
                 skillsEarned_3={
                   <SkillsEarned
-                    skillsEarned={"Object-Oriented Programming (OOP)"}
+                    skillsEarned={t("udemyCerts.cert_1.skillsEarned_3")}
                   />
                 }
-                skillsEarned_4={<SkillsEarned skillsEarned={"Node.js"} />}
+                skillsEarned_4={<SkillsEarned skillsEarned={t("udemyCerts.cert_1.skillsEarned_4")} />}
                 skillsEarned_5={
-                  <SkillsEarned skillsEarned={"JavaScript Frameworks"} />
+                  <SkillsEarned skillsEarned={t("udemyCerts.cert_1.skillsEarned_5")} />
                 }
                 skillsEarned_6={
                   <SkillsEarned
-                    skillsEarned={"Full Stack Software Engineering"}
+                    skillsEarned={t("udemyCerts.cert_1.skillsEarned_6")}
                   />
                 }
                 fileUrl={JavaScriptModerno}
@@ -406,26 +406,26 @@ const CertificationsPdf = () => {
               />
               <CertPdf
                 //Cert #11 Udemy
-                certName="Marketing Digital, Curso Completo"
+                certName={t("udemyCerts.cert_2.certName")}
                 eventKey="11"
-                institution="Udemy"
-                aliasInstitution="Plataforma de aprendizaje en línea"
+                institution={t("udemyCerts.institution")}
+                aliasInstitution={t("udemyCerts.aliasInstitution")}
                 logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FUdemy_logo2.png?alt=media&token=51d33619-c738-4fea-b699-a33a6c63320d"
                 skillsEarned_1={
-                  <SkillsEarned skillsEarned={"Social Media Marketing"} />
+                  <SkillsEarned skillsEarned={t("udemyCerts.cert_2.skillsEarned_1")} />
                 }
                 skillsEarned_2={
-                  <SkillsEarned skillsEarned={"Email Marketing"} />
+                  <SkillsEarned skillsEarned={t("udemyCerts.cert_2.skillsEarned_2")} />
                 }
                 skillsEarned_3={
-                  <SkillsEarned skillsEarned={"Content Marketing"} />
+                  <SkillsEarned skillsEarned={t("udemyCerts.cert_2.skillsEarned_3")} />
                 }
-                skillsEarned_4={<SkillsEarned skillsEarned={"Facebook Ads"} />}
+                skillsEarned_4={<SkillsEarned skillsEarned={t("udemyCerts.cert_2.skillsEarned_4")} />}
                 skillsEarned_5={
-                  <SkillsEarned skillsEarned={"Google Ads, and Analitycs"} />
+                  <SkillsEarned skillsEarned={t("udemyCerts.cert_2.skillsEarned_5")} />
                 }
-                skillsEarned_6={<SkillsEarned skillsEarned={"SEO"} />}
-                skillsEarned_7={<SkillsEarned skillsEarned={"Branding"} />}
+                skillsEarned_6={<SkillsEarned skillsEarned={t("udemyCerts.cert_2.skillsEarned_6")} />}
+                skillsEarned_7={<SkillsEarned skillsEarned={t("udemyCerts.cert_2.skillsEarned_7")} />}
                 fileUrl={MktDigital}
                 website={"https://www.udemy.com/"}
                 issuedCertificate={
