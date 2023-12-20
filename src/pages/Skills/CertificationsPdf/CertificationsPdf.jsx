@@ -443,27 +443,27 @@ const CertificationsPdf = () => {
             <div>
               <CertPdf
                 //Cert #12 LinkedIn
-                certName="Introduction to Web Design and Development"
+                certName={t("linkedInCerts.cert_1.certName")}
                 eventKey="12"
-                institution="LinkedIn LEARNING"
-                aliasInstitution="Plataforma de aprendizaje en línea"
+                institution={t("linkedInCerts.institution")}
+                aliasInstitution={t("linkedInCerts.aliasInstitution")}
                 logoInstitution="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FlogosInstitutions%2FlinkedInLearnign3.png?alt=media&token=dfafb3a7-e31b-429a-8e92-c21d96b0b5c8"
                 skillsEarned_1={
-                  <SkillsEarned skillsEarned={"Web Development"} />
+                  <SkillsEarned skillsEarned={t("linkedInCerts.cert_1.skillsEarned_1")} />
                 }
-                skillsEarned_2={<SkillsEarned skillsEarned={"Web Design"} />}
+                skillsEarned_2={<SkillsEarned skillsEarned={t("linkedInCerts.cert_1.skillsEarned_2")} />}
                 skillsEarned_3={
                   <SkillsEarned
-                    skillsEarned={"JavaScript (Programming Language)"}
+                    skillsEarned={t("linkedInCerts.cert_1.skillsEarned_3")}
                   />
                 }
                 skillsEarned_4={
                   <SkillsEarned
-                    skillsEarned={"HyperText Markup Language (HTML)"}
+                    skillsEarned={t("linkedInCerts.cert_1.skillsEarned_4")}
                   />
                 }
                 skillsEarned_5={
-                  <SkillsEarned skillsEarned={"Cascading Style Sheets (CSS)"} />
+                  <SkillsEarned skillsEarned={t("linkedInCerts.cert_1.skillsEarned_5")} />
                 }
                 fileUrl={wevDevDesignLinkedIn}
                 website={"https://www.linkedin.com/learning/"}

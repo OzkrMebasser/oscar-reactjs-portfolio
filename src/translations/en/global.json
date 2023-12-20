@@ -350,7 +350,20 @@
       "skillsEarned_7": "BRANDING"
     }
   },
+  "linkedInCerts": {
+    "institution": "LINKEDIN LEARNING",
+    "aliasInstitution": "ONLINE LEARNING PLATFORM",
+    
+    "cert_1": {
+      "certName": "INTRODUCTION TO WEB DESIGN AND DEVELOPMENT",
 
+      "skillsEarned_1": "WEB DEVELOPMENT",
+      "skillsEarned_2": "WEB DESIGN",
+      "skillsEarned_3": "JAVASCRIPT (PROGRAMMING LANGUAGE)",
+      "skillsEarned_4": "HYPERTEXT MARKUP LANGUAGE (HTML)",
+      "skillsEarned_5": "CASCADING STYLE SHEETS (CSS)"
+    }
+  },
   "contact": {
     "alert": "Hi, your email has been sent with success, I'll be in touch with you asap, have a great day!",
     "title": "LET´S GET IN TOUCH!"
