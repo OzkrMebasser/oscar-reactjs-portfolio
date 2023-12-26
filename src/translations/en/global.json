@@ -340,7 +340,7 @@
     },
     "cert_2": {
       "certName": "DIGITAL MARKETING, COMPLETE COURSE",
-      
+
       "skillsEarned_1": "SOCIAL MEDIA MARKETING",
       "skillsEarned_2": "EMAIL MARKETING",
       "skillsEarned_3": "CONTENT MARKETING",
@@ -353,7 +353,7 @@
   "linkedInCerts": {
     "institution": "LINKEDIN LEARNING",
     "aliasInstitution": "ONLINE LEARNING PLATFORM",
-    
+
     "cert_1": {
       "certName": "INTRODUCTION TO WEB DESIGN AND DEVELOPMENT",
 
@@ -362,6 +362,62 @@
       "skillsEarned_3": "JAVASCRIPT (PROGRAMMING LANGUAGE)",
       "skillsEarned_4": "HYPERTEXT MARKUP LANGUAGE (HTML)",
       "skillsEarned_5": "CASCADING STYLE SHEETS (CSS)"
+    }
+  },
+  "grassHopperCerts": {
+    "institution": "GRASSHOPPER",
+    "aliasInstitution": "APP DEVELOPED BY GOOGLE TO LEARN TO CODE WITH JAVASCRIPT",
+    "importantNote": "APP WAS SHUT DOWN ON JUNE 15, 2023",
+    "cert_1": {
+      "certName": "CODING FUNDAMENTALS I",
+
+      "skillsEarned_1": "VARIABLE DECLARATION",
+      "skillsEarned_2": "CONTROL STRUCTURES",
+      "skillsEarned_3": "DATA STRUCTURES"
+    },
+    "cert_2": {
+      "certName": "CODING FUNDAMENTALS II",
+
+      "skillsEarned_1": "VARIABLE DECLARATION",
+      "skillsEarned_2": "CONTROL STRUCTURES",
+      "skillsEarned_3": "DATA STRUCTURES"
+    },
+    "cert_3": {
+      "certName": "INTRO TO WEBPAGES",
+
+      "skillsEarned_1": "HYPERTEXT MARKUP LANGUAGE (HTML)",
+      "skillsEarned_2": "CASCADING STYLE SHEETS (CSS)",
+      "skillsEarned_3": "JAVASCRIPT (PROGRAMMING LANGUAGE)",
+      "skillsEarned_4": "WEB BROWSERS",
+      "skillsEarned_5": "WEB SERVERS"
+    },
+    "cert_4": {
+      "certName": "USING CODE EDITOR",
+
+      "skillsEarned_1": "JAVASCRIPT (PROGRAMMING LANGUAGE)",
+      "skillsEarned_2": "VARIABLE DECLARATION",
+      "skillsEarned_3": "CONTROL STRUCTURES",
+      "skillsEarned_4": "DATA STRUCTURES"
+    }
+  },
+  "EFenglishTestCerts": {
+    "institution": "EF SET",
+    "aliasInstitution": "ONLINE STANDARDIZED ENGLISH TEST FOR LEARNERS OF ALL LEVELS",
+
+    "cert_1": {
+      "certName": "EF SET ENGLISH TEST",
+
+      "skillsEarned_1": "ENGLISH LEVEL: C1 ADVANCED"
+    }
+  },
+  "UVCerts": {
+    "institution": "UNIVERSIDAD VERACRUZANA",
+    "aliasInstitution": "EXAVER IS AN EXAM FROM UNIVERSIDAD VERACRUZANA DEVELOPED WITH THE SUPPORT OF THE BRITISH COUNCIL AND THE UNIVERSITY OF CAMBRIDGE, ENGLAND",
+
+    "cert_1": {
+      "certName": "ENGLISH LANGUAGE CERTIFICATION EXAM",
+
+      "skillsEarned_1": "ENGLISH LEVEL: ''C''"
     }
   },
   "contact": {

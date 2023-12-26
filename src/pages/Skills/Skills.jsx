@@ -2,7 +2,6 @@ import React, { Fragment, useState, useEffect } from "react";
 import CertificationsPdf from "../Skills/CertificationsPdf/CertificationsPdf";
 import ScrollToTop from "../../Components/GoUpButton/ScrollToTop";
 
-
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Accordion from "react-bootstrap/Accordion";
 import { motion } from "framer-motion";
@@ -65,10 +64,10 @@ const Skills = (props) => {
           </h6>
         </section>
         <Accordion>
-        <ScrollToTop />
+          <ScrollToTop />
           {/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓  FrontEnd tools  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/}
           <Accordion.Item eventKey="0">
-           {/* <ScrollToTop /> */}
+            {/* <ScrollToTop /> */}
             <Accordion.Header className="texts ">
               {t("skills.frontendTools")}{" "}
               <img
@@ -87,7 +86,6 @@ const Skills = (props) => {
                   value={categoryFE}
                 >
                   <option value="" disabled>
-                    
                     {t("skills.selectCat")}
                   </option>
 
@@ -212,7 +210,7 @@ const Skills = (props) => {
                   value={categoryBE}
                 >
                   <option value="" disabled>
-                   {t("skills.selectCat")}
+                    {t("skills.selectCat")}
                   </option>
 
                   {categoriesBE.map((cat) => (
@@ -316,7 +314,7 @@ const Skills = (props) => {
 
           {/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Certifications ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/}
           <Accordion.Item eventKey="2">
-          {/* <ScrollToTop /> */}
+            {/* <ScrollToTop /> */}
             <Accordion.Header className="texts">
               {t("skills.certificates")}
               <img

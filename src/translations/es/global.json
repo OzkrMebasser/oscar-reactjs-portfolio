@@ -351,7 +351,7 @@
   "linkedInCerts": {
     "institution": "LINKEDIN LEARNING",
     "aliasInstitution": "PLATAFORMA DE APRENDIZAJE EN LÍNEA",
-    
+
     "cert_1": {
       "certName": "INTRODUCCIÓN AL DISEÑO Y DESARROLLO WEB",
       "skillsEarned_1": "DESARROLLO WEB",
@@ -361,6 +361,63 @@
       "skillsEarned_5": "HOJAS DE ESTILO EN CASCADA (CSS)"
     }
   },
+  "grassHopperCerts": {
+    "institution": "GRASSHOPPER",
+    "aliasInstitution": "APP DESARROLLADA POR GOOGLE PARA APRENDER A PROGRAMAR CON JAVASCRIPT",
+    "importantNote": "LA APLICACIÓN SE CERRÓ EL 15 DE JUNIO DE 2023",
+    "cert_1": {
+      "certName": "FUNDAMENTOS DE PROGRAMACIÓN I",
+
+      "skillsEarned_1": "DECLARACIÓN DE VARIABLES",
+      "skillsEarned_2": "ESTRUCTURAS DE CONTROL",
+      "skillsEarned_3": "ESTRUCTURAS DE DATOS"
+    },
+    "cert_2": {
+      "certName": "FUNDAMENTOS DE PROGRAMACIÓN II",
+
+      "skillsEarned_1": "DECLARACIÓN DE VARIABLES",
+      "skillsEarned_2": "ESTRUCTURAS DE CONTROL",
+      "skillsEarned_3": "ESTRUCTURAS DE DATOS"
+    },
+    "cert_3": {
+      "certName": "INTRODUCCIÓN A LAS PÁGINAS WEB",
+
+      "skillsEarned_1": "LENGUAJE DE MARCADO DE HIPERTEXTO (HTML)",
+      "skillsEarned_2": "HOJAS DE ESTILO EN CASCADA (CSS)",
+      "skillsEarned_3": "JAVASCRIPT (LENGUAJE DE PROGRAMACIÓN)",
+      "skillsEarned_4": "NAVEGADORES WEB",
+      "skillsEarned_5": "SERVIDORES WEB"
+    },
+    "cert_4": {
+      "certName": "USO DE EDITOR DE CÓDIGO",
+
+      "skillsEarned_1": "JAVASCRIPT (LENGUAJE DE PROGRAMACIÓN)",
+      "skillsEarned_2": "DECLARACIÓN DE VARIABLES",
+      "skillsEarned_3": "ESTRUCTURAS DE CONTROL",
+      "skillsEarned_4": "ESTRUCTURAS DE DATOS"
+    }
+  },
+  "EFenglishTestCerts": {
+    "institution": "EF SET",
+    "aliasInstitution": "PRUEBA DE INGLÉS ESTANDARIZADA EN LÍNEA PARA APRENDICES DE TODOS LOS NIVELES",
+
+    "cert_1": {
+      "certName": "PRUEBA DE INGLÉS EF SET",
+
+      "skillsEarned_1": "NIVEL DE INGLÉS: C1 AVANZADO"
+    }
+  },
+  "UVCerts": {
+    "institution": "UNIVERSIDAD VERACRUZANA",
+    "aliasInstitution": "EXAVER ES UN EXAMEN DE LA UNIVERSIDAD VERACRUZANA DESARROLLADO CON EL APOYO DEL CONSEJO BRITÁNICO Y LA UNIVERSIDAD DE CAMBRIDGE, INGLATERRA",
+
+    "cert_1": {
+      "certName": "EXAMEN DE CERTIFICACIÓN DE LENGUA INGLESA",
+
+      "skillsEarned_1": "NIVEL DE INGLÉS: ''C''"
+    }
+  },
+
   "contact": {
     "alert": "Hola, tu correo ha sido enviado con éxito, me pondré en contacto contigo lo antes posible, ¡que tengas un buen día!",
     "title": "¡PONGÁMONOS EN CONTACTO!"
