@@ -779,7 +779,9 @@ const CertificationsPdf = () => {
               website={"https://www.uv.mx/idiomas/certificaciones/exaver/"}
               issuedCertificate={"https://www.exaver.com/verify/319A-50107328"}
               skillsEarned_1={
-                <SkillsEarned skillsEarned={t("UVCerts.cert_1.skillsEarned_1")} />
+                <SkillsEarned
+                  skillsEarned={t("UVCerts.cert_1.skillsEarned_1")}
+                />
               }
             />
           }

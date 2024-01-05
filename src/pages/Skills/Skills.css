@@ -333,6 +333,11 @@
   margin: auto;
 }
 
+.iconsSoftSkills {
+  width: 5rem;
+  height: 5rem;
+  margin: auto;
+}
 .iconWP {
   width: 4rem;
   margin: auto;
@@ -561,9 +566,7 @@
   border-color: #d4af37;
   color: #ffffff;
 }
-
-/* Estilos adicionales si es necesario */
-
+/*Card flips*/
 
 
 /*Medias queries

@@ -1,7 +1,9 @@
-import React, { Fragment, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import CertificationsPdf from "../Skills/CertificationsPdf/CertificationsPdf";
 import ScrollToTop from "../../Components/GoUpButton/ScrollToTop";
-
+import FlipCard from "./FlipCard";
+import { skillsFE, skillsBE } from "../../Api/hardSkillsData";
+import { softSkills } from "../../Api/softSkillsData";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Accordion from "react-bootstrap/Accordion";
 import { motion } from "framer-motion";
@@ -11,7 +13,6 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
 import "./Skills.css";
-import { skillsFE, skillsBE } from "../../Api/hardSkillsData";
 
 const Skills = (props) => {
   const [t] = useTranslation("global");
@@ -102,7 +103,7 @@ const Skills = (props) => {
                 </button>
               </div>
 
-              <Row xs={1} md={5} fluid className="g-3 texts alto">
+              <Row xs={1} md={3} fluid className="g-3 texts alto">
                 {filteredFECategories.map((skill, index) => (
                   <Col key={skill.id}>
                     <Card
@@ -344,36 +345,15 @@ const Skills = (props) => {
             </Accordion.Header>
 
             <Accordion.Body>
-              <Row xs={1} md={3} fluid className="g-4 texts">
-                {skillsBE.map((skill, id) => (
-                  <Col>
-                    <Card className="cardGrid align-middle">
-                      {/* <span className={skill.class} ><span className="bgBlack">{skill.icon}</span></span> */}
-                      <img
-                        className={skill.class}
-                        src={skill.icon}
-                        alt={skill.alt}
-                      />
-                      <Card.Body>
-                        <Card.Title>{skill.title}</Card.Title>
-                        <Card.Text>{skill.category}</Card.Text>
-                        <Card.Text className="textM">
-                          {skill.description}
-                        </Card.Text>
-                        <strong>
-                          <p className="texts">Aproximate knowledge</p>
-                        </strong>
-                        <ProgressBar
-                          className="texts"
-                          animated
-                          now={skill.progress}
-                          label={`${skill.progress}%`}
-                          variant={skill.variant}
-                          style={{ height: "20px", color: "dark" }}
-                        />
-                      </Card.Body>
-                    </Card>
-                  </Col>
+              <Row className="g-3 texts ">
+                {softSkills.map((skill) => (
+                  <FlipCard
+                    key={skill.id}
+                    frontImage={skill.imageFront}
+                    backImage={skill.imageBack}
+                    title={skill.title}
+                    description={skill.description}
+                  />
                 ))}
               </Row>
             </Accordion.Body>
