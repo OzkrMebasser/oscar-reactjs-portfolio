@@ -56,59 +56,90 @@ export const softSkills = [
     id: 3,
     imageFront: 'https://s25.postimg.cc/l2q9ujy4f/cta-4.png',
     imageBack: 'https://s25.postimg.cc/l2q9ujy4f/cta-4.png',
-    title: 'ADAPTABILITY ddddddd',
-    description: 'A short sentence describing this callout is.',
+    title: 'ADAPTABILITY',
+    description: 'Soy capaz de adaptarme fácilmente a nuevos entornos y situaciones. Mantengo la calma y el rendimiento sólido incluso en circunstancias cambiantes.',
   },
   {
     id: 4,
     imageFront: 'https://s25.postimg.cc/xyz1/cta-5.png',
     imageBack: 'https://s25.postimg.cc/xyz1/cta-5.png',
     title: 'Innovative Solutions',
-    description: 'A short sentence describing this callout is.',
+    description: 'Encuentro soluciones creativas y eficientes para abordar desafíos complejos. Mi enfoque innovador aporta originalidad a mis proyectos.',
   },
   {
     id: 5,
     imageFront: 'https://s25.postimg.cc/xyz2/cta-6.png',
     imageBack: 'https://s25.postimg.cc/xyz2/cta-6.png',
     title: 'Team Collaboration',
-    description: 'A short sentence describing this callout is.',
+    description: 'Me destaco en el trabajo en equipo, colaborando de manera efectiva para lograr objetivos comunes. Valoro la diversidad de habilidades y perspectivas en el equipo.',
   },
   {
     id: 6,
     imageFront: 'https://s25.postimg.cc/xyz3/cta-7.png',
     imageBack: 'https://s25.postimg.cc/xyz3/cta-7.png',
     title: 'Problem Solving',
-    description: 'A short sentence describing this callout is.',
+    description: 'Abordo desafíos con una mentalidad analítica, evaluando situaciones críticamente y encontrando soluciones efectivas.',
   },
   {
     id: 7,
     imageFront: 'https://s25.postimg.cc/xyz4/cta-8.png',
     imageBack: 'https://s25.postimg.cc/xyz4/cta-8.png',
     title: 'Effective Communication',
-    description: 'A short sentence describing this callout is.',
+    description: 'Soy un comunicador efectivo, capaz de transmitir información de manera clara y comprensible. Me adapto a la audiencia para una comunicación más efectiva.',
   },
   {
     id: 8,
     imageFront: 'https://s25.postimg.cc/xyz5/cta-9.png',
     imageBack: 'https://s25.postimg.cc/xyz5/cta-9.png',
     title: 'Adaptability',
-    description: 'A short sentence describing this callout is.',
+    description: 'Me adapto fácilmente a cambios y nuevos enfoques. Mi flexibilidad me permite mantener un alto rendimiento en entornos dinámicos.',
   },
   {
     id: 9,
     imageFront: 'https://s25.postimg.cc/xyz6/cta-10.png',
     imageBack: 'https://s25.postimg.cc/xyz6/cta-10.png',
     title: 'Leadership',
-    description: 'A short sentence describing this callout is.',
+    description: 'Muestro habilidades de liderazgo al guiar y motivar a otros hacia el logro de objetivos. Promuevo un ambiente colaborativo y positivo.',
   },
   {
     id: 10,
     imageFront: 'https://s25.postimg.cc/xyz7/cta-11.png',
     imageBack: 'https://s25.postimg.cc/xyz7/cta-11.png',
     title: 'Attention to Detail',
-    description: 'A short sentence describing this callout is.',
+    description: 'Presto atención a los detalles para garantizar la precisión y la calidad en mis tareas. Mi enfoque meticuloso contribuye a resultados confiables.',
   },
-];
+  {
+    id: 11,
+    imageFront: 'https://s25.postimg.cc/xyz8/cta-12.png',
+    imageBack: 'https://s25.postimg.cc/xyz8/cta-12.png',
+    title: 'Creativity',
+    description: 'Soy creativo y genero ideas innovadoras para abordar desafíos. Mi mente abierta y creativa aporta un enfoque único a cada proyecto.',
+  },
+  {
+    id: 12,
+    imageFront: 'https://s25.postimg.cc/xyz9/cta-13.png',
+    imageBack: 'https://s25.postimg.cc/xyz9/cta-13.png',
+    title: 'Communication',
+    description: 'Soy un comunicador efectivo, capaz de expresar ideas de manera clara y comprensible. Mi habilidad para transmitir información contribuye a la comprensión mutua.',
+  },
+]
+
+  // {
+  //   id: 13,
+  //   imageFront: 'https://s25.postimg.cc/xyz10/cta-14.png',
+  //   imageBack: 'https://s25.postimg.cc/xyz10/cta-14.png',
+  //   title: 'Problem Solving',
+  //   description: 'A short sentence describing this callout is.',
+  // },
+  // {
+  //   id: 14,
+  //   imageFront: 'https://s25.postimg.cc/xyz11/cta-15.png',
+  //   imageBack: 'https://s25.postimg.cc/xyz11/cta-15.png',
+  //   title: 'Teamwork',
+  //   description: 'A short sentence describing this callout is.',
+  // }
+  
+
 
 // export const skillsFE = [
 //   {

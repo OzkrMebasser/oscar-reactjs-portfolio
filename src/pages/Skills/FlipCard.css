@@ -1,10 +1,10 @@
-html {
+/* html {
     box-sizing: border-box;
 }
 
 *, *:before, *:after {
     box-sizing: inherit;
-}
+} */
 /* .center-cards{
    background-color: chartreuse;
    width: 100%;
@@ -29,22 +29,21 @@ html {
 
 .cardSkills-item {
     width: 100%;
-    max-width: 350px;
-    box-sizing: border-box;
+    max-width: 345px;
+    margin: auto;
+    /* box-sizing: border-box; */
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .cardSkills-item {
         width: 100%;
         margin: auto;
         margin-top: 25px;
     }
 
-    .cardSkills-item:last-child {
-        margin-right: 0;
-    }
-}
+} */
 
 .flip-cardSkills {
     -ms-transform-style: preserve-3d;
@@ -117,7 +116,7 @@ html {
     position: absolute;
     left: 0;
     width: 100%;
-    padding: 60px;
+    padding: 10px;
     outline: 1px solid transparent;
     -webkit-perspective: inherit;
     perspective: inherit;
@@ -136,18 +135,81 @@ html {
     height: 2rem;
     position: relative;
   }
+ 
   
-  .line-decorator {
+  /* .line-decorator {
+    
     width: 120px; 
     height: 3px;
     background-color: #d4af37;
     box-shadow: 4px 4px 2px rgba(0,0,0,0.6);
     position: absolute;
+    bottom: 250px;
+    left: 50%;
+    transform: translateX(-50%); 
+  } */
+  /* .line-decorator {
+    position: absolute;
     top: 50px;
-    left: 50%; /* Centra la línea debajo del título */
+    left: 50%; 
     transform: translateX(-50%);
   }
+   */
+
+
+   /* .line-decorator {
+    height: 2px;
+    background-color: transparent;
+    margin: 10px 0;
+  } */
   
+  .right-l-shape {
+    position: absolute;
+    bottom: 125px;
+    left: 163px;
+    width: 150px;
+    height: 220px;
+    border-top: 3px solid #d4af37;
+    border-right: 3px solid #d4af37;
+    border-top-right-radius: 8px;
+  }
+  
+  .left-l-shape {
+    position: absolute;
+    top: 125px;
+    right: 163px;
+    width: 150px;
+    height: 220px;
+    border-bottom: 3px solid #d4af37;
+    border-left: 3px solid #d4af37;
+    border-bottom-left-radius: 8px;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .right-l-shape {
+      position: absolute;
+      bottom: 110px;
+      left: 165px;
+      width: 135px;
+      height: 220px;
+      border-top: 3px solid #d4af37;
+      border-right: 3px solid #d4af37;
+      border-top-right-radius: 8px;
+    }
+    
+    .left-l-shape {
+      position: absolute;
+      top: 110px;
+      right: 165px;
+      width: 135px;
+      height: 220px;
+      border-bottom: 3px solid #d4af37;
+      border-left: 3px solid #d4af37;
+      border-bottom-left-radius: 8px;
+    }
+      
+  }
+
   .flip-cardSkills p {
     font-size: 20px;
     line-height: 1.5em;
