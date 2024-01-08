@@ -6,6 +6,7 @@ import { skillsFE, skillsBE } from "../../Api/hardSkillsData";
 import { softSkills } from "../../Api/softSkillsData";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Accordion from "react-bootstrap/Accordion";
+
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Card from "react-bootstrap/Card";
@@ -103,7 +104,7 @@ const Skills = (props) => {
                 </button>
               </div>
 
-              <Row xs={1} md={3} fluid className="g-3 texts alto">
+              <Row xs={1} md={5} fluid className="g-3 texts alto">
                 {filteredFECategories.map((skill, index) => (
                   <Col key={skill.id}>
                     <Card
@@ -344,19 +345,60 @@ const Skills = (props) => {
               />
             </Accordion.Header>
 
+           
             <Accordion.Body>
-              <Row className="g-3 texts ">
-                {softSkills.map((skill) => (
-                  <FlipCard
-                    key={skill.id}
-                    frontImage={skill.imageFront}
-                    backImage={skill.imageBack}
-                    title={skill.title}
-                    description={skill.description}
-                  />
-                ))}
-              </Row>
+              <Accordion id="softSkillsSubAcc">
+                 {/*  acordion 1 SoftSkills  */}
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header className="texts">
+                    LAS QUE POSEO
+                  </Accordion.Header>
+                  <Accordion.Body>
+              
+                      {" "}
+                      {/* <h2 className="subTitles">En las que estoy trabajando:</h2>
+                       */}
+                      <Row className="g-3 texts ">
+                        {softSkills.map((skill) => (
+                          <FlipCard
+                            key={skill.id}
+                            frontImage={skill.imageFront}
+                            backImage={skill.imageBack}
+                            title={skill.title}
+                            description={skill.description}
+                          />
+                        ))}
+                      </Row>
+                
+                  </Accordion.Body>
+                </Accordion.Item>
+                {/*  acordion 2 SoftSkills  */}
+                <Accordion.Item eventKey="1">
+                  <Accordion.Header className="subTitlesAccordion">
+                    Las que estoy trabajando
+                  </Accordion.Header>
+                  <Accordion.Body>
+                  
+                      {" "}
+                      {/* <h2 className="subTitles">En las que estoy trabajando:</h2>
+                       */}
+                      <Row className="g-3 texts ">
+                        {softSkills.map((skill) => (
+                          <FlipCard
+                            key={skill.id}
+                            frontImage={skill.imageFront}
+                            backImage={skill.imageBack}
+                            title={skill.title}
+                            description={skill.description}
+                          />
+                        ))}
+                      </Row>
+                    
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
             </Accordion.Body>
+            {/* acordion 2  */}
           </Accordion.Item>
           {/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑  Soft skills  ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/}
         </Accordion>

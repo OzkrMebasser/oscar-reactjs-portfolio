@@ -34,6 +34,7 @@
     /* box-sizing: border-box; */
     margin-bottom: 30px;
     margin-top: 30px;
+   
 }
 
 /* @media screen and (min-width: 768px) {
@@ -55,13 +56,11 @@
 }
   .flip-cardSkills-front,
   .flip-cardSkills-back {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
+    box-shadow: rgb(6, 7, 8) 0px 20px 30px -10px;
     background-size: cover;
     background-position: center;
-    border-radius: 8px;
+    border-radius: 10px;
+   
     min-height: 405px;
     -ms-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
     transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
@@ -77,6 +76,7 @@
     -webkit-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
     transform-style: preserve-3d;
+  
   }
   
   .flip-cardSkills:hover .flip-cardSkills-front {
@@ -130,12 +130,13 @@
   
   .flip-cardSkills-header {
     font-size: 1.8rem;
-    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    text-shadow: 4px 3px 2px  rgb(0, 0, 0);
     margin-bottom: 165px;
     height: 2rem;
     position: relative;
   }
  
+
   
   /* .line-decorator {
     
@@ -162,7 +163,7 @@
     background-color: transparent;
     margin: 10px 0;
   } */
-  
+/*   
   .right-l-shape {
     position: absolute;
     bottom: 125px;
@@ -208,7 +209,7 @@
       border-bottom-left-radius: 8px;
     }
       
-  }
+  } */
 
   .flip-cardSkills p {
     font-size: 20px;

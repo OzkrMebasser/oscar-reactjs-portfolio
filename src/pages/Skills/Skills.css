@@ -43,7 +43,16 @@
   font-size: 1.7rem;
   font-family: "Boogaloo", cursive;
   margin-top: 1rem;
+  text-transform: uppercase;
   margin-bottom: 1rem;
+  text-shadow: 3px 3px 2px #000000;
+}
+.subTitlesAccordion {
+  text-align: center;
+  text-transform: uppercase;
+  color: #d4af37;
+  font-size: 1.4rem;
+  font-family: "Boogaloo", cursive;
   text-shadow: 3px 3px 2px #000000;
 }
 .arrowsColor {
@@ -413,6 +422,7 @@
   font-size: 0.9rem;
 }
 
+
 .techTitle {
   font-size: 0.6rem;
   color: rgb(92, 92, 92);
@@ -569,6 +579,9 @@
 /*Card flips*/
 
 
+#softSkillsSubAcc{
+  margin-left: -20px;
+}
 /*Medias queries
  
 ▒█▀▀█ ▒█▀▀▀ ▒█▀▀▀█ ▒█▀▀█ ▒█▀▀▀█ ▒█▄░▒█ ▒█▀▀▀█ ▀█▀ ▒█░░▒█ ▒█▀▀▀ 

@@ -16,9 +16,9 @@ const FlipCard = ({ frontImage, backImage, title, description }) => {
           <div className="inner color-white">
             <h3 className="flip-cardSkills-header">{title}</h3>
             {/* Línea en el lado derecho en forma de L invertida */}
-            <div className="right-l-shape"></div>
+            {/* <div className="right-l-shape"></div> */}
             {/* Línea en el lado izquierdo en forma de L normal */}
-            <div className="left-l-shape"></div>
+            {/* <div className="left-l-shape"></div> */}
             <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" className="flip-cardSkills-img" />
           </div>
         </div>
