@@ -1,70 +1,43 @@
-// export const softSkills = [
-//     {
-//       id: 1,
-//       skillTitle: "Creativity",
-//       alt: "Creativity icon",
-//       class: "iconsSoftSkills",
 
-//       description:
-//         "Disfruta de un dia espectacular en el Mar Caribe navegando desde Cancun a Isla Mujeres abordo de un asombroso catamarán con barra libre y mucha diversión.",
-      
-//       image: "https://s25.postimg.cc/frbd9towf/cta-2.png",
-//     },
-//     {
-//       id: 2,
-//       skillTitle: "Collaboration",
-//       alt: "Creativity icon",
-//       class: "iconsSoftSkills",
+const mySoftSkills = {
+  creativityTitle: "mySoftSkills.creativityTitle",
+  creativityDesc: "mySoftSkills.creativityDesc",
+  communicationTitle: "mySoftSkills.communicationTitle",
+  communicationDesc: "mySoftSkills.communicationDesc",
+  adaptabilityTitle: "mySoftSkills.adaptabilityTitle",
+  adaptabilityDesc: "mySoftSkills.adaptabilityDesc",
+  problemSolvingTitle : "mySoftSkills.problemSolvingTitle",
+  problemSolvingDesc : "mySoftSkills.problemSolvingDesc",
 
-//       description:
-//         "Disfruta de un dia espectacular en el Mar Caribe navegando desde Cancun a Isla Mujeres abordo de un asombroso catamarán con barra libre y mucha diversión.",
-      
-//       image: "https://s25.postimg.cc/frbd9towf/cta-2.png",
-//     },
-    
-//     {
-//       id: 3,
-//       skillTitle: "Team Player",
-//       alt: "Creativity icon",
-//       class: "iconsSoftSkills",
-
-//       description:
-//         "Disfruta de un dia espectacular en el Mar Caribe navegando desde Cancun a Isla Mujeres abordo de un asombroso catamarán con barra libre y mucha diversión.",
-      
-//       image: "https://s25.postimg.cc/hj4c4qnov/cta-3.png",
-//     },
-    
-// ]
-
-
+}
 export const softSkills = [
   {
     id: 1,
     imageFront: 'https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FsoftSkills%2FcreativityFront.png?alt=media&token=3dc3123e-c7f0-428f-9884-dae6204bd6f8',
     imageBack: 'https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FsoftSkills%2FcreativityBack.png?alt=media&token=547994fa-0251-4d6b-a536-5755d5f7fd88',
-    title: 'CREATIVITY',
-    description: 'Soy capaz de pensar de manera innovadora y encontrar soluciones originales para los desafíos. Mi mente está abierta a nuevas ideas y perspectivas, lo que me permite generar conceptos únicos.',
+    title: `${mySoftSkills.creativityTitle}`,
+    description: `${mySoftSkills.creativityDesc}`,
   },
   {
     id: 2,
-    imageFront: 'https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FsoftSkills%2FcollaborationFront.png?alt=media&token=785458df-c72c-4781-869d-a447156d59d2',
-    imageBack: 'https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FsoftSkills%2FcollaborationBack.png?alt=media&token=75b251ce-778b-4e4e-9400-41a139effc2a',
-    title: 'COLLABORATION ',
-    description: 'Me destaco trabajando con otros, compartiendo ideas y contribuyendo al éxito del equipo. Disfruto de la cooperación para lograr objetivos comunes.',
+    imageFront: 'https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FsoftSkills%2FcommunicationFront.png?alt=media&token=a8403394-3476-4c11-9114-9156ddb60f3d',
+    imageBack: 'https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FsoftSkills%2FcommunicationBack.png?alt=media&token=8860c3c3-396c-4492-b9d0-20eab6996ac3',
+    title: `${mySoftSkills.communicationTitle}`,
+    description: `${mySoftSkills.communicationDesc}`,
   },
   {
     id: 3,
-    imageFront: 'https://i.pinimg.com/564x/4b/50/0c/4b500cf48809806842bb39bcd24ebfbd.jpg',
-    imageBack: 'https://s25.postimg.cc/l2q9ujy4f/cta-4.png',
-    title: 'ADAPTABILITY',
-    description: 'Soy capaz de adaptarme fácilmente a nuevos entornos y situaciones. Mantengo la calma y el rendimiento sólido incluso en circunstancias cambiantes.',
+    imageFront: 'https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FsoftSkills%2FadaptabilityFront.png?alt=media&token=6b3132d2-94c4-4f69-b710-1ab9b32777d9',
+    imageBack: 'https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FsoftSkills%2FadaptabilityBack.png?alt=media&token=4a9fa6c4-ffb8-4a92-95c3-5be7c19cf697',
+    title: `${mySoftSkills.adaptabilityTitle}`,
+    description: `${mySoftSkills.adaptabilityDesc}`,
   },
   {
     id: 4,
-    imageFront: 'https://d19d5sz0wkl0lu.cloudfront.net/dims4/default/28823e4/2147483647/thumbnail/1000x1000%3E/quality/90/?url=https%3A%2F%2Fatd-brightspot.s3.amazonaws.com%2F59%2F77%2Fcf8c618540908cec11152681279b%2Fshutterstock-450875209.jpg',
-    imageBack: 'https://s25.postimg.cc/xyz1/cta-5.png',
-    title: 'Innovative Solutions',
-    description: 'Encuentro soluciones creativas y eficientes para abordar desafíos complejos. Mi enfoque innovador aporta originalidad a mis proyectos.',
+    imageFront: 'https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FsoftSkills%2FproblemSolvingFront.png?alt=media&token=f7085693-2910-4c68-a73e-4cca36f25122',
+    imageBack: 'https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FsoftSkills%2FproblemSolvingBack.png?alt=media&token=38cf9d70-807d-47fd-88b6-4369c031bd62',
+    title: `${mySoftSkills.problemSolvingTitle}`,
+    description: `${mySoftSkills.problemSolvingDesc}`,
   },
   {
     id: 5,

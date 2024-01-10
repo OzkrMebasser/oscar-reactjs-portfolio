@@ -351,7 +351,8 @@ const Skills = (props) => {
                  {/*  acordion 1 SoftSkills  */}
                 <Accordion.Item eventKey="0">
                   <Accordion.Header className="texts">
-                    LAS QUE POSEO
+                    {/* LAS QUE POSEO */}
+                    {t("mySoftSkills.iposees")}
                   </Accordion.Header>
                   <Accordion.Body>
               
@@ -364,8 +365,8 @@ const Skills = (props) => {
                             key={skill.id}
                             frontImage={skill.imageFront}
                             backImage={skill.imageBack}
-                            title={skill.title}
-                            description={skill.description}
+                            title={t(skill.title)}
+                            description={t(skill.description)}
                           />
                         ))}
                       </Row>
@@ -375,7 +376,8 @@ const Skills = (props) => {
                 {/*  acordion 2 SoftSkills  */}
                 <Accordion.Item eventKey="1">
                   <Accordion.Header className="subTitlesAccordion">
-                    Las que estoy trabajando
+                    {/* Las que estoy trabajando */}
+                    {t("mySoftSkills.woorkingOnIt")}
                   </Accordion.Header>
                   <Accordion.Body>
                   

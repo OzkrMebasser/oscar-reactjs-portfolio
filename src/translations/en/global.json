@@ -420,6 +420,19 @@
       "skillsEarned_1": "ENGLISH LEVEL: ''C''"
     }
   },
+  "mySoftSkills": {
+    "iposees": "THOSE I POSSESS",
+    "woorkingOnIt": "THOSE I'M WORKING ON",
+
+    "creativityTitle": "CREATIVITY",
+    "creativityDesc": "My creative skills allow me to approach tasks or problems from new and different perspectives, using imagination to generate innovative ideas. My creative approach allows me to think ''out of the box'', identify patterns and make connections to uncover opportunities.",
+    "communicationTitle": "COMMUNICATION",
+    "communicationDesc": " I always try to communicate clearly and effectively, either by speaking or writing. Likewise, I try to be assertive in my communication, by listening actively, asking questions to clarify doubts and making sure that my message is understood correctly.",
+    "adaptabilityTitle": "ADAPTABILITY",
+    "adaptabilityDesc": "I adjust quickly to new situations and changes. I identify what needs to be done and act accordingly. This flexibility helps me to be open to new ideas, embrace change and allows me to thrive in dynamic environments.",
+    "problemSolvingTitle" : "PROBLEM SOLVING", 
+    "problemSolvingDesc" : " Problem solving is one of my core strengths. When faced with challenging situations, I apply my critical and analytical thinking to break problems down into manageable components. My systematic and logical approach is complemented by the ability to propose innovative solutions."
+  },
   "contact": {
     "alert": "Hi, your email has been sent with success, I'll be in touch with you asap, have a great day!",
     "title": "LET´S GET IN TOUCH!"
