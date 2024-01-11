@@ -670,7 +670,9 @@
   border-radius: 20px;
   box-shadow: rgb(6, 7, 8) 0px 20px 30px -10px;
 }
-
+.ml-flag{
+  margin-left: 5px;
+}
 /* .popupInner .close-btn {
   position: absolute;
   top: 50px;

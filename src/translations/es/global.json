@@ -428,7 +428,11 @@
     "adaptabilityTitle": "ADAPTABILIDAD",
     "adaptabilityDesc": "Me ajusto rápidamente a nuevas situaciones y cambios. Identifico lo que se necesita hacer y actúo en consecuencia. Esta flexibilidad me ayuda estar abierto a nuevas ideas, abrazar el cambio y me permite prosperar en ambientes dinámicos",
     "problemSolvingTitle": "RESOLUCIÓN DE PROBLEMAS", 
-    "problemSolvingDesc" : " La resolución de problemas es una de mis principales fortalezas. Frente a situaciones desafiantes, aplico mi pensamiento crítico y analítico para desglosar los problemas en componentes manejables. Mi enfoque sistemático y lógico se complementa con la capacidad de proponer soluciones innovadoras"
+    "problemSolvingDesc" : " La resolución de problemas es una de mis principales fortalezas. Frente a situaciones desafiantes, aplico mi pensamiento crítico y analítico para desglosar los problemas en componentes manejables. Mi enfoque sistemático y lógico se complementa con la capacidad de proponer soluciones innovadoras",
+    "teamworkTitle": "TRABAJO EN EQUIPO",
+    "teamworkDesc": "Me gusta contribuir activamente a los objetivos del equipo, respeto diferentes puntos de vista y valoro las fortalezas de cada integrante. Fomento la colaboración y la comunicación efectiva, buscando sinergias grupales para lograr objetivos en común."
+
+  
   },
   "contact": {
     "alert": "Hola, tu correo ha sido enviado con éxito, me pondré en contacto contigo lo antes posible, ¡que tengas un buen día!",

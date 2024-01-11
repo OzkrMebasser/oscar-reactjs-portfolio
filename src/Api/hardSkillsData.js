@@ -649,7 +649,7 @@ export const skillsBE = [
     variant: "success",
     category: `${categories.nodemailerCat}`,
     typeOfTech: `${typeOfTech.nodemailerTech}`,
-    docs: "",
+    docs: "https://nodemailer.com/",
   },
   {
     id: 11,

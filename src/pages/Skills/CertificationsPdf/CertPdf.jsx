@@ -1,5 +1,7 @@
 import { useContext } from "react";
 import { useTranslation } from "react-i18next";
+import useSound from "../../../context/hook/useSound";
+import SoundClick from "../../../Components/Click/interface.mp3";
 import Accordion from "react-bootstrap/Accordion";
 import AccordionContext from "react-bootstrap/AccordionContext";
 import { useAccordionButton } from "react-bootstrap/AccordionButton";
@@ -12,24 +14,25 @@ import "@react-pdf-viewer/core/lib/styles/index.css";
 import "../../Skills/Skills.css";
 
 function ContextAwareToggle({ children, eventKey, callback }) {
+  const playSound = useSound(SoundClick);
   const { activeEventKey } = useContext(AccordionContext);
 
   const decoratedOnClick = useAccordionButton(
     eventKey,
-    () => callback && callback(eventKey)
+    () => callback && callback(eventKey) && playSound()
   );
 
   const isCurrentEventKey = activeEventKey === eventKey;
 
   return (
-    <button type="button" className="certsBtn" onClick={decoratedOnClick}>
+    <button type="button" className="certsBtn" onClick={decoratedOnClick} onMouseDown={()=>playSound()}> 
       {children}
     </button>
   );
 }
 
 const CertPdf = (props) => {
-  
+  const playSound = useSound(SoundClick);
   const [t] = useTranslation("global");
 
   // console.log(props);
@@ -132,8 +135,8 @@ const CertPdf = (props) => {
                   alt="logo institution"
                 />
               </div>
-              <ContextAwareToggle eventKey={props.eventKey}>
-               
+              <ContextAwareToggle eventKey={props.eventKey } >
+            
                 {t("certificatesInfo.seeCertificate")}
                 {/* <img className="docsLink" src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fbooks-svgrepo-com%20(1).svg?alt=media&token=03a80306-1366-4ba7-ad3a-e7368d1ff0c9" alt="docs" /> */}
               </ContextAwareToggle>

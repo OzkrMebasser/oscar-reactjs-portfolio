@@ -431,8 +431,10 @@
     "adaptabilityTitle": "ADAPTABILITY",
     "adaptabilityDesc": "I adjust quickly to new situations and changes. I identify what needs to be done and act accordingly. This flexibility helps me to be open to new ideas, embrace change and allows me to thrive in dynamic environments.",
     "problemSolvingTitle" : "PROBLEM SOLVING", 
-    "problemSolvingDesc" : " Problem solving is one of my core strengths. When faced with challenging situations, I apply my critical and analytical thinking to break problems down into manageable components. My systematic and logical approach is complemented by the ability to propose innovative solutions."
-  },
+    "problemSolvingDesc" : " Problem solving is one of my core strengths. When faced with challenging situations, I apply my critical and analytical thinking to break problems down into manageable components. My systematic and logical approach is complemented by the ability to propose innovative solutions.",
+    "teamworkTitle": "TEAMWORK",
+    "teamworkDesc": "I like to actively contribute to the team's objectives, respect different points of view and value the strengths of each member. I encourage collaboration and effective communication, looking for group synergies to achieve common goals."
+     },
   "contact": {
     "alert": "Hi, your email has been sent with success, I'll be in touch with you asap, have a great day!",
     "title": "LET´S GET IN TOUCH!"

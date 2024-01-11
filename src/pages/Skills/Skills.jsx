@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import CertificationsPdf from "../Skills/CertificationsPdf/CertificationsPdf";
 import ScrollToTop from "../../Components/GoUpButton/ScrollToTop";
+import useSound from "../../context/hook/useSound";
+import SoundClick from "../../Components/Click/interface.mp3";
 import FlipCard from "./FlipCard";
 import { skillsFE, skillsBE } from "../../Api/hardSkillsData";
 import { softSkills } from "../../Api/softSkillsData";
@@ -17,7 +19,7 @@ import "./Skills.css";
 
 const Skills = (props) => {
   const [t] = useTranslation("global");
-
+  const playSound = useSound(SoundClick);
   //Dropdown Tech description
 
   const { isDropOpen } = props;
@@ -98,7 +100,7 @@ const Skills = (props) => {
 
                 <button
                   className="select-btn"
-                  onClick={() => setCategoryFE("")}
+                  onClick={() => {playSound(); setCategoryFE("");}}
                 >
                   {t("skills.viewAllCats")}
                 </button>
@@ -136,7 +138,7 @@ const Skills = (props) => {
                           {/* {"Button DROP DOWN"} */}
                           <button
                             className="dropBtn"
-                            onClick={() => handleCardClick(index)}
+                            onClick={() => {playSound(); handleCardClick(index);}}
                           >
                             <span className="xTtitle">
                               {t("skills.whatIsIt")}
@@ -155,7 +157,7 @@ const Skills = (props) => {
                                 </Card.Text>
                                 {t(`${skill.description}`)}
                                 <br />
-                                <button className="docsBtn">
+                                <button className="docsBtn" onClick={()=> playSound()}>
                                   <a
                                     className="noUnderline"
                                     href={`${skill.docs}`}
@@ -222,7 +224,7 @@ const Skills = (props) => {
 
                 <button
                   className="select-btn"
-                  onClick={() => setCategoryBE("")}
+                  onClick={() => {playSound(); setCategoryBE("")}}
                 >
                   {t("skills.viewAllCats")}
                 </button>
@@ -257,7 +259,7 @@ const Skills = (props) => {
                         <div className="dropdown">
                           <button
                             className="dropBtn"
-                            onClick={() => handleCardClick(index)}
+                            onClick={() => {playSound(); handleCardClick(index);}}
                           >
                             <span className="xTtitle">
                               {t("skills.whatIsIt")}
@@ -276,7 +278,7 @@ const Skills = (props) => {
                                 </Card.Text>
                                 {t(`${skill.description}`)}
                                 <br />
-                                <button className="docsBtn">
+                                <button className="docsBtn" onClick={()=> playSound()}>
                                   <a
                                     className="noUnderline"
                                     href={`${skill.docs}`}
@@ -345,32 +347,29 @@ const Skills = (props) => {
               />
             </Accordion.Header>
 
-           
             <Accordion.Body>
               <Accordion id="softSkillsSubAcc">
-                 {/*  acordion 1 SoftSkills  */}
+                {/*  acordion 1 SoftSkills  */}
                 <Accordion.Item eventKey="0">
                   <Accordion.Header className="texts">
                     {/* LAS QUE POSEO */}
                     {t("mySoftSkills.iposees")}
                   </Accordion.Header>
                   <Accordion.Body>
-              
-                      {" "}
-                      {/* <h2 className="subTitles">En las que estoy trabajando:</h2>
-                       */}
-                      <Row className="g-3 texts ">
-                        {softSkills.map((skill) => (
-                          <FlipCard
-                            key={skill.id}
-                            frontImage={skill.imageFront}
-                            backImage={skill.imageBack}
-                            title={t(skill.title)}
-                            description={t(skill.description)}
-                          />
-                        ))}
-                      </Row>
-                
+                    {" "}
+                    {/* <h2 className="subTitles">En las que estoy trabajando:</h2>
+                     */}
+                    <Row className="g-3 texts ">
+                      {softSkills.map((skill) => (
+                        <FlipCard
+                          key={skill.id}
+                          frontImage={skill.imageFront}
+                          backImage={skill.imageBack}
+                          title={t(skill.title)}
+                          description={t(skill.description)}
+                        />
+                      ))}
+                    </Row>
                   </Accordion.Body>
                 </Accordion.Item>
                 {/*  acordion 2 SoftSkills  */}
@@ -380,22 +379,20 @@ const Skills = (props) => {
                     {t("mySoftSkills.woorkingOnIt")}
                   </Accordion.Header>
                   <Accordion.Body>
-                  
-                      {" "}
-                      {/* <h2 className="subTitles">En las que estoy trabajando:</h2>
-                       */}
-                      <Row className="g-3 texts ">
-                        {softSkills.map((skill) => (
-                          <FlipCard
-                            key={skill.id}
-                            frontImage={skill.imageFront}
-                            backImage={skill.imageBack}
-                            title={skill.title}
-                            description={skill.description}
-                          />
-                        ))}
-                      </Row>
-                    
+                    {" "}
+                    {/* <h2 className="subTitles">En las que estoy trabajando:</h2>
+                     */}
+                    <Row className="g-3 texts ">
+                      {softSkills.map((skill) => (
+                        <FlipCard
+                          key={skill.id}
+                          frontImage={skill.imageFront}
+                          backImage={skill.imageBack}
+                          title={skill.title}
+                          description={skill.description}
+                        />
+                      ))}
+                    </Row>
                   </Accordion.Body>
                 </Accordion.Item>
               </Accordion>

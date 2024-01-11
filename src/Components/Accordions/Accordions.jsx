@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
+import useSound from "../../context/hook/useSound";
+import SoundClick from "../../Components/Click/interface.mp3";
 import { useTranslation } from "react-i18next";
 
 import "./Accordions.css";
 
 const Accordions = ({ logoSchool, content, totalCerts }) => {
+  const playSound = useSound(SoundClick);
   // const totalCerts = [
   //   /*0: academlo = 5
   //     1: capacitate = 2
@@ -23,6 +26,7 @@ const Accordions = ({ logoSchool, content, totalCerts }) => {
 
   const toggleAccordion = () => {
     setIsOpen(!isOpen);
+    playSound()
   };
 
   // Función para actualizar el estado de isMobile en el cambio de tamaño de la pantalla

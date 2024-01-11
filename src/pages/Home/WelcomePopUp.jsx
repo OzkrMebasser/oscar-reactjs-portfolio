@@ -4,6 +4,8 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Dates from "../../Components/Clock/Dates";
 import ClockAnalog from "../../Components/Clock/AnalogClock";
 import ProfileOscar from "./ProfileOscar";
+import useSound from "../../context/hook/useSound";
+import SoundClick from "../../Components/Click/interface.mp3";
 
 import { motion } from "framer-motion";
 
@@ -11,6 +13,8 @@ import "./Home.css";
 import DigitalClock from "../../Components/Clock/DigitalClock";
 
 function WelcomePopUp(props) {
+  const playSound = useSound(SoundClick);
+
   const [isHovered, setIsHovered] = useState(false);
 
   // const handleMouseOver = () => {
@@ -50,21 +54,35 @@ function WelcomePopUp(props) {
           </div>
         </div>
 
-        <button className="goBtn " onClick={() => props.setTrigger(false)}>
+        <button
+          className="goBtn "
+          onClick={() => {
+            playSound();
+            props.setTrigger(false);
+          }}
+        >
           {t("cover.seePortfolio")}
         </button>
 
         <button className="goBtnB ">
           <NavDropdown className="noLink" title={t("navbar.language")}>
-            <NavDropdown.Item onClick={() => i18n.changeLanguage("es")}>
-              ESPAÑOL <span className="fi fi-mx"></span>{" "}
+            <NavDropdown.Item
+              onClick={() => {
+                playSound();
+                i18n.changeLanguage("es");
+              }}
+            >
+              ESPAÑOL
+              <span className="fi fi-mx ml-flag"></span>{" "}
               <span className="fi fi-es"></span>
             </NavDropdown.Item>
 
-            <NavDropdown.Item onClick={() => i18n.changeLanguage("en")}>
-              ENGLISH <span className="fi fi-ca"></span>{" "}
+            <NavDropdown.Item onClick={() => {
+            playSound();i18n.changeLanguage("en");}}>
+              ENGLISH 
+               <span className="fi fi-ca ml-flag"></span>{" "}
               <span className="fi fi-us"></span>{" "}
-              <span className="fi fi-uk"></span>
+              {/* <span className="fi fi-uk"></span> */}
             </NavDropdown.Item>
           </NavDropdown>
         </button>
