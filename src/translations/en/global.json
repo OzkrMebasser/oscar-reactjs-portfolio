@@ -433,8 +433,17 @@
     "problemSolvingTitle" : "PROBLEM SOLVING", 
     "problemSolvingDesc" : " Problem solving is one of my core strengths. When faced with challenging situations, I apply my critical and analytical thinking to break problems down into manageable components. My systematic and logical approach is complemented by the ability to propose innovative solutions.",
     "teamworkTitle": "TEAMWORK",
-    "teamworkDesc": "I like to actively contribute to the team's objectives, respect different points of view and value the strengths of each member. I encourage collaboration and effective communication, looking for group synergies to achieve common goals."
-     },
+    "teamworkDesc": "I like to actively contribute to the team's objectives, respect different points of view and value the strengths of each member. I encourage collaboration and effective communication, looking for group synergies to achieve common goals.",
+    "detailOrientedTitle": "DETAIL ORIENTED",
+    "detailOrientedDesc": "I am a detail-oriented person. I excel in my ability to pay attention to the little things, making sure that every aspect is carefully handled. My meticulous approach allows me to avoid mistakes and ensure accuracy in every task I perform. This ability helps me maintain a high standard of quality and brings consistency to my work.",
+    "criticalThinkingTitle": "CRITICAL THINKING",
+    "criticalThinkingDesc": "I possess critical thinking skills that allow me to analyze and evaluate information in a reflective manner.  I approach problems logically and efficiently, considering diverse perspectives to find effective solutions, which helps me make informed decisions in a variety of professional and personal contexts.",
+    "leadershipTitle": "LEADERSHIP",
+    "leadershipDesc": "I have leadership skills that allow me to inspire, guide, and motivate others to jointly achieve goals. My focus is to foster a collaborative work environment where everyone can contribute and grow together.",
+    "willingToLearnTitle": "WILLING TO LEARN",
+    "willingToLearnDesc": "I have a strong willingness to learn, always open to acquiring new knowledge and skills. I look for opportunities to constantly improve myself, showing a proactive approach towards my personal and professional development."
+  
+  },
   "contact": {
     "alert": "Hi, your email has been sent with success, I'll be in touch with you asap, have a great day!",
     "title": "LET´S GET IN TOUCH!"
