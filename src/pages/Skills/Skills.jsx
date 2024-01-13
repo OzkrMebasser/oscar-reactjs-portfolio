@@ -5,7 +5,7 @@ import useSound from "../../context/hook/useSound";
 import SoundClick from "../../Components/Click/interface.mp3";
 import FlipCard from "./FlipCard";
 import { skillsFE, skillsBE } from "../../Api/hardSkillsData";
-import { softSkills } from "../../Api/softSkillsData";
+import { softSkills, workingSoftSkills } from "../../Api/softSkillsData";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Accordion from "react-bootstrap/Accordion";
 
@@ -73,8 +73,10 @@ const Skills = (props) => {
           <Accordion.Item eventKey="0">
             {/* <ScrollToTop /> */}
             <Accordion.Header className="texts ">
+          
               {t("skills.frontendTools")}{" "}
               <img
+                
                 className="frontEndimg "
                 id="spaceBtwn"
                 src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2Ffrontend.png?alt=media&token=6ce6c9c4-97e2-4e9f-b883-45a9dd5ed0fa"
@@ -383,7 +385,7 @@ const Skills = (props) => {
                     {/* <h2 className="subTitles">En las que estoy trabajando:</h2>
                      */}
                     <Row className="g-3 texts ">
-                      {softSkills.map((skill) => (
+                      {workingSoftSkills.map((skill) => (
                         <FlipCard
                           key={skill.id}
                           frontImage={skill.imageFront}

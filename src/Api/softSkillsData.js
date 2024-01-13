@@ -17,6 +17,8 @@ const mySoftSkills = {
   leadershipDesc: "mySoftSkills.leadershipDesc",
   willingToLearnTitle: "mySoftSkills.willingToLearnTitle",
   willingToLearnDesc: "mySoftSkills.willingToLearnDesc",
+  workEthicTitle : "mySoftSkills.workEthicTitle",
+  workEthicDesc:  "mySoftSkills.workEthicDesc",
 };
 export const softSkills = [
   {
@@ -98,36 +100,23 @@ export const softSkills = [
     title: `${mySoftSkills.willingToLearnTitle}`,
     description: `${mySoftSkills.willingToLearnDesc}`,
   },
+  {
+    id: 10,
+    imageFront: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FsoftSkills%2FcollaborationFront.png?alt=media&token=785458df-c72c-4781-869d-a447156d59d2",
+    imageBack: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FsoftSkills%2FcollaborationBack.png?alt=media&token=75b251ce-778b-4e4e-9400-41a139effc2a",
+    title: `${mySoftSkills.workEthicTitle}`,
+    description: `${mySoftSkills.workEthicDesc}`,
+  },
 ];
 
-// {
-//   id: 13,
-//   imageFront: 'https://s25.postimg.cc/xyz10/cta-14.png',
-//   imageBack: 'https://s25.postimg.cc/xyz10/cta-14.png',
-//   title: 'Problem Solving',
-//   description: 'A short sentence describing this callout is.',
-// },
-// {
-//   id: 14,
-//   imageFront: 'https://s25.postimg.cc/xyz11/cta-15.png',
-//   imageBack: 'https://s25.postimg.cc/xyz11/cta-15.png',
-//   title: 'Teamwork',
-//   description: 'A short sentence describing this callout is.',
-// }
-
-// export const skillsFE = [
-//   {
-//     id: 1,
-//     icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fhtml-svgrepo-com.svg?alt=media&token=bf007597-213f-410e-b369-8035584a3ad7",
-//     title: "HTML-5",
-//     alt: "HTML-5 logo",
-//     description: `${techDescription.htmlDesc}`,
-//     class: "icons",
-//     progress: 85,
-//     variant: "success",
-//     // category: `${categories.htmlCat}`,
-//     category: `${categories.webDev}`,
-//     typeOfTech: `${typeOfTech.htmlTech}`,
-//     docs: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-//   },
-// ]
+export const workingSoftSkills = [
+  {
+    id: 1,
+    imageFront:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FsoftSkills%2FcreativityFront.png?alt=media&token=3dc3123e-c7f0-428f-9884-dae6204bd6f8",
+    imageBack:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2FsoftSkills%2FcreativityBack.png?alt=media&token=547994fa-0251-4d6b-a536-5755d5f7fd88",
+    title: `${mySoftSkills.creativityTitle}`,
+    description: `${mySoftSkills.creativityDesc}`,
+  },
+]
