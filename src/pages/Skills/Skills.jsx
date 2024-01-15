@@ -385,13 +385,14 @@ const Skills = (props) => {
                     {/* <h2 className="subTitles">En las que estoy trabajando:</h2>
                      */}
                     <Row className="g-3 texts ">
-                      {workingSoftSkills.map((skill) => (
+                      {workingSoftSkills.map((workinSkill) =>  (
+                        
                         <FlipCard
-                          key={skill.id}
-                          frontImage={skill.imageFront}
-                          backImage={skill.imageBack}
-                          title={skill.title}
-                          description={skill.description}
+                          key={workinSkill.id}
+                          frontImage={workinSkill.imageFront}
+                          backImage={workinSkill.imageBack}
+                          title={t(workinSkill.title)}
+                          description={t(workinSkill.description)}
                         />
                       ))}
                     </Row>

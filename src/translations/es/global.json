@@ -424,9 +424,9 @@
     "creativityTitle": "CREATIVIDAD",
     "creativityDesc": "Mi capacidad creativa me permite abordar tareas o problemas desde perspectivas nuevas y diferentes, utilizando la imaginación para generar ideas innovadoras. Mi enfoque creativo me permite pensar ''fuera de la caja'', identificar patrones y establecer conexiones para descubrir oportunidades.",
     "communicationTitle": "COMUNICACIÓN" ,
-    "communicationDesc": "Procuro siempre comunicarme de forma clara y efectiva, ya sea hablando o escribiendo. De igual manera, busco que mi comunicación sea asertiva, al escuchar activamente, trato de hacer preguntas para aclarar dudas y me aseguro que mi mensaje se entienda correctamente.",
+    "communicationDesc": "Me esfuerzo por mantener una comunicación clara y efectiva en todo momento. Para lograrlo, practico la asertividad al escuchar activamente, planteo preguntas para aclarar cualquier duda y me aseguro de que mi mensaje sea comprendido de manera precisa",
     "adaptabilityTitle": "ADAPTABILIDAD",
-    "adaptabilityDesc": "Me ajusto rápidamente a nuevas situaciones y cambios. Identifico lo que se necesita hacer y actúo en consecuencia. Esta flexibilidad me ayuda estar abierto a nuevas ideas, abrazar el cambio y me permite prosperar en ambientes dinámicos",
+    "adaptabilityDesc": "Mi habilidad para adaptarme se manifiesta en mi capacidad para evolucionar frente a distintos escenarios. Soy proactivo al identificar las demandas cambiantes, tomando medidas rápidas y efectivas. Este enfoque flexible me permite no solo enfrentar con éxito los desafíos, sino también abrazar oportunidades emergentes",
     "problemSolvingTitle": "RESOLUCIÓN DE PROBLEMAS", 
     "problemSolvingDesc" : " La resolución de problemas es una de mis principales fortalezas. Frente a situaciones desafiantes, aplico mi pensamiento crítico y analítico para desglosar los problemas en componentes manejables. Mi enfoque sistemático y lógico se complementa con la capacidad de proponer soluciones innovadoras",
     "teamworkTitle": "TRABAJO EN EQUIPO",
@@ -441,11 +441,21 @@
     "willingToLearnDesc": "Tengo una fuerte disposición a aprender, siempre abierta a adquirir nuevos conocimientos y habilidades. Busco oportunidades para mejorar constantemente, mostrando un enfoque proactivo hacia mi desarrollo personal y profesional",
     "workEthicTitle": "ÉTICA DE TRABAJO",
     "workEthicDesc": "Me caracterizo por ser sumamente responsable, comprometido y diligente en todas mis labores. Abordo cada tarea con dedicación, manteniendo siempre elevados estándares de desempeño. Mi compromiso con la excelencia me impulsa a dar lo mejor de mí en todo momento. Además, poseo una fuerte iniciativa propia que me motiva a buscar constantemente formas de mejorar y superar los desafíos."
-    
-    
-    
-
+  },
   
+  "workingOnSoftSkills":{
+    "timeManagmentTitle":"GESTIÓN DEL TIEMPO",
+    "timeManagmentDesc":"Además de la planificación estructurada, estoy practicando la priorización efectiva de tareas para concentrarme en las actividades más importantes para evitar el sobre compromiso. También estoy evaluando regularmente mi uso del tiempo para identificar áreas de mejora y ajustar mi enfoque según sea necesario",
+    "activeListeningTitle": "ESCUCHA ACTIVA",
+    "activeListeningDesc" : "Practico la escucha activa, concentrándome en las conversaciones, evitando distracciones y haciendo preguntas para confirmar comprensión. Valorando las opiniones de otros con retroalimentación reflexiva, fortalezco relaciones y mejoro la calidad de la comunicación en el trabajo y en mi vida personal.",
+    "selfAwarenessTitle": "AUTOCONCIENCIA",
+    "selfAwarenessDesc": "Estoy comprometido con la autoevaluación continua. Regularmente reflexiono sobre mis fortalezas y áreas de mejora, y busco retroalimentación constructiva de colegas y supervisores para fortalecer mi autoconciencia y comprensión de cómo mi comportamiento impacta en mi entorno laboral.",
+    "organizationTitle": "ORGANIZACIÓN Y PLANIFICACIÓN",
+    "organizationDesc": "Estoy mejorando mi habilidad en organización y planificación, tratando de estructurar tareas y proyectos eficientemente. Con un enfoque metódico, asigno prioridades, establezco plazos y optimizo recursos. El uso de herramientas como calendarios y listas de tareas facilita el seguimiento efectivo de responsabilidades.",
+    "selfControlTitle": "AUTO CONTROL",
+    "selfControlDesc": "Estoy fortaleciendo mi habilidad de autocontrol como parte de mi desarrollo profesional. Me esfuerzo por regular mis emociones y respuestas de manera más efectiva, tomando decisiones de manera reflexiva en lugar de ceder a impulsos momentáneos. Este enfoque contribuye a un desempeño más equilibrado y a relaciones laborales más efectivas"
+
+
   },
   "contact": {
     "alert": "Hola, tu correo ha sido enviado con éxito, me pondré en contacto contigo lo antes posible, ¡que tengas un buen día!",
