@@ -4,7 +4,9 @@ import ModalItem from "./ModalItem";
 
 import ItemsCarousel from "react-items-carousel";
 import { projects } from "../../Api/projects";
-import { ImUndo2, ImRedo2 } from "react-icons/im";
+// import { ImUndo2, ImRedo2 } from "react-icons/im";
+import { MdOutlineDoubleArrow } from "react-icons/md";
+
 
 import "./Projects.css";
 
@@ -28,12 +30,12 @@ const Projects = ({ props }) => {
           gutter={8}
           leftChevron={
             <span className="arrowIconLeft">
-              <ImUndo2 />
+             <MdOutlineDoubleArrow className="voltearALaIzquierda" />
             </span>
           }
           rightChevron={
             <span className="arrowIconRight">
-              <ImRedo2 />
+          <MdOutlineDoubleArrow />
             </span>
           }
           outsideChevron

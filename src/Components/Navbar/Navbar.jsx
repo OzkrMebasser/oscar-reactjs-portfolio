@@ -8,22 +8,27 @@ import "./Navbar.css";
 
 import { NavLink } from "react-router-dom";
 import { FaStream } from "react-icons/fa";
-import { FaReply } from "react-icons/fa";
 
 const logo = "OSCAR";
 const logoLN = "MORENO";
+const closeIcon =
+  "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/close_icon_custom.svg?alt=media&token=e7b246c8-76e7-4866-aa37-2dbd2b8d80c9";
 
 const Navbar = ({ isScrolling }) => {
   const [t, i18n] = useTranslation("global");
+  const [click, setClick] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
 
   const toTheTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     console.log(toTheTop());
   };
 
-  const [click, setClick] = useState(false);
-
-  const handleClick = () => setClick(!click);
+  const handleClick = () => {
+    setClick(!click);
+    playSound();
+    setIsClosing(!click);
+  };
   const Close = () => setClick(false);
 
   const audioRef = useRef(null);
@@ -46,8 +51,16 @@ const Navbar = ({ isScrolling }) => {
       // className={`navbar ${isScrolling > 120 ? "scrolling" : null}`}
       // onClick={(e) => e.stopPropagation()}
     >
-      <div className="nav-icon" onClick={handleClick}>
-        {click ? <FaReply /> : <FaStream />}
+      <div className="nav-icon" onClick={() => handleClick()}>
+        {click ? (
+          <img
+            className={`imgIcon ${isClosing ? "spin" : ""}`}
+            src={closeIcon}
+            alt=""
+          />
+        ) : (
+          <FaStream />
+        )}
       </div>
       {/* <div className={click ? "main-container" : ""} onClick={() => Close()} /> */}
 
@@ -75,7 +88,7 @@ const Navbar = ({ isScrolling }) => {
               {t("navbar.home")}
             </NavLink>
           </li>
-          <li className="nav-item">
+          <li className="nav-item ">
             <NavLink
               to="/about"
               activeclassname="active"

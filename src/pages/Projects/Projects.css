@@ -89,6 +89,9 @@
 
 
 /* Arrows*/
+.voltearALaIzquierda {
+  transform: scaleX(-1);
+}
 
 .chevronWidth {
   padding: 0 200px;

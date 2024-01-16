@@ -73,10 +73,8 @@ const Skills = (props) => {
           <Accordion.Item eventKey="0">
             {/* <ScrollToTop /> */}
             <Accordion.Header className="texts ">
-          
               {t("skills.frontendTools")}{" "}
               <img
-                
                 className="frontEndimg "
                 id="spaceBtwn"
                 src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FSkills%2Ffrontend.png?alt=media&token=6ce6c9c4-97e2-4e9f-b883-45a9dd5ed0fa"
@@ -102,7 +100,10 @@ const Skills = (props) => {
 
                 <button
                   className="select-btn"
-                  onClick={() => {playSound(); setCategoryFE("");}}
+                  onClick={() => {
+                    playSound();
+                    setCategoryFE("");
+                  }}
                 >
                   {t("skills.viewAllCats")}
                 </button>
@@ -140,7 +141,10 @@ const Skills = (props) => {
                           {/* {"Button DROP DOWN"} */}
                           <button
                             className="dropBtn"
-                            onClick={() => {playSound(); handleCardClick(index);}}
+                            onClick={() => {
+                              playSound();
+                              handleCardClick(index);
+                            }}
                           >
                             <span className="xTtitle">
                               {t("skills.whatIsIt")}
@@ -159,7 +163,10 @@ const Skills = (props) => {
                                 </Card.Text>
                                 {t(`${skill.description}`)}
                                 <br />
-                                <button className="docsBtn" onClick={()=> playSound()}>
+                                <button
+                                  className="docsBtn"
+                                  onClick={() => playSound()}
+                                >
                                   <a
                                     className="noUnderline"
                                     href={`${skill.docs}`}
@@ -226,7 +233,10 @@ const Skills = (props) => {
 
                 <button
                   className="select-btn"
-                  onClick={() => {playSound(); setCategoryBE("")}}
+                  onClick={() => {
+                    playSound();
+                    setCategoryBE("");
+                  }}
                 >
                   {t("skills.viewAllCats")}
                 </button>
@@ -261,7 +271,10 @@ const Skills = (props) => {
                         <div className="dropdown">
                           <button
                             className="dropBtn"
-                            onClick={() => {playSound(); handleCardClick(index);}}
+                            onClick={() => {
+                              playSound();
+                              handleCardClick(index);
+                            }}
                           >
                             <span className="xTtitle">
                               {t("skills.whatIsIt")}
@@ -280,7 +293,10 @@ const Skills = (props) => {
                                 </Card.Text>
                                 {t(`${skill.description}`)}
                                 <br />
-                                <button className="docsBtn" onClick={()=> playSound()}>
+                                <button
+                                  className="docsBtn"
+                                  onClick={() => playSound()}
+                                >
                                   <a
                                     className="noUnderline"
                                     href={`${skill.docs}`}
@@ -385,8 +401,7 @@ const Skills = (props) => {
                     {/* <h2 className="subTitles">En las que estoy trabajando:</h2>
                      */}
                     <Row className="g-3 texts ">
-                      {workingSoftSkills.map((workinSkill) =>  (
-                        
+                      {workingSoftSkills.map((workinSkill) => (
                         <FlipCard
                           key={workinSkill.id}
                           frontImage={workinSkill.imageFront}
