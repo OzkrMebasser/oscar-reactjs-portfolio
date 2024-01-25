@@ -1,26 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
 
 /* Texts*/
-
-/* .accordion{
-  background-color: #000000;
-  width: 500px;
-  margin: auto;
- 
+.text-uppercase {
+  text-transform: uppercase;
 }
-.accordion-button{
-  background-color: #d4af37;
-  width: 500px;
-  margin: auto;
-  
-}
-.accordion-button:not(.collapsed) {
-  color: #d4af37;
-  background-color: #000000;
-  
-} */
-
-
 
 .projectsH1 {
   text-align: center;
@@ -28,7 +11,7 @@
   color: rgb(255, 255, 255);
   vertical-align: middle;
   position: relative;
-  
+
   font-family: "Boogaloo", cursive;
   text-shadow: 1px 1px 3px #cccc5abd;
 }
@@ -38,7 +21,7 @@
   color: #d4af37;
   font-size: 2rem;
   font-family: "Boogaloo", cursive;
- text-transform: uppercase;
+  text-transform: uppercase;
   text-shadow: 1px 1px 1px #9c9c9a9a;
 }
 
@@ -59,17 +42,11 @@
   margin: auto;
   height: 87vh;
 }
-/* .carouselDiv {
-  margin-bottom: 2rem;
-  padding: 10px 50px;
-  width: 50%;
- 
-} */
 
 .image-wrapper {
   overflow: hidden;
   top: 0;
-  /* padding: 10px 50px; */
+
 }
 .inner-img {
   transition: 0.3s;
@@ -86,7 +63,6 @@
   opacity: calc(0.9);
   filter: blur(1px);
 }
-
 
 /* Arrows*/
 .voltearALaIzquierda {
@@ -132,12 +108,10 @@
   color: #000000;
   transform: scale(1);
   box-shadow: 0px 0px 30px #ffffff;
-  -ms-transform: rotate(-360deg); /* IE 9 */
-  -webkit-transform: rotate(-360deg); /* Chrome, Safari, Opera */
+  -ms-transform: rotate(-360deg); 
+  -webkit-transform: rotate(-360deg); 
   transform: rotate(-360deg);
 }
-
-
 
 .arrowIcon-fx:hover:after {
   opacity: 1;
@@ -178,37 +152,32 @@
   color: #000000;
   transform: scale(1);
   box-shadow: 0px 0px 30px #ffffff;
-  -ms-transform: rotate(360deg); /* IE 9 */
-  -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+  -ms-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg); 
   transform: rotate(360deg);
 }
 
-
 .stackBtn {
- 
- width: 30%;
+  width: 30%;
 
- 
   background-color: #d4af37;
   color: #000;
   font-size: 1.2rem;
   border: currentColor;
   font-family: "Boogaloo", cursive;
   text-decoration-style: dotted;
-
 }
 .stackBtn:hover {
-
   background-color: #000;
   color: #ffffff;
   font-size: 1.2rem;
   border: 1px solid #d4af37;
   transform: scale(0.95);
   transition: 200ms;
- 
 }
 
-.btn-check:focus+.btn, .btn:focus{
+.btn-check:focus + .btn,
+.btn:focus {
   color: #ffffff;
   background-color: #000;
   border: 1px solid #d4af37;
@@ -224,38 +193,64 @@
 }
 
 .stackBtn-git:hover {
-  -ms-transform: rotate(360deg); /* IE 9 */
-  -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
-  transform: rotate(360deg);
- 
+  -ms-transform: rotate(360deg); 
+  -webkit-transform: rotate(360deg); 
+  transform: rotate(360deg)
 }
 
 .iconSize {
   transition: all 100ms ease-in-out;
-  height: 3rem;
-  margin-right: 9px;
-  
+  width: 40px;
+  height: 40px;
+  /* margin-right: 9px; */
+  -webkit-box-shadow: 0px 0px 24px -4px #000000;
+  box-shadow: 0px 0px 24px -4px #000000;
+  border-radius: 8px;
+  padding: 3px;
+  margin-top: 0.5rem;
 }
 
-.iconSize:hover{
+.iconSize:hover {
+  transform: scale(1.1) rotate(25deg);
+}
 
-  transform: scale(1.2);
+.iconContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.iconsDeploy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.textDescIcons {
+  font-size: 1rem;
+  color: black;
+  margin: auto;
+  text-align: justify;
+}
+
+.textInIcons {
+  font-size: 1rem;
+  color: black;
+  margin: auto;
+  /* text-align: center; */
 }
 
 .moreDown {
   z-index: 9999999999999999;
   margin-top: 5rem;
   font-family: "Boogaloo", cursive;
-
 }
 /*Modal stacks*/
 
-.btnStacks{
+.btnStacks {
   background-color: #d4af37;
   color: #000;
 }
 
- /*Medias queries
+/*Medias queries
  
 ▒█▀▀█ ▒█▀▀▀ ▒█▀▀▀█ ▒█▀▀█ ▒█▀▀▀█ ▒█▄░▒█ ▒█▀▀▀█ ▀█▀ ▒█░░▒█ ▒█▀▀▀ 
 ▒█▄▄▀ ▒█▀▀▀ ░▀▀▀▄▄ ▒█▄▄█ ▒█░░▒█ ▒█▒█▒█ ░▀▀▀▄▄ ▒█░ ░▒█▒█░ ▒█▀▀▀ 
@@ -263,7 +258,6 @@
  */
 
 @media only screen and (max-width: 600px) {
-
   /* .carouselContainer {
     margin-left: 0;
     margin-right: 0;
@@ -275,12 +269,11 @@
     
   } */
 
-  body{
+  body {
     background-color: rgb(0, 0, 0);
     margin: 0;
   }
   .carouselContainer {
-   
     margin-left: 0;
     margin-right: 0;
     position: fixed;
@@ -288,10 +281,9 @@
     left: 0;
     right: 0;
     background-color: transparent;
-   
+
     margin-top: 4rem;
   }
-  
 
   .inner-img {
     transition: 0.3s;
@@ -300,63 +292,59 @@
     border-radius: 10px;
     cursor: pointer;
   }
-  
+
   .inner-img:hover {
     transform: scale(0.9);
     border-radius: 10px;
     opacity: calc(0.9);
     filter: blur(1px);
   }
-  
+
   .stackBtn {
- 
     width: 70vw;
-   
-    
-     background-color: #d4af37;
-     color: #000;
-     font-size: 1rem;
-     border: currentColor;
-     font-family: "Boogaloo", cursive;
-     text-decoration-style: dotted;
-   
-   }
-   .stackBtn:hover {
-   
-     background-color: #000;
-     color: #ffffff;
-     font-size: 1rem;
-     border: 1px solid #d4af37;
-     transform: scale(0.95);
-     transition: 200ms;
-    
-   }
-   
-   .btn-check:focus+.btn, .btn:focus{
-     color: #ffffff;
-     background-color: #000;
-     border: 1px solid #d4af37;
-     outline: 0;
-     box-shadow: none;
-   }
- 
-   .projectsH1 {
+
+    background-color: #d4af37;
+    color: #000;
+    font-size: 1rem;
+    border: currentColor;
+    font-family: "Boogaloo", cursive;
+    text-decoration-style: dotted;
+  }
+  .stackBtn:hover {
+    background-color: #000;
+    color: #ffffff;
+    font-size: 1rem;
+    border: 1px solid #d4af37;
+    transform: scale(0.95);
+    transition: 200ms;
+  }
+
+  .btn-check:focus + .btn,
+  .btn:focus {
+    color: #ffffff;
+    background-color: #000;
+    border: 1px solid #d4af37;
+    outline: 0;
+    box-shadow: none;
+  }
+
+  .projectsH1 {
     text-align: center;
     font-size: 1rem;
     color: rgb(255, 255, 255);
     vertical-align: middle;
     position: relative;
-    
+
     font-family: "Boogaloo", cursive;
     text-shadow: 1px 1px 3px #cccc5abd;
   }
-  
+
   .projectName {
     text-align: center;
     color: #d4af37;
     font-size: 1rem;
     font-family: "Boogaloo", cursive;
-   text-transform: uppercase;
+    text-transform: uppercase;
     text-shadow: 1px 1px 1px #9c9c9a9a;
   }
 
@@ -370,9 +358,6 @@
   .arrowIconRight {
     display: none; /* Oculta las flechas en pantallas pequeñas */
   }
-
-  
-
 }
 /* @media only screen and (max-width: 960px) {
  

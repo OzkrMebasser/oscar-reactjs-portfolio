@@ -458,6 +458,16 @@
 
   },
 
+  "myProjects": {
+    "seeStack": "VER TECNOLOGÍAS",
+    "stackIused": "TECNOLOGÍAS QUE UTILICE",
+    "goBack" : "REGRESAR",
+      "id_1": {
+        "project_name": "MI PORTAFOLIO",
+        "desc" : "Este proyecto es mi portafolio personal, una presentación visual de mi trabajo y habilidades. El portafolio está diseñado para destacar varios proyectos y tecnologías que he utilizado en mi trayectoria. Proporciona una breve descripción de mí."
+
+      }
+  },
   
   "contact": {
     "alert": "Hola, tu correo ha sido enviado con éxito, me pondré en contacto contigo lo antes posible, ¡que tengas un buen día!",

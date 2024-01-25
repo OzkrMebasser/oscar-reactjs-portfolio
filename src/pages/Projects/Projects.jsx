@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-// import Button from "react-bootstrap/Button";
+import { useTranslation } from "react-i18next";
+import useSound from "../../context/hook/useSound";
+import SoundClick from "../../Components/Click/interface.mp3";
 import ModalItem from "./ModalItem";
 
 import ItemsCarousel from "react-items-carousel";
@@ -11,6 +13,8 @@ import { MdOutlineDoubleArrow } from "react-icons/md";
 import "./Projects.css";
 
 const Projects = ({ props }) => {
+  const [t] = useTranslation("global");
+  const playSound = useSound(SoundClick);
   const [activeItemIndex, setActiveItemIndex] = useState(0);
 
   const chevronWidth = 200;
@@ -45,10 +49,10 @@ const Projects = ({ props }) => {
           {projects.map((project, index) => (
             
             <div className=" text-center " key={index}>
-              {/* <strong>
-                  <p>{index + 1}</p>
-                </strong> */}
-              <p className="projectName">{project.project_name}</p>
+            
+              <p className="projectName">{index + 1} {t(`${project.project_name}`)}
+              
+              </p>
               
               <a href={project.href} rel="noreferrer" target="_blank">
                 <img
