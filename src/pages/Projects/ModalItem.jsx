@@ -1,12 +1,60 @@
 import React, { useState } from "react";
 import { Tooltip as ReactTooltip } from "react-tooltip";
+import { BsRocketTakeoff } from "react-icons/bs";
+import { TbTargetArrow } from "react-icons/tb";
+import { BsCodeSquare } from "react-icons/bs";
+import { HiAcademicCap } from "react-icons/hi2";
+import { RiEyeOffLine } from "react-icons/ri";
+
+import { RiWifiOffFill } from "react-icons/ri";
+
 import { useTranslation } from "react-i18next";
 import useSound from "../../context/hook/useSound";
 import SoundClick from "../../Components/Click/interface.mp3";
-import {projects} from "../../Api/projects";
-
+import { projects } from "../../Api/projects";
+import "./Projects.css";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+
+function CheckBox({ checked, onChecked, projectType }) {
+  let label;
+  let icon;
+  let typeClass;
+
+  switch (projectType) {
+    case "online":
+      label = "ONLINE";
+      icon = <BsRocketTakeoff />;
+      typeClass = "online";
+      break;
+    case "academic":
+      label = "ACADEMIC";
+      icon = <HiAcademicCap />;
+      typeClass = "academic"; // Puedes cambiar a la clase que desees
+      break;
+    case "development":
+      label = "DEVELOPMENT";
+      icon = <BsCodeSquare />;
+      typeClass = "development"; // Puedes cambiar a la clase que desees
+      break;
+    case "practice":
+      label = "PRACTICE";
+      icon = <TbTargetArrow />;
+      typeClass = "blue"; // Puedes cambiar a la clase que desees
+      break;
+    default:
+      label = "OFFLINE";
+      icon = <RiEyeOffLine />;
+      typeClass = "blue"; // Puedes cambiar a la clase que desees
+  }
+
+  return (
+    <span onClick={onChecked}>
+      <span className={`labelType ${typeClass}`}>{label}</span>
+      <span className={`iconType ${typeClass}`}>{icon}</span>
+    </span>
+  );
+}
 
 function ModalItem({ props, ...project }) {
   const [t] = useTranslation("global");
@@ -25,7 +73,7 @@ function ModalItem({ props, ...project }) {
 
       <br />
       <Modal
-        className="moreDown text-uppercase"
+        className="modalMoreDown text-uppercase"
         show={show}
         onHide={handleClose}
         animation={false}
@@ -33,16 +81,18 @@ function ModalItem({ props, ...project }) {
         {/* {" "}
             Id: {project.id} */}
         <Modal.Header className="">
-          <Modal.Title>
-          {t(`${project.project_name}`)}
-          </Modal.Title>
+          <Modal.Title>{t(`${project.project_name}`)}</Modal.Title><div className="typeOfProject">
+            <CheckBox checked={project.deployed} projectType={project.type} />
+          </div>
         </Modal.Header>
         <Modal.Body>
-          <p className="textDescIcons mb-4">
-          {t(`${project.desc}`)}
-          </p>
+          
+          <p className="textDescIcons ">{t(`${project.desc}`)}</p>
           <hr />
-          <h3 className="textInIcons">Stack I Used</h3>
+          <h3 className="textInIcons">
+            {/* Stack I Used */}
+            {t("myProjects.stackIused")}
+          </h3>
           <div className="iconContainer mb-3">
             <span
               id={`${project.tech_1_name}`}
@@ -124,7 +174,13 @@ function ModalItem({ props, ...project }) {
             )}
           </div>
           <hr />
-          <h3 className="textInIcons">Deployment</h3>
+
+          {/* Deployment */}
+          <span> {t("myProjects.deployed")}</span>
+          {/* <span>
+            <CheckBox checked={project.deployed} projectType={project.type} />
+            </span> */}
+
           <div className="iconsDeploy">
             {/*Deployed in*/ " "}
             <span
@@ -166,6 +222,7 @@ function ModalItem({ props, ...project }) {
               </a>
             </span>
           </div>
+
           {/*Tooltips config*/}
           <ReactTooltip anchorId={`${project.deploy_name_1}`} />
           <ReactTooltip anchorId="www" />
@@ -186,7 +243,7 @@ function ModalItem({ props, ...project }) {
         </Modal.Body>
         <Modal.Footer>
           <Button className="stackBtn text-uppercase" onClick={handleClose}>
-            Go back
+          {t("myProjects.goBack")}
           </Button>
         </Modal.Footer>
       </Modal>

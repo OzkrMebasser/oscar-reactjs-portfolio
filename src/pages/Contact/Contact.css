@@ -187,7 +187,7 @@ padding-bottom: 4px; /* Agrega este si quieres mantener el padding en la parte i
     
   }
   
-  input {
+  .senderInput {
     width: 90%;
     outline: 0;
     border: solid 1px #d4af37;
@@ -202,7 +202,7 @@ padding-bottom: 4px; /* Agrega este si quieres mantener el padding en la parte i
     color:#fff;
   }
 
-  input[type=text]:focus{
+  .senderInput[type=text]:focus{
     outline: 2px solid #d4af37;  
     color: #fff;
     box-shadow: 0 0 30px #d4af3769;
@@ -230,8 +230,8 @@ padding-bottom: 4px; /* Agrega este si quieres mantener el padding en la parte i
 
   }
   
-  input:focus+label, 
-  input:valid+label, 
+  .senderInput:focus+label, 
+  .senderInput:valid+label, 
   textarea:focus+label, 
   textarea:valid+label {
     font-size: 1.2rem;

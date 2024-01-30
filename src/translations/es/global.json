@@ -40,7 +40,7 @@
     "aboutH1": "DÉJAME CONTARTE ALGO SOBRE MÍ",
     "aboutP": "SOY UNA PERSONA ADAPTABLE, DECIDIDA A LOGRAR MIS METAS, ME GUSTAN LOS RETOS Y TRABAJAR POR OBJETIVOS; SOY UNA PERSONA AUTODIDACTA, COMPROMETIDA, AUTOMOTIVADA, DISFRUTO TANTO EL TRABAJAR EN EQUIPO COMO INDIVIDUAL, SOY UN ENTUSIASTA Y APASIONADO EN LA PROGRAMACIÓN Y LA TECNOLOGÍA.",
     "greeting": "¡HOLA!, GRACIAS POR REVISAR MI PORTAFOLIO, ESPERO QUE PODAMOS TRABAJAR JUNTOS Y HACER PROYECTOS INCREÍBLES, ¡QUE TENGAS UN EXCELENTE DÍA!",
-    "resume": "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/Desarrollador%20Front%20End.pdf?alt=media&token=7807605f-1d2a-481d-9b4d-03c2c953a7a0",
+    "resume": "https://www.dropbox.com/scl/fi/b1aq8j99b818no5bdx8ld/Brochure-2023-3.pdf?rlkey=yr30d0p8ngqbzeq20lsyx2dfo&dl=0",
     "downloadResume": "DESCARGAR MI C.V."
   },
   "skills": {
@@ -423,12 +423,12 @@
 
     "creativityTitle": "CREATIVIDAD",
     "creativityDesc": "Mi capacidad creativa me permite abordar tareas o problemas desde perspectivas nuevas y diferentes, utilizando la imaginación para generar ideas innovadoras. Mi enfoque creativo me permite pensar ''fuera de la caja'', identificar patrones y establecer conexiones para descubrir oportunidades.",
-    "communicationTitle": "COMUNICACIÓN" ,
+    "communicationTitle": "COMUNICACIÓN",
     "communicationDesc": "Me esfuerzo por mantener una comunicación clara y efectiva en todo momento. Para lograrlo, practico la asertividad al escuchar activamente, planteo preguntas para aclarar cualquier duda y me aseguro de que mi mensaje sea comprendido de manera precisa",
     "adaptabilityTitle": "ADAPTABILIDAD",
     "adaptabilityDesc": "Mi habilidad para adaptarme se manifiesta en mi capacidad para evolucionar frente a distintos escenarios. Soy proactivo al identificar las demandas cambiantes, tomando medidas rápidas y efectivas. Este enfoque flexible me permite no solo enfrentar con éxito los desafíos, sino también abrazar oportunidades emergentes",
-    "problemSolvingTitle": "RESOLUCIÓN DE PROBLEMAS", 
-    "problemSolvingDesc" : " La resolución de problemas es una de mis principales fortalezas. Frente a situaciones desafiantes, aplico mi pensamiento crítico y analítico para desglosar los problemas en componentes manejables. Mi enfoque sistemático y lógico se complementa con la capacidad de proponer soluciones innovadoras",
+    "problemSolvingTitle": "RESOLUCIÓN DE PROBLEMAS",
+    "problemSolvingDesc": " La resolución de problemas es una de mis principales fortalezas. Frente a situaciones desafiantes, aplico mi pensamiento crítico y analítico para desglosar los problemas en componentes manejables. Mi enfoque sistemático y lógico se complementa con la capacidad de proponer soluciones innovadoras",
     "teamworkTitle": "TRABAJO EN EQUIPO",
     "teamworkDesc": "Me gusta contribuir activamente a los objetivos del equipo, respeto diferentes puntos de vista y valoro las fortalezas de cada integrante. Fomento la colaboración y la comunicación efectiva, buscando sinergias grupales para lograr objetivos en común.",
     "detailOrientedTitle": "ORIENTADO AL DETALLE",
@@ -442,33 +442,38 @@
     "workEthicTitle": "ÉTICA DE TRABAJO",
     "workEthicDesc": "Me caracterizo por ser sumamente responsable, comprometido y diligente en todas mis labores. Abordo cada tarea con dedicación, manteniendo siempre elevados estándares de desempeño. Mi compromiso con la excelencia me impulsa a dar lo mejor de mí en todo momento. Además, poseo una fuerte iniciativa propia que me motiva a buscar constantemente formas de mejorar y superar los desafíos."
   },
-  
-  "workingOnSoftSkills":{
-    "timeManagmentTitle":"GESTIÓN DEL TIEMPO",
-    "timeManagmentDesc":"Además de la planificación estructurada, estoy practicando la priorización efectiva de tareas para concentrarme en las actividades más importantes para evitar el sobre compromiso. También estoy evaluando regularmente mi uso del tiempo para identificar áreas de mejora y ajustar mi enfoque según sea necesario",
+
+  "workingOnSoftSkills": {
+    "timeManagmentTitle": "GESTIÓN DEL TIEMPO",
+    "timeManagmentDesc": "Además de la planificación estructurada, estoy practicando la priorización efectiva de tareas para concentrarme en las actividades más importantes para evitar el sobre compromiso. También estoy evaluando regularmente mi uso del tiempo para identificar áreas de mejora y ajustar mi enfoque según sea necesario",
     "activeListeningTitle": "ESCUCHA ACTIVA",
-    "activeListeningDesc" : "Practico la escucha activa, concentrándome en las conversaciones, evitando distracciones y haciendo preguntas para confirmar comprensión. Valorando las opiniones de otros con retroalimentación reflexiva, fortalezco relaciones y mejoro la calidad de la comunicación en el trabajo y en mi vida personal.",
+    "activeListeningDesc": "Practico la escucha activa, concentrándome en las conversaciones, evitando distracciones y haciendo preguntas para confirmar comprensión. Valorando las opiniones de otros con retroalimentación reflexiva, fortalezco relaciones y mejoro la calidad de la comunicación en el trabajo y en mi vida personal.",
     "selfAwarenessTitle": "AUTOCONCIENCIA",
     "selfAwarenessDesc": "Estoy comprometido con la autoevaluación continua. Regularmente reflexiono sobre mis fortalezas y áreas de mejora, y busco retroalimentación constructiva de colegas y supervisores para fortalecer mi autoconciencia y comprensión de cómo mi comportamiento impacta en mi entorno laboral.",
     "organizationTitle": "ORGANIZACIÓN Y PLANIFICACIÓN",
     "organizationDesc": "Estoy mejorando mi habilidad en organización y planificación, tratando de estructurar tareas y proyectos eficientemente. Con un enfoque metódico, asigno prioridades, establezco plazos y optimizo recursos. El uso de herramientas como calendarios y listas de tareas facilita el seguimiento efectivo de responsabilidades.",
     "selfControlTitle": "AUTO CONTROL",
     "selfControlDesc": "Estoy fortaleciendo mi habilidad de autocontrol como parte de mi desarrollo profesional. Me esfuerzo por regular mis emociones y respuestas de manera más efectiva, tomando decisiones de manera reflexiva en lugar de ceder a impulsos momentáneos. Este enfoque contribuye a un desempeño más equilibrado y a relaciones laborales más efectivas"
-
-
   },
 
   "myProjects": {
     "seeStack": "VER TECNOLOGÍAS",
     "stackIused": "TECNOLOGÍAS QUE UTILICE",
-    "goBack" : "REGRESAR",
-      "id_1": {
-        "project_name": "MI PORTAFOLIO",
-        "desc" : "Este proyecto es mi portafolio personal, una presentación visual de mi trabajo y habilidades. El portafolio está diseñado para destacar varios proyectos y tecnologías que he utilizado en mi trayectoria. Proporciona una breve descripción de mí."
+    "deployed": "Despliegue",
+    "online": "en linea",
+    "offline": "Offline",
 
-      }
+    "goBack": "REGRESAR",
+    "id_1": {
+      "project_name": "MI PORTAFOLIO",
+      "desc": "Este proyecto es mi portafolio personal, una presentación visual de mi trabajo y habilidades. El portafolio está diseñado para destacar varios proyectos y tecnologías que he utilizado en mi trayectoria. Proporciona una breve descripción de mí."
+    },
+    "id_2": {
+      "project_name": "SILVER PROTECT",
+      "desc": "DESARROLLÉ EL SITIO WEB PARA LA EMPRESA MEXICANA SILVER PROTECT. SU PRODUCTO DESTACA LAS PROPIEDADES ANTIMICROBIANAS DE LA PLATA IÓNICA, ÚTILES EN DESINFECCIÓN Y TRATAMIENTO DE HERIDAS. UTILICÉ REACTJS, TAILWIND CSS, EMAILJS Y FIREBASE PARA EL DESPLIEGUE, ASEGURANDO EFICIENCIA Y ESCALABILIDAD."
+    }
   },
-  
+
   "contact": {
     "alert": "Hola, tu correo ha sido enviado con éxito, me pondré en contacto contigo lo antes posible, ¡que tengas un buen día!",
     "title": "¡PONGÁMONOS EN CONTACTO!"

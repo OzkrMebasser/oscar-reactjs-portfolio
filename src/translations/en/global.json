@@ -40,7 +40,7 @@
     "aboutH1": "Let me tell you something about me",
     "aboutP": "I AM AN ADAPTABLE PERSON, DETERMINED TO ACHIEVE MY GOALS, I LIKE CHALLENGES AND WORKING BY OBJECTIVES; I AM A SELF-TAUGHT, COMMITTED, SELF-MOTIVATED PERSON, I ENJOY BOTH TEAM AND INDIVIDUAL WORK, I AM ENTHUSIASTIC AND PASSIONATE ABOUT PROGRAMMING AND TECHNOLOGY.",
     "greeting": "HELLO, THANK YOU FOR REVIEWING MY PORTFOLIO, I HOPE WE CAN WORK TOGETHER AND DO AMAZING PROJECTS, HAVE A GREAT DAY!",
-    "resume": "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/scrum-foundations-professional-certificate-sfpc-examen.pdf?alt=media&token=494cfd56-38fb-4b63-9620-8cb0a12014c8",
+    "resume": "https://www.dropbox.com/scl/fi/b1aq8j99b818no5bdx8ld/Brochure-2023-3.pdf?rlkey=yr30d0p8ngqbzeq20lsyx2dfo&dl=0",
     "downloadResume": "DOWNLOAD MY RESUME"
   },
   "skills": {
@@ -449,7 +449,7 @@
     "timeManagmentTitle": "TIME MANAGEMENT",
     "timeManagmentDesc": "In addition to structured planning, I am practicing effective task prioritization to focus on the most important activities to avoid over-commitment. I am also regularly evaluating my use of time to identify areas for improvement and adjust my approach as needed.",
     "activeListeningTitle": "ACTIVE LISTENING",
-    "activeListeningDesc" : "I practice active listening, focusing on conversations, avoiding distractions and asking questions to confirm understanding. By valuing the opinions of others with thoughtful feedback, I strengthen relationships and improve the quality of communication at work and in my personal life.",
+    "activeListeningDesc": "I practice active listening, focusing on conversations, avoiding distractions and asking questions to confirm understanding. By valuing the opinions of others with thoughtful feedback, I strengthen relationships and improve the quality of communication at work and in my personal life.",
     "selfAwarenessTitle": "SELF AWARENESS",
     "selfAwarenessDesc": "I am committed to continuous self-assessment. I regularly reflect on my strengths and areas for improvement, and seek constructive feedback from colleagues and supervisors to strengthen my self-awareness and understanding of how my behavior impacts my work environment.",
     "organizationTitle": "ORGANIZATION AND PLANNING",
@@ -459,15 +459,21 @@
   },
   "myProjects": {
     "seeStack": "SEE TECH STACK",
-    "stackIused" : "STACK I USED",
-    "goBack" : "RETURN",
-      "id_1": {
-        "project_name" : "MY PORTFOLIO",
-        "desc" : "This project is my personal portfolio, a visual presentation of my work and skills. The portfolio is designed to highlight various projects and technologies I have used in my career. It provides a brief description of me."
-
-      }
+    "stackIused": "STACK I USED",
+    "deployed": "Deployment",
+    "online": "Online",
+    "offline": "Offline",
+    "goBack": "GO BACK",
+    "id_1": {
+      "project_name": "MY PORTFOLIO",
+      "desc": "This project is my personal portfolio, a visual presentation of my work and skills. The portfolio is designed to highlight various projects and technologies I have used in my career. It provides a brief description of me."
+    },
+    "id_2": {
+      "project_name": "SILVER PROTECT",
+      "desc": "I DEVELOPED THE WEBSITE FOR THE MEXICAN COMPANY SILVER PROTECT. THEIR PRODUCT HIGHLIGHTS THE ANTIMICROBIAL PROPERTIES OF IONIC SILVER, USEFUL IN DISINFECTION AND WOUND TREATMENT. I USED REACTJS, TAILWIND CSS, EMAILJS AND FIREBASE FOR THE DEPLOYMENT, ENSURING EFFICIENCY AND SCALABILITY."
+    }
   },
-  
+
   "contact": {
     "alert": "Hi, your email has been sent with success, I'll be in touch with you asap, have a great day!",
     "title": "LET´S GET IN TOUCH!"

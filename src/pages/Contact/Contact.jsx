@@ -40,11 +40,11 @@ const Contact = () => {
           <div className="contact-form-wrapper yellow">
             <form ref={form}  onSubmit={enviarEmail}>
               <div className="form-item">
-                <input type="text" name="sender" required />
+                <input className="senderInput" type="text" name="sender" required />
                 <label>Name:</label>
               </div>
               <div className="form-item">
-                <input type="text" name="email" required />
+                <input  className="senderInput" type="text" name="email" required />
                 <label>Email:</label>
               </div>
               <div className="form-item">
