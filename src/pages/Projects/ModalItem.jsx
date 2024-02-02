@@ -17,30 +17,33 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
 function CheckBox({ checked, onChecked, projectType }) {
+  const [t] = useTranslation("global");
+
+  
   let label;
   let icon;
   let typeClass;
 
   switch (projectType) {
     case "online":
-      label = "ONLINE";
+      label = `${t("myProjects.online")}`;
       icon = <BsRocketTakeoff />;
       typeClass = "online";
       break;
     case "academic":
       label = "ACADEMIC";
       icon = <HiAcademicCap />;
-      typeClass = "academic"; // Puedes cambiar a la clase que desees
+      typeClass = "academic";
       break;
     case "development":
       label = "DEVELOPMENT";
       icon = <BsCodeSquare />;
-      typeClass = "development"; // Puedes cambiar a la clase que desees
+      typeClass = "development"; 
       break;
     case "practice":
       label = "PRACTICE";
       icon = <TbTargetArrow />;
-      typeClass = "blue"; // Puedes cambiar a la clase que desees
+      typeClass = "blue"; 
       break;
     default:
       label = "OFFLINE";
@@ -197,7 +200,7 @@ function ModalItem({ props, ...project }) {
             <span
               // style={{ marginLeft: "56px" }}
               id="repo"
-              data-tooltip-content="Ver codigo en gitHub"
+              data-tooltip-content={`${t("myProjects.githubLink")}`}
             >
               <a
                 href={project.git_url}
@@ -212,7 +215,8 @@ function ModalItem({ props, ...project }) {
               </a>
             </span>
             {/*Web */ " "}
-            <span id="www" data-tooltip-content="Ir al sitio web...">
+            
+            <span id="www" data-tooltip-content={`${t("myProjects.websiteLink")}`}>
               <a
                 href={project.www_site}
                 rel="nofollow noopener noreferrer"
