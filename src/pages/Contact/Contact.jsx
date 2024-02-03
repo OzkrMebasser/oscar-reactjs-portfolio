@@ -5,9 +5,6 @@ import { useTranslation } from "react-i18next";
 import emailjs from '@emailjs/browser';
 
 import MyLocation from "./MyLocation";
-//https://mailtrap.io/blog/react-contact-form/#Create-the-contact-form TO SEE EXAMPLE
-//https://mdbootstrap.com/docs/b4/jquery/forms/contact/
-//https://w3collective.com/react-contact-form/
 
 import "../Contact/Contact.css";
 
@@ -20,6 +17,7 @@ const Contact = () => {
 
     emailjs.sendForm(`${process.env.REACT_APP_SERVICE_ID}`,`${process.env.REACT_APP_TEMPLATE_NUMBER}`,form.current,`${process.env.REACT_APP_PUBLIC_KEY_EMAILJS}`)
     .then((response) => {
+      console.log(response)
       alert(t("contact.alert"))
       console.log('SUCCESS!', response.status, response.text);
    }, (error) => {
@@ -57,7 +55,7 @@ const Contact = () => {
                   <i class="fas fa-paper-plane"></i>
                 </span> */}
                 <div className="btn">
-                  <span>Click to send message!</span>
+                  <span>Message Sent!</span>
 
                  <i className="ico"></i>
                 </div>

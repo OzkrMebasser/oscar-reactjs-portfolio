@@ -19,7 +19,6 @@ import Modal from "react-bootstrap/Modal";
 function CheckBox({ checked, onChecked, projectType }) {
   const [t] = useTranslation("global");
 
-  
   let label;
   let icon;
   let typeClass;
@@ -38,12 +37,12 @@ function CheckBox({ checked, onChecked, projectType }) {
     case "development":
       label = "DEVELOPMENT";
       icon = <BsCodeSquare />;
-      typeClass = "development"; 
+      typeClass = "development";
       break;
     case "practice":
       label = "PRACTICE";
       icon = <TbTargetArrow />;
-      typeClass = "blue"; 
+      typeClass = "blue";
       break;
     default:
       label = "OFFLINE";
@@ -69,11 +68,12 @@ function ModalItem({ props, ...project }) {
 
   return (
     <>
+     
+     
       <Button className="stackBtn text-uppercase" onClick={handleShow}>
         {/* VER TECH STACK */}
         {t("myProjects.seeStack")}
       </Button>
-
       <br />
       <Modal
         className="modalMoreDown text-uppercase"
@@ -83,13 +83,13 @@ function ModalItem({ props, ...project }) {
       >
         {/* {" "}
             Id: {project.id} */}
-        <Modal.Header className="">
-          <Modal.Title>{t(`${project.project_name}`)}</Modal.Title><div className="typeOfProject">
+        <Modal.Header className="modalHeader">
+          <Modal.Title>{t(`${project.project_name}`)}</Modal.Title>
+          <div className="blink-soft">
             <CheckBox checked={project.deployed} projectType={project.type} />
           </div>
         </Modal.Header>
         <Modal.Body>
-          
           <p className="textDescIcons ">{t(`${project.desc}`)}</p>
           <hr />
           <h3 className="textInIcons">
@@ -215,8 +215,11 @@ function ModalItem({ props, ...project }) {
               </a>
             </span>
             {/*Web */ " "}
-            
-            <span id="www" data-tooltip-content={`${t("myProjects.websiteLink")}`}>
+
+            <span
+              id="www"
+              data-tooltip-content={`${t("myProjects.websiteLink")}`}
+            >
               <a
                 href={project.www_site}
                 rel="nofollow noopener noreferrer"
@@ -247,7 +250,7 @@ function ModalItem({ props, ...project }) {
         </Modal.Body>
         <Modal.Footer>
           <Button className="stackBtn text-uppercase" onClick={handleClose}>
-          {t("myProjects.goBack")}
+            {t("myProjects.goBack")}
           </Button>
         </Modal.Footer>
       </Modal>

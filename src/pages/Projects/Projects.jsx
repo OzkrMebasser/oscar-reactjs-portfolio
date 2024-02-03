@@ -3,12 +3,12 @@ import { useTranslation } from "react-i18next";
 import useSound from "../../context/hook/useSound";
 import SoundClick from "../../Components/Click/interface.mp3";
 import ModalItem from "./ModalItem";
+import CheckBox from "./CheckBox";
 
 import ItemsCarousel from "react-items-carousel";
 import { projects } from "../../Api/projects";
 // import { ImUndo2, ImRedo2 } from "react-icons/im";
 import { MdOutlineDoubleArrow } from "react-icons/md";
-
 
 import "./Projects.css";
 
@@ -25,7 +25,6 @@ const Projects = ({ props }) => {
         className="carouselContainer chevronWidth"
         // style={{ padding: `0 ${chevronWidth}px` }}
       >
-
         <ItemsCarousel
           infiniteLoop={true}
           requestToChangeActive={setActiveItemIndex}
@@ -34,12 +33,12 @@ const Projects = ({ props }) => {
           gutter={8}
           leftChevron={
             <span className="arrowIconLeft">
-             <MdOutlineDoubleArrow className="voltearALaIzquierda" />
+              <MdOutlineDoubleArrow className="voltearALaIzquierda" />
             </span>
           }
           rightChevron={
             <span className="arrowIconRight">
-          <MdOutlineDoubleArrow />
+              <MdOutlineDoubleArrow />
             </span>
           }
           outsideChevron
@@ -47,13 +46,11 @@ const Projects = ({ props }) => {
           showSlither={false}
         >
           {projects.map((project, index) => (
-            
             <div className=" text-center " key={index}>
-            
-              <p className="projectName">{index + 1} {t(`${project.project_name}`)}
-              
+              <p className="projectName">
+                {index + 1} {t(`${project.project_name}`)}{" "}
               </p>
-              
+
               <a href={project.href} rel="noreferrer" target="_blank">
                 <img
                   className="inner-img"
@@ -64,26 +61,13 @@ const Projects = ({ props }) => {
 
               <br />
               <br />
-           
-                <ModalItem {...project}
-               
-                />
-         
-              
+
+              <ModalItem {...project} />
             </div>
           ))}
         </ItemsCarousel>
-        
       </div>
-     
     </div>
-  )
-}
+  );
+};
 export default Projects;
-
-/*
-key={project.id}
-show={handleModalShow}
-onHide={handleModalHide}
-onItemChange={this.handleItemChange}
-project={project}*/

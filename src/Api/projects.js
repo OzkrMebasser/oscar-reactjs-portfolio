@@ -13,6 +13,7 @@ const myProjects = {
   id_4_desc: "myProjects.id_4.desc",
 };
 export const projects = [
+  //id.1 MY PORTOFOLIO
   {
     id: 1,
     project_name: `${myProjects.id_1_project_name}`,
@@ -61,6 +62,7 @@ export const projects = [
     tech_6_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fi18next.png?alt=media&token=84de9dec-afef-41a0-a233-7701bd1e5e27",
   },
+  //id.2 SILVER PROTECT
   {
     id: 2,
     project_name: `${myProjects.id_2_project_name}`,
@@ -105,7 +107,7 @@ export const projects = [
     tech_6_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Femailjs.png?alt=media&token=e31be33a-174b-4860-8a75-44fcedb47b74",
   },
-
+  //id.3 SAM ESQUIRE BARBER SHOP
   {
     id: 3,
     project_name: `${myProjects.id_3_project_name}`,
@@ -149,6 +151,7 @@ export const projects = [
     tech_5_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2FAOS.jpeg?alt=media&token=284f7e39-7d00-4c67-a4bd-fe5c5cb4896c",
   },
+  //id.4 NLB REAL ESTATE
   {
     id: 4,
     project_name: `${myProjects.id_4_project_name}`,
@@ -160,15 +163,15 @@ export const projects = [
 
     //Firebase
     deploy_icon_1:
-      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fvercel-icon-svgrepo-com.svg?alt=media&token=d8d668a2-26f0-4103-a3ae-99e6d3c31103",
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Ffirebase-svgrepo-com.svg?alt=media&token=ea3cf79a-0fa3-4a32-ae04-89625cdaa904",
     deploy_name_1: "Firebase",
     // git hub repo
     git_icon: "https://www.svgrepo.com/show/217753/github.svg",
-    git_url: "https://github.com/OzkrMebasser/oscar-reactjs-portfolio",
+    git_url: "https://github.com/OzkrMebasser/nlb-real-estate-nxtjs",
     git_name: "Git repository",
     www_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Finternet-www-svgrepo-com.svg?alt=media&token=49e3d743-fa07-4bdc-879e-0e99c87df52e",
-    www_site: "https://moreno-oscar-dev.vercel.app/projects",
+    www_site: "https://nlb-realestate.com/",
 
     //Stack I used Section
     /*Icons alt names*/
@@ -176,8 +179,9 @@ export const projects = [
     tech_2_name: "CSS-3",
     tech_3_name: "JavaScript",
     tech_4_name: "React Js",
-    tech_5_name: "Next Js",
-    tech_6_name: "i18next",
+    tech_5_name: "Tailwind",
+    tech_6_name: "Next Js",
+    tech_7_name: "i18next",
 
     deployed: true,
     type: "online",
@@ -193,10 +197,13 @@ export const projects = [
     tech_4_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-1-logo-svgrepo-com.svg?alt=media&token=f690f37d-9457-4a0b-8378-16a7d426114f",
     tech_5_icon:
-      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fbootstrap.svg.svg?alt=media&token=d2cd69d3-f464-4646-8108-5fb9be6c3392",
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Ftailwind-svgrepo-com.svg?alt=media&token=de41409e-f0e5-4784-96fa-524c7a31c626",
     tech_6_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fnext-js-svgrepo-com.svg?alt=media&token=ac7b37d1-13b5-4c9e-8986-6f6eb1123f31",
+    tech_7_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fi18next.png?alt=media&token=84de9dec-afef-41a0-a233-7701bd1e5e27",
   },
+  
   {
     id: 5,
     project_name: "Moreno projects",
