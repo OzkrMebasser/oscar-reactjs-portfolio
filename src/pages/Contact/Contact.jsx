@@ -39,7 +39,7 @@ const Contact = () => {
             <form ref={form}  onSubmit={enviarEmail}>
               <div className="form-item">
                 <input className="senderInput" type="text" name="sender" required />
-                <label>Name:</label>
+                <label className="label">Name:</label>
               </div>
               <div className="form-item">
                 <input  className="senderInput" type="text" name="email" required />

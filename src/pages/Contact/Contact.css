@@ -174,7 +174,7 @@ padding-bottom: 4px; /* Agrega este si quieres mantener el padding en la parte i
     font-family: 'Poppins', sans-serif;
   }
    */
-  label {
+  .label {
     position: absolute;
     top: 10px;
     left: 7%;
