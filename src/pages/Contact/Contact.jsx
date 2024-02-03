@@ -43,11 +43,11 @@ const Contact = () => {
               </div>
               <div className="form-item">
                 <input  className="senderInput" type="text" name="email" required />
-                <label>Email:</label>
+                <label className="label" >Email:</label>
               </div>
               <div className="form-item">
                 <textarea className="" name="message" required></textarea>
-                <label>Message:</label>
+                <label className="label">Message:</label>
               </div>
 
               <button className="submit-btn ">
