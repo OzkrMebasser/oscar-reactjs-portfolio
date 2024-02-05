@@ -80,6 +80,7 @@ const Home = () => {
         <WelcomePopUp trigger={timePopup} setTrigger={setTimePopup}> 
         
         </WelcomePopUp>
+        
       </motion.div>
     </Fragment>
   );

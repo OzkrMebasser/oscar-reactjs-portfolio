@@ -6,6 +6,9 @@ import ClockAnalog from "../../Components/Clock/AnalogClock";
 import ProfileOscar from "./ProfileOscar";
 import useSound from "../../context/hook/useSound";
 import SoundClick from "../../Components/Click/interface.mp3";
+import LocalWeather from "../../Components/Weather/LocalWeather";
+
+
 
 import { motion } from "framer-motion";
 
@@ -46,6 +49,7 @@ function WelcomePopUp(props) {
         <div className="dates">
           <div>
             <Dates />
+            <LocalWeather/>
           </div>
         </div>
         <div className="digitalClock">
