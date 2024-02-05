@@ -71,8 +71,8 @@ const Home = () => {
         {/* <button onClick={() => setButtonPopup(true)}>Open Wlcome</button> */}
 
       <WelcomePopUp trigger={buttonPopup} setTrigger={setButtonPopup}> 
-        <h6 className="welcomeTitle animatedLeft bounceInLeft"> {t("cover.welcome-title")}</h6>
-        <p className="welcomeP animatedRight bounceInRight">{t("cover.welcome-p")}</p>
+        {/* <h6 className="welcomeTitle animatedLeft bounceInLeft"> {t("cover.welcome-title")}</h6>
+        <p className="welcomeP animatedRight bounceInRight">{t("cover.welcome-p")}</p> */}
 
         
         </WelcomePopUp>

@@ -663,7 +663,7 @@
   position: relative;
   padding: 20px;
   width: 100%;
-  height: 480px;
+  height: 550px;
   max-width: 600px;
   background-color: #000000;
   z-index: 999999999999999999;
@@ -700,6 +700,7 @@
 .noLink:hover:after {
   width: 100%;
   background: none;
+  
 }
 
 .goBtn {

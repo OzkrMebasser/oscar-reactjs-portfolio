@@ -49,15 +49,23 @@ function WelcomePopUp(props) {
         <div className="dates">
           <div>
             <Dates />
-            <LocalWeather/>
+            
           </div>
         </div>
         <div className="digitalClock">
           <div>
             <DigitalClock />
+            {/* <LocalWeather/> */}
+            {<LocalWeather /> ?   <LocalWeather /> :
+              <p>
+                El acceso a la ubicación ha sido denegado. La razón de solicitar su ubicación es proporcionar el clima de su ciudad.
+              </p> 
+            }
+            
           </div>
         </div>
-
+        <h6 className="welcomeTitle animatedLeft bounceInLeft"> {t("cover.welcome-title")}</h6>
+        <p className="welcomeP animatedRight bounceInRight">{t("cover.welcome-p")}</p>
         <button
           className="goBtn "
           onClick={() => {
