@@ -1,3 +1,65 @@
-.redText{
-    color: rgb(255, 31, 31);
+.explainationBtn {
+  width: auto;
+  background-color: #000000;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  height: 2.5rem;
+}
+.explainationBtn:hover {
+  background-color: #000;
+  color: #ffffff;
+  font-size: 1rem;
+  border: 1px solid #d4af37;
+  transform: scale(0.95);
+  transition: 200ms;
+}
+.explainationText {
+  color: rgb(255, 255, 255);
+  border: 1px solid rgba(255, 0, 0, 0.616);
+  border-radius: 6px;
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: justify;
+}
+.openWeatherlink {
+  color: #d4af37;
+}
+.openWeatherlink:hover {
+  color: #86712c;
+}
+.changeToF {
+  width: auto;
+  color: rgba(255, 255, 255, 0.664);
+}
+
+@media only screen and (max-width: 600px) {
+  .explainationBtn {
+    width: auto;
+    margin-bottom: 1rem;
+    background-color: #000000;
+    border: 1px solid #d4af37;
+    color: #d4af37;
+
+    font-size: 0.9rem;
+    text-decoration-style: dotted;
+    text-transform: uppercase;
+    border-radius: 6px;
+    height: 2.5rem;
+  }
+  .explainationBtn:hover {
+    background-color: #000;
+    color: #ffffff;
+    font-size: 0.9rem;
+    border: 1px solid #d4af37;
+    transform: scale(0.95);
+    transition: 200ms;
+  }
+  .explainationText {
+    font-size: 0.9rem;
+  }
 }

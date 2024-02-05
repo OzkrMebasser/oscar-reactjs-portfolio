@@ -12,7 +12,17 @@
     "hello-world-2": "ENJOY LIFE!",
     "welcome-title": "HI! THANKS FOR TAKING THE TIME TO REVIEW MY PORTFOLIO, I HOPE WE CAN WORK TOGETHER AND MAKE AWESOME PROJECTS!",
     "welcome-p": "PLEASE FEEL FREE TO CLICK, HOVER OVER IMAGES, TEXTS, ICONS, BUTTONS, ETC, OR ON ANY OTHER ELEMENT SO YOU CAN SEE SOME FUNCTIONALITIES I HAVE IMPLEMENTED.",
-    "seePortfolio": "GO TO MY PORTFOLIO"
+    "seePortfolio": "MY PORTFOLIO",
+    "closeExp": "Close explanation",
+    "reqLocation": "Why do I request your location?",
+    "reqLocP_1": "I request your location to show the current temperature in your city, as I am using the API of",
+    "reqLocP_2": "in my portfolio. ",
+    "reqLocP_3": "OpenWeather Ltd respects your privacy and so do I.",
+    "reqLocP_4": "Please check their ",
+    "reqLocP_5": "privacy policy",
+    "temperature": "The temperature in ",
+    "isTemp": "is "
+    
   },
   "typing": {
     "auto-text": [

@@ -1,11 +1,18 @@
 import React, { useState, useEffect } from "react";
-import './LocalWeather.css'
+import { Tooltip as ReactTooltip } from "react-tooltip";
+import { useTranslation } from "react-i18next";
+import { FaExchangeAlt } from "react-icons/fa";
+
+import "./LocalWeather.css";
 
 const LocalWeather = () => {
+  const [t, i18n] = useTranslation("global");
   const [weatherData, setWeatherData] = useState(null);
   const [temperatureUnit, setTemperatureUnit] = useState("C");
   const [locationPermission, setLocationPermission] = useState(null);
-  const apiKey = "2d0cf0e18db54aef3b1d25048858dfc1";
+  const [showExplanation, setShowExplanation] = useState(false);
+
+  const apiKey = process.env.REACT_APP_API_KEY_OPENWEATHER;
 
   useEffect(() => {
     const getWeather = async (latitude, longitude) => {
@@ -24,12 +31,12 @@ const LocalWeather = () => {
     const handleLocationPermission = (position) => {
       const { latitude, longitude } = position.coords;
       getWeather(latitude, longitude);
-      setLocationPermission('granted');
+      setLocationPermission("granted");
     };
 
     const handleLocationError = (error) => {
       console.error("Error al obtener la ubicación del usuario:", error);
-      setLocationPermission('denied');
+      setLocationPermission("denied");
     };
 
     // Obtener la ubicación del usuario
@@ -52,25 +59,69 @@ const LocalWeather = () => {
     }
   };
 
+  const handleExplanationClick = () => {
+    setShowExplanation((prevValue) => !prevValue);
+  };
+
   return (
-    <div>
-      {locationPermission === 'denied' ? (
-        <p className="redText">
-          El acceso a la ubicación ha sido denegado. La razón de solicitar su ubicación es proporcionar el clima de su ciudad.
-        </p>
-      ) : weatherData && (
+    <>
+      {locationPermission === "denied" ? (
         <div>
-          <p>
-            La temperatura en {weatherData.name}:{" "}
-            {convertTemperature(weatherData.main.temp).toFixed(2)}{" "}
-            {temperatureUnit}{" "} <br />
-            <span onClick={toggleTemperatureUnit}>
-              Cambiar a {temperatureUnit === "°C" ? "°F" : "°C"}
-            </span>
-          </p>
+          <button
+            className="explainationBtn bounce-in-top"
+            onClick={handleExplanationClick}
+          >
+            {showExplanation
+              ? `${t("cover.closeExp")}`
+              : `${t("cover.reqLocation")}`}
+          </button>
+          {showExplanation && (
+            <p className="explainationText">
+              {/*reqLocP_1*/}
+              {t("cover.reqLocP_1")}{" "}
+              <a
+                className="openWeatherlink"
+                href="https://openweathermap.org/api"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                OpenWeather.org
+              </a>{" "}
+              {/*reqLocP_2*/}
+              {t("cover.reqLocP_2")}
+              <br />
+              {/*reqLocP_3*/}
+              *{t("cover.reqLocP_3")}{" "}{t("cover.reqLocP_4")}
+              <a
+                className="openWeatherlink"
+                href="https://openweather.co.uk/privacy-policy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {/*reqLocP_5*/}
+                {t("cover.reqLocP_5")}
+              </a>
+            </p>
+            
+          )}
         </div>
+      ) : (
+        weatherData && (
+          <div>
+            <p>
+            {t("cover.temperature")} {weatherData.name} {t("cover.isTemp")}{" "}
+              {convertTemperature(weatherData.main.temp).toFixed(2)}{" "}
+              {temperatureUnit}{" "}
+              <span className="changeToF" onClick={toggleTemperatureUnit}>
+                <FaExchangeAlt style={{ margin: "0 1px " }} />
+                {temperatureUnit === "°C" ? "°F" : "°C"}
+              </span>
+            </p>
+          </div>
+        )
       )}
-    </div>
+      <ReactTooltip anchorId="geoLocation" />
+    </>
   );
 };
 

@@ -55,49 +55,52 @@ function WelcomePopUp(props) {
         <div className="digitalClock">
           <div>
             <DigitalClock />
-            {/* <LocalWeather/> */}
-            {<LocalWeather /> ?   <LocalWeather /> :
-              <p>
-                El acceso a la ubicación ha sido denegado. La razón de solicitar su ubicación es proporcionar el clima de su ciudad.
-              </p> 
-            }
+          
+            <LocalWeather /> 
             
           </div>
         </div>
         <h6 className="welcomeTitle animatedLeft bounceInLeft"> {t("cover.welcome-title")}</h6>
         <p className="welcomeP animatedRight bounceInRight">{t("cover.welcome-p")}</p>
-        <button
-          className="goBtn "
-          onClick={() => {
-            playSound();
-            props.setTrigger(false);
-          }}
-        >
-          {t("cover.seePortfolio")}
-        </button>
+        <div className="button-container">
+  <button
+    className="goBtn"
+    onClick={() => {
+      playSound();
+      props.setTrigger(false);
+    }}
+  >
+    {t("cover.seePortfolio")}
+  </button>
 
-        <button className="goBtnB ">
-          <NavDropdown className="noLink" title={t("navbar.language")}>
-            <NavDropdown.Item
-              onClick={() => {
-                playSound();
-                i18n.changeLanguage("es");
-              }}
-            >
-              ESPAÑOL
-              <span className="fi fi-mx ml-flag"></span>{" "}
-              <span className="fi fi-es"></span>
-            </NavDropdown.Item>
+  <button className="goBtnB">
+    <NavDropdown className="noLink" title={t("navbar.language")}>
+      <NavDropdown.Item
+        onClick={() => {
+          playSound();
+          i18n.changeLanguage("es");
+        }}
+      >
+        ESPAÑOL
+        <span className="fi fi-mx ml-flag"></span>{" "}
+        <span className="fi fi-es"></span>
+      </NavDropdown.Item>
 
-            <NavDropdown.Item onClick={() => {
-            playSound();i18n.changeLanguage("en");}}>
-              ENGLISH 
-               <span className="fi fi-ca ml-flag"></span>{" "}
-              <span className="fi fi-us"></span>{" "}
-              {/* <span className="fi fi-uk"></span> */}
-            </NavDropdown.Item>
-          </NavDropdown>
-        </button>
+      <NavDropdown.Item
+        onClick={() => {
+          playSound();
+          i18n.changeLanguage("en");
+        }}
+      >
+        ENGLISH 
+        <span className="fi fi-ca ml-flag"></span>{" "}
+        <span className="fi fi-us"></span>{" "}
+        {/* <span className="fi fi-uk"></span> */}
+      </NavDropdown.Item>
+    </NavDropdown>
+  </button>
+</div>
+
         {props.children}
       </div>
     </motion.div>
