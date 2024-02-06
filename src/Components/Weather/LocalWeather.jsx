@@ -8,7 +8,7 @@ import "./LocalWeather.css";
 const LocalWeather = () => {
   const [t, i18n] = useTranslation("global");
   const [weatherData, setWeatherData] = useState(null);
-  const [temperatureUnit, setTemperatureUnit] = useState("C");
+  const [temperatureUnit, setTemperatureUnit] = useState("°F");
   const [locationPermission, setLocationPermission] = useState(null);
   const [showExplanation, setShowExplanation] = useState(false);
 
@@ -52,7 +52,8 @@ const LocalWeather = () => {
 
   const convertTemperature = (kelvin) => {
     if (temperatureUnit === "°C") {
-      return kelvin - 273.15;
+      
+      return kelvin - 273.15 ;
     } else {
       // Convert Kelvin to Fahrenheit
       return (kelvin - 273.15) * (9 / 5) + 32;
@@ -102,18 +103,17 @@ const LocalWeather = () => {
                 {t("cover.reqLocP_5")}
               </a>
             </p>
-            
           )}
         </div>
       ) : (
         weatherData && (
           <div>
             <p>
-            {t("cover.temperature")} {weatherData.name} {t("cover.isTemp")}{" "}
+              {t("cover.temperature")} {weatherData.name} {t("cover.isTemp")}{" "}
               {convertTemperature(weatherData.main.temp).toFixed(2)}{" "}
               {temperatureUnit}{" "}
               <span className="changeToF" onClick={toggleTemperatureUnit}>
-                <FaExchangeAlt style={{ margin: "0 1px " }} />
+                <FaExchangeAlt style={{ margin: "0 1px" }} />
                 {temperatureUnit === "°C" ? "°F" : "°C"}
               </span>
             </p>
@@ -126,3 +126,5 @@ const LocalWeather = () => {
 };
 
 export default LocalWeather;
+
+ 
