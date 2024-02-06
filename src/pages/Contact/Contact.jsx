@@ -139,15 +139,17 @@ const Contact = () => {
             </form>
           </div> */}
           <div className="contact-form-wrapper card">
-            <span className="title">Leave a Comment</span>
-            <form className="form">
+            <span className="subTitleContact">Drop me a message</span>
+            <form className="form" ref={form} onSubmit={enviarEmail}>
               <div className="group">
-                <input placeholder="" type="text" required="" />
+                <input placeholder="" type="text"
+                  name="sender"
+                  required/>
                 <label htmlFor="name">Name</label>
               </div>
               <div className="group">
                 <input
-                  placeholder="Email"
+                  placeholder=""
                   type="email"
                   id="email"
                   name="email"
@@ -157,15 +159,23 @@ const Contact = () => {
               </div>
               <div className="group">
                 <textarea
-                  placeholder="Comment"
-                  id="comment"
-                  name="comment"
+                  placeholder=""
+                  id="message"
+                  name="message"
                   rows="5"
                   required=""
                 ></textarea>
-                <label htmlFor="comment">Comment</label>
+                <label htmlFor="message">Message</label>
               </div>
-              <button type="submit">Submit</button>
+              {/* <button type="submit">Submit</button> */}
+              <button className="submit-btn ">
+             
+             <div className="btn">
+               <span className="ml-2"> Send Message {" "}</span>
+
+               <i className="ico"></i>
+             </div>
+           </button>
             </form>
           </div>
 

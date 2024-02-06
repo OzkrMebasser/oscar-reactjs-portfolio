@@ -388,7 +388,7 @@
     box-shadow: none;
   }
 
-  .projectsH1 {
+  /* .projectsH1 {
     text-align: center;
     font-size: 1rem;
     color: rgb(255, 255, 255);
@@ -397,7 +397,7 @@
 
     font-family: "Boogaloo", cursive;
     text-shadow: 1px 1px 3px #cccc5abd;
-  }
+  } */
 
   .projectName {
     text-align: center;

@@ -8,7 +8,7 @@ import "./LocalWeather.css";
 const LocalWeather = () => {
   const [t, i18n] = useTranslation("global");
   const [weatherData, setWeatherData] = useState(null);
-  const [temperatureUnit, setTemperatureUnit] = useState("°F");
+  const [temperatureUnit, setTemperatureUnit] = useState("°C");
   const [locationPermission, setLocationPermission] = useState(null);
   const [showExplanation, setShowExplanation] = useState(false);
 
@@ -51,12 +51,12 @@ const LocalWeather = () => {
   };
 
   const convertTemperature = (kelvin) => {
-    if (temperatureUnit === "°C") {
-      
-      return kelvin - 273.15 ;
-    } else {
+    if (temperatureUnit === "°F") {
       // Convert Kelvin to Fahrenheit
       return (kelvin - 273.15) * (9 / 5) + 32;
+    } else {
+      // Default is Celsius
+      return kelvin - 273.15;
     }
   };
 
@@ -126,5 +126,3 @@ const LocalWeather = () => {
 };
 
 export default LocalWeather;
-
- 
