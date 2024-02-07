@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser";
 
 import MyLocation from "./MyLocation";
 
-import "../Contact/Contact.css";
+import "./Contact.css";
 
 const Contact = () => {
   const [t, i18n] = useTranslation("global");
@@ -138,13 +138,11 @@ const Contact = () => {
               </button>
             </form>
           </div> */}
-          <div className="contact-form-wrapper card">
+          <div className="contact-form-wrapper conctact-card">
             <span className="subTitleContact">Drop me a message</span>
             <form className="form" ref={form} onSubmit={enviarEmail}>
               <div className="group">
-                <input placeholder="" type="text"
-                  name="sender"
-                  required/>
+                <input placeholder="" type="text" name="sender" required />
                 <label htmlFor="name">Name</label>
               </div>
               <div className="group">
@@ -169,13 +167,12 @@ const Contact = () => {
               </div>
               {/* <button type="submit">Submit</button> */}
               <button className="submit-btn ">
-             
-             <div className="btn">
-               <span className="ml-2"> Send Message {" "}</span>
+                <div className="btn">
+                  <span className="ml-2"> Send Message </span>
 
-               <i className="ico"></i>
-             </div>
-           </button>
+                  <i className="ico"></i>
+                </div>
+              </button>
             </form>
           </div>
 

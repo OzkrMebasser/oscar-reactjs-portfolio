@@ -108,7 +108,6 @@ const Skills = (props) => {
                   {t("skills.viewAllCats")}
                 </button>
               </div>
-
               <Row xs={1} md={5} fluid className="g-3 texts alto">
                 {filteredFECategories.map((skill, index) => (
                   <Col key={skill.id}>
@@ -120,6 +119,7 @@ const Skills = (props) => {
                           ? "cardGrid"
                           : "cardGridOpen",
                       }}
+                    
                     >
                       {/* <span className={skill.class} ><span className="bgBlack">{skill.icon}</span></span> */}
                       <img
@@ -242,6 +242,7 @@ const Skills = (props) => {
                 </button>
               </div>
               <Row xs={1} md={5} fluid className="g-3 texts alto">
+
                 {filteredBECategories.map((skill, index) => (
                   <Col key={skill.id}>
                     <Card
