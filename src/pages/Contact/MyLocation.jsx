@@ -14,6 +14,7 @@ const MyLocation = () => {
       scroll="yes"
       src="https://maps.google.com/maps?width=546&amp;height=400&amp;hl=en&amp;q=Victoria, BC&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
     ></iframe>
+ 
   </div>
   )
 }

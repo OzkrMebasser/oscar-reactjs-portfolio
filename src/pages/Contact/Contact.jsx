@@ -1,5 +1,8 @@
 import React, { Fragment, useRef } from "react";
 import { useTranslation } from "react-i18next";
+import { ImArrowDownRight } from "react-icons/im";
+
+
 
 import emailjs from "@emailjs/browser";
 
@@ -172,13 +175,15 @@ const Contact = () => {
 
                   <i className="ico"></i>
                 </div>
-              </button>
+              </button> 
             </form>
           </div>
 
-          <div className="contact-links ">
+          <div className="contact-map ">
             <div className="map">
               <MyLocation />
+              <span className='text-living'>I'm currently living in <ImArrowDownRight className="arrow-down"/>
+   </span>
             </div>
           </div>
         </div>

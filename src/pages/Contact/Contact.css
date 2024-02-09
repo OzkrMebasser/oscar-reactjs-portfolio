@@ -40,9 +40,10 @@
   border: 1px solid rgba(46, 45, 45, 0.623);
 }
 
-.contact-links {
+.contact-map {
   width: 50%;
   margin: auto;
+ 
   /* padding-top: 3%; */
   text-align: center;
   border-radius: 10px;
@@ -98,11 +99,38 @@
 }
 
 /*google Map*/
+.text-living{
+  position: absolute;
+  top: 39%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 0, 0);
+  color: #d4af37;
+  padding: 8px;
+}
+
+@keyframes upAndDown {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(5px);
+  }
+}
+
+.arrow-down {
+
+  margin-left: 5px;
+  animation: upAndDown 2s infinite;
+}
+
+
+
+
 .map {
   background-color: rgb(0, 0, 0);
   /* margin: auto;
-  
-  margin-top: 7.5rem;
+    margin-top: 7.5rem;
   margin-right: 5rem; */
   width: 100%;
   height: 100%;
@@ -350,13 +378,27 @@ textarea:valid + label {
   transition: all 0.3s ease;
 }
 
-.form .group input,
+.form .group input{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #d4af37;
+  margin-bottom: 17px;
+  color: #fff;
+  outline: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.07);
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(2.7px);
+  -webkit-backdrop-filter: blur(2.7px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
 .form .group textarea {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #d4af37;
   margin-bottom: 17px;
-
+  color: #fff;
+  text-transform: uppercase;
   outline: 0;
   width: 100%;
   background: rgba(255, 255, 255, 0.07);
@@ -369,7 +411,7 @@ textarea:valid + label {
 .form .group input:placeholder-shown + label,
 .form .group textarea:placeholder-shown + label {
   top: 10px;
-  background-color: transparent;
+ 
 }
 
 .form .group input:focus,
@@ -383,10 +425,11 @@ textarea:valid + label {
 .form .group textarea:focus + label {
   top: -10px;
   left: 10px;
-  background-color: transparent;
+  text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000, 0 0 20px #fdfdfd, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 55px #ffffff, 0 0 75px #ffffff;
   color: #d4af37;
   font-weight: 600;
   font-size: 1rem;
+  
 }
 
 .form .group textarea {
@@ -692,5 +735,21 @@ textarea:valid + label {
     -webkit-backdrop-filter: blur(4.7px);
     border: 1px solid rgba(46, 45, 45, 0.623);
   }
+
+  
+.map {
+  background-color: rgb(0, 0, 0);
+  /* margin: auto;
+    margin-top: 7.5rem;
+  margin-right: 5rem; */
+  width: 100vw;
+  height: 380px;
+  /* border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px; */
+  position: relative;
+  margin: auto;
+  align-items: center;
+  /* border-radius: 8px; */
+}
   
 }
