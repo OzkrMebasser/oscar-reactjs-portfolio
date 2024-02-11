@@ -182,7 +182,7 @@ const Contact = () => {
           <div className="contact-map ">
             <div className="map">
               <MyLocation />
-              <span className='text-living'>I'm currently living in <ImArrowDownRight className="arrow-down"/>
+              <span className='text-living'>I'm currently living in <ImArrowDownRight className="arrow-down change-arrow-dir"/>
    </span>
             </div>
           </div>
