@@ -23,7 +23,7 @@ const AmChartsMap = () => {
     chart.projection = new am4maps.projections.Orthographic();
     chart.panBehavior = "rotateLongLat";
     chart.deltaLatitude = -30;
-    chart.deltaLongitude = -20; // Adjust as needed
+    // chart.deltaLongitude = -20; // Adjust as needed
     // chart.rotateSprite = true; // Disable sprite rotation
 
     // Create map polygon series
@@ -89,7 +89,7 @@ const AmChartsMap = () => {
     };
   }, []);
 
-  return <div id="chartdiv">{/* <Particle2 /> */}</div>;
+  return <div id="chartdiv"/>;
 };
 
 export default AmChartsMap;
