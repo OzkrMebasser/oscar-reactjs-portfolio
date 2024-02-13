@@ -393,6 +393,26 @@
   }
 
 
+  #chartdiv {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 6rem;
+    /* bottom: 1rem; */
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+    /* background-color: black; */
+    box-shadow: 0 0 10px 10px #00bcf041 inset, 0 0 10px 2px rgba(77, 76, 76, 0.336);
+    cursor: grabbing ;
+    /* background: #00171f; */
+    /* background-image: url('https://climatekids.nasa.gov/review/cloud-formation/indian_ocean_clouds.jpg'); */
+    
+    
+
+  }
+  
 
   /* Globe */
 .globe {
@@ -408,6 +428,8 @@
     border-radius: 50%;
     box-shadow: 0 0 20px 10px rgb(6, 10, 71) inset, 0 0 20px 2px rgba(77, 76, 76, 0.61);
     z-index: 9;
+    transition: transform 0.5s ease; 
+    transform-style: preserve-3d; 
   }
   
   .globe:after {
@@ -420,7 +442,9 @@
     box-shadow: -20px -20px 50px 2px #000 inset;
     border-radius: 50%;
   }
-  
+  .globe:hover {
+    transform: perspective(1000px) rotateX(8deg) rotateY(8deg) scale(.9 ); 
+  }
   .globe > div {
     width: 200%;
     height: 100%;
@@ -434,7 +458,51 @@
     }
   }
 
+/*Globe tilt
+User
+.globe {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 10px rgb(6, 10, 71) inset, 0 0 20px 2px rgba(77, 76, 76, 0.61);
+    z-index: 9;
+    transition: transform 0.5s ease; 
+    transform-style: preserve-3d; 
+  }
+  
+  .globe:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: -20px -20px 50px 2px #000 inset;
+    border-radius: 50%;
+  }
+  
+  .globe:hover {
+    transform: perspective(1000px) rotateX(8deg) rotateY(8deg); 
+  }
+  
+  .globe > div {
+    width: 200%;
+    height: 100%;
+    animation: spin 30s linear alternate infinite;
+    background: url("https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FHome%2FGloboAzul.png?alt=media&token=2af65a2e-a9da-4b5f-8a3f-47ba7f75ec38");
+    z-index: -99;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: translateX(-50%);
+    }
+  }
 
+*/
 
 /* comets animations */
 
@@ -559,7 +627,7 @@
 
 .ul {
     position: absolute;
-    top: 85vh;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
@@ -714,8 +782,9 @@
 
 
 .flip-box-cover {
-  background-color: transparent;
-  width: 100vw;
+  /* background-color: red; */
+  width: 300px;
+  height: 3rem;
   padding-top: 8rem;
   padding-bottom: 5rem;
   font-size: 2.8rem;
@@ -1188,6 +1257,27 @@ text-align: center;
   /*Globe media queries */
 /* Smartphones (portrait and landscape) ---------- */
 @media screen and (min-width: 320px) and (max-width: 480px){
+
+  
+  #chartdiv {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 6rem;
+    /* bottom: 1rem; */
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+    /* background-color: black; */
+    box-shadow: 0 0 10px 10px #00bcf041 inset, 0 0 10px 2px rgba(77, 76, 76, 0.336);
+    cursor: grabbing ;
+    /* background: #00171f; */
+    /* background-image: url('https://climatekids.nasa.gov/review/cloud-formation/indian_ocean_clouds.jpg'); */
+    
+    
+
+  }
   .globe {
     width: 270px;
     height: 270px;

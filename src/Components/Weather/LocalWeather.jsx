@@ -22,7 +22,7 @@ const LocalWeather = () => {
         );
         const data = await response.json();
         setWeatherData(data);
-        console.log(data);
+        // console.log(data);
       } catch (error) {
         console.error("Error al obtener datos del clima:", error);
       }
