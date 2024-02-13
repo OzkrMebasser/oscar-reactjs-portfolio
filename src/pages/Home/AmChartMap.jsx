@@ -64,7 +64,7 @@ const AmChartsMap = () => {
 
     // Start rotation animation
     animationRef.current = chart.animate(
-      { property: "deltaLongitude", to: 100000 },
+      { property: "deltaLongitude", to: 10 },
       20000000
     );
 
