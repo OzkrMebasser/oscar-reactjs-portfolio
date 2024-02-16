@@ -2,7 +2,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
 
-function Particle2() {
+function Particle2({ containerSize }) {
   const particlesInit = async (main) => {
     console.log(main);
 
@@ -45,7 +45,8 @@ function Particle2() {
               },
               fullScreen: {
                 enable: true,
-                zIndex: -1
+                zIndex: -1,
+               
               },
               detectRetina: true,
               duration: 0,

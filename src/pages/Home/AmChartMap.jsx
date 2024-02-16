@@ -3,7 +3,7 @@ import * as am4core from "@amcharts/amcharts4/core";
 import * as am4maps from "@amcharts/amcharts4/maps";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 import am4geodata_worldLow from "@amcharts/amcharts4-geodata/worldLow";
-import Particle2 from "../../Components/particulesBG/Particle2";
+// import ParticlesComb from "../../Components/particulesBG/ParticlesComb";
 
 am4core.useTheme(am4themes_animated);
 
@@ -40,18 +40,18 @@ const AmChartsMap = () => {
     gradient.rotation = 50;
 
     // Aplicar el degradado
-    polygonTemplate.fill = gradient;
-    // polygonTemplate.fill = am4core.color("#000");
+    // polygonTemplate.fill = gradient;
+    polygonTemplate.fill = am4core.color("#000");
     polygonTemplate.tooltipText = "{name}";
-    polygonTemplate.stroke = am4core.color("#00bbf0");
-    polygonTemplate.strokeWidth = 0.3;
+    polygonTemplate.stroke = am4core.color("#4507F7");
+    polygonTemplate.strokeWidth = 1;
     polygonTemplate.cursorOverStyle = am4core.MouseCursorStyle.pointer;
     polygonTemplate.url = "https://en.wikipedia.org/wiki/{name}";
     polygonTemplate.urlTarget = "_blank";
 
     const graticuleSeries = chart.series.push(new am4maps.GraticuleSeries());
-    graticuleSeries.mapLines.template.line.stroke = am4core.color("#fefefe");
-    graticuleSeries.mapLines.template.line.strokeOpacity = 0.09;
+    graticuleSeries.mapLines.template.line.stroke = am4core.color("#000");
+    graticuleSeries.mapLines.template.line.strokeOpacity = 0.2;
     graticuleSeries.fitExtent = false;
 
     chart.backgroundSeries.mapPolygons.template.polygon.fillOpacity = 0.07;
@@ -89,7 +89,14 @@ const AmChartsMap = () => {
     };
   }, []);
 
-  return <div id="chartdiv"/>;
+  return (
+    <>
+    <div id="chartdiv">
+ 
+    </div>
+    
+     </>
+  );
 };
 
 export default AmChartsMap;

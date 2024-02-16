@@ -1,5 +1,4 @@
-/* eslint-disable no-script-url */
-/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import React, { Fragment, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Particle from "../../Components/particulesBG/Particle";
@@ -105,6 +104,8 @@ const Home = () => {
           </div>
         </div>
         <Particle className="particles-cover" />
+
+       
         <Typing />
 
         <div id="comets">
