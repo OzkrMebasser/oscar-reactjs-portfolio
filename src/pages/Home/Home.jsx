@@ -15,23 +15,24 @@ import { motion } from "framer-motion";
 
 const Home = () => {
   const [t, i18n] = useTranslation("global");
-  const [buttonPopup, setButtonPopup] = useState(false);
-  const [timePopup, setTimePopup] = useState(false);
+  // const [buttonPopup, setButtonPopup] = useState(false);
+  // const [timePopup, setTimePopup] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setButtonPopup(true);
-    }, 2000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setButtonPopup(true);
+  //   }, 5000);
+  // }, []);
 
   return (
-    <Fragment>
-      <motion.div
+    <>
+      {/* <motion.div
         className="cover-container"
         initial={{ y: 600 }}
         animate={{ y: 0 }}
         transition={{ delay: 0.3, type: "fade" }}
-      >
+      > */}
+      <div className="cover-container">
         <div id="social-icons">
           <ul className="ul">
             <li className="li">
@@ -121,17 +122,17 @@ const Home = () => {
         <AmChartsMap />
         {/* <button onClick={() => setButtonPopup(true)}>Open Wlcome</button> */}
 
-        <WelcomePopUp trigger={buttonPopup} setTrigger={setButtonPopup}>
-          {/* <h6 className="welcomeTitle animatedLeft bounceInLeft"> {t("cover.welcome-title")}</h6>
-        <p className="welcomeP animatedRight bounceInRight">{t("cover.welcome-p")}</p> */}
+        {/* <WelcomePopUp trigger={buttonPopup} setTrigger={setButtonPopup}>
+        
         </WelcomePopUp>
 
         <WelcomePopUp
           trigger={timePopup}
           setTrigger={setTimePopup}
-        ></WelcomePopUp>
-      </motion.div>
-    </Fragment>
+        ></WelcomePopUp> */}
+      {/* </motion.div> */}
+      </div>
+    </>
   );
 };
 export default Home;
