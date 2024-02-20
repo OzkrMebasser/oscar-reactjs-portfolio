@@ -91,11 +91,8 @@ const AmChartsMap = () => {
 
   return (
     <>
-    <div id="chartdiv">
- 
-    </div>
-    
-     </>
+      <div id="chartdiv"></div>
+    </>
   );
 };
 

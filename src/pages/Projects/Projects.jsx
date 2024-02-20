@@ -10,7 +10,7 @@ import { projects } from "../../Api/projects";
 // import { ImUndo2, ImRedo2 } from "react-icons/im";
 import { MdOutlineDoubleArrow } from "react-icons/md";
 
-import "./Projects.css";
+import "./Projects-min.css";
 
 const Projects = ({ props }) => {
   const [t] = useTranslation("global");

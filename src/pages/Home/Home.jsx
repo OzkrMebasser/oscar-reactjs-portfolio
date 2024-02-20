@@ -1,16 +1,16 @@
 
-import React, { Fragment, useState, useEffect } from "react";
+// import React, { Fragme} from "react";
 import { useTranslation } from "react-i18next";
-import Particle from "../../Components/particulesBG/Particle";
-import WelcomePopUp from "./WelcomePopUp";
+import Particle from "../../Components/particulesBG/Particle-min.jsx";
+// import WelcomePopUp from "./WelcomePopUp";
 import AmChartsMap from "./AmChartMap";
 // import Clock from "../../Components/Clock/Clock";
 import Typing from "./Typing";
 
-import "../Home/Home.css";
-import "../Cover/Cover.css";
+import "../Home/Home-min.css";
+// import "../Cover/Cover.css";
 
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 // import { faLinesLeaning } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {

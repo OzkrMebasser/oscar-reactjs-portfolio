@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-import "./Navbar.css";
+import "./Navbar-min.css";
 
 import { NavLink } from "react-router-dom";
 import { FaStream } from "react-icons/fa";

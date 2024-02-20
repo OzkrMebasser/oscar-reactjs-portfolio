@@ -12,7 +12,7 @@ import { useTranslation } from "react-i18next";
 import useSound from "../../context/hook/useSound";
 import SoundClick from "../../Components/Click/interface.mp3";
 import { projects } from "../../Api/projects";
-import "./Projects.css";
+import "./Projects-min.css";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
