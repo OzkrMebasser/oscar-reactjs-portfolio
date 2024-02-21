@@ -14,10 +14,15 @@ const App = () => {
   const [buttonPopup, setButtonPopup] = useState(false);
   const [timePopup, setTimePopup] = useState(false);
 
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setButtonPopup(true);
+  //   }, 10100);
+  // }, []);
   useEffect(() => {
-    setTimeout(() => {
+    window.onload = () => {
       setButtonPopup(true);
-    }, 10100);
+    };
   }, []);
 
   const handleScroll = () => {

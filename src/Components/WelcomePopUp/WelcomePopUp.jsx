@@ -29,11 +29,11 @@ function WelcomePopUp(props) {
   const [t, i18n] = useTranslation("global");
 
   return props.trigger ? (
-    <motion.div
+    <div
       className="popup"
-      initial={{ y: "100vh" }}
-      animate={{ y: 0 }}
-      transition={{ delay: 0.3, type: "fade" }}
+      // initial={{ y: "100vh" }}
+      // animate={{ y: 0 }}
+      // transition={{ delay: 0.3, type: "fade" }}
     >
       <div className="popupInner">
         <div
@@ -56,7 +56,7 @@ function WelcomePopUp(props) {
             <LocalWeather />
           </div>
         </div>
-        <h6 className="welcomeTitle animatedLeft bounceInLeft">
+        <h6 className="welcomeTitle">
           {" "}
           {t("cover.welcome-title")}
         </h6>
@@ -104,7 +104,7 @@ function WelcomePopUp(props) {
 
         {props.children}
       </div>
-    </motion.div>
+    </div>
   ) : (
     ""
   );
