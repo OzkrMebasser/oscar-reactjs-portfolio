@@ -57,7 +57,7 @@ const Contact = () => {
               </li>
               <li className="liContact">
                 <a
-                  onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'})"
+                  onClick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'})"
                   href="tel:+5219841681509"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -84,12 +84,8 @@ const Contact = () => {
                 </a>
               </li>
               <li className="liContact">
-                <a
-                  href="javascript:void(0)"
-                  onClick={() =>
-                    (window.location = "mailto:oscarmoreno80@gmail.com")
-                  }
-                >
+              <a href="#" onClick={() => (window.location = "mailto:oscarmoreno80@gmail.com")}>
+
                   <span></span>
                 </a>
               </li>

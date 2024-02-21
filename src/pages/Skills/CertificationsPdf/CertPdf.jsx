@@ -41,8 +41,8 @@ const CertPdf = (props) => {
       {/* {"Cert #1"} */}
       <Card className="cardsCerts">
         <Card.Header>
-          <div class="flex-container">
-            <div class="flex-item-left">
+          <div className="flex-container">
+            <div className="flex-item-left">
               <p className="certTitles">
                 {t("certificatesInfo.certification")}:
                 <span className="certsStrongTitles">{props.certName} </span>

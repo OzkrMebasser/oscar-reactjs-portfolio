@@ -3,7 +3,7 @@ import React from "react";
 const SkillsEarned = (props) => {
   return (
     <>
-      <ul class="skillEarnedTags">
+      <ul className="skillEarnedTags">
         <li className="skillEarnedTagsLi">
           <p className="tag">{props.skillsEarned}</p>
         </li>

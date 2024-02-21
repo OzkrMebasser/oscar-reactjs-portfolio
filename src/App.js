@@ -17,8 +17,9 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setButtonPopup(true);
-    }, 5000);
+    }, 10100);
   }, []);
+
   const handleScroll = () => {
     const position = window.pageYOffset;
     setScrollHeight(position);

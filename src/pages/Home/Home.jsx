@@ -72,12 +72,8 @@ const Home = () => {
               </a>
             </li>
             <li className="li">
-              <a
-                href="javascript:void(0)"
-                onClick={() =>
-                  (window.location = "mailto:oscarmoreno80@gmail.com")
-                }
-              >
+            <a href="#" onClick={() => (window.location = "mailto:oscarmoreno80@gmail.com")}>
+
                 <span></span>
               </a>
             </li>

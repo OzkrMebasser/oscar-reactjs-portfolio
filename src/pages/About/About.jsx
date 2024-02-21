@@ -3,7 +3,7 @@ import { GoDesktopDownload } from "react-icons/go";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
-import "./About.css";
+import "./About-min.css";
 
 const About = () => {
   const [t] = useTranslation("global");

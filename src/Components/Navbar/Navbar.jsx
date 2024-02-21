@@ -148,12 +148,13 @@ const Navbar = ({ isScrolling }) => {
           </li>
 
           <li className=" nav-item-prueba ">
-            <NavLink
+            {/* <NavLink
               to="/contact"
               activeclassname="active"
               className="nav-links"
-            >
-              <NavDropdown title={t("navbar.language")}>
+            > */}
+              <NavDropdown  activeclassname="active"
+              className="nav-links" title={t("navbar.language")}>
                 <NavDropdown.Item
                   onClick={() => i18n.changeLanguage("en") && playSound()}
                 >
@@ -168,7 +169,7 @@ const Navbar = ({ isScrolling }) => {
                   <span className="fi fi-es"></span>
                 </NavDropdown.Item>
               </NavDropdown>
-            </NavLink>
+            {/* </NavLink> */}
           </li>
         </ul>
       </div>

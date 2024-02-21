@@ -145,8 +145,8 @@ const CursorStars = () => {
     
 
   return (
-    <span class="container"></span>
+    <span className="container"></span>
   )
 }
 
-export default CursorStars
+export default CursorStars;
