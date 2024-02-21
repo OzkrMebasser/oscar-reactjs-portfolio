@@ -1,13 +1,12 @@
-
-// import React, { Fragme} from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Particle from "../../Components/particulesBG/Particle-min.jsx";
-// import WelcomePopUp from "./WelcomePopUp";
+import WelcomePopUp from "../../Components/WelcomePopUp/WelcomePopUp.jsx";
 import AmChartsMap from "./AmChartMap";
 // import Clock from "../../Components/Clock/Clock";
 import Typing from "./Typing";
 
-import "../Home/Home-min.css";
+import "../Home/Home.css";
 // import "../Cover/Cover.css";
 
 // import { motion } from "framer-motion";
@@ -15,6 +14,7 @@ import "../Home/Home-min.css";
 
 const Home = () => {
   const [t, i18n] = useTranslation("global");
+  const [showModal, setShowModal] = useState(false);
   // const [buttonPopup, setButtonPopup] = useState(false);
   // const [timePopup, setTimePopup] = useState(false);
 
@@ -23,7 +23,9 @@ const Home = () => {
   //     setButtonPopup(true);
   //   }, 5000);
   // }, []);
-
+  const handleClick = () => {
+    setShowModal(true);
+  };
   return (
     <>
       {/* <motion.div
@@ -72,8 +74,12 @@ const Home = () => {
               </a>
             </li>
             <li className="li">
-            <a href="#" onClick={() => (window.location = "mailto:oscarmoreno80@gmail.com")}>
-
+              <a
+                href="#"
+                onClick={() =>
+                  (window.location = "mailto:oscarmoreno80@gmail.com")
+                }
+              >
                 <span></span>
               </a>
             </li>
@@ -102,7 +108,6 @@ const Home = () => {
         </div>
         <Particle className="particles-cover" />
 
-       
         <Typing />
 
         <div id="comets">
@@ -116,17 +121,21 @@ const Home = () => {
           
         </div> */}
         <AmChartsMap />
+        <button className="welcomeBtnModal" onClick={handleClick}>Mostrar Modal</button>
+        <WelcomePopUp trigger={showModal} setTrigger={setShowModal}>
+          {/* Contenido del modal */}
+        </WelcomePopUp>
         {/* <button onClick={() => setButtonPopup(true)}>Open Wlcome</button> */}
 
         {/* <WelcomePopUp trigger={buttonPopup} setTrigger={setButtonPopup}>
         
         </WelcomePopUp>
-
+          
         <WelcomePopUp
           trigger={timePopup}
           setTrigger={setTimePopup}
         ></WelcomePopUp> */}
-      {/* </motion.div> */}
+        {/* </motion.div> */}
       </div>
     </>
   );

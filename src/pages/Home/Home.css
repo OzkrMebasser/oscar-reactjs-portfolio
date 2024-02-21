@@ -908,6 +908,11 @@ User
   transition: all 0.3s ease-in-out 0s;
 }
 
+.welcomeBtnModal{
+  bottom: 0px;
+
+  position: absolute;
+}
 
 .popup{
   position: fixed;

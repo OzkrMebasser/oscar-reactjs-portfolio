@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import CursorRing from "../src/Components/CursorRing/CursorRing";
-import WelcomePopUp from "../src/Components/WelcomePopUp/WelcomePopUp";
+// import WelcomePopUp from "../src/Components/WelcomePopUp/WelcomePopUp";
 import { MouseContext } from "../src/context/MouseContextProvider";
 
 import Navbar from "./Components/Navbar/Navbar";
@@ -11,19 +11,19 @@ const App = () => {
   //Functions
   const [scrollHeight, setScrollHeight] = useState(0);
   const { cursorType, cursorChangeHandler } = useContext(MouseContext);
-  const [buttonPopup, setButtonPopup] = useState(false);
-  const [timePopup, setTimePopup] = useState(false);
+  // const [buttonPopup, setButtonPopup] = useState(false);
+  // const [timePopup, setTimePopup] = useState(false);
 
   // useEffect(() => {
   //   setTimeout(() => {
   //     setButtonPopup(true);
   //   }, 10100);
   // }, []);
-  useEffect(() => {
-    window.onload = () => {
-      setButtonPopup(true);
-    };
-  }, []);
+  // useEffect(() => {
+  //   window.onload = () => {
+  //     setButtonPopup(true);
+  //   };
+  // }, []);
 
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -41,7 +41,7 @@ const App = () => {
     >
       <Navbar isScrolling={scrollHeight} />
       <CursorRing />
-      <WelcomePopUp
+      {/* <WelcomePopUp
         trigger={buttonPopup}
         setTrigger={setButtonPopup}
       ></WelcomePopUp>
@@ -49,7 +49,7 @@ const App = () => {
       <WelcomePopUp
         trigger={timePopup}
         setTrigger={setTimePopup}
-      ></WelcomePopUp>
+      ></WelcomePopUp> */}
       <AnimatedRoutes />
     </Router>
   );
