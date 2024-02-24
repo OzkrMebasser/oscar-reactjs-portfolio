@@ -1,15 +1,18 @@
+
+
 import React, { useEffect, useRef } from "react";
 import * as am4core from "@amcharts/amcharts4/core";
 import * as am4maps from "@amcharts/amcharts4/maps";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 import am4geodata_worldLow from "@amcharts/amcharts4-geodata/worldLow";
 
-
 am4core.useTheme(am4themes_animated);
 
 const AmChartsMap = () => {
   const chartRef = useRef(null);
   const animationRef = useRef(null);
+
+
 
   useEffect(() => {
     // Create the map
@@ -18,7 +21,7 @@ const AmChartsMap = () => {
 
     // Set map definition
     chart.geodata = am4geodata_worldLow;
-
+  
     // Set projection
     chart.projection = new am4maps.projections.Orthographic();
     chart.panBehavior = "rotateLongLat";
@@ -64,8 +67,8 @@ const AmChartsMap = () => {
 
     // Start rotation animation
     animationRef.current = chart.animate(
-      { property: "deltaLongitude", to: 10 },
-      20000000
+      { property: "deltaLongitude", to: 0 },
+      500
     );
 
     // Stop and restart the animation every 5 seconds
@@ -74,10 +77,10 @@ const AmChartsMap = () => {
         animationRef.current.stop();
       }
       animationRef.current = chart.animate(
-        { property: "deltaLongitude", to: 100000 },
-        20000000
+        { property: "deltaLongitude", to: 10000 },
+        2000000
       );
-    }, 5000);
+    }, 500);
 
     return () => {
       if (chart) {
@@ -91,7 +94,7 @@ const AmChartsMap = () => {
 
   return (
     <>
-      <div id="chartdiv"></div>
+      <div id="chartdiv" className="growAnimation"></div>
     </>
   );
 };

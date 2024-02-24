@@ -40,7 +40,7 @@ const App = () => {
       onMouseLeave={() => cursorChangeHandler("")}
     >
       <Navbar isScrolling={scrollHeight} />
-      <CursorRing />
+      {/* <CursorRing /> */}
       {/* <WelcomePopUp
         trigger={buttonPopup}
         setTrigger={setButtonPopup}
