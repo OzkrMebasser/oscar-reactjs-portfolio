@@ -1,62 +1,14 @@
 import React, { useState } from "react";
 import { Tooltip as ReactTooltip } from "react-tooltip";
-import { BsRocketTakeoff } from "react-icons/bs";
-import { TbTargetArrow } from "react-icons/tb";
-import { BsCodeSquare } from "react-icons/bs";
-import { HiAcademicCap } from "react-icons/hi2";
-import { RiEyeOffLine } from "react-icons/ri";
-
-import { RiWifiOffFill } from "react-icons/ri";
-
+import CheckBox from "./CheckBox";
 import { useTranslation } from "react-i18next";
 import useSound from "../../context/hook/useSound";
 import SoundClick from "../../Components/Click/interface.mp3";
-import { projects } from "../../Api/projects";
 import "./Projects-min.css";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-function CheckBox({ checked, onChecked, projectType }) {
-  const [t] = useTranslation("global");
 
-  let label;
-  let icon;
-  let typeClass;
-
-  switch (projectType) {
-    case "online":
-      label = `${t("myProjects.online")}`;
-      icon = <BsRocketTakeoff />;
-      typeClass = "online";
-      break;
-    case "academic":
-      label = "ACADEMIC";
-      icon = <HiAcademicCap />;
-      typeClass = "academic";
-      break;
-    case "development":
-      label = "DEVELOPMENT";
-      icon = <BsCodeSquare />;
-      typeClass = "development";
-      break;
-    case "practice":
-      label = "PRACTICE";
-      icon = <TbTargetArrow />;
-      typeClass = "blue";
-      break;
-    default:
-      label = "OFFLINE";
-      icon = <RiEyeOffLine />;
-      typeClass = "blue"; // Puedes cambiar a la clase que desees
-  }
-
-  return (
-    <span onClick={onChecked}>
-      <span className={`labelType ${typeClass}`}>{label}</span>
-      <span className={`iconType ${typeClass}`}>{icon}</span>
-    </span>
-  );
-}
 
 function ModalItem({ props, ...project }) {
   const [t] = useTranslation("global");
