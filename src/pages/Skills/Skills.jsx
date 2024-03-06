@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
+// import { useLocation } from 'react-router-dom';
 import CertificationsPdf from "../Skills/CertificationsPdf/CertificationsPdf";
 import ScrollToTop from "../../Components/GoUpButton/ScrollToTop";
 import useSound from "../../context/hook/useSound";
+
 import SoundClick from "../../Components/Click/interface.mp3";
 import FlipCard from "./FlipCard";
 import { skillsFE, skillsBE } from "../../Api/hardSkillsData";
@@ -20,8 +22,11 @@ import "./Skills.css";
 const Skills = (props) => {
   const [t] = useTranslation("global");
   const playSound = useSound(SoundClick);
-  //Dropdown Tech description
+  
 
+
+
+  //Dropdown Tech description
   const { isDropOpen } = props;
   const [selectedCardIndex, setSelectedCardIndex] = useState(-1);
   const [categoryFE, setCategoryFE] = useState("");
@@ -51,7 +56,7 @@ const Skills = (props) => {
   function handleCardClick(index) {
     setSelectedCardIndex(selectedCardIndex === index ? -1 : index);
   }
-
+  
   return (
     <>
       <motion.div
@@ -336,7 +341,12 @@ const Skills = (props) => {
           {/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ BackEnd tools ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/}
 
           {/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Certifications ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/}
+          {/* <Accordion.Item eventKey="2" className={activeAccordionItem === "2" ? "" : "not-collapsed"}> */}
           <Accordion.Item eventKey="2">
+
+
+          {/* <button type="button" aria-expanded="false" class="accordion-button collapsed">CERTIFICATES<img class="certsImg" src="https://www.svgrepo.com/show/263184/graduation-mortarboard.svg" alt="Certifications"></button> */}
+          {/* <button type="button" aria-expanded="true" class="accordion-button">CERTIFICATES<img class="certsImg" src="https://www.svgrepo.com/show/263184/graduation-mortarboard.svg" alt="Certifications"></button> */}
             {/* <ScrollToTop /> */}
             <Accordion.Header className="texts">
               {t("skills.certificates")}
@@ -347,7 +357,7 @@ const Skills = (props) => {
               />
             </Accordion.Header>
 
-            <Accordion.Body>
+            <Accordion.Body >
               <CertificationsPdf />
               {/* <CertsList/> */}
             </Accordion.Body>

@@ -259,7 +259,7 @@
 }
 
 .academic {
-  color: blue;
+  color: rgb(0, 38, 255);
 }
 
 .development {
@@ -268,6 +268,16 @@
 
 .red {
   color: red;
+}
+.school{
+  color: #2e2d28;
+  font-weight:  bold;
+  /* text-shadow: 1px 1px 3px #000000; */
+}
+
+.asterisc{
+  color: #000000;
+  font-weight:  bold;
 }
 
 .modalMoreDown {

@@ -1,18 +1,19 @@
 import React, { useState } from "react";
 import { Tooltip as ReactTooltip } from "react-tooltip";
+import { Link } from "react-router-dom";
 import CheckBox from "./CheckBox";
 import { useTranslation } from "react-i18next";
 import useSound from "../../context/hook/useSound";
+
 import SoundClick from "../../Components/Click/interface.mp3";
-import "./Projects-min.css";
+import "./Projects.css";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-
-
 
 function ModalItem({ props, ...project }) {
   const [t] = useTranslation("global");
   const playSound = useSound(SoundClick);
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -20,8 +21,6 @@ function ModalItem({ props, ...project }) {
 
   return (
     <>
-     
-     
       <Button className="stackBtn text-uppercase" onClick={handleShow}>
         {/* VER TECH STACK */}
         {t("myProjects.seeStack")}
@@ -43,6 +42,18 @@ function ModalItem({ props, ...project }) {
         </Modal.Header>
         <Modal.Body>
           <p className="textDescIcons ">{t(`${project.desc}`)}</p>
+          
+          {project.linkSchool && (
+            // {t(`${project.linkSchool}`)}
+            <>
+              <p className="school"><span className="asterisc">*</span>{t(`${project.linkSchool}`)}
+           <br />
+            <Link to="/skills">{t(`${project.seeCert}`)}</Link>
+            </p>
+            </>
+          )}
+       
+
           <hr />
           <h3 className="textInIcons">
             {/* Stack I Used */}

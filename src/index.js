@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { I18nextProvider } from "react-i18next";
 import MouseContextProvider from "../src/context/MouseContextProvider";
+
+
 import { Worker } from "@react-pdf-viewer/core";
 import i18next from "i18next";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -30,7 +32,9 @@ i18next.init({
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode >
+  
     <MouseContextProvider>
+     
       <I18nextProvider i18n={i18next}>
         {/* <CursorStars /> */}
         <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
@@ -38,6 +42,8 @@ root.render(
           <App />
         </Worker>
       </I18nextProvider>
+     
     </MouseContextProvider>
+  
   </React.StrictMode>
 );

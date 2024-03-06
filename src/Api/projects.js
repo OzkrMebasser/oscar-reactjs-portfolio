@@ -17,7 +17,17 @@ const myProjects = {
   //id.6 CLEAN AID PLUS
   id_6_project_name: "myProjects.id_6.project_name",
   id_6_desc: "myProjects.id_6.desc",
+   //id.7 ACADEMLO LIBRARY
+  id_7_project_name: "myProjects.id_7.project_name",
+  id_7_desc: "myProjects.id_7.desc",
+   //id.8 AGENCIA DE TOURS
+   id_8_project_name: "myProjects.id_8.project_name",
+   id_8_desc: "myProjects.id_8.desc",
+   id_8_link_to_school: "myProjects.id_8.aliasInstitution",
+   id_8_seeCert: "myProjects.id_8.seeCert"
+   
 };
+
 export const projects = [
   //id.1 MY PORTOFOLIO
   {
@@ -317,14 +327,15 @@ export const projects = [
   //id.7 ACADEMLO LIBRARY
   {
     id: 7,
-    project_name: "ACADEMLO's LIBRARY",
+    project_name: `${myProjects.id_7_project_name}`,
     src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2F7.academloslibrary.png?alt=media&token=a6e98d82-f5c9-4dd3-8640-5a310bdacf10",
     alt: "ACADEMLO's LIBRARY",
-    desc: "Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta acconsectetur ac, vestibulum at eros.",
+    desc: `${myProjects.id_7_desc}`,
     href: "https://academlo-library-system-v2.onrender.com/",
 
     //Deployment section
-
+    deployed: true,
+    type: "academic",
     //Vercel
     deploy_icon_1:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Frenderlogo.png?alt=media&token=fdad5cbe-e801-401b-9c88-e4f4b908e03a",
@@ -356,4 +367,49 @@ export const projects = [
 
    
   },
+  //id.8 TOUR AGENCY ECOMMMERCE
+    {
+      id: 8 ,
+      project_name: `${myProjects.id_8_project_name}`,
+      src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2F7.academloslibrary.png?alt=media&token=a6e98d82-f5c9-4dd3-8640-5a310bdacf10",
+      alt: "TOUR AGENCY ECOMMMERCE",
+      desc: `${myProjects.id_8_desc}`,
+      href: "https://oscar-ecommerce-context-reducer.netlify.app/",
+  
+      //Deployment section
+      deployed: true,
+      linkSchool: `${myProjects.id_8_link_to_school}`,
+      seeCert:`${myProjects.id_8_seeCert}`,
+      type: "academic",
+      //Vercel
+      deploy_icon_1:
+        "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Frenderlogo.png?alt=media&token=fdad5cbe-e801-401b-9c88-e4f4b908e03a",
+      deploy_name_1: "RENDER",
+      // git hub repo
+      git_icon: "https://www.svgrepo.com/show/217753/github.svg",
+      git_url: "https://github.com/OzkrMebasser/academlo-library-system-v2",
+      git_name: "Git repository",
+      www_icon:
+        "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Finternet-www-svgrepo-com.svg?alt=media&token=49e3d743-fa07-4bdc-879e-0e99c87df52e",
+      www_site: "https://academlo-library-system-v2.onrender.com/",
+  
+      tech_1_name: "HTML-5",
+      tech_2_name: "BOOTSTRAP",
+      tech_3_name: "PYTHON",
+      tech_4_name: "DJANGO",
+      tech_5_name: "POSTGRESQL",
+  
+      tech_1_icon:
+        "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/html-svgrepo-com.svg?alt=media&token=e8fcd17b-c890-4418-b058-e274e446bfd9",
+      tech_2_icon:
+        "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fbootstrap.svg.svg?alt=media&token=d2cd69d3-f464-4646-8108-5fb9be6c3392",
+      tech_3_icon:
+        "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fpython-svgrepo-com.svg?alt=media&token=dd35c257-b994-4350-8fb0-9226eb25e748",
+      tech_4_icon:
+        "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fdjango-svgrepo-com.svg?alt=media&token=13b31f65-df6d-4986-84ea-2d6abd0cc8d2",
+      tech_5_icon:
+        "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fpostgresql-svgrepo-com%20(1).svg?alt=media&token=8294cc05-91ae-49c4-8418-d531fc8ca0b7",
+  
+     
+    },
 ];
