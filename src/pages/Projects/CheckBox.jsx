@@ -32,7 +32,7 @@ function CheckBox({ checked, onChecked, projectType }) {
     case "practice":
       label = "PRACTICE";
       icon = <TbTargetArrow />;
-      typeClass = "blue";
+      typeClass = "practice";
       break;
     default:
       label = "OFFLINE";

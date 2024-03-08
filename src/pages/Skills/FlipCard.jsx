@@ -23,7 +23,6 @@ const FlipCard = ({ frontImage, backImage, title, description }) => {
           
               <MdSwipeLeft className="flip-cardSkills-icon"/>
           
-            {/* <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" className="flip-cardSkills-img" /> */}
           </div>
         </div>
         <div

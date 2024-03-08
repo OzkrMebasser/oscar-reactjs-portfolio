@@ -57,10 +57,9 @@
 }
 
 .inner-img:hover {
-  transform: scale(0.9);
+  transform: scale(0.95);
   border-radius: 10px;
-  opacity: calc(0.9);
-  filter: blur(1px);
+
 }
 
 /* Arrows*/
@@ -269,8 +268,8 @@
 .red {
   color: red;
 }
-.school{
-  color: #2e2d28;
+.practice{
+  color: #ff6c0b;
   font-weight:  bold;
   /* text-shadow: 1px 1px 3px #000000; */
 }
@@ -367,11 +366,11 @@
     transform: scale(0.9);
     border-radius: 10px;
     opacity: calc(0.9);
-    filter: blur(1px);
+    /* filter: blur(1px); */
   }
 
   .stackBtn {
-    width: 70vw;
+    width: 100%;
 
     background-color: #d4af37;
     color: #000;

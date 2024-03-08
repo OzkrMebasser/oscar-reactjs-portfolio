@@ -48,7 +48,7 @@ const Projects = ({ props }) => {
           {projects.map((project, index) => (
             <div className=" text-center " key={index}>
               <p className="projectName">
-                {index + 1} {t(`${project.project_name}`)}{" "}
+                {index + 1} - {t(`${project.project_name}`)}{" "}
               </p>
 
               <a href={project.href} rel="noreferrer" target="_blank">

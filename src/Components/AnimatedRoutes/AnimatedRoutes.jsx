@@ -6,8 +6,8 @@ import About from "../../pages/About/About";
 import Contact from "../../pages/Contact/Contact";
 import Home from "../../pages/Home/Home";
 import Skills from "../../pages/Skills/Skills";
-import Projects from "../../pages/Projects/Projects";
-// import Proyectos from '../../pages/Projects/Proyectos';
+import ProjectsB from "../../pages/Projects/ProjectsB";
+import OtherProjects from '../../pages/OtherProjects/OtherProjects';
 
 import { AnimatePresence } from "framer-motion";
 
@@ -21,8 +21,8 @@ const AnimatedRoutes = () => {
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="skills" element={<Skills />} />
-        <Route path="projects" element={<Projects />} />
-        {/* <Route path="projects" element={<Proyectos />} /> */}
+        <Route path="projects" element={<ProjectsB />} />
+        <Route path="other-projects" element={<OtherProjects />} />
         <Route path="*" element={<Navigate replace to="/" />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
