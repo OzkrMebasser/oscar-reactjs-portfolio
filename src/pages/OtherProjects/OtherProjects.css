@@ -80,6 +80,15 @@ body {
   transform: scale(1.5);
 
 }
+
+.divDesc{
+  width: auto;
+  height: 115px;
+  overflow: auto;
+  text-align: justify;
+  padding: 10px;
+  margin-bottom: 10px;
+}
 .stacks {
   padding: 0 20px;
 }

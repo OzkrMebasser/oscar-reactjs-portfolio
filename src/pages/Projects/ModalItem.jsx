@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Tooltip as ReactTooltip } from "react-tooltip";
+import { MdOutlineQueuePlayNext } from "react-icons/md";
+
 import { Link } from "react-router-dom";
 import CheckBox from "./CheckBox";
 import { useTranslation } from "react-i18next";
@@ -42,17 +44,18 @@ function ModalItem({ props, ...project }) {
         </Modal.Header>
         <Modal.Body>
           <p className="textDescIcons ">{t(`${project.desc}`)}</p>
-          
+
           {project.linkSchool && (
             // {t(`${project.linkSchool}`)}
             <>
-              <p className="school"><span className="asterisc">*</span>{t(`${project.linkSchool}`)}
-           <br />
-            <Link to="/skills">{t(`${project.seeCert}`)}</Link>
-            </p>
+              <p className="school">
+                <span className="asterisc">*</span>
+                {t(`${project.linkSchool}`)}
+                <br />
+                <Link to="/skills">{t(`${project.seeCert}`)}</Link>
+              </p>
             </>
           )}
-       
 
           <hr />
           <h3 className="textInIcons">
@@ -138,60 +141,95 @@ function ModalItem({ props, ...project }) {
                 />
               </span>
             )}
+            {project.tech_8_icon && project.tech_8_name && (
+              <span
+                id={`${project.tech_8_name}`}
+                data-tooltip-content={`${project.tech_8_name}`}
+              >
+                <img
+                  className="iconSize"
+                  src={project.tech_8_icon}
+                  alt={project.tech_8_name}
+                />
+              </span>
+            )}
           </div>
-          <hr />
-
+          {/* <hr /> */}
+          {project.git_url || project.www_site ? <hr /> : null}
           {/* Deployment */}
-          <span> {t("myProjects.deployed")}</span>
+          {/* <span> {t("myProjects.deployed")}</span> */}
+          {project.git_url || project.www_site ? (
+            <span> {t("myProjects.deployed")}</span>
+          ) : null}
           {/* <span>
             <CheckBox checked={project.deployed} projectType={project.type} />
             </span> */}
 
-          <div className="iconsDeploy">
-            {/*Deployed in*/ " "}
-            <span
-              id={`${project.deploy_name_1}`}
-              data-tooltip-content={`${project.deploy_name_1}`}
-            >
-              <img
-                className="iconSize"
-                src={project.deploy_icon_1}
-                alt={project.deploy_name_1}
-              />
-            </span>
-            {/*Git hub repo*/ " "}
-            <span
-              // style={{ marginLeft: "56px" }}
-              id="repo"
-              data-tooltip-content={`${t("myProjects.githubLink")}`}
-            >
-              <a
-                href={project.git_url}
-                rel="nofollow noopener noreferrer"
-                target="_blank"
-              >
-                <img
-                  className="iconSize"
-                  src={project.git_icon}
-                  alt={project.git_alt}
-                />
-              </a>
-            </span>
-            {/*Web */ " "}
-
-            <span
-              id="www"
-              data-tooltip-content={`${t("myProjects.websiteLink")}`}
-            >
-              <a
-                href={project.www_site}
-                rel="nofollow noopener noreferrer"
-                target="_blank"
-              >
-                <img className="iconSize" src={project.www_icon} alt="" />
-              </a>
-            </span>
-          </div>
+          {project.git_url || project.www_site ? (
+            <div className="iconsDeploy">
+              {/*Deployed in*/ " "}
+              {project.deploy_name_1 && (
+                <span
+                  id={`${project.deploy_name_1}`}
+                  data-tooltip-content={`${project.deploy_name_1}`}
+                >
+                  <img
+                    className="iconSize"
+                    src={project.deploy_icon_1}
+                    alt={project.deploy_name_1}
+                  />
+                </span>
+              )}
+              {/*Git hub repo*/ " "}
+              {project.git_url && (
+                <span
+                  // style={{ marginLeft: "56px" }}
+                  id="repo"
+                  data-tooltip-content={`${t("myProjects.githubLink")}`}
+                >
+                  <a
+                    href={project.git_url}
+                    rel="nofollow noopener noreferrer"
+                    target="_blank"
+                  >
+                    <img
+                      className="iconSize"
+                      src={project.git_icon}
+                      alt={project.git_alt}
+                    />
+                  </a>
+                </span>
+              )}
+              {/*Web */ " "}
+              {project.www_site && (
+                <span
+                  id="www"
+                  data-tooltip-content={`${t("myProjects.websiteLink")}`}
+                >
+                  <a
+                    href={project.www_site}
+                    rel="nofollow noopener noreferrer"
+                    target="_blank"
+                  >
+                    <img className="iconSize" src={project.www_icon} alt="" />
+                  </a>
+                </span>
+              )}
+            </div>
+          ) : (
+            <div className="seeOtherProj">
+              <Link to="/other-projects">
+                <Button
+                  className="seeOtherProjBtn text-uppercase"
+                  onClick={handleClose}
+                >
+                  {t("myProjects.moreProjects")}
+                  {/* SEE PROYECTS */}
+                  <MdOutlineQueuePlayNext className="moreProj" />
+                </Button>
+              </Link>
+            </div>
+          )}
 
           {/*Tooltips config*/}
           <ReactTooltip anchorId={`${project.deploy_name_1}`} />
@@ -209,6 +247,9 @@ function ModalItem({ props, ...project }) {
           )}
           {project.tech_7_icon && project.tech_7_name && (
             <ReactTooltip anchorId={`${project.tech_7_name}`} />
+          )}
+          {project.tech_8_icon && project.tech_8_name && (
+            <ReactTooltip anchorId={`${project.tech_8_name}`} />
           )}
         </Modal.Body>
         <Modal.Footer>

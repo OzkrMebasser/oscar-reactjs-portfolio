@@ -475,6 +475,7 @@
     "githubLink": "Ver codigo en GitHub",
     "websiteLink": "Ir al sitio web..." ,
     "goBack": "REGRESAR",
+    "moreProjects": "VER PROYECTOS",
     "aliasInstitution": "ACADEMLO - (Escuela de Tecnología y Ciencias de la Computación)",
     "seeCert" : "VER CERTIFICADO",
     "id_1": {
@@ -507,11 +508,43 @@
     },
     "id_8":{
       "project_name": "AGENCIA DE TOURS EN LINEA",
-      "desc": "PARA EL PROYECTO FINAL DEL MÓDULO DE DESARROLLO FRONT-END CON REACT EN *ACADEMLO. DESARROLLÉ UN MOCKUP DE COMERCIO ELECTRÓNICO. EN ESTE PROYECTO, UTILICÉ REACT, REACT-ROUTER Y CONTEXT PARA EL ESTADO GLOBAL, DEL CARRITO, FAVORITOS, ETC"
+      "desc": "PARA EL PROYECTO FINAL DEL MÓDULO DE DESARROLLO FRONT-END CON REACT EN *ACADEMLO. DESARROLLÉ UN MOCKUP DE COMERCIO ELECTRÓNICO. EN ESTE PROYECTO, UTILICÉ REACT, REACT-ROUTER Y CONTEXT PARA EL ESTADO GLOBAL DEL CARRITO, FAVORITOS, ETC"
 
+    },
+    "id_9":{
+      "project_name": "OTROS PROYECTOS",
+      "desc": "EN ESTA SECCIÓN, MUESTRO UNA VARIEDAD DE PROYECTOS INCLUYENDO DESARROLLO WEB, APLICACIONES BACKEND Y JUEGOS, DEMOSTRANDO MI EXPERIENCIA CON VARIAS TECNOLOGÍAS Y FRAMEWORKS. ALGUNOS DE ESTOS PROYECTOS SON TAREAS ESCOLARES DE *ACADEMLO , MIENTRAS QUE OTROS LOS LLEVE A CABO CON EL FIN DE MEJORAR MIS HABILIDADES DE PROGRAMACIÓN",
+      "aliasInstitución": "ACADEMLO - (Escuela de Tecnología y Ciencias de la Computación)",
+      "seeCerts": "VER CERTIFICADOS"
     }
+
+  },
+  "myOtherProjects": {
+    "seeStack": "VER TECNOLOGÍAS",
+    "stackIused": "TECNOLOGÍAS QUE UTILICE",
+    "deployed": "Despliegue",
+    "online": "en linea",
+    "dev": "EN DESARROLLO",
+    "offline": "Offline",
+    "githubLink": "Ver codigo en GitHub",
+    "websiteLink": "Ir al sitio web..." ,
+    "goBack": "REGRESAR",
+    "aliasInstitutionName": "ACADEMLO",
+    "aliasInstitutionTitle": "(Escuela de Tecnología y Ciencias de la Computación)",
+    "seeCert" : "VER CERTIFICADO",
+    "id_1": {
+      "project_name": "APP DEL CLIMA",
+      "desc": "ESTE PROYECTO FUE UNA TAREA DE UNIDAD, EN EL MÓDULO DE DESARROLLO FRONT-END CON REACT EN *ACADEMLO. EN ESTA ASIGNACIÓN, SE NOS SOLICITÓ CONECTAR NUESTRA APLICACIÓN A LA API DE OPENWEATHERMAP UTILIZANDO LA BIBLIOTECA AXIOS, Y RENDERIZAR INFORMACIÓN DE CIUDADES EN LA INTERFAZ."
+    },
+    "id_2": {
+      "project_name": "USUARIOS DE GITHUB",
+      "desc": "ESTE PROYECTO FUE UNA TAREA DE UNIDAD, EN EL MÓDULO DE DESARROLLO FRONT-END CON REACT EN *ACADEMLO. EN ESTA ASIGNACIÓN, SE NOS SOLICITÓ CONECTAR NUESTRA APLICACIÓN A LA API DE GITHUB/USERS UTILIZANDO FETCH, Y LUEGO RENDERIZAR LA INFORMACIÓN DEL USUARIO BUSCADO EN LA INTERFAZ"
+    }
+  
+  
     
   },
+
 
   "contact": {
     "alert": "Hola, tu correo ha sido enviado con éxito, me pondré en contacto contigo lo antes posible, ¡que tengas un buen día!",

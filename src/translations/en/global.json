@@ -477,6 +477,7 @@
     "githubLink": "View code on GitHub",
     "websiteLink": "Go to website..." ,
     "goBack": "GO BACK",
+    "moreProjects": "SEE PROJECTS",
     "aliasInstitution": "ACADEMLO - (School of Technology and Computer Science)",
     "seeCert": "SEE CERTIFICATE",
     "id_1": {
@@ -512,8 +513,39 @@
       "desc": "FOR THE FINAL PROJECT OF THE FRONT-END DEVELOPMENT MODULE WITH REACT AT *ACADEMLO. I DEVELOPED AN E-COMMERCE MOCKUP. IN THIS PROJECT, I USED REACT, REACT-ROUTER, AND CONTEXT FOR THE GLOBAL STATE, INCLUDING THE SHOPPING CART, FAVORITES, ETC.",
       "aliasInstitution": "ACADEMLO - (School of Technology and Computer Science)",
       "seeCert": "SEE CERTIFICATE"
+    },
+    "id_9":{
+      "project_name": "OTHER PROJECTS",
+      "desc": "IN THIS SECTION, I SHOWCASE A VARIETY OF PROJECTS INCLUDING WEB DEVELOPMENT, BACKEND APPLICATIONS, AND GAMES, DEMONSTRATING MY EXPERIENCE WITH VARIOUS TECHNOLOGIES AND FRAMEWORKS. SOME OF THESE PROJECTS ARE ACADEMLO'S SCHOOL ASSIGNMENTS, WHILE OTHERS WERE UNDERTAKEN WITH THE PURPOSE OF IMPROVING MY PROGRAMMING SKILLS.",
+      "aliasInstitution": "ACADEMLO - (School of Technology and Computer Science)",
+      "seeCerts": "SEE CERTIFICATES"
     }
   },
+
+  "myOtherProjects": {
+    "seeStack": "SEE TECH STACK",
+    "stackIused": "STACK I USED",
+    "deployed": "Deployment",
+    "online": "Online",
+    "dev": "DEVELOPMENT",
+    "offline": "Offline",
+    "githubLink": "View code on GitHub",
+    "websiteLink": "Go to website..." ,
+    "goBack": "GO BACK",
+    "aliasInstitutionName": "ACADEMLO",
+    "aliasInstitutionTitle": "(School of Technology and Computer Science)",
+    "seeCert": "SEE CERTIFICATE",
+    "id_1": {
+      "project_name": "APP DEL CLIMA",
+      "desc": "THIS PROJECT WAS A UNIT ASSIGNMENT, IN FRONT-END DEVELOPMENT MODULE WITH REACT IN *ACADEMLO. IN THIS ASSIGNMENT, WE WERE ASKED TO CONNECT OUR APPLICATION TO THE OPENWEATHERMAP API USING THE AXIOS LIBRARY, AND RENDER CITY INFORMATION IN THE INTERFACE."
+    },
+    "id_2": {
+      "project_name": "GITHUB USERS",
+      "desc": "THIS PROJECT WAS A UNIT ASSIGNMENT, IN FRONT-END DEVELOPMENT MODULE WITH REACT IN *ACADEMLO. IN THIS ASSIGNMENT, WE WERE ASKED TO CONNECT OUR APPLICATION TO THE GITHUB/USERS API USING FETCH, AND THEN RENDER THE FETCHED USER INFORMATION IN THE INTERFACE"
+    }
+    
+  },
+
 
   "contact": {
     "alert": "Hi, your email has been sent with success, I'll be in touch with you asap, have a great day!",

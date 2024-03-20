@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import useSound from "../../context/hook/useSound";
 import SoundClick from "../../Components/Click/interface.mp3";
 import ModalItem from "./ModalItem";
@@ -43,18 +44,21 @@ const Projects = ({ props }) => {
                   <CheckBox checked={proj.deployed} projectType={proj.type} />
                 </span>
               </div> */}
-              <h3 className="card-proj-title"> {id + 1} - {t(`${proj.project_name}`)}</h3>
+              <h3 className="card-proj-title">
+                {" "}
+                {id + 1} - {t(`${proj.project_name}`)}
+              </h3>
               <figure className="figure-project ">
                 {/* <img className="img-project" src={proj.src} alt={proj.alt} /> */}
                 {/* <a href={proj.href} rel="noreferrer" target="_blank"> */}
-                  <img className="inner-img" src={proj.src} alt={proj.alt} />
+                <img className="inner-img" src={proj.src} alt={proj.alt} />
                 {/* </a> */}
               </figure>
               <article className="article-card">
                 {/* 
                 <p className="desc-project">{t(`${proj.desc}`)}</p> */}
               </article>
-            
+
               <div className="btn-stack-center">
                 <ModalItem {...proj} />
               </div>
@@ -92,13 +96,25 @@ const Projects = ({ props }) => {
                   <p className="projectName">
                     {index + 1} - {t(`${project.project_name}`)}
                   </p>
-                  <a href={project.href} rel="noreferrer" target="_blank">
-                    <img
-                      className="inner-img"
-                      src={project.src}
-                      alt={project.alt}
-                    />
-                  </a>
+
+                  {project.href === "/other-projects" ? (
+                    <Link to="/other-projects">
+                      <img
+                        className="inner-img"
+                        src={project.src}
+                        alt={project.alt}
+                      />
+                    </Link>
+                  ) : (
+                    <a href={project.href} rel="noreferrer" target="_blank">
+                      <img
+                        className="inner-img"
+                        src={project.src}
+                        alt={project.alt}
+                      />
+                    </a>
+                  )}
+
                   <br />
                   <br />
                   <ModalItem {...project} />

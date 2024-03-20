@@ -196,6 +196,39 @@
   transform: rotate(360deg);
 }
 
+.seeOtherProj{
+/* background-color: red; */
+justify-content: center;
+display: flex;
+margin-top: 10px;
+}
+
+.moreProj{
+  font-size: 1.4rem;
+  margin: 0 0 4px 10px;
+
+}
+
+.seeOtherProjBtn {
+  width: auto;
+  background-color: #000;
+  color: #d4af37;
+  font-size: 1.2rem;
+  border: currentColor;
+  font-family: "Boogaloo", cursive;
+  text-decoration-style: dotted;
+}
+.seeOtherProjBtn:hover {
+
+  background-color: #d4af37;
+  color: #000;
+ 
+  font-size: 1.2rem;
+  border: 1px solid #d4af37;
+  transform: scale(0.95);
+  transition: 200ms;
+}
+
 .iconSize {
   transition: all 100ms ease-in-out;
   width: 40px;
