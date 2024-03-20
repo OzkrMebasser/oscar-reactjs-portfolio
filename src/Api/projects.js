@@ -32,9 +32,11 @@ const myProjects = {
   seeCert: "myProjects.seeCert",
 };
 
-
-
-export const projects = [
+// '''
+// DEV NO OLVIDAR CAMBIAR LOS NOMBRES DE LOS ARRAYS 1 == projects,  2== otherProjects
+// '''
+export const otherProjects = [
+  
   //id.1 MY PORTOFOLIO
   {
     id: 1,
@@ -485,7 +487,7 @@ const myOtherProjects = {
   id_2_project_name: "myOtherProjects.id_2.project_name",
   id_2_desc: "myOtherProjects.id_2.desc",
 }
-export const otherProjects = [
+export const projects = [
   //id.1 WEATHER APP
   {
     id: 1,
@@ -500,7 +502,7 @@ export const otherProjects = [
     //Vercel
     deploy_icon_1:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fvercel-icon-svgrepo-com.svg?alt=media&token=d8d668a2-26f0-4103-a3ae-99e6d3c31103",
-    deploy_name: "Vercel",
+      deploy_name_1: "Vercel",
     // git hub repo
     git_icon: "https://www.svgrepo.com/show/217753/github.svg",
     git_url: "https://github.com/OzkrMebasser/ozkr-weather-api",
@@ -553,7 +555,7 @@ export const otherProjects = [
     //Vercel
     deploy_icon_1:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fvercel-icon-svgrepo-com.svg?alt=media&token=d8d668a2-26f0-4103-a3ae-99e6d3c31103",
-    deploy_name: "Vercel",
+      deploy_name_1: "Vercel",
     // git hub repo
     git_icon: "https://www.svgrepo.com/show/217753/github.svg",
     git_url: "https://github.com/OzkrMebasser/GithubUserOskr",
@@ -594,12 +596,12 @@ export const otherProjects = [
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fbootstrap.svg.svg?alt=media&token=d2cd69d3-f464-4646-8108-5fb9be6c3392",
     tech_6_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fi18next.png?alt=media&token=84de9dec-afef-41a0-a233-7701bd1e5e27",
-    deploy_names: ["Vercel"],
+  
   },
   {
     id: 3,
     // project_name: `${myProjects.id_1_project_name}`,
-    project_name: `GALLERIA`,
+    project_name: `GALLERIA buscador de fotos`,
     src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FotherProjects%2F11.galleriaunsplashapi.png?alt=media&token=ac403234-439a-4aab-a852-de17334ec704",
     alt: "Oscar Moreno Portfolio",
     desc: `O FINAL DEL MÓDULO DE DESARROLLO FRONT-END CON REACT EN *ACADEMLO. DESARROLLÉ UN MOCKUP DE COMERCIO ELECTRÓNICO. EN ESTE PROYECTO, UTILICÉ REACT, REACT-ROUTER Y CONTEXT PARA EL ESTADO GLOBAL, DEL CARRITO, FAVORITOS, ETC"`,
@@ -609,7 +611,7 @@ export const otherProjects = [
     //Vercel
     deploy_icon_1:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fvercel-icon-svgrepo-com.svg?alt=media&token=d8d668a2-26f0-4103-a3ae-99e6d3c31103",
-    deploy_name: "Netlify",
+    deploy_name_1: "Netlify",
     // git hub repo
     git_icon: "https://www.svgrepo.com/show/217753/github.svg",
     git_url: "https://github.com/OzkrMebasser/photos-galeria",
@@ -628,7 +630,7 @@ export const otherProjects = [
     tech_6_name: "i18next",
 
     deployed: true,
-    type: "academic",
+    type: "practice",
 
     /*Icons images*/
 

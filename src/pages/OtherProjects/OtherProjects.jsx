@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import useSound from "../../context/hook/useSound";
 import SoundClick from "../../Components/Click/interface.mp3";
 import { Link } from "react-router-dom";
+import Loading from "./Loading";
 
 import "../Projects/Projects.css";
 import "./OtherProjects.css";
@@ -14,7 +15,9 @@ const OtherProjects = () => {
   const [t] = useTranslation("global");
   const playSound = useSound(SoundClick);
   const [projectsWithTechNames, setProjectsWithTechNames] = useState([]);
-
+  const [selectedType, setSelectedType] = useState("all");
+  const [numDisplayed, setNumDisplayed] = useState(6);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     function getTechNames(project) {
@@ -42,10 +45,54 @@ const OtherProjects = () => {
     setProjectsWithTechNames(projectsWithNames);
   }, []);
 
+  const handleSelectChange = (e) => {
+    setSelectedType(e.target.value);
+  };
+
+  const filteredProjects = projectsWithTechNames.filter((project) => {
+    if (selectedType === "all") {
+      return true;
+    } else {
+      return project.type === selectedType;
+    }
+  });
+
+  const handleScroll = () => {
+    const scrolledToBottom = window.pageYOffset + window.innerHeight >= document.documentElement.scrollHeight;
+    const scrolledToTop = window.pageYOffset === 0;
+  
+    if (scrolledToBottom && numDisplayed < filteredProjects.length) {
+      setIsLoading(true);
+      setTimeout(() => {
+        setNumDisplayed(numDisplayed + 6);
+        setIsLoading(false);
+      }, 1000);
+    }
+  
+    if (scrolledToTop) {
+      setNumDisplayed(6); 
+    }
+  };
+  
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [numDisplayed, filteredProjects]);
+
   return (
     <>
+      <select style={{marginTop: "100px"}} value={selectedType} onChange={handleSelectChange}>
+        <option value="all">All</option>
+        <option value="online">{t("myProjects.online")}</option>
+        <option value="academic">Academic</option>
+        <option value="development">{t("myProjects.dev")}</option>
+        <option value="practice">Practice</option>
+        <option value="offline">Offline</option>
+      </select>
       <main className="main-container">
-        {projectsWithTechNames.map((project, index) => (
+        {filteredProjects.slice(0, numDisplayed).map((project, index) => (
           <section className="section-cards" key={index}>
             <div className="status-project">
               <span className="blink-soft ">
@@ -118,12 +165,12 @@ const OtherProjects = () => {
               
               <span
                  id={`deploy-${index}`}
-                  data-tooltip-content={project.deploy_name}
+                  data-tooltip-content={project.deploy_name_1}
                 >
                   <img
                     className="icon-stack"
                     src={project.deploy_icon_1}
-                    alt={project.deploy_name}
+                    alt={project.deploy_name_1}
                   />
                 </span>
            
@@ -172,6 +219,7 @@ const OtherProjects = () => {
             </div>
           </section>
         ))}
+        {isLoading && numDisplayed < filteredProjects.length && <Loading />}
       </main>
     </>
   );
