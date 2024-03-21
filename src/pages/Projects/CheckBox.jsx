@@ -37,7 +37,7 @@ function CheckBox({ checked, onChecked, projectType }) {
     default:
       label = "OFFLINE";
       icon = <RiEyeOffLine />;
-      typeClass = "blue"; // Puedes cambiar a la clase que desees
+      typeClass = "blue"; 
   }
 
   return (

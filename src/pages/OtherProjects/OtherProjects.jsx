@@ -5,8 +5,9 @@ import { Tooltip as MyTooltip } from "react-tooltip";
 import { useTranslation } from "react-i18next";
 import useSound from "../../context/hook/useSound";
 import SoundClick from "../../Components/Click/interface.mp3";
+import ScrollToTop from "../../Components/GoUpButton/ScrollToTop";
 import { Link } from "react-router-dom";
-import Loading from "./Loading";
+import LoadingScrolling from "../../Components/Loader/LoadingScrolling"
 
 import "../Projects/Projects.css";
 import "./OtherProjects.css";
@@ -66,7 +67,7 @@ const OtherProjects = () => {
       setTimeout(() => {
         setNumDisplayed(numDisplayed + 6);
         setIsLoading(false);
-      }, 1000);
+      }, 1500);
     }
   
     if (scrolledToTop) {
@@ -83,15 +84,31 @@ const OtherProjects = () => {
 
   return (
     <>
-      <select style={{marginTop: "100px"}} value={selectedType} onChange={handleSelectChange}>
-        <option value="all">All</option>
-        <option value="online">{t("myProjects.online")}</option>
-        <option value="academic">Academic</option>
-        <option value="development">{t("myProjects.dev")}</option>
-        <option value="practice">Practice</option>
-        <option value="offline">Offline</option>
-      </select>
+    
+      <header className="select-type">
+  
+      <select className="select-input-types uppercase" value={selectedType} onChange={handleSelectChange}>
+          <option value="all" disabled>Selecciona un tipo de proyecto</option>
+          <option value="online">{t("myProjects.online")}</option>
+          <option value="academic">Academic</option>
+          <option value="development">{t("myProjects.dev")}</option>
+          <option value="practice">Practice</option>
+          <option value="offline">Offline</option>
+        </select>
+        <button
+          className="select-all-btn"
+          onClick={() => {
+            playSound();
+            setSelectedType("all");
+          }}
+        >
+          Ver todos los proyectos
+          {/* {t("skills.viewAllCats")} */}
+        </button>
+      </header>
+      <ScrollToTop />
       <main className="main-container">
+     
         {filteredProjects.slice(0, numDisplayed).map((project, index) => (
           <section className="section-cards" key={index}>
             <div className="status-project">
@@ -219,8 +236,9 @@ const OtherProjects = () => {
             </div>
           </section>
         ))}
-        {isLoading && numDisplayed < filteredProjects.length && <Loading />}
       </main>
+              {isLoading && numDisplayed < filteredProjects.length && (  <LoadingScrolling /> )}
+
     </>
   );
 };
