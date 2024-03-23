@@ -7,7 +7,7 @@
 body {
   background: hsl(0, 0%, 0%);
   font-size: 15px;
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 }
 
 /* CONTAINERS */
@@ -18,10 +18,13 @@ body {
   margin: auto;
   max-width: 1200px;
   padding: 30px;
+  text-transform: uppercase;
   /* background-color: red; */
 }
 
-
+.uppercase{
+text-transform: uppercase;
+}
 
 
 .select-type{

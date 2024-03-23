@@ -32,11 +32,7 @@ const myProjects = {
   seeCert: "myProjects.seeCert",
 };
 
-// '''
-// DEV NO OLVIDAR CAMBIAR LOS NOMBRES DE LOS ARRAYS 1 == projects,  2== otherProjects
-// '''
-export const otherProjects = [
-  
+export const projects = [
   //id.1 MY PORTOFOLIO
   {
     id: 1,
@@ -457,7 +453,7 @@ export const otherProjects = [
 
     tech_1_icon:
       "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/html-svgrepo-com.svg?alt=media&token=e8fcd17b-c890-4418-b058-e274e446bfd9",
-      tech_2_icon:
+    tech_2_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fcss-svgrepo-com.svg?alt=media&token=05933c42-aa37-4123-a959-dd7ace7fb4b8",
     tech_3_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fjs-svgrepo-com.svg?alt=media&token=c6b39548-7d54-4dfc-8720-5a500786edda",
@@ -465,20 +461,19 @@ export const otherProjects = [
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-1-logo-svgrepo-com.svg?alt=media&token=f690f37d-9457-4a0b-8378-16a7d426114f",
     tech_5_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fnodejs-1-logo-svgrepo-com.svg?alt=media&token=afa3c35d-425a-44d7-95bc-ca797548ba45",
-      tech_6_icon:
+    tech_6_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fnext-js-svgrepo-com.svg?alt=media&token=ac7b37d1-13b5-4c9e-8986-6f6eb1123f31",
-      tech_7_icon:
+    tech_7_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fpython-svgrepo-com.svg?alt=media&token=dd35c257-b994-4350-8fb0-9226eb25e748",
-      tech_8_icon:
+    tech_8_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fdjango-svgrepo-com.svg?alt=media&token=13b31f65-df6d-4986-84ea-2d6abd0cc8d2",
-    },
+  },
 ];
 
 const myOtherProjects = {
-
- aliasInstitutionName: "myOtherProjects.aliasInstitutionName",
- aliasInstitutionTitle: "myOtherProjects.aliasInstitutionTitle",
- seeCert: "myOtherProjects.seeCert",
+  aliasInstitutionName: "myOtherProjects.aliasInstitutionName",
+  aliasInstitutionTitle: "myOtherProjects.aliasInstitutionTitle",
+  seeCert: "myOtherProjects.seeCert",
 
   //id.1 WEATHER APP
   id_1_project_name: "myOtherProjects.id_1.project_name",
@@ -486,15 +481,21 @@ const myOtherProjects = {
   //id.2 GITHUB USERS
   id_2_project_name: "myOtherProjects.id_2.project_name",
   id_2_desc: "myOtherProjects.id_2.desc",
-}
-export const projects = [
+   //id.3 PHOTO GALLERY
+   id_3_project_name: "myOtherProjects.id_3.project_name",
+   id_3_desc: "myOtherProjects.id_3.desc",
+   //id.4 TO-DOS APP
+   id_4_project_name: "myOtherProjects.id_4.project_name",
+   id_4_desc: "myOtherProjects.id_4.desc",
+};
+export const otherProjects = [
   //id.1 WEATHER APP
   {
     id: 1,
     // project_name: `${myProjects.id_1_project_name}`,
     project_name: `${myOtherProjects.id_1_project_name}`,
     src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FotherProjects%2F9.weatherapp.png?alt=media&token=85a706ed-d084-4fad-b9fa-2d979e75f3f8",
-    alt:  "WEATHER APP",
+    alt: "WEATHER APP",
     desc: `${myOtherProjects.id_1_desc}`,
     href: "https://ozkr-weather-api.vercel.app/",
     //Deployment section
@@ -502,7 +503,7 @@ export const projects = [
     //Vercel
     deploy_icon_1:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fvercel-icon-svgrepo-com.svg?alt=media&token=d8d668a2-26f0-4103-a3ae-99e6d3c31103",
-      deploy_name_1: "Vercel",
+    deploy_name_1: "Vercel",
     // git hub repo
     git_icon: "https://www.svgrepo.com/show/217753/github.svg",
     git_url: "https://github.com/OzkrMebasser/ozkr-weather-api",
@@ -524,7 +525,7 @@ export const projects = [
 
     deployed: true,
     type: "academic",
-   
+
     /*Icons images*/
 
     tech_1_icon:
@@ -539,15 +540,14 @@ export const projects = [
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-router-svgrepo-com.svg?alt=media&token=75893829-0a4a-4df9-a8ed-27e47c6dbb65",
     tech_6_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Flogoaxios.svg?alt=media&token=fcc440c0-5b4d-41d9-a4a4-0c6582d9f11b",
-    
   },
-    //id.2 GITHUB USERS
+  //id.2 GITHUB USERS
   {
     id: 2,
     // project_name: `${myProjects.id_1_project_name}`,
     project_name: `${myOtherProjects.id_2_project_name}`,
     src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FotherProjects%2F10.githubusersapi.png?alt=media&token=2e51f521-2a59-4028-a675-bed0fe77ab67",
-    alt: "Oscar Moreno Portfolio",
+    alt: "github users",
     desc: `${myOtherProjects.id_2_desc}`,
     href: "https://github-user-oskr.vercel.app/",
     //Deployment section
@@ -555,7 +555,7 @@ export const projects = [
     //Vercel
     deploy_icon_1:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fvercel-icon-svgrepo-com.svg?alt=media&token=d8d668a2-26f0-4103-a3ae-99e6d3c31103",
-      deploy_name_1: "Vercel",
+    deploy_name_1: "Vercel",
     // git hub repo
     git_icon: "https://www.svgrepo.com/show/217753/github.svg",
     git_url: "https://github.com/OzkrMebasser/GithubUserOskr",
@@ -576,9 +576,6 @@ export const projects = [
     tech_5_name: "Tailwind",
     tech_6_name: "React Router",
 
-
-    
-
     deployed: true,
     type: "academic",
 
@@ -593,25 +590,24 @@ export const projects = [
     tech_4_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-1-logo-svgrepo-com.svg?alt=media&token=f690f37d-9457-4a0b-8378-16a7d426114f",
     tech_5_icon:
-      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fbootstrap.svg.svg?alt=media&token=d2cd69d3-f464-4646-8108-5fb9be6c3392",
+    "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Ftailwind-svgrepo-com.svg?alt=media&token=de41409e-f0e5-4784-96fa-524c7a31c626",
     tech_6_icon:
-      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fi18next.png?alt=media&token=84de9dec-afef-41a0-a233-7701bd1e5e27",
-  
+    "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-router-svgrepo-com.svg?alt=media&token=75893829-0a4a-4df9-a8ed-27e47c6dbb65",
   },
+  //id.3 PHOTO GALLERY
   {
     id: 3,
-    // project_name: `${myProjects.id_1_project_name}`,
-    project_name: `GALLERIA buscador de fotos`,
+    project_name: `${myOtherProjects.id_3_project_name}`,
     src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FotherProjects%2F11.galleriaunsplashapi.png?alt=media&token=ac403234-439a-4aab-a852-de17334ec704",
-    alt: "Oscar Moreno Portfolio",
-    desc: `O FINAL DEL MÓDULO DE DESARROLLO FRONT-END CON REACT EN *ACADEMLO. DESARROLLÉ UN MOCKUP DE COMERCIO ELECTRÓNICO. EN ESTE PROYECTO, UTILICÉ REACT, REACT-ROUTER Y CONTEXT PARA EL ESTADO GLOBAL, DEL CARRITO, FAVORITOS, ETC"`,
+    alt: "photo gallery",
+    desc: `${myOtherProjects.id_3_desc}`,
     href: "https://photos-galeria.vercel.app/",
     //Deployment section
 
     //Vercel
     deploy_icon_1:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fvercel-icon-svgrepo-com.svg?alt=media&token=d8d668a2-26f0-4103-a3ae-99e6d3c31103",
-    deploy_name_1: "Netlify",
+    deploy_name_1: "VERCEL",
     // git hub repo
     git_icon: "https://www.svgrepo.com/show/217753/github.svg",
     git_url: "https://github.com/OzkrMebasser/photos-galeria",
@@ -626,8 +622,8 @@ export const projects = [
     tech_2_name: "CSS-3",
     tech_3_name: "JavaScript",
     tech_4_name: "React Js",
-    tech_5_name: "Boostrap",
-    tech_6_name: "i18next",
+    tech_5_name: "Axios HTTP",
+  
 
     deployed: true,
     type: "practice",
@@ -643,9 +639,58 @@ export const projects = [
     tech_4_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-1-logo-svgrepo-com.svg?alt=media&token=f690f37d-9457-4a0b-8378-16a7d426114f",
     tech_5_icon:
-      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fbootstrap.svg.svg?alt=media&token=d2cd69d3-f464-4646-8108-5fb9be6c3392",
-    tech_6_icon:
-      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fi18next.png?alt=media&token=84de9dec-afef-41a0-a233-7701bd1e5e27",
-  
+    "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Flogoaxios.svg?alt=media&token=fcc440c0-5b4d-41d9-a4a4-0c6582d9f11b",
+    
   },
+  //id.4 TO-DOS APP
+    {
+      id: 4,
+      project_name: `${myOtherProjects.id_4_project_name}`,
+      src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FotherProjects%2F12.todosapp.png?alt=media&token=e2efe097-d805-4a7a-913f-0e1cbce9b505",
+      alt: "todos app",
+      desc: `${myOtherProjects.id_4_desc}`,
+      href: "https://to-do-pendings.netlify.app/",
+      //Deployment section
+  
+      //Vercel
+      deploy_icon_1:
+        "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fnetlify-svgrepo-com.svg?alt=media&token=2b403c92-7d50-45d2-b049-20c6f8285a3e",
+      deploy_name_1: "NETLIFY",
+      // git hub repo
+      git_icon: "https://www.svgrepo.com/show/217753/github.svg",
+      git_url: "https://github.com/OzkrMebasser/todos-proyect",
+      git_name: "Git repository",
+      www_icon:
+        "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Finternet-www-svgrepo-com.svg?alt=media&token=49e3d743-fa07-4bdc-879e-0e99c87df52e",
+      www_site: "https://to-do-pendings.netlify.app/",
+  
+      aliasInstitutionName: `${myOtherProjects.aliasInstitutionName}`,
+      aliasInstitutionTitle: `${myOtherProjects.aliasInstitutionTitle}`,
+      seeCert: `${myOtherProjects.seeCert}`,
+
+      //Stack I used Section
+      /*Icons alt names*/
+      tech_1_name: "HTML-5",
+      tech_2_name: "CSS-3",
+      tech_3_name: "JavaScript",
+      tech_4_name: "React Js",
+    
+    
+  
+      deployed: true,
+      type: "academic",
+  
+      /*Icons images*/
+  
+      tech_1_icon:
+        "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fhtml-svgrepo-com.svg?alt=media&token=bf007597-213f-410e-b369-8035584a3ad7",
+      tech_2_icon:
+        "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fcss-svgrepo-com.svg?alt=media&token=05933c42-aa37-4123-a959-dd7ace7fb4b8",
+      tech_3_icon:
+        "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fjs-svgrepo-com.svg?alt=media&token=c6b39548-7d54-4dfc-8720-5a500786edda",
+      tech_4_icon:
+        "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-1-logo-svgrepo-com.svg?alt=media&token=f690f37d-9457-4a0b-8378-16a7d426114f",
+      
+      
+    },
 ];

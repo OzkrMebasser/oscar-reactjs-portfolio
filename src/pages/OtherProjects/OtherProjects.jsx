@@ -7,7 +7,7 @@ import useSound from "../../context/hook/useSound";
 import SoundClick from "../../Components/Click/interface.mp3";
 import ScrollToTop from "../../Components/GoUpButton/ScrollToTop";
 import { Link } from "react-router-dom";
-import LoadingScrolling from "../../Components/Loader/LoadingScrolling"
+import LoadingScrolling from "../../Components/Loader/LoadingScrolling";
 
 import "../Projects/Projects.css";
 import "./OtherProjects.css";
@@ -54,27 +54,30 @@ const OtherProjects = () => {
     if (selectedType === "all") {
       return true;
     } else {
+      // console.log(selectedType);
       return project.type === selectedType;
     }
   });
 
   const handleScroll = () => {
-    const scrolledToBottom = window.pageYOffset + window.innerHeight >= document.documentElement.scrollHeight;
+    const scrolledToBottom =
+      window.pageYOffset + window.innerHeight >=
+      document.documentElement.scrollHeight;
     const scrolledToTop = window.pageYOffset === 0;
-  
+
     if (scrolledToBottom && numDisplayed < filteredProjects.length) {
       setIsLoading(true);
       setTimeout(() => {
         setNumDisplayed(numDisplayed + 6);
         setIsLoading(false);
-      }, 1500);
+      }, 2000);
     }
-  
+
     if (scrolledToTop) {
-      setNumDisplayed(6); 
+      setNumDisplayed(6);
     }
   };
-  
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -84,31 +87,35 @@ const OtherProjects = () => {
 
   return (
     <>
-    
       <header className="select-type">
-  
-      <select className="select-input-types uppercase" value={selectedType} onChange={handleSelectChange}>
-          <option value="all" disabled>Selecciona un tipo de proyecto</option>
+        <select
+          className="select-input-types uppercase"
+          value={selectedType}
+          onChange={handleSelectChange}
+        >
+          <option value="all" disabled>
+          
+          {t("myProjects.selectProjectType")}
+          </option>
           <option value="online">{t("myProjects.online")}</option>
-          <option value="academic">Academic</option>
+          <option value="academic">{t("myProjects.academic")}</option>
           <option value="development">{t("myProjects.dev")}</option>
-          <option value="practice">Practice</option>
-          <option value="offline">Offline</option>
+          <option value="practice">{t("myProjects.practice")}</option>
+          <option value="offline">{t("myProjects.offline")}</option>
         </select>
         <button
-          className="select-all-btn"
+          className="select-all-btn uppercase"
           onClick={() => {
             playSound();
             setSelectedType("all");
           }}
         >
-          Ver todos los proyectos
-          {/* {t("skills.viewAllCats")} */}
+            {t("myProjects.viewAll")}
+        
         </button>
       </header>
       <ScrollToTop />
       <main className="main-container">
-     
         {filteredProjects.slice(0, numDisplayed).map((project, index) => (
           <section className="section-cards" key={index}>
             <div className="status-project">
@@ -150,9 +157,7 @@ const OtherProjects = () => {
               </div>
             </article>
             <div className="stack-used-contain">
-              <h3 className="stack-used">
-                {t("myProjects.stackIused")}
-              </h3>
+              <h3 className="stack-used">{t("myProjects.stackIused")}</h3>
             </div>
             <div className="stacks">
               <div className="stack-contain">
@@ -179,9 +184,8 @@ const OtherProjects = () => {
 
               <span className="stack-used"> {t("myProjects.deployed")}</span>
               <div className="stack-contain">
-              
-              <span
-                 id={`deploy-${index}`}
+                <span
+                  id={`deploy-${index}`}
                   data-tooltip-content={project.deploy_name_1}
                 >
                   <img
@@ -190,7 +194,7 @@ const OtherProjects = () => {
                     alt={project.deploy_name_1}
                   />
                 </span>
-           
+
                 <span
                   id={`repo-${index}`}
                   data-tooltip-content={`${t("myProjects.githubLink")}`}
@@ -237,8 +241,9 @@ const OtherProjects = () => {
           </section>
         ))}
       </main>
-              {isLoading && numDisplayed < filteredProjects.length && (  <LoadingScrolling /> )}
-
+      {isLoading && numDisplayed < filteredProjects.length && (
+        <LoadingScrolling />
+      )}
     </>
   );
 };

@@ -468,6 +468,8 @@
   "myProjects": {
     "seeStack": "VER TECNOLOGÍAS",
     "stackIused": "TECNOLOGÍAS QUE UTILICE",
+    "academic": "Académico",
+    "practice": "Práctica",
     "deployed": "Despliegue",
     "online": "en linea",
     "dev": "EN DESARROLLO",
@@ -478,6 +480,10 @@
     "moreProjects": "VER PROYECTOS",
     "aliasInstitution": "ACADEMLO - (Escuela de Tecnología y Ciencias de la Computación)",
     "seeCert" : "VER CERTIFICADO",
+    "selectProjectType" : "Selecciona un tipo de proyecto",
+    "viewAll" : "Ver todos los proyectos",
+
+
     "id_1": {
       "project_name": "MI PORTAFOLIO",
       "desc": "ESTE PROYECTO ES MI PORTAFOLIO PERSONAL, UNA PRESENTACIÓN VISUAL DE MI TRABAJO Y HABILIDADES. EL PORTAFOLIO ESTÁ DISEÑADO PARA DESTACAR VARIOS PROYECTOS Y TECNOLOGÍAS QUE HE UTILIZADO EN MI TRAYECTORIA. PROPORCIONA UNA BREVE DESCRIPCIÓN DE MÍ."
@@ -526,6 +532,7 @@
     "online": "en linea",
     "dev": "EN DESARROLLO",
     "offline": "Offline",
+ 
     "githubLink": "Ver codigo en GitHub",
     "websiteLink": "Ir al sitio web..." ,
     "goBack": "REGRESAR",
@@ -539,6 +546,14 @@
     "id_2": {
       "project_name": "USUARIOS DE GITHUB",
       "desc": "ESTE PROYECTO FUE UNA TAREA DE UNIDAD, EN EL MÓDULO DE DESARROLLO FRONT-END CON REACT EN *ACADEMLO. EN ESTA ASIGNACIÓN, SE NOS SOLICITÓ CONECTAR NUESTRA APLICACIÓN A LA API DE GITHUB/USERS UTILIZANDO FETCH, Y LUEGO RENDERIZAR LA INFORMACIÓN DEL USUARIO BUSCADO EN LA INTERFAZ"
+    },
+    "id_3":{
+      "project_name" : "GALERIA DE FOTOS",
+      "desc": "DURANTE MI TIEMPO DE ESTUDIO EN *ACADEMLO, REALICÉ UN PROYECTO PEQUEÑO PARA PRACTICAR EL USO DE AXIOS, (BIBLIOTECA DE JAVASCRIPT PARA HACER SOLICITUDES HTTP). ME CONECTÉ A LA API DE UNSPLASH (API.UNSPLASH.COM) PARA RENDERIZAR IMÁGENES DINÁMICAMENTE, ESTO CON EL FIN DE DOMINAR EL MANEJO DE SOLICITUDES A APIS EXTERNAS Y LA MANIPULACIÓN DE DATOS EN TIEMPO REAL DENTRO DE UNA APLICACIÓN WEB."
+    },
+    "id_4":{
+      "project_name" : "LISTA DE TAREAS",
+      "desc": "ESTE PROYECTO FUE UNA TAREA DE UNIDAD, EN EL MÓDULO DE DESARROLLO FRONT-END CON REACT EN *ACADEMLO. EN ESTA ASIGNACIÓN, SE NOS SOLICITÓ DESARROLLAR UNA LISTA DE TAREAS CON UN ''CRUD'' UTILIZANDO EL ALMACENAMIENTO LOCAL DEL NAVEGADOR"
     }
   
   

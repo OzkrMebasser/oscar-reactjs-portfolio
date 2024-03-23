@@ -20,7 +20,7 @@ function CheckBox({ checked, onChecked, projectType }) {
       typeClass = "online";
       break;
     case "academic":
-      label = "ACADEMIC";
+      label = `${t("myProjects.academic")}`;
       icon = <HiAcademicCap />;
       typeClass = "academic";
       break;
@@ -30,12 +30,12 @@ function CheckBox({ checked, onChecked, projectType }) {
       typeClass = "development";
       break;
     case "practice":
-      label = "PRACTICE";
+      label = `${t("myProjects.practice")}`;
       icon = <TbTargetArrow />;
       typeClass = "practice";
       break;
     default:
-      label = "OFFLINE";
+      label = `${t("myProjects.offline")}`;
       icon = <RiEyeOffLine />;
       typeClass = "blue"; 
   }
