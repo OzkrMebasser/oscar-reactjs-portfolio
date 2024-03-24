@@ -481,12 +481,18 @@ const myOtherProjects = {
   //id.2 GITHUB USERS
   id_2_project_name: "myOtherProjects.id_2.project_name",
   id_2_desc: "myOtherProjects.id_2.desc",
-   //id.3 PHOTO GALLERY
-   id_3_project_name: "myOtherProjects.id_3.project_name",
-   id_3_desc: "myOtherProjects.id_3.desc",
-   //id.4 TO-DOS APP
-   id_4_project_name: "myOtherProjects.id_4.project_name",
-   id_4_desc: "myOtherProjects.id_4.desc",
+  //id.3 PHOTO GALLERY
+  id_3_project_name: "myOtherProjects.id_3.project_name",
+  id_3_desc: "myOtherProjects.id_3.desc",
+  //id.4 TO-DOS APP
+  id_4_project_name: "myOtherProjects.id_4.project_name",
+  id_4_desc: "myOtherProjects.id_4.desc",
+  //id.5 PENDINGS LIST
+  id_5_project_name: "myOtherProjects.id_5.project_name",
+  id_5_desc: "myOtherProjects.id_5.desc",
+    //id.6 ECOMMERCE API 
+    id_6_project_name: "myOtherProjects.id_6.project_name",
+    id_6_desc: "myOtherProjects.id_6.desc",
 };
 export const otherProjects = [
   //id.1 WEATHER APP
@@ -590,9 +596,9 @@ export const otherProjects = [
     tech_4_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-1-logo-svgrepo-com.svg?alt=media&token=f690f37d-9457-4a0b-8378-16a7d426114f",
     tech_5_icon:
-    "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Ftailwind-svgrepo-com.svg?alt=media&token=de41409e-f0e5-4784-96fa-524c7a31c626",
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Ftailwind-svgrepo-com.svg?alt=media&token=de41409e-f0e5-4784-96fa-524c7a31c626",
     tech_6_icon:
-    "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-router-svgrepo-com.svg?alt=media&token=75893829-0a4a-4df9-a8ed-27e47c6dbb65",
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-router-svgrepo-com.svg?alt=media&token=75893829-0a4a-4df9-a8ed-27e47c6dbb65",
   },
   //id.3 PHOTO GALLERY
   {
@@ -623,7 +629,6 @@ export const otherProjects = [
     tech_3_name: "JavaScript",
     tech_4_name: "React Js",
     tech_5_name: "Axios HTTP",
-  
 
     deployed: true,
     type: "practice",
@@ -639,58 +644,153 @@ export const otherProjects = [
     tech_4_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-1-logo-svgrepo-com.svg?alt=media&token=f690f37d-9457-4a0b-8378-16a7d426114f",
     tech_5_icon:
-    "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Flogoaxios.svg?alt=media&token=fcc440c0-5b4d-41d9-a4a4-0c6582d9f11b",
-    
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Flogoaxios.svg?alt=media&token=fcc440c0-5b4d-41d9-a4a4-0c6582d9f11b",
   },
   //id.4 TO-DOS APP
-    {
-      id: 4,
-      project_name: `${myOtherProjects.id_4_project_name}`,
-      src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FotherProjects%2F12.todosapp.png?alt=media&token=e2efe097-d805-4a7a-913f-0e1cbce9b505",
-      alt: "todos app",
-      desc: `${myOtherProjects.id_4_desc}`,
-      href: "https://to-do-pendings.netlify.app/",
-      //Deployment section
-  
-      //Vercel
-      deploy_icon_1:
-        "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fnetlify-svgrepo-com.svg?alt=media&token=2b403c92-7d50-45d2-b049-20c6f8285a3e",
-      deploy_name_1: "NETLIFY",
-      // git hub repo
-      git_icon: "https://www.svgrepo.com/show/217753/github.svg",
-      git_url: "https://github.com/OzkrMebasser/todos-proyect",
-      git_name: "Git repository",
-      www_icon:
-        "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Finternet-www-svgrepo-com.svg?alt=media&token=49e3d743-fa07-4bdc-879e-0e99c87df52e",
-      www_site: "https://to-do-pendings.netlify.app/",
-  
-      aliasInstitutionName: `${myOtherProjects.aliasInstitutionName}`,
-      aliasInstitutionTitle: `${myOtherProjects.aliasInstitutionTitle}`,
-      seeCert: `${myOtherProjects.seeCert}`,
+  {
+    id: 4,
+    project_name: `${myOtherProjects.id_4_project_name}`,
+    src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FotherProjects%2F12.todosapp.png?alt=media&token=e2efe097-d805-4a7a-913f-0e1cbce9b505",
+    alt: "todos app",
+    desc: `${myOtherProjects.id_4_desc}`,
+    href: "https://to-do-pendings.netlify.app/",
+    //Deployment section
 
-      //Stack I used Section
-      /*Icons alt names*/
-      tech_1_name: "HTML-5",
-      tech_2_name: "CSS-3",
-      tech_3_name: "JavaScript",
-      tech_4_name: "React Js",
-    
-    
-  
-      deployed: true,
-      type: "academic",
-  
-      /*Icons images*/
-  
-      tech_1_icon:
-        "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fhtml-svgrepo-com.svg?alt=media&token=bf007597-213f-410e-b369-8035584a3ad7",
-      tech_2_icon:
-        "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fcss-svgrepo-com.svg?alt=media&token=05933c42-aa37-4123-a959-dd7ace7fb4b8",
-      tech_3_icon:
-        "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fjs-svgrepo-com.svg?alt=media&token=c6b39548-7d54-4dfc-8720-5a500786edda",
-      tech_4_icon:
-        "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-1-logo-svgrepo-com.svg?alt=media&token=f690f37d-9457-4a0b-8378-16a7d426114f",
-      
-      
-    },
+    //NETLIFY
+    deploy_icon_1:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fnetlify-svgrepo-com.svg?alt=media&token=2b403c92-7d50-45d2-b049-20c6f8285a3e",
+    deploy_name_1: "NETLIFY",
+    // git hub repo
+    git_icon: "https://www.svgrepo.com/show/217753/github.svg",
+    git_url: "https://github.com/OzkrMebasser/todos-proyect",
+    git_name: "Git repository",
+    www_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Finternet-www-svgrepo-com.svg?alt=media&token=49e3d743-fa07-4bdc-879e-0e99c87df52e",
+    www_site: "https://to-do-pendings.netlify.app/",
+
+    aliasInstitutionName: `${myOtherProjects.aliasInstitutionName}`,
+    aliasInstitutionTitle: `${myOtherProjects.aliasInstitutionTitle}`,
+    seeCert: `${myOtherProjects.seeCert}`,
+
+    //Stack I used Section
+    /*Icons alt names*/
+    tech_1_name: "HTML-5",
+    tech_2_name: "CSS-3",
+    tech_3_name: "JavaScript",
+    tech_4_name: "React Js",
+
+    deployed: true,
+    type: "academic",
+
+    /*Icons images*/
+
+    tech_1_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fhtml-svgrepo-com.svg?alt=media&token=bf007597-213f-410e-b369-8035584a3ad7",
+    tech_2_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fcss-svgrepo-com.svg?alt=media&token=05933c42-aa37-4123-a959-dd7ace7fb4b8",
+    tech_3_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fjs-svgrepo-com.svg?alt=media&token=c6b39548-7d54-4dfc-8720-5a500786edda",
+    tech_4_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-1-logo-svgrepo-com.svg?alt=media&token=f690f37d-9457-4a0b-8378-16a7d426114f",
+  },
+  //id.5 PENDINGS LIST
+  {
+    id: 5,
+    project_name: `${myOtherProjects.id_5_project_name}`,
+    src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FotherProjects%2F13.listapendientes.png?alt=media&token=f9b6442c-b765-4c5b-8df4-a5f9fa8a8c0f",
+    alt: "pendings list",
+    desc: `${myOtherProjects.id_5_desc}`,
+    href: "https://lista-de-pendientes.vercel.app/",
+    //Deployment section
+
+    //VERCEL
+    deploy_icon_1:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fnetlify-svgrepo-com.svg?alt=media&token=2b403c92-7d50-45d2-b049-20c6f8285a3e",
+    deploy_name_1: "VERCEL",
+    // git hub repo
+    git_icon: "https://www.svgrepo.com/show/217753/github.svg",
+    git_url: "https://github.com/OzkrMebasser/lista-pendientes",
+    git_name: "Git repository",
+    www_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Finternet-www-svgrepo-com.svg?alt=media&token=49e3d743-fa07-4bdc-879e-0e99c87df52e",
+    www_site: "https://lista-de-pendientes.vercel.app/",
+
+    // aliasInstitutionName: `${myOtherProjects.aliasInstitutionName}`,
+    // aliasInstitutionTitle: `${myOtherProjects.aliasInstitutionTitle}`,
+    // seeCert: `${myOtherProjects.seeCert}`,
+
+    //Stack I used Section
+    /*Icons alt names*/
+    tech_1_name: "HTML-5",
+    tech_2_name: "CSS-3",
+    tech_3_name: "JavaScript",
+    tech_4_name: "React Js",
+    tech_5_name: "Styled Components",
+
+    deployed: true,
+    type: "practice",
+
+    /*Icons images*/
+
+    tech_1_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fhtml-svgrepo-com.svg?alt=media&token=bf007597-213f-410e-b369-8035584a3ad7",
+    tech_2_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fcss-svgrepo-com.svg?alt=media&token=05933c42-aa37-4123-a959-dd7ace7fb4b8",
+    tech_3_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fjs-svgrepo-com.svg?alt=media&token=c6b39548-7d54-4dfc-8720-5a500786edda",
+    tech_4_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-1-logo-svgrepo-com.svg?alt=media&token=f690f37d-9457-4a0b-8378-16a7d426114f",
+    tech_5_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fstyled-components.png?alt=media&token=934a33d3-3c8f-4ff7-b0b9-2633d24e88ba",
+  },
+  //id.6 ECOMMERCE API 
+  {
+    id: 6,
+    project_name: `${myOtherProjects.id_6_project_name}`,
+    src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FotherProjects%2F14.ecommerce-api-nodejs.png?alt=media&token=8044f2c1-873f-4062-9878-5c9bbead329f",
+    alt: "ECOMMERCE API",
+    desc: `${myOtherProjects.id_6_desc}`,
+    href: "https://documenter.getpostman.com/view/18776636/UVyrUwDa#ddaccc80-4ad1-424b-8eed-d9a450ee10cc",
+    //Deployment section
+
+    //HEROKU
+    deploy_icon_1:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fheroku-svgrepo-com.svg?alt=media&token=593ebd1a-69be-4d19-b884-d843fc131343",
+    deploy_name_1: "HEROKU",
+    // git hub repo
+    git_icon: "https://www.svgrepo.com/show/217753/github.svg",
+    git_url: "https://github.com/OzkrMebasser/api-ecommerce-finalV",
+    git_name: "Git repository",
+    www_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Finternet-www-svgrepo-com.svg?alt=media&token=49e3d743-fa07-4bdc-879e-0e99c87df52e",
+    www_site: "https://documenter.getpostman.com/view/18776636/UVyrUwDa#ddaccc80-4ad1-424b-8eed-d9a450ee10cc",
+
+    aliasInstitutionName: `${myOtherProjects.aliasInstitutionName}`,
+    aliasInstitutionTitle: `${myOtherProjects.aliasInstitutionTitle}`,
+    seeCert: `${myOtherProjects.seeCert}`,
+
+    //Stack I used Section
+    /*Icons alt names*/
+    tech_1_name: "NODE JS",
+    tech_2_name: "EXPRESS JS",
+    tech_3_name: "POSTGRESQL",
+    tech_4_name: "JWT",
+    tech_5_name: "SEQUELIZE",
+
+    deployed: true,
+    type: "academic",
+
+    /*Icons images*/
+
+    tech_1_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fnodejs-1-logo-svgrepo-com.svg?alt=media&token=afa3c35d-425a-44d7-95bc-ca797548ba45",
+    tech_2_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fexpress-svgrepo-com.svg?alt=media&token=0ac98956-4734-4662-92b6-15c83e71408e",
+    tech_3_icon:
+    "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fpostgresql-svgrepo-com%20(1).svg?alt=media&token=8294cc05-91ae-49c4-8418-d531fc8ca0b7",
+    tech_4_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fjson-web-tokenlOGO.png?alt=media&token=03ad302b-4933-422a-a6fd-0f0f8984a26a",
+    tech_5_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fsequelize.svg?alt=media&token=b5ee13d5-bd7e-4a76-8dee-3ee295148458",
+  },
 ];

@@ -558,7 +558,7 @@ export const skillsBE = [
     variant: "success",
     category: `${categories.pythonCat}`,
     typeOfTech: `${typeOfTech.pythonTech}`,
-    docs: "",
+    docs: "https://docs.python.org/3/",
   },
   {
     id: 4,
@@ -610,7 +610,7 @@ export const skillsBE = [
     variant: "success",
     category: `${categories.mysqlCat}`,
     typeOfTech: `${typeOfTech.mysqlTech}`,
-    docs: "",
+    docs: "https://docs.oracle.com/cd/E17952_01/index.html",
   },
   {
     id: 8,

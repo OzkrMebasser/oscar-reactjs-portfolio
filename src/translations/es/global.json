@@ -21,7 +21,7 @@
     "reqLocP_4": "Consulte su ",
     "reqLocP_5": "política de privacidad",
     "temperature": "La temperatura en ",
-    "isTemp": "es de " 
+    "isTemp": "es de "
   },
   "typing": {
     "auto-text": [
@@ -475,14 +475,13 @@
     "dev": "EN DESARROLLO",
     "offline": "Offline",
     "githubLink": "Ver codigo en GitHub",
-    "websiteLink": "Ir al sitio web..." ,
+    "websiteLink": "Ir al sitio web...",
     "goBack": "REGRESAR",
     "moreProjects": "VER PROYECTOS",
     "aliasInstitution": "ACADEMLO - (Escuela de Tecnología y Ciencias de la Computación)",
-    "seeCert" : "VER CERTIFICADO",
-    "selectProjectType" : "Selecciona un tipo de proyecto",
-    "viewAll" : "Ver todos los proyectos",
-
+    "seeCert": "VER CERTIFICADO",
+    "selectProjectType": "Selecciona un tipo de proyecto",
+    "viewAll": "Ver todos los proyectos",
 
     "id_1": {
       "project_name": "MI PORTAFOLIO",
@@ -508,22 +507,20 @@
       "project_name": "TRIPYTOUR BLOG",
       "desc": "MI ESPOSA Y YO ESTAMOS DESARROLLANDO UN BLOG DE CONSEJOS DE VIAJES COMO HOBBY, YA QUE AMBOS CONTAMOS CON AMPLIA EXPERIENCIA EN LA INDUSTRIA TURÍSTICA. EN ÉL, OFRECEREMOS TIPS, OFERTAS EXCLUSIVAS Y SUGERENCIAS PARA HACER QUE CADA VIAJE SEA INOLVIDABLE. ESTOY DESARROLLANDO EL PROYECTO CON TECNOLOGÍAS COMO REACT, NEXT.JS, MONGODB Y PRISMA"
     },
-    "id_7":{
+    "id_7": {
       "project_name": "SISTEMA BIBLIOTECARIO",
       "desc": "PARA EL PROYECTO FINAL DEL MÓDULO DE DESARROLLO BACK-END CON PYTHON Y DJANGO EN *ACADEMLO. DESARROLLE UN PROYECTO FULLSTACK, UTILICÉ HTML PARA LAS PLANTILLAS EN EL FRONTEND, MIENTRAS QUE EN EL BACKEND (API) UTILICÉ PYTHON Y DJANGO, JUNTO CON POSTGRESQL COMO SISTEMA GESTOR DE BASE DE DATOS."
     },
-    "id_8":{
+    "id_8": {
       "project_name": "AGENCIA DE TOURS EN LINEA",
       "desc": "PARA EL PROYECTO FINAL DEL MÓDULO DE DESARROLLO FRONT-END CON REACT EN *ACADEMLO. DESARROLLÉ UN MOCKUP DE COMERCIO ELECTRÓNICO. EN ESTE PROYECTO, UTILICÉ REACT, REACT-ROUTER Y CONTEXT PARA EL ESTADO GLOBAL DEL CARRITO, FAVORITOS, ETC"
-
     },
-    "id_9":{
+    "id_9": {
       "project_name": "OTROS PROYECTOS",
       "desc": "EN ESTA SECCIÓN, MUESTRO UNA VARIEDAD DE PROYECTOS INCLUYENDO DESARROLLO WEB, APLICACIONES BACKEND Y JUEGOS, DEMOSTRANDO MI EXPERIENCIA CON VARIAS TECNOLOGÍAS Y FRAMEWORKS. ALGUNOS DE ESTOS PROYECTOS SON TAREAS ESCOLARES DE *ACADEMLO , MIENTRAS QUE OTROS LOS LLEVE A CABO CON EL FIN DE MEJORAR MIS HABILIDADES DE PROGRAMACIÓN",
       "aliasInstitución": "ACADEMLO - (Escuela de Tecnología y Ciencias de la Computación)",
       "seeCerts": "VER CERTIFICADOS"
     }
-
   },
   "myOtherProjects": {
     "seeStack": "VER TECNOLOGÍAS",
@@ -532,13 +529,13 @@
     "online": "en linea",
     "dev": "EN DESARROLLO",
     "offline": "Offline",
- 
+
     "githubLink": "Ver codigo en GitHub",
-    "websiteLink": "Ir al sitio web..." ,
+    "websiteLink": "Ir al sitio web...",
     "goBack": "REGRESAR",
     "aliasInstitutionName": "ACADEMLO",
     "aliasInstitutionTitle": "(Escuela de Tecnología y Ciencias de la Computación)",
-    "seeCert" : "VER CERTIFICADO",
+    "seeCert": "VER CERTIFICADO",
     "id_1": {
       "project_name": "APP DEL CLIMA",
       "desc": "ESTE PROYECTO FUE UNA TAREA DE UNIDAD, EN EL MÓDULO DE DESARROLLO FRONT-END CON REACT EN *ACADEMLO. EN ESTA ASIGNACIÓN, SE NOS SOLICITÓ CONECTAR NUESTRA APLICACIÓN A LA API DE OPENWEATHERMAP UTILIZANDO LA BIBLIOTECA AXIOS, Y RENDERIZAR INFORMACIÓN DE CIUDADES EN LA INTERFAZ."
@@ -547,19 +544,23 @@
       "project_name": "USUARIOS DE GITHUB",
       "desc": "ESTE PROYECTO FUE UNA TAREA DE UNIDAD, EN EL MÓDULO DE DESARROLLO FRONT-END CON REACT EN *ACADEMLO. EN ESTA ASIGNACIÓN, SE NOS SOLICITÓ CONECTAR NUESTRA APLICACIÓN A LA API DE GITHUB/USERS UTILIZANDO FETCH, Y LUEGO RENDERIZAR LA INFORMACIÓN DEL USUARIO BUSCADO EN LA INTERFAZ"
     },
-    "id_3":{
-      "project_name" : "GALERIA DE FOTOS",
+    "id_3": {
+      "project_name": "GALERIA DE FOTOS",
       "desc": "DURANTE MI TIEMPO DE ESTUDIO EN *ACADEMLO, REALICÉ UN PROYECTO PEQUEÑO PARA PRACTICAR EL USO DE AXIOS, (BIBLIOTECA DE JAVASCRIPT PARA HACER SOLICITUDES HTTP). ME CONECTÉ A LA API DE UNSPLASH (API.UNSPLASH.COM) PARA RENDERIZAR IMÁGENES DINÁMICAMENTE, ESTO CON EL FIN DE DOMINAR EL MANEJO DE SOLICITUDES A APIS EXTERNAS Y LA MANIPULACIÓN DE DATOS EN TIEMPO REAL DENTRO DE UNA APLICACIÓN WEB."
     },
-    "id_4":{
-      "project_name" : "LISTA DE TAREAS",
+    "id_4": {
+      "project_name": "LISTA DE TAREAS",
       "desc": "ESTE PROYECTO FUE UNA TAREA DE UNIDAD, EN EL MÓDULO DE DESARROLLO FRONT-END CON REACT EN *ACADEMLO. EN ESTA ASIGNACIÓN, SE NOS SOLICITÓ DESARROLLAR UNA LISTA DE TAREAS CON UN ''CRUD'' UTILIZANDO EL ALMACENAMIENTO LOCAL DEL NAVEGADOR"
+    },
+    "id_5": {
+      "project_name": "LISTA DE PENDIENTES",
+      "desc": "DURANTE MI PERIODO DE ESTUDIO EN ACADEMLO, LLEVÉ A CABO UN PROYECTO SECUNDARIO CON EL FIN DE PRACTICAR EL USO DEL ALMACENAMIENTO LOCAL DEL NAVEGADOR (LOCALSTORAGE). ADEMÁS, UTILICÉ STYLED COMPONENTS PARA GESTIONAR LOS ESTILOS CSS."
+    },
+    "id_6": {
+      "project_name": "API COMERCIO ELECETRONICO",
+      "desc": "PARA EL PROYECTO FINAL DEL MÓDULO DE DESARROLLO BACK-END CON NODEJS EN ACADEMLO, DESARROLLÉ UNA API UTILIZANDO EXPRESS Y POSTGRESQL. IMPLEMENTÉ JWT PARA LA AUTENTICACIÓN Y REALICÉ EL DESPLIEGUE EN HEROKU (CUANDO ERA GRATUITO)."
     }
-  
-  
-    
   },
-
 
   "contact": {
     "alert": "Hola, tu correo ha sido enviado con éxito, me pondré en contacto contigo lo antes posible, ¡que tengas un buen día!",
