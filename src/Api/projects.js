@@ -474,7 +474,7 @@ const myOtherProjects = {
   aliasInstitutionName: "myOtherProjects.aliasInstitutionName",
   aliasInstitutionTitle: "myOtherProjects.aliasInstitutionTitle",
   seeCert: "myOtherProjects.seeCert",
-
+  notDeployed: "myOtherProjects.notDeployed",
   //id.1 WEATHER APP
   id_1_project_name: "myOtherProjects.id_1.project_name",
   id_1_desc: "myOtherProjects.id_1.desc",
@@ -490,9 +490,12 @@ const myOtherProjects = {
   //id.5 PENDINGS LIST
   id_5_project_name: "myOtherProjects.id_5.project_name",
   id_5_desc: "myOtherProjects.id_5.desc",
-    //id.6 ECOMMERCE API 
-    id_6_project_name: "myOtherProjects.id_6.project_name",
-    id_6_desc: "myOtherProjects.id_6.desc",
+  //id.6 ECOMMERCE API
+  id_6_project_name: "myOtherProjects.id_6.project_name",
+  id_6_desc: "myOtherProjects.id_6.desc",
+  //id.7 MOVIE API
+  id_7_project_name: "myOtherProjects.id_7.project_name",
+  id_7_desc: "myOtherProjects.id_7.desc",
 };
 export const otherProjects = [
   //id.1 WEATHER APP
@@ -705,7 +708,7 @@ export const otherProjects = [
 
     //VERCEL
     deploy_icon_1:
-      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fnetlify-svgrepo-com.svg?alt=media&token=2b403c92-7d50-45d2-b049-20c6f8285a3e",
+    "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fvercel-icon-svgrepo-com.svg?alt=media&token=d8d668a2-26f0-4103-a3ae-99e6d3c31103",
     deploy_name_1: "VERCEL",
     // git hub repo
     git_icon: "https://www.svgrepo.com/show/217753/github.svg",
@@ -743,7 +746,7 @@ export const otherProjects = [
     tech_5_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fstyled-components.png?alt=media&token=934a33d3-3c8f-4ff7-b0b9-2633d24e88ba",
   },
-  //id.6 ECOMMERCE API 
+  //id.6 ECOMMERCE API
   {
     id: 6,
     project_name: `${myOtherProjects.id_6_project_name}`,
@@ -763,7 +766,8 @@ export const otherProjects = [
     git_name: "Git repository",
     www_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Finternet-www-svgrepo-com.svg?alt=media&token=49e3d743-fa07-4bdc-879e-0e99c87df52e",
-    www_site: "https://documenter.getpostman.com/view/18776636/UVyrUwDa#ddaccc80-4ad1-424b-8eed-d9a450ee10cc",
+    www_site:
+      "https://documenter.getpostman.com/view/18776636/UVyrUwDa#ddaccc80-4ad1-424b-8eed-d9a450ee10cc",
 
     aliasInstitutionName: `${myOtherProjects.aliasInstitutionName}`,
     aliasInstitutionTitle: `${myOtherProjects.aliasInstitutionTitle}`,
@@ -787,10 +791,65 @@ export const otherProjects = [
     tech_2_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fexpress-svgrepo-com.svg?alt=media&token=0ac98956-4734-4662-92b6-15c83e71408e",
     tech_3_icon:
-    "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fpostgresql-svgrepo-com%20(1).svg?alt=media&token=8294cc05-91ae-49c4-8418-d531fc8ca0b7",
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fpostgresql-svgrepo-com%20(1).svg?alt=media&token=8294cc05-91ae-49c4-8418-d531fc8ca0b7",
     tech_4_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fjson-web-tokenlOGO.png?alt=media&token=03ad302b-4933-422a-a6fd-0f0f8984a26a",
     tech_5_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fsequelize.svg?alt=media&token=b5ee13d5-bd7e-4a76-8dee-3ee295148458",
   },
+  //id.7 MOVIES API
+  {
+    id: 7,
+    project_name: `${myOtherProjects.id_7_project_name}`,
+    src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FotherProjects%2F15.movies-api.png?alt=media&token=735ac705-e4ea-432f-9061-6916db43f7b6",
+    alt: "MOVIES API",
+    desc: `${myOtherProjects.id_7_desc}`,
+    href: "https://github.com/OzkrMebasser/movies_api-academlo",
+    //Deployment section
+
+    //NOT DEPLOYED
+    deploy_icon_1:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fnot-deployed.jpeg?alt=media&token=2d58e536-9d9d-4e7e-a381-73dd0b370d9c",
+    deploy_name_1: "",
+    // git hub repo
+    git_icon: "https://www.svgrepo.com/show/217753/github.svg",
+    git_url: "https://github.com/OzkrMebasser/movies_api-academlo",
+    git_name: "Git repository",
+    www_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fnot-www.jpeg?alt=media&token=a45def39-4a0f-4569-bbcd-f33a1f3c5319",
+    www_site:
+      "https://github.com/OzkrMebasser/movies_api-academlo",
+
+    aliasInstitutionName: `${myOtherProjects.aliasInstitutionName}`,
+    aliasInstitutionTitle: `${myOtherProjects.aliasInstitutionTitle}`,
+    seeCert: `${myOtherProjects.seeCert}`,
+
+    //Stack I used Section
+    /*Icons alt names*/
+    tech_1_name: "NODE JS",
+    tech_2_name: "EXPRESS JS",
+    tech_3_name: "POSTGRESQL",
+    tech_4_name: "JWT",
+    tech_5_name: "SEQUELIZE",
+    tech_6_name: "FIREBASE",
+
+    deployed: false,
+    type: "academic",
+
+    /*Icons images*/
+
+    tech_1_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fnodejs-1-logo-svgrepo-com.svg?alt=media&token=afa3c35d-425a-44d7-95bc-ca797548ba45",
+    tech_2_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fexpress-svgrepo-com.svg?alt=media&token=0ac98956-4734-4662-92b6-15c83e71408e",
+    tech_3_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fpostgresql-svgrepo-com%20(1).svg?alt=media&token=8294cc05-91ae-49c4-8418-d531fc8ca0b7",
+    tech_4_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fjson-web-tokenlOGO.png?alt=media&token=03ad302b-4933-422a-a6fd-0f0f8984a26a",
+    tech_5_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fsequelize.svg?alt=media&token=b5ee13d5-bd7e-4a76-8dee-3ee295148458",
+    tech_6_icon:
+    "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Ffirebase-svgrepo-com.svg?alt=media&token=ea3cf79a-0fa3-4a32-ae04-89625cdaa904"
+  
+    },
 ];

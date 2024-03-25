@@ -94,8 +94,7 @@ const OtherProjects = () => {
           onChange={handleSelectChange}
         >
           <option value="all" disabled>
-          
-          {t("myProjects.selectProjectType")}
+            {t("myProjects.selectProjectType")}
           </option>
           <option value="online">{t("myProjects.online")}</option>
           <option value="academic">{t("myProjects.academic")}</option>
@@ -110,8 +109,7 @@ const OtherProjects = () => {
             setSelectedType("all");
           }}
         >
-            {t("myProjects.viewAll")}
-        
+          {t("myProjects.viewAll")}
         </button>
       </header>
       <ScrollToTop />
@@ -141,6 +139,7 @@ const OtherProjects = () => {
               </h3>
 
               <div className="divDesc">
+            
                 <p className="desc-project">{t(`${project.desc}`)}</p>
                 {project.aliasInstitutionName && (
                   <>
@@ -186,7 +185,12 @@ const OtherProjects = () => {
               <div className="stack-contain">
                 <span
                   id={`deploy-${index}`}
-                  data-tooltip-content={project.deploy_name_1}
+                  data-tooltip-content={
+                    !project.deployed
+                    ? `${t("myOtherProjects.notDeployed")} 🚫`
+                    : project.deploy_name_1
+                  }
+                  // data-tooltip-content={project.deploy_name_1}
                 >
                   <img
                     className="icon-stack"
@@ -214,12 +218,34 @@ const OtherProjects = () => {
 
                 <span
                   id={`www-${index}`}
-                  data-tooltip-content={`${t("myProjects.websiteLink")}`}
+                  data-tooltip-content={
+                    // index === 3 || index === 5 || index === 6
+                    !project.deployed
+                      ? `${t("myOtherProjects.noWebsite")} 🚫`
+                      : `${t("myOtherProjects.websiteLink")}`
+                  }
                 >
-                  <a
-                    href={project.www_site}
+                  {/* <a
+                    className={
+                      index === 6
+                        ? "disabled-cursor"
+                        : ""
+                    }
+                    href={
+                      index === 6
+                        ? "#"
+                        : project.www_site
+                    }
                     rel="nofollow noopener noreferrer"
-                    target="_blank"
+                    target={index === 6 ? "" : "_blank"}
+                  >
+                    <img className="icon-stack" src={project.www_icon} alt="" />
+                  </a> */}
+                  <a
+                    className={project.deployed ? "" : "disabled-cursor"}
+                    href={project.deployed ? project.www_site : "#"}
+                    rel="nofollow noopener noreferrer"
+                    target={project.deployed ? "_blank" : ""}
                   >
                     <img className="icon-stack" src={project.www_icon} alt="" />
                   </a>
