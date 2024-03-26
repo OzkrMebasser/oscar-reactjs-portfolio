@@ -496,6 +496,9 @@ const myOtherProjects = {
   //id.7 MOVIE API
   id_7_project_name: "myOtherProjects.id_7.project_name",
   id_7_desc: "myOtherProjects.id_7.desc",
+  //id.8 TRIE TREE AUTOCOMPLETE
+  id_8_project_name: "myOtherProjects.id_8.project_name",
+  id_8_desc: "myOtherProjects.id_8.desc"
 };
 export const otherProjects = [
   //id.1 WEATHER APP
@@ -708,7 +711,7 @@ export const otherProjects = [
 
     //VERCEL
     deploy_icon_1:
-    "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fvercel-icon-svgrepo-com.svg?alt=media&token=d8d668a2-26f0-4103-a3ae-99e6d3c31103",
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fvercel-icon-svgrepo-com.svg?alt=media&token=d8d668a2-26f0-4103-a3ae-99e6d3c31103",
     deploy_name_1: "VERCEL",
     // git hub repo
     git_icon: "https://www.svgrepo.com/show/217753/github.svg",
@@ -817,8 +820,7 @@ export const otherProjects = [
     git_name: "Git repository",
     www_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fnot-www.jpeg?alt=media&token=a45def39-4a0f-4569-bbcd-f33a1f3c5319",
-    www_site:
-      "https://github.com/OzkrMebasser/movies_api-academlo",
+    www_site: "https://github.com/OzkrMebasser/movies_api-academlo",
 
     aliasInstitutionName: `${myOtherProjects.aliasInstitutionName}`,
     aliasInstitutionTitle: `${myOtherProjects.aliasInstitutionTitle}`,
@@ -849,7 +851,56 @@ export const otherProjects = [
     tech_5_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fsequelize.svg?alt=media&token=b5ee13d5-bd7e-4a76-8dee-3ee295148458",
     tech_6_icon:
-    "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Ffirebase-svgrepo-com.svg?alt=media&token=ea3cf79a-0fa3-4a32-ae04-89625cdaa904"
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Ffirebase-svgrepo-com.svg?alt=media&token=ea3cf79a-0fa3-4a32-ae04-89625cdaa904",
+  },
+  //id.8 TRIE TREE AUTOCOMPLETE
+  {
+    id: 8,
+    project_name: `${myOtherProjects.id_8_project_name}`,
+    src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FotherProjects%2F16.autocomplete-trietree.png?alt=media&token=c9d2ee9f-5ae9-4a44-b61b-28164aa35b21",
+    alt: "TRIE TREE AUTOCOMPLETE",
+    desc: `${myOtherProjects.id_8_desc}`,
+    href: "https://trie-tree-autocomplete-ds-alg.vercel.app/",
+    //Deployment section
+
+    //VERCEL
+    deploy_icon_1:
+    "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fvercel-icon-svgrepo-com.svg?alt=media&token=d8d668a2-26f0-4103-a3ae-99e6d3c31103",
+    deploy_name_1: "VERCEL",
+    // git hub repo
+    git_icon: "https://www.svgrepo.com/show/217753/github.svg",
+    git_url: "https://github.com/OzkrMebasser/trie-tree-autocomplete-DS-ALG",
+    git_name: "Git repository",
+    www_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Finternet-www-svgrepo-com.svg?alt=media&token=49e3d743-fa07-4bdc-879e-0e99c87df52e",
+    www_site: "https://trie-tree-autocomplete-ds-alg.vercel.app/",
+
+    aliasInstitutionName: `${myOtherProjects.aliasInstitutionName}`,
+    aliasInstitutionTitle: `${myOtherProjects.aliasInstitutionTitle}`,
+    seeCert: `${myOtherProjects.seeCert}`,
+
+    //Stack I used Section
+    /*Icons alt names*/
+    tech_1_name: "JAVASCRIPT",
+    tech_2_name: "Styled Components",
+    tech_3_name: "REACT JS",
+    tech_4_name: "REACT ROUTER",
+   
+
+    deployed: true,
+    type: "academic",
+
+    /*Icons images*/
+
+    tech_1_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fjs-svgrepo-com.svg?alt=media&token=c6b39548-7d54-4dfc-8720-5a500786edda",
+    tech_2_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fstyled-components.png?alt=media&token=934a33d3-3c8f-4ff7-b0b9-2633d24e88ba",
+    tech_3_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-1-logo-svgrepo-com.svg?alt=media&token=f690f37d-9457-4a0b-8378-16a7d426114f",
+    tech_4_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-router-svgrepo-com.svg?alt=media&token=75893829-0a4a-4df9-a8ed-27e47c6dbb65",
+    
+  },
   
-    },
 ];

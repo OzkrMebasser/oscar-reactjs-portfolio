@@ -62,7 +62,7 @@ const OtherProjects = () => {
   const handleScroll = () => {
     const scrolledToBottom =
       window.pageYOffset + window.innerHeight >=
-      document.documentElement.scrollHeight;
+      document.documentElement.scrollHeight - 70;
     const scrolledToTop = window.pageYOffset === 0;
 
     if (scrolledToBottom && numDisplayed < filteredProjects.length) {
@@ -70,7 +70,7 @@ const OtherProjects = () => {
       setTimeout(() => {
         setNumDisplayed(numDisplayed + 6);
         setIsLoading(false);
-      }, 2000);
+      }, 1000);
     }
 
     if (scrolledToTop) {
