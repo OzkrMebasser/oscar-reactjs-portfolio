@@ -498,7 +498,10 @@ const myOtherProjects = {
   id_7_desc: "myOtherProjects.id_7.desc",
   //id.8 TRIE TREE AUTOCOMPLETE
   id_8_project_name: "myOtherProjects.id_8.project_name",
-  id_8_desc: "myOtherProjects.id_8.desc"
+  id_8_desc: "myOtherProjects.id_8.desc",
+  //id.9 TRIE TREE AUTOCOMPLETE
+  id_9_project_name: "myOtherProjects.id_9.project_name",
+  id_9_desc: "myOtherProjects.id_9.desc",
 };
 export const otherProjects = [
   //id.1 WEATHER APP
@@ -865,7 +868,7 @@ export const otherProjects = [
 
     //VERCEL
     deploy_icon_1:
-    "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fvercel-icon-svgrepo-com.svg?alt=media&token=d8d668a2-26f0-4103-a3ae-99e6d3c31103",
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fvercel-icon-svgrepo-com.svg?alt=media&token=d8d668a2-26f0-4103-a3ae-99e6d3c31103",
     deploy_name_1: "VERCEL",
     // git hub repo
     git_icon: "https://www.svgrepo.com/show/217753/github.svg",
@@ -885,7 +888,6 @@ export const otherProjects = [
     tech_2_name: "Styled Components",
     tech_3_name: "REACT JS",
     tech_4_name: "REACT ROUTER",
-   
 
     deployed: true,
     type: "academic",
@@ -900,7 +902,52 @@ export const otherProjects = [
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-1-logo-svgrepo-com.svg?alt=media&token=f690f37d-9457-4a0b-8378-16a7d426114f",
     tech_4_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-router-svgrepo-com.svg?alt=media&token=75893829-0a4a-4df9-a8ed-27e47c6dbb65",
-    
   },
-  
+   //id.9 HANOI TOWER (STACK)
+   {
+    id: 9,
+    project_name: `${myOtherProjects.id_9_project_name}`,
+    src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FotherProjects%2F17.hanoitower.png?alt=media&token=29f78598-5889-45f6-a0df-fa0e58f18516",
+    alt: "HANOI TOWER (STACK)",
+    desc: `${myOtherProjects.id_9_desc}`,
+    href: "https://hanoi-tower-data-structures.vercel.app/",
+    //Deployment section
+
+    //VERCEL
+    deploy_icon_1:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fvercel-icon-svgrepo-com.svg?alt=media&token=d8d668a2-26f0-4103-a3ae-99e6d3c31103",
+    deploy_name_1: "VERCEL",
+    // git hub repo
+    git_icon: "https://www.svgrepo.com/show/217753/github.svg",
+    git_url: "https://github.com/OzkrMebasser/hanoi-tower-DS-ALG",
+    git_name: "Git repository",
+    www_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Finternet-www-svgrepo-com.svg?alt=media&token=49e3d743-fa07-4bdc-879e-0e99c87df52e",
+    www_site: "https://hanoi-tower-data-structures.vercel.app/",
+
+    aliasInstitutionName: `${myOtherProjects.aliasInstitutionName}`,
+    aliasInstitutionTitle: `${myOtherProjects.aliasInstitutionTitle}`,
+    seeCert: `${myOtherProjects.seeCert}`,
+
+    //Stack I used Section
+    /*Icons alt names*/
+    tech_1_name: "JAVASCRIPT",
+    tech_2_name: "REACT BOOSTRAP",
+    tech_3_name: "REACT JS",
+    tech_4_name: "REACT CONFETTI",
+
+    deployed: true,
+    type: "academic",
+
+    /*Icons images*/
+
+    tech_1_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fjs-svgrepo-com.svg?alt=media&token=c6b39548-7d54-4dfc-8720-5a500786edda",
+    tech_2_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-bootstrap.png?alt=media&token=b6abc8af-2a82-422e-9898-2c3e31a72e51",
+    tech_3_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-1-logo-svgrepo-com.svg?alt=media&token=f690f37d-9457-4a0b-8378-16a7d426114f",
+    tech_4_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2FREACTCONFETTI.png?alt=media&token=8f1713fb-dd5a-49c3-bae4-ad102733febd",
+  },
 ];
