@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-import "./Navbar-min.css";
+import "./Navbar.css";
 
 import { NavLink } from "react-router-dom";
 import { FaStream } from "react-icons/fa";
@@ -117,7 +117,54 @@ const Navbar = ({ isScrolling }) => {
             </NavLink>
           </li>
 
-          <li className="nav-item">
+          <li className=" nav-item-prueba ">
+            {/* <NavLink
+              to="/contact"
+              activeclassname="active"
+              className="nav-links"
+            > */}
+            <NavDropdown
+              activeclassname="active"
+              className="nav-links"
+              title={t("navbar.projects")}
+            >
+              <NavDropdown.Item
+                onClick={() =>  playSound()}
+              >
+                <NavLink
+                  to="/projects"
+                  activeclassname="active"
+                  className="nav-links"
+                  // onClick={click ? handleClick : null}
+                  onClick={() => {
+                    handleClick();
+                    playSound();
+                  }}
+                >
+                  {t("navbar.main_projects")}
+                </NavLink>
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                onClick={() =>  playSound()}
+              >
+                 <NavLink
+                  to="/other-projects"
+                  activeclassname="active"
+                  className="nav-links"
+                  // onClick={click ? handleClick : null}
+                  onClick={() => {
+                    handleClick();
+                    playSound();
+                  }}
+                >
+                  {t("navbar.more_projects")}
+                </NavLink>
+              </NavDropdown.Item>
+            </NavDropdown>
+            {/* </NavLink> */}
+          </li>
+
+          {/* <li className="nav-item">
             <NavLink
               to="/projects"
               activeclassname="active"
@@ -130,7 +177,7 @@ const Navbar = ({ isScrolling }) => {
             >
               {t("navbar.projects")}
             </NavLink>
-          </li>
+          </li> */}
 
           <li className="nav-item">
             <NavLink
@@ -153,22 +200,25 @@ const Navbar = ({ isScrolling }) => {
               activeclassname="active"
               className="nav-links"
             > */}
-              <NavDropdown  activeclassname="active"
-              className="nav-links" title={t("navbar.language")}>
-                <NavDropdown.Item
-                  onClick={() => i18n.changeLanguage("en") && playSound()}
-                >
-                  ENGLISH <span className="fi fi-ca"></span>{" "}
-                  <span className="fi fi-us"></span>{" "}
-                  <span className="fi fi-uk"></span>
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  onClick={() => i18n.changeLanguage("es") && playSound()}
-                >
-                  ESPAÑOL <span className="fi fi-mx"></span>{" "}
-                  <span className="fi fi-es"></span>
-                </NavDropdown.Item>
-              </NavDropdown>
+            <NavDropdown
+              activeclassname="active"
+              className="nav-links"
+              title={t("navbar.language")}
+            >
+              <NavDropdown.Item
+                onClick={() => i18n.changeLanguage("en") && playSound()}
+              >
+                ENGLISH <span className="fi fi-ca"></span>{" "}
+                <span className="fi fi-us"></span>{" "}
+                <span className="fi fi-uk"></span>
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                onClick={() => i18n.changeLanguage("es") && playSound()}
+              >
+                ESPAÑOL <span className="fi fi-mx"></span>{" "}
+                <span className="fi fi-es"></span>
+              </NavDropdown.Item>
+            </NavDropdown>
             {/* </NavLink> */}
           </li>
         </ul>

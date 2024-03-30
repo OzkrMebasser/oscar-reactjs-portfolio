@@ -502,6 +502,15 @@ const myOtherProjects = {
   //id.9 TRIE TREE AUTOCOMPLETE
   id_9_project_name: "myOtherProjects.id_9.project_name",
   id_9_desc: "myOtherProjects.id_9.desc",
+  //id.10 SCHOOL WEBSITE MOCKUP
+  id_10_project_name: "myOtherProjects.id_10.project_name",
+  id_10_desc: "myOtherProjects.id_10.desc",
+  //id.11 ROMANS NUMERAL CONVERTER
+  id_11_project_name: "myOtherProjects.id_11.project_name",
+  id_11_desc: "myOtherProjects.id_11.desc",
+  //id.12 TECHIES TRIVIA (VANILLA JS)
+  id_12_project_name: "myOtherProjects.id_12.project_name",
+  id_12_desc: "myOtherProjects.id_12.desc",
 };
 export const otherProjects = [
   //id.1 WEATHER APP
@@ -903,8 +912,8 @@ export const otherProjects = [
     tech_4_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-router-svgrepo-com.svg?alt=media&token=75893829-0a4a-4df9-a8ed-27e47c6dbb65",
   },
-   //id.9 HANOI TOWER (STACK)
-   {
+  //id.9 HANOI TOWER (STACK)
+  {
     id: 9,
     project_name: `${myOtherProjects.id_9_project_name}`,
     src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FotherProjects%2F17.hanoitower.png?alt=media&token=29f78598-5889-45f6-a0df-fa0e58f18516",
@@ -932,7 +941,7 @@ export const otherProjects = [
     //Stack I used Section
     /*Icons alt names*/
     tech_1_name: "JAVASCRIPT",
-    tech_2_name: "REACT BOOSTRAP",
+    tech_2_name: "REACT BOOTSTRAP",
     tech_3_name: "REACT JS",
     tech_4_name: "REACT CONFETTI",
 
@@ -949,5 +958,145 @@ export const otherProjects = [
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-1-logo-svgrepo-com.svg?alt=media&token=f690f37d-9457-4a0b-8378-16a7d426114f",
     tech_4_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2FREACTCONFETTI.png?alt=media&token=8f1713fb-dd5a-49c3-bae4-ad102733febd",
+  },
+  //id.10 SCHOOL WEBSITE MOCKUP
+  {
+    id: 10,
+    project_name: `${myOtherProjects.id_10_project_name}`,
+    src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FotherProjects%2F18.kairoschool.png?alt=media&token=09377195-8ce9-4b5c-a332-4ff95c1d81d7",
+    alt: "SCHOOL WEBSITE MOCKUP",
+    desc: `${myOtherProjects.id_10_desc}`,
+    href: "https://kairos-riviera-maya-school.vercel.app/",
+    //Deployment section
+
+    //VERCEL
+    deploy_icon_1:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fvercel-icon-svgrepo-com.svg?alt=media&token=d8d668a2-26f0-4103-a3ae-99e6d3c31103",
+    deploy_name_1: "VERCEL",
+    // git hub repo
+    git_icon: "https://www.svgrepo.com/show/217753/github.svg",
+    git_url: "https://github.com/OzkrMebasser/Kairos-Riviera-Maya",
+    git_name: "Git repository",
+    www_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Finternet-www-svgrepo-com.svg?alt=media&token=49e3d743-fa07-4bdc-879e-0e99c87df52e",
+    www_site: "https://kairos-riviera-maya-school.vercel.app/",
+
+    //Stack I used Section
+    /*Icons alt names*/
+    tech_1_name: "HTML-5",
+    tech_2_name: "CSS-3",
+    tech_3_name: "JavaScript",
+    tech_4_name: "React Js",
+    tech_5_name: "Tailwind CSS",
+
+    deployed: true,
+    type: "practice",
+
+    /*Icons images*/
+    tech_1_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fhtml-svgrepo-com.svg?alt=media&token=bf007597-213f-410e-b369-8035584a3ad7",
+    tech_2_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fcss-svgrepo-com.svg?alt=media&token=05933c42-aa37-4123-a959-dd7ace7fb4b8",
+    tech_3_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fjs-svgrepo-com.svg?alt=media&token=c6b39548-7d54-4dfc-8720-5a500786edda",
+    tech_4_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-1-logo-svgrepo-com.svg?alt=media&token=f690f37d-9457-4a0b-8378-16a7d426114f",
+    tech_5_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Ftailwind-svgrepo-com.svg?alt=media&token=de41409e-f0e5-4784-96fa-524c7a31c626",
+  },
+  //id.11 ROMANS NUMERAL CONVERTER
+  {
+    id: 11,
+    project_name: `${myOtherProjects.id_11_project_name}`,
+    src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FotherProjects%2F19.romannumeralconverter.png?alt=media&token=b959a262-2513-4807-814a-13c112611cda",
+    alt: "ROMANS NUMERAL CONVERTER",
+    desc: `${myOtherProjects.id_11_desc}`,
+    href: "https://convert-roman-nums-to-decimal-syst.vercel.app/",
+    //Deployment section
+
+    //VERCEL
+    deploy_icon_1:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fvercel-icon-svgrepo-com.svg?alt=media&token=d8d668a2-26f0-4103-a3ae-99e6d3c31103",
+    deploy_name_1: "VERCEL",
+    // git hub repo
+    git_icon: "https://www.svgrepo.com/show/217753/github.svg",
+    git_url: "https://github.com/OzkrMebasser/ConvertRomanNumsToDecimalSyst",
+    git_name: "Git repository",
+    www_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Finternet-www-svgrepo-com.svg?alt=media&token=49e3d743-fa07-4bdc-879e-0e99c87df52e",
+    www_site: "https://convert-roman-nums-to-decimal-syst.vercel.app/",
+
+    aliasInstitutionName: `${myOtherProjects.aliasInstitutionName}`,
+    aliasInstitutionTitle: `${myOtherProjects.aliasInstitutionTitle}`,
+    seeCert: `${myOtherProjects.seeCert}`,
+
+    //Stack I used Section
+    /*Icons alt names*/
+    tech_1_name: "HTML-5",
+    tech_2_name: "CSS-3",
+    tech_3_name: "JavaScript",
+    tech_4_name: "React Js",
+    tech_5_name: "React Bootstrap",
+    tech_6_name: "Redux",
+
+    deployed: true,
+    type: "academic",
+
+    /*Icons images*/
+    tech_1_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fhtml-svgrepo-com.svg?alt=media&token=bf007597-213f-410e-b369-8035584a3ad7",
+    tech_2_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fcss-svgrepo-com.svg?alt=media&token=05933c42-aa37-4123-a959-dd7ace7fb4b8",
+    tech_3_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fjs-svgrepo-com.svg?alt=media&token=c6b39548-7d54-4dfc-8720-5a500786edda",
+    tech_4_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-1-logo-svgrepo-com.svg?alt=media&token=f690f37d-9457-4a0b-8378-16a7d426114f",
+    tech_5_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-bootstrap.png?alt=media&token=b6abc8af-2a82-422e-9898-2c3e31a72e51",
+    tech_6_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fredux-svgrepo-com.svg?alt=media&token=f19b4bf6-6c39-4d25-96a3-196405d05641",
+  },
+  //id.12 TECHIES TRIVIA (VANILLA JS)
+  {
+    id: 12,
+    project_name: `${myOtherProjects.id_12_project_name}`,
+    src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FotherProjects%2F20.techiesgame.png?alt=media&token=e4c50d7a-38c1-4d09-98b2-758ca4f4c209",
+    alt: "TECHIES GAME (VANILLA JS)",
+    desc: `${myOtherProjects.id_12_desc}`,
+    href: "https://trivia-techies.netlify.app/",
+    //Deployment section
+
+    //NETLIFY
+    deploy_icon_1:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fnetlify-svgrepo-com.svg?alt=media&token=2b403c92-7d50-45d2-b049-20c6f8285a3e",
+    deploy_name_1: "NETLIFY",
+    // git hub repo
+    git_icon: "https://www.svgrepo.com/show/217753/github.svg",
+    git_url: "https://github.com/OzkrMebasser/Trivia-Techies",
+    git_name: "Git repository",
+    www_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Finternet-www-svgrepo-com.svg?alt=media&token=49e3d743-fa07-4bdc-879e-0e99c87df52e",
+    www_site: "https://trivia-techies.netlify.app/",
+
+    aliasInstitutionName: `${myOtherProjects.aliasInstitutionName}`,
+    aliasInstitutionTitle: `${myOtherProjects.aliasInstitutionTitle}`,
+    seeCert: `${myOtherProjects.seeCert}`,
+
+    //Stack I used Section
+    /*Icons alt names*/
+    tech_1_name: "HTML-5",
+    tech_2_name: "CSS-3",
+    tech_3_name: "JavaScript",
+
+    deployed: true,
+    type: "academic",
+
+    /*Icons images*/
+    tech_1_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fhtml-svgrepo-com.svg?alt=media&token=bf007597-213f-410e-b369-8035584a3ad7",
+    tech_2_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fcss-svgrepo-com.svg?alt=media&token=05933c42-aa37-4123-a959-dd7ace7fb4b8",
+    tech_3_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fjs-svgrepo-com.svg?alt=media&token=c6b39548-7d54-4dfc-8720-5a500786edda",
   },
 ];
