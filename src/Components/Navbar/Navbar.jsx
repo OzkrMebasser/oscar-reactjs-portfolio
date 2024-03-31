@@ -2,6 +2,9 @@ import React, { useState, useRef, useEffect } from "react";
 import SoundClick from "../Click/interface.mp3";
 import { useTranslation } from "react-i18next";
 
+import { IoMdArrowDropright } from "react-icons/io";
+
+
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 import "./Navbar.css";
@@ -117,51 +120,42 @@ const Navbar = ({ isScrolling }) => {
             </NavLink>
           </li>
 
-          <li className=" nav-item-prueba ">
-            {/* <NavLink
-              to="/contact"
-              activeclassname="active"
-              className="nav-links"
-            > */}
+          <li className=" nav-item-dropdown-projects ">
+         
             <NavDropdown
               activeclassname="active"
               className="nav-links"
               title={t("navbar.projects")}
             >
-              <NavDropdown.Item
-                onClick={() =>  playSound()}
-              >
+              <NavDropdown.Item onClick={() => playSound()} className="bg-select-item a">
                 <NavLink
                   to="/projects"
                   activeclassname="active"
-                  className="nav-links"
-                  // onClick={click ? handleClick : null}
+                  className="dropdown-links"
+                 
                   onClick={() => {
                     handleClick();
                     playSound();
                   }}
                 >
-                  {t("navbar.main_projects")}
+                <IoMdArrowDropright className="arrow-menu"/> {t("navbar.main_projects")}
                 </NavLink>
               </NavDropdown.Item>
-              <NavDropdown.Item
-                onClick={() =>  playSound()}
-              >
-                 <NavLink
-                  to="/other-projects"
+              <NavDropdown.Item onClick={() => playSound()} className="bg-select-item">
+                <NavLink
+                  to="/more-projects"
                   activeclassname="active"
-                  className="nav-links"
-                  // onClick={click ? handleClick : null}
+                  className="dropdown-links"
                   onClick={() => {
                     handleClick();
                     playSound();
                   }}
                 >
-                  {t("navbar.more_projects")}
+                  <IoMdArrowDropright className="arrow-menu"/>{t("navbar.more_projects")}
                 </NavLink>
               </NavDropdown.Item>
             </NavDropdown>
-            {/* </NavLink> */}
+          
           </li>
 
           {/* <li className="nav-item">
@@ -184,7 +178,7 @@ const Navbar = ({ isScrolling }) => {
               to="/contact"
               activeclassname="active"
               className="nav-links"
-              // onClick={click ? handleClick : null}
+             
               onClick={() => {
                 handleClick();
                 playSound();
@@ -194,32 +188,30 @@ const Navbar = ({ isScrolling }) => {
             </NavLink>
           </li>
 
-          <li className=" nav-item-prueba ">
-            {/* <NavLink
-              to="/contact"
-              activeclassname="active"
-              className="nav-links"
-            > */}
+          <li className=" nav-item-dropdown-language ">
             <NavDropdown
               activeclassname="active"
               className="nav-links"
               title={t("navbar.language")}
             >
               <NavDropdown.Item
+              className="bg-select-item a"
                 onClick={() => i18n.changeLanguage("en") && playSound()}
               >
-                ENGLISH <span className="fi fi-ca"></span>{" "}
+                <span className="dropdown-links lang">   <IoMdArrowDropright className="arrow-menu"/> ENGLISH </span>
+               <span className="fi fi-ca"></span>{" "}
                 <span className="fi fi-us"></span>{" "}
-                <span className="fi fi-uk"></span>
+                {/* <span className="fi fi-uk"></span> */}
               </NavDropdown.Item>
               <NavDropdown.Item
+              className="bg-select-item "
                 onClick={() => i18n.changeLanguage("es") && playSound()}
               >
-                ESPAÑOL <span className="fi fi-mx"></span>{" "}
+                 <span className="dropdown-links lang"><IoMdArrowDropright className="arrow-menu"/> ESPAÑOL </span>
+                 <span className="fi fi-mx"></span>{" "}
                 <span className="fi fi-es"></span>
               </NavDropdown.Item>
             </NavDropdown>
-            {/* </NavLink> */}
           </li>
         </ul>
       </div>

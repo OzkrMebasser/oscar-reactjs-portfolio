@@ -98,7 +98,7 @@ const Projects = ({ props }) => {
                   </p>
 
                   {project.href === "/other-projects" ? (
-                    <Link to="/other-projects">
+                    <Link to="/more-projects">
                       <img
                         className="inner-img"
                         src={project.src}

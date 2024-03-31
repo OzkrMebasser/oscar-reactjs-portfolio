@@ -218,7 +218,7 @@ function ModalItem({ props, ...project }) {
             </div>
           ) : (
             <div className="seeOtherProj">
-              <Link to="/other-projects">
+              <Link to="/more-projects">
                 <Button
                   className="seeOtherProjBtn text-uppercase"
                   onClick={handleClose}

@@ -93,12 +93,21 @@
 /*google Map*/
 .text-living{
   position: absolute;
-  top: 39%;
-  left: 26%;
+  font-size: 2.5rem;
+  top: 43%;
+  left: 53%;
   transform: translate(-50%, -50%);
-  background-color: rgb(0, 0, 0);
-  color: #d4af37;
+  /* background-color: rgb(0, 0, 0); */
+  /* color: #cf0b0b; */
+  animation: colorChange 2s infinite;
   padding: 8px;
+}
+@keyframes colorChange {
+  0% { color: red; }
+  25% { color: black; }
+  50% { color: red; }
+  75% { color: black; }
+  100% { color: red; }
 }
 
 @keyframes upAndDown {
@@ -112,7 +121,8 @@
 
 .arrow-down {
 
-  margin-left: 5px;
+  
+
   animation: upAndDown 2s infinite;
 }
 
@@ -723,31 +733,12 @@ textarea:valid + label {
  
   .text-living{
     position: absolute;
-    top: 55%;
-    left: 3%;
-    font-size: .5rem;
+    top: 40%;
+    left: 60%;
+    font-size: 2rem;
     transform: translate(-50%, -50%);
-    background-color: rgb(0, 0, 0);
-    color: #d4af37;
-    padding: 8px;
-    transform: rotate(-45deg);
+   
   }
 
-
-  
-  @keyframes upAndDown {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(5px);
-    }
-  }
-  
-  .arrow-down {
-  
-    margin-left: 5px;
-    animation: upAndDown 0s infinite;
-  }
   
 }

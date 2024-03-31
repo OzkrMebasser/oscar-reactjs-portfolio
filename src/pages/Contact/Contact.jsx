@@ -1,6 +1,9 @@
 import React, { Fragment, useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { ImArrowDownRight } from "react-icons/im";
+
+import { ImLocation2 } from "react-icons/im";
+
+
 
 
 
@@ -178,7 +181,7 @@ const Contact = () => {
           <div className="contact-map ">
             <div className="map">
               <MyLocation />
-              <span className='text-living'>I'm currently living in <ImArrowDownRight className="arrow-down change-arrow-dir"/>
+              <span className="text-living"> <ImLocation2 className="arrow-down"/>
    </span>
             </div>
           </div>
