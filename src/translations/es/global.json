@@ -587,14 +587,26 @@
     "id_12": {
       "project_name": "TRIVIA PARA TECHIES (VANILLA JS)",
       "desc": "PARA EL PROYECTO FINAL DEL MÓDULO DE FUNDAMENTOS EN HTML, CSS Y JAVASCRIPT EN *ACADEMLO, SE NOS PIDIÓ REALIZAR SOLICITUDES A LA API DE 'OPEN TRIVIA' (OPENTDB.COM) Y CREAR UNA INTERFAZ PARA UNA TRIVIA DE NUESTRA ELECCIÓN UTILIZANDO ÚNICAMENTE JAVASCRIPT PURO (VANILLA JS). ADEMÁS, SE NOS SOLICITÓ IMPLEMENTAR EL USO DE LOCALSTORAGE PARA ALMACENAR LAS MEJORES PUNTUACIONES DE LOS USUARIOS."
+    },
+    "id_13": {
+      "project_name": "MAQUETA PORTAFOLIO (VANILLA JS)",
+      "desc": "ESTE PROYECTO FUE EL PRIMER ENTREGABLE EN EL MÓDULO DE FUNDAMENTOS EN HTML, CSS Y JAVASCRIPT EN *ACADEMLO, SE NOS PIDIÓ REALIZAR UNA MAQUETA DE UN PORTAFOLIO SOLO USANDO HTML, CSS Y JAVASCRIPT PURO (VANILLA JS)"
+    },
+    "id_14": {
+      "project_name": "Aplicación de Control de Gastos",
+      "desc": "Esta aplicación la desarrollé con el propósito de practicar React. Permite a los usuarios llevar un registro detallado de sus ingresos y gastos. Utilice algunas dependencias para mostrar automáticamente la fecha y hora de cada operación, de igual manera utilice expresiones regulares (regex) para formatear los datos de manera legible y amigable."
     }
-
 
   
     },
 
   "contact": {
     "alert": "Hola, tu correo ha sido enviado con éxito, me pondré en contacto contigo lo antes posible, ¡que tengas un buen día!",
-    "title": "¡PONGÁMONOS EN CONTACTO!"
+    "title": "¡PONGÁMONOS EN CONTACTO!",
+    "drop_message": "¡DEJAME UN MENSAJE!",
+    "your_name": "NOMBRE",
+    "your_email": "CORREO ELECTRÓNICO",
+    "your_message": "ESCRIBE TU MENSAJE AQUI ...",
+    "send_message": "ENVIAR MENSAJE"
   }
 }

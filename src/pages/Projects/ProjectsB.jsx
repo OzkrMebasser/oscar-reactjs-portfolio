@@ -94,10 +94,11 @@ const Projects = ({ props }) => {
               {projects.map((project, index) => (
                 <div className="text-center" key={index}>
                   <p className="projectName">
-                    {index + 1} - {t(`${project.project_name}`)}
+                    {/* {index + 1} - {t(`${project.project_name}`)} */}
+                    {t(`${project.project_name}`)}
                   </p>
 
-                  {project.href === "/other-projects" ? (
+                  {project.href === "/more-projects" ? (
                     <Link to="/more-projects">
                       <img
                         className="inner-img"

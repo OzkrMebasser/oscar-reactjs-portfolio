@@ -3,10 +3,6 @@ import { useTranslation } from "react-i18next";
 
 import { ImLocation2 } from "react-icons/im";
 
-
-
-
-
 import emailjs from "@emailjs/browser";
 
 import MyLocation from "./MyLocation";
@@ -87,8 +83,12 @@ const Contact = () => {
                 </a>
               </li>
               <li className="liContact">
-              <a href="#" onClick={() => (window.location = "mailto:oscarmoreno80@gmail.com")}>
-
+                <a
+                  href="#"
+                  onClick={() =>
+                    (window.location = "mailto:oscarmoreno80@gmail.com")
+                  }
+                >
                   <span></span>
                 </a>
               </li>
@@ -141,11 +141,11 @@ const Contact = () => {
             </form>
           </div> */}
           <div className="contact-form-wrapper conctact-card">
-            <span className="subTitleContact">Drop me a message</span>
+            <span className="subTitleContact">{t("contact.drop_message")}</span>
             <form className="form" ref={form} onSubmit={enviarEmail}>
               <div className="group">
                 <input placeholder="" type="text" name="sender" required />
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name">{t("contact.your_name")}</label>
               </div>
               <div className="group">
                 <input
@@ -155,7 +155,7 @@ const Contact = () => {
                   name="email"
                   required=""
                 />
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">{t("contact.your_email")}</label>
               </div>
               <div className="group">
                 <textarea
@@ -165,24 +165,30 @@ const Contact = () => {
                   rows="5"
                   required=""
                 ></textarea>
-                <label htmlFor="message">Message</label>
+                <label htmlFor="message">{t("contact.your_message")}</label>
               </div>
               {/* <button type="submit">Submit</button> */}
               <button className="submit-btn ">
                 <div className="btn">
-                  <span className="ml-2"> Send Message </span>
+                  <span className="ml-2"> {t("contact.send_message")}</span>
 
                   <i className="ico"></i>
                 </div>
-              </button> 
+              </button>
             </form>
           </div>
 
           <div className="contact-map ">
             <div className="map">
               <MyLocation />
-              <span className="text-living"> <ImLocation2 className="arrow-down"/>
-   </span>
+              <span class="text-living">
+                <img
+                  class="myLocIcon arrow-down"
+                  src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/mylocationbgtrans.png?alt=media&token=f7b105af-a117-448e-8686-1d392b8b124c"
+                  alt="my location"
+                />
+              </span>
+              
             </div>
           </div>
         </div>

@@ -422,7 +422,7 @@ export const projects = [
     src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2F9.otherprojects.png?alt=media&token=b94d54a9-d3f6-45d9-808d-655f05b2d316",
     alt: "OTHER PROJECTS",
     desc: `${myProjects.id_9_desc}`,
-    href: "/other-projects",
+    href: "/more-projects",
 
     //Deployment section
     deployed: true,
@@ -511,6 +511,12 @@ const myOtherProjects = {
   //id.12 TECHIES TRIVIA (VANILLA JS)
   id_12_project_name: "myOtherProjects.id_12.project_name",
   id_12_desc: "myOtherProjects.id_12.desc",
+  //id.13 PORTOFOLIO MOCKUP
+  id_13_project_name: "myOtherProjects.id_13.project_name",
+  id_13_desc: "myOtherProjects.id_13.desc",
+  //id.14 PORTOFOLIO MOCKUP
+  id_14_project_name: "myOtherProjects.id_14.project_name",
+  id_14_desc: "myOtherProjects.id_14.desc",
 };
 export const otherProjects = [
   //id.1 WEATHER APP
@@ -1099,6 +1105,93 @@ export const otherProjects = [
     tech_3_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fjs-svgrepo-com.svg?alt=media&token=c6b39548-7d54-4dfc-8720-5a500786edda",
   },
-  
+  //id.13 PORTOFOLIO MOCKUP
+  {
+    id: 13,
+    project_name: `${myOtherProjects.id_13_project_name}`,
+    src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FotherProjects%2F21.myportfolio.jsvanilla.png?alt=media&token=f99f17fd-edf5-4454-939e-36c65c2c35c4",
+    alt: "PORTOFOLIO MOCKUP (VANILLA JS)",
+    desc: `${myOtherProjects.id_13_desc}`,
+    href: "https://portfolio-oscar-moreno.vercel.app/",
+    //Deployment section
 
+    //VERCEL
+    deploy_icon_1:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fvercel-icon-svgrepo-com.svg?alt=media&token=d8d668a2-26f0-4103-a3ae-99e6d3c31103",
+    deploy_name_1: "VERCEL",
+    // git hub repo
+    git_icon: "https://www.svgrepo.com/show/217753/github.svg",
+    git_url: "https://github.com/OzkrMebasser/OscarMoreno-Portfolio",
+    git_name: "Git repository",
+    www_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Finternet-www-svgrepo-com.svg?alt=media&token=49e3d743-fa07-4bdc-879e-0e99c87df52e",
+    www_site: "https://portfolio-oscar-moreno.vercel.app/",
+
+    aliasInstitutionName: `${myOtherProjects.aliasInstitutionName}`,
+    aliasInstitutionTitle: `${myOtherProjects.aliasInstitutionTitle}`,
+    seeCert: `${myOtherProjects.seeCert}`,
+
+    //Stack I used Section
+    /*Icons alt names*/
+    tech_1_name: "HTML-5",
+    tech_2_name: "CSS-3",
+    tech_3_name: "JavaScript",
+
+    deployed: true,
+    type: "academic",
+
+    /*Icons images*/
+    tech_1_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fhtml-svgrepo-com.svg?alt=media&token=bf007597-213f-410e-b369-8035584a3ad7",
+    tech_2_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fcss-svgrepo-com.svg?alt=media&token=05933c42-aa37-4123-a959-dd7ace7fb4b8",
+    tech_3_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fjs-svgrepo-com.svg?alt=media&token=c6b39548-7d54-4dfc-8720-5a500786edda",
+  },
+  //id.14 EXPENSES CONTROL APP
+  {
+    id: 13,
+    project_name: `${myOtherProjects.id_14_project_name}`,
+    src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FotherProjects%2F22.controldegastosapp.png?alt=media&token=6c2fef8d-6648-4840-8450-f6402781a0f5",
+    alt: "EXPENSES CONTROL APP",
+    desc: `${myOtherProjects.id_14_desc}`,
+    href: "https://control-de-gastos-practice.netlify.app/",
+    //Deployment section
+
+   //NETLIFY
+   deploy_icon_1:
+   "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fnetlify-svgrepo-com.svg?alt=media&token=2b403c92-7d50-45d2-b049-20c6f8285a3e",
+ deploy_name_1: "NETLIFY",
+    // git hub repo
+    git_icon: "https://www.svgrepo.com/show/217753/github.svg",
+    git_url: "https://github.com/OzkrMebasser/control-de-gastos-practice",
+    git_name: "Git repository",
+    www_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Finternet-www-svgrepo-com.svg?alt=media&token=49e3d743-fa07-4bdc-879e-0e99c87df52e",
+    www_site: "https://control-de-gastos-practice.netlify.app/",
+
+    aliasInstitutionName: `${myOtherProjects.aliasInstitutionName}`,
+    aliasInstitutionTitle: `${myOtherProjects.aliasInstitutionTitle}`,
+    seeCert: `${myOtherProjects.seeCert}`,
+
+    //Stack I used Section
+    /*Icons alt names*/
+    tech_1_name: "HTML-5",
+    tech_2_name: "CSS-3",
+    tech_3_name: "JavaScript",
+    tech_4_name: "React Js",
+
+    deployed: true,
+    type: "practice",
+
+    /*Icons images*/
+    tech_1_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fhtml-svgrepo-com.svg?alt=media&token=bf007597-213f-410e-b369-8035584a3ad7",
+    tech_2_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fcss-svgrepo-com.svg?alt=media&token=05933c42-aa37-4123-a959-dd7ace7fb4b8",
+    tech_3_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fjs-svgrepo-com.svg?alt=media&token=c6b39548-7d54-4dfc-8720-5a500786edda",
+    tech_4_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-1-logo-svgrepo-com.svg?alt=media&token=f690f37d-9457-4a0b-8378-16a7d426114f",
+  },
 ];

@@ -590,12 +590,26 @@
     "id_12": {
       "project_name": "TECHIES TRIVIA (VANILLA JS)",
       "desc": "FOR THE FINAL PROJECT OF THE HTML, CSS AND JAVASCRIPT FUNDAMENTALS MODULE IN *ACADEMLO, WE WERE ASKED TO MAKE REQUESTS TO THE 'OPEN TRIVIA' API (OPENTDB.COM) AND CREATE AN INTERFACE FOR A TRIVIA OF OUR CHOICE USING ONLY PURE JAVASCRIPT (VANILLA JS). ALSO, WE WERE ASKED TO IMPLEMENT THE USE OF LOCALSTORAGE TO STORE THE BEST USER SCORES."
+    },
+    "id_13": {
+      "project_name": "PORTFOLIO MOCKUP (VANILLA JS)",
+      "desc": "THIS PROJECT WAS THE FIRST DELIVERABLE IN THE HTML, CSS AND JAVASCRIPT FUNDAMENTALS MODULE IN *ACADEMLO, WE WERE ASKED TO MAKE A PORTFOLIO MOCKUP USING ONLY PURE HTML, CSS AND JAVASCRIPT (VANILLA JS)."
+    },
+    "id_14": {
+      "project_name": "Expense Control App",
+      "desc": "I developed this application for the purpose of practicing React. It allows users to keep a detailed record of their income and expenses. I used some dependencies to automatically display the date and time of each operation, likewise use regular expressions (regex) to format the data in a readable and friendly way."
     }
+
 
   },
 
   "contact": {
     "alert": "Hi, your email has been sent with success, I'll be in touch with you asap, have a great day!",
-    "title": "LET´S GET IN TOUCH!"
+    "title": "LET´S GET IN TOUCH!",
+    "drop_message":"DROP ME A MESSAGE!",
+    "your_name": "NAME",
+    "your_email": "EMAIL",
+    "your_message": "WRITE YOUR MESSAGE HERE ...",
+    "send_message": "SEND MESSAGE"
   }
 }

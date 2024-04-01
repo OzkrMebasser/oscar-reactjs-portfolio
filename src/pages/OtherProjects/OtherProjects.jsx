@@ -96,11 +96,11 @@ const OtherProjects = () => {
           <option value="all" disabled>
             {t("myProjects.selectProjectType")}
           </option>
-          <option value="online">{t("myProjects.online")}</option>
+          {/* <option value="online">{t("myProjects.online")}</option> */}
           <option value="academic">{t("myProjects.academic")}</option>
-          <option value="development">{t("myProjects.dev")}</option>
+          {/* <option value="development">{t("myProjects.dev")}</option> */}
           <option value="practice">{t("myProjects.practice")}</option>
-          <option value="offline">{t("myProjects.offline")}</option>
+          {/* <option value="offline">{t("myProjects.offline")}</option> */}
         </select>
         <button
           className="select-all-btn uppercase"
