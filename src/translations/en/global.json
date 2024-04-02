@@ -598,6 +598,10 @@
     "id_14": {
       "project_name": "Expense Control App",
       "desc": "I developed this application for the purpose of practicing React. It allows users to keep a detailed record of their income and expenses. I used some dependencies to automatically display the date and time of each operation, likewise use regular expressions (regex) to format the data in a readable and friendly way."
+    },
+    "id_15": {
+      "project_name": "CONTACT APPLICATION",
+      "desc": "I DEVELOPED THIS APPLICATION FOR THE PURPOSE OF PRACTICING REACT AND REACT ROUTER (VERSION 6), AND I USED THE LOCALFORAGE DEPENDENCY TO MANAGE DATA STORAGE IN THE NAVIGATOR LOCAL STORAGE."
     }
 
 

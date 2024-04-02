@@ -595,7 +595,12 @@
     "id_14": {
       "project_name": "Aplicación de Control de Gastos",
       "desc": "Esta aplicación la desarrollé con el propósito de practicar React. Permite a los usuarios llevar un registro detallado de sus ingresos y gastos. Utilice algunas dependencias para mostrar automáticamente la fecha y hora de cada operación, de igual manera utilice expresiones regulares (regex) para formatear los datos de manera legible y amigable."
+    },
+    "id_15": {
+      "project_name": "APLICACIÓN DE CONTACTOS",
+      "desc": "DESARROLLÉ ESTA APLICACIÓN CON EL PROPÓSITO DE PRACTICAR REACT Y REACT ROUTER (VERSIÓN 6), Y UTILICÉ LA DEPENDENCIA LOCALFORAGE PARA GESTIONAR EL ALMACENAMIENTO DE DATOS EN EL LOCAL STORAGE DEL NAVEGADOR."
     }
+
 
   
     },
