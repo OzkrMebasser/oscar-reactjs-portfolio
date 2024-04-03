@@ -520,6 +520,9 @@ const myOtherProjects = {
   //id.15 CONTACTS APP REACT ROUTER V6
   id_15_project_name: "myOtherProjects.id_15.project_name",
   id_15_desc: "myOtherProjects.id_15.desc",
+  //id.16 MEMORY CARD GAME /
+  id_16_project_name: "myOtherProjects.id_16.project_name",
+  id_16_desc: "myOtherProjects.id_16.desc",
 };
 export const otherProjects = [
   //id.1 WEATHER APP
@@ -1245,4 +1248,50 @@ export const otherProjects = [
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-1-logo-svgrepo-com.svg?alt=media&token=f690f37d-9457-4a0b-8378-16a7d426114f",
     tech_5_icon: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-router-svgrepo-com.svg?alt=media&token=75893829-0a4a-4df9-a8ed-27e47c6dbb65"
     },
+ //id.16 MEMORY CARD GAME / JUEGO DE TARJETAS DE MEMORIA
+ {
+  id: 16,
+  project_name: `${myOtherProjects.id_16_project_name}`,
+  src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FotherProjects%2F24.memorygame.png?alt=media&token=c93fc6d5-2b04-4fe7-bbc2-d69e3527cd3d",
+  alt: "MEMORY CARD GAME",
+  desc: `${myOtherProjects.id_16_desc}`,
+  href: "https://memory-card-game-snowy-alpha.vercel.app/",
+  //Deployment section
+
+  //VERCEL
+  deploy_icon_1:
+    "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fvercel-icon-svgrepo-com.svg?alt=media&token=d8d668a2-26f0-4103-a3ae-99e6d3c31103",
+  deploy_name_1: "VERCEL",
+  // git hub repo
+  git_icon: "https://www.svgrepo.com/show/217753/github.svg",
+  git_url: "https://github.com/OzkrMebasser/memory-card-game",
+  git_name: "Git repository",
+  www_icon:
+    "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Finternet-www-svgrepo-com.svg?alt=media&token=49e3d743-fa07-4bdc-879e-0e99c87df52e",
+  www_site: "https://memory-card-game-snowy-alpha.vercel.app/",
+
+  aliasInstitutionName: `${myOtherProjects.aliasInstitutionName}`,
+  aliasInstitutionTitle: `${myOtherProjects.aliasInstitutionTitle}`,
+  seeCert: `${myOtherProjects.seeCert}`,
+
+  //Stack I used Section
+  /*Icons alt names*/
+  tech_1_name: "HTML-5",
+  tech_2_name: "CSS-3",
+  tech_3_name: "JavaScript",
+  tech_4_name: "React JS",
+  tech_5_name: "Redux",
+  tech_6_name: "Project IDX",
+
+  deployed: true,
+  type: "practice",
+
+  /*Icons images*/
+  tech_1_icon:
+    "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fhtml-svgrepo-com.svg?alt=media&token=bf007597-213f-410e-b369-8035584a3ad7",
+  tech_2_icon:
+    "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fcss-svgrepo-com.svg?alt=media&token=05933c42-aa37-4123-a959-dd7ace7fb4b8",
+  tech_3_icon:
+    "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fjs-svgrepo-com.svg?alt=media&token=c6b39548-7d54-4dfc-8720-5a500786edda",
+},
 ];
