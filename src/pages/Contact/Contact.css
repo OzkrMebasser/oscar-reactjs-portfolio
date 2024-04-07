@@ -59,17 +59,9 @@
   border-radius: 0 10px 10px 0;
 }
 
-.myLocationSSS {
-  /* position: inset-0;
-  height: 380px;
-  border-radius: 25px; */
-  /* position: relative;
-  width: 100%;
-  height: auto;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  overflow: hidden; */
-  /* width: 200px; */
+
+.myLocationIs{
+ text-transform: lowercase  !important;
 }
 
 .myLocation {
@@ -80,6 +72,7 @@
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   overflow: hidden;
+
 }
 .myLocation iframe {
   position: absolute;

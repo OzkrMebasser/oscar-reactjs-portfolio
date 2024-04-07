@@ -1,7 +1,7 @@
 import React, { Fragment, useRef } from "react";
 import { useTranslation } from "react-i18next";
+import { Tooltip as MyLocationIs } from "react-tooltip";
 
-import { ImLocation2 } from "react-icons/im";
 
 import emailjs from "@emailjs/browser";
 
@@ -181,14 +181,20 @@ const Contact = () => {
           <div className="contact-map ">
             <div className="map">
               <MyLocation />
-              <span class="text-living">
+              <span className="text-living"
+              
+              //  data-tooltip-content={`${t("myProjects.websiteLink")}`}
+              >
                 <img
-                  class="myLocIcon arrow-down"
+                 id="myLocationIs"
+                 data-tooltip-content="I'm here now"
+                 data-tooltip-variant="light"
+                  className="myLocIcon arrow-down myLocationIs"
                   src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/mylocationbgtrans.png?alt=media&token=f7b105af-a117-448e-8686-1d392b8b124c"
                   alt="my location"
                 />
               </span>
-              
+              <MyLocationIs anchorId="myLocationIs"  />
             </div>
           </div>
         </div>
