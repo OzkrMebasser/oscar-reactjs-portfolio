@@ -429,9 +429,10 @@ body{
     height: 100%;
     /* background-color: rgb(0, 0, 0); */
     /* background-image: url('https://i.gifer.com/QWfb.gif'); */
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/boreal-aurora-globe.gif?alt=media&token=47821121-4b34-4049-9e0a-0df769f427ff');
     background-position: center center;
     background-size: cover;
-    /* opacity: .3; */
+    opacity: .5;
     border-radius: inherit; 
   }
 
@@ -446,7 +447,7 @@ body{
     background-image: url('https://www.textures4photoshop.com/tex/thumbs/computer-screen-code-glitch-animation-gif-background-free-thumb57.gif');
     background-position: center center;
     background-size: cover;
-    opacity: .1;
+    opacity: .2;
     border-radius: inherit;
     z-index: -2;
     animation: codesHue 30s infinite linear; 
@@ -472,7 +473,7 @@ body{
 }
 
 .aurora-outer {
-  background: linear-gradient(63deg, #09bb09  0%, #1c1c72 49%, #ca00b9 82%);
+  background: linear-gradient(63deg, #0bf50b  0%, #1c1c72 49%, #ca00b9 82%);
   background-size: 200%;
   opacity: .9;
   animation: aurora 10s infinite;
@@ -497,23 +498,26 @@ body{
   }
 }
 
-@keyframes aurora-b {
+.gradient {
+  width: 250px;
+  height: 250px;
+  /* filter: blur(50px); */
+  background-image: linear-gradient(hsl(158, 82%, 57%), hsl(252, 82%, 57%));
+  animation: rotate-colors 50s cubic-bezier(0.8, 0.2, 0.2, 0.8) alternate infinite;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+
+
+@keyframes rotate-colors {
   0% {
-      background-position: right bottom; 
-  }
-  25% {
-      background-position: left bottom;
-  }
-  50% {
-      background-position: left top;
-  }
-  75% {
-      background-position: right top;
+    transform: rotate(0deg);
   }
   100% {
-      background-position: left top;
+    transform: rotate(360deg);
   }
 }
+
  /* .bckGdCodes{
   position: absolute;
   width: 100%;
