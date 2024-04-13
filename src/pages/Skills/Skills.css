@@ -28,6 +28,11 @@
   margin: auto;
 }
 
+#normalSizeAcc{
+  width: auto;
+  margin: auto;
+}
+
 .textTitle {
   text-align: center;
   color: #d4af37;
@@ -562,7 +567,9 @@
   color: #ffffff;
 }
 
-/* Estilos adicionales si es necesario */
+#softSkillsSubAcc{
+ margin-left: -20px;
+}
 
 
 

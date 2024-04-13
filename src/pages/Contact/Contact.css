@@ -60,8 +60,8 @@
 }
 
 
-.myLocationIs{
- text-transform: lowercase  !important;
+#myLocationIs{
+ text-transform: capitalize  !important;
 }
 
 .myLocation {
@@ -151,6 +151,10 @@
   border-radius: 8px;
   margin: auto;
   /* box-shadow: 0px 0px 6px 6px #fffffe; ; */
+}
+
+.excpUppercase{
+  text-transform: capitalize !important;
 }
 
 /*google Map end*/

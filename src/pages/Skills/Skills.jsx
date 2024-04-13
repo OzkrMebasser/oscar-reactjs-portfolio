@@ -363,6 +363,7 @@ const Skills = (props) => {
             </Accordion.Body>
           </Accordion.Item>
           {/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑  Certifications  ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/}
+
           {/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Soft skills ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/}
           <h4 className="subTitles">{t("skills.softSkills")}</h4>
 
@@ -426,7 +427,7 @@ const Skills = (props) => {
                 </Accordion.Item>
               </Accordion>
             </Accordion.Body>
-            {/* acordion 2  */}
+            
           </Accordion.Item>
           {/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑  Soft skills  ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/}
         </Accordion>

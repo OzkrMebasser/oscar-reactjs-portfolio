@@ -56,8 +56,8 @@ const Contact = () => {
               </li>
               <li className="liContact">
                 <a
-                  onClick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'})"
-                  href="tel:+5219841681509"
+                  // onClick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'})"
+                  href="tel:+16729747575"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -75,7 +75,7 @@ const Contact = () => {
               </li>
               <li className="liContact">
                 <a
-                  href="https://wa.me/19841681509?text=Hey,%20are%20you%20available%20for%20an%20interview%20?"
+                  href="https://wa.me/16729747575?text=Hey,%20are%20you%20available%20for%20an%20interview%20?"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -187,9 +187,9 @@ const Contact = () => {
               >
                 <img
                  id="myLocationIs"
-                 data-tooltip-content="I'm here now"
+                 data-tooltip-content={t("contact.iLiveHere")}
                  data-tooltip-variant="light"
-                  className="myLocIcon arrow-down myLocationIs"
+                  className="myLocIcon arrow-down  "
                   src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/mylocationbgtrans.png?alt=media&token=f7b105af-a117-448e-8686-1d392b8b124c"
                   alt="my location"
                 />
