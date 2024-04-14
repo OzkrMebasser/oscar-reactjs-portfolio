@@ -64,7 +64,7 @@ const Home = ({handleClose}) => {
               </li>
               <li className="li">
                 <a
-                  href="https://wa.me/16729747575?text=Hey,%20are%20you%20available%20for%20an%20interview%20?"
+                   href={`https://wa.me/16729747575?text=${t("contact.whastsAppText")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
