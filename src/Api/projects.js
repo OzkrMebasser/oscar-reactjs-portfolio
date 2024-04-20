@@ -40,7 +40,7 @@ export const projects = [
     src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2F1.v2.oscarmorenoportfolio.png?alt=media&token=e255f12d-c04b-4682-8b32-14fdec4a99cd",
     alt: "Oscar Moreno Portfolio",
     desc: `${myProjects.id_1_desc}`,
-    href: "https://moreno-oscar-dev.vercel.app/projects",
+    href: "https://oscarmorenodev.vercel.app//projects",
     //Deployment section
 
     //Vercel
@@ -53,7 +53,7 @@ export const projects = [
     git_name: "Git repository",
     www_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Finternet-www-svgrepo-com.svg?alt=media&token=49e3d743-fa07-4bdc-879e-0e99c87df52e",
-    www_site: "https://moreno-oscar-dev.vercel.app/projects",
+    www_site: "https://oscarmorenodev.vercel.app//projects",
 
     //Stack I used Section
     /*Icons alt names*/

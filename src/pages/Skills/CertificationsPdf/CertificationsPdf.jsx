@@ -108,7 +108,7 @@ const CertificationsPdf = () => {
                 fileUrl={FullStackCert}
                 website={"https://www.academlo.com"}
                 issuedCertificate={
-                  "https://certificates.academlo.com/en/verify/59321101185207"
+                  "https://verified.sertifier.com/en/verify/59321101185207/"
                 }
               />
 
@@ -122,7 +122,7 @@ const CertificationsPdf = () => {
                 fileUrl={ReactCert}
                 website={"https://www.academlo.com"}
                 issuedCertificate={
-                  "https://certificates.academlo.com/en/verify/85081735827091"
+                  "https://verified.sertifier.com/en/verify/85081735827091/"
                 }
                 skillsEarned_1={<SkillsEarned skillsEarned={"React.js"} />}
                 skillsEarned_2={<SkillsEarned skillsEarned={"React Jsx"} />}
@@ -163,7 +163,7 @@ const CertificationsPdf = () => {
                 fileUrl={NodeJsCert}
                 website={"https://www.academlo.com"}
                 issuedCertificate={
-                  "https://certificates.academlo.com/en/verify/65762544626703"
+                  "https://verified.sertifier.com/en/verify/65762544626703/"
                 }
                 skillsEarned_1={
                   <SkillsEarned
@@ -232,7 +232,7 @@ const CertificationsPdf = () => {
                 fileUrl={PythonCert}
                 website={"https://www.academlo.com"}
                 issuedCertificate={
-                  "https://certificates.academlo.com/en/verify/21632663952010"
+                  "https://verified.sertifier.com/en/verify/21632663952010/"
                 }
               />
 
@@ -261,7 +261,7 @@ const CertificationsPdf = () => {
                 fileUrl={AlgorithmsCert}
                 website={"https://www.academlo.com"}
                 issuedCertificate={
-                  "https://certificates.academlo.com/en/verify/20275035180098"
+                  "https://verified.sertifier.com/en/verify/20275035180098/"
                 }
               />
 
@@ -300,7 +300,7 @@ const CertificationsPdf = () => {
                 fileUrl={Foundations}
                 website={"https://www.academlo.com"}
                 issuedCertificate={
-                  "https://certificates.academlo.com/en/verify/36359798103867"
+                  "https://verified.sertifier.com/en/verify/36359798103867/"
                 }
               />
             </div>
