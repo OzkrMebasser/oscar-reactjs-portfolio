@@ -63,6 +63,7 @@ function WelcomePopUp(props) {
           <button className="goBtnB">
             <NavDropdown className="noLink" title={t("navbar.language")}>
               <NavDropdown.Item
+              className="goBtnText"
                 onClick={() => {
                   playSound();
                   i18n.changeLanguage("es");
@@ -74,6 +75,7 @@ function WelcomePopUp(props) {
               </NavDropdown.Item>
 
               <NavDropdown.Item
+               className="goBtnText"
                 onClick={() => {
                   playSound();
                   i18n.changeLanguage("en");

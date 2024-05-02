@@ -908,6 +908,10 @@ h6 {
   transform: scale(0.95);
 }
 
+.goBtnText{
+  color:  #d4af37;
+}
+
 /*Profile picture in Popup*/
 .icon-container {
   position: relative;

@@ -17,6 +17,7 @@ const myProjects = {
   //id.6 CLEAN AID PLUS
   id_6_project_name: "myProjects.id_6.project_name",
   id_6_desc: "myProjects.id_6.desc",
+
   //id.7 ACADEMLO LIBRARY
   id_7_project_name: "myProjects.id_7.project_name",
   id_7_desc: "myProjects.id_7.desc",
@@ -30,6 +31,9 @@ const myProjects = {
   id_9_seeCerts: "myProjects.id_9.seeCerts",
   aliasInstitution: "myProjects.aliasInstitution",
   seeCert: "myProjects.seeCert",
+  //id.10 RESURRECTION MIRACLE CENTER CHURCH
+  id_10_project_name: "myProjects.id_10.project_name",
+  id_10_desc: "myProjects.id_10.desc",
 };
 
 export const projects = [
@@ -328,6 +332,59 @@ export const projects = [
     tech_7_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fmongodb-svgrepo-com.svg?alt=media&token=12d49f5f-5031-43e4-abd8-aa14ae07565a",
   },
+  // //id.10 RESURRECTION MIRACLE CENTER CHURCH ******WORKING ON IT ******
+  // {
+  //   id: 10,
+  //   project_name: `${myProjects.id_10_project_name}`,
+  //   src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2F6.tripytour.blog.png?alt=media&token=5b8792fd-cbd8-44a5-8a58-c3a140922c24",
+  //   alt: "TRIPYTOUR BLOG",
+  //   desc: `${myProjects.id_10_desc}`,
+  //   href: "https://tripytour-blog.vercel.app/",
+
+  //   //Deployment section
+
+  //   //Vercel
+  //   deploy_icon_1:
+  //     "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fvercel-icon-svgrepo-com.svg?alt=media&token=d8d668a2-26f0-4103-a3ae-99e6d3c31103",
+  //   deploy_name_1: "Vercel",
+  //   // git hub repo
+  //   git_icon: "https://www.svgrepo.com/show/217753/github.svg",
+  //   git_url: "https://github.com/OzkrMebasser/tripytour-blog",
+  //   git_name: "Git repository",
+  //   www_icon:
+  //     "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Finternet-www-svgrepo-com.svg?alt=media&token=49e3d743-fa07-4bdc-879e-0e99c87df52e",
+  //   www_site: "https://tripytour-blog.vercel.app/",
+
+  //   //Stack I used Section
+  //   /*Icons alt names*/
+  //   tech_1_name: "HTML-5",
+  //   tech_2_name: "CSS-3",
+  //   tech_3_name: "JavaScript",
+  //   tech_4_name: "React Js",
+  //   tech_5_name: "Next Js",
+  //   tech_6_name: "Prisma",
+  //   tech_7_name: "MongoDB",
+
+  //   deployed: true,
+  //   type: "development",
+
+  //   /*Icons images*/
+
+  //   tech_1_icon:
+  //     "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fhtml-svgrepo-com.svg?alt=media&token=bf007597-213f-410e-b369-8035584a3ad7",
+  //   tech_2_icon:
+  //     "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fcss-svgrepo-com.svg?alt=media&token=05933c42-aa37-4123-a959-dd7ace7fb4b8",
+  //   tech_3_icon:
+  //     "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fjs-svgrepo-com.svg?alt=media&token=c6b39548-7d54-4dfc-8720-5a500786edda",
+  //   tech_4_icon:
+  //     "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-1-logo-svgrepo-com.svg?alt=media&token=f690f37d-9457-4a0b-8378-16a7d426114f",
+  //   tech_5_icon:
+  //     "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fnext-js-svgrepo-com.svg?alt=media&token=ac7b37d1-13b5-4c9e-8986-6f6eb1123f31",
+  //   tech_6_icon:
+  //     "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2FPRISMA.png?alt=media&token=fc59e78c-6885-4d82-9243-076c630c983e",
+  //   tech_7_icon:
+  //     "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fmongodb-svgrepo-com.svg?alt=media&token=12d49f5f-5031-43e4-abd8-aa14ae07565a",
+  // },
   //id.7 ACADEMLO LIBRARY
   {
     id: 7,
@@ -1270,8 +1327,6 @@ export const otherProjects = [
     www_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Finternet-www-svgrepo-com.svg?alt=media&token=49e3d743-fa07-4bdc-879e-0e99c87df52e",
     www_site: "https://memory-card-game-snowy-alpha.vercel.app/",
-
-
 
     //Stack I used Section
     /*Icons alt names*/

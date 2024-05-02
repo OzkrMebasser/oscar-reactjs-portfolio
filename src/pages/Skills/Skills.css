@@ -252,7 +252,7 @@
   background-color: #000;
   color: #d4af37;
 
-  font-size: 1rem;
+  /* font-size: 1rem; */
   border: 1px solid #d4af37;
   transform: scale(0.95);
   transition: 200ms;
@@ -425,6 +425,11 @@
 
 .bgTechTitle {
   text-shadow: -1px 1.5px 0 #ffffff, -1px -1.5px 0 #ffffff;
+}
+
+
+.bgTechTitle:hover {
+  text-shadow: -1px 1.5px 0 #000000, -1px -1.5px 0 #000000;
 }
 .skillsImg {
   height: 3.2rem;
