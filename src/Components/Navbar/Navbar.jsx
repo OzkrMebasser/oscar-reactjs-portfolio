@@ -2,8 +2,8 @@ import React, { useState, useRef, useEffect } from "react";
 import SoundClick from "../Click/interface.mp3";
 import { useTranslation } from "react-i18next";
 
-import { IoMdArrowDropright } from "react-icons/io";
 
+import { IoMdArrowDropright } from "react-icons/io";
 
 import NavDropdown from "react-bootstrap/NavDropdown";
 
@@ -121,27 +121,32 @@ const Navbar = ({ isScrolling }) => {
           </li>
 
           <li className=" nav-item-dropdown-projects ">
-         
             <NavDropdown
               activeclassname="active"
               className="nav-links"
               title={t("navbar.projects")}
             >
-              <NavDropdown.Item onClick={() => playSound()} className="bg-select-item a">
+              <NavDropdown.Item
+                onClick={() => playSound()}
+                className="bg-select-item a"
+              >
                 <NavLink
                   to="/projects"
                   activeclassname="active"
                   className="dropdown-links"
-                 
                   onClick={() => {
                     handleClick();
                     playSound();
                   }}
                 >
-                <IoMdArrowDropright className="arrow-menu"/> {t("navbar.main_projects")}
+                  <IoMdArrowDropright className="arrow-menu" />{" "}
+                  {t("navbar.main_projects")}
                 </NavLink>
               </NavDropdown.Item>
-              <NavDropdown.Item onClick={() => playSound()} className="bg-select-item">
+              <NavDropdown.Item
+                onClick={() => playSound()}
+                className="bg-select-item"
+              >
                 <NavLink
                   to="/more-projects"
                   activeclassname="active"
@@ -151,11 +156,11 @@ const Navbar = ({ isScrolling }) => {
                     playSound();
                   }}
                 >
-                  <IoMdArrowDropright className="arrow-menu"/>{t("navbar.more_projects")}
+                  <IoMdArrowDropright className="arrow-menu" />
+                  {t("navbar.more_projects")}
                 </NavLink>
               </NavDropdown.Item>
             </NavDropdown>
-          
           </li>
 
           {/* <li className="nav-item">
@@ -178,7 +183,6 @@ const Navbar = ({ isScrolling }) => {
               to="/contact"
               activeclassname="active"
               className="nav-links"
-             
               onClick={() => {
                 handleClick();
                 playSound();
@@ -195,20 +199,25 @@ const Navbar = ({ isScrolling }) => {
               title={t("navbar.language")}
             >
               <NavDropdown.Item
-              className="bg-select-item a"
+                className="bg-select-item a"
                 onClick={() => i18n.changeLanguage("en") && playSound()}
               >
-                <span className="dropdown-links lang">   <IoMdArrowDropright className="arrow-menu"/> ENGLISH </span>
-               <span className="fi fi-ca"></span>{" "}
+                <span className="dropdown-links lang">
+                  {" "}
+                  <IoMdArrowDropright className="arrow-menu" /> ENGLISH{" "}
+                </span>
+                <span className="fi fi-ca"></span>{" "}
                 <span className="fi fi-us"></span>{" "}
                 {/* <span className="fi fi-uk"></span> */}
               </NavDropdown.Item>
               <NavDropdown.Item
-              className="bg-select-item "
+                className="bg-select-item "
                 onClick={() => i18n.changeLanguage("es") && playSound()}
               >
-                 <span className="dropdown-links lang"><IoMdArrowDropright className="arrow-menu"/> ESPAÑOL </span>
-                 <span className="fi fi-mx"></span>{" "}
+                <span className="dropdown-links lang">
+                  <IoMdArrowDropright className="arrow-menu" /> ESPAÑOL{" "}
+                </span>
+                <span className="fi fi-mx"></span>{" "}
                 <span className="fi fi-es"></span>
               </NavDropdown.Item>
             </NavDropdown>

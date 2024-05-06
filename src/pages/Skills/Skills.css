@@ -256,6 +256,7 @@
   border: 1px solid #d4af37;
   transform: scale(0.95);
   transition: 200ms;
+ 
 }
 
 .certsBtn {
@@ -423,9 +424,22 @@
   font-size: 0.8rem;
 }
 
+
 .bgTechTitle {
   text-shadow: -1px 1.5px 0 #ffffff, -1px -1.5px 0 #ffffff;
 }
+
+.bgTechTitle .noBg {
+  text-shadow: none;
+}
+
+.bgTechTitle:hover .yesBg {
+  /* text-shadow: -1px 1.5px 0 #d4af37, -1px -1.5px 0 #d4af37; */
+  color: white;
+  font-size: .85rem;
+}
+
+
 
 
 .bgTechTitle:hover {

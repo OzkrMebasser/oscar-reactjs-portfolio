@@ -81,15 +81,7 @@ const Home = ({handleClose}) => {
                   <span></span>
                 </a>
               </li>
-              <li className="li">
-                <a
-                  href="https://www.facebook.com/oscar.moreno.127201/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span></span>
-                </a>
-              </li>
+         
             </ul>
           </div>
 

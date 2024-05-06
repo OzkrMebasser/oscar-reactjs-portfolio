@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { useTranslation } from "react-i18next";
-import useSound from "../../../context/hook/useSound";
-import SoundClick from "../../../Components/Click/interface.mp3";
+import useSound from "../../context/hook/useSound";
+import SoundClick from "../Click/interface.mp3";
 import Accordion from "react-bootstrap/Accordion";
 import AccordionContext from "react-bootstrap/AccordionContext";
 import { useAccordionButton } from "react-bootstrap/AccordionButton";
@@ -11,7 +11,7 @@ import { Viewer } from "@react-pdf-viewer/core";
 // Import the styles
 import "@react-pdf-viewer/core/lib/styles/index.css";
 
-import "../../Skills/Skills.css";
+import "../../pages/Skills/Skills.css";
 
 function ContextAwareToggle({ children, eventKey, callback }) {
   const playSound = useSound(SoundClick);
@@ -32,7 +32,7 @@ function ContextAwareToggle({ children, eventKey, callback }) {
 }
 
 const CertPdf = (props) => {
-  const playSound = useSound(SoundClick);
+  // const playSound = useSound(SoundClick);
   const [t] = useTranslation("global");
 
   // console.log(props);
@@ -92,11 +92,7 @@ const CertPdf = (props) => {
                   rel="noopener noreferrer"
                 >
                   {props.importantNote}
-                  {/* <img
-                      src="https://www.svgrepo.com/show/378648/link-out.svg"
-                      style={{ height: "25px", width: "25px" }}
-                      alt=""
-                    /> */}
+                  
                 </a>
                 <p className="certTitles mtSkills">
                 {t("certificatesInfo.skills")}: <br />

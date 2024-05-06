@@ -29,7 +29,7 @@ const Accordions = ({ logoSchool, content, totalCerts }) => {
     playSound()
   };
 
-  // Función para actualizar el estado de isMobile en el cambio de tamaño de la pantalla
+  // Funcion para mobile
   const updateIsMobile = () => {
     setIsMobile(window.innerWidth <= 768);
   };
@@ -38,7 +38,7 @@ const Accordions = ({ logoSchool, content, totalCerts }) => {
     // listener para el cambio de tamaño de la pantalla
     window.addEventListener("resize", updateIsMobile);
 
-    // Limpia el listener cuando el componente se desmonta
+    // Limpiar el listener cuando el componente se desmonta
     return () => {
       window.removeEventListener("resize", updateIsMobile);
     };

@@ -1,7 +1,7 @@
 // import React, { useState, useRef } from "react";
 
 // import ScrollToTop from "../../../Components/GoUpButton/ScrollToTop";
-import Accordions from "../../../Components/Accordions/Accordions";
+import Accordions from "../Accordions/Accordions";
 import Accordion from "react-bootstrap/Accordion";
 import { useTranslation } from "react-i18next";
 import SkillsEarned from "./SkillsEarned";
@@ -44,7 +44,7 @@ import EFSETCertificateOM from "./EfSet/EFSETCertificateOM.pdf";
 // UV Exaver
 import EXAVER from "./UV/EXAVER.pdf";
 
-import "../../Skills/Skills.css";
+import "../../pages/Skills/Skills.css";
 
 //Component Cert. Individual
 import CertPdf from "./CertPdf";

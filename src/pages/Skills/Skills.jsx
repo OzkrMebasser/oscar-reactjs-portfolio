@@ -1,33 +1,22 @@
 import React, { useState, useEffect } from "react";
-// import { useLocation } from 'react-router-dom';
-import CertificationsPdf from "../Skills/CertificationsPdf/CertificationsPdf";
+import CertificationsPdf from "../../Components/CertificationsPdf/CertificationsPdf";
 import ScrollToTop from "../../Components/GoUpButton/ScrollToTop";
 import useSound from "../../context/hook/useSound";
-
 import SoundClick from "../../Components/Click/interface.mp3";
-import FlipCard from "./FlipCard";
+import SkillCardBody from "../../Components/Cards/SkillCardBody";
+import FlipCard from "../../Components/Cards/FlipCard";
 import { skillsFE, skillsBE } from "../../Api/hardSkillsData";
 import { softSkills, workingSoftSkills } from "../../Api/softSkillsData";
-import ProgressBar from "react-bootstrap/ProgressBar";
 import Accordion from "react-bootstrap/Accordion";
-
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import Card from "react-bootstrap/Card";
-import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-
 import "./Skills.css";
 
-const Skills = (props) => {
+const Skills = () => {
   const [t] = useTranslation("global");
   const playSound = useSound(SoundClick);
-  
 
-
-
-  //Dropdown Tech description
-  const { isDropOpen } = props;
   const [selectedCardIndex, setSelectedCardIndex] = useState(-1);
   const [categoryFE, setCategoryFE] = useState("");
   const [categoryBE, setCategoryBE] = useState("");
@@ -40,7 +29,7 @@ const Skills = (props) => {
     setFilteredFECategories(
       skillsFE.filter((cat) => !categoryFE || categoryFE === t(cat.category))
     );
-  }, [categoryFE, skillsFE, t]);
+  }, [categoryFE, t]);
 
   // Using set to filter unique values from BACK END SKILLS
   const categoriesBE = Array.from(new Set(skillsBE.map((cat) => cat.category)));
@@ -48,15 +37,15 @@ const Skills = (props) => {
     setFilteredBECategories(
       skillsBE.filter((cat) => !categoryBE || categoryBE === t(cat.category))
     );
-  }, [categoryBE, skillsBE, t]);
+  }, [categoryBE, t]);
 
-  const clearFilters = () => {
-    setCategoryFE("");
-  };
+  // const clearFilters = () => {
+  //   setCategoryFE("");
+  // };
   function handleCardClick(index) {
     setSelectedCardIndex(selectedCardIndex === index ? -1 : index);
   }
-  
+
   return (
     <>
       <motion.div
@@ -75,6 +64,7 @@ const Skills = (props) => {
         <Accordion>
           <ScrollToTop />
           {/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓  FrontEnd tools  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/}
+
           <Accordion.Item eventKey="0">
             {/* <ScrollToTop /> */}
             <Accordion.Header className="texts ">
@@ -115,95 +105,25 @@ const Skills = (props) => {
               </div>
               <Row xs={1} md={5} fluid className="g-3 texts alto">
                 {filteredFECategories.map((skill, index) => (
-                  <Col key={skill.id}>
-                    <Card
-                      key={skill.id}
-                      className=" cardGridShadow align-middle "
-                      style={{
-                        backgroundColor: isDropOpen
-                          ? "cardGrid"
-                          : "cardGridOpen",
-                      }}
-                    
-                    >
-                      {/* <span className={skill.class} ><span className="bgBlack">{skill.icon}</span></span> */}
-                      <img
-                        className={skill.class}
-                        src={skill.icon}
-                        alt={skill.alt}
-                      />
-                      <Card.Body>
-                        <Card.Title>{skill.title} </Card.Title>
-
-                        <div className="alto">
-                          <Card.Text className="subTitle">
-                            {t(`${skill.category}`)}
-                            {"    "}
-                          </Card.Text>
-                        </div>
-
-                        <div className="dropdown">
-                          {/* {"Button DROP DOWN"} */}
-                          <button
-                            className="dropBtn"
-                            onClick={() => {
-                              playSound();
-                              handleCardClick(index);
-                            }}
-                          >
-                            <span className="xTtitle">
-                              {t("skills.whatIsIt")}
-                            </span>{" "}
-                            <span className="bgTechTitle xTtitle">
-                              "{skill.title}" ?
-                            </span>{" "}
-                          </button>
-                          {selectedCardIndex === index && (
-                            <div id="dropdown-content">
-                              <Card.Text className="textM">
-                                <Card.Text className="subTitle">
-                                  <p className="techTitle">
-                                    {t(`${skill.typeOfTech}`)}
-                                  </p>
-                                </Card.Text>
-                                {t(`${skill.description}`)}
-                                <br />
-                                <a
-                                    className="noUnderline"
-                                    href={`${skill.docs}`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                  >
-                                <button
-                                  className="docsBtn"
-                                  onClick={() => playSound()}
-                                >
-                               
-                                    Read Docs.
-                                    <img
-                                      className="docsLink"
-                                      src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fbooks-svgrepo-com%20(1).svg?alt=media&token=03a80306-1366-4ba7-ad3a-e7368d1ff0c9"
-                                      alt="docs"
-                                    />
-                                 
-                                </button>
-                                </a>
-                              </Card.Text>
-                            </div>
-                          )}
-
-                          <ProgressBar
-                            className="progressBar"
-                            animated
-                            now={skill.progress}
-                            label={`${t("skills.learning")}`}
-                            variant={skill.variant}
-                            style={{ height: "23px", color: "black" }}
-                          />
-                        </div>
-                      </Card.Body>
-                    </Card>
-                  </Col>
+                  <SkillCardBody
+                    key={skill.id}
+                    skillId={skill.id}
+                    skillClass={skill.class}
+                    skillIcon={skill.icon}
+                    skillAlt={skill.alt}
+                    skillTitle={skill.title}
+                    skillCategory={skill.category}
+                    index={index}
+                    skillTypeOfTech={skill.typeOfTech}
+                    skillDescription={skill.description}
+                    skillDocs={skill.docs}
+                    skillProgress={skill.progress}
+                    skillVariant={skill.variant}
+                    playSound={playSound}
+                    isDropOpen={selectedCardIndex === index}
+                    selectedCardIndex={selectedCardIndex}
+                    handleCardClick={handleCardClick}
+                  />
                 ))}
               </Row>
             </Accordion.Body>
@@ -249,92 +169,26 @@ const Skills = (props) => {
                 </button>
               </div>
               <Row xs={1} md={5} fluid className="g-3 texts alto">
-
                 {filteredBECategories.map((skill, index) => (
-                  <Col key={skill.id}>
-                    <Card
-                      className=" cardGridShadow align-middle "
-                      style={{
-                        backgroundColor: isDropOpen
-                          ? "cardGrid"
-                          : "cardGridOpen",
-                      }}
-                    >
-                      {/* <span className={skill.class} ><span className="bgBlack">{skill.icon}</span></span> */}
-                      <img
-                        className={skill.class}
-                        src={skill.icon}
-                        alt={skill.alt}
-                      />
-                      <Card.Body>
-                        <Card.Title>{skill.title} </Card.Title>
-
-                        <div className="alto">
-                          <Card.Text className="subTitle">
-                            {t(`${skill.category}`)}
-                            {"    "}
-                          </Card.Text>
-                        </div>
-
-                        <div className="dropdown">
-                          <button
-                            className="dropBtn"
-                            onClick={() => {
-                              playSound();
-                              handleCardClick(index);
-                            }}
-                          >
-                            <span className="xTtitle">
-                              {t("skills.whatIsIt")}
-                            </span>{" "}
-                            <span className="bgTechTitle xTtitle">
-                              "{skill.title}" ?
-                            </span>{" "}
-                          </button>
-                          {selectedCardIndex === index && (
-                            <div id="dropdown-content">
-                              <Card.Text className="textM">
-                                <Card.Text className="subTitle">
-                                  <p className="techTitle">
-                                    {t(`${skill.typeOfTech}`)}
-                                  </p>
-                                </Card.Text>
-                                {t(`${skill.description}`)}
-                                <br />
-                                <button
-                                  className="docsBtn"
-                                  onClick={() => playSound()}
-                                >
-                                  <a
-                                    className="noUnderline"
-                                    href={`${skill.docs}`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                  >
-                                    Read Docs.
-                                    <img
-                                      className="docsLink"
-                                      src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fbooks-svgrepo-com%20(1).svg?alt=media&token=03a80306-1366-4ba7-ad3a-e7368d1ff0c9"
-                                      alt="docs"
-                                    />
-                                  </a>
-                                </button>
-                              </Card.Text>
-                            </div>
-                          )}
-
-                          <ProgressBar
-                            className="progressBar"
-                            animated
-                            now={skill.progress}
-                            label={`${t("skills.learning")}`}
-                            variant={skill.variant}
-                            style={{ height: "23px", color: "black" }}
-                          />
-                        </div>
-                      </Card.Body>
-                    </Card>
-                  </Col>
+                  <SkillCardBody
+                    key={skill.id}
+                    skillId={skill.id}
+                    skillClass={skill.class}
+                    skillIcon={skill.icon}
+                    skillAlt={skill.alt}
+                    skillTitle={skill.title}
+                    skillCategory={skill.category}
+                    index={index}
+                    skillTypeOfTech={skill.typeOfTech}
+                    skillDescription={skill.description}
+                    skillDocs={skill.docs}
+                    skillProgress={skill.progress}
+                    skillVariant={skill.variant}
+                    playSound={playSound}
+                    isDropOpen={selectedCardIndex === index}
+                    selectedCardIndex={selectedCardIndex}
+                    handleCardClick={handleCardClick}
+                  />
                 ))}
               </Row>
             </Accordion.Body>
@@ -343,13 +197,8 @@ const Skills = (props) => {
           {/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ BackEnd tools ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/}
 
           {/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Certifications ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/}
-          {/* <Accordion.Item eventKey="2" className={activeAccordionItem === "2" ? "" : "not-collapsed"}> */}
+
           <Accordion.Item eventKey="2">
-
-
-          {/* <button type="button" aria-expanded="false" class="accordion-button collapsed">CERTIFICATES<img class="certsImg" src="https://www.svgrepo.com/show/263184/graduation-mortarboard.svg" alt="Certifications"></button> */}
-          {/* <button type="button" aria-expanded="true" class="accordion-button">CERTIFICATES<img class="certsImg" src="https://www.svgrepo.com/show/263184/graduation-mortarboard.svg" alt="Certifications"></button> */}
-            {/* <ScrollToTop /> */}
             <Accordion.Header className="texts">
               {t("skills.certificates")}
               <img
@@ -359,7 +208,7 @@ const Skills = (props) => {
               />
             </Accordion.Header>
 
-            <Accordion.Body >
+            <Accordion.Body>
               <CertificationsPdf />
               {/* <CertsList/> */}
             </Accordion.Body>
@@ -429,7 +278,6 @@ const Skills = (props) => {
                 </Accordion.Item>
               </Accordion>
             </Accordion.Body>
-            
           </Accordion.Item>
           {/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑  Soft skills  ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/}
         </Accordion>
