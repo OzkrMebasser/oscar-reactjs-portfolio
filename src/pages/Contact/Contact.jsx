@@ -5,7 +5,7 @@ import { Tooltip as MyLocationIs } from "react-tooltip";
 
 import emailjs from "@emailjs/browser";
 
-import MyLocation from "./MyLocation";
+import MyLocation from "../../Components/Maps/MyLocation";
 
 import "./Contact.css";
 
@@ -93,7 +93,7 @@ const Contact = () => {
                   <span></span>
                 </a>
               </li>
-              <li className="liContact">
+              {/* <li className="liContact">
                 <a
                   href="https://www.facebook.com/oscar.moreno.127201/"
                   target="_blank"
@@ -101,7 +101,7 @@ const Contact = () => {
                 >
                   <span></span>
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

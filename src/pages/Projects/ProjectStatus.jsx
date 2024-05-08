@@ -6,7 +6,7 @@ import { RiEyeOffLine } from "react-icons/ri";
 import { useTranslation } from "react-i18next";
 
 
-function CheckBox({ checked, onChecked, projectType }) {
+function ProjectStatus({ checked, onChecked, projectType }) {
   const [t] = useTranslation("global");
 
   let label;
@@ -48,4 +48,4 @@ function CheckBox({ checked, onChecked, projectType }) {
   );
 }
 
-export default CheckBox
+export default ProjectStatus;

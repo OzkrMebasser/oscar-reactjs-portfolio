@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Checkbox from "../Projects/CheckBox";
+import Checkbox from "../Projects/ProjectStatus";
 import { otherProjects } from "../../Api/projects";
 import { Tooltip as MyTooltip } from "react-tooltip";
 import { useTranslation } from "react-i18next";

@@ -79,10 +79,9 @@ const Navbar = ({ isScrolling }) => {
         <ul className={click ? "nav-menu active mt-li-mobile" : "nav-menu "}>
           <li className="nav-item ">
             <NavLink
-              to="/"
+              to="/home"
               activeclassname="active "
               className="nav-links"
-              // onClick={click ? handleClick  : null}
               onClick={() => {
                 handleClick();
                 playSound();

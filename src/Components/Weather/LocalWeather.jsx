@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import { useTranslation } from "react-i18next";
 import { FaExchangeAlt } from "react-icons/fa";
+import Loading from "../Loader/LoadingScrolling";
 
 import "./LocalWeather.css";
 
@@ -81,7 +82,7 @@ const LocalWeather = () => {
 
   const WeatherContent = () => {
     if (loading) {
-      return <p>Loading...</p>;
+      return <><br /><Loading/></>;
     }
 
     if (locationPermission === "denied") {

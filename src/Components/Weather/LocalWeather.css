@@ -9,6 +9,7 @@
   margin-bottom: 1rem;
   margin-top: 0.5rem;
   height: 2.5rem;
+  padding: 0 10px;
 }
 .explainationBtn:hover {
   background-color: #000;
@@ -17,6 +18,7 @@
   border: 1px solid #d4af37;
   transform: scale(0.95);
   transition: 200ms;
+ 
 }
 .explainationText {
   color: rgb(255, 255, 255);

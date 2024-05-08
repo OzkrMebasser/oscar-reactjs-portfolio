@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import useSound from "../../context/hook/useSound";
 import SoundClick from "../../Components/Click/interface.mp3";
 import ModalItem from "./ModalItem";
-import CheckBox from "./CheckBox";
+import ProjectStatus from "./ProjectStatus";
 import ItemsCarousel from "react-items-carousel";
 import { projects } from "../../Api/projects";
 import { MdOutlineDoubleArrow } from "react-icons/md";
@@ -39,25 +39,17 @@ const Projects = ({ props }) => {
         <main className="main-container">
           {projects.map((proj, id) => (
             <section className="section-cards-proj" key={id}>
-              {/* <div className="status-project">
-                <span className="blink-soft ">
-                  <CheckBox checked={proj.deployed} projectType={proj.type} />
-                </span>
-              </div> */}
+            
               <h3 className="card-proj-title">
                 {" "}
                 {id + 1} - {t(`${proj.project_name}`)}
               </h3>
               <figure className="figure-project ">
-                {/* <img className="img-project" src={proj.src} alt={proj.alt} /> */}
-                {/* <a href={proj.href} rel="noreferrer" target="_blank"> */}
                 <img className="inner-img" src={proj.src} alt={proj.alt} />
-                {/* </a> */}
               </figure>
-              <article className="article-card">
-                {/* 
-                <p className="desc-project">{t(`${proj.desc}`)}</p> */}
-              </article>
+              {/* <article className="article-card">
+             
+              </article> */}
 
               <div className="btn-stack-center">
                 <ModalItem {...proj} />

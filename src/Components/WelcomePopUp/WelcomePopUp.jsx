@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Dates from "../Clock/Dates";
 import ClockAnalog from "../Clock/AnalogClock";
-import ProfileOscar from "../../pages/Home/ProfileOscar";
+import ProfileOscar from "../Clock/ProfileOscar";
 import useSound from "../../context/hook/useSound";
 import SoundClick from "../../Components/Click/interface.mp3";
 import LocalWeather from "../Weather/LocalWeather";

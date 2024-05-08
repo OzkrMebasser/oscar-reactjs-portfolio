@@ -3,7 +3,7 @@ import { Tooltip as ReactTooltip } from "react-tooltip";
 import { MdOutlineQueuePlayNext } from "react-icons/md";
 
 import { Link } from "react-router-dom";
-import CheckBox from "./CheckBox";
+import ProjectStatus from "./ProjectStatus";
 import { useTranslation } from "react-i18next";
 import useSound from "../../context/hook/useSound";
 
@@ -39,7 +39,7 @@ function ModalItem({ props, ...project }) {
         <Modal.Header className="modalHeader">
           <Modal.Title>{t(`${project.project_name}`)}</Modal.Title>
           <div className="blink-soft">
-            <CheckBox checked={project.deployed} projectType={project.type} />
+            <ProjectStatus checked={project.deployed} projectType={project.type} />
           </div>
         </Modal.Header>
         <Modal.Body>
