@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Checkbox from "../Projects/ProjectStatus";
+import ProjectStatus from "../../Components/ModalStack/ProjectStatus";
 import { otherProjects } from "../../Api/projects";
 import { Tooltip as MyTooltip } from "react-tooltip";
 import { useTranslation } from "react-i18next";
@@ -118,7 +118,7 @@ const OtherProjects = () => {
           <section className="section-cards" key={index}>
             <div className="status-project">
               <span className="blink-soft ">
-                <Checkbox
+                <ProjectStatus
                   checked={project.deployed}
                   projectType={project.type}
                 />

@@ -14,6 +14,10 @@ const Home = ({ handleClose }) => {
   const [showChart, setShowChart] = useState(true);
   const playSound = useSound(SoundClick);
 
+  function sendEmail() {
+    window.location.href = "mailto:oscarmoreno80@gmail.com";
+  }
+  
   return (
     <div className="cover-container">
       {showChart && (
@@ -59,9 +63,7 @@ const Home = ({ handleClose }) => {
             <li className="li">
               <a
                 href="#"
-                onClick={() =>
-                  (window.location = "mailto:oscarmoreno80@gmail.com")
-                }
+                onClick={sendEmail}
               >
                 <span></span>
               </a>

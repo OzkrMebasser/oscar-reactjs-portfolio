@@ -8,11 +8,11 @@ import { useTranslation } from "react-i18next";
 import useSound from "../../context/hook/useSound";
 
 import SoundClick from "../../Components/Click/interface.mp3";
-import "./Projects.css";
+import "../../pages/Projects/Projects.css";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-function ModalItem({ props, ...project }) {
+function ModalStack({ props, ...project }) {
   const [t] = useTranslation("global");
   const playSound = useSound(SoundClick);
 
@@ -39,14 +39,17 @@ function ModalItem({ props, ...project }) {
         <Modal.Header className="modalHeader">
           <Modal.Title>{t(`${project.project_name}`)}</Modal.Title>
           <div className="blink-soft">
-            <ProjectStatus checked={project.deployed} projectType={project.type} />
+            <ProjectStatus
+              checked={project.deployed}
+              projectType={project.type}
+            />
           </div>
         </Modal.Header>
         <Modal.Body>
           <p className="textDescIcons ">{t(`${project.desc}`)}</p>
 
           {project.linkSchool && (
-            // {t(`${project.linkSchool}`)}
+         
             <>
               <p className="school">
                 <span className="asterisc">*</span>
@@ -157,13 +160,10 @@ function ModalItem({ props, ...project }) {
           {/* <hr /> */}
           {project.git_url || project.www_site ? <hr /> : null}
           {/* Deployment */}
-          {/* <span> {t("myProjects.deployed")}</span> */}
+
           {project.git_url || project.www_site ? (
             <span> {t("myProjects.deployed")}</span>
           ) : null}
-          {/* <span>
-            <CheckBox checked={project.deployed} projectType={project.type} />
-            </span> */}
 
           {project.git_url || project.www_site ? (
             <div className="iconsDeploy">
@@ -183,7 +183,6 @@ function ModalItem({ props, ...project }) {
               {/*Git hub repo*/ " "}
               {project.git_url && (
                 <span
-                  // style={{ marginLeft: "56px" }}
                   id="repo"
                   data-tooltip-content={`${t("myProjects.githubLink")}`}
                 >
@@ -262,4 +261,4 @@ function ModalItem({ props, ...project }) {
   );
 }
 
-export default ModalItem;
+export default ModalStack;

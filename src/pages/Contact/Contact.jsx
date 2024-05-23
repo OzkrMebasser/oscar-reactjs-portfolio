@@ -13,7 +13,7 @@ const Contact = () => {
   const [t, i18n] = useTranslation("global");
   const form = useRef();
 
-  function enviarEmail(e) {
+  function sendEmailJs(e) {
     e.preventDefault();
 
     emailjs
@@ -35,14 +35,15 @@ const Contact = () => {
       );
   }
 
+  function sendEmail() {
+    window.location.href = "mailto:oscarmoreno80@gmail.com";
+  }
+  
   return (
     <Fragment>
       <section id="contact">
         <h4 className="contactTitle">{t("contact.title")}</h4>
         <div className="located">
-          {/* <strong>
-                  <p>I´m currently located at</p>
-                </strong> */}
           <div id="">
             <ul className="ulContact">
               <li className="liContact">
@@ -75,7 +76,7 @@ const Contact = () => {
               </li>
               <li className="liContact">
                 <a
-                // href="https://wa.me/16729747575?text=Hey,%20are%20you%20available%20for%20an%20interview%20?"
+                
                   href={`https://wa.me/16729747575?text=${t("contact.whastsAppText")}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -85,10 +86,7 @@ const Contact = () => {
               </li>
               <li className="liContact">
                 <a
-                  href="#"
-                  onClick={() =>
-                    (window.location = "mailto:oscarmoreno80@gmail.com")
-                  }
+            href="#" onClick={sendEmail}
                 >
                   <span></span>
                 </a>
@@ -106,44 +104,10 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact-box">
-          {/* <div className="contact-form-wrapper ">
-            <form ref={form} onSubmit={enviarEmail}>
-              <div className="form-item">
-                <input
-                  className="senderInput"
-                  type="text"
-                  name="sender"
-                  required
-                />
-                <label className="label">Name:</label>
-              </div>
-              <div className="form-item">
-                <input
-                  className="senderInput"
-                  type="text"
-                  name="email"
-                  required
-                />
-                <label className="label">Email:</label>
-              </div>
-              <div className="form-item">
-                <textarea className="" name="message" required></textarea>
-                <label className="label">Message:</label>
-              </div>
-
-              <button className="submit-btn ">
-             
-                <div className="btn">
-                  <span>Message Sent!</span>
-
-                  <i className="ico"></i>
-                </div>
-              </button>
-            </form>
-          </div> */}
+   
           <div className="contact-form-wrapper conctact-card">
             <span className="subTitleContact">{t("contact.drop_message")}</span>
-            <form className="form" ref={form} onSubmit={enviarEmail}>
+            <form className="form" ref={form} onSubmit={sendEmailJs}>
               <div className="group">
                 <input placeholder="" type="text" name="sender" required />
                 <label htmlFor="name">{t("contact.your_name")}</label>
