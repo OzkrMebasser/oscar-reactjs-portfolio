@@ -1,0 +1,82 @@
+/* Contenedor principal de Aurora */
+.aurora-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Cada instancia de Aurora */
+.aurora-instance {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Canvas de cada instancia */
+.aurora-instance canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+/* Contenedor principal del globo */
+.globe-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+  overflow: hidden; /* Importante para que el glitch no se salga */
+}
+
+/* Capa 1: Background con LetterGlitch (z-index: 1) */
+.glitch-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Capa 2: Aurora encima de LetterGlitch (z-index: 2) */
+.aurora-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none; /* No bloquear interacciones del globe */
+}
+
+/* Capa 3: Globe encima de todo (z-index: 3) */
+#globediv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 
+    0 0 10px 10px #4307f742 inset, 
+    0 0 10px 2px #0b00e562;
+  cursor: grabbing;
+  z-index: 3;
+  pointer-events: auto; /* Asegurar que el globe sea interactuable */
+}
+
+/* Asegurar que el LetterGlitch canvas ocupe todo el espacio */
+.glitch-background canvas {
+  width: 100% !important;
+  height: 100% !important;
+}

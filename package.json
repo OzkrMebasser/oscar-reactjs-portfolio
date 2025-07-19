@@ -27,6 +27,7 @@
     "i18next": "^22.4.15",
     "jquery": "^3.6.4",
     "lodash": "^4.17.21",
+    "ogl": "^1.0.11",
     "pdfjs-dist": "^3.4.120",
     "react": "^18.2.0",
     "react-analog-clock": "^2.1.0",

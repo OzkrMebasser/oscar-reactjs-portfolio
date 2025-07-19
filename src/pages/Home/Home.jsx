@@ -5,6 +5,7 @@ import SoundClick from "../../Components/Click/interface.mp3";
 import useSound from "../../context/hook/useSound.js";
 
 import AmChartMap from "../../Components/Maps/AmChartMap.jsx";
+import AmChartsMapNew from "../../Components/Maps/AmChartMapNew.jsx";
 import Typing from "../../Components/TypingLetters/Typing.jsx";
 
 import "./Home.css";
@@ -94,7 +95,8 @@ const Home = ({ handleClose }) => {
           <i></i>
         </div>
 
-        <AmChartMap />
+        {/* <AmChartMap /> */}
+        <AmChartsMapNew />
       </>
       )}
     </div>

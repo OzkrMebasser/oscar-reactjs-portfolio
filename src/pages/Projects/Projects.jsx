@@ -12,6 +12,8 @@ import "./Projects.css";
 import "../OtherProjects/OtherProjects.css";
 
 const Projects = ({ props }) => {
+
+  console.log(projects)
   const [t] = useTranslation("global");
   const playSound = useSound(SoundClick);
   const [activeItemIndex, setActiveItemIndex] = useState(0);

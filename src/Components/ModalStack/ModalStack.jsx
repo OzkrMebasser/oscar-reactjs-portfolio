@@ -13,6 +13,8 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
 function ModalStack({ props, ...project }) {
+  // console.log(project)
+
   const [t] = useTranslation("global");
   const playSound = useSound(SoundClick);
 
