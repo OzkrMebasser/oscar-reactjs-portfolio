@@ -972,52 +972,6 @@ figure.effect-oscar figcaption {
   height: 130px;
 }
 
-/* figure.effect-oscar figcaption::before {
-	position: absolute;
-  border-radius: 50%;
-	top: 2px;
-	right: 2px;
-	bottom: 2px;
-	left: 2px;
-	border: 1px solid #fff;
-	content: ' ';
-
-
-
-} */
-/* 
-figure.effect-oscar h2 {
-	margin: 5% 0 10px 0;
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,100%,0);
-	transform: translate3d(0,100%,0);
-  height: 130px;
-  width: 130px;
-
-} */
-
-/* figure.effect-oscar figcaption::before,
-figure.effect-oscar p {
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: scale(0);
-	transform: scale(0);
-}
-
-figure.effect-oscar:hover h2 {
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
-
-figure.effect-oscar:hover figcaption::before,
-figure.effect-oscar:hover p {
-	opacity: 1;
-	-webkit-transform: scale(1);
-	transform: scale(1);
- 
-} */
 
 figure.effect-oscar:hover figcaption {
   background-color: rgba(58, 52, 42, 0);
@@ -1026,14 +980,28 @@ figure.effect-oscar:hover figcaption {
 figure.effect-oscar:hover img {
   opacity: 0.4;
 }
-
+/* 
 .analog {
   position: relative;
   top: 0;
   margin: auto;
   width: 130px;
 
-  /* background-color: red; */
+
+} */
+
+.analog {
+  position: relative;
+  top: 0;
+  
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+  width: 130px;
+ 
+  
+  border-radius: 50%;
+
 }
 
 .dates {

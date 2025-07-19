@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Dates from "../Clock/Dates";
-import ClockAnalog from "../Clock/AnalogClock";
+import AnalogClock from "./AnalogClock";
 import ProfileOscar from "../Clock/ProfileOscar";
 import useSound from "../../context/hook/useSound";
 import SoundClick from "../../Components/Click/interface.mp3";
@@ -37,7 +37,7 @@ function WelcomePopUp(props) {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          {isHovered ? <ClockAnalog /> : <ProfileOscar />}
+          {isHovered ? <AnalogClock /> : <ProfileOscar />}
         </div>
 
         <div className="dates">
