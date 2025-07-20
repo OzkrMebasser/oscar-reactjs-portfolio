@@ -17,26 +17,31 @@ const myProjects = {
   //id.6 TEMPLO MONTE HOREB
   id_6_project_name: "myProjects.id_6.project_name",
   id_6_desc: "myProjects.id_6.desc",
-
-  //id.7 TRIPYTOUR BLOG
+  //id.7 MI ALEGRIA FAMILY DAYCARE
   id_7_project_name: "myProjects.id_7.project_name",
   id_7_desc: "myProjects.id_7.desc",
 
-  //id.8 CLEAN AID PLUS
+  //id.8 TRIPYTOUR BLOG
   id_8_project_name: "myProjects.id_8.project_name",
   id_8_desc: "myProjects.id_8.desc",
 
-  //id.9 ACADEMLO LIBRARY
+  //id.9 CLEAN AID PLUS
   id_9_project_name: "myProjects.id_9.project_name",
   id_9_desc: "myProjects.id_9.desc",
-  //id.10 AGENCIA DE TOURS
+
+  //id.10 ACADEMLO LIBRARY
   id_10_project_name: "myProjects.id_10.project_name",
   id_10_desc: "myProjects.id_10.desc",
-  //id.11 OTHER PROJECTS
+
+  //id.11 AGENCIA DE TOURS
   id_11_project_name: "myProjects.id_11.project_name",
-  id_11_desc: "myProjects.id_10.desc",
+  id_11_desc: "myProjects.id_11.desc",
+
+  //id.12 OTHER PROJECTS
+  id_12_project_name: "myProjects.id_12.project_name",
+  id_12_desc: "myProjects.id_12.desc",
   // id_9_aliasInstitution: "myProjects.id_9.aliasInstitution",
-  id_9_seeCerts: "myProjects.id_9.seeCerts",
+  id_11_seeCerts: "myProjects.id_11.seeCerts",
   aliasInstitution: "myProjects.aliasInstitution",
   seeCert: "myProjects.seeCert",
 };
@@ -338,6 +343,60 @@ export const projects = [
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2FAOS.jpeg?alt=media&token=284f7e39-7d00-4c67-a4bd-fe5c5cb4896c",
   },
 
+  // id.7 MI ALEGRIA FAMILY DAYCARE
+    {
+     id: 7,
+   project_name: `${myProjects.id_7_project_name}`,
+    src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2F7.b.mialegriadaycare.png?alt=media&token=bb52e5f7-d8cb-470c-a6ce-057296d8d373",
+    alt: "MI ALEGRIA FAMILY DAYCARE",
+    desc: `${myProjects.id_7_desc}`,
+    href: "https://mialegriadaycare.ca",
+
+    //Deployment section
+ //Firebase
+    deploy_icon_1:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Ffirebase-svgrepo-com.svg?alt=media&token=ea3cf79a-0fa3-4a32-ae04-89625cdaa904",
+    deploy_name_1: "Firabase",
+  // git hub repo
+   git_icon: "https://www.svgrepo.com/show/217753/github.svg",
+    git_url: "https://github.com/OzkrMebasser/mi-alegria-daycare",
+   git_name: "Git repository",
+  www_icon:
+     "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Finternet-www-svgrepo-com.svg?alt=media&token=49e3d743-fa07-4bdc-879e-0e99c87df52e",
+    www_site: "https://mialegriadaycare.ca/",
+
+     //Stack I used Section
+    /*Icons alt names*/
+  tech_1_name: "HTML5",
+  tech_2_name: "Tailwind CSS",
+ tech_3_name: "JavaScript",
+  tech_4_name: "React JS",
+  tech_5_name: "Next JS",
+  tech_6_name: "TypeScript",
+  tech_7_name: "Swiper JS",
+   
+
+    deployed: true,
+    type: "online",
+
+    /*Icons images*/
+
+    tech_1_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fhtml-svgrepo-com.svg?alt=media&token=bf007597-213f-410e-b369-8035584a3ad7",
+    tech_2_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Ftailwind-svgrepo-com.svg?alt=media&token=de41409e-f0e5-4784-96fa-524c7a31c626",
+    tech_3_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fjs-svgrepo-com.svg?alt=media&token=c6b39548-7d54-4dfc-8720-5a500786edda",
+    tech_4_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-1-logo-svgrepo-com.svg?alt=media&token=f690f37d-9457-4a0b-8378-16a7d426114f",
+    tech_5_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fnext-js-svgrepo-com.svg?alt=media&token=ac7b37d1-13b5-4c9e-8986-6f6eb1123f31",
+    tech_6_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Ftypescript-icon-svgrepo-com.svg?alt=media&token=a9ca7b36-982d-420d-8a88-1d579d7dc18a",
+    tech_7_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fswiper-logo.svg?alt=media&token=0cfb7375-4661-4036-ad96-8bd143b4ac41",
+  },
+
   //id.7 MI ALEGRIA FAMILY DAYCARE
   //id.8 IGLESIA NUEVA CREACION
   //id.9 CACI ALMA AC
@@ -426,13 +485,13 @@ export const projects = [
   //   tech_6_icon: "",
   // }
 
-  //id.7 TRIPYTOUR BLOG
+  //id.8 TRIPYTOUR BLOG
   {
-    id: 7,
-    project_name: `${myProjects.id_7_project_name}`,
+    id: 8,
+    project_name: `${myProjects.id_8_project_name}`,
     src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2F6.tripytour.blog.png?alt=media&token=5b8792fd-cbd8-44a5-8a58-c3a140922c24",
     alt: "TRIPYTOUR BLOG",
-    desc: `${myProjects.id_7_desc}`,
+    desc: `${myProjects.id_8_desc}`,
     href: "https://tripytour-blog.vercel.app/",
 
     //Deployment section
@@ -480,13 +539,13 @@ export const projects = [
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fmongodb-svgrepo-com.svg?alt=media&token=12d49f5f-5031-43e4-abd8-aa14ae07565a",
   },
 
-  //id.8 CLEAN AID PLUS
+  //id.9 CLEAN AID PLUS
   {
-    id: 8,
-    project_name: `${myProjects.id_8_project_name}`,
+    id: 9,
+    project_name: `${myProjects.id_9_project_name}`,
     src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2F5.cleanaidplus.ca.png?alt=media&token=4d59d4a0-8d46-4e52-b0fd-5a5eb15d0480",
     alt: "CLEAN AID PLUS",
-    desc: `${myProjects.id_8_desc}`,
+    desc: `${myProjects.id_9_desc}`,
     href: "https://clean-aid-plus.vercel.app/",
     //Deployment section
 
@@ -532,13 +591,13 @@ export const projects = [
     tech_7_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fswiper-logo.svg?alt=media&token=0cfb7375-4661-4036-ad96-8bd143b4ac41",
   },
-  //id.9 ACADEMLO LIBRARY
+  //id.10 ACADEMLO LIBRARY
   {
-    id: 9,
-    project_name: `${myProjects.id_9_project_name}`,
+    id: 10,
+    project_name: `${myProjects.id_10_project_name}`,
     src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2F7.academloslibrary.png?alt=media&token=a6e98d82-f5c9-4dd3-8640-5a310bdacf10",
     alt: "ACADEMLO's LIBRARY",
-    desc: `${myProjects.id_9_desc}`,
+    desc: `${myProjects.id_10_desc}`,
     href: "https://academlo-library-system-v3.onrender.com/",
 
     //Deployment section
@@ -575,13 +634,13 @@ export const projects = [
     tech_5_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fpostgresql-svgrepo-com%20(1).svg?alt=media&token=8294cc05-91ae-49c4-8418-d531fc8ca0b7",
   },
-  //id.10 TOUR AGENCY ECOMMMERCE
+  //id.11 TOUR AGENCY ECOMMMERCE
   {
-    id: 10,
-    project_name: `${myProjects.id_10_project_name}`,
+    id: 11,
+    project_name: `${myProjects.id_11_project_name}`,
     src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2F8.touragency.ecommerce.png?alt=media&token=33ab71f5-6496-4250-92f1-e1ca8946b074",
     alt: "TOUR AGENCY ECOMMMERCE",
-    desc: `${myProjects.id_10_desc}`,
+    desc: `${myProjects.id_11_desc}`,
     href: "https://oscar-ecommerce-context-reducer.netlify.app/",
 
     //Deployment section
@@ -619,13 +678,13 @@ export const projects = [
     tech_5_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freactspring.jpeg?alt=media&token=cc64a01c-85fe-4b3b-b34e-efc464130f26",
   },
-  //id.11 OTHER PROJECTS
+  //id.12 OTHER PROJECTS
   {
-    id: 11,
-    project_name: `${myProjects.id_11_project_name}`,
+    id: 12,
+    project_name: `${myProjects.id_12_project_name}`,
     src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2F9.otherprojects.png?alt=media&token=b94d54a9-d3f6-45d9-808d-655f05b2d316",
     alt: "OTHER PROJECTS",
-    desc: `${myProjects.id_11_desc}`,
+    desc: `${myProjects.id_12_desc}`,
     href: "/more-projects",
 
     //Deployment section
