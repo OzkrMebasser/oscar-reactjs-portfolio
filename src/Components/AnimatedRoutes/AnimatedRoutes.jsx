@@ -9,7 +9,6 @@ import HomePopUp from "../../pages/Home/HomePopUp";
 import Skills from "../../pages/Skills/Skills";
 import Projects from "../../pages/Projects/Projects";
 import OtherProjects from "../../pages/OtherProjects/OtherProjects";
-import HomeNew from "../../pages/HomeNew/HomeNew";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -20,7 +19,6 @@ const AnimatedRoutes = () => {
         <Route path="/" element={<Navbar />} />
         <Route index element={<HomePopUp />} />
         <Route path="home" element={<Home />} />
-         <Route path="home-new" element={<HomeNew />} />
         <Route path="about" element={<About />} />
         <Route path="skills" element={<Skills />} />
         <Route path="projects" element={<Projects />} />

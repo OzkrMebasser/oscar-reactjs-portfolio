@@ -72,7 +72,7 @@ export default function Typing() {
 
   return (
     <Fragment>
-      <h1 id="goldTyping" className="animatedHello rollIn">
+      <h1 id="goldTyping" className="typingMargin">
         <span id="whiteTyping">{t("myself.myself")}</span>
         <Blinker blink={words[index].substring(0, subIndex)} />
       </h1>

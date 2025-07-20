@@ -6,7 +6,7 @@ import am4geodata_worldLow from "@amcharts/amcharts4-geodata/worldLow";
 
 import "../../Components/LetterGlitch/LetterGlitch.css";
 import LetterGlitch from "../LetterGlitch/LetterGlitch";
-import Aurora from "../Auroras/Aurora"; // Tu nuevo componente Aurora actualizado
+import Aurora from "../Auroras/Aurora"; 
 
 am4core.useTheme(am4themes_animated);
 
@@ -43,7 +43,7 @@ const AmChartsMapNew = () => {
     polygonTemplate.fill = am4core.color("#000");
     // polygonTemplate.fillOpacity = 0.3; // Reducir opacidad para ver el background
     polygonTemplate.tooltipText = "{name}";
-    polygonTemplate.stroke = am4core.color("#4507F7");
+    polygonTemplate.stroke = am4core.color("#2b00c4");
     polygonTemplate.strokeWidth = 1;
     polygonTemplate.cursorOverStyle = am4core.MouseCursorStyle.pointer;
     polygonTemplate.url = "https://en.wikipedia.org/wiki/{name}";
@@ -89,7 +89,10 @@ const AmChartsMapNew = () => {
   }, []);
 
   return (
-    <div className="globe-container">
+    
+<div className="globe-wrapper">
+
+     <div className="globe-container">
       {/* Capa 1: LetterGlitch (fondo) */}
       <div className="glitch-background">
         <LetterGlitch
@@ -114,6 +117,7 @@ const AmChartsMapNew = () => {
       {/* Capa 3: Globe (encima) */}
       <div id="globediv"></div>
     </div>
+ </div>
   );
 };
 

@@ -5,8 +5,6 @@ body {
 }
 /*Animated Hello World ↓↓↓↓↓↓↓↓↓↓↓↓*/
 
-
-
 /*Left text entrance ↓↓↓↓↓↓↓↓↓↓*/
 @-webkit-keyframes bounceInLeft {
   from,
@@ -319,18 +317,18 @@ body {
 }
 #goldTyping {
   color: #d4af37;
-  margin-bottom: 20rem;
-  /* background-color: opacity transparent#ffff; */
+  /* margin-bottom: 20rem; */
+  margin-top: 8rem;
   font-weight: 500;
   font-size: 2.8rem;
-  /* background:#111; */
+  /* background:#4e12af; */
   /* color:#fff; */
   text-shadow: 1px 1px 10px rgb(0, 0, 0), 1px 1px 10px rgb(0, 0, 0);
   /* font-size:48px; */
 }
 
 .cover-container {
-  height: 100dvh;
+  height: 75vh;
   /* margin-bottom: 5rem; */
   /* object-fit: contain; */
   /* box-shadow: inset 0 0 0 1000px 	rgb(0, 0, 0); */
@@ -340,8 +338,7 @@ body {
   align-items: center;
   box-sizing: content-box;
   margin: auto;
-  /* background-color: rgb(0, 0, 0); */
-  /* background-color: rgb(89, 218, 39); */
+
   font-family: "Boogaloo", cursive;
 }
 
@@ -369,8 +366,6 @@ h6 {
   width: 400px;
   height: 400px;
 } */
-
-
 
 #chartdiv {
   width: 400px;
@@ -485,7 +480,6 @@ h6 {
     transform: rotate(360deg);
   }
 }
-
 
 /* comets animations */
 
@@ -745,15 +739,12 @@ h6 {
 }
 
 .flip-box-cover {
-  /* background-color: red; */
-  width: 300px;
-  height: 3rem;
-  padding-top: 8rem;
-  padding-bottom: 5rem;
+  width: 400px;
   font-size: 2.8rem;
   z-index: 999999;
-  /* position: absolute; */
+
   cursor: pointer;
+  /* background-color: red; */
 }
 
 /* This container is needed to position the front and back side */
@@ -785,7 +776,6 @@ h6 {
 
 /* Style the front side (fallback if image is missing) */
 .flip-box-front-cover {
-  /* background-color: #13315c; */
   color: rgb(250, 250, 250);
   text-shadow: 1px 1px 10px rgb(0, 0, 0), 1px 1px 10px rgb(0, 0, 0);
 }
@@ -908,8 +898,8 @@ h6 {
   transform: scale(0.95);
 }
 
-.goBtnText{
-  color:  #d4af37;
+.goBtnText {
+  color: #d4af37;
 }
 
 /*Profile picture in Popup*/
@@ -972,7 +962,6 @@ figure.effect-oscar figcaption {
   height: 130px;
 }
 
-
 figure.effect-oscar:hover figcaption {
   background-color: rgba(58, 52, 42, 0);
 }
@@ -993,15 +982,13 @@ figure.effect-oscar:hover img {
 .analog {
   position: relative;
   top: 0;
-  
+
   width: 130px;
   height: 130px;
   margin: 0 auto;
   width: 130px;
- 
-  
-  border-radius: 50%;
 
+  border-radius: 50%;
 }
 
 .dates {
@@ -1030,13 +1017,11 @@ figure.effect-oscar:hover img {
 /*Home Container media queries */
 
 @media screen and (min-width: 1500px) {
- 
   #chartdiv {
     width: 500px;
     height: 500px;
-  
+
     top: 13rem;
-   
   }
 }
 /* Smartphones (portrait and landscape) ---------- */
@@ -1046,12 +1031,12 @@ figure.effect-oscar:hover img {
     color: #fff;
     font-weight: 500;
     font-size: 1.7rem;
-    /* margin-bottom: 15rem; */
+    margin-top: 15rem;
   }
   #goldTyping {
     color: #d4af37;
-    /* margin-bottom: 5rem; */
     /* background-color: opacity transparent#ffff; */
+    margin-top: 1rem;
     font-weight: 500;
     font-size: 1.7rem;
     /* background:#111; */
@@ -1061,20 +1046,16 @@ figure.effect-oscar:hover img {
   }
 
   .cover-container {
-    height: 100dvh;
-    /* height: 80%;
-    width: 100%; */
-    /* margin-bottom: 2.2rem; */
-    /* object-fit: contain; */
-    /* box-shadow: inset 0 0 0 1000px 	rgb(0, 0, 0); */
+    height: 20vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
     box-sizing: content-box;
     margin: auto;
-    /* background-color: rgb(89, 218, 39); */
-    /* background-color: black; */
+    /* background-color: rgb(164, 218, 39); */
+
     font-family: "Boogaloo", cursive;
   }
 
@@ -1096,6 +1077,15 @@ figure.effect-oscar:hover img {
     color: white;
     font-size: 2rem;
     z-index: 99999999;
+  }
+
+  .flip-box-cover {
+    width: 300px;
+    font-size: 2.8rem;
+    z-index: 999999;
+
+    cursor: pointer;
+    background-color: red;
   }
 }
 @media only screen and (max-width: 600px) {

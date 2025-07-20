@@ -194,10 +194,10 @@
   display: flex;
   background-color: rgb(0, 0, 0);
   color: rgb(255, 254, 254);
-  height: 87vh;
-  width: 100vw;
+  height: 85vh;
+  width: 95vw;
   margin: auto;
-  padding: 100px 0px 100px 0px;
+  padding: 5rem 0rem;
   justify-content: space-around;
   font-family: "Boogaloo", cursive;
   z-index: 9999;
@@ -310,7 +310,7 @@
 .downloadBtn {
   margin: auto;
   align-items: center;
-  width: 40%;
+  width: 43%;
   height: 3.5rem;
   margin: auto;
   text-decoration: none;
@@ -322,6 +322,7 @@
   /* text-decoration-style: dotted; */
   border-radius: 6px;
   margin-top: 1.5rem;
+  padding: 3px 20px;
 }
 .downloadBtn:hover {
   background-color: #000;
@@ -431,7 +432,7 @@
   .downloadBtn {
     margin: auto;
     align-items: center;
-    width: 50%;
+    width: 55%;
     height: 3.1rem;
     margin: auto;
     text-decoration: none;
@@ -490,26 +491,16 @@
  */
 /*About Container media queries */
 
-@media screen and (min-width: 1500px) {
 
-  .about-container {
-    
-    margin-top: 8rem;
-    height: 100dvh;
-  }
-
-}
 @media only screen and (max-width: 600px) {
   .about-container {
     flex-direction: column;
-    padding: 0;
-    height: 100dvh;
+    height: 87vh;
   }
 
   .about-desc {
-    width: 100vw;
-    margin: auto;
-    padding: 40px 20px 50px 20px;
+    width: 90vw;
+    padding: 0 20px;
   }
 
   .about-desc > h3 {
@@ -574,11 +565,12 @@
   }
 
   .downloadBtn {
-    margin: auto;
+    margin:auto;
     align-items: center;
-    width: 50%;
-    height: 3.1rem;
-    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 65%;
+    height: 3.3rem;
     text-decoration: none;
     background-color: #d4af37;
     color: #000;
@@ -586,7 +578,8 @@
     border: currentColor;
     font-family: "Boogaloo", cursive;
     border-radius: 6px;
-    margin-top: 1.5rem;
+
+    padding: 5px 20px;
   }
 
   .dwl {
@@ -607,7 +600,7 @@
   .greetings {
     position: absolute;
    padding:  1rem;
-    margin-top: 3.5rem;
+    margin-top: 3.3rem;
     font-size: 1rem;
     text-align: justify;
   }
