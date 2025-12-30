@@ -1,0 +1,22 @@
+
+
+.modal::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px); 
+  z-index: -1;
+}
+
+
+@media (min-width: 992px) {
+  .modal-dialog {
+    width: 50%;
+    max-width: 100%;
+  }
+}

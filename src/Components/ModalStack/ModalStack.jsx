@@ -11,6 +11,7 @@ import SoundClick from "../../Components/Click/interface.mp3";
 import "../../pages/Projects/Projects.css";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import "./ModalStack.css";
 
 function ModalStack({ props, ...project }) {
   // console.log(project)
@@ -32,6 +33,7 @@ function ModalStack({ props, ...project }) {
       <br />
       <Modal
         className="modalMoreDown text-uppercase"
+        // dialogClassName="modal-dialog-centered"
         show={show}
         onHide={handleClose}
         animation={false}
@@ -51,7 +53,6 @@ function ModalStack({ props, ...project }) {
           <p className="textDescIcons ">{t(`${project.desc}`)}</p>
 
           {project.linkSchool && (
-         
             <>
               <p className="school">
                 <span className="asterisc">*</span>
