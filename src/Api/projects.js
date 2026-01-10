@@ -23,26 +23,29 @@ const myProjects = {
   // id.8 CIUDADANOS UNIDOS
   id_8_project_name: "myProjects.id_8.project_name",
   id_8_desc: "myProjects.id_8.desc",
-
-  //id.9 TRIPYTOUR BLOG
+  // id.9 CENTRO DE REHABILITACION NUEVA CREACION
   id_9_project_name: "myProjects.id_9.project_name",
   id_9_desc: "myProjects.id_9.desc",
 
-  //id.10 CLEAN AID PLUS
+  //id.10 TRIPYTOUR BLOG
   id_10_project_name: "myProjects.id_10.project_name",
   id_10_desc: "myProjects.id_10.desc",
 
-  //id.11 ACADEMLO LIBRARY
+  //id.11 CLEAN AID PLUS
   id_11_project_name: "myProjects.id_11.project_name",
   id_11_desc: "myProjects.id_11.desc",
 
-  //id.12 AGENCIA DE TOURS
+  //id.12 ACADEMLO LIBRARY
   id_12_project_name: "myProjects.id_12.project_name",
   id_12_desc: "myProjects.id_12.desc",
 
-  //id.13 OTHER PROJECTS
+  //id.13 AGENCIA DE TOURS
   id_13_project_name: "myProjects.id_13.project_name",
   id_13_desc: "myProjects.id_13.desc",
+
+  //id.14 OTHER PROJECTS
+  id_14_project_name: "myProjects.id_14.project_name",
+  id_14_desc: "myProjects.id_14.desc",
 
   // id_9_aliasInstitution: "myProjects.id_9.aliasInstitution",
   id_11_seeCerts: "myProjects.id_11.seeCerts",
@@ -430,7 +433,7 @@ export const projects = [
 
     deployed: true,
     type: "online",
-    
+
     tech_1_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fhtml-svgrepo-com.svg?alt=media&token=bf007597-213f-410e-b369-8035584a3ad7",
     tech_2_icon:
@@ -445,101 +448,141 @@ export const projects = [
     tech_6_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fjetpack.png?alt=media&token=25a49c22-acb9-4360-84a7-b9feab128c37",
   },
-
-  //id.8 IGLESIA NUEVA CREACION
-  //id.9 CACI ALMA AC
-  //id.10 CENTRO DE REHABILITACION NUEVA CREACION
-  //id.11 BRISHOP
-
-  // Example of the project object structure
-
-  //   {
-  //   id: 1,
-  //   project_name: "",
-  //   src: "",
-  //   alt: "",
-  //   desc: "",
-  //   href: "",
-
-  //   // Deployment section
-  //   deploy_icon_1: "",
-  //   deploy_name_1: "",
-  //   git_icon: "",
-  //   git_url: "",
-  //   git_name: "",
-  //   www_icon: "",
-  //   www_site: "",
-
-  //   // Stack I used Section
-  //   tech_1_name: "",
-  //   tech_2_name: "",
-  //   tech_3_name: "",
-  //   tech_4_name: "",
-  //   tech_5_name: "",
-  //   tech_6_name: "",
-
-  //   deployed: false,
-  //   type: "",
-
-  //   tech_1_icon: "",
-  //   tech_2_icon: "",
-  //   tech_3_icon: "",
-  //   tech_4_icon: "",
-  //   tech_5_icon: "",
-  //   tech_6_icon: "",
-  // }
-
-  //id.7 MI ALEGRIA FAMILY DAYCARE
-  //id.8 IGLESIA NUEVA CREACION
-  //id.9 CACI ALMA AC
-  //id.10 CENTRO DE REHABILITACION NUEVA CREACION
-  //id.11 BRISHOP
-
-  // Example of the project object structure
-
-  //   {
-  //   id: 1,
-  //   project_name: "",
-  //   src: "",
-  //   alt: "",
-  //   desc: "",
-  //   href: "",
-
-  //   // Deployment section
-  //   deploy_icon_1: "",
-  //   deploy_name_1: "",
-  //   git_icon: "",
-  //   git_url: "",
-  //   git_name: "",
-  //   www_icon: "",
-  //   www_site: "",
-
-  //   // Stack I used Section
-  //   tech_1_name: "",
-  //   tech_2_name: "",
-  //   tech_3_name: "",
-  //   tech_4_name: "",
-  //   tech_5_name: "",
-  //   tech_6_name: "",
-
-  //   deployed: false,
-  //   type: "",
-
-  //   tech_1_icon: "",
-  //   tech_2_icon: "",
-  //   tech_3_icon: "",
-  //   tech_4_icon: "",
-  //   tech_5_icon: "",
-  //   tech_6_icon: "",
-  // }
-
-  //id.9 TRIPYTOUR BLOG
+  //id.9 CENTRO DE REHABILITACION NUEVA CREACION
   {
     id: 9,
-    project_name: `${myProjects.id_9_project_name}`,
+     project_name: `${myProjects.id_9_project_name}`,
+    src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2F9.b.centrorehabilitadornuevacreacion.org.png?alt=media&token=6d4d1776-b601-401d-ac05-ec20cc6349ca",
+    alt: "CENTRO DE REHABILITACION NUEVA CREACION",
+    desc: `${myProjects.id_9_desc}`,
+    href: "https://centrorehabilitadornuevacreacionac.org/",
+
+    // Deployment section
+    deploy_icon_1:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Ffirebase-svgrepo-com.svg?alt=media&token=ea3cf79a-0fa3-4a32-ae04-89625cdaa904",
+    deploy_name_1: "Firebase",
+    git_icon: "https://www.svgrepo.com/show/217753/github.svg",
+    git_url: "https://github.com/OzkrMebasser/nueva-creacion-rehab-center",
+    git_name: "Git repository",
+    www_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Finternet-www-svgrepo-com.svg?alt=media&token=49e3d743-fa07-4bdc-879e-0e99c87df52e",
+    www_site: "https://centrorehabilitadornuevacreacionac.org/",
+
+    //Stack I used Section
+    /*Icons alt names*/
+    tech_1_name: "HTML5",
+    tech_2_name: "Tailwind CSS",
+    tech_3_name: "TypeScript",
+    tech_4_name: "React JS",
+    tech_5_name: "Next JS",
+    tech_6_name: "AOS",
+    tech_7_name: "EmailJS",
+
+    deployed: true,
+    type: "online",
+
+    tech_1_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fhtml-svgrepo-com.svg?alt=media&token=bf007597-213f-410e-b369-8035584a3ad7",
+    tech_2_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Ftailwind-svgrepo-com.svg?alt=media&token=de41409e-f0e5-4784-96fa-524c7a31c626",
+    tech_3_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Ftypescript-icon-svgrepo-com.svg?alt=media&token=a9ca7b36-982d-420d-8a88-1d579d7dc18a",
+    tech_4_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freact-1-logo-svgrepo-com.svg?alt=media&token=f690f37d-9457-4a0b-8378-16a7d426114f",
+    tech_5_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fnext-js-svgrepo-com.svg?alt=media&token=ac7b37d1-13b5-4c9e-8986-6f6eb1123f31",
+    tech_6_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2FAOS.jpeg?alt=media&token=284f7e39-7d00-4c67-a4bd-fe5c5cb4896c",
+    tech_7_icon:
+      "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Femailjs.png?alt=media&token=e31be33a-174b-4860-8a75-44fcedb47b74",
+  },
+  //id.10 CACI ALMA AC
+  //id.11 IGLESIA NUEVA CREACION
+  //id.12 BRISHOP
+
+  // Example of the project object structure
+
+  //   {
+  //   id: 1,
+  //   project_name: "",
+  //   src: "",
+  //   alt: "",
+  //   desc: "",
+  //   href: "",
+
+  //   // Deployment section
+  //   deploy_icon_1: "",
+  //   deploy_name_1: "",
+  //   git_icon: "",
+  //   git_url: "",
+  //   git_name: "",
+  //   www_icon: "",
+  //   www_site: "",
+
+  //   // Stack I used Section
+  //   tech_1_name: "",
+  //   tech_2_name: "",
+  //   tech_3_name: "",
+  //   tech_4_name: "",
+  //   tech_5_name: "",
+  //   tech_6_name: "",
+
+  //   deployed: false,
+  //   type: "",
+
+  //   tech_1_icon: "",
+  //   tech_2_icon: "",
+  //   tech_3_icon: "",
+  //   tech_4_icon: "",
+  //   tech_5_icon: "",
+  //   tech_6_icon: "",
+  // }
+
+  // Example of the project object structure
+
+  //   {
+  //   id: 1,
+  //   project_name: "",
+  //   src: "",
+  //   alt: "",
+  //   desc: "",
+  //   href: "",
+
+  //   // Deployment section
+  //   deploy_icon_1: "",
+  //   deploy_name_1: "",
+  //   git_icon: "",
+  //   git_url: "",
+  //   git_name: "",
+  //   www_icon: "",
+  //   www_site: "",
+
+  //   // Stack I used Section
+  //   tech_1_name: "",
+  //   tech_2_name: "",
+  //   tech_3_name: "",
+  //   tech_4_name: "",
+  //   tech_5_name: "",
+  //   tech_6_name: "",
+
+  //   deployed: false,
+  //   type: "",
+
+  //   tech_1_icon: "",
+  //   tech_2_icon: "",
+  //   tech_3_icon: "",
+  //   tech_4_icon: "",
+  //   tech_5_icon: "",
+  //   tech_6_icon: "",
+  // }
+
+  //id.10 TRIPYTOUR BLOG
+  {
+    id: 10,
+    project_name: `${myProjects.id_10_project_name}`,
     src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2F6.tripytour.blog.png?alt=media&token=5b8792fd-cbd8-44a5-8a58-c3a140922c24",
     alt: "TRIPYTOUR BLOG",
-    desc: `${myProjects.id_9_desc}`,
+    desc: `${myProjects.id_10_desc}`,
     href: "https://tripytour-blog.vercel.app/",
 
     //Deployment section
@@ -586,14 +629,13 @@ export const projects = [
     tech_7_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fmongodb-svgrepo-com.svg?alt=media&token=12d49f5f-5031-43e4-abd8-aa14ae07565a",
   },
-
-  //id.10 CLEAN AID PLUS
+  //id.11 CLEAN AID PLUS
   {
-    id: 10,
-    project_name: `${myProjects.id_10_project_name}`,
+    id: 11,
+    project_name: `${myProjects.id_11_project_name}`,
     src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2F5.cleanaidplus.ca.png?alt=media&token=4d59d4a0-8d46-4e52-b0fd-5a5eb15d0480",
     alt: "CLEAN AID PLUS",
-    desc: `${myProjects.id_10_desc}`,
+    desc: `${myProjects.id_11_desc}`,
     href: "https://clean-aid-plus.vercel.app/",
     //Deployment section
 
@@ -639,13 +681,13 @@ export const projects = [
     tech_7_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fswiper-logo.svg?alt=media&token=0cfb7375-4661-4036-ad96-8bd143b4ac41",
   },
-  //id.11 ACADEMLO LIBRARY
+  //id.12 ACADEMLO LIBRARY
   {
-    id: 11,
-    project_name: `${myProjects.id_11_project_name}`,
+    id: 12,
+    project_name: `${myProjects.id_12_project_name}`,
     src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2F7.academloslibrary.png?alt=media&token=a6e98d82-f5c9-4dd3-8640-5a310bdacf10",
     alt: "ACADEMLO's LIBRARY",
-    desc: `${myProjects.id_11_desc}`,
+    desc: `${myProjects.id_12_desc}`,
     href: "https://academlo-library-system-v3.onrender.com/",
 
     //Deployment section
@@ -682,13 +724,13 @@ export const projects = [
     tech_5_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Fpostgresql-svgrepo-com%20(1).svg?alt=media&token=8294cc05-91ae-49c4-8418-d531fc8ca0b7",
   },
-  //id.12 TOUR AGENCY ECOMMMERCE
+  //id.13 TOUR AGENCY ECOMMMERCE
   {
-    id: 12,
-    project_name: `${myProjects.id_12_project_name}`,
+    id: 13,
+    project_name: `${myProjects.id_13_project_name}`,
     src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2F8.touragency.ecommerce.png?alt=media&token=33ab71f5-6496-4250-92f1-e1ca8946b074",
     alt: "TOUR AGENCY ECOMMMERCE",
-    desc: `${myProjects.id_12_desc}`,
+    desc: `${myProjects.id_13_desc}`,
     href: "https://oscar-ecommerce-context-reducer.netlify.app/",
 
     //Deployment section
@@ -726,13 +768,13 @@ export const projects = [
     tech_5_icon:
       "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2FTech-Icons%2Freactspring.jpeg?alt=media&token=cc64a01c-85fe-4b3b-b34e-efc464130f26",
   },
-  //id.13 OTHER PROJECTS
+  //id.14 OTHER PROJECTS
   {
-    id: 13,
-    project_name: `${myProjects.id_13_project_name}`,
+    id: 14,
+    project_name: `${myProjects.id_14_project_name}`,
     src: "https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/oscar-portfolio-imgs%2FProjects%2F9.otherprojects.png?alt=media&token=b94d54a9-d3f6-45d9-808d-655f05b2d316",
     alt: "OTHER PROJECTS",
-    desc: `${myProjects.id_13_desc}`,
+    desc: `${myProjects.id_14_desc}`,
     href: "/more-projects",
 
     //Deployment section
