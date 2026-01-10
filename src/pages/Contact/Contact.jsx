@@ -147,14 +147,13 @@ const Contact = () => {
             <div className="map">
               <MyLocation />
               <span className="text-living"
-              
               //  data-tooltip-content={`${t("myProjects.websiteLink")}`}
               >
                 <img
                  id="myLocationIs"
                  data-tooltip-content={t("contact.iLiveHere")}
                  data-tooltip-variant="light"
-                  className="myLocIcon arrow-down  "
+                  className="myLocIcon arrow-down"
                   src="https://firebasestorage.googleapis.com/v0/b/oscar-moreno-dev.appspot.com/o/mylocationbgtrans.png?alt=media&token=f7b105af-a117-448e-8686-1d392b8b124c"
                   alt="my location"
                 />
