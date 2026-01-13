@@ -12,11 +12,12 @@ import "./Projects.css";
 import "../OtherProjects/OtherProjects.css";
 
 const Projects = ({ props }) => {
-
-  console.log(projects)
+  console.log(projects);
   const [t] = useTranslation("global");
   const playSound = useSound(SoundClick);
   const [activeItemIndex, setActiveItemIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+
   const chevronWidth = 200;
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
@@ -35,13 +36,24 @@ const Projects = ({ props }) => {
     };
   }, []);
 
+  useEffect(() => {
+    if (isMobile || isPaused) return;
+
+    const interval = setInterval(() => {
+      setActiveItemIndex((prevIndex) =>
+        prevIndex === projects.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 4000); // ⏱️ tiempo del slide
+
+    return () => clearInterval(interval);
+  }, [isMobile, isPaused]);
+
   return (
     <>
       {isMobile ? (
         <main className="main-container">
           {projects.map((proj, id) => (
             <section className="section-cards-proj" key={id}>
-            
               <h3 className="card-proj-title">
                 {" "}
                 {id + 1} - {t(`${proj.project_name}`)}
@@ -60,7 +72,11 @@ const Projects = ({ props }) => {
           ))}
         </main>
       ) : (
-        <div className="bodyContainer">
+        <div
+          className="bodyContainer"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
           <div
             className="carouselContainer chevronWidth"
             style={{ padding: isMobile ? "0" : `0 ${chevronWidth}px` }}
